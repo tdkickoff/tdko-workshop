@@ -27,10 +27,33 @@ def ok(r, slug):
         if today <= dd <= today + datetime.timedelta(days=gap): return False   # still to play (or today's): keep it unspoiled
     return True
 
+import re
+# Fast Break question kinds, so a quiz mixes them (otherwise 'which country' questions dominate)
+R=[('awards',r"ballon d'or|golden boot|golden ball|pfa |player of the (year|season)|footballer of the year"),
+ ('laws',r"\b(card|offside|referee|var|penalty area|free kick|throw-in|corner kick|awarded|laws? of the game|how long|minutes)\b"),
+ ('nation',r"\b(which|what) (country|nation|national team)\b|\bnationality\b|\bcountry (did|does|is|was)\b|represent(ed|s)? (at|in) international"),
+ ('ground',r"\bstadium\b|\bground\b|\bplay(s|ed)? (their )?home (games|matches)"),
+ ('manager',r"\bmanag(er|ed|es)\b|\bcoach(ed)?\b|\bboss\b"),
+ ('nickname',r"\bnickname|\bknown as\b"),
+ ('transfer',r"\btransfer|\bsign(ed|ing)\b|\bfee\b|\bjoin(ed)?\b"),
+ ('worldcup',r"world cup|euro(s|pean championship)?\b|copa am|afcon|africa cup|nations league"),
+ ('europe',r"champions league|european cup|uefa cup|europa|cup winners"),
+ ('record',r"\b(most|record|first|youngest|oldest|fastest|highest|top scorer|all-time)\b"),
+ ('year',r"\b(what|which) year\b|\bin what year\b|\bwhen did\b"),
+ ('city',r"\bin which city|\bwhere (is|are|was|were|do|did)\b|\bwhich city\b"),
+ ('howmany',r"^how many\b"),
+ ('club',r"\b(which|what) (club|team|side)\b"),
+ ('player',r"^who\b"),
+]
+def kind(q):
+    s=q.lower()
+    for k,p in R:
+        if re.search(p,s): return k
+    return 'other'
 P = {'fb': [], 'wtb': [], 'cs': [], 'rh': []}
 for r in rows('fast-break'):
     p = json.loads(r['payload'])
-    P['fb'].append(dict(id=r['id'], q=p['q'], o=p['options'], d=(r['diff'] or p.get('d') or 'm').lower(), ok=ok(r, 'fast-break')))
+    P['fb'].append(dict(id=r['id'], q=p['q'], o=p['options'], d=(r['diff'] or p.get('d') or 'm').lower(), k=kind(p['q']), ok=ok(r, 'fast-break')))
 for r in rows('whos-that-baller'):
     p = json.loads(r['payload'])
     if len(p.get('clubs', [])) < 3: continue          # the clue ladder needs three clubs

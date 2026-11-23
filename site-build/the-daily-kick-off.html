@@ -54,6 +54,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 .modes a small{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;color:var(--muted)}
 .modes a.on{border-color:var(--accent);box-shadow:inset 0 -4px 0 var(--accent)}
 .modes a:not(.on):hover{border-color:var(--ink)}
+.modes a.mpmode{border-color:#1D4ED8;background:linear-gradient(160deg,#1D4ED8,#0B1638);color:#fff}.modes a.mpmode small{color:#C9D6FF}.modes a.mpmode:hover{border-color:#FFC83D}
 .hero{display:flex;flex-direction:column;gap:12px;padding-block:6px 2px}
 .hero h1{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(58px,18vw,104px);line-height:.84;margin:0;text-transform:uppercase;letter-spacing:-.01em}
 .hero h1 i{font-style:normal;color:var(--accent)}
@@ -161,7 +162,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
     <p class="lede"><span id="ng">Nine</span> puzzles on today's fixture list. Get them all to full time before the next round drops at midnight.</p>
   </section>
 
-  <nav class="modes" aria-label="Choose how to play"><a class="on" href="./" aria-current="page"><b>Daily Puzzles</b><small>New every midnight</small></a><a href="multiplayer.html"><b>Multiplayer</b><small>Play with friends · TV ready</small></a></nav>
+  <nav class="modes" aria-label="Choose how to play"><a class="on" href="./" aria-current="page"><b>Daily Puzzles</b><small>New every midnight</small></a><a class="mpmode" href="multiplayer.html"><b>Multiplayer</b><small>Play with friends · TV ready</small></a></nav>
 
   <section class="progress" aria-live="polite">
     <div class="bar" id="bar" aria-hidden="true"></div>

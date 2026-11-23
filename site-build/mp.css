@@ -1,6 +1,7 @@
-:root{--bg:#F2F4F1;--surface:#fff;--ink:#0E1712;--muted:#5D6A62;--line:#D7DDD8;--accent:#0A8A4A;--accent-ink:#fff;--bad:#C93A2B;--warn:#C98A00;--soft:#E7ECE8;--red:#D64545;--blue:#2F6FD1;--yellow:#D6A200;
+:root{--bg:#EDF1FA;--surface:#fff;--ink:#0B1638;--muted:#56607A;--line:#D2D9EA;--accent:#1D4ED8;--accent-ink:#fff;--good:#0A8A4A;--hi:#E0A800;--bad:#C93A2B;--warn:#C98A00;--soft:#E2E8F7;--red:#D64545;--blue:#2F6FD1;--yellow:#D6A200;
   --f-d:"Archivo","Arial Narrow",system-ui,sans-serif;--f-m:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
-:root[data-tdko="dark"]{--bg:#0B110E;--surface:#121A16;--ink:#EAF0EC;--muted:#8A988F;--line:#24302A;--accent:#34D27F;--accent-ink:#06120B;--bad:#FF6B5A;--warn:#F2B53A;--soft:#1A241F;--red:#FF6B6B;--blue:#6FA3FF;--yellow:#F2C94C;color-scheme:dark}
+:root[data-tdko="dark"],body[data-mp="tv"]{--bg:#070F2B;--surface:#0E1A45;--ink:#EAF0FF;--muted:#93A0C4;--line:#22306A;--accent:#4D8DFF;--accent-ink:#06102E;--good:#34D27F;--hi:#FFC83D;--bad:#FF6B5A;--warn:#F2B53A;--soft:#16245A;--red:#FF6B6B;--blue:#7FB0FF;--yellow:#F2C94C;color-scheme:dark}
+/* Multiplayer wears game-show blue so it never looks like the daily puzzles; green stays for right answers. The TV is always the dark studio look. */
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 var(--f-d);padding:0 16px max(24px,env(safe-area-inset-bottom))}
 #mp{max-width:560px;margin:0 auto;padding:16px 0 32px;display:flex;flex-direction:column;gap:12px}
@@ -9,7 +10,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 var(--f-d);pad
 h1{margin:4px 0;font-weight:900;font-stretch:66%;font-size:clamp(40px,12vw,58px);line-height:.9;text-transform:uppercase}h1 i,h2 i{font-style:normal;color:var(--accent)}
 h2{margin:0;font-weight:800;font-stretch:80%;font-size:24px;line-height:1.1}h3{margin:0 0 8px;font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.02em}h4{margin:6px 0;font-size:14px}
 .lede{color:var(--muted);margin:6px 0 0}.note{font-size:13px;color:var(--muted);margin:6px 0 0}.err{color:var(--bad);font-size:14px;margin:0;min-height:1px}
-.ok{color:var(--accent);font-weight:700}.bad{color:var(--bad);font-weight:700}
+.ok{color:var(--good);font-weight:700}.bad{color:var(--bad);font-weight:700}
 .card{background:var(--surface);border:1px solid var(--line);padding:14px}
 .btn{font:700 15px var(--f-m);letter-spacing:.04em;text-transform:uppercase;border:0;background:var(--accent);color:var(--accent-ink);padding:0 18px;height:48px;cursor:pointer;width:auto}
 .btn.big{width:100%;height:56px;font-size:16px}.btn.ghost{width:100%;height:52px;background:transparent;color:var(--ink);border:1.5px solid var(--ink)}.btn:disabled{opacity:.45;cursor:default}
@@ -35,7 +36,7 @@ input{font:700 20px var(--f-m);letter-spacing:.08em;height:48px;padding:0 12px;b
 .paused{font:700 13px var(--f-m);text-transform:uppercase;color:var(--warn);margin:0}
 .q{font-size:22px;margin:6px 0 4px}
 .opts{display:grid;gap:8px}.opt{font:700 17px var(--f-d);text-align:left;padding:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;min-height:52px}
-.opt.picked{border-color:var(--ink);background:var(--soft)}.opt.right{border-color:var(--accent);background:color-mix(in oklab,var(--accent) 22%,var(--surface))}.opt.wrong{border-color:var(--bad);background:color-mix(in oklab,var(--bad) 18%,var(--surface))}.opt:disabled{cursor:default}
+.opt.picked{border-color:var(--ink);background:var(--soft)}.opt.right{border-color:var(--good);background:color-mix(in oklab,var(--good) 22%,var(--surface))}.opt.wrong{border-color:var(--bad);background:color-mix(in oklab,var(--bad) 18%,var(--surface))}.opt:disabled{cursor:default}
 .status{font:600 14px var(--f-m);margin:4px 0;text-align:center}
 .turn{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border:1.5px solid var(--line);background:var(--surface);font-weight:800;font-size:18px}
 .turn b{font:900 28px var(--f-d)}.turn.mine{border-color:var(--accent);background:color-mix(in oklab,var(--accent) 14%,var(--surface))}.turn.live.mine{animation:pulse 1s infinite alternate}
@@ -44,11 +45,11 @@ input{font:700 20px var(--f-m);letter-spacing:.08em;height:48px;padding:0 12px;b
 .clues{list-style:none;margin:0;padding:0;display:grid;gap:4px}.clues li{display:flex;justify-content:space-between;gap:10px;padding:8px 10px;background:var(--surface);border:1px solid var(--line)}
 .clues li span{font:600 11px var(--f-m);text-transform:uppercase;color:var(--muted);padding-top:3px}.clues li b{text-align:right}.clues li.new{border-color:var(--accent)}
 .answer-card{background:var(--surface);border:1.5px solid var(--accent);padding:14px}.answer-card h2{font-size:30px;margin:4px 0}.answer-card p{margin:0;color:var(--muted);font-size:14px}
-.log{list-style:none;margin:0;padding:0;font-size:14px}.log li{padding:4px 0;border-bottom:1px dashed var(--line)}.log li.right{color:var(--accent)}.log li.wrong,.log li.dup{color:var(--muted)}.log em{font-style:normal;font-weight:800}
+.log{list-style:none;margin:0;padding:0;font-size:14px}.log li{padding:4px 0;border-bottom:1px dashed var(--line)}.log li.right{color:var(--good)}.log li.wrong,.log li.dup{color:var(--muted)}.log em{font-style:normal;font-weight:800}
 .slots{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .slots li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 6px;padding:8px;border:1px solid var(--line);border-left:4px solid var(--line);background:var(--surface);min-height:52px}
 .slots .no{font:600 11px var(--f-m);color:var(--muted)}.slots b{flex:1;font-size:15px}.slots small{font:600 10.5px var(--f-m);color:var(--muted)}.slots em{width:100%;font:600 10.5px var(--f-m);text-transform:uppercase;font-style:normal;color:var(--accent)}
-.slots li.found{border-left-color:var(--accent)}.slots li.hint b{color:var(--warn);font-family:var(--f-m)}.slots li.missed b{color:var(--muted)}
+.slots li.found{border-left-color:var(--good)}.slots li.hint b{color:var(--warn);font-family:var(--f-m)}.slots li.missed b{color:var(--muted)}
 .rh{display:grid;grid-template-columns:1fr 1fr;gap:8px}.rcard{background:var(--surface);border:1px solid var(--line);padding:12px;text-align:center}.rcard h3{margin:6px 0;text-transform:none;font-size:17px}.rcard b{display:block;font:900 40px/1 var(--f-d)}.rcard small{color:var(--muted);font-size:12px}.rcard.next{border-color:var(--ink);border-style:dashed}
 .hl{display:grid;grid-template-columns:1fr 1fr;gap:8px}.hl .btn{height:60px;font-size:17px}
 .mini-table{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}.mini-table li{display:flex;gap:8px;padding:6px 10px;border:1px solid var(--line);border-left:4px solid var(--line);font-size:13px;background:var(--surface)}.mini-table li.me{border-color:var(--accent)}.mini-table li.out{opacity:.4;text-decoration:line-through}
@@ -64,7 +65,7 @@ body[data-mp="tv"]{padding:0 4vw}body[data-mp="tv"] #mp{max-width:none;padding:3
 .tvgame{display:flex;flex-direction:column;gap:12px;zoom:var(--z,1)}.tvgame .opts{grid-template-columns:1fr 1fr}.tvgame .slots{grid-template-columns:repeat(5,1fr)}
 .betw{display:flex;flex-direction:column;gap:12px}.tvgame .betw{display:grid;grid-template-columns:1fr 1fr;align-items:start}
 
-.kick{text-align:center;padding:10vh 0 4vh;display:flex;flex-direction:column;align-items:center;gap:10px}.kick b{font:900 min(38vw,180px)/1 var(--f-d);color:var(--accent)}.kick h2{margin:0;font:900 26px var(--f-d);text-transform:uppercase}
+.kick{text-align:center;padding:10vh 0 4vh;display:flex;flex-direction:column;align-items:center;gap:10px}.kick b{font:900 min(38vw,180px)/1 var(--f-d);color:var(--hi)}.kick h2{margin:0;font:900 26px var(--f-d);text-transform:uppercase}
 .tvgame .kick b{font-size:min(30vw,260px)}
 button,.opt,.btn{touch-action:manipulation;-webkit-tap-highlight-color:transparent}.opt:active:not(:disabled),.btn:active:not(:disabled){transform:scale(.98)}.hl .btn.picked{outline:3px solid var(--ink)}
 /* phone game screens: room to breathe */
@@ -74,3 +75,5 @@ button,.opt,.btn{touch-action:manipulation;-webkit-tap-highlight-color:transpare
 .pgame .note{margin-top:-8px}.pgame .status{margin:0}.pgame .mini-table{margin:0;gap:8px}.pgame .hostbar{margin-top:6px;gap:8px}
 .pgame .log li{padding:6px 0}
 .pgame .ghead + .clock{margin-top:-12px}
+body[data-mp="tv"]{background:radial-gradient(ellipse at 50% 0%,#1A3590 0%,var(--bg) 60%) fixed var(--bg)}
+.answer-card{border-color:var(--hi)}
