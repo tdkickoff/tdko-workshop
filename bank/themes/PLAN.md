@@ -224,3 +224,4 @@ Source data: bank/trivia/medals_to_2016.txt + Wikipedia list of PL winners (to 2
 - RH difficulty: new chains carry d (e/m/h); showing the level in the game still to build after user confirms grades.
 - 23 Nov 19:20 LIVE (commit 70c4b1f): every game to 31 Dec, Tiki paused from 14 Dec, live checklist on GitHub.
 - User on Link Up: loves long cross-team chains (Ramos → Dugarry); do more in 2027 but keep players recognisable ("balance is always for players to come back tomorrow").
+- 23 Nov 19:58: workshop saved to GitHub tdkickoff/tdko-workshop (private). Save with /home/claude/workshop/save.sh at the end of each session; restore steps in its README.
