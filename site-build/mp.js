@@ -18,7 +18,7 @@
   let pid = TV ? 'tv' : store.get('tdko-mp-pid');
   if (!pid) { pid = 'p-' + (crypto.randomUUID ? crypto.randomUUID() : (Date.now().toString(36) + Math.random().toString(36).slice(2))).replace(/[^A-Za-z0-9-]/g, '').slice(0, 40); store.set('tdko-mp-pid', pid); }
   let pend = null; const qkey = () => V && V.game ? [V.round, V.gi, V.game.type, V.game.n, V.game.i, V.game.cur && V.game.cur.n].join('|') : '';
-  let code = null, V = null, offset = 0, polls = 0, timer = null, busy = false, flash = '', draftKey = '', typed = '';
+  let code = null, V = null, offset = 0, polls = 0, timer = null, busy = false, flash = '', flashSeen = '', flashAt = 0, draftKey = '', typed = '';
 
   const now = () => Date.now() + offset;
   if (TV) { const fit = () => document.documentElement.style.setProperty('--z', Math.max(1, Math.min(2.4, innerWidth / 760, innerHeight / 500)).toFixed(2)); fit(); addEventListener('resize', fit); }
@@ -35,7 +35,7 @@
     try {
       const r = await call(`state?code=${code}&pid=${encodeURIComponent(pid)}${polls++ % 4 === 0 ? '&ping=1' : ''}`);
       if (r.error && !r.view) { if (r.ok === false && /exist|finished/.test(r.error)) { leave(r.error); return; } flash = r.error; }
-      else flash = '';
+      else if (Date.now() - flashAt > 4000) flash = '';   // messages stay up for at least 4 seconds
     } catch (e) { flash = 'Connection lost. Reconnecting…'; }
     draw(); timer = setTimeout(poll, document.hidden ? 2500 : 900);
   }
@@ -215,6 +215,7 @@
   let lastSig = '';
   function draw(force) {
     if (!V) return;
+    if (flash !== flashSeen) { flashSeen = flash; flashAt = Date.now(); }
     const sig = JSON.stringify({ ...V, now: 0 }) + flash;
     if (!force && sig === lastSig) return; lastSig = sig;
     const ai = $('#ai'); if (ai) typed = ai.value;
@@ -242,8 +243,8 @@
         if (a === 'mode') return send({ type: 'mode', mode: el.dataset.m, teams: +el.dataset.n || 2 });
         if (a === 'team') { const p = V.players.find(p => p.pid === el.dataset.p), ids = V.teams.map(t => t.id); return send({ type: 'team', pid: el.dataset.p, team: ids[(ids.indexOf(p.side) + 1) % ids.length] }); }
         if (a === 'kick') return send({ type: 'kick', pid: el.dataset.p });
-        if (a === 'teamname') { const n = prompt('Team name', (V.teams.find(t => t.id === el.dataset.t) || {}).name || ''); if (n) send({ type: 'teamname', team: el.dataset.t, name: n }); return; }
-        if (a === 'rename') { const n = prompt('Your name (2 to 16 letters)', (me() || {}).name || ''); if (n) send({ type: 'name', name: n }); return; }
+        if (a === 'teamname') { const n = prompt('Team name (16 characters max)', (V.teams.find(t => t.id === el.dataset.t) || {}).name || ''); if (n && n.trim().length > 16) { flash = 'Team names can be 16 characters at most.'; draw(true); return; } if (n) send({ type: 'teamname', team: el.dataset.t, name: n }); return; }
+        if (a === 'rename') { const n = prompt('Your name (2 to 16 characters)', (me() || {}).name || ''); if (n && n.trim().replace(/\s+/g, ' ').length > 16) { flash = 'Names can be 16 characters at most.'; draw(true); return; } if (n) send({ type: 'name', name: n }); return; }
         // show the press straight away; the server confirms on the next reply
         if (a === 'fb') { if (pend && pend.k === qkey()) return; pend = { k: qkey(), o: el.dataset.o }; app.querySelectorAll('.opt').forEach(b => { b.disabled = true; if (b === el) b.classList.add('picked'); }); const st = $('.status'); if (st) st.textContent = 'Locked in. Waiting for the others…'; return send({ type: 'answer', o: el.dataset.o }, true); }
         if (a === 'rh') { if (pend && pend.k === qkey()) return; pend = { k: qkey(), o: el.dataset.c }; app.querySelectorAll('.hl .btn').forEach(b => { b.disabled = true; if (b === el) b.classList.add('picked'); }); return send({ type: 'answer', call: el.dataset.c }, true); }
