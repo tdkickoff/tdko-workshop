@@ -7,7 +7,7 @@
   const app = $('#mp');
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const GAMES = { fb: 'Fast Break', wtb: "Who's That Baller", cs: 'Clean Sweep', rh: 'Ranked Highly' };
-  const DESC = { fb: 'Everyone answers the same question at once. Quickest right answers score most.',
+  const DESC = { fb: 'Everyone answers the same question at once. Every right answer scores 100, plus up to 50 for speed.',
     wtb: 'Take turns to name the player. A new clue appears each round. Earlier clue, more points.',
     cs: 'Take turns to name a player on the list. 10 points for each one.',
     rh: 'Take turns to call higher or lower. Get one wrong and you are out. Last one standing wins.' };
@@ -16,6 +16,7 @@
   const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }, del(k) { try { localStorage.removeItem(k); } catch (e) {} } };
   let pid = TV ? 'tv' : store.get('tdko-mp-pid');
   if (!pid) { pid = 'p-' + (crypto.randomUUID ? crypto.randomUUID() : (Date.now().toString(36) + Math.random().toString(36).slice(2))).replace(/[^A-Za-z0-9-]/g, '').slice(0, 40); store.set('tdko-mp-pid', pid); }
+  let pend = null; const qkey = () => V && V.game ? [V.round, V.gi, V.game.type, V.game.n, V.game.i, V.game.cur && V.game.cur.n].join('|') : '';
   let code = null, V = null, offset = 0, polls = 0, timer = null, busy = false, flash = '', draftKey = '', typed = '';
 
   const now = () => Date.now() + offset;
@@ -37,10 +38,10 @@
     } catch (e) { flash = 'Connection lost. Reconnecting…'; }
     draw(); timer = setTimeout(poll, document.hidden ? 2500 : 900);
   }
-  async function send(a) {
-    if (busy) return; busy = true;
-    try { const r = await call('act', { code, pid, ...a }); flash = r.error || ''; }
-    catch (e) { flash = 'Connection problem. Try again.'; }
+  async function send(a, answer) {
+    if (busy && !answer) return; busy = true;
+    try { const r = await call('act', { code, pid, ...a }); flash = r.error || ''; if (r.error && answer) pend = null; }
+    catch (e) { flash = 'Connection problem. Try again.'; if (answer) pend = null; }
     busy = false; draw();
   }
   function leave(msg) { clearTimeout(timer); code = null; V = null; if (!TV) { store.del('tdko-mp-code'); history.replaceState(null, '', '/multiplayer.html'); } home(msg); }
@@ -145,7 +146,7 @@
   }
 
   function fb(g) {
-    const mine = g.mine, rev = g.step === 'reveal';
+    const rev = g.step === 'reveal', mine = g.mine || (!rev && pend && pend.k === qkey() ? { o: pend.o } : null);
     const opts = g.o.map(o => { const cls = rev ? (o === g.right ? 'right' : (mine && mine.o === o ? 'wrong' : '')) : (mine && mine.o === o ? 'picked' : ''); return `<button class="opt ${cls}" data-a="fb" data-o="${esc(o)}" ${mine || rev || TV ? 'disabled' : ''}>${esc(o)}</button>`; }).join('');
     const status = rev ? (TV ? `${g.who.length} of ${V.players.length} got it` : (mine && mine.pts ? `<span class="ok">Right · +${mine.pts}</span>` : `<span class="bad">${mine && mine.o ? 'Wrong' : 'No answer'}</span>`))
       : (mine ? 'Locked in. Waiting for the others…' : `${cd(g.until)}s · ${g.answered} of ${V.players.length} answered`);
@@ -164,7 +165,7 @@
     return `<h2 class="q">${esc(g.q)}</h2><p class="note">${esc(g.note || '')} · ${found} of ${g.total} found</p>${rev ? '<p class="status">List over</p>' : turnBanner(g)}${g.myTurn && g.step === 'turn' ? inputBox('Name a player on the list') : ''}${slots}${log(g)}${scores(g)}`;
   }
   function rh(g) {
-    const rev = g.step === 'reveal', mine = g.myTurn && g.step === 'turn';
+    const rev = g.step === 'reveal', mine = g.myTurn && g.step === 'turn' && !(pend && pend.k === qkey());
     const card = g.cur ? `<div class="rh"><div class="rcard"><span class="eb">${esc(g.theme)}</span><h3>${esc(g.cur.n)}</h3><b>${esc(g.cur.v)}</b><small>${esc(g.unit)}</small></div>
       <div class="rcard next"><span class="eb">Next</span><h3>${g.next ? esc(g.next.n) : '…'}</h3><b>?</b><small>Higher or lower?</small></div></div>` : '';
     const btns = mine ? `<div class="hl"><button class="btn" data-a="rh" data-c="higher">▲ Higher</button><button class="btn" data-a="rh" data-c="lower">▼ Lower</button></div>` : '';
@@ -172,6 +173,10 @@
     return `${top}${card}${btns}${log(g)}${scores(g)}`;
   }
 
+  function countdown() {
+    const first = V.config.games[0];
+    return `<section class="kick"><span class="eb">Kick off in</span><b class="secs" data-until="${V.until}">${secs(V.until)}</b><h2>Game 1 · ${esc(GAMES[first.g])}</h2><p class="note">${esc(DESC[first.g])}</p></section>`;
+  }
   function between() {
     const last = V.results[V.results.length - 1], next = V.config.games[V.gi + 1];
     const rows = last ? standings(id => last.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="nm">${esc(s.name)}</span><span>${last.score[s.id] || 0}</span><b>+${last.places[s.id] || 0}</b></li>`).join('') : '';
@@ -197,6 +202,7 @@
     let html = '';
     if (V.phase === 'lobby') { lobby(); bind(); return; }
     if (V.phase === 'game' && V.game) { const g = V.game; html = gameHead(g) + ({ fb, wtb, cs, rh }[g.type])(g) + hostBar(); }
+    else if (V.phase === 'countdown') html = countdown();
     else if (V.phase === 'between') html = between();
     else if (V.phase === 'final') html = final();
     const focus = document.activeElement && document.activeElement.id === 'ai';
@@ -217,8 +223,9 @@
         if (a === 'kick') return send({ type: 'kick', pid: el.dataset.p });
         if (a === 'teamname') { const n = prompt('Team name', (V.teams.find(t => t.id === el.dataset.t) || {}).name || ''); if (n) send({ type: 'teamname', team: el.dataset.t, name: n }); return; }
         if (a === 'rename') { const n = prompt('Your name (2 to 16 letters)', (me() || {}).name || ''); if (n) send({ type: 'name', name: n }); return; }
-        if (a === 'fb') return send({ type: 'answer', o: el.dataset.o });
-        if (a === 'rh') return send({ type: 'answer', call: el.dataset.c });
+        // show the press straight away; the server confirms on the next reply
+        if (a === 'fb') { if (pend && pend.k === qkey()) return; pend = { k: qkey(), o: el.dataset.o }; app.querySelectorAll('.opt').forEach(b => { b.disabled = true; if (b === el) b.classList.add('picked'); }); const st = $('.status'); if (st) st.textContent = 'Locked in. Waiting for the others…'; return send({ type: 'answer', o: el.dataset.o }, true); }
+        if (a === 'rh') { if (pend && pend.k === qkey()) return; pend = { k: qkey(), o: el.dataset.c }; app.querySelectorAll('.hl .btn').forEach(b => { b.disabled = true; if (b === el) b.classList.add('picked'); }); return send({ type: 'answer', call: el.dataset.c }, true); }
         if (a === 'end' && !confirm('End the quiz now?')) return;
         send({ type: a });
       };
