@@ -12,14 +12,14 @@
   /* the server checks the code (/api/tester); the page never holds it. Same flag as gate.html */
   var FLAG='3', card=document.getElementById('tcard');
   var on=function(){ try{ return localStorage.getItem('tdko-tester')===FLAG; }catch(e){ return false; } };
-  var showOn=function(){ card.innerHTML='<p class="lede">You\'re in the Training Ground on this device.</p><a class="btn" href="./">Go to the Training Ground</a><p class="note">Use "Exit Training Ground" in the top bar to leave.</p>'; };
+  var showOn=function(){ card.innerHTML='<p class="lede">You\'re in the Training Ground on this device.</p><a class="btn" href="./">Go to the Training Ground</a><a class="btn" href="multiplayer.html" style="margin-top:8px">Multiplayer (test)</a><p class="note">Use "Exit Training Ground" in the top bar to leave.</p>'; };
   if(on()) return showOn();
   document.getElementById('tform').addEventListener('submit',function(e){ e.preventDefault();
     var v=document.getElementById('tcode').value.trim().toUpperCase(), m=document.getElementById('tmsg');
     m.textContent='Checking…'; m.style.color='';
-    fetch('/api/tester',{headers:{'x-tdko-tester':v}}).then(function(r){
+    fetch('/api/tester',{headers:{'x-tdko-tester':v}}).then(function(r){ return r.json().catch(function(){return {};}).then(function(j){ r.j=j; return r; }); }).then(function(r){
       if(!r.ok){ m.textContent="That code isn't right. Check it and try again."; m.style.color='var(--bad)'; return; }
-      try{ localStorage.setItem('tdko-tester',FLAG); }catch(_){ m.textContent='Your browser blocked this. Try turning off private browsing.'; return; }
+      try{ localStorage.setItem('tdko-tester',FLAG); if(r.j&&r.j.pass) localStorage.setItem('tdko-mp-pass',r.j.pass); }catch(_){ m.textContent='Your browser blocked this. Try turning off private browsing.'; return; }
       location.href='./'; }).catch(function(){ m.textContent='Could not check the code. Try again in a moment.'; m.style.color='var(--bad)'; });
   });
 })();

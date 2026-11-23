@@ -79,11 +79,19 @@
       return;
     }
     app.innerHTML = `<section class="hero"><span class="eb">Multiplayer</span><h1>Play <i>together</i></h1><p class="lede">Up to 6 players, each on their own phone. Host a quiz, share the code, kick off.</p></section>
-      <section class="card"><button class="btn big" id="host">Host a quiz</button></section>
+      <section class="card" id="hostcard"><button class="btn big" id="host">Host a quiz</button></section>
       <section class="card"><form id="jf" class="row"><input id="jc" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="CODE" aria-label="Room code"><button class="btn">Join</button></form></section>
       <p class="err">${esc(msg || '')}</p>
       <p class="note">Got a TV? Open <b>tdko.app/tv</b> on it and type the room code to show the quiz on the big screen.</p>`;
-    $('#host').onclick = async () => { const r = await call('create', { pid }); if (r.code) go(r.code); else home(r.error); };
+    const askPass = m => {
+      $('#hostcard').innerHTML = `<p class="lede">Multiplayer is in the Training Ground for now. Enter your Training Ground code to host. Anyone can join with a room code.</p>
+        <form id="pf" class="row"><input id="pc" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="TDKO-XXXXX" aria-label="Training Ground code"><button class="btn">Unlock</button></form><p class="err">${esc(m || '')}</p>`;
+      $('#pf').onsubmit = async e => { e.preventDefault();
+        try { const r = await fetch('/api/tester', { headers: { 'x-tdko-tester': $('#pc').value.trim().toUpperCase() } }); const j = await r.json();
+          if (!j.pass) return askPass("That code isn't right."); store.set('tdko-mp-pass', j.pass); store.set('tdko-tester', '3'); home(); } catch (_) { askPass('Could not check the code. Try again.'); } };
+    };
+    $('#host').onclick = async () => { const pass = store.get('tdko-mp-pass'); if (!pass) return askPass();
+      const r = await call('create', { pid, pass }); if (r.code) go(r.code); else if (r.needPass) { store.del('tdko-mp-pass'); askPass(r.error); } else home(r.error); };
     $('#jf').onsubmit = async e => { e.preventDefault(); const c = $('#jc').value.trim().toUpperCase(); if (!/^[A-Z]{4}$/.test(c)) return home('That code needs 4 letters.'); join(c); };
   }
   async function join(c, quiet) {
