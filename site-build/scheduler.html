@@ -21,7 +21,7 @@ h2{margin:0;font-size:16px;font-weight:800;text-transform:uppercase;letter-spaci
 .legend{display:flex;gap:8px 16px;flex-wrap:wrap;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .sq{display:inline-block;width:12px;height:12px;border-radius:2px}
-.s-done{background:var(--done)}.s-today{background:var(--today)}.s-ready{background:var(--ready)}.s-draft{background:var(--draft)}.s-none{background:var(--none)}.s-off{background:var(--off)}
+.s-done{background:var(--done)}.s-today{background:var(--today)}.s-ready{background:var(--ready)}.s-draft{background:var(--draft)}.s-none{background:var(--none)}.s-off{background:var(--off)}.s-paused{background:repeating-linear-gradient(45deg,var(--off) 0 3px,transparent 3px 6px);box-shadow:inset 0 0 0 1px var(--line)}
 /* grid */
 .gscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 table.grid{border-collapse:separate;border-spacing:2px;font-size:13px}
@@ -58,6 +58,7 @@ table.vol{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;
     <span><i class="sq s-draft"></i>In bank, not approved</span>
     <span><i class="sq s-none"></i>Nothing set up</span>
     <span><i class="sq s-off"></i>Game not live yet</span>
+    <span><i class="sq s-paused"></i>Game paused</span>
   </div>
   <div class="gscroll" id="gscroll"><table class="grid"><thead id="gh"></thead><tbody id="gb"><tr><td class="g">Loading…</td></tr></tbody></table></div>
   <div class="info" id="info" aria-live="polite">Tap a square for the details.</div>
@@ -78,7 +79,7 @@ table.vol{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;
   const pad=n=>String(n).padStart(2,'0');
   const WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
   const dm=d=>pad(d.getUTCDate())+'/'+pad(d.getUTCMonth()+1);
-  const LABEL={done:'Played',today:'In play today',ready:'Approved, ready',draft:'In bank, not approved',none:'Nothing set up',off:'Game not live yet'};
+  const LABEL={paused:'Game paused',done:'Played',today:'In play today',ready:'Approved, ready',draft:'In bank, not approved',none:'Nothing set up',off:'Game not live yet'};
   let k=''; try{ k=localStorage.getItem('tdko-stats-key')||''; }catch(e){}
   fetch('/api/scheduler',{headers:{'x-tdko-stats':k}}).then(r=>{
     if(r.status===401){ try{ localStorage.removeItem('tdko-stats-key'); }catch(e){} location.replace('stats-login.html?next=scheduler'); throw 0; }
@@ -97,6 +98,7 @@ table.vol{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;
       const first=Math.min(...Object.keys(g.days).map(Number).concat([1e9]));
       const x=g.days[no];
       if(no<first && no<=today) return 'off';
+      if(g.paused_from && date(no).toISOString().slice(0,10)>=g.paused_from) return 'paused';
       if(!x || x[0]<g.per_day) return 'none';
       if(x[1]>0) return 'draft';
       return no<today?'done':no===today?'today':'ready';
@@ -113,7 +115,7 @@ table.vol{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;
       const c=e.target.closest('td.c'); if(!c) return;
       document.querySelectorAll('td.c.sel').forEach(x=>x.classList.remove('sel')); c.classList.add('sel');
       const g=by[c.dataset.g], no=+c.dataset.n, d=date(no), x=g.days[no]||[0,0], s=state(g,no);
-      const set=s==='off'?'':` · ${x[0]} of ${g.per_day} set${x[1]?` (${x[1]} awaiting approval)`:''}`;
+      const set=(s==='off'||s==='paused')?'':` · ${x[0]} of ${g.per_day} set${x[1]?` (${x[1]} awaiting approval)`:''}`;
       $('info').textContent=`${g.name} · ${WD[d.getUTCDay()]} ${dm(d)} · No. ${no} · ${LABEL[s]}${set}`;
     });
     // start the calendar a few days before today
