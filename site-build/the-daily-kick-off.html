@@ -47,14 +47,18 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 .meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-variant-numeric:tabular-nums;white-space:nowrap}
 .eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
 
-.modes{display:none;grid-template-columns:1fr 1fr;gap:8px}
+.modes{display:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
 .tdko-test .modes{display:grid}
 .modes a{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none}
-.modes a b{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:22px;text-transform:uppercase;line-height:1}
+.modes a b{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:clamp(18px,5.2vw,22px);text-transform:uppercase;line-height:1}
 .modes a small{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;color:var(--muted)}
-.modes a.on{border-color:var(--accent);box-shadow:inset 0 -4px 0 var(--accent)}
-.modes a:not(.on):hover{border-color:var(--ink)}
-.modes a.mpmode{border-color:#1D4ED8;background:linear-gradient(160deg,#1D4ED8,#0B1638);color:#fff}.modes a.mpmode small{color:#C9D6FF}.modes a.mpmode:hover{border-color:#FFC83D}
+.modes a{position:relative}
+.modes a.dpmode{border-color:var(--accent);box-shadow:inset 0 -4px 0 var(--accent)}
+.modes a.mpmode{border-color:#1D4ED8;box-shadow:inset 0 -4px 0 #1D4ED8}
+:root[data-tdko="dark"] .modes a.mpmode{border-color:#4D8DFF;box-shadow:inset 0 -4px 0 #4D8DFF}
+.modes a.dpmode.on{background:color-mix(in oklab,var(--accent) 10%,var(--surface))}.modes .chev{display:inline-block;transition:transform .2s}.modes a.on .chev{transform:rotate(180deg)}
+.modes a:hover{filter:brightness(1.03)}
+.tdko-test .daily:not(.open){display:none}
 .hero{display:flex;flex-direction:column;gap:12px;padding-block:6px 2px}
 .hero h1{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(58px,18vw,104px);line-height:.84;margin:0;text-transform:uppercase;letter-spacing:-.01em}
 .hero h1 i{font-style:normal;color:var(--accent)}
@@ -162,8 +166,9 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
     <p class="lede"><span id="ng">Nine</span> puzzles on today's fixture list. Get them all to full time before the next round drops at midnight.</p>
   </section>
 
-  <nav class="modes" aria-label="Choose how to play"><a class="on" href="./" aria-current="page"><b>Daily Puzzles</b><small>New every midnight</small></a><a class="mpmode" href="multiplayer.html"><b>Multiplayer</b><small>Play with friends · TV ready</small></a></nav>
+  <nav class="modes" aria-label="Choose how to play"><a class="dpmode" id="dpBtn" href="#daily" aria-controls="daily" aria-expanded="false"><b>Daily Puzzles</b><small>New every midnight <span class="chev" aria-hidden="true">▾</span></small></a><a class="mpmode" href="multiplayer.html"><b>Multiplayer</b><small>Play with friends · TV ready</small></a></nav>
 
+  <div class="daily" id="daily">
   <section class="progress" aria-live="polite">
     <div class="bar" id="bar" aria-hidden="true"></div>
     <div class="row"><span class="eyebrow" id="count"></span><span class="eyebrow nx"><span id="hint"></span>New in <b id="cd">--:--:--</b></span></div>
@@ -172,6 +177,16 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
   <ol class="fixtures" id="fixtures"></ol>
 
   <div id="alldone"></div>
+  </div>
+<script>
+/* Training Ground: the day's games stay folded away until Daily Puzzles is tapped (remembered for this visit) */
+(function(){ var d=document.getElementById('daily'), b=document.getElementById('dpBtn'); if(!d||!b) return;
+  var set=function(o){ d.classList.toggle('open',o); b.classList.toggle('on',o); b.setAttribute('aria-expanded',o?'true':'false'); try{ sessionStorage.setItem('tdko-daily-open',o?'1':''); }catch(e){} };
+  var was=false; try{ was=sessionStorage.getItem('tdko-daily-open')==='1'; }catch(e){}
+  set(was || /^#c\d/.test(location.hash));
+  b.addEventListener('click',function(e){ e.preventDefault(); var o=!d.classList.contains('open'); set(o); if(o) d.scrollIntoView({behavior:'smooth',block:'start'}); });
+})();
+</script>
 
 </div>
 
