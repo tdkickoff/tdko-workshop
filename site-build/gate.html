@@ -1,0 +1,18 @@
+<!--tdko-gate-->
+<script>/* Gate: Training Ground (tester) mode.
+   Testers only ever get Test day: one fixed set of test puzzles (test-day.json, built in by build.py),
+   unlimited replays, and nothing saved to scores, streaks, times or the visit counters.
+   Unlock: the Training Ground page only (the code is checked by the server, /api/tester; it is never in the page). ?tester=off, or Exit Training Ground, locks the device again. */
+var TDKO_TEST_NO=14;
+(function(){var tester=false,FLAG='3';
+try{var q=location.search.match(/[?&]tester=([^&#]+)/);if(q){var v=decodeURIComponent(q[1]).toUpperCase();if(v==='OFF')localStorage.removeItem('tdko-tester');}
+tester=localStorage.getItem('tdko-tester')===FLAG;window.TDKO_TEST=tester;if(tester)document.documentElement.classList.add('tdko-test');}catch(e){window.TDKO_TEST=false;}})();
+function tdkoTestBox(){return '<section class="card replaybox"><div class="inner"><span class="eyebrow">Training Ground · doesn’t count</span><p>Same puzzle every time. Nothing here touches your scores, streaks or stats.</p><button class="btn ghost" type="button" data-replay>Play again</button></div></section>';}
+</script>
+<script>/* Share cards: Safari draws canvas text without the condensed font width, so long lines could run off the card.
+   Any line on a 1080px card that would pass the margin is squeezed to fit (the browser's own maxWidth). */
+(function(){try{var P=CanvasRenderingContext2D.prototype,f=P.fillText;P.fillText=function(t,x,y,m){
+  if(m===undefined&&this.canvas&&this.canvas.width>=1000){var a=this.textAlign,W=this.canvas.width,e=60,w=this.measureText(t).width,
+  max=(a==='right'||a==='end')?x-e:a==='center'?2*Math.min(x,W-x)-2*e:W-e-x; if(max>0&&w>max) return f.call(this,t,x,y,max);}
+  return f.apply(this,arguments);};}catch(e){}})();</script>
+<!--/tdko-gate-->

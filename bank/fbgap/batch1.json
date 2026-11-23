@@ -1,0 +1,5237 @@
+[
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1990,
+  "q": "Who won the 1990 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Crystal Palace",
+   "Sheffield Wednesday",
+   "Nottingham Forest"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 3–3 aet, replay 1–0 Crystal Palace"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1990,
+  "q": "Who did Manchester United beat in the 1990 FA Cup final?",
+  "a": "Crystal Palace",
+  "wrong": [
+   "Sheffield Wednesday",
+   "Sunderland",
+   "Nottingham Forest"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 3–3 aet, replay 1–0 Crystal Palace"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1990,
+  "q": "Who managed Manchester United to the 1990 FA Cup?",
+  "a": "Alex Ferguson",
+  "wrong": [
+   "George Graham",
+   "Graeme Souness",
+   "Joe Royle"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United manager: Alex Ferguson"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1991,
+  "q": "Who won the 1991 FA Cup final?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Nottingham Forest",
+   "Sunderland",
+   "Arsenal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Tottenham Hotspur 2–1 aet Nottingham Forest"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1991,
+  "q": "Who did Tottenham Hotspur beat in the 1991 FA Cup final?",
+  "a": "Nottingham Forest",
+  "wrong": [
+   "Crystal Palace",
+   "Manchester United",
+   "Sheffield Wednesday"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Tottenham Hotspur 2–1 aet Nottingham Forest"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1991,
+  "q": "Who managed Tottenham Hotspur to the 1991 FA Cup?",
+  "a": "Terry Venables",
+  "wrong": [
+   "George Graham",
+   "Ruud Gullit",
+   "Alex Ferguson"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Tottenham Hotspur manager: Terry Venables"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1992,
+  "q": "Who won the 1992 FA Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Sunderland",
+   "Tottenham Hotspur",
+   "Crystal Palace"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool 2–0 Sunderland"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1992,
+  "q": "Who did Liverpool beat in the 1992 FA Cup final?",
+  "a": "Sunderland",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Manchester United",
+   "Sheffield Wednesday"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool 2–0 Sunderland"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1992,
+  "q": "Who managed Liverpool to the 1992 FA Cup?",
+  "a": "Graeme Souness",
+  "wrong": [
+   "Terry Venables",
+   "Alex Ferguson",
+   "Joe Royle"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool manager: Graeme Souness"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1993,
+  "q": "Who won the 1993 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Sheffield Wednesday",
+   "Sunderland",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 1–1 aet, replay 2–1 aet Sheffield Wednesday"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1993,
+  "q": "Who did Arsenal beat in the 1993 FA Cup final?",
+  "a": "Sheffield Wednesday",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Liverpool",
+   "Chelsea"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 1–1 aet, replay 2–1 aet Sheffield Wednesday"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1993,
+  "q": "Who managed Arsenal to the 1993 FA Cup?",
+  "a": "George Graham",
+  "wrong": [
+   "Joe Royle",
+   "Alex Ferguson",
+   "Ruud Gullit"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: George Graham"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1994,
+  "q": "Who won the 1994 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Chelsea",
+   "Arsenal",
+   "Everton"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 4–0 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1994,
+  "q": "Who did Manchester United beat in the 1994 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Arsenal",
+   "Liverpool"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 4–0 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1994,
+  "q": "Who managed Manchester United to the 1994 FA Cup?",
+  "a": "Alex Ferguson",
+  "wrong": [
+   "Ruud Gullit",
+   "Joe Royle",
+   "Terry Venables"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United manager: Alex Ferguson"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1995,
+  "q": "Who won the 1995 FA Cup final?",
+  "a": "Everton",
+  "wrong": [
+   "Manchester United",
+   "Arsenal",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Everton 1–0 Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1995,
+  "q": "Who did Everton beat in the 1995 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Liverpool",
+   "Sheffield Wednesday",
+   "Sunderland"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Everton 1–0 Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1995,
+  "q": "Who managed Everton to the 1995 FA Cup?",
+  "a": "Joe Royle",
+  "wrong": [
+   "George Graham",
+   "Arsène Wenger",
+   "Graeme Souness"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Everton manager: Joe Royle"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1996,
+  "q": "Who won the 1996 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Liverpool",
+   "Chelsea",
+   "Middlesbrough"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 1–0 Liverpool"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1996,
+  "q": "Who did Manchester United beat in the 1996 FA Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Chelsea",
+   "Newcastle United",
+   "Everton"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 1–0 Liverpool"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1996,
+  "q": "Who managed Manchester United to the 1996 FA Cup?",
+  "a": "Alex Ferguson",
+  "wrong": [
+   "Graeme Souness",
+   "Arsène Wenger",
+   "George Graham"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United manager: Alex Ferguson"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1997,
+  "q": "Who won the 1997 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Middlesbrough",
+   "Newcastle United",
+   "Arsenal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 2–0 Middlesbrough"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1997,
+  "q": "Who did Chelsea beat in the 1997 FA Cup final?",
+  "a": "Middlesbrough",
+  "wrong": [
+   "Everton",
+   "Arsenal",
+   "Aston Villa"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 2–0 Middlesbrough"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1997,
+  "q": "Who managed Chelsea to the 1997 FA Cup?",
+  "a": "Ruud Gullit",
+  "wrong": [
+   "Joe Royle",
+   "Alex Ferguson",
+   "Gianluca Vialli"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea manager: Ruud Gullit"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1998,
+  "q": "Who won the 1998 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Newcastle United",
+   "Liverpool",
+   "Middlesbrough"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 2–0 Newcastle United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1998,
+  "q": "Who did Arsenal beat in the 1998 FA Cup final?",
+  "a": "Newcastle United",
+  "wrong": [
+   "Everton",
+   "Aston Villa",
+   "Chelsea"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 2–0 Newcastle United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1998,
+  "q": "Who managed Arsenal to the 1998 FA Cup?",
+  "a": "Arsène Wenger",
+  "wrong": [
+   "Alex Ferguson",
+   "Ruud Gullit",
+   "Gérard Houllier"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: Arsène Wenger"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 1999,
+  "q": "Who won the 1999 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Newcastle United",
+   "Everton",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 2–0 Newcastle United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 1999,
+  "q": "Who did Manchester United beat in the 1999 FA Cup final?",
+  "a": "Newcastle United",
+  "wrong": [
+   "Aston Villa",
+   "Chelsea",
+   "Arsenal"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 2–0 Newcastle United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 1999,
+  "q": "Who managed Manchester United to the 1999 FA Cup?",
+  "a": "Alex Ferguson",
+  "wrong": [
+   "Joe Royle",
+   "Ruud Gullit",
+   "Arsène Wenger"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United manager: Alex Ferguson"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2000,
+  "q": "Who won the 2000 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Aston Villa",
+   "Southampton",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 1–0 Aston Villa"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2000,
+  "q": "Who did Chelsea beat in the 2000 FA Cup final?",
+  "a": "Aston Villa",
+  "wrong": [
+   "Southampton",
+   "Middlesbrough",
+   "Manchester United"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 1–0 Aston Villa"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2000,
+  "q": "Who managed Chelsea to the 2000 FA Cup?",
+  "a": "Gianluca Vialli",
+  "wrong": [
+   "Arsène Wenger",
+   "Alex Ferguson",
+   "Ruud Gullit"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea manager: Gianluca Vialli"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2001,
+  "q": "Who won the 2001 FA Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Arsenal",
+   "Aston Villa",
+   "Newcastle United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool 2–1 Arsenal"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2001,
+  "q": "Who did Liverpool beat in the 2001 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Southampton",
+   "Aston Villa",
+   "Manchester United"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool 2–1 Arsenal"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2001,
+  "q": "Who managed Liverpool to the 2001 FA Cup?",
+  "a": "Gérard Houllier",
+  "wrong": [
+   "Rafael Benítez",
+   "Arsène Wenger",
+   "Ruud Gullit"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool manager: Gérard Houllier"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "venue",
+  "year": 2001,
+  "q": "Where was the 2001 FA Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2002,
+  "q": "Who won the 2002 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Chelsea",
+   "Manchester United",
+   "Millwall"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 2–0 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2002,
+  "q": "Who did Arsenal beat in the 2002 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "Liverpool",
+   "Aston Villa"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 2–0 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2002,
+  "q": "Who managed Arsenal to the 2002 FA Cup?",
+  "a": "Arsène Wenger",
+  "wrong": [
+   "Ruud Gullit",
+   "Rafael Benítez",
+   "Gianluca Vialli"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: Arsène Wenger"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "venue",
+  "year": 2002,
+  "q": "Where was the 2002 FA Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2003,
+  "q": "Who won the 2003 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Southampton",
+   "Aston Villa",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 1–0 Southampton"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2003,
+  "q": "Who did Arsenal beat in the 2003 FA Cup final?",
+  "a": "Southampton",
+  "wrong": [
+   "Chelsea",
+   "West Ham United",
+   "Aston Villa"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 1–0 Southampton"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2003,
+  "q": "Who managed Arsenal to the 2003 FA Cup?",
+  "a": "Arsène Wenger",
+  "wrong": [
+   "Alex Ferguson",
+   "José Mourinho",
+   "Gérard Houllier"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: Arsène Wenger"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "venue",
+  "year": 2003,
+  "q": "Where was the 2003 FA Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2004,
+  "q": "Who won the 2004 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Millwall",
+   "Liverpool",
+   "West Ham United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 3–0 Millwall"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2004,
+  "q": "Who did Manchester United beat in the 2004 FA Cup final?",
+  "a": "Millwall",
+  "wrong": [
+   "Southampton",
+   "West Ham United",
+   "Liverpool"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 3–0 Millwall"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2004,
+  "q": "Who managed Manchester United to the 2004 FA Cup?",
+  "a": "Alex Ferguson",
+  "wrong": [
+   "Gérard Houllier",
+   "José Mourinho",
+   "Arsène Wenger"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United manager: Alex Ferguson"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "venue",
+  "year": 2004,
+  "q": "Where was the 2004 FA Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2005,
+  "q": "Who won the 2005 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Manchester United",
+   "Chelsea",
+   "Southampton"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 0–0 aet, 5–4 pens Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2005,
+  "q": "Who did Arsenal beat in the 2005 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Chelsea",
+   "Millwall",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 0–0 aet, 5–4 pens Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2005,
+  "q": "Who managed Arsenal to the 2005 FA Cup?",
+  "a": "Arsène Wenger",
+  "wrong": [
+   "Harry Redknapp",
+   "Rafael Benítez",
+   "Alex Ferguson"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: Arsène Wenger"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "venue",
+  "year": 2005,
+  "q": "Where was the 2005 FA Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2006,
+  "q": "Who won the 2006 FA Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "West Ham United",
+   "Millwall",
+   "Arsenal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool 3–3 aet, 3–1 pens West Ham United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2006,
+  "q": "Who did Liverpool beat in the 2006 FA Cup final?",
+  "a": "West Ham United",
+  "wrong": [
+   "Cardiff City",
+   "Portsmouth",
+   "Arsenal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool 3–3 aet, 3–1 pens West Ham United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2006,
+  "q": "Who managed Liverpool to the 2006 FA Cup?",
+  "a": "Rafael Benítez",
+  "wrong": [
+   "Arsène Wenger",
+   "Alex Ferguson",
+   "Harry Redknapp"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool manager: Rafael Benítez"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "venue",
+  "year": 2006,
+  "q": "Where was the 2006 FA Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2007,
+  "q": "Who won the 2007 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "West Ham United",
+   "Portsmouth"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 1–0 aet Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2007,
+  "q": "Who did Chelsea beat in the 2007 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Liverpool",
+   "West Ham United",
+   "Everton"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 1–0 aet Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2007,
+  "q": "Who managed Chelsea to the 2007 FA Cup?",
+  "a": "José Mourinho",
+  "wrong": [
+   "Arsène Wenger",
+   "Rafael Benítez",
+   "Guus Hiddink"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea manager: José Mourinho"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2008,
+  "q": "Who did Portsmouth beat in the 2008 FA Cup final?",
+  "a": "Cardiff City",
+  "wrong": [
+   "Manchester United",
+   "Arsenal",
+   "West Ham United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Portsmouth 1–0 Cardiff City"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2008,
+  "q": "Who managed Portsmouth to the 2008 FA Cup?",
+  "a": "Harry Redknapp",
+  "wrong": [
+   "Rafael Benítez",
+   "Arsène Wenger",
+   "José Mourinho"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Portsmouth manager: Harry Redknapp"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2009,
+  "q": "Who won the 2009 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Everton",
+   "Portsmouth",
+   "Manchester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 2–1 Everton"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2009,
+  "q": "Who did Chelsea beat in the 2009 FA Cup final?",
+  "a": "Everton",
+  "wrong": [
+   "Stoke City",
+   "Manchester City",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 2–1 Everton"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2009,
+  "q": "Who managed Chelsea to the 2009 FA Cup?",
+  "a": "Guus Hiddink",
+  "wrong": [
+   "Carlo Ancelotti",
+   "Roberto Mancini",
+   "Rafael Benítez"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea manager: Guus Hiddink"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2010,
+  "q": "Who won the 2010 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Portsmouth",
+   "Everton",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 1–0 Portsmouth"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2010,
+  "q": "Who did Chelsea beat in the 2010 FA Cup final?",
+  "a": "Portsmouth",
+  "wrong": [
+   "Manchester United",
+   "Cardiff City",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 1–0 Portsmouth"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2010,
+  "q": "Who managed Chelsea to the 2010 FA Cup?",
+  "a": "Carlo Ancelotti",
+  "wrong": [
+   "Harry Redknapp",
+   "Roberto Mancini",
+   "José Mourinho"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea manager: Carlo Ancelotti"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2011,
+  "q": "Who won the 2011 FA Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Stoke City",
+   "Wigan Athletic",
+   "Portsmouth"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City 1–0 Stoke City"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2011,
+  "q": "Who did Manchester City beat in the 2011 FA Cup final?",
+  "a": "Stoke City",
+  "wrong": [
+   "Cardiff City",
+   "Everton",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City 1–0 Stoke City"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2011,
+  "q": "Who managed Manchester City to the 2011 FA Cup?",
+  "a": "Roberto Mancini",
+  "wrong": [
+   "Roberto Di Matteo",
+   "Carlo Ancelotti",
+   "Roberto Martínez"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City manager: Roberto Mancini"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2012,
+  "q": "Who won the 2012 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Liverpool",
+   "Portsmouth",
+   "Wigan Athletic"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 2–1 Liverpool"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2012,
+  "q": "Who did Chelsea beat in the 2012 FA Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Stoke City",
+   "Arsenal",
+   "Portsmouth"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 2–1 Liverpool"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2012,
+  "q": "Who managed Chelsea to the 2012 FA Cup?",
+  "a": "Roberto Di Matteo",
+  "wrong": [
+   "Roberto Mancini",
+   "Carlo Ancelotti",
+   "Guus Hiddink"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea manager: Roberto Di Matteo"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2013,
+  "q": "Who did Wigan Athletic beat in the 2013 FA Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Hull City",
+   "Aston Villa",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Wigan Athletic 1–0 Manchester City"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2013,
+  "q": "Who managed Wigan Athletic to the 2013 FA Cup?",
+  "a": "Roberto Martínez",
+  "wrong": [
+   "Roberto Di Matteo",
+   "Roberto Mancini",
+   "Louis van Gaal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Wigan Athletic manager: Roberto Martínez"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2014,
+  "q": "Who won the 2014 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Hull City",
+   "Manchester City",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 3–2 aet Hull City"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2014,
+  "q": "Who did Arsenal beat in the 2014 FA Cup final?",
+  "a": "Hull City",
+  "wrong": [
+   "Manchester United",
+   "Wigan Athletic",
+   "Aston Villa"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 3–2 aet Hull City"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2014,
+  "q": "Who managed Arsenal to the 2014 FA Cup?",
+  "a": "Arsène Wenger",
+  "wrong": [
+   "Roberto Di Matteo",
+   "Roberto Mancini",
+   "Carlo Ancelotti"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: Arsène Wenger"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2015,
+  "q": "Who won the 2015 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Aston Villa",
+   "Wigan Athletic",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 4–0 Aston Villa"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2015,
+  "q": "Who did Arsenal beat in the 2015 FA Cup final?",
+  "a": "Aston Villa",
+  "wrong": [
+   "Chelsea",
+   "Manchester United",
+   "Crystal Palace"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 4–0 Aston Villa"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2015,
+  "q": "Who managed Arsenal to the 2015 FA Cup?",
+  "a": "Arsène Wenger",
+  "wrong": [
+   "Roberto Mancini",
+   "Antonio Conte",
+   "Roberto Di Matteo"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: Arsène Wenger"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2016,
+  "q": "Who won the 2016 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Crystal Palace",
+   "Hull City",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 2–1 aet Crystal Palace"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2016,
+  "q": "Who did Manchester United beat in the 2016 FA Cup final?",
+  "a": "Crystal Palace",
+  "wrong": [
+   "Manchester City",
+   "Chelsea",
+   "Hull City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 2–1 aet Crystal Palace"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2016,
+  "q": "Who managed Manchester United to the 2016 FA Cup?",
+  "a": "Louis van Gaal",
+  "wrong": [
+   "Antonio Conte",
+   "Arsène Wenger",
+   "Pep Guardiola"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United manager: Louis van Gaal"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2017,
+  "q": "Who won the 2017 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Chelsea",
+   "Manchester City",
+   "Aston Villa"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 2–1 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2017,
+  "q": "Who did Arsenal beat in the 2017 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester City",
+   "Aston Villa",
+   "Hull City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 2–1 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2017,
+  "q": "Who managed Arsenal to the 2017 FA Cup?",
+  "a": "Arsène Wenger",
+  "wrong": [
+   "Mikel Arteta",
+   "Roberto Martínez",
+   "Louis van Gaal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: Arsène Wenger"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2018,
+  "q": "Who won the 2018 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "Aston Villa",
+   "Watford"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 1–0 Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2018,
+  "q": "Who did Chelsea beat in the 2018 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Leicester City",
+   "Watford",
+   "Aston Villa"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea 1–0 Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2018,
+  "q": "Who managed Chelsea to the 2018 FA Cup?",
+  "a": "Antonio Conte",
+  "wrong": [
+   "Arsène Wenger",
+   "Pep Guardiola",
+   "Brendan Rodgers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Chelsea manager: Antonio Conte"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2019,
+  "q": "Who won the 2019 FA Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Watford",
+   "Chelsea",
+   "Leicester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City 6–0 Watford"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2019,
+  "q": "Who did Manchester City beat in the 2019 FA Cup final?",
+  "a": "Watford",
+  "wrong": [
+   "Manchester United",
+   "Crystal Palace",
+   "Leicester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City 6–0 Watford"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2019,
+  "q": "Who managed Manchester City to the 2019 FA Cup?",
+  "a": "Pep Guardiola",
+  "wrong": [
+   "Brendan Rodgers",
+   "Louis van Gaal",
+   "Arsène Wenger"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City manager: Pep Guardiola"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2020,
+  "q": "Who won the 2020 FA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Chelsea",
+   "Liverpool",
+   "Crystal Palace"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 2–1 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2020,
+  "q": "Who did Arsenal beat in the 2020 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "Leicester City",
+   "Crystal Palace"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal 2–1 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2020,
+  "q": "Who managed Arsenal to the 2020 FA Cup?",
+  "a": "Mikel Arteta",
+  "wrong": [
+   "Jürgen Klopp",
+   "Arsène Wenger",
+   "Antonio Conte"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Arsenal manager: Mikel Arteta"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2021,
+  "q": "Who won the 2021 FA Cup final?",
+  "a": "Leicester City",
+  "wrong": [
+   "Chelsea",
+   "Manchester United",
+   "Manchester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Leicester City 1–0 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2021,
+  "q": "Who did Leicester City beat in the 2021 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "Crystal Palace",
+   "Watford"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Leicester City 1–0 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2021,
+  "q": "Who managed Leicester City to the 2021 FA Cup?",
+  "a": "Brendan Rodgers",
+  "wrong": [
+   "Mikel Arteta",
+   "Jürgen Klopp",
+   "Pep Guardiola"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Leicester City manager: Brendan Rodgers"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2022,
+  "q": "Who won the 2022 FA Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Chelsea",
+   "Leicester City",
+   "Watford"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool 0–0 aet, 6–5 pens Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2022,
+  "q": "Who did Liverpool beat in the 2022 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Arsenal",
+   "Manchester United",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool 0–0 aet, 6–5 pens Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2022,
+  "q": "Who managed Liverpool to the 2022 FA Cup?",
+  "a": "Jürgen Klopp",
+  "wrong": [
+   "Oliver Glasner",
+   "Pep Guardiola",
+   "Brendan Rodgers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Liverpool manager: Jürgen Klopp"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2023,
+  "q": "Who did Manchester City beat in the 2023 FA Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Arsenal",
+   "Leicester City",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City 2–1 Manchester United"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2023,
+  "q": "Who managed Manchester City to the 2023 FA Cup?",
+  "a": "Pep Guardiola",
+  "wrong": [
+   "Jürgen Klopp",
+   "Erik ten Hag",
+   "Mikel Arteta"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City manager: Pep Guardiola"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2024,
+  "q": "Who did Manchester United beat in the 2024 FA Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Liverpool",
+   "Leicester City",
+   "Watford"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United 2–1 Manchester City"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2024,
+  "q": "Who managed Manchester United to the 2024 FA Cup?",
+  "a": "Erik ten Hag",
+  "wrong": [
+   "Jürgen Klopp",
+   "Pep Guardiola",
+   "Brendan Rodgers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester United manager: Erik ten Hag"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2025,
+  "q": "Who did Crystal Palace beat in the 2025 FA Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Liverpool",
+   "Leicester City",
+   "Arsenal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Crystal Palace 1–0 Manchester City"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2025,
+  "q": "Who managed Crystal Palace to the 2025 FA Cup?",
+  "a": "Oliver Glasner",
+  "wrong": [
+   "Pep Guardiola",
+   "Mikel Arteta",
+   "Erik ten Hag"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Crystal Palace manager: Oliver Glasner"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "winner",
+  "year": 2026,
+  "q": "Who won the 2026 FA Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Chelsea",
+   "Watford",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City 1–0 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "runner-up",
+  "year": 2026,
+  "q": "Who did Manchester City beat in the 2026 FA Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "Watford",
+   "Arsenal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City 1–0 Chelsea"
+ },
+ {
+  "comp": "FA Cup",
+  "kind": "manager",
+  "year": 2026,
+  "q": "Who managed Manchester City to the 2026 FA Cup?",
+  "a": "Pep Guardiola",
+  "wrong": [
+   "Oliver Glasner",
+   "Jürgen Klopp",
+   "Brendan Rodgers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FA_Cup_finals",
+  "note": "Manchester City manager: Pep Guardiola"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1990,
+  "q": "Who won the 1990 League Cup final?",
+  "a": "Nottingham Forest",
+  "wrong": [
+   "Oldham Athletic",
+   "Sheffield Wednesday",
+   "Bolton Wanderers"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Nottingham Forest 1–0 Oldham Athletic"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1990,
+  "q": "Who did Nottingham Forest beat in the 1990 League Cup final?",
+  "a": "Oldham Athletic",
+  "wrong": [
+   "Manchester United",
+   "Liverpool",
+   "Arsenal"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Nottingham Forest 1–0 Oldham Athletic"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1991,
+  "q": "Who won the 1991 League Cup final?",
+  "a": "Sheffield Wednesday",
+  "wrong": [
+   "Manchester United",
+   "Aston Villa",
+   "Oldham Athletic"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Sheffield Wednesday 1–0 Manchester United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1991,
+  "q": "Who did Sheffield Wednesday beat in the 1991 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Bolton Wanderers",
+   "Aston Villa",
+   "Arsenal"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Sheffield Wednesday 1–0 Manchester United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1992,
+  "q": "Who won the 1992 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Nottingham Forest",
+   "Bolton Wanderers",
+   "Aston Villa"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 1–0 Nottingham Forest"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1992,
+  "q": "Who did Manchester United beat in the 1992 League Cup final?",
+  "a": "Nottingham Forest",
+  "wrong": [
+   "Sheffield Wednesday",
+   "Bolton Wanderers",
+   "Aston Villa"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 1–0 Nottingham Forest"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1993,
+  "q": "Who won the 1993 League Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Sheffield Wednesday",
+   "Bolton Wanderers",
+   "Nottingham Forest"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Arsenal 2–1 Sheffield Wednesday"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1993,
+  "q": "Who did Arsenal beat in the 1993 League Cup final?",
+  "a": "Sheffield Wednesday",
+  "wrong": [
+   "Bolton Wanderers",
+   "Nottingham Forest",
+   "Aston Villa"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Arsenal 2–1 Sheffield Wednesday"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1994,
+  "q": "Who won the 1994 League Cup final?",
+  "a": "Aston Villa",
+  "wrong": [
+   "Manchester United",
+   "Bolton Wanderers",
+   "Sheffield Wednesday"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Aston Villa 3–1 Manchester United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1994,
+  "q": "Who did Aston Villa beat in the 1994 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Nottingham Forest",
+   "Arsenal",
+   "Sheffield Wednesday"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Aston Villa 3–1 Manchester United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1995,
+  "q": "Who won the 1995 League Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Bolton Wanderers",
+   "Manchester United",
+   "Leicester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 2–1 Bolton Wanderers"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1995,
+  "q": "Who did Liverpool beat in the 1995 League Cup final?",
+  "a": "Bolton Wanderers",
+  "wrong": [
+   "Leeds United",
+   "Sheffield Wednesday",
+   "Manchester United"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 2–1 Bolton Wanderers"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1996,
+  "q": "Who won the 1996 League Cup final?",
+  "a": "Aston Villa",
+  "wrong": [
+   "Leeds United",
+   "Middlesbrough",
+   "Bolton Wanderers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Aston Villa 3–0 Leeds United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1996,
+  "q": "Who did Aston Villa beat in the 1996 League Cup final?",
+  "a": "Leeds United",
+  "wrong": [
+   "Liverpool",
+   "Middlesbrough",
+   "Chelsea"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Aston Villa 3–0 Leeds United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1997,
+  "q": "Who did Leicester City beat in the 1997 League Cup final?",
+  "a": "Middlesbrough",
+  "wrong": [
+   "Leeds United",
+   "Chelsea",
+   "Bolton Wanderers"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Leicester City 1–1, replay 1–0 aet Middlesbrough"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1998,
+  "q": "Who won the 1998 League Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Middlesbrough",
+   "Tranmere Rovers",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Chelsea 2–0 aet Middlesbrough"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1998,
+  "q": "Who did Chelsea beat in the 1998 League Cup final?",
+  "a": "Middlesbrough",
+  "wrong": [
+   "Liverpool",
+   "Leeds United",
+   "Tranmere Rovers"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Chelsea 2–0 aet Middlesbrough"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 1999,
+  "q": "Who won the 1999 League Cup final?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Leicester City",
+   "Tranmere Rovers",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Tottenham Hotspur 1–0 Leicester City"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 1999,
+  "q": "Who did Tottenham Hotspur beat in the 1999 League Cup final?",
+  "a": "Leicester City",
+  "wrong": [
+   "Tranmere Rovers",
+   "Liverpool",
+   "Middlesbrough"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Tottenham Hotspur 1–0 Leicester City"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2000,
+  "q": "Who won the 2000 League Cup final?",
+  "a": "Leicester City",
+  "wrong": [
+   "Tranmere Rovers",
+   "Tottenham Hotspur",
+   "Middlesbrough"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Leicester City 2–1 Tranmere Rovers"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2000,
+  "q": "Who did Leicester City beat in the 2000 League Cup final?",
+  "a": "Tranmere Rovers",
+  "wrong": [
+   "Chelsea",
+   "Tottenham Hotspur",
+   "Middlesbrough"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Leicester City 2–1 Tranmere Rovers"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2001,
+  "q": "Who won the 2001 League Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Birmingham City",
+   "Leicester City",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 1–1, 5–4 pens Birmingham City"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2001,
+  "q": "Who did Liverpool beat in the 2001 League Cup final?",
+  "a": "Birmingham City",
+  "wrong": [
+   "Chelsea",
+   "Leicester City",
+   "Manchester United"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 1–1, 5–4 pens Birmingham City"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "venue",
+  "year": 2001,
+  "q": "Where was the 2001 League Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2002,
+  "q": "Who did Blackburn Rovers beat in the 2002 League Cup final?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Middlesbrough",
+   "Birmingham City",
+   "Manchester United"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Blackburn Rovers 2–1 Tottenham Hotspur"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "venue",
+  "year": 2002,
+  "q": "Where was the 2002 League Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2003,
+  "q": "Who won the 2003 League Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Manchester United",
+   "Bolton Wanderers",
+   "Middlesbrough"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 2–0 Manchester United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2003,
+  "q": "Who did Liverpool beat in the 2003 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Chelsea",
+   "Birmingham City",
+   "Bolton Wanderers"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 2–0 Manchester United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "venue",
+  "year": 2003,
+  "q": "Where was the 2003 League Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2004,
+  "q": "Who did Middlesbrough beat in the 2004 League Cup final?",
+  "a": "Bolton Wanderers",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Wigan Athletic",
+   "Chelsea"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Middlesbrough 2–1 Bolton Wanderers"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "venue",
+  "year": 2004,
+  "q": "Where was the 2004 League Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2005,
+  "q": "Who won the 2005 League Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Liverpool",
+   "Manchester United",
+   "Middlesbrough"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Chelsea 3–2 aet Liverpool"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2005,
+  "q": "Who did Chelsea beat in the 2005 League Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Arsenal",
+   "Blackburn Rovers",
+   "Bolton Wanderers"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Chelsea 3–2 aet Liverpool"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "venue",
+  "year": 2005,
+  "q": "Where was the 2005 League Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2006,
+  "q": "Who won the 2006 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Wigan Athletic",
+   "Arsenal",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 4–0 Wigan Athletic"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2006,
+  "q": "Who did Manchester United beat in the 2006 League Cup final?",
+  "a": "Wigan Athletic",
+  "wrong": [
+   "Bolton Wanderers",
+   "Chelsea",
+   "Arsenal"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 4–0 Wigan Athletic"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "venue",
+  "year": 2006,
+  "q": "Where was the 2006 League Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2007,
+  "q": "Who won the 2007 League Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Arsenal",
+   "Middlesbrough",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Chelsea 2–1 Arsenal"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2007,
+  "q": "Who did Chelsea beat in the 2007 League Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Manchester United",
+   "Bolton Wanderers",
+   "Liverpool"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Chelsea 2–1 Arsenal"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "venue",
+  "year": 2007,
+  "q": "Where was the 2007 League Cup final played?",
+  "a": "Millennium Stadium",
+  "wrong": [
+   "Wembley Stadium",
+   "Old Trafford",
+   "Villa Park"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Played in Cardiff while Wembley was rebuilt (2001-2006/07)"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2008,
+  "q": "Who won the 2008 League Cup final?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Chelsea",
+   "Arsenal",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Tottenham Hotspur 2–1 aet Chelsea"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2008,
+  "q": "Who did Tottenham Hotspur beat in the 2008 League Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Aston Villa",
+   "Arsenal",
+   "Manchester United"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Tottenham Hotspur 2–1 aet Chelsea"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2009,
+  "q": "Who won the 2009 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Wigan Athletic",
+   "Aston Villa"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 0–0, 4–1 pens Tottenham Hotspur"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2009,
+  "q": "Who did Manchester United beat in the 2009 League Cup final?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Chelsea",
+   "Birmingham City",
+   "Arsenal"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 0–0, 4–1 pens Tottenham Hotspur"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2010,
+  "q": "Who won the 2010 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Aston Villa",
+   "Tottenham Hotspur",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 2–1 Aston Villa"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2010,
+  "q": "Who did Manchester United beat in the 2010 League Cup final?",
+  "a": "Aston Villa",
+  "wrong": [
+   "Birmingham City",
+   "Cardiff City",
+   "Tottenham Hotspur"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 2–1 Aston Villa"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2011,
+  "q": "Who did Birmingham City beat in the 2011 League Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Swansea City",
+   "Liverpool",
+   "Tottenham Hotspur"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Birmingham City 2–1 Arsenal"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2012,
+  "q": "Who won the 2012 League Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Cardiff City",
+   "Birmingham City",
+   "Swansea City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 2–2, 3–2 pens Cardiff City"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2012,
+  "q": "Who did Liverpool beat in the 2012 League Cup final?",
+  "a": "Cardiff City",
+  "wrong": [
+   "Manchester United",
+   "Arsenal",
+   "Birmingham City"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 2–2, 3–2 pens Cardiff City"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2013,
+  "q": "Who did Swansea City beat in the 2013 League Cup final?",
+  "a": "Bradford City",
+  "wrong": [
+   "Sunderland",
+   "Birmingham City",
+   "Cardiff City"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Swansea City 5–0 Bradford City"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2014,
+  "q": "Who won the 2014 League Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Sunderland",
+   "Liverpool",
+   "Bradford City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 3–1 Sunderland"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2014,
+  "q": "Who did Manchester City beat in the 2014 League Cup final?",
+  "a": "Sunderland",
+  "wrong": [
+   "Bradford City",
+   "Swansea City",
+   "Chelsea"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 3–1 Sunderland"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2015,
+  "q": "Who won the 2015 League Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Manchester City",
+   "Liverpool"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Chelsea 2–0 Tottenham Hotspur"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2015,
+  "q": "Who did Chelsea beat in the 2015 League Cup final?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Liverpool",
+   "Bradford City",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Chelsea 2–0 Tottenham Hotspur"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2016,
+  "q": "Who won the 2016 League Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Liverpool",
+   "Sunderland",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 1–1, 3–1 pens Liverpool"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2016,
+  "q": "Who did Manchester City beat in the 2016 League Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Chelsea",
+   "Tottenham Hotspur",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 1–1, 3–1 pens Liverpool"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2017,
+  "q": "Who won the 2017 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Southampton",
+   "Chelsea",
+   "Sunderland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 3–2 Southampton"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2017,
+  "q": "Who did Manchester United beat in the 2017 League Cup final?",
+  "a": "Southampton",
+  "wrong": [
+   "Liverpool",
+   "Sunderland",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 3–2 Southampton"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2018,
+  "q": "Who did Manchester City beat in the 2018 League Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Chelsea",
+   "Southampton",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 3–0 Arsenal"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2019,
+  "q": "Who won the 2019 League Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Chelsea",
+   "Aston Villa",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 0–0, 4–3 pens Chelsea"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2019,
+  "q": "Who did Manchester City beat in the 2019 League Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Manchester United",
+   "Arsenal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 0–0, 4–3 pens Chelsea"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2020,
+  "q": "Who won the 2020 League Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Aston Villa",
+   "Arsenal",
+   "Southampton"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 2–1 Aston Villa"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2020,
+  "q": "Who did Manchester City beat in the 2020 League Cup final?",
+  "a": "Aston Villa",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Liverpool",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 2–1 Aston Villa"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2021,
+  "q": "Who won the 2021 League Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Manchester United",
+   "Arsenal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 1–0 Tottenham Hotspur"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2021,
+  "q": "Who did Manchester City beat in the 2021 League Cup final?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Newcastle United",
+   "Manchester United",
+   "Arsenal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 1–0 Tottenham Hotspur"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2022,
+  "q": "Who did Liverpool beat in the 2022 League Cup final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Arsenal",
+   "Newcastle United",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 0–0, 11–10 pens Chelsea"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2023,
+  "q": "Who won the 2023 League Cup final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Newcastle United",
+   "Liverpool",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester United 2–0 Newcastle United"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2024,
+  "q": "Who won the 2024 League Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Chelsea",
+   "Manchester United",
+   "Newcastle United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Liverpool 1–0 aet Chelsea"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2025,
+  "q": "Who did Newcastle United beat in the 2025 League Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Arsenal",
+   "Manchester City",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Newcastle United 2–1 Liverpool"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "winner",
+  "year": 2026,
+  "q": "Who won the 2026 League Cup final?",
+  "a": "Manchester City",
+  "wrong": [
+   "Arsenal",
+   "Tottenham Hotspur",
+   "Newcastle United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 2–0 Arsenal"
+ },
+ {
+  "comp": "League Cup",
+  "kind": "runner-up",
+  "year": 2026,
+  "q": "Who did Manchester City beat in the 2026 League Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Liverpool",
+   "Newcastle United",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_EFL_Cup_finals",
+  "note": "Manchester City 2–0 Arsenal"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 1990,
+  "q": "Who won the 1990 European Cup final?",
+  "a": "AC Milan",
+  "wrong": [
+   "Benfica",
+   "Ajax",
+   "Barcelona"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 1–0 Benfica"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1990,
+  "q": "Who did AC Milan beat in the 1990 European Cup final?",
+  "a": "Benfica",
+  "wrong": [
+   "Barcelona",
+   "Marseille",
+   "Juventus"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 1–0 Benfica"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1990,
+  "q": "In which city was the 1990 European Cup final played?",
+  "a": "Vienna",
+  "wrong": [
+   "Athens",
+   "Munich",
+   "London"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 1–0 Benfica, in Vienna"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1991,
+  "q": "Who did Red Star Belgrade beat in the 1991 European Cup final?",
+  "a": "Marseille",
+  "wrong": [
+   "Barcelona",
+   "Ajax",
+   "Benfica"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Red Star Belgrade 0–0, 5–3 pens Marseille"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1991,
+  "q": "In which city was the 1991 European Cup final played?",
+  "a": "Bari",
+  "wrong": [
+   "Munich",
+   "Rome",
+   "London"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Red Star Belgrade 0–0, 5–3 pens Marseille, in Bari"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1992,
+  "q": "Who did Barcelona beat in the 1992 European Cup final?",
+  "a": "Sampdoria",
+  "wrong": [
+   "Juventus",
+   "Red Star Belgrade",
+   "Ajax"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 1–0 aet Sampdoria"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1992,
+  "q": "In which city was the 1992 European Cup final played?",
+  "a": "London",
+  "wrong": [
+   "Vienna",
+   "Rome",
+   "Athens"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 1–0 aet Sampdoria, in London"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1993,
+  "q": "Who did Marseille beat in the 1993 Champions League final?",
+  "a": "AC Milan",
+  "wrong": [
+   "Red Star Belgrade",
+   "Sampdoria",
+   "Juventus"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Marseille 1–0 AC Milan"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1993,
+  "q": "In which city was the 1993 Champions League final played?",
+  "a": "Munich",
+  "wrong": [
+   "London",
+   "Rome",
+   "Athens"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Marseille 1–0 AC Milan, in Munich"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 1994,
+  "q": "Who won the 1994 Champions League final?",
+  "a": "AC Milan",
+  "wrong": [
+   "Barcelona",
+   "Ajax",
+   "Borussia Dortmund"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 4–0 Barcelona"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1994,
+  "q": "Who did AC Milan beat in the 1994 Champions League final?",
+  "a": "Barcelona",
+  "wrong": [
+   "Ajax",
+   "Sampdoria",
+   "Juventus"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 4–0 Barcelona"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1994,
+  "q": "In which city was the 1994 Champions League final played?",
+  "a": "Athens",
+  "wrong": [
+   "Rome",
+   "Vienna",
+   "Munich"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 4–0 Barcelona, in Athens"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1995,
+  "q": "Who did Ajax beat in the 1995 Champions League final?",
+  "a": "AC Milan",
+  "wrong": [
+   "Marseille",
+   "Borussia Dortmund",
+   "Juventus"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Ajax 1–0 AC Milan"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1995,
+  "q": "In which city was the 1995 Champions League final played?",
+  "a": "Vienna",
+  "wrong": [
+   "London",
+   "Athens",
+   "Munich"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Ajax 1–0 AC Milan, in Vienna"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 1996,
+  "q": "Who won the 1996 Champions League final?",
+  "a": "Juventus",
+  "wrong": [
+   "Ajax",
+   "Barcelona",
+   "Marseille"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Juventus 1–1, 4–2 pens Ajax"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1996,
+  "q": "Who did Juventus beat in the 1996 Champions League final?",
+  "a": "Ajax",
+  "wrong": [
+   "Marseille",
+   "Barcelona",
+   "AC Milan"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Juventus 1–1, 4–2 pens Ajax"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1996,
+  "q": "In which city was the 1996 Champions League final played?",
+  "a": "Rome",
+  "wrong": [
+   "Amsterdam",
+   "Munich",
+   "Athens"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Juventus 1–1, 4–2 pens Ajax, in Rome"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1997,
+  "q": "Who did Borussia Dortmund beat in the 1997 Champions League final?",
+  "a": "Juventus",
+  "wrong": [
+   "Bayern Munich",
+   "AC Milan",
+   "Ajax"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Borussia Dortmund 3–1 Juventus"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1997,
+  "q": "In which city was the 1997 Champions League final played?",
+  "a": "Munich",
+  "wrong": [
+   "Barcelona",
+   "Vienna",
+   "Rome"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Borussia Dortmund 3–1 Juventus, in Munich"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 1998,
+  "q": "Who won the 1998 Champions League final?",
+  "a": "Real Madrid",
+  "wrong": [
+   "Juventus",
+   "Bayern Munich",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 1–0 Juventus"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 1998,
+  "q": "Who did Real Madrid beat in the 1998 Champions League final?",
+  "a": "Juventus",
+  "wrong": [
+   "AC Milan",
+   "Valencia",
+   "Borussia Dortmund"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 1–0 Juventus"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 1998,
+  "q": "In which city was the 1998 Champions League final played?",
+  "a": "Amsterdam",
+  "wrong": [
+   "Barcelona",
+   "Rome",
+   "Vienna"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 1–0 Juventus, in Amsterdam"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 1999,
+  "q": "Who won the 1999 Champions League final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Bayern Munich",
+   "Real Madrid",
+   "Borussia Dortmund"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Manchester United 2–1 Bayern Munich"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2000,
+  "q": "Who won the 2000 Champions League final?",
+  "a": "Real Madrid",
+  "wrong": [
+   "Valencia",
+   "AC Milan",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 3–0 Valencia"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2001,
+  "q": "Who did Bayern Munich beat in the 2001 Champions League final?",
+  "a": "Valencia",
+  "wrong": [
+   "AC Milan",
+   "Real Madrid",
+   "Bayer Leverkusen"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Bayern Munich 1–1, 5–4 pens Valencia"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2001,
+  "q": "In which city was the 2001 Champions League final played?",
+  "a": "Milan",
+  "wrong": [
+   "Paris",
+   "Amsterdam",
+   "Glasgow"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Bayern Munich 1–1, 5–4 pens Valencia, in Milan"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2002,
+  "q": "Who won the 2002 Champions League final?",
+  "a": "Real Madrid",
+  "wrong": [
+   "Bayer Leverkusen",
+   "Juventus",
+   "Porto"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 2–1 Bayer Leverkusen"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2002,
+  "q": "Who did Real Madrid beat in the 2002 Champions League final?",
+  "a": "Bayer Leverkusen",
+  "wrong": [
+   "Juventus",
+   "Bayern Munich",
+   "Monaco"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 2–1 Bayer Leverkusen"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2003,
+  "q": "Who did AC Milan beat in the 2003 Champions League final?",
+  "a": "Juventus",
+  "wrong": [
+   "Bayern Munich",
+   "Real Madrid",
+   "Valencia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 0–0, 3–2 pens Juventus"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2003,
+  "q": "In which city was the 2003 Champions League final played?",
+  "a": "Manchester",
+  "wrong": [
+   "Gelsenkirchen",
+   "Glasgow",
+   "Istanbul"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 0–0, 3–2 pens Juventus, in Manchester"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2004,
+  "q": "Who did Porto beat in the 2004 Champions League final?",
+  "a": "Monaco",
+  "wrong": [
+   "Real Madrid",
+   "Juventus",
+   "AC Milan"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Porto 3–0 Monaco"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2004,
+  "q": "In which city was the 2004 Champions League final played?",
+  "a": "Gelsenkirchen",
+  "wrong": [
+   "Glasgow",
+   "Manchester",
+   "Milan"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Porto 3–0 Monaco, in Gelsenkirchen"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2005,
+  "q": "Who won the 2005 Champions League final?",
+  "a": "Liverpool",
+  "wrong": [
+   "AC Milan",
+   "Real Madrid",
+   "Monaco"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Liverpool 3–3, 3–2 pens AC Milan"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2005,
+  "q": "Who did Liverpool beat in the 2005 Champions League final?",
+  "a": "AC Milan",
+  "wrong": [
+   "Real Madrid",
+   "Arsenal",
+   "Monaco"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Liverpool 3–3, 3–2 pens AC Milan"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2007,
+  "q": "Who did AC Milan beat in the 2007 Champions League final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Manchester United",
+   "Barcelona",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 2–1 Liverpool"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2007,
+  "q": "In which city was the 2007 Champions League final played?",
+  "a": "Athens",
+  "wrong": [
+   "Rome",
+   "Istanbul",
+   "Moscow"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "AC Milan 2–1 Liverpool, in Athens"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2008,
+  "q": "In which city was the 2008 Champions League final played?",
+  "a": "Moscow",
+  "wrong": [
+   "Rome",
+   "Athens",
+   "Madrid"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Manchester United 1–1, 6–5 pens Chelsea, in Moscow"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2009,
+  "q": "Who won the 2009 Champions League final?",
+  "a": "Barcelona",
+  "wrong": [
+   "Manchester United",
+   "Inter Milan",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 2–0 Manchester United"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2009,
+  "q": "Who did Barcelona beat in the 2009 Champions League final?",
+  "a": "Manchester United",
+  "wrong": [
+   "AC Milan",
+   "Liverpool",
+   "Arsenal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 2–0 Manchester United"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2009,
+  "q": "In which city was the 2009 Champions League final played?",
+  "a": "Rome",
+  "wrong": [
+   "Athens",
+   "Paris",
+   "London"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 2–0 Manchester United, in Rome"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2010,
+  "q": "Who did Inter Milan beat in the 2010 Champions League final?",
+  "a": "Bayern Munich",
+  "wrong": [
+   "Chelsea",
+   "Manchester United",
+   "Borussia Dortmund"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Inter Milan 2–0 Bayern Munich"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2010,
+  "q": "In which city was the 2010 Champions League final played?",
+  "a": "Madrid",
+  "wrong": [
+   "Athens",
+   "London",
+   "Moscow"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Inter Milan 2–0 Bayern Munich, in Madrid"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2011,
+  "q": "Who did Barcelona beat in the 2011 Champions League final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Bayern Munich",
+   "Borussia Dortmund",
+   "Inter Milan"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 3–1 Manchester United"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2011,
+  "q": "In which city was the 2011 Champions League final played?",
+  "a": "London",
+  "wrong": [
+   "Rome",
+   "Lisbon",
+   "Munich"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 3–1 Manchester United, in London"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2012,
+  "q": "In which city was the 2012 Champions League final played?",
+  "a": "Munich",
+  "wrong": [
+   "Madrid",
+   "London",
+   "Lisbon"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Chelsea 1–1, 4–3 pens Bayern Munich, in Munich"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2013,
+  "q": "Who did Bayern Munich beat in the 2013 Champions League final?",
+  "a": "Borussia Dortmund",
+  "wrong": [
+   "Manchester United",
+   "Chelsea",
+   "Atlético Madrid"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Bayern Munich 2–1 Borussia Dortmund"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2013,
+  "q": "In which city was the 2013 Champions League final played?",
+  "a": "London",
+  "wrong": [
+   "Milan",
+   "Madrid",
+   "Munich"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Bayern Munich 2–1 Borussia Dortmund, in London"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2014,
+  "q": "In which city was the 2014 Champions League final played?",
+  "a": "Lisbon",
+  "wrong": [
+   "Berlin",
+   "London",
+   "Munich"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 4–1 aet Atlético Madrid, in Lisbon"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2015,
+  "q": "Who won the 2015 Champions League final?",
+  "a": "Barcelona",
+  "wrong": [
+   "Juventus",
+   "Borussia Dortmund",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 3–1 Juventus"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2015,
+  "q": "In which city was the 2015 Champions League final played?",
+  "a": "Berlin",
+  "wrong": [
+   "Munich",
+   "Cardiff",
+   "Milan"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Barcelona 3–1 Juventus, in Berlin"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2016,
+  "q": "Who won the 2016 Champions League final?",
+  "a": "Real Madrid",
+  "wrong": [
+   "Atlético Madrid",
+   "Liverpool",
+   "Tottenham Hotspur"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 1–1, 5–3 pens Atlético Madrid"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2016,
+  "q": "Who did Real Madrid beat in the 2016 Champions League final?",
+  "a": "Atlético Madrid",
+  "wrong": [
+   "Borussia Dortmund",
+   "Bayern Munich",
+   "Barcelona"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 1–1, 5–3 pens Atlético Madrid"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2016,
+  "q": "In which city was the 2016 Champions League final played?",
+  "a": "Milan",
+  "wrong": [
+   "Berlin",
+   "Lisbon",
+   "London"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 1–1, 5–3 pens Atlético Madrid, in Milan"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2017,
+  "q": "Who won the 2017 Champions League final?",
+  "a": "Real Madrid",
+  "wrong": [
+   "Juventus",
+   "Paris Saint-Germain",
+   "Barcelona"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 4–1 Juventus"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2018,
+  "q": "In which city was the 2018 Champions League final played?",
+  "a": "Kyiv",
+  "wrong": [
+   "Milan",
+   "Berlin",
+   "Lisbon"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 3–1 Liverpool, in Kyiv"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2019,
+  "q": "Who did Liverpool beat in the 2019 Champions League final?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Juventus",
+   "Chelsea",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Liverpool 2–0 Tottenham Hotspur"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2019,
+  "q": "In which city was the 2019 Champions League final played?",
+  "a": "Madrid",
+  "wrong": [
+   "Porto",
+   "Cardiff",
+   "Kyiv"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Liverpool 2–0 Tottenham Hotspur, in Madrid"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2020,
+  "q": "Who did Bayern Munich beat in the 2020 Champions League final?",
+  "a": "Paris Saint-Germain",
+  "wrong": [
+   "Juventus",
+   "Real Madrid",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Bayern Munich 1–0 Paris Saint-Germain"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2020,
+  "q": "In which city was the 2020 Champions League final played?",
+  "a": "Lisbon",
+  "wrong": [
+   "Paris",
+   "Madrid",
+   "Kyiv"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Bayern Munich 1–0 Paris Saint-Germain, in Lisbon"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2021,
+  "q": "Who won the 2021 Champions League final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester City",
+   "Tottenham Hotspur",
+   "Inter Milan"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Chelsea 1–0 Manchester City"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2021,
+  "q": "In which city was the 2021 Champions League final played?",
+  "a": "Porto",
+  "wrong": [
+   "Istanbul",
+   "Madrid",
+   "Lisbon"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Chelsea 1–0 Manchester City, in Porto"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2022,
+  "q": "Who did Real Madrid beat in the 2022 Champions League final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Inter Milan",
+   "Borussia Dortmund",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 1–0 Liverpool"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2023,
+  "q": "In which city was the 2023 Champions League final played?",
+  "a": "Istanbul",
+  "wrong": [
+   "Porto",
+   "London",
+   "Lisbon"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Manchester City 1–0 Inter Milan, in Istanbul"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2024,
+  "q": "Who won the 2024 Champions League final?",
+  "a": "Real Madrid",
+  "wrong": [
+   "Borussia Dortmund",
+   "Liverpool",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 2–0 Borussia Dortmund"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2024,
+  "q": "In which city was the 2024 Champions League final played?",
+  "a": "London",
+  "wrong": [
+   "Istanbul",
+   "Porto",
+   "Budapest"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Real Madrid 2–0 Borussia Dortmund, in London"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2025,
+  "q": "Who did Paris Saint-Germain beat in the 2025 Champions League final?",
+  "a": "Inter Milan",
+  "wrong": [
+   "Chelsea",
+   "Borussia Dortmund",
+   "Real Madrid"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Paris Saint-Germain 5–0 Inter Milan"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2025,
+  "q": "In which city was the 2025 Champions League final played?",
+  "a": "Munich",
+  "wrong": [
+   "Porto",
+   "Istanbul",
+   "Budapest"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Paris Saint-Germain 5–0 Inter Milan, in Munich"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "winner",
+  "year": 2026,
+  "q": "Who won the 2026 Champions League final?",
+  "a": "Paris Saint-Germain",
+  "wrong": [
+   "Arsenal",
+   "Borussia Dortmund",
+   "Liverpool"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Paris Saint-Germain 1–1, 4–3 pens Arsenal"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "runner-up",
+  "year": 2026,
+  "q": "Who did Paris Saint-Germain beat in the 2026 Champions League final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Borussia Dortmund",
+   "Manchester City",
+   "Real Madrid"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Paris Saint-Germain 1–1, 4–3 pens Arsenal"
+ },
+ {
+  "comp": "Champions League",
+  "kind": "venue",
+  "year": 2026,
+  "q": "In which city was the 2026 Champions League final played?",
+  "a": "Budapest",
+  "wrong": [
+   "Munich",
+   "Porto",
+   "Paris"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals",
+  "note": "Paris Saint-Germain 1–1, 4–3 pens Arsenal, in Budapest"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1990,
+  "q": "Who won the 1990 UEFA Cup final?",
+  "a": "Juventus",
+  "wrong": [
+   "Fiorentina",
+   "Borussia Dortmund",
+   "Ajax"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Juventus 3–1 agg. Fiorentina"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1990,
+  "q": "Who did Juventus beat in the 1990 UEFA Cup final?",
+  "a": "Fiorentina",
+  "wrong": [
+   "Roma",
+   "Ajax",
+   "Inter Milan"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Juventus 3–1 agg. Fiorentina"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1991,
+  "q": "Who won the 1991 UEFA Cup final?",
+  "a": "Inter Milan",
+  "wrong": [
+   "Roma",
+   "Torino",
+   "Austria Salzburg"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Inter Milan 2–1 agg. Roma"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1991,
+  "q": "Who did Inter Milan beat in the 1991 UEFA Cup final?",
+  "a": "Roma",
+  "wrong": [
+   "Austria Salzburg",
+   "Borussia Dortmund",
+   "Ajax"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Inter Milan 2–1 agg. Roma"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1992,
+  "q": "Who won the 1992 UEFA Cup final?",
+  "a": "Ajax",
+  "wrong": [
+   "Torino",
+   "Roma",
+   "Juventus"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Ajax 2–2 agg., away goals Torino"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1992,
+  "q": "Who did Ajax beat in the 1992 UEFA Cup final?",
+  "a": "Torino",
+  "wrong": [
+   "Juventus",
+   "Roma",
+   "Austria Salzburg"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Ajax 2–2 agg., away goals Torino"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1993,
+  "q": "Who won the 1993 UEFA Cup final?",
+  "a": "Juventus",
+  "wrong": [
+   "Borussia Dortmund",
+   "Austria Salzburg",
+   "Inter Milan"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Juventus 6–1 agg. Borussia Dortmund"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1993,
+  "q": "Who did Juventus beat in the 1993 UEFA Cup final?",
+  "a": "Borussia Dortmund",
+  "wrong": [
+   "Austria Salzburg",
+   "Ajax",
+   "Parma"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Juventus 6–1 agg. Borussia Dortmund"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1994,
+  "q": "Who won the 1994 UEFA Cup final?",
+  "a": "Inter Milan",
+  "wrong": [
+   "Austria Salzburg",
+   "Ajax",
+   "Borussia Dortmund"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Inter Milan 2–0 agg. Austria Salzburg"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1994,
+  "q": "Who did Inter Milan beat in the 1994 UEFA Cup final?",
+  "a": "Austria Salzburg",
+  "wrong": [
+   "Bayern Munich",
+   "Torino",
+   "Ajax"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Inter Milan 2–0 agg. Austria Salzburg"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1995,
+  "q": "Who won the 1995 UEFA Cup final?",
+  "a": "Parma",
+  "wrong": [
+   "Juventus",
+   "Bayern Munich",
+   "Austria Salzburg"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Parma 2–1 agg. Juventus"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1995,
+  "q": "Who did Parma beat in the 1995 UEFA Cup final?",
+  "a": "Juventus",
+  "wrong": [
+   "Schalke 04",
+   "Bordeaux",
+   "Bayern Munich"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Parma 2–1 agg. Juventus"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1996,
+  "q": "Who won the 1996 UEFA Cup final?",
+  "a": "Bayern Munich",
+  "wrong": [
+   "Bordeaux",
+   "Inter Milan",
+   "Schalke 04"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Bayern Munich 5–1 agg. Bordeaux"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1996,
+  "q": "Who did Bayern Munich beat in the 1996 UEFA Cup final?",
+  "a": "Bordeaux",
+  "wrong": [
+   "Juventus",
+   "Parma",
+   "Schalke 04"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Bayern Munich 5–1 agg. Bordeaux"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1997,
+  "q": "Who won the 1997 UEFA Cup final?",
+  "a": "Schalke 04",
+  "wrong": [
+   "Inter Milan",
+   "Bordeaux",
+   "Marseille"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Schalke 04 1–1 agg., 4–1 pens Inter Milan"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1997,
+  "q": "Who did Schalke 04 beat in the 1997 UEFA Cup final?",
+  "a": "Inter Milan",
+  "wrong": [
+   "Bayern Munich",
+   "Marseille",
+   "Bordeaux"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Schalke 04 1–1 agg., 4–1 pens Inter Milan"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1998,
+  "q": "Who won the 1998 UEFA Cup final?",
+  "a": "Inter Milan",
+  "wrong": [
+   "Lazio",
+   "Bayern Munich",
+   "Bordeaux"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Inter Milan 3–0 Lazio"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1998,
+  "q": "Who did Inter Milan beat in the 1998 UEFA Cup final?",
+  "a": "Lazio",
+  "wrong": [
+   "Parma",
+   "Bordeaux",
+   "Marseille"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Inter Milan 3–0 Lazio"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 1998,
+  "q": "In which city was the 1998 UEFA Cup final played?",
+  "a": "Paris",
+  "wrong": [
+   "Seville",
+   "Rotterdam",
+   "Dortmund"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Inter Milan 3–0 Lazio, in Paris"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 1999,
+  "q": "Who won the 1999 UEFA Cup final?",
+  "a": "Parma",
+  "wrong": [
+   "Marseille",
+   "Schalke 04",
+   "Galatasaray"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Parma 3–0 Marseille"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 1999,
+  "q": "Who did Parma beat in the 1999 UEFA Cup final?",
+  "a": "Marseille",
+  "wrong": [
+   "Liverpool",
+   "Lazio",
+   "Schalke 04"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Parma 3–0 Marseille"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 1999,
+  "q": "In which city was the 1999 UEFA Cup final played?",
+  "a": "Moscow",
+  "wrong": [
+   "Dortmund",
+   "Copenhagen",
+   "Rotterdam"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Parma 3–0 Marseille, in Moscow"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2000,
+  "q": "Who won the 2000 UEFA Cup final?",
+  "a": "Galatasaray",
+  "wrong": [
+   "Arsenal",
+   "Lazio",
+   "Parma"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Galatasaray 0–0, 4–1 pens Arsenal"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2000,
+  "q": "Who did Galatasaray beat in the 2000 UEFA Cup final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Lazio",
+   "Parma",
+   "Marseille"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Galatasaray 0–0, 4–1 pens Arsenal"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2000,
+  "q": "In which city was the 2000 UEFA Cup final played?",
+  "a": "Copenhagen",
+  "wrong": [
+   "Moscow",
+   "Paris",
+   "Rotterdam"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Galatasaray 0–0, 4–1 pens Arsenal, in Copenhagen"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2001,
+  "q": "Who won the 2001 UEFA Cup final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Alavés",
+   "Feyenoord",
+   "Parma"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Liverpool 5–4 golden goal Alavés"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2001,
+  "q": "Who did Liverpool beat in the 2001 UEFA Cup final?",
+  "a": "Alavés",
+  "wrong": [
+   "Parma",
+   "Galatasaray",
+   "Arsenal"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Liverpool 5–4 golden goal Alavés"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2001,
+  "q": "In which city was the 2001 UEFA Cup final played?",
+  "a": "Dortmund",
+  "wrong": [
+   "Moscow",
+   "Copenhagen",
+   "Paris"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Liverpool 5–4 golden goal Alavés, in Dortmund"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2002,
+  "q": "Who won the 2002 UEFA Cup final?",
+  "a": "Feyenoord",
+  "wrong": [
+   "Borussia Dortmund",
+   "Alavés",
+   "Galatasaray"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Feyenoord 3–2 Borussia Dortmund"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2002,
+  "q": "Who did Feyenoord beat in the 2002 UEFA Cup final?",
+  "a": "Borussia Dortmund",
+  "wrong": [
+   "Arsenal",
+   "Alavés",
+   "Liverpool"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Feyenoord 3–2 Borussia Dortmund"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2002,
+  "q": "In which city was the 2002 UEFA Cup final played?",
+  "a": "Rotterdam",
+  "wrong": [
+   "Moscow",
+   "Gothenburg",
+   "Seville"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Feyenoord 3–2 Borussia Dortmund, in Rotterdam"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2003,
+  "q": "Who won the 2003 UEFA Cup final?",
+  "a": "Porto",
+  "wrong": [
+   "Celtic",
+   "Borussia Dortmund",
+   "Feyenoord"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Porto 3–2 aet Celtic"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2003,
+  "q": "Who did Porto beat in the 2003 UEFA Cup final?",
+  "a": "Celtic",
+  "wrong": [
+   "Feyenoord",
+   "Borussia Dortmund",
+   "Liverpool"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Porto 3–2 aet Celtic"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2003,
+  "q": "In which city was the 2003 UEFA Cup final played?",
+  "a": "Seville",
+  "wrong": [
+   "Copenhagen",
+   "Lisbon",
+   "Dortmund"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Porto 3–2 aet Celtic, in Seville"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2004,
+  "q": "Who won the 2004 UEFA Cup final?",
+  "a": "Valencia",
+  "wrong": [
+   "Marseille",
+   "Porto",
+   "Sporting CP"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Valencia 2–0 Marseille"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2004,
+  "q": "Who did Valencia beat in the 2004 UEFA Cup final?",
+  "a": "Marseille",
+  "wrong": [
+   "Sporting CP",
+   "Porto",
+   "Celtic"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Valencia 2–0 Marseille"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2004,
+  "q": "In which city was the 2004 UEFA Cup final played?",
+  "a": "Gothenburg",
+  "wrong": [
+   "Dortmund",
+   "Seville",
+   "Rotterdam"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Valencia 2–0 Marseille, in Gothenburg"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2005,
+  "q": "Who won the 2005 UEFA Cup final?",
+  "a": "CSKA Moscow",
+  "wrong": [
+   "Sporting CP",
+   "Porto",
+   "Marseille"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "CSKA Moscow 3–1 Sporting CP"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2005,
+  "q": "Who did CSKA Moscow beat in the 2005 UEFA Cup final?",
+  "a": "Sporting CP",
+  "wrong": [
+   "Celtic",
+   "Sevilla",
+   "Middlesbrough"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "CSKA Moscow 3–1 Sporting CP"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2005,
+  "q": "In which city was the 2005 UEFA Cup final played?",
+  "a": "Lisbon",
+  "wrong": [
+   "Seville",
+   "Rotterdam",
+   "Glasgow"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "CSKA Moscow 3–1 Sporting CP, in Lisbon"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2006,
+  "q": "Who won the 2006 UEFA Cup final?",
+  "a": "Sevilla",
+  "wrong": [
+   "Middlesbrough",
+   "Marseille",
+   "Valencia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 4–0 Middlesbrough"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2006,
+  "q": "Who did Sevilla beat in the 2006 UEFA Cup final?",
+  "a": "Middlesbrough",
+  "wrong": [
+   "Valencia",
+   "Zenit Saint Petersburg",
+   "CSKA Moscow"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 4–0 Middlesbrough"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2006,
+  "q": "In which city was the 2006 UEFA Cup final played?",
+  "a": "Eindhoven",
+  "wrong": [
+   "Glasgow",
+   "Gothenburg",
+   "Manchester"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 4–0 Middlesbrough, in Eindhoven"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2007,
+  "q": "Who won the 2007 UEFA Cup final?",
+  "a": "Sevilla",
+  "wrong": [
+   "Espanyol",
+   "Middlesbrough",
+   "Sporting CP"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 2–2, 4–2 pens Espanyol"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2007,
+  "q": "Who did Sevilla beat in the 2007 UEFA Cup final?",
+  "a": "Espanyol",
+  "wrong": [
+   "Shakhtar Donetsk",
+   "Sporting CP",
+   "Middlesbrough"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 2–2, 4–2 pens Espanyol"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2007,
+  "q": "In which city was the 2007 UEFA Cup final played?",
+  "a": "Glasgow",
+  "wrong": [
+   "Istanbul",
+   "Manchester",
+   "Lisbon"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 2–2, 4–2 pens Espanyol, in Glasgow"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2008,
+  "q": "Who won the 2008 UEFA Cup final?",
+  "a": "Zenit Saint Petersburg",
+  "wrong": [
+   "Rangers",
+   "Espanyol",
+   "Middlesbrough"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Zenit Saint Petersburg 2–0 Rangers"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2008,
+  "q": "Who did Zenit Saint Petersburg beat in the 2008 UEFA Cup final?",
+  "a": "Rangers",
+  "wrong": [
+   "Shakhtar Donetsk",
+   "Middlesbrough",
+   "Werder Bremen"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Zenit Saint Petersburg 2–0 Rangers"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2008,
+  "q": "In which city was the 2008 UEFA Cup final played?",
+  "a": "Manchester",
+  "wrong": [
+   "Istanbul",
+   "Lisbon",
+   "Hamburg"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Zenit Saint Petersburg 2–0 Rangers, in Manchester"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2009,
+  "q": "Who won the 2009 UEFA Cup final?",
+  "a": "Shakhtar Donetsk",
+  "wrong": [
+   "Werder Bremen",
+   "Zenit Saint Petersburg",
+   "Atlético Madrid"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Shakhtar Donetsk 2–1 aet Werder Bremen"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2009,
+  "q": "Who did Shakhtar Donetsk beat in the 2009 UEFA Cup final?",
+  "a": "Werder Bremen",
+  "wrong": [
+   "Espanyol",
+   "Zenit Saint Petersburg",
+   "Rangers"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Shakhtar Donetsk 2–1 aet Werder Bremen"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2009,
+  "q": "In which city was the 2009 UEFA Cup final played?",
+  "a": "Istanbul",
+  "wrong": [
+   "Eindhoven",
+   "Manchester",
+   "Dublin"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Shakhtar Donetsk 2–1 aet Werder Bremen, in Istanbul"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2010,
+  "q": "Who won the 2010 Europa League final?",
+  "a": "Atlético Madrid",
+  "wrong": [
+   "Fulham",
+   "Porto",
+   "Shakhtar Donetsk"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atlético Madrid 2–1 aet Fulham"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2010,
+  "q": "Who did Atlético Madrid beat in the 2010 Europa League final?",
+  "a": "Fulham",
+  "wrong": [
+   "Shakhtar Donetsk",
+   "Rangers",
+   "Porto"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atlético Madrid 2–1 aet Fulham"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2010,
+  "q": "In which city was the 2010 Europa League final played?",
+  "a": "Hamburg",
+  "wrong": [
+   "Manchester",
+   "Bucharest",
+   "Istanbul"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atlético Madrid 2–1 aet Fulham, in Hamburg"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2011,
+  "q": "Who won the 2011 Europa League final?",
+  "a": "Porto",
+  "wrong": [
+   "Braga",
+   "Shakhtar Donetsk",
+   "Fulham"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Porto 1–0 Braga"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2011,
+  "q": "Who did Porto beat in the 2011 Europa League final?",
+  "a": "Braga",
+  "wrong": [
+   "Fulham",
+   "Athletic Bilbao",
+   "Shakhtar Donetsk"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Porto 1–0 Braga"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2011,
+  "q": "In which city was the 2011 Europa League final played?",
+  "a": "Dublin",
+  "wrong": [
+   "Bucharest",
+   "Manchester",
+   "Istanbul"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Porto 1–0 Braga, in Dublin"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2012,
+  "q": "Who won the 2012 Europa League final?",
+  "a": "Atlético Madrid",
+  "wrong": [
+   "Athletic Bilbao",
+   "Sevilla",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atlético Madrid 3–0 Athletic Bilbao"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2012,
+  "q": "Who did Atlético Madrid beat in the 2012 Europa League final?",
+  "a": "Athletic Bilbao",
+  "wrong": [
+   "Chelsea",
+   "Benfica",
+   "Sevilla"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atlético Madrid 3–0 Athletic Bilbao"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2012,
+  "q": "In which city was the 2012 Europa League final played?",
+  "a": "Bucharest",
+  "wrong": [
+   "Dublin",
+   "Istanbul",
+   "Amsterdam"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atlético Madrid 3–0 Athletic Bilbao, in Bucharest"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2013,
+  "q": "Who won the 2013 Europa League final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Benfica",
+   "Braga",
+   "Athletic Bilbao"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Chelsea 2–1 Benfica"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2013,
+  "q": "Who did Chelsea beat in the 2013 Europa League final?",
+  "a": "Benfica",
+  "wrong": [
+   "Braga",
+   "Athletic Bilbao",
+   "Dnipro"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Chelsea 2–1 Benfica"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2013,
+  "q": "In which city was the 2013 Europa League final played?",
+  "a": "Amsterdam",
+  "wrong": [
+   "Bucharest",
+   "Hamburg",
+   "Turin"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Chelsea 2–1 Benfica, in Amsterdam"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2014,
+  "q": "Who did Sevilla beat in the 2014 Europa League final?",
+  "a": "Benfica",
+  "wrong": [
+   "Porto",
+   "Atlético Madrid",
+   "Dnipro"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 0–0, 4–2 pens Benfica"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2014,
+  "q": "In which city was the 2014 Europa League final played?",
+  "a": "Turin",
+  "wrong": [
+   "Dublin",
+   "Warsaw",
+   "Amsterdam"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 0–0, 4–2 pens Benfica, in Turin"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2015,
+  "q": "Who won the 2015 Europa League final?",
+  "a": "Sevilla",
+  "wrong": [
+   "Dnipro",
+   "Ajax",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–2 Dnipro"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2015,
+  "q": "Who did Sevilla beat in the 2015 Europa League final?",
+  "a": "Dnipro",
+  "wrong": [
+   "Atlético Madrid",
+   "Chelsea",
+   "Ajax"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–2 Dnipro"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2015,
+  "q": "In which city was the 2015 Europa League final played?",
+  "a": "Warsaw",
+  "wrong": [
+   "Amsterdam",
+   "Basel",
+   "Bucharest"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–2 Dnipro, in Warsaw"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2016,
+  "q": "Who won the 2016 Europa League final?",
+  "a": "Sevilla",
+  "wrong": [
+   "Liverpool",
+   "Manchester United",
+   "Marseille"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–1 Liverpool"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2016,
+  "q": "Who did Sevilla beat in the 2016 Europa League final?",
+  "a": "Liverpool",
+  "wrong": [
+   "Benfica",
+   "Ajax",
+   "Dnipro"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–1 Liverpool"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2016,
+  "q": "In which city was the 2016 Europa League final played?",
+  "a": "Basel",
+  "wrong": [
+   "Lyon",
+   "Turin",
+   "Warsaw"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–1 Liverpool, in Basel"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2017,
+  "q": "Who won the 2017 Europa League final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Ajax",
+   "Chelsea",
+   "Sevilla"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Manchester United 2–0 Ajax"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2017,
+  "q": "Who did Manchester United beat in the 2017 Europa League final?",
+  "a": "Ajax",
+  "wrong": [
+   "Liverpool",
+   "Atlético Madrid",
+   "Marseille"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Manchester United 2–0 Ajax"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2018,
+  "q": "Who won the 2018 Europa League final?",
+  "a": "Atlético Madrid",
+  "wrong": [
+   "Marseille",
+   "Ajax",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atlético Madrid 3–0 Marseille"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2018,
+  "q": "Who did Atlético Madrid beat in the 2018 Europa League final?",
+  "a": "Marseille",
+  "wrong": [
+   "Ajax",
+   "Manchester United",
+   "Sevilla"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atlético Madrid 3–0 Marseille"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2019,
+  "q": "Who won the 2019 Europa League final?",
+  "a": "Chelsea",
+  "wrong": [
+   "Arsenal",
+   "Sevilla",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Chelsea 4–1 Arsenal"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2019,
+  "q": "Who did Chelsea beat in the 2019 Europa League final?",
+  "a": "Arsenal",
+  "wrong": [
+   "Manchester United",
+   "Inter Milan",
+   "Ajax"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Chelsea 4–1 Arsenal"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2019,
+  "q": "In which city was the 2019 Europa League final played?",
+  "a": "Baku",
+  "wrong": [
+   "Lyon",
+   "Stockholm",
+   "Basel"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Chelsea 4–1 Arsenal, in Baku"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2020,
+  "q": "Who won the 2020 Europa League final?",
+  "a": "Sevilla",
+  "wrong": [
+   "Inter Milan",
+   "Manchester United",
+   "Marseille"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–2 Inter Milan"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2020,
+  "q": "Who did Sevilla beat in the 2020 Europa League final?",
+  "a": "Inter Milan",
+  "wrong": [
+   "Atlético Madrid",
+   "Manchester United",
+   "Marseille"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–2 Inter Milan"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2020,
+  "q": "In which city was the 2020 Europa League final played?",
+  "a": "Cologne",
+  "wrong": [
+   "Lyon",
+   "Gdańsk",
+   "Stockholm"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 3–2 Inter Milan, in Cologne"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2021,
+  "q": "Who did Villarreal beat in the 2021 Europa League final?",
+  "a": "Manchester United",
+  "wrong": [
+   "Inter Milan",
+   "Arsenal",
+   "Rangers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Villarreal 1–1, 11–10 pens Manchester United"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2021,
+  "q": "In which city was the 2021 Europa League final played?",
+  "a": "Gdańsk",
+  "wrong": [
+   "Baku",
+   "Budapest",
+   "Cologne"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Villarreal 1–1, 11–10 pens Manchester United, in Gdańsk"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2022,
+  "q": "Who won the 2022 Europa League final?",
+  "a": "Eintracht Frankfurt",
+  "wrong": [
+   "Rangers",
+   "Manchester United",
+   "Villarreal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Eintracht Frankfurt 1–1, 5–4 pens Rangers"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2022,
+  "q": "Who did Eintracht Frankfurt beat in the 2022 Europa League final?",
+  "a": "Rangers",
+  "wrong": [
+   "Inter Milan",
+   "Atalanta",
+   "Villarreal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Eintracht Frankfurt 1–1, 5–4 pens Rangers"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2022,
+  "q": "In which city was the 2022 Europa League final played?",
+  "a": "Seville",
+  "wrong": [
+   "Budapest",
+   "Gdańsk",
+   "Baku"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Eintracht Frankfurt 1–1, 5–4 pens Rangers, in Seville"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2023,
+  "q": "Who did Sevilla beat in the 2023 Europa League final?",
+  "a": "Roma",
+  "wrong": [
+   "Villarreal",
+   "Bayer Leverkusen",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 1–1, 4–1 pens Roma"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2023,
+  "q": "In which city was the 2023 Europa League final played?",
+  "a": "Budapest",
+  "wrong": [
+   "Bilbao",
+   "Cologne",
+   "Seville"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Sevilla 1–1, 4–1 pens Roma, in Budapest"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2024,
+  "q": "Who did Atalanta beat in the 2024 Europa League final?",
+  "a": "Bayer Leverkusen",
+  "wrong": [
+   "Manchester United",
+   "Tottenham Hotspur",
+   "Sevilla"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atalanta 3–0 Bayer Leverkusen"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2024,
+  "q": "In which city was the 2024 Europa League final played?",
+  "a": "Dublin",
+  "wrong": [
+   "Istanbul",
+   "Budapest",
+   "Seville"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Atalanta 3–0 Bayer Leverkusen, in Dublin"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2025,
+  "q": "Who did Tottenham Hotspur beat in the 2025 Europa League final?",
+  "a": "Manchester United",
+  "wrong": [
+   "SC Freiburg",
+   "Sevilla",
+   "Roma"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Tottenham Hotspur 1–0 Manchester United"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2025,
+  "q": "In which city was the 2025 Europa League final played?",
+  "a": "Bilbao",
+  "wrong": [
+   "Budapest",
+   "Istanbul",
+   "Gdańsk"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Tottenham Hotspur 1–0 Manchester United, in Bilbao"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "winner",
+  "year": 2026,
+  "q": "Who won the 2026 Europa League final?",
+  "a": "Aston Villa",
+  "wrong": [
+   "SC Freiburg",
+   "Manchester United",
+   "Tottenham Hotspur"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Aston Villa 3–0 SC Freiburg"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "runner-up",
+  "year": 2026,
+  "q": "Who did Aston Villa beat in the 2026 Europa League final?",
+  "a": "SC Freiburg",
+  "wrong": [
+   "Roma",
+   "Manchester United",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Aston Villa 3–0 SC Freiburg"
+ },
+ {
+  "comp": "Europa League",
+  "kind": "venue",
+  "year": 2026,
+  "q": "In which city was the 2026 Europa League final played?",
+  "a": "Istanbul",
+  "wrong": [
+   "Budapest",
+   "Dublin",
+   "Bilbao"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_Cup_and_Europa_League_finals",
+  "note": "Aston Villa 3–0 SC Freiburg, in Istanbul"
+ }
+]

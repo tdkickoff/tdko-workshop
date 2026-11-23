@@ -1,0 +1,121 @@
+{
+ "29": {
+  "kind": "trophy",
+  "x": "won the Ballon d'Or",
+  "nx": "never won the Ballon d'Or",
+  "eight": [
+   "Lionel Messi",
+   "Luka Modrić",
+   "Kaká",
+   "Michael Owen",
+   "Luís Figo",
+   "Rivaldo",
+   "Pavel Nedvěd",
+   "Rodri"
+  ],
+  "odd": "Thierry Henry",
+  "src": "Topend Sports: Ballon d'Or winners 1990–2025"
+ },
+ "30": {
+  "kind": "trophy",
+  "x": "won PFA Players' Player of the Year",
+  "nx": "never won PFA Players' Player of the Year",
+  "eight": [
+   "Eric Cantona",
+   "Roy Keane",
+   "John Terry",
+   "Steven Gerrard",
+   "Gareth Bale",
+   "Luis Suárez",
+   "Eden Hazard",
+   "Virgil van Dijk"
+  ],
+  "odd": "Frank Lampard",
+  "src": "Wikipedia: PFA Players' Player of the Year"
+ },
+ "31": {
+  "kind": "trophy",
+  "x": "won the Premier League Golden Boot",
+  "nx": "never won the Premier League Golden Boot",
+  "eight": [
+   "Teddy Sheringham",
+   "Kevin Phillips",
+   "Jimmy Floyd Hasselbaink",
+   "Didier Drogba",
+   "Nicolas Anelka",
+   "Carlos Tevez",
+   "Dimitar Berbatov",
+   "Jamie Vardy"
+  ],
+  "odd": "Wayne Rooney",
+  "src": "Wikipedia: Premier League Golden Boot"
+ },
+ "32": {
+  "kind": "trophy",
+  "x": "scored 30 or more goals for Argentina",
+  "nx": "scored fewer than 30 goals for Argentina",
+  "eight": [
+   "Lionel Messi",
+   "Gabriel Batistuta",
+   "Lautaro Martínez",
+   "Sergio Agüero",
+   "Hernán Crespo",
+   "Diego Maradona",
+   "Gonzalo Higuaín",
+   "Ángel Di María"
+  ],
+  "odd": "Carlos Tevez",
+  "src": "Wikipedia: Argentina national football team records and statistics"
+ },
+ "33": {
+  "kind": "trophy",
+  "x": "broke the world transfer record",
+  "nx": "never broke the world transfer record",
+  "eight": [
+   "Roberto Baggio",
+   "Jean-Pierre Papin",
+   "Gianluca Vialli",
+   "Ronaldo",
+   "Alan Shearer",
+   "Luís Figo",
+   "Zinedine Zidane",
+   "Neymar"
+  ],
+  "odd": "Kylian Mbappé",
+  "src": "Wikipedia: List of most expensive association football transfers (record progression)"
+ },
+ "34": {
+  "kind": "trophy",
+  "x": "won 100 or more caps for Brazil",
+  "nx": "won 99 caps for Brazil, one short",
+  "eight": [
+   "Cafu",
+   "Neymar",
+   "Roberto Carlos",
+   "Dani Alves",
+   "Thiago Silva",
+   "Marquinhos",
+   "Lúcio",
+   "Cláudio Taffarel"
+  ],
+  "odd": "Ronaldo",
+  "src": "Wikipedia: List of Brazil international footballers"
+ },
+ "35": {
+  "kind": "trophy",
+  "x": "won 100 or more caps for Croatia",
+  "nx": "won 89 caps for Croatia",
+  "eight": [
+   "Luka Modrić",
+   "Ivan Perišić",
+   "Darijo Srna",
+   "Andrej Kramarić",
+   "Mateo Kovačić",
+   "Stipe Pletikosa",
+   "Ivan Rakitić",
+   "Ivica Olić"
+  ],
+  "odd": "Mario Mandžukić",
+  "src": "Wikipedia: List of Croatia international footballers"
+ }
+}

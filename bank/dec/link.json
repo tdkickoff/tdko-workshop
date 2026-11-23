@@ -1,0 +1,1174 @@
+[
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Andrés Iniesta",
+    "Midfielder",
+    "Spain",
+    [
+     "iniesta",
+     "andres iniesta"
+    ]
+   ],
+   "clubs": "Barcelona"
+  },
+  "links": [
+   {
+    "p": [
+     "Thierry Henry",
+     "Forward",
+     "France",
+     [
+      "henry"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2009 Champions League final)"
+   },
+   {
+    "p": [
+     "Cesc Fàbregas",
+     "Midfielder",
+     "Spain",
+     [
+      "fabregas",
+      "cesc fabregas"
+     ]
+    ],
+    "t": "club",
+    "x": "Arsenal teammates (2006 Champions League final)"
+   },
+   {
+    "p": [
+     "Gerard Piqué",
+     "Defender",
+     "Spain",
+     [
+      "pique",
+      "gerard pique"
+     ]
+    ],
+    "t": "intl",
+    "x": "Spain teammates (2012 European Championship final)"
+   },
+   {
+    "p": [
+     "Javier Mascherano",
+     "Defender",
+     "Argentina",
+     [
+      "mascherano"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2015 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "e",
+  "start": {
+   "p": [
+    "Iker Casillas",
+    "Goalkeeper",
+    "Spain",
+    [
+     "casillas"
+    ]
+   ],
+   "clubs": "Real Madrid"
+  },
+  "links": [
+   {
+    "p": [
+     "Sergio Busquets",
+     "Midfielder",
+     "Spain",
+     [
+      "busquets"
+     ]
+    ],
+    "t": "intl",
+    "x": "Spain teammates (2012 European Championship final)"
+   },
+   {
+    "p": [
+     "Lionel Messi",
+     "Forward",
+     "Argentina",
+     [
+      "messi"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2015 Champions League final)"
+   },
+   {
+    "p": [
+     "Ángel Di María",
+     "Forward",
+     "Argentina",
+     [
+      "maria",
+      "angel di maria"
+     ]
+    ],
+    "t": "intl",
+    "x": "Argentina teammates (2022 World Cup final)"
+   },
+   {
+    "p": [
+     "Luka Modrić",
+     "Midfielder",
+     "Croatia",
+     [
+      "modric",
+      "luka modric"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2014 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Sergio Ramos",
+    "Defender",
+    "Spain",
+    [
+     "ramos"
+    ]
+   ],
+   "clubs": "Real Madrid"
+  },
+  "links": [
+   {
+    "p": [
+     "Cristiano Ronaldo",
+     "Forward",
+     "Portugal",
+     [
+      "ronaldo"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2016 Champions League final)"
+   },
+   {
+    "p": [
+     "Owen Hargreaves",
+     "Midfielder",
+     "England",
+     [
+      "hargreaves"
+     ]
+    ],
+    "t": "club",
+    "x": "Manchester United teammates (2008 Champions League final)"
+   },
+   {
+    "p": [
+     "Bixente Lizarazu",
+     "Defender",
+     "France",
+     [
+      "lizarazu"
+     ]
+    ],
+    "t": "club",
+    "x": "Bayern Munich teammates (2001 Champions League final)"
+   },
+   {
+    "p": [
+     "Christophe Dugarry",
+     "Forward",
+     "France",
+     [
+      "dugarry"
+     ]
+    ],
+    "t": "intl",
+    "x": "France teammates (2000 European Championship final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Xavi",
+    "Midfielder",
+    "Spain",
+    []
+   ],
+   "clubs": "Barcelona"
+  },
+  "links": [
+   {
+    "p": [
+     "Samuel Eto'o",
+     "Forward",
+     "Cameroon",
+     [
+      "eto'o"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2009 Champions League final)"
+   },
+   {
+    "p": [
+     "Lúcio",
+     "Defender",
+     "Brazil",
+     [
+      "lucio"
+     ]
+    ],
+    "t": "club",
+    "x": "Inter Milan teammates (2010 Champions League final)"
+   },
+   {
+    "p": [
+     "Edmílson",
+     "Defender",
+     "Brazil",
+     [
+      "edmilson"
+     ]
+    ],
+    "t": "intl",
+    "x": "Brazil teammates (2002 World Cup final)"
+   },
+   {
+    "p": [
+     "Víctor Valdés",
+     "Goalkeeper",
+     "Spain",
+     [
+      "valdes",
+      "victor valdes"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2006 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "e",
+  "start": {
+   "p": [
+    "Carles Puyol",
+    "Defender",
+    "Spain",
+    [
+     "puyol"
+    ]
+   ],
+   "clubs": "Barcelona"
+  },
+  "links": [
+   {
+    "p": [
+     "Sergio Busquets",
+     "Midfielder",
+     "Spain",
+     [
+      "busquets"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2009 Champions League final)"
+   },
+   {
+    "p": [
+     "Iker Casillas",
+     "Goalkeeper",
+     "Spain",
+     [
+      "casillas"
+     ]
+    ],
+    "t": "intl",
+    "x": "Spain teammates (2010 World Cup final)"
+   },
+   {
+    "p": [
+     "Cristiano Ronaldo",
+     "Forward",
+     "Portugal",
+     [
+      "ronaldo"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2014 Champions League final)"
+   },
+   {
+    "p": [
+     "Wayne Rooney",
+     "Forward",
+     "England",
+     [
+      "rooney"
+     ]
+    ],
+    "t": "club",
+    "x": "Manchester United teammates (2008 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "e",
+  "start": {
+   "p": [
+    "Dani Carvajal",
+    "Defender",
+    "Spain",
+    [
+     "carvajal"
+    ]
+   ],
+   "clubs": "Real Madrid"
+  },
+  "links": [
+   {
+    "p": [
+     "Raphaël Varane",
+     "Defender",
+     "France",
+     [
+      "varane",
+      "raphael varane"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2014 Champions League final)"
+   },
+   {
+    "p": [
+     "N'Golo Kanté",
+     "Midfielder",
+     "France",
+     [
+      "kante",
+      "n'golo kante"
+     ]
+    ],
+    "t": "intl",
+    "x": "France teammates (2018 World Cup final)"
+   },
+   {
+    "p": [
+     "Antonio Rüdiger",
+     "Defender",
+     "Germany",
+     [
+      "rudiger",
+      "antonio rudiger"
+     ]
+    ],
+    "t": "club",
+    "x": "Chelsea teammates (2021 Champions League final)"
+   },
+   {
+    "p": [
+     "Jude Bellingham",
+     "Midfielder",
+     "England",
+     [
+      "bellingham"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2024 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "h",
+  "start": {
+   "p": [
+    "Clarence Seedorf",
+    "Midfielder",
+    "Netherlands",
+    [
+     "seedorf"
+    ]
+   ],
+   "clubs": "AC Milan, Ajax"
+  },
+  "links": [
+   {
+    "p": [
+     "Edwin van der Sar",
+     "Goalkeeper",
+     "Netherlands",
+     [
+      "sar"
+     ]
+    ],
+    "t": "club",
+    "x": "Ajax teammates (1995 Champions League final)"
+   },
+   {
+    "p": [
+     "Owen Hargreaves",
+     "Midfielder",
+     "England",
+     [
+      "hargreaves"
+     ]
+    ],
+    "t": "club",
+    "x": "Manchester United teammates (2008 Champions League final)"
+   },
+   {
+    "p": [
+     "Bixente Lizarazu",
+     "Defender",
+     "France",
+     [
+      "lizarazu"
+     ]
+    ],
+    "t": "club",
+    "x": "Bayern Munich teammates (2001 Champions League final)"
+   },
+   {
+    "p": [
+     "Zinedine Zidane",
+     "Midfielder",
+     "France",
+     [
+      "zidane"
+     ]
+    ],
+    "t": "intl",
+    "x": "France teammates (2000 European Championship final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Didier Deschamps",
+    "Midfielder",
+    "France",
+    [
+     "deschamps"
+    ]
+   ],
+   "clubs": "Marseille"
+  },
+  "links": [
+   {
+    "p": [
+     "Zinedine Zidane",
+     "Midfielder",
+     "France",
+     [
+      "zidane"
+     ]
+    ],
+    "t": "intl",
+    "x": "France teammates (2000 European Championship final)"
+   },
+   {
+    "p": [
+     "Roberto Carlos",
+     "Defender",
+     "Brazil",
+     [
+      "roberto carlos"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2002 Champions League final)"
+   },
+   {
+    "p": [
+     "Lúcio",
+     "Defender",
+     "Brazil",
+     [
+      "lucio"
+     ]
+    ],
+    "t": "intl",
+    "x": "Brazil teammates (2002 World Cup final)"
+   },
+   {
+    "p": [
+     "Júlio César",
+     "Goalkeeper",
+     "Brazil",
+     [
+      "cesar",
+      "julio cesar"
+     ]
+    ],
+    "t": "club",
+    "x": "Inter Milan teammates (2010 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "h",
+  "start": {
+   "p": [
+    "Fabien Barthez",
+    "Goalkeeper",
+    "France",
+    [
+     "barthez"
+    ]
+   ],
+   "clubs": "Marseille"
+  },
+  "links": [
+   {
+    "p": [
+     "Marcel Desailly",
+     "Defender",
+     "France",
+     [
+      "desailly"
+     ]
+    ],
+    "t": "club",
+    "x": "Marseille teammates (1993 Champions League final)"
+   },
+   {
+    "p": [
+     "Thierry Henry",
+     "Forward",
+     "France",
+     [
+      "henry"
+     ]
+    ],
+    "t": "intl",
+    "x": "France teammates (2000 European Championship final)"
+   },
+   {
+    "p": [
+     "Gilberto Silva",
+     "Midfielder",
+     "Brazil",
+     [
+      "gilberto silva"
+     ]
+    ],
+    "t": "club",
+    "x": "Arsenal teammates (2006 Champions League final)"
+   },
+   {
+    "p": [
+     "Cafu",
+     "Defender",
+     "Brazil",
+     []
+    ],
+    "t": "intl",
+    "x": "Brazil teammates (2002 World Cup final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "h",
+  "start": {
+   "p": [
+    "Gennaro Gattuso",
+    "Midfielder",
+    "Italy",
+    [
+     "gattuso"
+    ]
+   ],
+   "clubs": "AC Milan"
+  },
+  "links": [
+   {
+    "p": [
+     "Andrea Pirlo",
+     "Midfielder",
+     "Italy",
+     [
+      "pirlo"
+     ]
+    ],
+    "t": "intl",
+    "x": "Italy teammates (2006 World Cup final)"
+   },
+   {
+    "p": [
+     "Clarence Seedorf",
+     "Midfielder",
+     "Netherlands",
+     [
+      "seedorf"
+     ]
+    ],
+    "t": "club",
+    "x": "AC Milan teammates (2007 Champions League final)"
+   },
+   {
+    "p": [
+     "Edwin van der Sar",
+     "Goalkeeper",
+     "Netherlands",
+     [
+      "sar"
+     ]
+    ],
+    "t": "club",
+    "x": "Ajax teammates (1995 Champions League final)"
+   },
+   {
+    "p": [
+     "Wayne Rooney",
+     "Forward",
+     "England",
+     [
+      "rooney"
+     ]
+    ],
+    "t": "club",
+    "x": "Manchester United teammates (2008 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "e",
+  "start": {
+   "p": [
+    "Toni Kroos",
+    "Midfielder",
+    "Germany",
+    [
+     "kroos"
+    ]
+   ],
+   "clubs": "Real Madrid"
+  },
+  "links": [
+   {
+    "p": [
+     "Sergio Ramos",
+     "Defender",
+     "Spain",
+     [
+      "ramos"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2016 Champions League final)"
+   },
+   {
+    "p": [
+     "Gerard Piqué",
+     "Defender",
+     "Spain",
+     [
+      "pique",
+      "gerard pique"
+     ]
+    ],
+    "t": "intl",
+    "x": "Spain teammates (2010 World Cup final)"
+   },
+   {
+    "p": [
+     "Lionel Messi",
+     "Forward",
+     "Argentina",
+     [
+      "messi"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2009 Champions League final)"
+   },
+   {
+    "p": [
+     "Alexis Mac Allister",
+     "Midfielder",
+     "Argentina",
+     [
+      "allister"
+     ]
+    ],
+    "t": "intl",
+    "x": "Argentina teammates (2022 World Cup final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Xabi Alonso",
+    "Midfielder",
+    "Spain",
+    [
+     "alonso"
+    ]
+   ],
+   "clubs": "Liverpool"
+  },
+  "links": [
+   {
+    "p": [
+     "Pedro",
+     "Forward",
+     "Spain",
+     []
+    ],
+    "t": "intl",
+    "x": "Spain teammates (2010 World Cup final)"
+   },
+   {
+    "p": [
+     "Andrés Iniesta",
+     "Midfielder",
+     "Spain",
+     [
+      "iniesta",
+      "andres iniesta"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2011 Champions League final)"
+   },
+   {
+    "p": [
+     "Cesc Fàbregas",
+     "Midfielder",
+     "Spain",
+     [
+      "fabregas",
+      "cesc fabregas"
+     ]
+    ],
+    "t": "intl",
+    "x": "Spain teammates (2012 European Championship final)"
+   },
+   {
+    "p": [
+     "Robert Pires",
+     "Midfielder",
+     "France",
+     [
+      "pires"
+     ]
+    ],
+    "t": "club",
+    "x": "Arsenal teammates (2006 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Ashley Cole",
+    "Defender",
+    "England",
+    [
+     "cole"
+    ]
+   ],
+   "clubs": "Arsenal, Chelsea"
+  },
+  "links": [
+   {
+    "p": [
+     "Gilberto Silva",
+     "Midfielder",
+     "Brazil",
+     [
+      "gilberto silva"
+     ]
+    ],
+    "t": "club",
+    "x": "Arsenal teammates (2006 Champions League final)"
+   },
+   {
+    "p": [
+     "Ronaldinho",
+     "Midfielder",
+     "Brazil",
+     []
+    ],
+    "t": "intl",
+    "x": "Brazil teammates (2002 World Cup final)"
+   },
+   {
+    "p": [
+     "Samuel Eto'o",
+     "Forward",
+     "Cameroon",
+     [
+      "eto'o"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2006 Champions League final)"
+   },
+   {
+    "p": [
+     "Wesley Sneijder",
+     "Midfielder",
+     "Netherlands",
+     [
+      "sneijder"
+     ]
+    ],
+    "t": "club",
+    "x": "Inter Milan teammates (2010 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "e",
+  "start": {
+   "p": [
+    "Bastian Schweinsteiger",
+    "Midfielder",
+    "Germany",
+    [
+     "schweinsteiger"
+    ]
+   ],
+   "clubs": "Bayern Munich"
+  },
+  "links": [
+   {
+    "p": [
+     "Manuel Neuer",
+     "Goalkeeper",
+     "Germany",
+     [
+      "neuer"
+     ]
+    ],
+    "t": "club",
+    "x": "Bayern Munich teammates (2013 Champions League final)"
+   },
+   {
+    "p": [
+     "Toni Kroos",
+     "Midfielder",
+     "Germany",
+     [
+      "kroos"
+     ]
+    ],
+    "t": "intl",
+    "x": "Germany teammates (2014 World Cup final)"
+   },
+   {
+    "p": [
+     "Antonio Rüdiger",
+     "Defender",
+     "Germany",
+     [
+      "rudiger",
+      "antonio rudiger"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2024 Champions League final)"
+   },
+   {
+    "p": [
+     "Édouard Mendy",
+     "Goalkeeper",
+     "Senegal",
+     [
+      "mendy",
+      "edouard mendy"
+     ]
+    ],
+    "t": "club",
+    "x": "Chelsea teammates (2021 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "e",
+  "start": {
+   "p": [
+    "Cristian Romero",
+    "Defender",
+    "Argentina",
+    [
+     "romero"
+    ]
+   ],
+   "clubs": "Tottenham Hotspur"
+  },
+  "links": [
+   {
+    "p": [
+     "Ángel Di María",
+     "Forward",
+     "Argentina",
+     [
+      "maria",
+      "angel di maria"
+     ]
+    ],
+    "t": "intl",
+    "x": "Argentina teammates (2022 World Cup final)"
+   },
+   {
+    "p": [
+     "Dani Carvajal",
+     "Defender",
+     "Spain",
+     [
+      "carvajal"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2014 Champions League final)"
+   },
+   {
+    "p": [
+     "Fabián Ruiz",
+     "Midfielder",
+     "Spain",
+     [
+      "ruiz",
+      "fabian ruiz"
+     ]
+    ],
+    "t": "intl",
+    "x": "Spain teammates (2024 European Championship final)"
+   },
+   {
+    "p": [
+     "Nuno Mendes",
+     "Defender",
+     "Portugal",
+     [
+      "mendes"
+     ]
+    ],
+    "t": "club",
+    "x": "Paris Saint-Germain teammates (2025 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Dani Alves",
+    "Defender",
+    "Brazil",
+    [
+     "alves"
+    ]
+   ],
+   "clubs": "Barcelona"
+  },
+  "links": [
+   {
+    "p": [
+     "Xavi",
+     "Midfielder",
+     "Spain",
+     []
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2011 Champions League final)"
+   },
+   {
+    "p": [
+     "Carles Puyol",
+     "Defender",
+     "Spain",
+     [
+      "puyol"
+     ]
+    ],
+    "t": "intl",
+    "x": "Spain teammates (2008 European Championship final)"
+   },
+   {
+    "p": [
+     "Ronaldinho",
+     "Midfielder",
+     "Brazil",
+     []
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2006 Champions League final)"
+   },
+   {
+    "p": [
+     "Roque Júnior",
+     "Defender",
+     "Brazil",
+     [
+      "roque junior"
+     ]
+    ],
+    "t": "intl",
+    "x": "Brazil teammates (2002 World Cup final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Deco",
+    "Midfielder",
+    "Portugal",
+    []
+   ],
+   "clubs": "Barcelona, Porto"
+  },
+  "links": [
+   {
+    "p": [
+     "Pedro Mendes",
+     "Midfielder",
+     "Portugal",
+     [
+      "mendes"
+     ]
+    ],
+    "t": "club",
+    "x": "Porto teammates (2004 Champions League final)"
+   },
+   {
+    "p": [
+     "Sol Campbell",
+     "Defender",
+     "England",
+     [
+      "campbell"
+     ]
+    ],
+    "t": "club",
+    "x": "Portsmouth teammates (2008 FA Cup final)"
+   },
+   {
+    "p": [
+     "Ashley Cole",
+     "Defender",
+     "England",
+     [
+      "cole"
+     ]
+    ],
+    "t": "club",
+    "x": "Arsenal teammates (2006 Champions League final)"
+   },
+   {
+    "p": [
+     "Salomon Kalou",
+     "Forward",
+     "Ivory Coast",
+     [
+      "kalou"
+     ]
+    ],
+    "t": "club",
+    "x": "Chelsea teammates (2012 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ },
+ {
+  "d": "m",
+  "start": {
+   "p": [
+    "Fernando Morientes",
+    "Forward",
+    "Spain",
+    [
+     "morientes"
+    ]
+   ],
+   "clubs": "Real Madrid"
+  },
+  "links": [
+   {
+    "p": [
+     "Roberto Carlos",
+     "Defender",
+     "Brazil",
+     [
+      "roberto carlos"
+     ]
+    ],
+    "t": "club",
+    "x": "Real Madrid teammates (2002 Champions League final)"
+   },
+   {
+    "p": [
+     "Edmílson",
+     "Defender",
+     "Brazil",
+     [
+      "edmilson"
+     ]
+    ],
+    "t": "intl",
+    "x": "Brazil teammates (2002 World Cup final)"
+   },
+   {
+    "p": [
+     "Deco",
+     "Midfielder",
+     "Portugal",
+     []
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2006 Champions League final)"
+   },
+   {
+    "p": [
+     "Vítor Baía",
+     "Goalkeeper",
+     "Portugal",
+     [
+      "baia",
+      "vitor baia"
+     ]
+    ],
+    "t": "club",
+    "x": "Porto teammates (2004 Champions League final)"
+   }
+  ],
+  "src": "Approved Squad Goals line-ups in the bank (each link = both players started that final)"
+ }
+]

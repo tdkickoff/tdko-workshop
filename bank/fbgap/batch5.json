@@ -1,0 +1,2507 @@
+[
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Tomáš Souček played for?",
+  "a": "Czech Republic",
+  "wrong": [
+   "Croatia",
+   "Spain",
+   "Bosnia and Herzegovina"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "90 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Patrik Schick played for?",
+  "a": "Czech Republic",
+  "wrong": [
+   "Spain",
+   "Portugal",
+   "Croatia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "53 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Vladimír Coufal played for?",
+  "a": "Czech Republic",
+  "wrong": [
+   "Serbia",
+   "Bosnia and Herzegovina",
+   "Portugal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "62 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Raúl Jiménez played for?",
+  "a": "Mexico",
+  "wrong": [
+   "Costa Rica",
+   "Canada",
+   "USA"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "124 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Guillermo Ochoa played for?",
+  "a": "Mexico",
+  "wrong": [
+   "Canada",
+   "USA",
+   "Jamaica"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "152 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Edson Álvarez played for?",
+  "a": "Mexico",
+  "wrong": [
+   "Jamaica",
+   "Costa Rica",
+   "Canada"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "98 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Santiago Giménez played for?",
+  "a": "Mexico",
+  "wrong": [
+   "Jamaica",
+   "Panama",
+   "Costa Rica"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "47 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kim Min-jae played for?",
+  "a": "South Korea",
+  "wrong": [
+   "Uzbekistan",
+   "Qatar",
+   "Australia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "79 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Hwang Hee-chan played for?",
+  "a": "South Korea",
+  "wrong": [
+   "Australia",
+   "Iran",
+   "Qatar"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "79 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lee Kang-in played for?",
+  "a": "South Korea",
+  "wrong": [
+   "Iran",
+   "Saudi Arabia",
+   "Japan"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "47 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Edin Džeko played for?",
+  "a": "Bosnia and Herzegovina",
+  "wrong": [
+   "Portugal",
+   "Turkey",
+   "Croatia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "148 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Sead Kolašinac played for?",
+  "a": "Bosnia and Herzegovina",
+  "wrong": [
+   "Serbia",
+   "Portugal",
+   "Croatia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "65 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Alphonso Davies played for?",
+  "a": "Canada",
+  "wrong": [
+   "Mexico",
+   "Jamaica",
+   "USA"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "58 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jonathan David played for?",
+  "a": "Canada",
+  "wrong": [
+   "USA",
+   "Mexico",
+   "Costa Rica"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "77 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Cyle Larin played for?",
+  "a": "Canada",
+  "wrong": [
+   "USA",
+   "Panama",
+   "Mexico"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "90 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Tajon Buchanan played for?",
+  "a": "Canada",
+  "wrong": [
+   "Jamaica",
+   "Costa Rica",
+   "Mexico"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "60 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Akram Afif played for?",
+  "a": "Qatar",
+  "wrong": [
+   "South Korea",
+   "Uzbekistan",
+   "Australia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "125 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Granit Xhaka played for?",
+  "a": "Switzerland",
+  "wrong": [
+   "Scotland",
+   "Denmark",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "146 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Manuel Akanji played for?",
+  "a": "Switzerland",
+  "wrong": [
+   "England",
+   "Scotland",
+   "Norway"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "81 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Breel Embolo played for?",
+  "a": "Switzerland",
+  "wrong": [
+   "Germany",
+   "France",
+   "Republic of Ireland"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "86 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Denis Zakaria played for?",
+  "a": "Switzerland",
+  "wrong": [
+   "Scotland",
+   "Republic of Ireland",
+   "France"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "65 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ricardo Rodriguez played for?",
+  "a": "Switzerland",
+  "wrong": [
+   "Norway",
+   "Wales",
+   "Belgium"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "138 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marquinhos played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Paraguay",
+   "Uruguay",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "105 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Casemiro played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Ecuador",
+   "Chile",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "86 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Vinícius Júnior played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Peru",
+   "Paraguay",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "49 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lucas Paquetá played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Uruguay",
+   "Peru"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "63 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Bruno Guimarães played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Ecuador",
+   "Uruguay",
+   "Colombia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "43 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Yassine Bounou played for?",
+  "a": "Morocco",
+  "wrong": [
+   "Cameroon",
+   "Tunisia",
+   "Nigeria"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "90 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Noussair Mazraoui played for?",
+  "a": "Morocco",
+  "wrong": [
+   "Egypt",
+   "Senegal",
+   "Nigeria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "45 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Sofyan Amrabat played for?",
+  "a": "Morocco",
+  "wrong": [
+   "Mali",
+   "Tunisia",
+   "Algeria"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "75 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Andy Robertson played for?",
+  "a": "Scotland",
+  "wrong": [
+   "Republic of Ireland",
+   "Wales",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "94 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Scott McTominay played for?",
+  "a": "Scotland",
+  "wrong": [
+   "Sweden",
+   "Wales",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "70 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has John McGinn played for?",
+  "a": "Scotland",
+  "wrong": [
+   "Germany",
+   "Norway",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "86 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kieran Tierney played for?",
+  "a": "Scotland",
+  "wrong": [
+   "Austria",
+   "Belgium",
+   "Republic of Ireland"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "56 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Craig Gordon played for?",
+  "a": "Scotland",
+  "wrong": [
+   "England",
+   "Belgium",
+   "Netherlands"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "84 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mathew Ryan played for?",
+  "a": "Australia",
+  "wrong": [
+   "New Zealand",
+   "Papua New Guinea",
+   "Fiji"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "104 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Miguel Almirón played for?",
+  "a": "Paraguay",
+  "wrong": [
+   "Brazil",
+   "Uruguay",
+   "Peru"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "76 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Hakan Çalhanoğlu played for?",
+  "a": "Turkey",
+  "wrong": [
+   "Bosnia and Herzegovina",
+   "Czech Republic",
+   "Serbia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "105 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kerem Aktürkoğlu played for?",
+  "a": "Turkey",
+  "wrong": [
+   "Italy",
+   "Croatia",
+   "Serbia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "52 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Merih Demiral played for?",
+  "a": "Turkey",
+  "wrong": [
+   "Serbia",
+   "Czech Republic",
+   "Spain"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "62 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Weston McKennie played for?",
+  "a": "USA",
+  "wrong": [
+   "Panama",
+   "Jamaica",
+   "Costa Rica"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "66 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Tyler Adams played for?",
+  "a": "USA",
+  "wrong": [
+   "Costa Rica",
+   "Jamaica",
+   "Panama"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "54 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Antonee Robinson played for?",
+  "a": "USA",
+  "wrong": [
+   "Costa Rica",
+   "Mexico",
+   "Canada"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "54 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Tim Ream played for?",
+  "a": "USA",
+  "wrong": [
+   "Jamaica",
+   "Costa Rica",
+   "Canada"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "82 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Brenden Aaronson played for?",
+  "a": "USA",
+  "wrong": [
+   "Jamaica",
+   "Panama",
+   "Mexico"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "58 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Timothy Weah played for?",
+  "a": "USA",
+  "wrong": [
+   "Canada",
+   "Mexico",
+   "Panama"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "51 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Piero Hincapié played for?",
+  "a": "Ecuador",
+  "wrong": [
+   "Peru",
+   "Argentina",
+   "Colombia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "52 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pervis Estupiñán played for?",
+  "a": "Ecuador",
+  "wrong": [
+   "Argentina",
+   "Paraguay",
+   "Chile"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "54 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Enner Valencia played for?",
+  "a": "Ecuador",
+  "wrong": [
+   "Colombia",
+   "Peru",
+   "Paraguay"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "105 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Moisés Caicedo played for?",
+  "a": "Ecuador",
+  "wrong": [
+   "Argentina",
+   "Brazil",
+   "Chile"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "61 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Antonio Rüdiger played for?",
+  "a": "Germany",
+  "wrong": [
+   "Sweden",
+   "Scotland",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "82 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Joshua Kimmich played for?",
+  "a": "Germany",
+  "wrong": [
+   "Republic of Ireland",
+   "Norway",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "110 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Leon Goretzka played for?",
+  "a": "Germany",
+  "wrong": [
+   "Sweden",
+   "Switzerland",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "70 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jamal Musiala played for?",
+  "a": "Germany",
+  "wrong": [
+   "France",
+   "Norway",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "42 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Leroy Sané played for?",
+  "a": "Germany",
+  "wrong": [
+   "Denmark",
+   "England",
+   "France"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "76 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jonathan Tah played for?",
+  "a": "Germany",
+  "wrong": [
+   "Denmark",
+   "Republic of Ireland",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "47 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Franck Kessié played for?",
+  "a": "Ivory Coast",
+  "wrong": [
+   "Mali",
+   "Senegal",
+   "Nigeria"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "102 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ibrahim Sangaré played for?",
+  "a": "Ivory Coast",
+  "wrong": [
+   "Egypt",
+   "Nigeria",
+   "Algeria"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "57 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Takefusa Kubo played for?",
+  "a": "Japan",
+  "wrong": [
+   "South Korea",
+   "Uzbekistan",
+   "Saudi Arabia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "49 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Daichi Kamada played for?",
+  "a": "Japan",
+  "wrong": [
+   "Saudi Arabia",
+   "Qatar",
+   "Australia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "49 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Takehiro Tomiyasu played for?",
+  "a": "Japan",
+  "wrong": [
+   "South Korea",
+   "Qatar",
+   "Iran"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "43 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ritsu Dōan played for?",
+  "a": "Japan",
+  "wrong": [
+   "Qatar",
+   "South Korea",
+   "Australia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "65 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nathan Aké played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Belgium",
+   "Sweden",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "59 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Memphis Depay played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Wales",
+   "Norway",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "109 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Cody Gakpo played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Denmark",
+   "France",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "50 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Frenkie de Jong played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Switzerland",
+   "Austria",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "66 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Denzel Dumfries played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Norway",
+   "Denmark",
+   "Belgium"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "72 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Wout Weghorst played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Norway",
+   "Switzerland",
+   "Republic of Ireland"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "52 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Victor Lindelöf played for?",
+  "a": "Sweden",
+  "wrong": [
+   "Scotland",
+   "Austria",
+   "Norway"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "76 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Hannibal Mejbri played for?",
+  "a": "Tunisia",
+  "wrong": [
+   "Morocco",
+   "Ivory Coast",
+   "Algeria"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "45 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Thibaut Courtois played for?",
+  "a": "Belgium",
+  "wrong": [
+   "Sweden",
+   "Denmark",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "109 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Axel Witsel played for?",
+  "a": "Belgium",
+  "wrong": [
+   "Switzerland",
+   "Wales",
+   "Germany"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "138 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Youri Tielemans played for?",
+  "a": "Belgium",
+  "wrong": [
+   "Wales",
+   "England",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "85 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Leandro Trossard played for?",
+  "a": "Belgium",
+  "wrong": [
+   "Switzerland",
+   "Scotland",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "51 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jérémy Doku played for?",
+  "a": "Belgium",
+  "wrong": [
+   "Norway",
+   "Austria",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "43 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Omar Marmoush played for?",
+  "a": "Egypt",
+  "wrong": [
+   "Nigeria",
+   "Mali",
+   "Ivory Coast"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "50 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mehdi Taremi played for?",
+  "a": "Iran",
+  "wrong": [
+   "Qatar",
+   "Australia",
+   "Japan"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "106 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Chris Wood played for?",
+  "a": "New Zealand",
+  "wrong": [
+   "Australia",
+   "Fiji",
+   "Papua New Guinea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "90 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Salem Al-Dawsari played for?",
+  "a": "Saudi Arabia",
+  "wrong": [
+   "South Korea",
+   "Japan",
+   "Uzbekistan"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "111 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mikel Merino played for?",
+  "a": "Spain",
+  "wrong": [
+   "Italy",
+   "Bosnia and Herzegovina",
+   "Czech Republic"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "43 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Fabián Ruiz played for?",
+  "a": "Spain",
+  "wrong": [
+   "Czech Republic",
+   "Bosnia and Herzegovina",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "42 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dani Olmo played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Turkey",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "50 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Aymeric Laporte played for?",
+  "a": "Spain",
+  "wrong": [
+   "Bosnia and Herzegovina",
+   "Croatia",
+   "Italy"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "46 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mikel Oyarzabal played for?",
+  "a": "Spain",
+  "wrong": [
+   "Czech Republic",
+   "Portugal",
+   "Serbia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "53 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Unai Simón played for?",
+  "a": "Spain",
+  "wrong": [
+   "Croatia",
+   "Bosnia and Herzegovina",
+   "Turkey"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "58 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has José María Giménez played for?",
+  "a": "Uruguay",
+  "wrong": [
+   "Colombia",
+   "Paraguay",
+   "Brazil"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "99 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Federico Valverde played for?",
+  "a": "Uruguay",
+  "wrong": [
+   "Paraguay",
+   "Colombia",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "73 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Fernando Muslera played for?",
+  "a": "Uruguay",
+  "wrong": [
+   "Paraguay",
+   "Argentina",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "134 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lucas Digne played for?",
+  "a": "France",
+  "wrong": [
+   "Scotland",
+   "Austria",
+   "Germany"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "58 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jules Koundé played for?",
+  "a": "France",
+  "wrong": [
+   "England",
+   "Denmark",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "48 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Adrien Rabiot played for?",
+  "a": "France",
+  "wrong": [
+   "Scotland",
+   "Wales",
+   "Belgium"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "59 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mike Maignan played for?",
+  "a": "France",
+  "wrong": [
+   "England",
+   "Sweden",
+   "Republic of Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "40 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Alexander Sørloth played for?",
+  "a": "Norway",
+  "wrong": [
+   "France",
+   "Republic of Ireland",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "72 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kalidou Koulibaly played for?",
+  "a": "Senegal",
+  "wrong": [
+   "Ghana",
+   "Morocco",
+   "Nigeria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "104 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Idrissa Gueye played for?",
+  "a": "Senegal",
+  "wrong": [
+   "Mali",
+   "Algeria",
+   "Egypt"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "132 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Édouard Mendy played for?",
+  "a": "Senegal",
+  "wrong": [
+   "Cameroon",
+   "Egypt",
+   "Mali"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "58 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ismaïla Sarr played for?",
+  "a": "Senegal",
+  "wrong": [
+   "Morocco",
+   "Cameroon",
+   "Ghana"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "84 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Iliman Ndiaye played for?",
+  "a": "Senegal",
+  "wrong": [
+   "Mali",
+   "Ghana",
+   "Morocco"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "41 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Aïssa Mandi played for?",
+  "a": "Algeria",
+  "wrong": [
+   "Tunisia",
+   "Egypt",
+   "Morocco"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "119 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Julián Alvarez played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Ecuador",
+   "Colombia",
+   "Brazil"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "51 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nicolás Tagliafico played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Paraguay",
+   "Peru",
+   "Uruguay"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "76 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Leandro Paredes played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Brazil",
+   "Chile",
+   "Colombia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "77 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Giovani Lo Celso played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Colombia",
+   "Brazil",
+   "Uruguay"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "67 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marko Arnautović played for?",
+  "a": "Austria",
+  "wrong": [
+   "Belgium",
+   "Scotland",
+   "France"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "133 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has David Alaba played for?",
+  "a": "Austria",
+  "wrong": [
+   "Netherlands",
+   "Republic of Ireland",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "113 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marcel Sabitzer played for?",
+  "a": "Austria",
+  "wrong": [
+   "Scotland",
+   "Netherlands",
+   "Wales"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "98 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Konrad Laimer played for?",
+  "a": "Austria",
+  "wrong": [
+   "Norway",
+   "Belgium",
+   "Netherlands"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "57 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Luis Díaz played for?",
+  "a": "Colombia",
+  "wrong": [
+   "Uruguay",
+   "Paraguay",
+   "Argentina"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "74 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has James Rodríguez played for?",
+  "a": "Colombia",
+  "wrong": [
+   "Paraguay",
+   "Peru",
+   "Uruguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "126 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has David Ospina played for?",
+  "a": "Colombia",
+  "wrong": [
+   "Brazil",
+   "Uruguay",
+   "Peru"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "130 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Yerry Mina played for?",
+  "a": "Colombia",
+  "wrong": [
+   "Ecuador",
+   "Chile",
+   "Peru"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "54 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Davinson Sánchez played for?",
+  "a": "Colombia",
+  "wrong": [
+   "Chile",
+   "Peru",
+   "Ecuador"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "79 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Daniel Muñoz played for?",
+  "a": "Colombia",
+  "wrong": [
+   "Uruguay",
+   "Chile",
+   "Peru"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "46 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Rúben Dias played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Croatia",
+   "Spain",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "76 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has João Félix played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Croatia",
+   "Bosnia and Herzegovina",
+   "Czech Republic"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "54 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Rafael Leão played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Bosnia and Herzegovina",
+   "Czech Republic",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "44 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has João Cancelo played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Turkey",
+   "Spain",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "68 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Rúben Neves played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Serbia",
+   "Czech Republic",
+   "Spain"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "67 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nuno Mendes played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Italy",
+   "Turkey",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "44 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Diogo Costa played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Czech Republic",
+   "Turkey",
+   "Serbia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "43 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mateo Kovačić played for?",
+  "a": "Croatia",
+  "wrong": [
+   "Portugal",
+   "Italy",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "113 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Joško Gvardiol played for?",
+  "a": "Croatia",
+  "wrong": [
+   "Italy",
+   "Serbia",
+   "Bosnia and Herzegovina"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "48 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ivan Perišić played for?",
+  "a": "Croatia",
+  "wrong": [
+   "Italy",
+   "Bosnia and Herzegovina",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "154 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Andrej Kramarić played for?",
+  "a": "Croatia",
+  "wrong": [
+   "Czech Republic",
+   "Serbia",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "116 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dominik Livaković played for?",
+  "a": "Croatia",
+  "wrong": [
+   "Italy",
+   "Bosnia and Herzegovina",
+   "Portugal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "75 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jordan Pickford played for?",
+  "a": "England",
+  "wrong": [
+   "Wales",
+   "Scotland",
+   "Norway"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "84 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has John Stones played for?",
+  "a": "England",
+  "wrong": [
+   "Wales",
+   "Norway",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "89 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marcus Rashford played for?",
+  "a": "England",
+  "wrong": [
+   "Germany",
+   "Republic of Ireland",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "72 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jordan Henderson played for?",
+  "a": "England",
+  "wrong": [
+   "Belgium",
+   "Sweden",
+   "Norway"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "90 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Thomas Partey played for?",
+  "a": "Ghana",
+  "wrong": [
+   "Nigeria",
+   "Ivory Coast",
+   "Tunisia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "57 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jordan Ayew played for?",
+  "a": "Ghana",
+  "wrong": [
+   "Morocco",
+   "Egypt",
+   "Cameroon"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+  "note": "120 caps by the 2026 World Cup"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gianluigi Donnarumma played for?",
+  "a": "Italy",
+  "wrong": [
+   "Croatia",
+   "Spain",
+   "France"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Federico Chiesa played for?",
+  "a": "Italy",
+  "wrong": [
+   "Portugal",
+   "France",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nicolò Barella played for?",
+  "a": "Italy",
+  "wrong": [
+   "France",
+   "Croatia",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Giovanni Di Lorenzo played for?",
+  "a": "Italy",
+  "wrong": [
+   "France",
+   "Spain",
+   "Croatia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Bryan Cristante played for?",
+  "a": "Italy",
+  "wrong": [
+   "Portugal",
+   "France",
+   "Spain"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kasper Schmeichel played for?",
+  "a": "Denmark",
+  "wrong": [
+   "Norway",
+   "Sweden",
+   "Belgium"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Simon Kjær played for?",
+  "a": "Denmark",
+  "wrong": [
+   "Belgium",
+   "Sweden",
+   "Netherlands"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Christian Eriksen played for?",
+  "a": "Denmark",
+  "wrong": [
+   "Belgium",
+   "Netherlands",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Andreas Christensen played for?",
+  "a": "Denmark",
+  "wrong": [
+   "Netherlands",
+   "Belgium",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pierre-Emile Højbjerg played for?",
+  "a": "Denmark",
+  "wrong": [
+   "Sweden",
+   "Belgium",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Yussuf Poulsen played for?",
+  "a": "Denmark",
+  "wrong": [
+   "Norway",
+   "Belgium",
+   "Sweden"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Thomas Delaney played for?",
+  "a": "Denmark",
+  "wrong": [
+   "Norway",
+   "Sweden",
+   "Netherlands"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Wojciech Szczęsny played for?",
+  "a": "Poland",
+  "wrong": [
+   "Czech Republic",
+   "Hungary",
+   "Slovakia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Piotr Zieliński played for?",
+  "a": "Poland",
+  "wrong": [
+   "Ukraine",
+   "Slovakia",
+   "Czech Republic"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jan Bednarek played for?",
+  "a": "Poland",
+  "wrong": [
+   "Ukraine",
+   "Hungary",
+   "Slovakia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Aleksandar Mitrović played for?",
+  "a": "Serbia",
+  "wrong": [
+   "Croatia",
+   "Montenegro",
+   "Bosnia and Herzegovina"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dušan Tadić played for?",
+  "a": "Serbia",
+  "wrong": [
+   "Slovenia",
+   "Bosnia and Herzegovina",
+   "Montenegro"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Sergej Milinković-Savić played for?",
+  "a": "Serbia",
+  "wrong": [
+   "Montenegro",
+   "Slovenia",
+   "Croatia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nikola Milenković played for?",
+  "a": "Serbia",
+  "wrong": [
+   "Slovenia",
+   "Croatia",
+   "Bosnia and Herzegovina"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Filip Kostić played for?",
+  "a": "Serbia",
+  "wrong": [
+   "Croatia",
+   "Montenegro",
+   "Bosnia and Herzegovina"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Andriy Yarmolenko played for?",
+  "a": "Ukraine",
+  "wrong": [
+   "Slovakia",
+   "Russia",
+   "Poland"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Oleksandr Zinchenko played for?",
+  "a": "Ukraine",
+  "wrong": [
+   "Russia",
+   "Slovakia",
+   "Poland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Vitaliy Mykolenko played for?",
+  "a": "Ukraine",
+  "wrong": [
+   "Poland",
+   "Romania",
+   "Slovakia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Illya Zabarnyi played for?",
+  "a": "Ukraine",
+  "wrong": [
+   "Romania",
+   "Slovakia",
+   "Russia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Khvicha Kvaratskhelia played for?",
+  "a": "Georgia",
+  "wrong": [
+   "Turkey",
+   "Armenia",
+   "Azerbaijan"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dominik Szoboszlai played for?",
+  "a": "Hungary",
+  "wrong": [
+   "Austria",
+   "Romania",
+   "Slovakia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Péter Gulácsi played for?",
+  "a": "Hungary",
+  "wrong": [
+   "Slovakia",
+   "Romania",
+   "Austria"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Willi Orbán played for?",
+  "a": "Hungary",
+  "wrong": [
+   "Czech Republic",
+   "Romania",
+   "Slovakia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Milan Škriniar played for?",
+  "a": "Slovakia",
+  "wrong": [
+   "Poland",
+   "Slovenia",
+   "Czech Republic"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Stanislav Lobotka played for?",
+  "a": "Slovakia",
+  "wrong": [
+   "Czech Republic",
+   "Hungary",
+   "Poland"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Martin Dúbravka played for?",
+  "a": "Slovakia",
+  "wrong": [
+   "Czech Republic",
+   "Poland",
+   "Slovenia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jan Oblak played for?",
+  "a": "Slovenia",
+  "wrong": [
+   "Austria",
+   "Slovakia",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Josip Iličić played for?",
+  "a": "Slovenia",
+  "wrong": [
+   "Serbia",
+   "Slovakia",
+   "Austria"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ianis Hagi played for?",
+  "a": "Romania",
+  "wrong": [
+   "Moldova",
+   "Hungary",
+   "Serbia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Elseid Hysaj played for?",
+  "a": "Albania",
+  "wrong": [
+   "Greece",
+   "Kosovo",
+   "Montenegro"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Antonín Barák played for?",
+  "a": "Czech Republic",
+  "wrong": [
+   "Austria",
+   "Slovakia",
+   "Hungary"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_squads",
+  "note": "In the Euro 2024 squad"
+ }
+]

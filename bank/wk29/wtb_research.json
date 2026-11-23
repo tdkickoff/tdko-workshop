@@ -1,0 +1,355 @@
+{
+ "Michael Laudrup": {
+  "position": "Attacking midfielder",
+  "nationality": "Denmark",
+  "youth": "Brøndby",
+  "clubs": [
+   [
+    "KB",
+    14,
+    3
+   ],
+   [
+    "Brøndby",
+    38,
+    24
+   ],
+   [
+    "Lazio",
+    60,
+    9
+   ],
+   [
+    "Juventus",
+    103,
+    16
+   ],
+   [
+    "Barcelona",
+    166,
+    41
+   ],
+   [
+    "Real Madrid",
+    62,
+    12
+   ],
+   [
+    "Vissel Kobe",
+    15,
+    5
+   ],
+   [
+    "Ajax",
+    21,
+    11
+   ]
+  ],
+  "caps": 104,
+  "capGoals": 37,
+  "apps_note": "page total is league-only: 478 apps, 119 goals",
+  "honour": [
+   "European Cup",
+   "1992"
+  ],
+  "award": [
+   "Best Danish footballer of all time (DBU)",
+   "2006"
+  ],
+  "src": "Wikipedia (wikiwand) Michael Laudrup",
+  "blurb": "Won the 1992 European Cup with Barcelona and was named the best Danish footballer of all time by the Danish FA in 2006.",
+  "apps": 478,
+  "goals": 119,
+  "name": "Michael Laudrup"
+ },
+ "Juninho Pernambucano": {
+  "position": "Midfielder",
+  "nationality": "Brazil",
+  "youth": "Sport Recife",
+  "clubs": [
+   [
+    "Sport Recife",
+    24,
+    3
+   ],
+   [
+    "Vasco da Gama",
+    188,
+    38
+   ],
+   [
+    "Lyon",
+    248,
+    75
+   ],
+   [
+    "Al-Gharafa",
+    40,
+    15
+   ],
+   [
+    "Vasco da Gama",
+    63,
+    15
+   ],
+   [
+    "New York Red Bulls",
+    13,
+    0
+   ],
+   [
+    "Vasco da Gama",
+    21,
+    2
+   ]
+  ],
+  "caps": 40,
+  "capGoals": 6,
+  "apps": 597,
+  "goals": 148,
+  "honour": [
+   "Ligue 1 (seven in a row)",
+   "2001–02 to 2007–08"
+  ],
+  "award": [
+   "Bola de Prata",
+   "2000"
+  ],
+  "src": "Wikipedia (ipfs) Juninho Pernambucano",
+  "blurb": "Won seven Ligue 1 titles in a row with Lyon, from 2001–02 to 2007–08.",
+  "name": "Juninho Pernambucano"
+ },
+ "Jürgen Klinsmann": {
+  "position": "Striker",
+  "nationality": "Germany",
+  "youth": "Stuttgarter Kickers",
+  "clubs": [
+   [
+    "Stuttgarter Kickers",
+    61,
+    22
+   ],
+   [
+    "VfB Stuttgart",
+    156,
+    79
+   ],
+   [
+    "Inter Milan",
+    95,
+    34
+   ],
+   [
+    "Monaco",
+    65,
+    30
+   ],
+   [
+    "Tottenham Hotspur",
+    41,
+    20
+   ],
+   [
+    "Bayern Munich",
+    65,
+    31
+   ],
+   [
+    "Sampdoria",
+    8,
+    2
+   ],
+   [
+    "Tottenham Hotspur (loan)",
+    15,
+    9
+   ],
+   [
+    "Orange County Blue Star",
+    8,
+    5
+   ]
+  ],
+  "caps": 108,
+  "capGoals": 47,
+  "apps": 514,
+  "goals": 232,
+  "honour": [
+   "FIFA World Cup",
+   "1990"
+  ],
+  "award": [
+   "German Footballer of the Year",
+   "1988"
+  ],
+  "src": "Wikipedia Jürgen Klinsmann",
+  "blurb": "Won the 1990 World Cup with West Germany and had two spells at Tottenham.",
+  "name": "Jürgen Klinsmann"
+ },
+ "Kaká": {
+  "position": "Attacking midfielder",
+  "nationality": "Brazil",
+  "youth": "São Paulo",
+  "clubs": [
+   [
+    "São Paulo",
+    59,
+    23
+   ],
+   [
+    "AC Milan",
+    193,
+    70
+   ],
+   [
+    "Real Madrid",
+    85,
+    23
+   ],
+   [
+    "AC Milan",
+    30,
+    7
+   ],
+   [
+    "Orlando City",
+    75,
+    24
+   ],
+   [
+    "São Paulo (loan)",
+    19,
+    2
+   ]
+  ],
+  "caps": 92,
+  "capGoals": 29,
+  "apps": 461,
+  "goals": 149,
+  "honour": [
+   "UEFA Champions League",
+   "2006–07"
+  ],
+  "award": [
+   "Ballon d'Or",
+   "2007"
+  ],
+  "src": "Wikipedia (ipfs) Kaká",
+  "blurb": "Won the 2007 Ballon d'Or and the 2006–07 Champions League with AC Milan.",
+  "name": "Kaká"
+ },
+ "Gabriel Batistuta": {
+  "position": "Forward",
+  "nationality": "Argentina",
+  "youth": "Newell's Old Boys",
+  "clubs": [
+   [
+    "Newell's Old Boys",
+    24,
+    7
+   ],
+   [
+    "River Plate",
+    21,
+    4
+   ],
+   [
+    "Boca Juniors",
+    34,
+    13
+   ],
+   [
+    "Fiorentina",
+    269,
+    168
+   ],
+   [
+    "Roma",
+    63,
+    30
+   ],
+   [
+    "Inter Milan (loan)",
+    12,
+    2
+   ],
+   [
+    "Al-Arabi",
+    21,
+    25
+   ]
+  ],
+  "caps": 78,
+  "capGoals": 56,
+  "honour": [
+   "Serie A",
+   "2000–01"
+  ],
+  "award": [
+   "Serie A top scorer",
+   "1994–95"
+  ],
+  "blurb": "The only player to score hat-tricks at two different World Cups.",
+  "src": "Wikipedia Gabriel Batistuta",
+  "apps": 444,
+  "goals": 249,
+  "name": "Gabriel Batistuta"
+ },
+ "Davor Šuker": {
+  "position": "Forward",
+  "nationality": "Croatia",
+  "youth": "Osijek",
+  "clubs": [
+   [
+    "Osijek",
+    91,
+    40
+   ],
+   [
+    "Dinamo Zagreb",
+    60,
+    34
+   ],
+   [
+    "Sevilla",
+    153,
+    76
+   ],
+   [
+    "Real Madrid",
+    86,
+    38
+   ],
+   [
+    "Arsenal",
+    22,
+    8
+   ],
+   [
+    "West Ham United",
+    11,
+    2
+   ],
+   [
+    "1860 Munich",
+    25,
+    5
+   ]
+  ],
+  "caps": 69,
+  "capGoals": 45,
+  "honour": [
+   "La Liga",
+   "1996–97"
+  ],
+  "award": [
+   "World Cup Golden Shoe",
+   "1998"
+  ],
+  "blurb": "Won the Golden Shoe at the 1998 World Cup as Croatia finished third.",
+  "src": "Wikipedia Davor Šuker; caps from List of Croatia international footballers (69; player page counts 68 for Croatia + 2 for Yugoslavia)",
+  "apps": 448,
+  "goals": 203,
+  "name": "Davor Šuker"
+ }
+}

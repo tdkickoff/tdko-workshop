@@ -1,0 +1,38 @@
+[
+ {
+  "kind": "trophy",
+  "x": "won 100 or more caps for Germany",
+  "nx": "won 98 caps for Germany, two short",
+  "eight": [
+   "Lothar Matthäus",
+   "Miroslav Klose",
+   "Thomas Müller",
+   "Lukas Podolski",
+   "Manuel Neuer",
+   "Bastian Schweinsteiger",
+   "Philipp Lahm",
+   "Jürgen Klinsmann"
+  ],
+  "odd": "Michael Ballack",
+  "src": "Wikipedia: Germany national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/Germany_national_football_team_records_and_statistics"
+ },
+ {
+  "kind": "trophy",
+  "x": "were named Player of the Tournament at a European Championship",
+  "nx": "never named Player of the Tournament at a European Championship",
+  "eight": [
+   "Matthias Sammer",
+   "Zinedine Zidane",
+   "Theodoros Zagorakis",
+   "Xavi",
+   "Andrés Iniesta",
+   "Antoine Griezmann",
+   "Gianluigi Donnarumma",
+   "Rodri"
+  ],
+  "odd": "Luka Modrić",
+  "src": "Wikipedia: UEFA European Championship awards (official winners 1996–2024)",
+  "url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_awards"
+ }
+]

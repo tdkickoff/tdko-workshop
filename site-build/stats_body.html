@@ -1,0 +1,24 @@
+<section class="card" id="scard">
+  <p class="lede">Enter the code to see the site stats: how many people start and finish each game.</p>
+  <form id="sform" autocomplete="off" style="display:flex;flex-direction:column;gap:12px">
+    <label>Code<input id="scode" type="text" autocapitalize="characters" spellcheck="false" placeholder="TDKO-XXXXX" required></label>
+    <button class="btn" type="submit">Unlock</button>
+    <p class="note" id="smsg" aria-live="polite"></p>
+  </form>
+</section>
+<script>
+(function(){
+  /* stats has its own code (not the tester / Training Ground code). The server checks it; this device keeps it so the page can load. */
+  var KEY='tdko-stats-key', NEXT='performance.html'+(/[?&]next=scheduler\b/.test(location.search)?'#scheduler':'');
+  try{ localStorage.removeItem('tdko-stats'); if(localStorage.getItem(KEY)){ location.replace(NEXT); return; } }catch(e){}
+  var d=new Date(), day=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  document.getElementById('sform').addEventListener('submit',function(e){ e.preventDefault();
+    var v=document.getElementById('scode').value.trim().toUpperCase(), m=document.getElementById('smsg');
+    m.textContent='Checking…'; m.style.color='';
+    fetch('/api/stats?from='+day+'&to='+day,{headers:{'x-tdko-stats':v}}).then(function(r){
+      if(r.status===401){ m.textContent="That code isn't right. Check it and try again."; m.style.color='var(--bad)'; return; }
+      try{ localStorage.setItem(KEY,v); }catch(_){ m.textContent='Your browser blocked this. Try turning off private browsing.'; return; }
+      location.href=NEXT; }).catch(function(){ m.textContent='Could not check the code. Try again in a moment.'; m.style.color='var(--bad)'; });
+  });
+})();
+</script>

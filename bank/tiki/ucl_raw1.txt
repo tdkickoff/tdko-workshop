@@ -1,0 +1,687 @@
+# Source: Wikipedia "List of European Cup and UEFA Champions League winning players" (IPFS snapshot, covers to 2016). Format Player|Nat|Club years
+Keylor Navas|Costa Rica|Real Madrid 2016
+James Rodríguez|Colombia|Real Madrid 2016
+Kiko Casilla|Spain|Real Madrid 2016
+Mateo Kovačić|Croatia|Real Madrid 2016
+Lucas Vázquez|Spain|Real Madrid 2016
+Danilo|Brazil|Real Madrid 2016
+Munir El Haddadi|Spain|Barcelona 2015
+Sandro Ramírez|Spain|Barcelona 2015
+Sergi Samper|Spain|Barcelona 2015
+Douglas|Brazil|Barcelona 2015
+Jordi Masip|Spain|Barcelona 2015
+Martín Montoya|Spain|Barcelona 2015
+Sergi Roberto|Spain|Barcelona 2015
+Rafinha Alcântara|Brazil|Barcelona 2015
+Jérémy Mathieu|France|Barcelona 2015
+Jordi Alba|Spain|Barcelona 2015
+Ivan Rakitić|Croatia|Barcelona 2015
+Marc-André ter Stegen|Germany|Barcelona 2015
+Claudio Bravo|Chile|Barcelona 2015
+Thomas Vermaelen|Belgium|Barcelona 2015
+Luis Suárez|Uruguay|Barcelona 2015
+Neymar|Brazil|Barcelona 2015
+Álvaro Morata|Spain|Real Madrid 2014
+Jesús Fernández|Spain|Real Madrid 2014
+Nacho|Spain|Real Madrid 2014,2016
+Casemiro|Brazil|Real Madrid 2014,2016
+Asier Illarramendi|Spain|Real Madrid 2014
+Jesé|Spain|Real Madrid 2014,2016
+Diego López|Spain|Real Madrid 2014
+Raphaël Varane|France|Real Madrid 2014,2016
+Dani Carvajal|Spain|Real Madrid 2014,2016
+Isco|Spain|Real Madrid 2014,2016
+Ángel Di María|Argentina|Real Madrid 2014
+Luka Modrić|Croatia|Real Madrid 2014,2016
+Álvaro Arbeloa|Spain|Real Madrid 2014,2016
+Sami Khedira|Germany|Real Madrid 2014
+Pepe|Portugal|Real Madrid 2014,2016
+Fábio Coentrão|Portugal|Real Madrid 2014
+Karim Benzema|France|Real Madrid 2014,2016
+Marcelo|Brazil|Real Madrid 2014,2016
+Gareth Bale|Wales|Real Madrid 2014,2016
+Sergio Ramos|Spain|Real Madrid 2014,2016
+Manuel Neuer|Germany|Bayern Munich 2013
+Philipp Lahm|Germany|Bayern Munich 2013
+Jérôme Boateng|Germany|Bayern Munich 2013
+Dante|Brazil|Bayern Munich 2013
+David Alaba|Austria|Bayern Munich 2013
+Daniel Van Buyten|Belgium|Bayern Munich 2013
+Javi Martínez|Spain|Bayern Munich 2013
+Franck Ribéry|France|Bayern Munich 2013
+Arjen Robben|Netherlands|Bayern Munich 2013
+Thomas Müller|Germany|Bayern Munich 2013
+Bastian Schweinsteiger|Germany|Bayern Munich 2013
+Tom Starke|Germany|Bayern Munich 2013
+Mario Gómez|Germany|Bayern Munich 2013
+Holger Badstuber|Germany|Bayern Munich 2013
+Toni Kroos|Germany|Bayern Munich 2013;Real Madrid 2016
+Diego Contento|Germany|Bayern Munich 2013
+Mario Mandžukić|Croatia|Bayern Munich 2013
+Xherdan Shaqiri|Switzerland|Bayern Munich 2013
+Luiz Gustavo|Brazil|Bayern Munich 2013
+Rafinha|Brazil|Bayern Munich 2013
+Anatoliy Tymoshchuk|Ukraine|Bayern Munich 2013
+Claudio Pizarro|Peru|Bayern Munich 2013
+José Bosingwa|Portugal|Porto 2004;Chelsea 2012
+Paulo Ferreira|Portugal|Porto 2004;Chelsea 2012
+Didier Drogba|Ivory Coast|Chelsea 2012
+Salomon Kalou|Ivory Coast|Chelsea 2012
+Michael Essien|Ghana|Chelsea 2012
+John Obi Mikel|Nigeria|Chelsea 2012
+Petr Čech|Czech Republic|Chelsea 2012
+Juan Mata|Spain|Chelsea 2012
+Oriol Romeu|Spain|Chelsea 2012
+Fernando Torres|Spain|Chelsea 2012
+Ryan Bertrand|England|Chelsea 2012
+Ross Turnbull|England|Chelsea 2012
+Gary Cahill|England|Chelsea 2012
+Ashley Cole|England|Chelsea 2012
+Jamal Blackman|England|Chelsea 2012
+Frank Lampard|England|Chelsea 2012
+Daniel Sturridge|England|Chelsea 2012
+John Terry|England|Chelsea 2012
+Florent Malouda|France|Chelsea 2012
+Branislav Ivanović|Serbia|Chelsea 2012
+Raul Meireles|Portugal|Chelsea 2012
+David Luiz|Brazil|Chelsea 2012
+Ramires|Brazil|Chelsea 2012
+Maxwell|Brazil|Barcelona 2011
+Jonathan dos Santos|Mexico|Barcelona 2011
+Marc Bartra|Spain|Barcelona 2011,2015
+Andreu Fontàs|Spain|Barcelona 2011
+Jeffrén|Spain|Barcelona 2011
+Oier|Spain|Barcelona 2011
+David Villa|Spain|Barcelona 2011
+Thiago Alcântara|Spain|Barcelona 2011
+Adriano|Brazil|Barcelona 2011,2015
+Ibrahim Afellay|Netherlands|Barcelona 2011
+Javier Mascherano|Argentina|Barcelona 2011,2015
+Dejan Stanković|Serbia|Inter 2010
+Rene Krhin|Slovenia|Inter 2010
+Cristian Chivu|Romania|Inter 2010
+Ricardo Quaresma|Portugal|Inter 2010
+Goran Pandev|North Macedonia|Inter 2010
+Wesley Sneijder|Netherlands|Inter 2010
+McDonald Mariga|Kenya|Inter 2010
+Paolo Orlandoni|Italy|Inter 2010
+Davide Santon|Italy|Inter 2010
+Mario Balotelli|Italy|Inter 2010
+Marco Materazzi|Italy|Inter 2010
+Francesco Toldo|Italy|Inter 2010
+Sulley Muntari|Ghana|Inter 2010
+Iván Córdoba|Colombia|Inter 2010
+Lúcio|Brazil|Inter 2010
+Maicon|Brazil|Inter 2010
+Júlio César|Brazil|Inter 2010
+Esteban Cambiasso|Argentina|Inter 2010
+Javier Zanetti|Argentina|Inter 2010
+Walter Samuel|Argentina|Inter 2010
+Diego Milito|Argentina|Inter 2010
+Marko Arnautović|Austria|Inter 2010
+Sergio Busquets|Spain|Barcelona 2009,2011,2015
+José Manuel Pinto|Spain|Barcelona 2009,2011
+Pedro|Spain|Barcelona 2009,2011,2015
+Bojan|Spain|Barcelona 2009,2011
+Gabriel Milito|Argentina|Barcelona 2009,2011
+Dani Alves|Brazil|Barcelona 2009,2011,2015
+Alexander Hleb|Belarus|Barcelona 2009
+Yaya Touré|Ivory Coast|Barcelona 2009
+Thierry Henry|France|Barcelona 2009
+Éric Abidal|France|Barcelona 2009,2011
+Eiður Guðjohnsen|Iceland|Barcelona 2009
+Martín Cáceres|Uruguay|Barcelona 2009
+Seydou Keita|Mali|Barcelona 2009,2011
+Park Ji-sung|South Korea|Manchester United 2008
+Gerard Piqué|Spain|Manchester United 2008;Barcelona 2009,2011,2015
+Louis Saha|France|Manchester United 2008
+Carlos Tevez|Argentina|Manchester United 2008
+Wayne Rooney|England|Manchester United 2008
+Cristiano Ronaldo|Portugal|Manchester United 2008;Real Madrid 2014,2016
+Michael Carrick|England|Manchester United 2008
+Patrice Evra|France|Manchester United 2008
+Mikaël Silvestre|France|Manchester United 2008
+Nemanja Vidić|Serbia|Manchester United 2008
+Rio Ferdinand|England|Manchester United 2008
+Tomasz Kuszczak|Poland|Manchester United 2008
+John O'Shea|Republic of Ireland|Manchester United 2008
+Anderson|Brazil|Manchester United 2008
+Nani|Portugal|Manchester United 2008
+Darren Fletcher|Scotland|Manchester United 2008
+Marek Jankulovski|Czech Republic|AC Milan 2007
+Kaká|Brazil|AC Milan 2007
+Zeljko Kalac|Australia|AC Milan 2007
+Cafu|Brazil|AC Milan 2007
+Giuseppe Favalli|Italy|AC Milan 2007
+Alberto Gilardino|Italy|AC Milan 2007
+Massimo Oddo|Italy|AC Milan 2007
+Daniele Bonera|Italy|AC Milan 2007
+Yoann Gourcuff|France|AC Milan 2007
+Ricardo Oliveira|Brazil|AC Milan 2007
+Marco Storari|Italy|AC Milan 2007
+Valerio Fiori|Italy|AC Milan 2003,2007
+Dario Šimić|Croatia|AC Milan 2003,2007
+Víctor Valdés|Spain|Barcelona 2006,2009,2011
+Giovanni van Bronckhorst|Netherlands|Barcelona 2006
+Rafael Márquez|Mexico|Barcelona 2006,2009
+Carles Puyol|Spain|Barcelona 2006,2009,2011
+Oleguer|Spain|Barcelona 2006
+Juliano Belletti|Brazil|Barcelona 2006
+Edmílson|Brazil|Barcelona 2006
+Andrés Iniesta|Spain|Barcelona 2006,2009,2011,2015
+Deco|Portugal|Porto 2004;Barcelona 2006
+Mark van Bommel|Netherlands|Barcelona 2006
+Henrik Larsson|Sweden|Barcelona 2006
+Ludovic Giuly|France|Barcelona 2006
+Ronaldinho|Brazil|Barcelona 2006
+Albert Jorquera|Spain|Barcelona 2006,2009
+Thiago Motta|Italy|Barcelona 2006;Inter 2010
+Xavi|Spain|Barcelona 2006,2009,2011,2015
+Sylvinho|Brazil|Barcelona 2006,2009
+Lionel Messi|Argentina|Barcelona 2006,2009,2011,2015
+Santiago Ezquerro|Spain|Barcelona 2006
+Maxi López|Argentina|Barcelona 2006
+Samuel Eto'o|Cameroon|Barcelona 2006,2009;Inter 2010
+Gabri|Spain|Barcelona 2006
+Jerzy Dudek|Poland|Liverpool 2005
+Steve Finnan|Republic of Ireland|Liverpool 2005
+Dietmar Hamann|Germany|Liverpool 2005
+Sami Hyypiä|Finland|Liverpool 2005
+Jamie Carragher|England|Liverpool 2005
+Djimi Traoré|Mali|Liverpool 2005
+Harry Kewell|Australia|Liverpool 2005
+Vladimír Šmicer|Czech Republic|Liverpool 2005
+Xabi Alonso|Spain|Liverpool 2005;Real Madrid 2014
+Steven Gerrard|England|Liverpool 2005
+John Arne Riise|Norway|Liverpool 2005
+Luis García|Spain|Liverpool 2005
+Milan Baroš|Czech Republic|Liverpool 2005
+Djibril Cissé|France|Liverpool 2005
+Scott Carson|England|Liverpool 2005
+Josemi|Spain|Liverpool 2005
+Igor Bišćan|Croatia|Liverpool 2005
+Antonio Núñez|Spain|Liverpool 2005
+Vítor Baía|Portugal|Porto 2004
+Nuno Valente|Portugal|Porto 2004
+Jorge Costa|Portugal|Porto 2004
+Ricardo Carvalho|Portugal|Porto 2004
+Costinha|Portugal|Porto 2004
+Pedro Emanuel|Portugal|Porto 2004
+Maniche|Portugal|Porto 2004
+Pedro Mendes|Portugal|Porto 2004
+Derlei|Brazil|Porto 2004
+Benni McCarthy|South Africa|Porto 2004
+Dmitri Alenichev|Russia|Porto 2004
+Carlos Alberto|Brazil|Porto 2004
+Ricardo Costa|Portugal|Porto 2004
+Edgaras Jankauskas|Lithuania|Porto 2004
+Nuno Espírito Santo|Portugal|Porto 2004
+Dida|Brazil|AC Milan 2003,2007
+Alessandro Costacurta|Italy|AC Milan 1989,1990,1994,2003,2007
+Roque Júnior|Brazil|AC Milan 2003
+Alessandro Nesta|Italy|AC Milan 2003,2007
+Paolo Maldini|Italy|AC Milan 1989,1990,1994,2003,2007
+Kakha Kaladze|Georgia|AC Milan 2003,2007
+Gennaro Gattuso|Italy|AC Milan 2003,2007
+Andrea Pirlo|Italy|AC Milan 2003,2007
+Serginho|Brazil|AC Milan 2003,2007
+Rui Costa|Portugal|AC Milan 2003
+Massimo Ambrosini|Italy|AC Milan 2003,2007
+Andriy Shevchenko|Ukraine|AC Milan 2003
+Filippo Inzaghi|Italy|AC Milan 2003,2007
+Christian Abbiati|Italy|AC Milan 2003
+Rivaldo|Brazil|AC Milan 2003
+Martin Laursen|Denmark|AC Milan 2003
+Cristian Brocchi|Italy|AC Milan 2003,2007
+Samuele Dalla Bona|Italy|AC Milan 2003
+Thomas Helveg|Denmark|AC Milan 2003
+Jon Dahl Tomasson|Denmark|AC Milan 2003
+César Sánchez|Spain|Real Madrid 2002
+Luís Figo|Portugal|Real Madrid 2002
+Claude Makélélé|France|Real Madrid 2002
+Flávio Conceição|Brazil|Real Madrid 2002
+Zinedine Zidane|France|Real Madrid 2002
+Santiago Solari|Argentina|Real Madrid 2002
+Pedro Munitis|Spain|Real Madrid 2002
+Francisco Pavón|Spain|Real Madrid 2002
+Javier Portillo|Spain|Real Madrid 2002
+Carlos Sánchez|Spain|Real Madrid 2002
+Albert Celades|Spain|Real Madrid 2002
+Óscar Miñambres|Spain|Real Madrid 2002
+Borja Fernández|Spain|Real Madrid 2002
+Rubén|Spain|Real Madrid 2002
+Enrique Corrales|Spain|Real Madrid 2002
+Raúl Bravo|Spain|Real Madrid 2002
+Valdo|Spain|Real Madrid 2002
+Oliver Kahn|Germany|Bayern Munich 2001
+Samuel Kuffour|Ghana|Bayern Munich 2001
+Patrik Andersson|Sweden|Bayern Munich 2001
+Thomas Linke|Germany|Bayern Munich 2001
+Willy Sagnol|France|Bayern Munich 2001
+Carsten Jancker|Germany|Bayern Munich 2001
+Owen Hargreaves|England|Bayern Munich 2001;Manchester United 2008
+Stefan Effenberg|Germany|Bayern Munich 2001
+Bixente Lizarazu|France|Bayern Munich 2001
+Mehmet Scholl|Germany|Bayern Munich 2001
+Paulo Sérgio|Brazil|Bayern Munich 2001
+Giovane Élber|Brazil|Bayern Munich 2001
+Alexander Zickler|Germany|Bayern Munich 2001
+Bernd Dreher|Germany|Bayern Munich 2001
+Ciriaco Sforza|Switzerland|Bayern Munich 2001
+Michael Tarnat|Germany|Bayern Munich 2001
+Roque Santa Cruz|Paraguay|Bayern Munich 2001
+Stefan Wessels|Germany|Bayern Munich 2001
+Thorsten Fink|Germany|Bayern Munich 2001
+Jens Jeremies|Germany|Bayern Munich 2001
+Michael Wiesinger|Germany|Bayern Munich 2001
+Hasan Salihamidžić|Bosnia and Herzegovina|Bayern Munich 2001
+Nicolas Anelka|France|Real Madrid 2000
+Perica Ognjenović|Yugoslavia|Real Madrid 2000
+Albano Bizarri|Argentina|Real Madrid 2000
+Javier Dorado|Spain|Real Madrid 2000
+David Aganzo|Spain|Real Madrid 2000
+Manuel Meca|Spain|Real Madrid 2000
+Júlio César (b.1978)|Brazil|Real Madrid 2000
+Geremi|Cameroon|Real Madrid 2000,2002
+Elvir Baljić|Bosnia and Herzegovina|Real Madrid 2000,2002
+Iván Campo|Spain|Real Madrid 2000,2002
+Míchel Salgado|Spain|Real Madrid 2000,2002
+Iván Helguera|Spain|Real Madrid 2000,2002
+Steve McManaman|England|Real Madrid 2000,2002
+Carlos Aranda|Spain|Real Madrid 2000,2002
+Peter Schmeichel|Denmark|Manchester United 1999
+Gary Neville|England|Manchester United 1999,2008
+Ronny Johnsen|Norway|Manchester United 1999
+Jaap Stam|Netherlands|Manchester United 1999
+Denis Irwin|Republic of Ireland|Manchester United 1999
+David Beckham|England|Manchester United 1999
+Nicky Butt|England|Manchester United 1999
+Ryan Giggs|Wales|Manchester United 1999,2008
+Jesper Blomqvist|Sweden|Manchester United 1999
+Teddy Sheringham|England|Manchester United 1999
+Dwight Yorke|Trinidad and Tobago|Manchester United 1999
+Andy Cole|England|Manchester United 1999
+Ole Gunnar Solskjær|Norway|Manchester United 1999
+Raimond van der Gouw|Netherlands|Manchester United 1999
+David May|England|Manchester United 1999
+Phil Neville|England|Manchester United 1999
+Wes Brown|England|Manchester United 1999,2008
+Jonathan Greening|England|Manchester United 1999
+Paul Scholes|England|Manchester United 1999,2008
+Roy Keane|Republic of Ireland|Manchester United 1999
+Henning Berg|Norway|Manchester United 1999
+José Amavisca|Spain|Real Madrid 1998
+Predrag Mijatović|Yugoslavia|Real Madrid 1998
+Davor Šuker|Croatia|Real Madrid 1998
+Zé Roberto|Brazil|Real Madrid 1998
+Dani García|Spain|Real Madrid 1998
+Jaime Sánchez|Spain|Real Madrid 1998
+Santiago Cañizares|Spain|Real Madrid 1998
+Fernando Sanz|Spain|Real Madrid 1998
+Víctor Sánchez|Spain|Real Madrid 1998
+Pedro Contreras|Spain|Real Madrid 1998
+Chendo|Spain|Real Madrid 1998
+Raúl Pareja|Spain|Real Madrid 1998
+Manuel Canabal|Spain|Real Madrid 1998
+Álvaro Benito|Spain|Real Madrid 1998
+Roberto Rojas|Spain|Real Madrid 1998
+Bodo Illgner|Germany|Real Madrid 1998,2000
+Christian Karembeu|France|Real Madrid 1998,2000
+Manolo Sanchís|Spain|Real Madrid 1998,2000
+Sávio|Brazil|Real Madrid 1998,2000,2002
+Fernando Hierro|Spain|Real Madrid 1998,2000,2002
+Roberto Carlos|Brazil|Real Madrid 1998,2000,2002
+Raúl|Spain|Real Madrid 1998,2000,2002
+Fernando Morientes|Spain|Real Madrid 1998,2000,2002
+Guti|Spain|Real Madrid 1998,2000,2002
+Iker Casillas|Spain|Real Madrid 2000,2002,2014
+Aitor Karanka|Spain|Real Madrid 1998,2000,2002
+Fernando Redondo|Argentina|Real Madrid 1998,2000;AC Milan 2003
+Stefan Klos|Germany|Borussia Dortmund 1997
+Jürgen Kohler|Germany|Borussia Dortmund 1997
+Matthias Sammer|Germany|Borussia Dortmund 1997
+Martin Kree|Germany|Borussia Dortmund 1997
+Stefan Reuter|Germany|Borussia Dortmund 1997
+Paulo Sousa|Portugal|Juventus 1996;Borussia Dortmund 1997
+Jörg Heinrich|Germany|Borussia Dortmund 1997
+Andreas Möller|Germany|Borussia Dortmund 1997
+Michael Zorc|Germany|Borussia Dortmund 1997
+Karlheinz Riedle|Germany|Borussia Dortmund 1997
+Heiko Herrlich|Germany|Borussia Dortmund 1997
+Lars Ricken|Germany|Borussia Dortmund 1997
+Wolfgang de Beer|Germany|Borussia Dortmund 1997
+René Tretschok|Germany|Borussia Dortmund 1997
+Angelo Peruzzi|Italy|Juventus 1996
+Ciro Ferrara|Italy|Juventus 1996
+Moreno Torricelli|Italy|Juventus 1996
+Pietro Vierchowod|Italy|Juventus 1996
+Gianluca Pessotto|Italy|Juventus 1996
+Antonio Conte|Italy|Juventus 1996
+Vladimir Jugović|Yugoslavia|Red Star Belgrade 1991;Juventus 1996
+Angelo Di Livio|Italy|Juventus 1996
+Didier Deschamps|France|Marseille 1993;Juventus 1996
+Alessandro Del Piero|Italy|Juventus 1996
+Gianluca Vialli|Italy|Juventus 1996
+Fabrizio Ravanelli|Italy|Juventus 1996
+Michele Padovano|Italy|Juventus 1996
+Sergio Porrini|Italy|Juventus 1996
+Michelangelo Rampulla|Italy|Juventus 1996
+Clarence Seedorf|Netherlands|Ajax 1995;Real Madrid 1998;AC Milan 2003,2007
+Edwin van der Sar|Netherlands|Ajax 1995;Manchester United 2008
+Michael Reiziger|Netherlands|Ajax 1995
+Danny Blind|Netherlands|Ajax 1995
+Frank Rijkaard|Netherlands|AC Milan 1989,1990;Ajax 1995
+Frank de Boer|Netherlands|Ajax 1995
+Edgar Davids|Netherlands|Ajax 1995
+Ronald de Boer|Netherlands|Ajax 1995
+Marc Overmars|Netherlands|Ajax 1995
+Patrick Kluivert|Netherlands|Ajax 1995
+Peter van Vossen|Netherlands|Ajax 1995
+Fred Grim|Netherlands|Ajax 1995
+Winston Bogarde|Netherlands|Ajax 1995
+Sebastiano Rossi|Italy|AC Milan 1994
+Christian Panucci|Italy|AC Milan 1994;Real Madrid 1998
+Mauro Tassotti|Italy|AC Milan 1989,1990,1994
+Demetrio Albertini|Italy|AC Milan 1994
+Filippo Galli|Italy|AC Milan 1989,1990,1994
+Stefano Nava|Italy|AC Milan 1994
+Roberto Donadoni|Italy|AC Milan 1989,1990,1994
+Marcel Desailly|France|Marseille 1993;AC Milan 1994
+Zvonimir Boban|Croatia|AC Milan 1994
+Dejan Savićević|Yugoslavia|Red Star Belgrade 1991;AC Milan 1994
+Daniele Massaro|Italy|AC Milan 1990,1994
+Marco Simone|Italy|AC Milan 1990,1994
+Mario Ielpo|Italy|AC Milan 1994
+Gianluigi Lentini|Italy|AC Milan 1994
+Angelo Carbone|Italy|AC Milan 1994
+Florin Răducioiu|Romania|AC Milan 1994
+Brian Laudrup|Denmark|AC Milan 1994
+Fabien Barthez|France|Marseille 1993
+Jocelyn Angloma|France|Marseille 1993
+Jean-Philippe Durand|France|Marseille 1993
+Éric Di Meco|France|Marseille 1993
+Basile Boli|France|Marseille 1993
+Franck Sauzée|France|Marseille 1993
+Jean-Jacques Eydelie|France|Marseille 1993
+Rudi Völler|Germany|Marseille 1993
+Jean-Christophe Thomas|France|Marseille 1993
+Pascal Olmeta|France|Marseille 1993
+Bernard Casoni|France|Marseille 1993
+Jean-Marc Ferreri|France|Marseille 1993
+Andoni Zubizarreta|Spain|Barcelona 1992
+Eusebio Sacristán|Spain|Barcelona 1992
+Albert Ferrer|Spain|Barcelona 1992
+Ronald Koeman|Netherlands|PSV Eindhoven 1988;Barcelona 1992
+Nando|Spain|Barcelona 1992
+Juan Carlos Rodríguez|Spain|Barcelona 1992
+José Mari Bakero|Spain|Barcelona 1992
+Pep Guardiola|Spain|Barcelona 1992
+José Ramón Alexanko|Spain|Barcelona 1992
+Michael Laudrup|Denmark|Barcelona 1992
+Julio Salinas|Spain|Barcelona 1992
+Andoni Goikoetxea|Spain|Barcelona 1992
+Hristo Stoichkov|Bulgaria|Barcelona 1992
+Ricardo Serna|Spain|Barcelona 1992
+Cristóbal Parralo|Spain|Barcelona 1992
+Richard Witschge|Netherlands|Barcelona 1992
+Guillermo Amor|Spain|Barcelona 1992
+Txiki Begiristain|Spain|Barcelona 1992
+Carles Busquets|Spain|Barcelona 1992
+Miguel Ángel Nadal|Spain|Barcelona 1992
+Andrea Pazzagli|Italy|AC Milan 1990
+Stefano Borgonovo|Italy|AC Milan 1990
+Giovanni Galli|Italy|AC Milan 1989,1990
+Franco Baresi|Italy|AC Milan 1989,1990,1994
+Angelo Colombo|Italy|AC Milan 1989,1990
+Carlo Ancelotti|Italy|AC Milan 1989,1990
+Alberigo Evani|Italy|AC Milan 1989,1990
+Ruud Gullit|Netherlands|AC Milan 1989,1990
+Marco van Basten|Netherlands|AC Milan 1989,1990
+Pietro Paolo Virdis|Italy|AC Milan 1989
+Davide Pinato|Italy|AC Milan 1989
+Roberto Mussi|Italy|AC Milan 1989
+Hans van Breukelen|Netherlands|PSV Eindhoven 1988
+Berry van Aerle|Netherlands|PSV Eindhoven 1988
+Edward Linskens|Netherlands|PSV Eindhoven 1988
+Gerald Vanenburg|Netherlands|PSV Eindhoven 1988
+Wim Kieft|Netherlands|PSV Eindhoven 1988
+Hans Gillhaus|Netherlands|PSV Eindhoven 1988
+Anton Janssen|Netherlands|PSV Eindhoven 1988
+Adick Koot|Netherlands|PSV Eindhoven 1988
+Eric Viscaal|Netherlands|PSV Eindhoven 1988
+Willy van de Kerkhof|Netherlands|PSV Eindhoven 1988
+Patrick Lodewijks|Netherlands|PSV Eindhoven 1988
+Juary|Brazil|Porto 1987
+Walter Casagrande|Brazil|Porto 1987
+Stefano Tacconi|Italy|Juventus 1985
+Luciano Favero|Italy|Juventus 1985
+Antonio Cabrini|Italy|Juventus 1985
+Sergio Brio|Italy|Juventus 1985
+Gaetano Scirea|Italy|Juventus 1985
+Massimo Bonini|San Marino|Juventus 1985
+Michel Platini|France|Juventus 1985
+Marco Tardelli|Italy|Juventus 1985
+Massimo Briaschi|Italy|Juventus 1985
+Claudio Prandelli|Italy|Juventus 1985
+Paolo Rossi|Italy|Juventus 1985
+Beniamino Vignola|Italy|Juventus 1985
+Zbigniew Boniek|Poland|Juventus 1985
+Luciano Bodini|Italy|Juventus 1985
+Nicola Caricola|Italy|Juventus 1985
+Bruno Limido|Italy|Juventus 1985
+Bruce Grobbelaar|Zimbabwe|Liverpool 1984
+Phil Neal|England|Liverpool 1977,1978,1981,1984
+Mark Lawrenson|Republic of Ireland|Liverpool 1984
+Alan Hansen|Scotland|Liverpool 1978,1981,1984
+Alan Kennedy|England|Liverpool 1981,1984
+Craig Johnston|England|Liverpool 1984
+Steve Nicol|Scotland|Liverpool 1984
+Sammy Lee|England|Liverpool 1981,1984
+Graeme Souness|Scotland|Liverpool 1978,1981,1984
+Ronnie Whelan|Republic of Ireland|Liverpool 1984
+Kenny Dalglish|Scotland|Liverpool 1978,1981,1984
+Michael Robinson|Republic of Ireland|Liverpool 1984
+Ian Rush|Wales|Liverpool 1984
+Bob Bolder|England|Liverpool 1984
+David Hodgson|England|Liverpool 1984
+Gary Gillespie|Scotland|Liverpool 1984
+Uli Stein|Germany|Hamburg 1983
+Manfred Kaltz|Germany|Hamburg 1983
+Ditmar Jakobs|Germany|Hamburg 1983
+Holger Hieronymus|Germany|Hamburg 1983
+Bernd Wehmeyer|Germany|Hamburg 1983
+Jürgen Groh|Germany|Hamburg 1983
+Wolfgang Rolff|Germany|Hamburg 1983
+Felix Magath|Germany|Hamburg 1983
+Jürgen Milewski|Germany|Hamburg 1983
+Horst Hrubesch|Germany|Hamburg 1983
+Thomas von Heesen|Germany|Hamburg 1983
+Uwe Hain|Germany|Hamburg 1983
+Jimmy Rimmer|England|Manchester United 1968;Aston Villa 1982
+Nigel Spink|England|Aston Villa 1982
+Kenny Swain|England|Aston Villa 1982
+Gary Williams|England|Aston Villa 1982
+Gordon Cowans|England|Aston Villa 1982
+Dennis Mortimer|England|Aston Villa 1982
+Gary Shaw|England|Aston Villa 1982
+Peter Withe|England|Aston Villa 1982
+Tony Morley|England|Aston Villa 1982
+Pat Heard|England|Aston Villa 1982
+Ray Clemence|England|Liverpool 1977,1978,1981
+Phil Thompson|England|Liverpool 1978,1981
+Terry McDermott|England|Liverpool 1977,1978,1981
+Ray Kennedy|England|Liverpool 1977,1978,1981
+Jimmy Case|England|Liverpool 1977,1978,1981
+David Johnson|England|Liverpool 1977,1981
+Steve Ogrizovic|England|Liverpool 1978,1981
+Colin Irwin|England|Liverpool 1978,1981
+Howard Gayle|England|Liverpool 1981
+Avi Cohen|Israel|Liverpool 1981
+Richard Money|England|Liverpool 1981
+Peter Shilton|England|Nottingham Forest 1979,1980
+Viv Anderson|England|Nottingham Forest 1979,1980
+Bryn Gunn|England|Nottingham Forest 1980
+Larry Lloyd|England|Nottingham Forest 1979,1980
+Frank Clark|England|Nottingham Forest 1979,1980
+Ian Bowyer|England|Nottingham Forest 1979,1980
+Gary Mills|England|Nottingham Forest 1980
+Garry Birtles|England|Nottingham Forest 1979,1980
+Jimmy Montgomery|England|Nottingham Forest 1979
+Trevor Francis|England|Nottingham Forest 1979
+Tony Woodcock|England|Nottingham Forest 1979
+Chris Woods|England|Nottingham Forest 1979
+Emlyn Hughes|England|Liverpool 1977,1978
+David Fairclough|England|Liverpool 1977,1978
+Steve Heighway|Republic of Ireland|Liverpool 1977,1978,1981
+Joey Jones|Wales|Liverpool 1977,1978
+Ian Callaghan|England|Liverpool 1977,1978
+Tommy Smith|England|Liverpool 1977
+Kevin Keegan|England|Liverpool 1977
+Peter McDonnell|England|Liverpool 1977
+Alan Waddle|England|Liverpool 1977
+Alec Lindsay|England|Liverpool 1977
+Sepp Maier|Germany|Bayern Munich 1974,1975,1976
+Johnny Hansen|Denmark|Bayern Munich 1974,1975,1976
+Hans-Georg Schwarzenbeck|Germany|Bayern Munich 1974,1975,1976
+Franz Beckenbauer|Germany|Bayern Munich 1974,1975,1976
+Udo Horsmann|Germany|Bayern Munich 1976
+Hugo Robl|Germany|Bayern Munich 1975,1976
+Bernd Dürnberger|Germany|Bayern Munich 1974,1975,1976
+Franz Roth|Germany|Bayern Munich 1974,1975,1976
+Jupp Kapellmann|Germany|Bayern Munich 1974,1975,1976
+Karl-Heinz Rummenigge|Germany|Bayern Munich 1975,1976
+Gerd Müller|Germany|Bayern Munich 1974,1975,1976
+Uli Hoeneß|Germany|Bayern Munich 1974,1975,1976
+Björn Andersson|Sweden|Bayern Munich 1975
+Sepp Weiß|Germany|Bayern Munich 1975
+Rainer Zobel|Germany|Bayern Munich 1974,1975,1976
+Klaus Wunder|Germany|Bayern Munich 1975
+Conny Torstensson|Sweden|Bayern Munich 1974,1975,1976
+Paul Breitner|Germany|Bayern Munich 1974
+Heinz Stuy|Netherlands|Ajax 1971,1972,1973
+Wim Suurbier|Netherlands|Ajax 1971,1972,1973
+Barry Hulshoff|Netherlands|Ajax 1971,1972,1973
+Horst Blankenburg|Germany|Ajax 1971,1972,1973
+Ruud Krol|Netherlands|Ajax 1972,1973
+Johan Neeskens|Netherlands|Ajax 1971,1972,1973
+Arnold Mühren|Netherlands|Ajax 1971,1972,1973
+Gerrie Mühren|Netherlands|Ajax 1971,1972,1973
+Arie Haan|Netherlands|Ajax 1971,1972,1973
+Johnny Rep|Netherlands|Ajax 1973
+Johan Cruyff|Netherlands|Ajax 1971,1972,1973
+Piet Keizer|Netherlands|Ajax 1971,1972,1973
+Sjaak Swart|Netherlands|Ajax 1971,1972
+Nico Rijnders|Netherlands|Ajax 1971
+Dick van Dijk|Netherlands|Ajax 1971
+Eddy Pieters Graafland|Netherlands|Feyenoord 1970
+Piet Romeijn|Netherlands|Feyenoord 1970
+Guus Haak|Netherlands|Feyenoord 1970
+Theo Laseroms|Netherlands|Feyenoord 1970
+Rinus Israël|Netherlands|Feyenoord 1970
+Theo van Duivenbode|Netherlands|Feyenoord 1970
+Wim Jansen|Netherlands|Feyenoord 1970
+Willem van Hanegem|Netherlands|Feyenoord 1970
+Henk Wery|Netherlands|Feyenoord 1970
+Coen Moulijn|Netherlands|Feyenoord 1970
+Fabio Cudicini|Italy|AC Milan 1969
+Angelo Anquilletti|Italy|AC Milan 1969
+Karl-Heinz Schnellinger|Germany|AC Milan 1969
+Roberto Rosato|Italy|AC Milan 1969
+Saul Malatrasi|Italy|Inter 1965;AC Milan 1969
+Giovanni Trapattoni|Italy|AC Milan 1963,1969
+Kurt Hamrin|Sweden|AC Milan 1969
+Giovanni Lodetti|Italy|AC Milan 1963,1969
+Angelo Sormani|Italy|AC Milan 1969
+Gianni Rivera|Italy|AC Milan 1963,1969
+Pierino Prati|Italy|AC Milan 1969
+Alex Stepney|England|Manchester United 1968
+Shay Brennan|Republic of Ireland|Manchester United 1968
+Nobby Stiles|England|Manchester United 1968
+Bill Foulkes|England|Manchester United 1968
+Tony Dunne|Republic of Ireland|Manchester United 1968
+Pat Crerand|Scotland|Manchester United 1968
+Francis Burns|Scotland|Manchester United 1968
+John Fitzpatrick|Scotland|Manchester United 1968
+Jimmy Ryan|Scotland|Manchester United 1968
+Bobby Charlton|England|Manchester United 1968
+David Sadler|England|Manchester United 1968
+George Best|Northern Ireland|Manchester United 1968
+Brian Kidd|England|Manchester United 1968
+John Aston Jr.|England|Manchester United 1968
+José Araquistáin|Spain|Real Madrid 1966
+Antonio Betancort|Spain|Real Madrid 1966
+Ramón Tejada|Spain|Real Madrid 1966
+Vicente Miera|Spain|Real Madrid 1966
+Pedro De Felipe|Spain|Real Madrid 1966
+Antonio Calpe|Spain|Real Madrid 1966
+Ignacio Zoco|Spain|Real Madrid 1966
+Manuel Sanchís Martínez|Spain|Real Madrid 1966
+Pirri|Spain|Real Madrid 1966
+Manuel Velázquez|Spain|Real Madrid 1966
+Fernando Serena|Spain|Real Madrid 1966
+Félix Ruiz|Spain|Real Madrid 1966
+José Luis Veloso|Spain|Real Madrid 1966
+Juan Agüero|Paraguay|Real Madrid 1966
+Amancio|Spain|Real Madrid 1966
+Ramón Grosso|Spain|Real Madrid 1966
+Giuliano Sarti|Italy|Inter 1964,1965
+Tarcisio Burgnich|Italy|Inter 1964,1965
+Aristide Guarneri|Italy|Inter 1964,1965
+Giacinto Facchetti|Italy|Inter 1964,1965
+Gianfranco Bedin|Italy|Inter 1965
+Armando Picchi|Italy|Inter 1964,1965
+Jair da Costa|Brazil|Inter 1964,1965
+Sandro Mazzola|Italy|Inter 1964,1965
+Joaquín Peiró|Spain|Inter 1965
+Luis Suárez Miramontes|Spain|Inter 1964,1965
+Mario Corso|Italy|Inter 1964,1965
+Carlo Tagnin|Italy|Inter 1964
+Aurelio Milani|Italy|Inter 1964
+Giorgio Ghezzi|Italy|AC Milan 1963
+Mario David|Italy|AC Milan 1963
+Mario Trebbi|Italy|AC Milan 1963
+Víctor Benítez|Peru|AC Milan 1963
+Cesare Maldini|Italy|AC Milan 1963
+Gino Pivatelli|Italy|AC Milan 1963
+Dino Sani|Brazil|AC Milan 1963
+José Altafini|Brazil;Italy|AC Milan 1963
+Bruno Mora|Italy|AC Milan 1963
+Didi|Brazil|Real Madrid 1960
+Canário|Brazil|Real Madrid 1960
+José María Vidal|Spain|Real Madrid 1960
+Luis del Sol|Spain|Real Madrid 1960
+Pantaleón|Spain|Real Madrid 1960
+Pepillo|Spain|Real Madrid 1960
+Manuel Bueno|Spain|Real Madrid 1960,1966
+Pachín|Spain|Real Madrid 1960,1966
+Antonio Ruiz Cervilla|Spain|Real Madrid 1959,1960
+Jesús Herrera|Spain|Real Madrid 1959,1960
+Miché|Spain|Real Madrid 1959,1960
+Ferenc Puskás|Hungary;Spain|Real Madrid 1959,1960,1966
+Pereda|Spain|Real Madrid 1958
+Rogelio Domínguez|Argentina|Real Madrid 1958,1959,1960
+José Santamaría|Uruguay;Spain|Real Madrid 1958,1959,1960,1966
+Manuel Torres|Spain|Real Madrid 1957
+Berasaluce|Spain|Real Madrid 1957
+Raymond Kopa|France|Real Madrid 1957,1958,1959
+Enrique Mateos|Spain|Real Madrid 1957,1958,1959,1960
+Castaño|Spain|Real Madrid 1956
+Luis Molowny|Spain|Real Madrid 1956
+Pérez-Payá|Spain|Real Madrid 1956
+Roque Olsen|Argentina|Real Madrid 1956
+Joaquín Navarro|Spain|Real Madrid 1956,1957
+Joaquín Oliva|Spain|Real Madrid 1956,1957
+Ángel Atienza|Spain|Real Madrid 1956,1957,1958
+Miguel Muñoz|Spain|Real Madrid 1956,1957,1958
+Becerril|Spain|Real Madrid 1956,1957,1958
+Ramón Marsal|Spain|Real Madrid 1956,1957,1958
+Joseíto|Spain|Real Madrid 1956,1957,1958,1959
+Héctor Rial|Argentina;Spain|Real Madrid 1956,1957,1958,1959,1960
+Juan Alonso|Spain|Real Madrid 1956,1957,1958,1959,1960
+Juan Santisteban|Spain|Real Madrid 1956,1957,1958,1959,1960
+Marquitos|Spain|Real Madrid 1956,1957,1958,1959,1960
+Rafael Lesmes|Spain|Real Madrid 1956,1957,1958,1959,1960
+José María Zárraga|Spain|Real Madrid 1956,1957,1958,1959,1960
+Alfredo Di Stéfano|Argentina;Spain|Real Madrid 1956,1957,1958,1959,1960
+Paco Gento|Spain|Real Madrid 1956,1957,1958,1959,1960,1966
+Nwankwo Kanu|Nigeria|Ajax 1995

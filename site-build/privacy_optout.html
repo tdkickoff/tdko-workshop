@@ -1,0 +1,4 @@
+<script>(function(){ var b=document.getElementById('nocount'), m=document.getElementById('nocount-msg');
+    try{ b.checked=localStorage.getItem('tdko-nocount')==='1'; }catch(e){ b.disabled=true; m.textContent='Your browser is blocking local storage, so nothing is being saved or counted from this device anyway.'; }
+    b.addEventListener('change',function(){ try{ if(b.checked) localStorage.setItem('tdko-nocount','1'); else localStorage.removeItem('tdko-nocount'); m.textContent=b.checked?'Done. This device is no longer counted.':'This device will be counted again.'; }catch(e){} });
+  })();</script>

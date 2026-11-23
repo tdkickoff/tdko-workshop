@@ -1,0 +1,42 @@
+
+/* theme + progress */
+.qbox{padding:18px 20px 6px;display:flex;flex-direction:column;gap:6px}
+.qbox h2{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:clamp(26px,7.4vw,34px);line-height:1;text-transform:uppercase}
+.calls{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line)}
+.dots{display:flex;gap:6px}
+.dots i{width:22px;height:22px;border:1.5px solid var(--line);display:grid;place-items:center;font-style:normal;font-family:var(--f-mono);font-size:12px;font-weight:600}
+.dots i.ok{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.dots i.no{background:var(--bad);border-color:var(--bad);color:#fff}
+.dots i.now{border-color:var(--ink)}
+.calls .pts{display:flex;align-items:baseline;gap:6px}
+.calls .pts b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:40px;line-height:.85;font-variant-numeric:tabular-nums;color:var(--accent)}
+
+/* the two players */
+.duel{display:grid;grid-template-columns:1fr;gap:10px;padding:14px 16px}
+.pc{border:1.5px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:6px;background:var(--surface)}
+.pc .who{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:clamp(24px,7vw,32px);line-height:1;text-transform:uppercase}
+.pc .val{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(48px,15vw,64px);line-height:.9;font-variant-numeric:tabular-nums}
+.pc .val small{font-family:var(--f-mono);font-size:14px;font-weight:600;color:var(--muted);margin-left:6px;letter-spacing:.03em}
+.pc.known{background:var(--soft)}
+.pc.mystery .val{color:var(--muted)}
+.pc.ok{border-color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.pc.ok .val{color:var(--accent)}
+.pc.no{border-color:var(--bad);box-shadow:inset 0 0 0 1.5px var(--bad)}
+.pc.no .val{color:var(--bad)}
+.vs2{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center}
+.hl{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 16px 16px}
+.hl .btn{display:flex;align-items:center;justify-content:center;gap:8px;font-size:20px;padding:18px 10px}
+.hl .btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+@keyframes flip{0%{transform:rotateX(90deg);opacity:.2}100%{transform:none;opacity:1}}
+.flip{animation:flip .35s ease-out}
+
+/* final table of the chain */
+.chainlist{display:flex;flex-direction:column;gap:6px;padding:4px 16px 0}
+.cl{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:10px;padding:10px 12px;border:1.5px solid var(--line)}
+.cl .n{font-family:var(--f-mono);font-size:13px;font-weight:600;color:var(--muted);text-align:center}
+.cl .nm{font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:17px;text-transform:uppercase;line-height:1.05}
+.cl .v{font-family:var(--f-mono);font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cl.ok{border-color:var(--accent)} .cl.ok .n{color:var(--accent)}
+.cl.no{border-color:var(--bad)} .cl.no .n{color:var(--bad)}
+.cl.unseen{opacity:.6}
+@media (prefers-reduced-motion: reduce){.flip{animation:none}}

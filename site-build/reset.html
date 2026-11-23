@@ -1,0 +1,21 @@
+<script>
+/* Site reset: bump TDKO_EPOCH to wipe every saved game and menu status the next time a page on this site opens. */
+(function(){ var TDKO_EPOCH='2026-11-09-reset-1';
+  try{ if(localStorage.getItem('tdko:epoch')===TDKO_EPOCH) return;
+    var P=['tdko:','tdko-t:','tdko-all8:','fastbreak:','wtb:','scramble:','passconnect:','playedle:','shirtswap:','tikitaka:','offside:','topfour:','rankedhighly:','cleansweep:','cuprun:'], ks=[];
+    for(var i=0;i<localStorage.length;i++) ks.push(localStorage.key(i));
+    ks.forEach(function(k){ if(P.some(function(p){return k.indexOf(p)===0})) localStorage.removeItem(k); });
+    localStorage.setItem('tdko:epoch',TDKO_EPOCH);
+  }catch(e){} })();
+</script>
+<script>
+/* Launch clear: the first time a page opens on or after Mon 16 Nov 2026 (player's own clock), wipe all progress, streaks and times saved before that date, so Day 1 and every streak start fresh at launch. Runs once per device. */
+(function(){ try{ var d=new Date(), k=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();
+  if(k<20261116 || localStorage.getItem('tdko-launch')==='1') return;
+  var P=['tdko:','tdko-t:','tdko-all8:','fastbreak:','wtb:','scramble:','passconnect:','playedle:','shirtswap:','tikitaka:','offside:','topfour:','rankedhighly:','cleansweep:','cuprun:'], ks=[];
+  for(var i=0;i<localStorage.length;i++) ks.push(localStorage.key(i));
+  ks.forEach(function(x){ if(!x || x==='tdko:epoch' || !P.some(function(p){return x.indexOf(p)===0})) return;
+    var m=/(\d{4})-(\d\d)-(\d\d)/.exec(x); if(!m || (+m[1])*10000+(+m[2])*100+(+m[3]) < 20261116) localStorage.removeItem(x); });
+  localStorage.setItem('tdko-launch','1');
+}catch(e){} })();
+</script>

@@ -1,0 +1,236 @@
+Ryan Giggs|Man Utd|13
+Paul Scholes|Man Utd|11
+Gary Neville|Man Utd|8
+Denis Irwin|Man Utd|7
+Roy Keane|Man Utd|7
+David Beckham|Man Utd|6
+Nicky Butt|Man Utd|6
+Phil Neville|Man Utd|6
+Ole Gunnar Solskjær|Man Utd|6
+Rio Ferdinand|Man Utd|6
+Peter Schmeichel|Man Utd|5
+Andrew Cole|Man Utd|5
+Wes Brown|Man Utd|5
+John O'Shea|Man Utd|5
+Wayne Rooney|Man Utd|5
+Patrice Evra|Man Utd|5
+Nemanja Vidić|Man Utd|5
+Darren Fletcher|Man Utd|5
+Michael Carrick|Man Utd|5
+Eric Cantona|Man Utd|4
+Brian McClair|Man Utd|4
+Gary Pallister|Man Utd|4
+Mikaël Silvestre|Man Utd|4
+Edwin van der Sar|Man Utd|4
+Ji-sung Park|Man Utd|4
+Anderson|Man Utd|4
+Nani|Man Utd|4
+Didier Drogba|Chelsea|4
+John Terry|Chelsea|4
+Petr Čech|Chelsea|4
+Cristiano Ronaldo|Man Utd|3
+Dennis Bergkamp|Arsenal|3
+Martin Keown|Arsenal|3
+Ray Parlour|Arsenal|3
+Patrick Vieira|Arsenal|3
+Ashley Cole|Arsenal, Chelsea|3
+Henning Berg|Blackburn, Man Utd|3
+Ricardo Carvalho|Chelsea|3
+Joe Cole|Chelsea|3
+Paulo Ferreira|Chelsea|3
+Frank Lampard|Chelsea|3
+Steve Bruce|Man Utd|3
+Lee Sharpe|Man Utd|3
+Ronny Johnsen|Man Utd|3
+Teddy Sheringham|Man Utd|3
+Jaap Stam|Man Utd|3
+Dwight Yorke|Man Utd|3
+Tomasz Kuszczak|Man Utd|3
+Carlos Tevez|Man Utd, Man City|3
+Jonny Evans|Man Utd|3
+Gaël Clichy|Arsenal, Man City|3
+Rafael|Man Utd|3
+Robert Huth|Chelsea, Leicester|3
+Tony Adams|Arsenal|2
+Nicolas Anelka|Arsenal, Chelsea|2
+David Seaman|Arsenal|2
+Lee Dixon|Arsenal|2
+Gilles Grimandi|Arsenal|2
+Robert Pirès|Arsenal|2
+Fredrik Ljungberg|Arsenal|2
+Sylvain Wiltord|Arsenal|2
+Lauren|Arsenal|2
+Thierry Henry|Arsenal|2
+Edu|Arsenal|2
+Sol Campbell|Arsenal|2
+Nwankwo Kanu|Arsenal|2
+Damien Duff|Chelsea|2
+William Gallas|Chelsea|2
+Geremi|Chelsea|2
+Eiður Guðjohnsen|Chelsea|2
+Claude Makélélé|Chelsea|2
+Arjen Robben|Chelsea|2
+Michael Essien|Chelsea|2
+Mark Hughes|Man Utd|2
+Paul Ince|Man Utd|2
+Andrei Kanchelskis|Man Utd|2
+Paul Parker|Man Utd|2
+Bryan Robson|Man Utd|2
+David May|Man Utd|2
+Raimond van der Gouw|Man Utd|2
+Fabien Barthez|Man Utd|2
+Louis Saha|Man Utd|2
+Dimitar Berbatov|Man Utd|2
+Kolo Touré|Arsenal, Man City|2
+Antonio Valencia|Man Utd|2
+Chris Smalling|Man Utd|2
+Javier Hernández|Man Utd|2
+Joe Hart|Man City|2
+Pablo Zabaleta|Man City|2
+Aleksandar Kolarov|Man City|2
+Joleon Lescott|Man City|2
+Vincent Kompany|Man City|2
+James Milner|Man City|2
+Yaya Touré|Man City|2
+Samir Nasri|Man City|2
+David Silva|Man City|2
+Sergio Agüero|Man City|2
+Edin Džeko|Man City|2
+Branislav Ivanović|Chelsea|2
+Mikel John Obi|Chelsea|2
+Tim Sherwood|Blackburn|1
+Mark Atkins|Blackburn|1
+Alan Shearer|Blackburn|1
+Tony Gale|Blackburn|1
+Colin Hendry|Blackburn|1
+Graeme Le Saux|Blackburn|1
+Tim Flowers|Blackburn|1
+Paul Warhurst|Blackburn|1
+Chris Sutton|Blackburn|1
+Stuart Ripley|Blackburn|1
+Ian Pearce|Blackburn|1
+Jason Wilcox|Blackburn|1
+Mike Newell|Blackburn|1
+Robbie Slater|Blackburn|1
+Jeff Kenna|Blackburn|1
+Nigel Winterburn|Arsenal|1
+Steve Bould|Arsenal|1
+David Platt|Arsenal|1
+Ian Wright|Arsenal|1
+Marc Overmars|Arsenal|1
+Christopher Wreh|Arsenal|1
+Emmanuel Petit|Arsenal|1
+Luís Boa Morte|Arsenal|1
+Rémi Garde|Arsenal|1
+Stephen Hughes|Arsenal|1
+Alex Manninger|Arsenal|1
+Oleh Luzhny|Arsenal|1
+Stuart Taylor|Arsenal|1
+Giovanni van Bronckhorst|Arsenal|1
+Matthew Upson|Arsenal|1
+Richard Wright|Arsenal|1
+Igors Stepanovs|Arsenal|1
+Jérémie Aliadière|Arsenal|1
+Jens Lehmann|Arsenal|1
+José Antonio Reyes|Arsenal|1
+Gilberto Silva|Arsenal|1
+Pascal Cygan|Arsenal|1
+Wayne Bridge|Chelsea|1
+Alexey Smertin|Chelsea|1
+Tiago|Chelsea|1
+Glen Johnson|Chelsea|1
+Mateja Kežman|Chelsea|1
+Jiří Jarošík|Chelsea|1
+Hernán Crespo|Chelsea|1
+Asier del Horno|Chelsea|1
+Shaun Wright-Phillips|Chelsea|1
+Michael Ballack|Chelsea|1
+Juliano Belletti|Chelsea|1
+Alex|Chelsea|1
+Deco|Chelsea|1
+Salomon Kalou|Chelsea|1
+Florent Malouda|Chelsea|1
+Daniel Sturridge|Chelsea|1
+Yuri Zhirkov|Chelsea|1
+Clayton Blackmore|Man Utd|1
+Dion Dublin|Man Utd|1
+Darren Ferguson|Man Utd|1
+Mike Phelan|Man Utd|1
+Jordi Cruyff|Man Utd|1
+Karel Poborský|Man Utd|1
+Jesper Blomqvist|Man Utd|1
+Mark Bosnich|Man Utd|1
+Luke Chadwick|Man Utd|1
+Ronnie Wallwork|Man Utd|1
+Laurent Blanc|Man Utd|1
+Roy Carroll|Man Utd|1
+Quinton Fortune|Man Utd|1
+Diego Forlán|Man Utd|1
+Ruud van Nistelrooy|Man Utd|1
+Juan Sebastián Verón|Man Utd|1
+Gabriel Heinze|Man Utd|1
+Kieran Richardson|Man Utd|1
+Henrik Larsson|Man Utd|1
+Alan Smith|Man Utd|1
+Owen Hargreaves|Man Utd|1
+Gerard Piqué|Man Utd|1
+Fábio|Man Utd|1
+Michael Owen|Man Utd|1
+Darron Gibson|Man Utd|1
+Micah Richards|Man City|1
+Stefan Savić|Man City|1
+Gareth Barry|Man City|1
+Nigel de Jong|Man City|1
+Adam Johnson|Man City|1
+Mario Balotelli|Man City|1
+Robin van Persie|Man Utd|1
+Danny Welbeck|Man Utd|1
+Shinji Kagawa|Man Utd|1
+David de Gea|Man Utd|1
+Ashley Young|Man Utd|1
+Tom Cleverley|Man Utd|1
+Phil Jones|Man Utd|1
+Alexander Büttner|Man Utd|1
+Anders Lindegaard|Man Utd|1
+Álvaro Negredo|Man City|1
+Javi García|Man City|1
+Jesús Navas|Man City|1
+Jack Rodwell|Man City|1
+Fernandinho|Man City|1
+Martín Demichelis|Man City|1
+Costel Pantilimon|Man City|1
+Matija Nastasić|Man City|1
+Stevan Jovetić|Man City|1
+Cesc Fàbregas|Chelsea|1
+César Azpilicueta|Chelsea|1
+Loïc Rémy|Chelsea|1
+Kurt Zouma|Chelsea|1
+Oscar|Chelsea|1
+Ramires|Chelsea|1
+Willian|Chelsea|1
+Gary Cahill|Chelsea|1
+Nemanja Matić|Chelsea|1
+Diego Costa|Chelsea|1
+Filipe Luís|Chelsea|1
+Thibaut Courtois|Chelsea|1
+Eden Hazard|Chelsea|1
+Juan Cuadrado|Chelsea|1
+André Schürrle|Chelsea|1
+Kasper Schmeichel|Leicester|1
+Danny Simpson|Leicester|1
+Christian Fuchs|Leicester|1
+Wes Morgan|Leicester|1
+Jeff Schlupp|Leicester|1
+Danny Drinkwater|Leicester|1
+Gökhan Inler|Leicester|1
+N'Golo Kanté|Leicester|1
+Nathan Dyer|Leicester|1
+Andy King|Leicester|1
+Marc Albrighton|Leicester|1
+Demarai Gray|Leicester|1
+Riyad Mahrez|Leicester|1
+Leonardo Ulloa|Leicester|1
+Shinji Okazaki|Leicester|1
+Jamie Vardy|Leicester|1
+Daniel Amartey|Leicester|1
+Ritchie De Laet|Leicester|1

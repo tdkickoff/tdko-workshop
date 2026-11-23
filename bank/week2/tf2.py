@@ -1,0 +1,41 @@
+# Top Four, No. 15-28. Frozen values only (retired players or records that can't change).
+Q2 = [
+ dict(id='ucl-titles-player', q="European Cup / Champions League titles won as a player", top="Most", bottom="Fewest", unit="titles",
+      items=[["Paco Gento",6],["Paolo Maldini",5],["Lionel Messi",4],["Steven Gerrard",1]]),
+ dict(id='pl-assists', q="Premier League assists", top="Most", bottom="Fewest", unit="assists",
+      items=[["Ryan Giggs",162],["Kevin De Bruyne",119],["Cesc Fàbregas",111],["Frank Lampard",102]]),
+ dict(id='pl-boss-titles', q="Premier League titles won as a manager", top="Most", bottom="Fewest", unit="titles",
+      items=[["Sir Alex Ferguson",13],["Pep Guardiola",6],["Arsène Wenger",3],["Claudio Ranieri",1]]),
+ dict(id='ucl-goals', q="Champions League goals", top="Most", bottom="Fewest", unit="goals",
+      items=[["Cristiano Ronaldo",140],["Lionel Messi",129],["Karim Benzema",90],["Raúl",71]]),
+ dict(id='pl-hattricks', q="Premier League hat-tricks", top="Fewest", bottom="Most", unit="hat-tricks",
+      items=[["Thierry Henry",8],["Robbie Fowler",9],["Alan Shearer",11],["Sergio Agüero",12]]),
+ dict(id='euro-titles', q="European Championships won", top="Most", bottom="Fewest", unit="titles",
+      items=[["Spain",4],["Germany",3],["France",2],["Denmark",1]]),
+ dict(id='copa-titles', q="Copa América titles", top="Most", bottom="Fewest", unit="titles",
+      items=[["Argentina",16],["Uruguay",15],["Brazil",9],["Chile",2]]),
+ dict(id='pl-points', q="Points in a title-winning Premier League season", top="Most", bottom="Fewest", unit="points",
+      items=[["Man City 2017–18",100],["Liverpool 2019–20",99],["Chelsea 2004–05",95],["Arsenal 2003–04",90]]),
+ dict(id='mufc-goals', q="Goals for Manchester United (all competitions)", top="Most", bottom="Fewest", unit="goals",
+      items=[["Wayne Rooney",253],["Bobby Charlton",249],["Denis Law",237],["George Best",179]]),
+ dict(id='spurs-goals-tf', q="Goals for Tottenham (all competitions)", top="Fewest", bottom="Most", unit="goals",
+      items=[["Glenn Hoddle",110],["Son Heung-min",173],["Jimmy Greaves",266],["Harry Kane",280]]),
+ dict(id='wales-goals', q="Wales goals", top="Most", bottom="Fewest", unit="goals",
+      items=[["Gareth Bale",41],["Ian Rush",28],["Ivor Allchurch",23],["Mark Hughes",16]]),
+ dict(id='eng-gk-caps', q="England caps (goalkeepers)", top="Fewest", bottom="Most", unit="caps",
+      items=[["Ray Clemence",61],["Gordon Banks",73],["David Seaman",75],["Peter Shilton",125]]),
+ dict(id='ireland-goals', q="Republic of Ireland goals", top="Most", bottom="Fewest", unit="goals",
+      items=[["Robbie Keane",68],["Niall Quinn",21],["Frank Stapleton",20],["John Aldridge",19]]),
+ dict(id='arsenal-apps', q="Appearances for Arsenal", top="Most", bottom="Fewest", unit="apps",
+      items=[["David O'Leary",722],["Tony Adams",669],["George Armstrong",621],["Lee Dixon",619]]),
+]
+# Ranked Highly pools for No. 22-28 (retired players, frozen totals)
+RP = {
+ 'arsenal-goals': None, 'pl-goals-2': 'pl-goals', 'pl-apps-2': 'pl-apps', 'eng-caps-3': 'eng-caps',  # existing pool in updown/pools.py
+ 'lfc-goals': ('Goals for Liverpool (all competitions)','goals',{'Ian Rush':346,'Roger Hunt':285,'Gordon Hodgson':241,'Billy Liddell':228,'Steven Gerrard':186,'Robbie Fowler':183,'Kenny Dalglish':172,'Michael Owen':158,'Ian St John':118,'John Barnes':108,'Kevin Keegan':100,'John Toshack':96,'Luis Suárez':82,'Fernando Torres':81,'Harry Chambers':151,'Dick Forshaw':124,'Dirk Kuyt':71,'John Aldridge':63,'Emile Heskey':60,'Peter Beardsley':59}),
+ 'ger-caps': ('Germany caps','caps',{'Lothar Matthäus':150,'Miroslav Klose':137,'Thomas Müller':131,'Lukas Podolski':130,'Manuel Neuer':124,'Bastian Schweinsteiger':121,'Toni Kroos':114,'Philipp Lahm':113,'Jürgen Klinsmann':108,'Jürgen Kohler':105,'Per Mertesacker':104,'Franz Beckenbauer':103,'Thomas Häßler':101,'Michael Ballack':98,'Berti Vogts':96,'Sepp Maier':95,'Karl-Heinz Rummenigge':95,'Mesut Özil':92,'Rudi Völler':90,'Oliver Kahn':86,'Andreas Möller':85,'Jérôme Boateng':76,'Gerd Müller':62}),
+ 'fra-caps': ('France caps','caps',{'Hugo Lloris':145,'Lilian Thuram':142,'Olivier Giroud':137,'Thierry Henry':123,'Marcel Desailly':116,'Zinedine Zidane':108,'Patrick Vieira':107,'Didier Deschamps':103,'Laurent Blanc':97,'Bixente Lizarazu':97,'Karim Benzema':97,'Raphaël Varane':93,'Sylvain Wiltord':92,'Fabien Barthez':87,'Youri Djorkaeff':82,'Patrice Evra':81,'Franck Ribéry':81,'Robert Pires':79,'Michel Platini':72,'David Trezeguet':71,'Claude Makélélé':71,'Emmanuel Petit':63}),
+ 'ita-caps': ('Italy caps','caps',{'Gianluigi Buffon':176,'Fabio Cannavaro':136,'Paolo Maldini':126,'Leonardo Bonucci':121,'Daniele De Rossi':117,'Giorgio Chiellini':117,'Andrea Pirlo':116,'Dino Zoff':112,'Gianluca Zambrotta':98,'Giacinto Facchetti':94,'Alessandro Del Piero':91,'Franco Baresi':81,'Giuseppe Bergomi':81,'Marco Tardelli':81,'Demetrio Albertini':79,'Alessandro Nesta':78,'Gennaro Gattuso':73,'Francesco Totti':58,'Filippo Inzaghi':57,'Roberto Baggio':56}),
+ 'esp-caps': ('Spain caps','caps',{'Sergio Ramos':180,'Iker Casillas':167,'Sergio Busquets':143,'Xavi':133,'Andrés Iniesta':131,'Andoni Zubizarreta':126,'David Silva':125,'Xabi Alonso':114,'Cesc Fàbregas':110,'Fernando Torres':110,'Gerard Piqué':102,'Raúl':102,'Carles Puyol':100,'David Villa':98,'Fernando Hierro':89,'Emilio Butragueño':69,'Míchel':66,'Luis Enrique':62}),
+ 'rma-goals': ('Goals for Real Madrid (all competitions)','goals',{'Cristiano Ronaldo':450,'Karim Benzema':354,'Raúl':323,'Alfredo Di Stéfano':308,'Santillana':290,'Ferenc Puskás':242,'Hugo Sánchez':208,'Paco Gento':182,'Pirri':172,'Emilio Butragueño':171}),
+}

@@ -1,0 +1,17 @@
+<!--tdko-gate-->
+<script>/* Gate. Before Mon 16 Nov 2026 the menu and games send visitors to the holding page.
+   Testers only ever get Test day: one fixed set of test puzzles (test-day.json, built in by build.py),
+   unlimited replays, and nothing saved to scores, streaks, times or the visit counters. They never see the real daily puzzles while unlocked.
+   ?tester=off, or the Exit tag in the top bar, locks the device again.
+   Codes: before launch TDKO-VW8UP (holding page or ?tester=). From Mon 16 Nov 2026 every device leaves test mode once (the old '2' flag is dropped),
+   and only the new code TDKO-YFK9B works, via ?tester=TDKO-YFK9B on any page; it sets flag '3'. */
+var TDKO_TEST_NO=14;
+(function(){var tester=false,d=new Date(),k=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate(),live=k>=20261116,
+  CODE=live?'TDKO-YFK9B':'TDKO-VW8UP',FLAG=live?'3':'2';
+try{if(live&&localStorage.getItem('tdko-tester')==='2')localStorage.removeItem('tdko-tester');
+var q=location.search.match(/[?&]tester=([^&#]+)/);if(q){var v=decodeURIComponent(q[1]).toUpperCase();if(v===CODE)localStorage.setItem('tdko-tester',FLAG);if(v==='OFF')localStorage.removeItem('tdko-tester');}tester=localStorage.getItem('tdko-tester')===FLAG;
+window.TDKO_TEST=tester;if(tester)document.documentElement.classList.add('tdko-test');}catch(e){window.TDKO_TEST=false;}
+if(tester)return;if(!live)location.replace('coming-soon.html');})();
+function tdkoTestBox(){return '<section class="card replaybox"><div class="inner"><span class="eyebrow">Training Ground · doesn’t count</span><p>Same puzzle every time. Nothing here touches your scores, streaks or stats.</p><button class="btn ghost" type="button" data-replay>Play again</button></div></section>';}
+</script>
+<!--/tdko-gate-->

@@ -1,0 +1,146 @@
+# 2026 FIFA World Cup squads, players with 40+ caps at the tournament (Wikipedia "2026 FIFA World Cup squads", read 23 Nov 2026). TEAM|PLAYER|CAPS|CLUB
+Czech Republic|Tomáš Souček|90|West Ham United
+Czech Republic|Patrik Schick|53|Bayer Leverkusen
+Czech Republic|Vladimír Coufal|62|TSG Hoffenheim
+Mexico|Raúl Jiménez|124|Fulham
+Mexico|Guillermo Ochoa|152|AEL Limassol
+Mexico|Edson Álvarez|98|Fenerbahçe
+Mexico|Santiago Giménez|47|AC Milan
+South Korea|Kim Min-jae|79|Bayern Munich
+South Korea|Son Heung-min|144|Los Angeles FC
+South Korea|Hwang Hee-chan|79|Wolverhampton Wanderers
+South Korea|Lee Kang-in|47|Paris Saint-Germain
+Bosnia and Herzegovina|Edin Džeko|148|Schalke 04
+Bosnia and Herzegovina|Sead Kolašinac|65|Atalanta
+Canada|Alphonso Davies|58|Bayern Munich
+Canada|Jonathan David|77|Juventus
+Canada|Cyle Larin|90|Southampton
+Canada|Tajon Buchanan|60|Villarreal
+Qatar|Akram Afif|125|Al-Sadd
+Switzerland|Granit Xhaka|146|Sunderland
+Switzerland|Manuel Akanji|81|Inter Milan
+Switzerland|Breel Embolo|86|Rennes
+Switzerland|Denis Zakaria|65|Monaco
+Switzerland|Ricardo Rodriguez|138|Real Betis
+Brazil|Marquinhos|105|Paris Saint-Germain
+Brazil|Casemiro|86|Manchester United
+Brazil|Vinícius Júnior|49|Real Madrid
+Brazil|Lucas Paquetá|63|Flamengo
+Brazil|Neymar|128|Santos
+Brazil|Bruno Guimarães|43|Newcastle United
+Morocco|Yassine Bounou|90|Al-Hilal
+Morocco|Noussair Mazraoui|45|Manchester United
+Morocco|Sofyan Amrabat|75|Real Betis
+Scotland|Andy Robertson|94|Liverpool
+Scotland|Scott McTominay|70|Napoli
+Scotland|John McGinn|86|Aston Villa
+Scotland|Kieran Tierney|56|Celtic
+Scotland|Craig Gordon|84|Heart of Midlothian
+Australia|Mathew Ryan|104|Levante
+Paraguay|Miguel Almirón|76|Atlanta United FC
+Turkey|Hakan Çalhanoğlu|105|Inter Milan
+Turkey|Kerem Aktürkoğlu|52|Fenerbahçe
+Turkey|Merih Demiral|62|Al-Ahli
+United States|Weston McKennie|66|Juventus
+United States|Tyler Adams|54|Bournemouth
+United States|Antonee Robinson|54|Fulham
+United States|Tim Ream|82|Charlotte FC
+United States|Brenden Aaronson|58|Leeds United
+United States|Timothy Weah|51|Marseille
+Ecuador|Piero Hincapié|52|Arsenal
+Ecuador|Pervis Estupiñán|54|AC Milan
+Ecuador|Enner Valencia|105|Pachuca
+Ecuador|Moisés Caicedo|61|Chelsea
+Germany|Manuel Neuer|124|Bayern Munich
+Germany|Antonio Rüdiger|82|Real Madrid
+Germany|Joshua Kimmich|110|Bayern Munich
+Germany|Kai Havertz|58|Arsenal
+Germany|Leon Goretzka|70|Bayern Munich
+Germany|Jamal Musiala|42|Bayern Munich
+Germany|Leroy Sané|76|Galatasaray
+Germany|Jonathan Tah|47|Bayern Munich
+Ivory Coast|Franck Kessié|102|Al-Ahli
+Ivory Coast|Ibrahim Sangaré|57|Nottingham Forest
+Japan|Takefusa Kubo|49|Real Sociedad
+Japan|Daichi Kamada|49|Crystal Palace
+Japan|Takehiro Tomiyasu|43|Ajax
+Japan|Ritsu Dōan|65|Eintracht Frankfurt
+Netherlands|Nathan Aké|59|Manchester City
+Netherlands|Memphis Depay|109|Corinthians
+Netherlands|Cody Gakpo|50|Liverpool
+Netherlands|Frenkie de Jong|66|Barcelona
+Netherlands|Denzel Dumfries|72|Inter Milan
+Netherlands|Wout Weghorst|52|Ajax
+Sweden|Victor Lindelöf|76|Aston Villa
+Tunisia|Hannibal Mejbri|45|Burnley
+Belgium|Thibaut Courtois|109|Real Madrid
+Belgium|Axel Witsel|138|Girona
+Belgium|Youri Tielemans|85|Aston Villa
+Belgium|Leandro Trossard|51|Arsenal
+Belgium|Jérémy Doku|43|Manchester City
+Egypt|Omar Marmoush|50|Manchester City
+Iran|Mehdi Taremi|106|Olympiacos
+New Zealand|Chris Wood|90|Nottingham Forest
+Saudi Arabia|Salem Al-Dawsari|111|Al-Hilal
+Spain|Mikel Merino|43|Arsenal
+Spain|Fabián Ruiz|42|Paris Saint-Germain
+Spain|Dani Olmo|50|Barcelona
+Spain|Aymeric Laporte|46|Athletic Bilbao
+Spain|Pedri|41|Barcelona
+Spain|Mikel Oyarzabal|53|Real Sociedad
+Spain|Unai Simón|58|Athletic Bilbao
+Uruguay|José María Giménez|99|Atlético Madrid
+Uruguay|Federico Valverde|73|Real Madrid
+Uruguay|Fernando Muslera|134|Estudiantes
+France|Lucas Digne|58|Aston Villa
+France|Jules Koundé|48|Barcelona
+France|Adrien Rabiot|59|AC Milan
+France|Mike Maignan|40|AC Milan
+France|N'Golo Kanté|69|Fenerbahçe
+Norway|Alexander Sørloth|72|Atlético Madrid
+Norway|Erling Haaland|50|Manchester City
+Senegal|Kalidou Koulibaly|104|Al-Hilal
+Senegal|Idrissa Gueye|132|Everton
+Senegal|Édouard Mendy|58|Al-Ahli
+Senegal|Ismaïla Sarr|84|Crystal Palace
+Senegal|Iliman Ndiaye|41|Everton
+Algeria|Riyad Mahrez|116|Al-Ahli
+Algeria|Aïssa Mandi|119|Lille
+Argentina|Rodrigo De Paul|87|Inter Miami CF
+Argentina|Julián Alvarez|51|Atlético Madrid
+Argentina|Cristian Romero|51|Tottenham Hotspur
+Argentina|Alexis Mac Allister|46|Liverpool
+Argentina|Lautaro Martínez|77|Inter Milan
+Argentina|Nicolás Tagliafico|76|Lyon
+Argentina|Leandro Paredes|77|Boca Juniors
+Argentina|Giovani Lo Celso|67|Real Betis
+Argentina|Nahuel Molina|58|Atlético Madrid
+Austria|Marko Arnautović|133|Red Star Belgrade
+Austria|David Alaba|113|Real Madrid
+Austria|Marcel Sabitzer|98|Borussia Dortmund
+Austria|Konrad Laimer|57|Bayern Munich
+Colombia|Luis Díaz|74|Bayern Munich
+Colombia|James Rodríguez|126|Minnesota United FC
+Colombia|David Ospina|130|Atlético Nacional
+Colombia|Yerry Mina|54|Cagliari
+Colombia|Davinson Sánchez|79|Galatasaray
+Colombia|Daniel Muñoz|46|Crystal Palace
+Portugal|Rúben Dias|76|Manchester City
+Portugal|Bruno Fernandes|89|Manchester United
+Portugal|João Félix|54|Al-Nassr
+Portugal|Rafael Leão|44|AC Milan
+Portugal|João Cancelo|68|Barcelona
+Portugal|Rúben Neves|67|Al-Hilal
+Portugal|Nuno Mendes|44|Paris Saint-Germain
+Portugal|Diogo Costa|43|Porto
+Croatia|Mateo Kovačić|113|Manchester City
+Croatia|Joško Gvardiol|48|Manchester City
+Croatia|Ivan Perišić|154|PSV Eindhoven
+Croatia|Andrej Kramarić|116|TSG Hoffenheim
+Croatia|Dominik Livaković|75|Dinamo Zagreb
+England|Jordan Pickford|84|Everton
+England|John Stones|89|Manchester City
+England|Marcus Rashford|72|Barcelona
+England|Jordan Henderson|90|Brentford
+Ghana|Thomas Partey|57|Villarreal
+Ghana|Jordan Ayew|120|Leicester City

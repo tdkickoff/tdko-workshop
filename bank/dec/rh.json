@@ -1,0 +1,376 @@
+[
+ {
+  "id": "la-liga-goals",
+  "theme": "La Liga goals",
+  "unit": "goals",
+  "chain": [
+   [
+    "Lionel Messi",
+    474
+   ],
+   [
+    "Antoine Griezmann",
+    205
+   ],
+   [
+    "Cristiano Ronaldo",
+    311
+   ],
+   [
+    "David Villa",
+    186
+   ],
+   [
+    "Karim Benzema",
+    238
+   ],
+   [
+    "Raúl",
+    228
+   ]
+  ],
+  "d": "m",
+  "src": "Wikipedia: List of La Liga top scorers",
+  "url": "https://en.wikipedia.org/wiki/List_of_La_Liga_top_scorers"
+ },
+ {
+  "id": "serie-a-goals",
+  "theme": "Serie A goals",
+  "unit": "goals",
+  "chain": [
+   [
+    "Francesco Totti",
+    250
+   ],
+   [
+    "Gabriel Batistuta",
+    183
+   ],
+   [
+    "Roberto Baggio",
+    205
+   ],
+   [
+    "Alessandro Del Piero",
+    188
+   ],
+   [
+    "Ciro Immobile",
+    201
+   ],
+   [
+    "Antonio Di Natale",
+    209
+   ]
+  ],
+  "d": "h",
+  "src": "Wikipedia: List of Serie A players with 100 or more goals (as of 24 May 2026)",
+  "url": "https://en.wikipedia.org/wiki/List_of_Serie_A_players_with_100_or_more_goals"
+ },
+ {
+  "id": "bundesliga-goals",
+  "theme": "Bundesliga goals",
+  "unit": "goals",
+  "chain": [
+   [
+    "Gerd Müller",
+    365
+   ],
+   [
+    "Claudio Pizarro",
+    197
+   ],
+   [
+    "Robert Lewandowski",
+    312
+   ],
+   [
+    "Ulf Kirsten",
+    181
+   ],
+   [
+    "Karl-Heinz Rummenigge",
+    162
+   ],
+   [
+    "Mario Gómez",
+    170
+   ]
+  ],
+  "d": "m",
+  "src": "Wikipedia: List of Bundesliga top scorers (as of 30 August 2026)",
+  "url": "https://en.wikipedia.org/wiki/List_of_Bundesliga_top_scorers"
+ },
+ {
+  "id": "wc-goals",
+  "theme": "World Cup goals",
+  "unit": "goals",
+  "chain": [
+   [
+    "Lionel Messi",
+    21
+   ],
+   [
+    "Gary Lineker",
+    10
+   ],
+   [
+    "Miroslav Klose",
+    16
+   ],
+   [
+    "Just Fontaine",
+    13
+   ],
+   [
+    "Kylian Mbappé",
+    22
+   ],
+   [
+    "Harry Kane",
+    14
+   ]
+  ],
+  "d": "m",
+  "src": "Wikipedia: List of FIFA World Cup top goalscorers (as of 19 July 2026)",
+  "url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+ },
+ {
+  "id": "golden-shoe-season",
+  "theme": "Goals in their European Golden Shoe season",
+  "unit": "goals",
+  "chain": [
+   [
+    "Lionel Messi (2011–12)",
+    50
+   ],
+   [
+    "Henrik Larsson (2000–01)",
+    35
+   ],
+   [
+    "Cristiano Ronaldo (2014–15)",
+    48
+   ],
+   [
+    "Francesco Totti (2006–07)",
+    26
+   ],
+   [
+    "Erling Haaland (2022–23)",
+    36
+   ],
+   [
+    "Mário Jardel (2001–02)",
+    42
+   ]
+  ],
+  "d": "e",
+  "src": "Wikipedia: European Golden Shoe",
+  "url": "https://en.wikipedia.org/wiki/European_Golden_Shoe"
+ },
+ {
+  "id": "career-club-goals",
+  "theme": "Career league goals",
+  "unit": "goals",
+  "chain": [
+   [
+    "Romário",
+    542
+   ],
+   [
+    "Paul Gascoigne",
+    83
+   ],
+   [
+    "Rivaldo",
+    299
+   ],
+   [
+    "Clarence Seedorf",
+    107
+   ],
+   [
+    "Francesco Totti",
+    250
+   ],
+   [
+    "Raúl",
+    291
+   ]
+  ],
+  "d": "m",
+  "src": "Wikipedia: each player's infobox total",
+  "url": "https://en.wikipedia.org/wiki/Rom%C3%A1rio"
+ },
+ {
+  "id": "legends-caps",
+  "theme": "International caps",
+  "unit": "caps",
+  "chain": [
+   [
+    "Samuel Eto'o",
+    118
+   ],
+   [
+    "Paul Gascoigne",
+    57
+   ],
+   [
+    "Raúl",
+    102
+   ],
+   [
+    "Francesco Totti",
+    58
+   ],
+   [
+    "Clarence Seedorf",
+    87
+   ],
+   [
+    "Alessandro Del Piero",
+    91
+   ]
+  ],
+  "d": "m",
+  "src": "Wikipedia: each player's infobox",
+  "url": "https://en.wikipedia.org/wiki/Samuel_Eto%27o"
+ },
+ {
+  "id": "one-club-apps",
+  "theme": "League appearances for one club",
+  "unit": "apps",
+  "chain": [
+   [
+    "Francesco Totti (Roma)",
+    619
+   ],
+   [
+    "George Best (Man Utd)",
+    361
+   ],
+   [
+    "Raúl (Real Madrid)",
+    550
+   ],
+   [
+    "Johan Cruyff (Ajax, 1964–73)",
+    245
+   ],
+   [
+    "Alessandro Del Piero (Juventus)",
+    513
+   ],
+   [
+    "Clarence Seedorf (AC Milan)",
+    300
+   ]
+  ],
+  "d": "e",
+  "src": "Wikipedia: each player's infobox",
+  "url": "https://en.wikipedia.org/wiki/Francesco_Totti"
+ },
+ {
+  "id": "one-club-goals",
+  "theme": "League goals for one club",
+  "unit": "goals",
+  "chain": [
+   [
+    "Raúl (Real Madrid)",
+    228
+   ],
+   [
+    "George Best (Man Utd)",
+    137
+   ],
+   [
+    "Francesco Totti (Roma)",
+    250
+   ],
+   [
+    "Marco van Basten (Ajax)",
+    128
+   ],
+   [
+    "Alessandro Del Piero (Juventus)",
+    208
+   ],
+   [
+    "Johan Cruyff (Ajax, 1964–73)",
+    193
+   ]
+  ],
+  "d": "m",
+  "src": "Wikipedia: each player's infobox",
+  "url": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Gonz%C3%A1lez"
+ },
+ {
+  "id": "spain-goals",
+  "theme": "Spain goals",
+  "unit": "goals",
+  "chain": [
+   [
+    "David Villa",
+    59
+   ],
+   [
+    "Fernando Hierro",
+    29
+   ],
+   [
+    "Raúl",
+    44
+   ],
+   [
+    "Emilio Butragueño",
+    26
+   ],
+   [
+    "Fernando Torres",
+    38
+   ],
+   [
+    "David Silva",
+    35
+   ]
+  ],
+  "d": "m",
+  "src": "Wikipedia: Spain national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/Spain_national_football_team_records_and_statistics"
+ },
+ {
+  "id": "caps-record-holders",
+  "theme": "Caps for their country (each is the record holder)",
+  "unit": "caps",
+  "chain": [
+   [
+    "Sergio Ramos (Spain)",
+    180
+   ],
+   [
+    "Robbie Keane (Rep. of Ireland)",
+    146
+   ],
+   [
+    "Gianluigi Buffon (Italy)",
+    176
+   ],
+   [
+    "Petr Čech (Czech Republic)",
+    124
+   ],
+   [
+    "Lothar Matthäus (Germany)",
+    150
+   ],
+   [
+    "Hugo Lloris (France)",
+    145
+   ]
+  ],
+  "d": "m",
+  "src": "Wikipedia: Spain, Italy, Germany, France records pages; Petr Čech; Robbie Keane (bank chain, Republic of Ireland caps)",
+  "url": "https://en.wikipedia.org/wiki/Spain_national_football_team_records_and_statistics"
+ }
+]

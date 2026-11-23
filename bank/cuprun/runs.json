@@ -1,0 +1,6277 @@
+{
+ "test": {
+  "id": "esp-euro-2024",
+  "answer": {
+   "n": "Spain",
+   "code": "ESP",
+   "a": []
+  },
+  "comp": "Euros",
+  "year": "2024",
+  "final": "2–1",
+  "src": "Wikipedia: UEFA Euro 2024 final",
+  "rounds": [
+   {
+    "r": "Group stage",
+    "m": [
+     {
+      "t": {
+       "n": "Croatia",
+       "code": "CRO"
+      },
+      "s": "3–0"
+     },
+     {
+      "t": {
+       "n": "Italy",
+       "code": "ITA"
+      },
+      "s": "1–0"
+     },
+     {
+      "t": {
+       "n": "Albania",
+       "code": "ALB"
+      },
+      "s": "1–0"
+     }
+    ]
+   },
+   {
+    "r": "Round of 16",
+    "m": [
+     {
+      "t": {
+       "n": "Georgia",
+       "code": "GEO"
+      },
+      "s": "4–1"
+     }
+    ]
+   },
+   {
+    "r": "Quarter-final",
+    "m": [
+     {
+      "t": {
+       "n": "Germany",
+       "code": "GER"
+      },
+      "s": "2–1 aet"
+     }
+    ]
+   },
+   {
+    "r": "Semi-final",
+    "m": [
+     {
+      "t": {
+       "n": "France",
+       "code": "FRA"
+      },
+      "s": "2–1"
+     }
+    ]
+   },
+   {
+    "r": "Final",
+    "m": [
+     {
+      "t": {
+       "n": "England",
+       "code": "ENG"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "runs": [
+  {
+   "id": "esp-euro-2024",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-euro-2024",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-euro-2024",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-euro-2024",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-euro-2024",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-euro-2024",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-euro-2024",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arg-wc-2022",
+   "answer": {
+    "n": "Argentina",
+    "code": "ARG",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2022",
+   "final": "3–3 (4–2 pens)",
+   "src": "Wikipedia: 2022 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Saudi Arabia",
+        "code": "KSA"
+       },
+       "s": "1–2"
+      },
+      {
+       "t": {
+        "n": "Mexico",
+        "code": "MEX"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Poland",
+        "code": "POL"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Australia",
+        "code": "AUS"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Netherlands",
+        "code": "NED"
+       },
+       "s": "2–2 · 4–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sen-afcon-2021",
+   "answer": {
+    "n": "Senegal",
+    "code": "SEN",
+    "a": []
+   },
+   "comp": "AFCON",
+   "year": "2021",
+   "final": "0–0 (4–2 pens)",
+   "src": "Wikipedia: 2021 AFCON final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Zimbabwe",
+        "code": "ZIM"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Guinea",
+        "code": "GUI"
+       },
+       "s": "0–0"
+      },
+      {
+       "t": {
+        "n": "Malawi",
+        "code": "MWI"
+       },
+       "s": "0–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Cape Verde",
+        "code": "CPV"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Equatorial Guinea",
+        "code": "EQG"
+       },
+       "s": "3–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Burkina Faso",
+        "code": "BFA"
+       },
+       "s": "3–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Egypt",
+        "code": "EGY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ger-wc-2014",
+   "answer": {
+    "n": "Germany",
+    "code": "GER",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2014",
+   "final": "1–0 aet",
+   "src": "Wikipedia: 2014 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "4–0"
+      },
+      {
+       "t": {
+        "n": "Ghana",
+        "code": "GHA"
+       },
+       "s": "2–2"
+      },
+      {
+       "t": {
+        "n": "United States",
+        "code": "USA"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Algeria",
+        "code": "ALG"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Brazil",
+        "code": "BRA"
+       },
+       "s": "7–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chi-copa-2015",
+   "answer": {
+    "n": "Chile",
+    "code": "CHI",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2015",
+   "final": "0–0 (4–1 pens)",
+   "src": "Wikipedia: 2015 Copa América final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Ecuador",
+        "code": "ECU"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Mexico",
+        "code": "MEX"
+       },
+       "s": "3–3"
+      },
+      {
+       "t": {
+        "n": "Bolivia",
+        "code": "BOL"
+       },
+       "s": "5–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Uruguay",
+        "code": "URU"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-euro-2012",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2012",
+   "final": "4–0",
+   "src": "Wikipedia: UEFA Euro 2012 final + knockout phase",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Republic of Ireland",
+        "code": "IRL"
+       },
+       "s": "4–0"
+      },
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "0–0 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "por-euro-2016",
+   "answer": {
+    "n": "Portugal",
+    "code": "POR",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2016",
+   "final": "1–0 aet",
+   "src": "Wikipedia: UEFA Euro 2016 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Iceland",
+        "code": "ISL"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Austria",
+        "code": "AUT"
+       },
+       "s": "0–0"
+      },
+      {
+       "t": {
+        "n": "Hungary",
+        "code": "HUN"
+       },
+       "s": "3–3"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "1–0 aet"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Poland",
+        "code": "POL"
+       },
+       "s": "1–1 · 5–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Wales",
+        "code": "WAL"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "uru-copa-2011",
+   "answer": {
+    "n": "Uruguay",
+    "code": "URU",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2011",
+   "final": "3–0",
+   "src": "Wikipedia: 2011 Copa América final, Group C, knockout stage; RSSSF",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Chile",
+        "code": "CHI"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Mexico",
+        "code": "MEX"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       },
+       "s": "1–1 · 5–4 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fra-wc-2018",
+   "answer": {
+    "n": "France",
+    "code": "FRA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2018",
+   "final": "4–2",
+   "src": "Wikipedia: 2018 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Australia",
+        "code": "AUS"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Denmark",
+        "code": "DEN"
+       },
+       "s": "0–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       },
+       "s": "4–3"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Uruguay",
+        "code": "URU"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Belgium",
+        "code": "BEL"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bra-copa-2019",
+   "answer": {
+    "n": "Brazil",
+    "code": "BRA",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2019",
+   "final": "3–1",
+   "src": "Wikipedia: 2019 Copa América final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Bolivia",
+        "code": "BOL"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Venezuela",
+        "code": "VEN"
+       },
+       "s": "0–0"
+      },
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "5–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       },
+       "s": "0–0 · 4–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "civ-afcon-2023",
+   "answer": {
+    "n": "Ivory Coast",
+    "code": "CIV",
+    "a": [
+     "cote divoire",
+     "cote d ivoire"
+    ]
+   },
+   "comp": "AFCON",
+   "year": "2023",
+   "final": "2–1",
+   "src": "Wikipedia: 2023 AFCON final; Sky Sports (QF)",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Guinea-Bissau",
+        "code": "GNB"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Nigeria",
+        "code": "NGA"
+       },
+       "s": "0–1"
+      },
+      {
+       "t": {
+        "n": "Equatorial Guinea",
+        "code": "EQG"
+       },
+       "s": "0–4"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Senegal",
+        "code": "SEN"
+       },
+       "s": "1–1 · 5–4 pens"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Mali",
+        "code": "MLI"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "DR Congo",
+        "code": "COD"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Nigeria",
+        "code": "NGA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ita-euro-2020",
+   "answer": {
+    "n": "Italy",
+    "code": "ITA",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2020",
+   "final": "1–1 (3–2 pens)",
+   "src": "Wikipedia: UEFA Euro 2020 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Turkey",
+        "code": "TUR"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Switzerland",
+        "code": "SUI"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Wales",
+        "code": "WAL"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Austria",
+        "code": "AUT"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Belgium",
+        "code": "BEL"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Spain",
+        "code": "ESP"
+       },
+       "s": "1–1 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gre-euro-2004",
+   "answer": {
+    "n": "Greece",
+    "code": "GRE",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2004",
+   "final": "1–0",
+   "src": "Wikipedia: UEFA Euro 2004 final + UEFA Euro 2004",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Spain",
+        "code": "ESP"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Russia",
+        "code": "RUS"
+       },
+       "s": "1–2"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       },
+       "s": "1–0 aet"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "qat-asian-2019",
+   "answer": {
+    "n": "Qatar",
+    "code": "QAT",
+    "a": []
+   },
+   "comp": "Asian Cup",
+   "year": "2019",
+   "final": "3–1",
+   "src": "Wikipedia: 2019 AFC Asian Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Lebanon",
+        "code": "LBN"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "North Korea",
+        "code": "PRK"
+       },
+       "s": "6–0"
+      },
+      {
+       "t": {
+        "n": "Saudi Arabia",
+        "code": "KSA"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Iraq",
+        "code": "IRQ"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "South Korea",
+        "code": "KOR"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "United Arab Emirates",
+        "code": "UAE"
+       },
+       "s": "4–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Japan",
+        "code": "JPN"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fra-euro-2000",
+   "answer": {
+    "n": "France",
+    "code": "FRA",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2000",
+   "final": "2–1 aet (golden goal)",
+   "src": "Wikipedia: UEFA Euro 2000 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Denmark",
+        "code": "DEN"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Netherlands",
+        "code": "NED"
+       },
+       "s": "2–3"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Spain",
+        "code": "ESP"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-wc-2010",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2010",
+   "final": "1–0 aet",
+   "src": "Wikipedia: 2010 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Switzerland",
+        "code": "SUI"
+       },
+       "s": "0–1"
+      },
+      {
+       "t": {
+        "n": "Honduras",
+        "code": "HON"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Chile",
+        "code": "CHI"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Netherlands",
+        "code": "NED"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arg-copa-2021",
+   "answer": {
+    "n": "Argentina",
+    "code": "ARG",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2021",
+   "final": "1–0",
+   "src": "Wikipedia: 2021 Copa América final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Chile",
+        "code": "CHI"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Uruguay",
+        "code": "URU"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Bolivia",
+        "code": "BOL"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ecuador",
+        "code": "ECU"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Colombia",
+        "code": "COL"
+       },
+       "s": "1–1 · 3–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Brazil",
+        "code": "BRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "alg-afcon-2019",
+   "answer": {
+    "n": "Algeria",
+    "code": "ALG",
+    "a": []
+   },
+   "comp": "AFCON",
+   "year": "2019",
+   "final": "1–0",
+   "src": "Wikipedia: 2019 AFCON final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Kenya",
+        "code": "KEN"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Senegal",
+        "code": "SEN"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Tanzania",
+        "code": "TAN"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Guinea",
+        "code": "GUI"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ivory Coast",
+        "code": "CIV"
+       },
+       "s": "1–1 · 4–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Nigeria",
+        "code": "NGA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Senegal",
+        "code": "SEN"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ita-wc-2006",
+   "answer": {
+    "n": "Italy",
+    "code": "ITA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2006",
+   "final": "1–1 (5–3 pens)",
+   "src": "Wikipedia: 2006 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Ghana",
+        "code": "GHA"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "United States",
+        "code": "USA"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Australia",
+        "code": "AUS"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ukraine",
+        "code": "UKR"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–0 aet"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bra-wc-2002",
+   "answer": {
+    "n": "Brazil",
+    "code": "BRA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2002",
+   "final": "2–0",
+   "src": "Wikipedia: 2002 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Turkey",
+        "code": "TUR"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "China",
+        "code": "CHN"
+       },
+       "s": "4–0"
+      },
+      {
+       "t": {
+        "n": "Costa Rica",
+        "code": "CRC"
+       },
+       "s": "5–2"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Belgium",
+        "code": "BEL"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Turkey",
+        "code": "TUR"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fra-wc-1998",
+   "answer": {
+    "n": "France",
+    "code": "FRA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "1998",
+   "final": "3–0",
+   "src": "Wikipedia: 1998 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "South Africa",
+        "code": "RSA"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Saudi Arabia",
+        "code": "KSA"
+       },
+       "s": "4–0"
+      },
+      {
+       "t": {
+        "n": "Denmark",
+        "code": "DEN"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       },
+       "s": "1–0 aet"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "0–0 · 4–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Brazil",
+        "code": "BRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chi-copa-2016",
+   "answer": {
+    "n": "Chile",
+    "code": "CHI",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2016",
+   "final": "0–0 (4–2 pens)",
+   "src": "Wikipedia: Copa América Centenario final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       },
+       "s": "1–2"
+      },
+      {
+       "t": {
+        "n": "Bolivia",
+        "code": "BOL"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Panama",
+        "code": "PAN"
+       },
+       "s": "4–2"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Mexico",
+        "code": "MEX"
+       },
+       "s": "7–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Colombia",
+        "code": "COL"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mun-facup-2024",
+   "answer": {
+    "n": "Manchester United",
+    "code": "MUN",
+    "c": [
+     "#DA291C",
+     "#FFFFFF"
+    ],
+    "a": []
+   },
+   "comp": "FA Cup",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: 2024 FA Cup final",
+   "rounds": [
+    {
+     "r": "Third round",
+     "m": [
+      {
+       "t": {
+        "n": "Wigan Athletic",
+        "code": "WIG",
+        "c": [
+         "#1D59AF",
+         "#FFFFFF"
+        ]
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Fourth round",
+     "m": [
+      {
+       "t": {
+        "n": "Newport County",
+        "code": "NPT",
+        "c": [
+         "#F7A51C",
+         "#000000"
+        ]
+       },
+       "s": "4–2"
+      }
+     ]
+    },
+    {
+     "r": "Fifth round",
+     "m": [
+      {
+       "t": {
+        "n": "Nottingham Forest",
+        "code": "NFO",
+        "c": [
+         "#DD0000",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Liverpool",
+        "code": "LIV",
+        "c": [
+         "#C8102E",
+         "#FFFFFF"
+        ]
+       },
+       "s": "4–3 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Coventry City",
+        "code": "COV",
+        "c": [
+         "#59CBE8",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–3 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Manchester City",
+        "code": "MCI",
+        "c": [
+         "#6CABDD",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esp-euro-2024",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "whu-uecl-2023",
+   "answer": {
+    "n": "West Ham United",
+    "code": "WHU",
+    "c": [
+     "#7A263A",
+     "#1BB1E7"
+    ],
+    "a": []
+   },
+   "comp": "Conference League",
+   "year": "2023",
+   "final": "2–1",
+   "src": "Wikipedia: 2023 UEFA Europa Conference League final; FourFourTwo (play-off)",
+   "rounds": [
+    {
+     "r": "Play-off",
+     "m": [
+      {
+       "t": {
+        "n": "Viborg",
+        "code": "VIB",
+        "c": [
+         "#00843D",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 6–1"
+      }
+     ]
+    },
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "FCSB",
+        "code": "FCS",
+        "c": [
+         "#E30613",
+         "#0033A0"
+        ]
+       },
+       "s": "3–1, 3–0"
+      },
+      {
+       "t": {
+        "n": "Silkeborg",
+        "code": "SIL",
+        "c": [
+         "#E30613",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–2, 1–0"
+      },
+      {
+       "t": {
+        "n": "Anderlecht",
+        "code": "AND",
+        "c": [
+         "#4C2C92",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0, 2–1"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "AEK Larnaca",
+        "code": "AEK",
+        "c": [
+         "#FFD100",
+         "#00704A"
+        ]
+       },
+       "s": "agg 6–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Gent",
+        "code": "GNT",
+        "c": [
+         "#003F87",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 5–2"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "AZ",
+        "code": "AZ",
+        "c": [
+         "#E30613",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 3–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Fiorentina",
+        "code": "FIO",
+        "c": [
+         "#5B2B82",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arg-copa-2024",
+   "answer": {
+    "n": "Argentina",
+    "code": "ARG",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2024",
+   "final": "1–0 aet",
+   "src": "Wikipedia: 2024 Copa América final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Canada",
+        "code": "CAN"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Chile",
+        "code": "CHI"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ecuador",
+        "code": "ECU"
+       },
+       "s": "1–1 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Canada",
+        "code": "CAN"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Colombia",
+        "code": "COL"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wig-facup-2013",
+   "answer": {
+    "n": "Wigan Athletic",
+    "code": "WIG",
+    "c": [
+     "#1D59AF",
+     "#FFFFFF"
+    ],
+    "a": []
+   },
+   "comp": "FA Cup",
+   "year": "2013",
+   "final": "1–0",
+   "src": "Wikipedia: 2013 FA Cup final",
+   "rounds": [
+    {
+     "r": "Third round",
+     "m": [
+      {
+       "t": {
+        "n": "AFC Bournemouth",
+        "code": "BOU",
+        "c": [
+         "#DA291C",
+         "#000000"
+        ]
+       },
+       "s": "1–1 · replay 1–0"
+      }
+     ]
+    },
+    {
+     "r": "Fourth round",
+     "m": [
+      {
+       "t": {
+        "n": "Macclesfield Town",
+        "code": "MAC",
+        "c": [
+         "#0050A0",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Fifth round",
+     "m": [
+      {
+       "t": {
+        "n": "Huddersfield Town",
+        "code": "HUD",
+        "c": [
+         "#0E63AD",
+         "#FFFFFF"
+        ]
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Everton",
+        "code": "EVE",
+        "c": [
+         "#003399",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Millwall",
+        "code": "MIL",
+        "c": [
+         "#001D5E",
+         "#FFFFFF"
+        ]
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Manchester City",
+        "code": "MCI",
+        "c": [
+         "#6CABDD",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "liv-facup-2022",
+   "answer": {
+    "n": "Liverpool",
+    "code": "LIV",
+    "c": [
+     "#C8102E",
+     "#FFFFFF"
+    ],
+    "a": []
+   },
+   "comp": "FA Cup",
+   "year": "2022",
+   "final": "0–0 (6–5 pens)",
+   "src": "Wikipedia: 2022 FA Cup final",
+   "rounds": [
+    {
+     "r": "Third round",
+     "m": [
+      {
+       "t": {
+        "n": "Shrewsbury Town",
+        "code": "SHR",
+        "c": [
+         "#0047AB",
+         "#F4B400"
+        ]
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Fourth round",
+     "m": [
+      {
+       "t": {
+        "n": "Cardiff City",
+        "code": "CAR",
+        "c": [
+         "#0070B5",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–1"
+      }
+     ]
+    },
+    {
+     "r": "Fifth round",
+     "m": [
+      {
+       "t": {
+        "n": "Norwich City",
+        "code": "NOR",
+        "c": [
+         "#FFF200",
+         "#00A650"
+        ]
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Nottingham Forest",
+        "code": "NFO",
+        "c": [
+         "#DD0000",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Manchester City",
+        "code": "MCI",
+        "c": [
+         "#6CABDD",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–2"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Chelsea",
+        "code": "CHE",
+        "c": [
+         "#034694",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ger-euro-1996",
+   "answer": {
+    "n": "Germany",
+    "code": "GER",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "1996",
+   "final": "2–1 aet (golden goal)",
+   "src": "Wikipedia: UEFA Euro 1996 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Russia",
+        "code": "RUS"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "0–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       },
+       "s": "1–1 · 6–5 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "schedule": {
+  "8": "arg-wc-2022",
+  "9": "sen-afcon-2021",
+  "10": "ger-wc-2014",
+  "11": "chi-copa-2015",
+  "12": "esp-euro-2012",
+  "13": "por-euro-2016",
+  "14": "uru-copa-2011",
+  "15": "fra-wc-2018",
+  "16": "bra-copa-2019",
+  "17": "civ-afcon-2023",
+  "18": "ita-euro-2020",
+  "19": "gre-euro-2004",
+  "20": "qat-asian-2019",
+  "21": "fra-euro-2000",
+  "22": "esp-wc-2010",
+  "23": "arg-copa-2021",
+  "24": "alg-afcon-2019",
+  "25": "ita-wc-2006",
+  "26": "bra-wc-2002",
+  "27": "fra-wc-1998",
+  "28": "chi-copa-2016",
+  "29": "mun-facup-2024",
+  "30": "esp-euro-2024",
+  "31": "whu-uecl-2023",
+  "32": "arg-copa-2024",
+  "33": "wig-facup-2013",
+  "34": "liv-facup-2022",
+  "35": "ger-euro-1996"
+ },
+ "spare": [
+  "por-facup-2008",
+  "mun-uel-2017",
+  "esp-euro-2008",
+  "cmr-afcon-2017",
+  "bra-wc-1994"
+ ],
+ "all": {
+  "arg-wc-2022": {
+   "id": "arg-wc-2022",
+   "lvl": "E",
+   "answer": {
+    "n": "Argentina",
+    "code": "ARG",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2022",
+   "final": "3–3 (4–2 pens)",
+   "src": "Wikipedia: 2022 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Saudi Arabia",
+        "code": "KSA"
+       },
+       "s": "1–2"
+      },
+      {
+       "t": {
+        "n": "Mexico",
+        "code": "MEX"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Poland",
+        "code": "POL"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Australia",
+        "code": "AUS"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Netherlands",
+        "code": "NED"
+       },
+       "s": "2–2 · 4–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "fra-wc-2018": {
+   "id": "fra-wc-2018",
+   "lvl": "E",
+   "answer": {
+    "n": "France",
+    "code": "FRA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2018",
+   "final": "4–2",
+   "src": "Wikipedia: 2018 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Australia",
+        "code": "AUS"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Denmark",
+        "code": "DEN"
+       },
+       "s": "0–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       },
+       "s": "4–3"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Uruguay",
+        "code": "URU"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Belgium",
+        "code": "BEL"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "ger-wc-2014": {
+   "id": "ger-wc-2014",
+   "lvl": "E",
+   "answer": {
+    "n": "Germany",
+    "code": "GER",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2014",
+   "final": "1–0 aet",
+   "src": "Wikipedia: 2014 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "4–0"
+      },
+      {
+       "t": {
+        "n": "Ghana",
+        "code": "GHA"
+       },
+       "s": "2–2"
+      },
+      {
+       "t": {
+        "n": "United States",
+        "code": "USA"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Algeria",
+        "code": "ALG"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Brazil",
+        "code": "BRA"
+       },
+       "s": "7–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "esp-wc-2010": {
+   "id": "esp-wc-2010",
+   "lvl": "E",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2010",
+   "final": "1–0 aet",
+   "src": "Wikipedia: 2010 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Switzerland",
+        "code": "SUI"
+       },
+       "s": "0–1"
+      },
+      {
+       "t": {
+        "n": "Honduras",
+        "code": "HON"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Chile",
+        "code": "CHI"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Netherlands",
+        "code": "NED"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "ita-wc-2006": {
+   "id": "ita-wc-2006",
+   "lvl": "M",
+   "answer": {
+    "n": "Italy",
+    "code": "ITA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2006",
+   "final": "1–1 (5–3 pens)",
+   "src": "Wikipedia: 2006 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Ghana",
+        "code": "GHA"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "United States",
+        "code": "USA"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Australia",
+        "code": "AUS"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ukraine",
+        "code": "UKR"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–0 aet"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "bra-wc-2002": {
+   "id": "bra-wc-2002",
+   "lvl": "M",
+   "answer": {
+    "n": "Brazil",
+    "code": "BRA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "2002",
+   "final": "2–0",
+   "src": "Wikipedia: 2002 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Turkey",
+        "code": "TUR"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "China",
+        "code": "CHN"
+       },
+       "s": "4–0"
+      },
+      {
+       "t": {
+        "n": "Costa Rica",
+        "code": "CRC"
+       },
+       "s": "5–2"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Belgium",
+        "code": "BEL"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Turkey",
+        "code": "TUR"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "fra-wc-1998": {
+   "id": "fra-wc-1998",
+   "lvl": "M",
+   "answer": {
+    "n": "France",
+    "code": "FRA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "1998",
+   "final": "3–0",
+   "src": "Wikipedia: 1998 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "South Africa",
+        "code": "RSA"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Saudi Arabia",
+        "code": "KSA"
+       },
+       "s": "4–0"
+      },
+      {
+       "t": {
+        "n": "Denmark",
+        "code": "DEN"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       },
+       "s": "1–0 aet"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "0–0 · 4–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Brazil",
+        "code": "BRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "bra-wc-1994": {
+   "id": "bra-wc-1994",
+   "lvl": "H",
+   "answer": {
+    "n": "Brazil",
+    "code": "BRA",
+    "a": []
+   },
+   "comp": "World Cup",
+   "year": "1994",
+   "final": "0–0 (3–2 pens)",
+   "src": "Wikipedia: 1994 FIFA World Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Russia",
+        "code": "RUS"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Cameroon",
+        "code": "CMR"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Sweden",
+        "code": "SWE"
+       },
+       "s": "1–1"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "United States",
+        "code": "USA"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Netherlands",
+        "code": "NED"
+       },
+       "s": "3–2"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Sweden",
+        "code": "SWE"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "esp-euro-2024": {
+   "id": "esp-euro-2024",
+   "lvl": "E",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: UEFA Euro 2024 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Albania",
+        "code": "ALB"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Georgia",
+        "code": "GEO"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "ita-euro-2020": {
+   "id": "ita-euro-2020",
+   "lvl": "E",
+   "answer": {
+    "n": "Italy",
+    "code": "ITA",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2020",
+   "final": "1–1 (3–2 pens)",
+   "src": "Wikipedia: UEFA Euro 2020 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Turkey",
+        "code": "TUR"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Switzerland",
+        "code": "SUI"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Wales",
+        "code": "WAL"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Austria",
+        "code": "AUT"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Belgium",
+        "code": "BEL"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Spain",
+        "code": "ESP"
+       },
+       "s": "1–1 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "por-euro-2016": {
+   "id": "por-euro-2016",
+   "lvl": "E",
+   "answer": {
+    "n": "Portugal",
+    "code": "POR",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2016",
+   "final": "1–0 aet",
+   "src": "Wikipedia: UEFA Euro 2016 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Iceland",
+        "code": "ISL"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Austria",
+        "code": "AUT"
+       },
+       "s": "0–0"
+      },
+      {
+       "t": {
+        "n": "Hungary",
+        "code": "HUN"
+       },
+       "s": "3–3"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "1–0 aet"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Poland",
+        "code": "POL"
+       },
+       "s": "1–1 · 5–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Wales",
+        "code": "WAL"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "esp-euro-2012": {
+   "id": "esp-euro-2012",
+   "lvl": "M",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2012",
+   "final": "4–0",
+   "src": "Wikipedia: UEFA Euro 2012 final + knockout phase",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Republic of Ireland",
+        "code": "IRL"
+       },
+       "s": "4–0"
+      },
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "0–0 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "esp-euro-2008": {
+   "id": "esp-euro-2008",
+   "lvl": "M",
+   "answer": {
+    "n": "Spain",
+    "code": "ESP",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2008",
+   "final": "1–0",
+   "src": "Wikipedia: UEFA Euro 2008 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Russia",
+        "code": "RUS"
+       },
+       "s": "4–1"
+      },
+      {
+       "t": {
+        "n": "Sweden",
+        "code": "SWE"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Greece",
+        "code": "GRE"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "0–0 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Russia",
+        "code": "RUS"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Germany",
+        "code": "GER"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "gre-euro-2004": {
+   "id": "gre-euro-2004",
+   "lvl": "M",
+   "answer": {
+    "n": "Greece",
+    "code": "GRE",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2004",
+   "final": "1–0",
+   "src": "Wikipedia: UEFA Euro 2004 final + UEFA Euro 2004",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Spain",
+        "code": "ESP"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Russia",
+        "code": "RUS"
+       },
+       "s": "1–2"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "France",
+        "code": "FRA"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       },
+       "s": "1–0 aet"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "fra-euro-2000": {
+   "id": "fra-euro-2000",
+   "lvl": "H",
+   "answer": {
+    "n": "France",
+    "code": "FRA",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "2000",
+   "final": "2–1 aet (golden goal)",
+   "src": "Wikipedia: UEFA Euro 2000 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Denmark",
+        "code": "DEN"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Netherlands",
+        "code": "NED"
+       },
+       "s": "2–3"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Spain",
+        "code": "ESP"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Portugal",
+        "code": "POR"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "ger-euro-1996": {
+   "id": "ger-euro-1996",
+   "lvl": "H",
+   "answer": {
+    "n": "Germany",
+    "code": "GER",
+    "a": []
+   },
+   "comp": "Euros",
+   "year": "1996",
+   "final": "2–1 aet (golden goal)",
+   "src": "Wikipedia: UEFA Euro 1996 final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Russia",
+        "code": "RUS"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Italy",
+        "code": "ITA"
+       },
+       "s": "0–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Croatia",
+        "code": "CRO"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "England",
+        "code": "ENG"
+       },
+       "s": "1–1 · 6–5 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Czech Republic",
+        "code": "CZE"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "arg-copa-2024": {
+   "id": "arg-copa-2024",
+   "lvl": "M",
+   "answer": {
+    "n": "Argentina",
+    "code": "ARG",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2024",
+   "final": "1–0 aet",
+   "src": "Wikipedia: 2024 Copa América final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Canada",
+        "code": "CAN"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Chile",
+        "code": "CHI"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ecuador",
+        "code": "ECU"
+       },
+       "s": "1–1 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Canada",
+        "code": "CAN"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Colombia",
+        "code": "COL"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "arg-copa-2021": {
+   "id": "arg-copa-2021",
+   "lvl": "M",
+   "answer": {
+    "n": "Argentina",
+    "code": "ARG",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2021",
+   "final": "1–0",
+   "src": "Wikipedia: 2021 Copa América final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Chile",
+        "code": "CHI"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Uruguay",
+        "code": "URU"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Bolivia",
+        "code": "BOL"
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ecuador",
+        "code": "ECU"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Colombia",
+        "code": "COL"
+       },
+       "s": "1–1 · 3–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Brazil",
+        "code": "BRA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "bra-copa-2019": {
+   "id": "bra-copa-2019",
+   "lvl": "M",
+   "answer": {
+    "n": "Brazil",
+    "code": "BRA",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2019",
+   "final": "3–1",
+   "src": "Wikipedia: 2019 Copa América final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Bolivia",
+        "code": "BOL"
+       },
+       "s": "3–0"
+      },
+      {
+       "t": {
+        "n": "Venezuela",
+        "code": "VEN"
+       },
+       "s": "0–0"
+      },
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "5–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       },
+       "s": "0–0 · 4–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "chi-copa-2016": {
+   "id": "chi-copa-2016",
+   "lvl": "H",
+   "answer": {
+    "n": "Chile",
+    "code": "CHI",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2016",
+   "final": "0–0 (4–2 pens)",
+   "src": "Wikipedia: Copa América Centenario final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       },
+       "s": "1–2"
+      },
+      {
+       "t": {
+        "n": "Bolivia",
+        "code": "BOL"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Panama",
+        "code": "PAN"
+       },
+       "s": "4–2"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Mexico",
+        "code": "MEX"
+       },
+       "s": "7–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Colombia",
+        "code": "COL"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "chi-copa-2015": {
+   "id": "chi-copa-2015",
+   "lvl": "H",
+   "answer": {
+    "n": "Chile",
+    "code": "CHI",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2015",
+   "final": "0–0 (4–1 pens)",
+   "src": "Wikipedia: 2015 Copa América final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Ecuador",
+        "code": "ECU"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Mexico",
+        "code": "MEX"
+       },
+       "s": "3–3"
+      },
+      {
+       "t": {
+        "n": "Bolivia",
+        "code": "BOL"
+       },
+       "s": "5–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Uruguay",
+        "code": "URU"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "uru-copa-2011": {
+   "id": "uru-copa-2011",
+   "lvl": "H",
+   "answer": {
+    "n": "Uruguay",
+    "code": "URU",
+    "a": []
+   },
+   "comp": "Copa América",
+   "year": "2011",
+   "final": "3–0",
+   "src": "Wikipedia: 2011 Copa América final, Group C, knockout stage; RSSSF",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Chile",
+        "code": "CHI"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Mexico",
+        "code": "MEX"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Argentina",
+        "code": "ARG"
+       },
+       "s": "1–1 · 5–4 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Peru",
+        "code": "PER"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Paraguay",
+        "code": "PAR"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "civ-afcon-2023": {
+   "id": "civ-afcon-2023",
+   "lvl": "H",
+   "answer": {
+    "n": "Ivory Coast",
+    "code": "CIV",
+    "a": [
+     "cote divoire",
+     "cote d ivoire"
+    ]
+   },
+   "comp": "AFCON",
+   "year": "2023",
+   "final": "2–1",
+   "src": "Wikipedia: 2023 AFCON final; Sky Sports (QF)",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Guinea-Bissau",
+        "code": "GNB"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Nigeria",
+        "code": "NGA"
+       },
+       "s": "0–1"
+      },
+      {
+       "t": {
+        "n": "Equatorial Guinea",
+        "code": "EQG"
+       },
+       "s": "0–4"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Senegal",
+        "code": "SEN"
+       },
+       "s": "1–1 · 5–4 pens"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Mali",
+        "code": "MLI"
+       },
+       "s": "2–1 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "DR Congo",
+        "code": "COD"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Nigeria",
+        "code": "NGA"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "sen-afcon-2021": {
+   "id": "sen-afcon-2021",
+   "lvl": "M",
+   "answer": {
+    "n": "Senegal",
+    "code": "SEN",
+    "a": []
+   },
+   "comp": "AFCON",
+   "year": "2021",
+   "final": "0–0 (4–2 pens)",
+   "src": "Wikipedia: 2021 AFCON final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Zimbabwe",
+        "code": "ZIM"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Guinea",
+        "code": "GUI"
+       },
+       "s": "0–0"
+      },
+      {
+       "t": {
+        "n": "Malawi",
+        "code": "MWI"
+       },
+       "s": "0–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Cape Verde",
+        "code": "CPV"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Equatorial Guinea",
+        "code": "EQG"
+       },
+       "s": "3–1"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Burkina Faso",
+        "code": "BFA"
+       },
+       "s": "3–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Egypt",
+        "code": "EGY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "alg-afcon-2019": {
+   "id": "alg-afcon-2019",
+   "lvl": "H",
+   "answer": {
+    "n": "Algeria",
+    "code": "ALG",
+    "a": []
+   },
+   "comp": "AFCON",
+   "year": "2019",
+   "final": "1–0",
+   "src": "Wikipedia: 2019 AFCON final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Kenya",
+        "code": "KEN"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "Senegal",
+        "code": "SEN"
+       },
+       "s": "1–0"
+      },
+      {
+       "t": {
+        "n": "Tanzania",
+        "code": "TAN"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Guinea",
+        "code": "GUI"
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ivory Coast",
+        "code": "CIV"
+       },
+       "s": "1–1 · 4–3 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Nigeria",
+        "code": "NGA"
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Senegal",
+        "code": "SEN"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "cmr-afcon-2017": {
+   "id": "cmr-afcon-2017",
+   "lvl": "H",
+   "answer": {
+    "n": "Cameroon",
+    "code": "CMR",
+    "a": []
+   },
+   "comp": "AFCON",
+   "year": "2017",
+   "final": "2–1",
+   "src": "Wikipedia: 2017 AFCON final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Burkina Faso",
+        "code": "BFA"
+       },
+       "s": "1–1"
+      },
+      {
+       "t": {
+        "n": "Guinea-Bissau",
+        "code": "GNB"
+       },
+       "s": "2–1"
+      },
+      {
+       "t": {
+        "n": "Gabon",
+        "code": "GAB"
+       },
+       "s": "0–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Senegal",
+        "code": "SEN"
+       },
+       "s": "0–0 · 5–4 pens"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Ghana",
+        "code": "GHA"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Egypt",
+        "code": "EGY"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "qat-asian-2019": {
+   "id": "qat-asian-2019",
+   "lvl": "H",
+   "answer": {
+    "n": "Qatar",
+    "code": "QAT",
+    "a": []
+   },
+   "comp": "Asian Cup",
+   "year": "2019",
+   "final": "3–1",
+   "src": "Wikipedia: 2019 AFC Asian Cup final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Lebanon",
+        "code": "LBN"
+       },
+       "s": "2–0"
+      },
+      {
+       "t": {
+        "n": "North Korea",
+        "code": "PRK"
+       },
+       "s": "6–0"
+      },
+      {
+       "t": {
+        "n": "Saudi Arabia",
+        "code": "KSA"
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Iraq",
+        "code": "IRQ"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "South Korea",
+        "code": "KOR"
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "United Arab Emirates",
+        "code": "UAE"
+       },
+       "s": "4–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Japan",
+        "code": "JPN"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "mun-facup-2024": {
+   "id": "mun-facup-2024",
+   "lvl": "E",
+   "answer": {
+    "n": "Manchester United",
+    "code": "MUN",
+    "c": [
+     "#DA291C",
+     "#FFFFFF"
+    ],
+    "a": []
+   },
+   "comp": "FA Cup",
+   "year": "2024",
+   "final": "2–1",
+   "src": "Wikipedia: 2024 FA Cup final",
+   "rounds": [
+    {
+     "r": "Third round",
+     "m": [
+      {
+       "t": {
+        "n": "Wigan Athletic",
+        "code": "WIG",
+        "c": [
+         "#1D59AF",
+         "#FFFFFF"
+        ]
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Fourth round",
+     "m": [
+      {
+       "t": {
+        "n": "Newport County",
+        "code": "NPT",
+        "c": [
+         "#F7A51C",
+         "#000000"
+        ]
+       },
+       "s": "4–2"
+      }
+     ]
+    },
+    {
+     "r": "Fifth round",
+     "m": [
+      {
+       "t": {
+        "n": "Nottingham Forest",
+        "code": "NFO",
+        "c": [
+         "#DD0000",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Liverpool",
+        "code": "LIV",
+        "c": [
+         "#C8102E",
+         "#FFFFFF"
+        ]
+       },
+       "s": "4–3 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Coventry City",
+        "code": "COV",
+        "c": [
+         "#59CBE8",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–3 · 4–2 pens"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Manchester City",
+        "code": "MCI",
+        "c": [
+         "#6CABDD",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "liv-facup-2022": {
+   "id": "liv-facup-2022",
+   "lvl": "M",
+   "answer": {
+    "n": "Liverpool",
+    "code": "LIV",
+    "c": [
+     "#C8102E",
+     "#FFFFFF"
+    ],
+    "a": []
+   },
+   "comp": "FA Cup",
+   "year": "2022",
+   "final": "0–0 (6–5 pens)",
+   "src": "Wikipedia: 2022 FA Cup final",
+   "rounds": [
+    {
+     "r": "Third round",
+     "m": [
+      {
+       "t": {
+        "n": "Shrewsbury Town",
+        "code": "SHR",
+        "c": [
+         "#0047AB",
+         "#F4B400"
+        ]
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Fourth round",
+     "m": [
+      {
+       "t": {
+        "n": "Cardiff City",
+        "code": "CAR",
+        "c": [
+         "#0070B5",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–1"
+      }
+     ]
+    },
+    {
+     "r": "Fifth round",
+     "m": [
+      {
+       "t": {
+        "n": "Norwich City",
+        "code": "NOR",
+        "c": [
+         "#FFF200",
+         "#00A650"
+        ]
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Nottingham Forest",
+        "code": "NFO",
+        "c": [
+         "#DD0000",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Manchester City",
+        "code": "MCI",
+        "c": [
+         "#6CABDD",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–2"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Chelsea",
+        "code": "CHE",
+        "c": [
+         "#034694",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "wig-facup-2013": {
+   "id": "wig-facup-2013",
+   "lvl": "M",
+   "answer": {
+    "n": "Wigan Athletic",
+    "code": "WIG",
+    "c": [
+     "#1D59AF",
+     "#FFFFFF"
+    ],
+    "a": []
+   },
+   "comp": "FA Cup",
+   "year": "2013",
+   "final": "1–0",
+   "src": "Wikipedia: 2013 FA Cup final",
+   "rounds": [
+    {
+     "r": "Third round",
+     "m": [
+      {
+       "t": {
+        "n": "AFC Bournemouth",
+        "code": "BOU",
+        "c": [
+         "#DA291C",
+         "#000000"
+        ]
+       },
+       "s": "1–1 · replay 1–0"
+      }
+     ]
+    },
+    {
+     "r": "Fourth round",
+     "m": [
+      {
+       "t": {
+        "n": "Macclesfield Town",
+        "code": "MAC",
+        "c": [
+         "#0050A0",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Fifth round",
+     "m": [
+      {
+       "t": {
+        "n": "Huddersfield Town",
+        "code": "HUD",
+        "c": [
+         "#0E63AD",
+         "#FFFFFF"
+        ]
+       },
+       "s": "4–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Everton",
+        "code": "EVE",
+        "c": [
+         "#003399",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Millwall",
+        "code": "MIL",
+        "c": [
+         "#001D5E",
+         "#FFFFFF"
+        ]
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Manchester City",
+        "code": "MCI",
+        "c": [
+         "#6CABDD",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "por-facup-2008": {
+   "id": "por-facup-2008",
+   "lvl": "H",
+   "answer": {
+    "n": "Portsmouth",
+    "code": "POR",
+    "c": [
+     "#001489",
+     "#FFFFFF"
+    ],
+    "a": [
+     "pompey"
+    ]
+   },
+   "comp": "FA Cup",
+   "year": "2008",
+   "final": "1–0",
+   "src": "Wikipedia: 2008 FA Cup final",
+   "rounds": [
+    {
+     "r": "Third round",
+     "m": [
+      {
+       "t": {
+        "n": "Ipswich Town",
+        "code": "IPS",
+        "c": [
+         "#0033A0",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Fourth round",
+     "m": [
+      {
+       "t": {
+        "n": "Plymouth Argyle",
+        "code": "PLY",
+        "c": [
+         "#00573F",
+         "#FFFFFF"
+        ]
+       },
+       "s": "2–1"
+      }
+     ]
+    },
+    {
+     "r": "Fifth round",
+     "m": [
+      {
+       "t": {
+        "n": "Preston North End",
+        "code": "PNE",
+        "c": [
+         "#FFFFFF",
+         "#0A2240"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Manchester United",
+        "code": "MUN",
+        "c": [
+         "#DA291C",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "West Bromwich Albion",
+        "code": "WBA",
+        "c": [
+         "#122F67",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Cardiff City",
+        "code": "CAR",
+        "c": [
+         "#0070B5",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "cry-facup-2025": {
+   "id": "cry-facup-2025",
+   "lvl": "E",
+   "answer": {
+    "n": "Crystal Palace",
+    "code": "CRY",
+    "c": [
+     "#1B458F",
+     "#C4122E"
+    ],
+    "a": []
+   },
+   "comp": "FA Cup",
+   "year": "2025",
+   "final": "1–0",
+   "src": "Wikipedia: 2025 FA Cup final",
+   "rounds": [
+    {
+     "r": "Third round",
+     "m": [
+      {
+       "t": {
+        "n": "Stockport County",
+        "code": "STO",
+        "c": [
+         "#0E4FA0",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0"
+      }
+     ]
+    },
+    {
+     "r": "Fourth round",
+     "m": [
+      {
+       "t": {
+        "n": "Doncaster Rovers",
+        "code": "DON",
+        "c": [
+         "#E21D24",
+         "#FFFFFF"
+        ]
+       },
+       "s": "2–0"
+      }
+     ]
+    },
+    {
+     "r": "Fifth round",
+     "m": [
+      {
+       "t": {
+        "n": "Millwall",
+        "code": "MIL",
+        "c": [
+         "#001D5E",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Fulham",
+        "code": "FUL",
+        "c": [
+         "#FFFFFF",
+         "#000000"
+        ]
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Aston Villa",
+        "code": "AVL",
+        "c": [
+         "#670E36",
+         "#95BFE5"
+        ]
+       },
+       "s": "3–0"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Manchester City",
+        "code": "MCI",
+        "c": [
+         "#6CABDD",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "whu-uecl-2023": {
+   "id": "whu-uecl-2023",
+   "lvl": "M",
+   "answer": {
+    "n": "West Ham United",
+    "code": "WHU",
+    "c": [
+     "#7A263A",
+     "#1BB1E7"
+    ],
+    "a": []
+   },
+   "comp": "Conference League",
+   "year": "2023",
+   "final": "2–1",
+   "src": "Wikipedia: 2023 UEFA Europa Conference League final; FourFourTwo (play-off)",
+   "rounds": [
+    {
+     "r": "Play-off",
+     "m": [
+      {
+       "t": {
+        "n": "Viborg",
+        "code": "VIB",
+        "c": [
+         "#00843D",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 6–1"
+      }
+     ]
+    },
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "FCSB",
+        "code": "FCS",
+        "c": [
+         "#E30613",
+         "#0033A0"
+        ]
+       },
+       "s": "3–1, 3–0"
+      },
+      {
+       "t": {
+        "n": "Silkeborg",
+        "code": "SIL",
+        "c": [
+         "#E30613",
+         "#FFFFFF"
+        ]
+       },
+       "s": "3–2, 1–0"
+      },
+      {
+       "t": {
+        "n": "Anderlecht",
+        "code": "AND",
+        "c": [
+         "#4C2C92",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0, 2–1"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "AEK Larnaca",
+        "code": "AEK",
+        "c": [
+         "#FFD100",
+         "#00704A"
+        ]
+       },
+       "s": "agg 6–0"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Gent",
+        "code": "GNT",
+        "c": [
+         "#003F87",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 5–2"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "AZ",
+        "code": "AZ",
+        "c": [
+         "#E30613",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 3–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Fiorentina",
+        "code": "FIO",
+        "c": [
+         "#5B2B82",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "mun-uel-2017": {
+   "id": "mun-uel-2017",
+   "lvl": "M",
+   "answer": {
+    "n": "Manchester United",
+    "code": "MUN",
+    "c": [
+     "#DA291C",
+     "#FFFFFF"
+    ],
+    "a": []
+   },
+   "comp": "Europa League",
+   "year": "2017",
+   "final": "2–0",
+   "src": "Wikipedia: 2017 UEFA Europa League final",
+   "rounds": [
+    {
+     "r": "Group stage",
+     "m": [
+      {
+       "t": {
+        "n": "Feyenoord",
+        "code": "FEY",
+        "c": [
+         "#E30613",
+         "#FFFFFF"
+        ]
+       },
+       "s": "0–1, 4–0"
+      },
+      {
+       "t": {
+        "n": "Zorya Luhansk",
+        "code": "ZOR",
+        "c": [
+         "#111111",
+         "#FFFFFF"
+        ]
+       },
+       "s": "1–0, 2–0"
+      },
+      {
+       "t": {
+        "n": "Fenerbahçe",
+        "code": "FEN",
+        "c": [
+         "#FFED00",
+         "#002D72"
+        ]
+       },
+       "s": "4–1, 1–2"
+      }
+     ]
+    },
+    {
+     "r": "Round of 32",
+     "m": [
+      {
+       "t": {
+        "n": "Saint-Étienne",
+        "code": "STE",
+        "c": [
+         "#00A650",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 4–0"
+      }
+     ]
+    },
+    {
+     "r": "Round of 16",
+     "m": [
+      {
+       "t": {
+        "n": "Rostov",
+        "code": "ROS",
+        "c": [
+         "#FFD200",
+         "#003D7D"
+        ]
+       },
+       "s": "agg 2–1"
+      }
+     ]
+    },
+    {
+     "r": "Quarter-final",
+     "m": [
+      {
+       "t": {
+        "n": "Anderlecht",
+        "code": "AND",
+        "c": [
+         "#4C2C92",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 3–2 aet"
+      }
+     ]
+    },
+    {
+     "r": "Semi-final",
+     "m": [
+      {
+       "t": {
+        "n": "Celta Vigo",
+        "code": "CEL",
+        "c": [
+         "#8AC3EE",
+         "#FFFFFF"
+        ]
+       },
+       "s": "agg 2–1"
+      }
+     ]
+    },
+    {
+     "r": "Final",
+     "m": [
+      {
+       "t": {
+        "n": "Ajax",
+        "code": "AJX",
+        "c": [
+         "#D2122E",
+         "#FFFFFF"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

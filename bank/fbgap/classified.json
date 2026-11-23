@@ -1,0 +1,6338 @@
+[
+{
+"ext": "fast-break:0",
+"q": "Who won the 2022 World Cup in Qatar?",
+"a": "Argentina",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:1",
+"q": "Who scored the 'Hand of God' goal in 1986?",
+"a": "Diego Maradona",
+"d": "e",
+"comp": null,
+"kind": "scorer",
+"year": 1986
+},
+{
+"ext": "fast-break:2",
+"q": "What is the name of Barcelona's home stadium?",
+"a": "Camp Nou",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:3",
+"q": "In which year did England win the World Cup?",
+"a": "1966",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:4",
+"q": "Which stadium is called 'The Theatre of Dreams'?",
+"a": "Old Trafford",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:5",
+"q": "Which national team does Mohamed Salah play for?",
+"a": "Egypt",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:6",
+"q": "Which national team does Erling Haaland play for?",
+"a": "Norway",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:7",
+"q": "Which country hosted the 2022 World Cup?",
+"a": "Qatar",
+"d": "e",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2022
+},
+{
+"ext": "fast-break:8",
+"q": "Which country hosted the 2010 World Cup?",
+"a": "South Africa",
+"d": "e",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2010
+},
+{
+"ext": "fast-break:9",
+"q": "Which club won the 2015–16 Premier League as 5000/1 outsiders?",
+"a": "Leicester City",
+"d": "e",
+"comp": "Premier League",
+"kind": "winner",
+"year": 2016
+},
+{
+"ext": "fast-break:10",
+"q": "Which two clubs contest Glasgow's Old Firm derby?",
+"a": "Celtic & Rangers",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:11",
+"q": "How far is the penalty spot from the goal line?",
+"a": "12 yards",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:12",
+"q": "How long is extra time in a knockout match?",
+"a": "30 minutes",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:13",
+"q": "Which English club is nicknamed 'The Toffees'?",
+"a": "Everton",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:14",
+"q": "Which club is nicknamed 'The Magpies'?",
+"a": "Newcastle United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:15",
+"q": "Who won Euro 2024 in Germany?",
+"a": "Spain",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": 2024
+},
+{
+"ext": "fast-break:16",
+"q": "Which country won the 1998 World Cup on home soil?",
+"a": "France",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 1998
+},
+{
+"ext": "fast-break:17",
+"q": "Cristiano Ronaldo joined Manchester United in 2003 from which club?",
+"a": "Sporting CP",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2003
+},
+{
+"ext": "fast-break:18",
+"q": "Which club built the 'Galácticos' era in the early 2000s?",
+"a": "Real Madrid",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:19",
+"q": "Mexico co-hosted the 2026 World Cup with the USA and…",
+"a": "Canada",
+"d": "e",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2026
+},
+{
+"ext": "fast-break:20",
+"q": "Which club plays its home games at Anfield?",
+"a": "Liverpool",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:21",
+"q": "How many players does each team have on the pitch?",
+"a": "11",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:22",
+"q": "What colour card does a referee show for a sending-off?",
+"a": "Red",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:23",
+"q": "Which country hosted the 2018 World Cup?",
+"a": "Russia",
+"d": "e",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2018
+},
+{
+"ext": "fast-break:24",
+"q": "Who managed Manchester United from 1986 to 2013?",
+"a": "Sir Alex Ferguson",
+"d": "e",
+"comp": null,
+"kind": "manager",
+"year": 1986
+},
+{
+"ext": "fast-break:25",
+"q": "Who managed Arsenal's 'Invincibles'?",
+"a": "Arsène Wenger",
+"d": "e",
+"comp": null,
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:26",
+"q": "Which club is nicknamed 'The Old Lady'?",
+"a": "Juventus",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:27",
+"q": "Pelé played international football for which country?",
+"a": "Brazil",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:28",
+"q": "El Clásico is played between Barcelona and…",
+"a": "Real Madrid",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:29",
+"q": "How long is a standard match, excluding stoppage time?",
+"a": "90 minutes",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:30",
+"q": "Which club is nicknamed 'The Gunners'?",
+"a": "Arsenal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:31",
+"q": "Which club plays its home games at Stamford Bridge?",
+"a": "Chelsea",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:32",
+"q": "Who won Euro 2016 in France?",
+"a": "Portugal",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": 2016
+},
+{
+"ext": "fast-break:33",
+"q": "Who won the 2014 World Cup in Brazil?",
+"a": "Germany",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2014
+},
+{
+"ext": "fast-break:34",
+"q": "Which Italian club are the 'Rossoneri'?",
+"a": "AC Milan",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:35",
+"q": "Which country won the 2006 World Cup?",
+"a": "Italy",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2006
+},
+{
+"ext": "fast-break:36",
+"q": "Which country won the 2010 World Cup?",
+"a": "Spain",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2010
+},
+{
+"ext": "fast-break:37",
+"q": "Who won Euro 2020, played in the summer of 2021?",
+"a": "Italy",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": 2020
+},
+{
+"ext": "fast-break:38",
+"q": "Who won Euro 2008?",
+"a": "Spain",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": 2008
+},
+{
+"ext": "fast-break:39",
+"q": "Who won Euro 2012?",
+"a": "Spain",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": 2012
+},
+{
+"ext": "fast-break:40",
+"q": "Which country hosted the 2014 World Cup?",
+"a": "Brazil",
+"d": "e",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2014
+},
+{
+"ext": "fast-break:41",
+"q": "Which country hosted the 2006 World Cup?",
+"a": "Germany",
+"d": "e",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2006
+},
+{
+"ext": "fast-break:42",
+"q": "Which country hosted Euro 2016?",
+"a": "France",
+"d": "e",
+"comp": "Euros",
+"kind": "venue",
+"year": 2016
+},
+{
+"ext": "fast-break:43",
+"q": "Which club plays at the Emirates Stadium?",
+"a": "Arsenal",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:44",
+"q": "Which club plays at the Etihad Stadium?",
+"a": "Manchester City",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:45",
+"q": "Which club plays at Villa Park?",
+"a": "Aston Villa",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:46",
+"q": "Which club plays at the Santiago Bernabéu?",
+"a": "Real Madrid",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:47",
+"q": "Which club shares San Siro with AC Milan?",
+"a": "Inter Milan",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:48",
+"q": "Which club plays at the Allianz Arena?",
+"a": "Bayern Munich",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:49",
+"q": "Which club plays at the Parc des Princes?",
+"a": "Paris Saint-Germain",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:50",
+"q": "Which club plays at Ibrox?",
+"a": "Rangers",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:51",
+"q": "Which club plays at Elland Road?",
+"a": "Leeds United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:52",
+"q": "Which club plays at Molineux?",
+"a": "Wolves",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:53",
+"q": "Which club plays at Selhurst Park?",
+"a": "Crystal Palace",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:54",
+"q": "Which club plays at Craven Cottage?",
+"a": "Fulham",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:55",
+"q": "Which English club plays at the Stadium of Light?",
+"a": "Sunderland",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:56",
+"q": "Which club is nicknamed 'The Red Devils' in England?",
+"a": "Manchester United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:57",
+"q": "Which club is nicknamed 'The Hammers'?",
+"a": "West Ham United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:58",
+"q": "Which club is nicknamed 'The Foxes'?",
+"a": "Leicester City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:59",
+"q": "Which club is nicknamed 'The Saints'?",
+"a": "Southampton",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:60",
+"q": "Which club is nicknamed 'The Canaries'?",
+"a": "Norwich City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:61",
+"q": "Which club is nicknamed 'The Blades'?",
+"a": "Sheffield United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:62",
+"q": "Which club is nicknamed 'The Owls'?",
+"a": "Sheffield Wednesday",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:63",
+"q": "Which club is nicknamed 'Spurs'?",
+"a": "Tottenham Hotspur",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:64",
+"q": "Which club is nicknamed 'The Villans'?",
+"a": "Aston Villa",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:65",
+"q": "Which club is nicknamed 'The Seagulls'?",
+"a": "Brighton & Hove Albion",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:66",
+"q": "Which club is nicknamed 'The Bees'?",
+"a": "Brentford",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:67",
+"q": "Which club is nicknamed 'The Cherries'?",
+"a": "Bournemouth",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:68",
+"q": "Which Spanish club is nicknamed 'Los Blancos'?",
+"a": "Real Madrid",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:69",
+"q": "Which Italian club is nicknamed 'I Nerazzurri'?",
+"a": "Inter Milan",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:70",
+"q": "What colours are Aston Villa's home shirts?",
+"a": "Claret and blue",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:71",
+"q": "Which national team traditionally plays in orange?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:72",
+"q": "Which national team is nicknamed 'Les Bleus'?",
+"a": "France",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:73",
+"q": "Which national team is nicknamed 'La Albiceleste'?",
+"a": "Argentina",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:74",
+"q": "Which national team is nicknamed 'The Three Lions'?",
+"a": "England",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:75",
+"q": "Which national team is nicknamed 'the Azzurri'?",
+"a": "Italy",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:76",
+"q": "Which national team is nicknamed 'The Super Eagles'?",
+"a": "Nigeria",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:77",
+"q": "Which national team is nicknamed 'A Seleção'?",
+"a": "Brazil",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:78",
+"q": "Which national team is nicknamed 'The Socceroos'?",
+"a": "Australia",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:79",
+"q": "How many points is a win worth in the Premier League?",
+"a": "3",
+"d": "e",
+"comp": "Premier League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:80",
+"q": "How many teams play in the Premier League?",
+"a": "20",
+"d": "e",
+"comp": "Premier League",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:81",
+"q": "How many teams are relegated from the Premier League each season?",
+"a": "3",
+"d": "e",
+"comp": "Premier League",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:82",
+"q": "What is given for a foul by a defender inside his own penalty area?",
+"a": "A penalty kick",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:83",
+"q": "How is play restarted when the ball crosses the touchline?",
+"a": "A throw-in",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:84",
+"q": "What is it called when a player scores three goals in one match?",
+"a": "A hat-trick",
+"d": "e",
+"comp": null,
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:85",
+"q": "What does a goalkeeper keep when his team concedes no goals?",
+"a": "A clean sheet",
+"d": "e",
+"comp": null,
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:86",
+"q": "A defender knocks the ball over his own goal line. What is awarded?",
+"a": "A corner kick",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:87",
+"q": "How long is each half of a standard match?",
+"a": "45 minutes",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:88",
+"q": "What is the oldest national football cup competition in the world?",
+"a": "The FA Cup",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:89",
+"q": "Where is the FA Cup final played?",
+"a": "Wembley",
+"d": "e",
+"comp": "FA Cup",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:90",
+"q": "The Carabao Cup is the sponsored name of which competition?",
+"a": "The League Cup",
+"d": "e",
+"comp": "League Cup",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:91",
+"q": "What did the UEFA Cup become in 2009?",
+"a": "The Europa League",
+"d": "e",
+"comp": "Europa League",
+"kind": "other",
+"year": 2009
+},
+{
+"ext": "fast-break:92",
+"q": "Which tournament do South American national teams contest?",
+"a": "Copa América",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:93",
+"q": "Which tournament crowns the champions of Africa?",
+"a": "Africa Cup of Nations",
+"d": "e",
+"comp": null,
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:94",
+"q": "How often is the men's World Cup held?",
+"a": "Every four years",
+"d": "e",
+"comp": "World Cup",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:95",
+"q": "How many teams play at the 2026 World Cup?",
+"a": "48",
+"d": "e",
+"comp": "World Cup",
+"kind": "other",
+"year": 2026
+},
+{
+"ext": "fast-break:96",
+"q": "Which country has won the most men's World Cups?",
+"a": "Brazil",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:97",
+"q": "Which club has won the most European Cups?",
+"a": "Real Madrid",
+"d": "e",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:98",
+"q": "Which English club has won the most European Cups?",
+"a": "Liverpool",
+"d": "e",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:99",
+"q": "Who won the 2022 Women's Euros at Wembley?",
+"a": "England",
+"d": "e",
+"comp": "Women's Euros",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:100",
+"q": "Who won the 2025 Women's Euros?",
+"a": "England",
+"d": "e",
+"comp": "Women's Euros",
+"kind": "winner",
+"year": 2025
+},
+{
+"ext": "fast-break:101",
+"q": "Which club won the Premier League in 2024–25?",
+"a": "Liverpool",
+"d": "e",
+"comp": "Premier League",
+"kind": "winner",
+"year": 2025
+},
+{
+"ext": "fast-break:102",
+"q": "Which club won the 2025 Champions League final?",
+"a": "Paris Saint-Germain",
+"d": "e",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2025
+},
+{
+"ext": "fast-break:103",
+"q": "Which club won the 2025 FA Cup final?",
+"a": "Crystal Palace",
+"d": "e",
+"comp": "FA Cup",
+"kind": "winner",
+"year": 2025
+},
+{
+"ext": "fast-break:104",
+"q": "Which club won the 2025 Europa League final?",
+"a": "Tottenham Hotspur",
+"d": "e",
+"comp": "Europa League",
+"kind": "winner",
+"year": 2025
+},
+{
+"ext": "fast-break:105",
+"q": "Who won the 2024 Copa América?",
+"a": "Argentina",
+"d": "e",
+"comp": "Copa América",
+"kind": "winner",
+"year": 2024
+},
+{
+"ext": "fast-break:106",
+"q": "Who won the Africa Cup of Nations played in early 2024?",
+"a": "Ivory Coast",
+"d": "e",
+"comp": "AFCON",
+"kind": "winner",
+"year": 2024
+},
+{
+"ext": "fast-break:107",
+"q": "Which London club won back-to-back Premier League titles in 2004–05 and 2005–06?",
+"a": "Chelsea",
+"d": "e",
+"comp": "Premier League",
+"kind": "winner",
+"year": 2005
+},
+{
+"ext": "fast-break:108",
+"q": "In which city do Celtic play?",
+"a": "Glasgow",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:109",
+"q": "In which city are Benfica based?",
+"a": "Lisbon",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:110",
+"q": "In which city are Juventus based?",
+"a": "Turin",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:111",
+"q": "In which city are Ajax based?",
+"a": "Amsterdam",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:112",
+"q": "In which city is the Maracanã stadium?",
+"a": "Rio de Janeiro",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:113",
+"q": "In which city do Galatasaray play?",
+"a": "Istanbul",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:114",
+"q": "In which city are Boca Juniors based?",
+"a": "Buenos Aires",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:115",
+"q": "In which country do Olympiacos play?",
+"a": "Greece",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:116",
+"q": "In which country do PSV play?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:117",
+"q": "In which country do Club Brugge play?",
+"a": "Belgium",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:118",
+"q": "What is the trophy for the Premier League's top scorer called?",
+"a": "The Golden Boot",
+"d": "e",
+"comp": "Premier League",
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:119",
+"q": "What does VAR stand for?",
+"a": "Video Assistant Referee",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:120",
+"q": "What colour card is shown for a caution?",
+"a": "Yellow",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:121",
+"q": "What do two yellow cards in one match add up to?",
+"a": "A red card",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:122",
+"q": "What is the large box around each goal called?",
+"a": "The penalty area",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:123",
+"q": "Which country does Son Heung-min play for?",
+"a": "South Korea",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:124",
+"q": "Which country does Virgil van Dijk captain?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "captain",
+"year": null
+},
+{
+"ext": "fast-break:125",
+"q": "Which country does Kevin De Bruyne play for?",
+"a": "Belgium",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:126",
+"q": "Which country does Robert Lewandowski play for?",
+"a": "Poland",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:127",
+"q": "Which country does Christian Pulisic play for?",
+"a": "USA",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:128",
+"q": "Which country does Achraf Hakimi play for?",
+"a": "Morocco",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:129",
+"q": "Which club did Harry Kane join in 2023?",
+"a": "Bayern Munich",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2023
+},
+{
+"ext": "fast-break:130",
+"q": "Which club did Jude Bellingham join in 2023?",
+"a": "Real Madrid",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2023
+},
+{
+"ext": "fast-break:131",
+"q": "Which club did Kylian Mbappé join in 2024?",
+"a": "Real Madrid",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2024
+},
+{
+"ext": "fast-break:132",
+"q": "Which club did Cristiano Ronaldo join in January 2023?",
+"a": "Al-Nassr",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2023
+},
+{
+"ext": "fast-break:133",
+"q": "Which MLS club did Lionel Messi join in 2023?",
+"a": "Inter Miami",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2023
+},
+{
+"ext": "fast-break:134",
+"q": "Which club signed Neymar from Barcelona for a world-record fee in 2017?",
+"a": "Paris Saint-Germain",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2017
+},
+{
+"ext": "fast-break:135",
+"q": "The Merseyside derby is Liverpool against which club?",
+"a": "Everton",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:136",
+"q": "Which club are Arsenal's North London derby rivals?",
+"a": "Tottenham Hotspur",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:137",
+"q": "In which country is the Eredivisie played?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:138",
+"q": "In which country is the Primeira Liga played?",
+"a": "Portugal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:139",
+"q": "In which country is the Süper Lig played?",
+"a": "Turkey",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:140",
+"q": "Which country hosted the 1994 World Cup?",
+"a": "USA",
+"d": "e",
+"comp": "World Cup",
+"kind": "venue",
+"year": 1994
+},
+{
+"ext": "fast-break:141",
+"q": "Which country won Euro 2000?",
+"a": "France",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": 2000
+},
+{
+"ext": "fast-break:142",
+"q": "Which country won the 1994 World Cup?",
+"a": "Brazil",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 1994
+},
+{
+"ext": "fast-break:143",
+"q": "Who is the Premier League's all-time top goalscorer?",
+"a": "Alan Shearer",
+"d": "m",
+"comp": "Premier League",
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:144",
+"q": "In which season did Arsenal go unbeaten in the league?",
+"a": "2003–04",
+"d": "m",
+"comp": null,
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:145",
+"q": "Who won the first World Cup in 1930?",
+"a": "Uruguay",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:146",
+"q": "Who scored a hat-trick in the 1966 World Cup final?",
+"a": "Geoff Hurst",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 1966
+},
+{
+"ext": "fast-break:147",
+"q": "Who did Liverpool beat in the 2005 'Miracle of Istanbul' final?",
+"a": "AC Milan",
+"d": "m",
+"comp": null,
+"kind": "runner-up",
+"year": 2005
+},
+{
+"ext": "fast-break:148",
+"q": "Which nation shocked Europe by winning Euro 2004?",
+"a": "Greece",
+"d": "m",
+"comp": "Euros",
+"kind": "other",
+"year": 2004
+},
+{
+"ext": "fast-break:149",
+"q": "Where was the Euro 2020 final played?",
+"a": "Wembley",
+"d": "m",
+"comp": "Euros",
+"kind": "venue",
+"year": 2020
+},
+{
+"ext": "fast-break:150",
+"q": "Which club won the 2023 Champions League?",
+"a": "Manchester City",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2023
+},
+{
+"ext": "fast-break:151",
+"q": "Zidane was sent off in the 2006 final for headbutting whom?",
+"a": "Marco Materazzi",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2006
+},
+{
+"ext": "fast-break:152",
+"q": "Who won the Golden Boot at the 2014 World Cup?",
+"a": "James Rodríguez",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2014
+},
+{
+"ext": "fast-break:153",
+"q": "Who scored 16 World Cup goals across 2002–2014?",
+"a": "Miroslav Klose",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2002
+},
+{
+"ext": "fast-break:154",
+"q": "Which German club plays at Signal Iduna Park?",
+"a": "Borussia Dortmund",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:155",
+"q": "Which nation won the 2023 Women's World Cup?",
+"a": "Spain",
+"d": "m",
+"comp": "Women's World Cup",
+"kind": "winner",
+"year": 2023
+},
+{
+"ext": "fast-break:156",
+"q": "Which club won the Treble in 1998–99?",
+"a": "Manchester United",
+"d": "m",
+"comp": null,
+"kind": "winner",
+"year": 1999
+},
+{
+"ext": "fast-break:157",
+"q": "Liverpool won the 2019 Champions League final against which club?",
+"a": "Tottenham Hotspur",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2019
+},
+{
+"ext": "fast-break:158",
+"q": "Agüero's 93:20 title winner in 2012 came against which side?",
+"a": "QPR",
+"d": "m",
+"comp": "Premier League",
+"kind": "winner",
+"year": 2012
+},
+{
+"ext": "fast-break:159",
+"q": "'Total Football' is most associated with which nation?",
+"a": "Netherlands",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:160",
+"q": "Who won the first Premier League title in 1992–93?",
+"a": "Manchester United",
+"d": "m",
+"comp": "Premier League",
+"kind": "winner",
+"year": 1993
+},
+{
+"ext": "fast-break:161",
+"q": "How many World Cups did Pelé win as a player?",
+"a": "3",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:162",
+"q": "VAR made its World Cup debut at which tournament?",
+"a": "2018",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:163",
+"q": "Chelsea won their first Champions League in 2012 against whom?",
+"a": "Bayern Munich",
+"d": "m",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2012
+},
+{
+"ext": "fast-break:164",
+"q": "Who is Arsenal's all-time record goalscorer?",
+"a": "Thierry Henry",
+"d": "m",
+"comp": null,
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:165",
+"q": "Who is Manchester United's all-time record goalscorer?",
+"a": "Wayne Rooney",
+"d": "m",
+"comp": null,
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:166",
+"q": "Which Spanish club plays at the Mestalla?",
+"a": "Valencia",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:167",
+"q": "Which player is known as 'El Fenómeno'?",
+"a": "Ronaldo Nazário",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:168",
+"q": "Leicester's 2015–16 title-winning manager was…",
+"a": "Claudio Ranieri",
+"d": "m",
+"comp": "Premier League",
+"kind": "manager",
+"year": 2016
+},
+{
+"ext": "fast-break:169",
+"q": "Who won the 2022 Ballon d'Or?",
+"a": "Karim Benzema",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:170",
+"q": "Which country hosted Euro 96?",
+"a": "England",
+"d": "m",
+"comp": "Euros",
+"kind": "venue",
+"year": 1996
+},
+{
+"ext": "fast-break:171",
+"q": "Real Madrid beat which club in the 2022 Champions League final?",
+"a": "Liverpool",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:172",
+"q": "Which nation won the 2002 World Cup in Japan and South Korea?",
+"a": "Brazil",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2002
+},
+{
+"ext": "fast-break:173",
+"q": "Johan Cruyff came through the youth ranks at which club?",
+"a": "Ajax",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:174",
+"q": "Who won the Ballon d'Or in 2007?",
+"a": "Kaká",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2007
+},
+{
+"ext": "fast-break:175",
+"q": "How wide is a regulation goal?",
+"a": "8 yards",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:176",
+"q": "Eusébio starred at international level for which country?",
+"a": "Portugal",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:177",
+"q": "Who scored the winning penalty in the 2006 World Cup final shoot-out?",
+"a": "Fabio Grosso",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2006
+},
+{
+"ext": "fast-break:178",
+"q": "Who did Spain beat 4–0 in the Euro 2012 final?",
+"a": "Italy",
+"d": "m",
+"comp": "Euros",
+"kind": "runner-up",
+"year": 2012
+},
+{
+"ext": "fast-break:179",
+"q": "Brazil lost 7–1 to which team in a 2014 World Cup semi-final?",
+"a": "Germany",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": 2014
+},
+{
+"ext": "fast-break:180",
+"q": "Which nation knocked England out of Euro 2016?",
+"a": "Iceland",
+"d": "m",
+"comp": "Euros",
+"kind": "other",
+"year": 2016
+},
+{
+"ext": "fast-break:181",
+"q": "England beat which country on penalties at the 2018 World Cup?",
+"a": "Colombia",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2018
+},
+{
+"ext": "fast-break:182",
+"q": "Which team knocked England out of the 2018 World Cup semi-final?",
+"a": "Croatia",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": 2018
+},
+{
+"ext": "fast-break:183",
+"q": "Which team beat England in the 2022 World Cup quarter-final?",
+"a": "France",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:184",
+"q": "Who did England lose to in the Euro 2024 final?",
+"a": "Spain",
+"d": "m",
+"comp": "Euros",
+"kind": "runner-up",
+"year": 2024
+},
+{
+"ext": "fast-break:185",
+"q": "Who scored Spain's late winner in the Euro 2024 final?",
+"a": "Mikel Oyarzabal",
+"d": "m",
+"comp": "Euros",
+"kind": "scorer",
+"year": 2024
+},
+{
+"ext": "fast-break:186",
+"q": "Who scored England's goal in the Euro 2024 final?",
+"a": "Cole Palmer",
+"d": "m",
+"comp": "Euros",
+"kind": "scorer",
+"year": 2024
+},
+{
+"ext": "fast-break:187",
+"q": "Who managed England at Euro 96?",
+"a": "Terry Venables",
+"d": "m",
+"comp": "Euros",
+"kind": "manager",
+"year": 1996
+},
+{
+"ext": "fast-break:188",
+"q": "Who managed England from 2016 to 2024?",
+"a": "Gareth Southgate",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": 2016
+},
+{
+"ext": "fast-break:189",
+"q": "Who became England manager in January 2025?",
+"a": "Thomas Tuchel",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": 2025
+},
+{
+"ext": "fast-break:190",
+"q": "Which club did Jürgen Klopp manage before Liverpool?",
+"a": "Borussia Dortmund",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:191",
+"q": "Who replaced Jürgen Klopp as Liverpool manager in 2024?",
+"a": "Arne Slot",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": 2024
+},
+{
+"ext": "fast-break:192",
+"q": "Which club did Pep Guardiola manage between Barcelona and Manchester City?",
+"a": "Bayern Munich",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:193",
+"q": "Who was Manchester United's first permanent manager after Sir Alex Ferguson?",
+"a": "David Moyes",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:194",
+"q": "Which manager led Chelsea to the 2021 Champions League title?",
+"a": "Thomas Tuchel",
+"d": "m",
+"comp": "Champions League",
+"kind": "manager",
+"year": 2021
+},
+{
+"ext": "fast-break:195",
+"q": "Who won the Premier League with Chelsea in his first season, 2016–17?",
+"a": "Antonio Conte",
+"d": "m",
+"comp": "Premier League",
+"kind": "winner",
+"year": 2017
+},
+{
+"ext": "fast-break:196",
+"q": "Which goalkeeper holds the Premier League record for clean sheets?",
+"a": "Petr Čech",
+"d": "m",
+"comp": "Premier League",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:197",
+"q": "Who scored the first ever Premier League goal, in 1992?",
+"a": "Brian Deane",
+"d": "m",
+"comp": "Premier League",
+"kind": "scorer",
+"year": 1992
+},
+{
+"ext": "fast-break:198",
+"q": "Which club won the Premier League in 1994–95?",
+"a": "Blackburn Rovers",
+"d": "m",
+"comp": "Premier League",
+"kind": "winner",
+"year": 1995
+},
+{
+"ext": "fast-break:199",
+"q": "How many points did Manchester City set the Premier League record with in 2017–18?",
+"a": "100",
+"d": "m",
+"comp": "Premier League",
+"kind": "other",
+"year": 2018
+},
+{
+"ext": "fast-break:200",
+"q": "Which club got just 11 points in the 2007–08 Premier League?",
+"a": "Derby County",
+"d": "m",
+"comp": "Premier League",
+"kind": "other",
+"year": 2008
+},
+{
+"ext": "fast-break:201",
+"q": "Which club beat Cardiff City in the 2008 FA Cup final?",
+"a": "Portsmouth",
+"d": "m",
+"comp": "FA Cup",
+"kind": "winner",
+"year": 2008
+},
+{
+"ext": "fast-break:202",
+"q": "Which club won the 2013 FA Cup and were relegated in the same season?",
+"a": "Wigan Athletic",
+"d": "m",
+"comp": "FA Cup",
+"kind": "winner",
+"year": 2013
+},
+{
+"ext": "fast-break:203",
+"q": "Who won the Golden Ball as best player at the 2010 World Cup?",
+"a": "Diego Forlán",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2010
+},
+{
+"ext": "fast-break:204",
+"q": "Who won the Golden Boot at the 2022 World Cup?",
+"a": "Kylian Mbappé",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2022
+},
+{
+"ext": "fast-break:205",
+"q": "Who won the Golden Boot at the 2018 World Cup?",
+"a": "Harry Kane",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2018
+},
+{
+"ext": "fast-break:206",
+"q": "Who won the 2018 Ballon d'Or, breaking a decade of Messi and Ronaldo wins?",
+"a": "Luka Modrić",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2018
+},
+{
+"ext": "fast-break:207",
+"q": "Who won the 2024 Ballon d'Or?",
+"a": "Rodri",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2024
+},
+{
+"ext": "fast-break:208",
+"q": "Who won the 2025 Ballon d'Or?",
+"a": "Ousmane Dembélé",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2025
+},
+{
+"ext": "fast-break:209",
+"q": "Who won the first women's Ballon d'Or in 2018?",
+"a": "Ada Hegerberg",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2018
+},
+{
+"ext": "fast-break:210",
+"q": "Which club did Luís Figo controversially join from Barcelona in 2000?",
+"a": "Real Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2000
+},
+{
+"ext": "fast-break:211",
+"q": "Which club did Sol Campbell leave on a free to join Arsenal in 2001?",
+"a": "Tottenham Hotspur",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2001
+},
+{
+"ext": "fast-break:212",
+"q": "Which club did Fernando Torres join from Liverpool in January 2011?",
+"a": "Chelsea",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2011
+},
+{
+"ext": "fast-break:213",
+"q": "Which club sold Virgil van Dijk to Liverpool in 2018?",
+"a": "Southampton",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2018
+},
+{
+"ext": "fast-break:214",
+"q": "Which club sold Eden Hazard to Chelsea in 2012?",
+"a": "Lille",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2012
+},
+{
+"ext": "fast-break:215",
+"q": "Which club sold Luis Suárez to Liverpool in 2011?",
+"a": "Ajax",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2011
+},
+{
+"ext": "fast-break:216",
+"q": "Which club sold Mohamed Salah to Liverpool in 2017?",
+"a": "Roma",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2017
+},
+{
+"ext": "fast-break:217",
+"q": "Which club sold Erling Haaland to Manchester City in 2022?",
+"a": "Borussia Dortmund",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2022
+},
+{
+"ext": "fast-break:218",
+"q": "Which club sold Kevin De Bruyne to Manchester City in 2015?",
+"a": "Wolfsburg",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2015
+},
+{
+"ext": "fast-break:219",
+"q": "Which club sold Riyad Mahrez to Leicester City in 2014?",
+"a": "Le Havre",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2014
+},
+{
+"ext": "fast-break:220",
+"q": "Which club sold N'Golo Kanté to Leicester City in 2015?",
+"a": "Caen",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2015
+},
+{
+"ext": "fast-break:221",
+"q": "Which club sold Didier Drogba to Chelsea in 2004?",
+"a": "Marseille",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2004
+},
+{
+"ext": "fast-break:222",
+"q": "Which club sold Thierry Henry to Arsenal in 1999?",
+"a": "Juventus",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1999
+},
+{
+"ext": "fast-break:223",
+"q": "Which club sold Robin van Persie to Manchester United in 2012?",
+"a": "Arsenal",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2012
+},
+{
+"ext": "fast-break:224",
+"q": "Which club sold Ruud van Nistelrooy to Manchester United in 2001?",
+"a": "PSV",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2001
+},
+{
+"ext": "fast-break:225",
+"q": "Which club sold Dennis Bergkamp to Arsenal in 1995?",
+"a": "Inter Milan",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1995
+},
+{
+"ext": "fast-break:226",
+"q": "Which club sold Roy Keane to Manchester United in 1993?",
+"a": "Nottingham Forest",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1993
+},
+{
+"ext": "fast-break:227",
+"q": "Which club sold Eric Cantona to Manchester United in 1992?",
+"a": "Leeds United",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1992
+},
+{
+"ext": "fast-break:228",
+"q": "Which club did Alan Shearer leave to join Newcastle in 1996?",
+"a": "Blackburn Rovers",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1996
+},
+{
+"ext": "fast-break:229",
+"q": "Which club did Steven Gerrard join after leaving Liverpool in 2015?",
+"a": "LA Galaxy",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2015
+},
+{
+"ext": "fast-break:230",
+"q": "Which MLS club did David Beckham found as an owner?",
+"a": "Inter Miami",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:231",
+"q": "Which two clubs contest the Derby della Madonnina?",
+"a": "AC Milan and Inter",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:232",
+"q": "Which two clubs contest the Superclásico in Argentina?",
+"a": "Boca Juniors and River Plate",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:233",
+"q": "Which two clubs contest Der Klassiker?",
+"a": "Bayern Munich and Borussia Dortmund",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:234",
+"q": "The Tyne–Wear derby is Newcastle against which club?",
+"a": "Sunderland",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:235",
+"q": "Which club did José Mourinho win the 2004 Champions League with?",
+"a": "Porto",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2004
+},
+{
+"ext": "fast-break:236",
+"q": "Which club won the 2020 Champions League final in Lisbon?",
+"a": "Bayern Munich",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2020
+},
+{
+"ext": "fast-break:237",
+"q": "Which club beat Liverpool in the 2018 Champions League final in Kyiv?",
+"a": "Real Madrid",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2018
+},
+{
+"ext": "fast-break:238",
+"q": "Which goalkeeper made two costly errors in the 2018 Champions League final?",
+"a": "Loris Karius",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2018
+},
+{
+"ext": "fast-break:239",
+"q": "Which club beat Manchester United on penalties to win the 2021 Europa League?",
+"a": "Villarreal",
+"d": "m",
+"comp": "Europa League",
+"kind": "winner",
+"year": 2021
+},
+{
+"ext": "fast-break:240",
+"q": "Which club won the Europa League three times in a row from 2014 to 2016?",
+"a": "Sevilla",
+"d": "m",
+"comp": "Europa League",
+"kind": "winner",
+"year": 2014
+},
+{
+"ext": "fast-break:241",
+"q": "Which club won the first Europa Conference League in 2022?",
+"a": "Roma",
+"d": "m",
+"comp": "Conference League",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:242",
+"q": "Which club won the 2023 Europa Conference League?",
+"a": "West Ham United",
+"d": "m",
+"comp": "Conference League",
+"kind": "winner",
+"year": 2023
+},
+{
+"ext": "fast-break:243",
+"q": "Which club ended Bayer Leverkusen's unbeaten season by winning the 2024 Europa League final?",
+"a": "Atalanta",
+"d": "m",
+"comp": "Europa League",
+"kind": "winner",
+"year": 2024
+},
+{
+"ext": "fast-break:244",
+"q": "Who managed Bayer Leverkusen to an unbeaten Bundesliga title in 2023–24?",
+"a": "Xabi Alonso",
+"d": "m",
+"comp": "Premier League",
+"kind": "manager",
+"year": 2024
+},
+{
+"ext": "fast-break:245",
+"q": "Which country won Euro 1988?",
+"a": "Netherlands",
+"d": "m",
+"comp": "Euros",
+"kind": "winner",
+"year": 1988
+},
+{
+"ext": "fast-break:246",
+"q": "Which country won the 1990 World Cup?",
+"a": "West Germany",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 1990
+},
+{
+"ext": "fast-break:247",
+"q": "Who missed the decisive penalty in the 1994 World Cup final shoot-out?",
+"a": "Roberto Baggio",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": 1994
+},
+{
+"ext": "fast-break:248",
+"q": "Who scored France's golden goal in the Euro 2000 final?",
+"a": "David Trezeguet",
+"d": "m",
+"comp": "Euros",
+"kind": "scorer",
+"year": 2000
+},
+{
+"ext": "fast-break:249",
+"q": "Who won the 2015 Copa América on home soil?",
+"a": "Chile",
+"d": "m",
+"comp": "Copa América",
+"kind": "winner",
+"year": 2015
+},
+{
+"ext": "fast-break:250",
+"q": "Who managed Manchester City to six Premier League titles in seven seasons from 2017–18?",
+"a": "Pep Guardiola",
+"d": "m",
+"comp": "Premier League",
+"kind": "manager",
+"year": 2018
+},
+{
+"ext": "fast-break:251",
+"q": "Which club did Arsène Wenger manage before Arsenal?",
+"a": "Nagoya Grampus Eight",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:252",
+"q": "Which Scottish club reached the 2003 UEFA Cup final, losing to Porto?",
+"a": "Celtic",
+"d": "m",
+"comp": "Europa League",
+"kind": "other",
+"year": 2003
+},
+{
+"ext": "fast-break:253",
+"q": "Which club won the 1992 European Cup, its first?",
+"a": "Barcelona",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1992
+},
+{
+"ext": "fast-break:254",
+"q": "Which French club won the 1993 Champions League?",
+"a": "Marseille",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1993
+},
+{
+"ext": "fast-break:255",
+"q": "Which club won the 1997 Champions League, beating Juventus?",
+"a": "Borussia Dortmund",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1997
+},
+{
+"ext": "fast-break:256",
+"q": "Which club won the 2001 Champions League on penalties against Valencia?",
+"a": "Bayern Munich",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2001
+},
+{
+"ext": "fast-break:257",
+"q": "Which club won the 2003 Champions League final, an all-Italian final?",
+"a": "AC Milan",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2003
+},
+{
+"ext": "fast-break:258",
+"q": "Which club won the 2008 Champions League final in Moscow?",
+"a": "Manchester United",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2008
+},
+{
+"ext": "fast-break:259",
+"q": "Which club won the 2011 Champions League final at Wembley?",
+"a": "Barcelona",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2011
+},
+{
+"ext": "fast-break:260",
+"q": "Which club won the 2013 Champions League final at Wembley?",
+"a": "Bayern Munich",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2013
+},
+{
+"ext": "fast-break:261",
+"q": "Which club won the 2014 Champions League with 'La Décima'?",
+"a": "Real Madrid",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2014
+},
+{
+"ext": "fast-break:262",
+"q": "Which club lost the 2014 and 2016 Champions League finals to Real Madrid?",
+"a": "Atlético Madrid",
+"d": "m",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2014
+},
+{
+"ext": "fast-break:263",
+"q": "Which club did Real Madrid beat in the 2017 Champions League final?",
+"a": "Juventus",
+"d": "m",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2017
+},
+{
+"ext": "fast-break:264",
+"q": "Which English club won the Cup Winners' Cup in 1985?",
+"a": "Everton",
+"d": "m",
+"comp": "Cup Winners' Cup",
+"kind": "winner",
+"year": 1985
+},
+{
+"ext": "fast-break:265",
+"q": "Which club won the 1983 Cup Winners' Cup under Alex Ferguson?",
+"a": "Aberdeen",
+"d": "m",
+"comp": "Cup Winners' Cup",
+"kind": "winner",
+"year": 1983
+},
+{
+"ext": "fast-break:266",
+"q": "Which club famously beat Barcelona 4–0 at Anfield in the 2019 semi-final second leg?",
+"a": "Liverpool",
+"d": "m",
+"comp": null,
+"kind": "winner",
+"year": 2019
+},
+{
+"ext": "fast-break:267",
+"q": "Which club beat Arsenal in the 2006 Champions League final in Paris?",
+"a": "Barcelona",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2006
+},
+{
+"ext": "fast-break:268",
+"q": "Which club beat Liverpool in the 2007 Champions League final in Athens?",
+"a": "AC Milan",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2007
+},
+{
+"ext": "fast-break:269",
+"q": "Just Fontaine holds the record for goals at one World Cup. How many?",
+"a": "13",
+"d": "h",
+"comp": "World Cup",
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:270",
+"q": "How many goals did Messi score in calendar year 2012?",
+"a": "91",
+"d": "h",
+"comp": null,
+"kind": "scorer",
+"year": 2012
+},
+{
+"ext": "fast-break:271",
+"q": "Who scored the fastest Premier League hat-trick, in 2 min 56 s?",
+"a": "Sadio Mané",
+"d": "h",
+"comp": "Premier League",
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:272",
+"q": "Which club won the first five European Cups, from 1956 to 1960?",
+"a": "Real Madrid",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1956
+},
+{
+"ext": "fast-break:273",
+"q": "Brian Clough won back-to-back European Cups with which club?",
+"a": "Nottingham Forest",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:274",
+"q": "Who scored the extra-time winner in the 2014 World Cup final?",
+"a": "Mario Götze",
+"d": "h",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2014
+},
+{
+"ext": "fast-break:275",
+"q": "Which nation won Euro 92 after being called up as late replacements?",
+"a": "Denmark",
+"d": "h",
+"comp": "Euros",
+"kind": "winner",
+"year": 1992
+},
+{
+"ext": "fast-break:276",
+"q": "In which year did Aston Villa win the European Cup?",
+"a": "1982",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:277",
+"q": "Which club were the first British winners of the European Cup?",
+"a": "Celtic",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:278",
+"q": "Who scored after 11 seconds, the fastest goal in World Cup history?",
+"a": "Hakan Şükür",
+"d": "h",
+"comp": "World Cup",
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:279",
+"q": "Which goalkeeper captained Italy to the 1982 World Cup?",
+"a": "Dino Zoff",
+"d": "h",
+"comp": "World Cup",
+"kind": "captain",
+"year": 1982
+},
+{
+"ext": "fast-break:280",
+"q": "Who scored Arsenal's title-clinching goal at Anfield in 1989?",
+"a": "Michael Thomas",
+"d": "h",
+"comp": "Premier League",
+"kind": "scorer",
+"year": 1989
+},
+{
+"ext": "fast-break:281",
+"q": "Who won the Golden Boot at the 1986 World Cup?",
+"a": "Gary Lineker",
+"d": "h",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 1986
+},
+{
+"ext": "fast-break:282",
+"q": "Antonín Panenka's famous chipped penalty won Euro 76 for which nation?",
+"a": "Czechoslovakia",
+"d": "h",
+"comp": "Euros",
+"kind": "winner",
+"year": 1976
+},
+{
+"ext": "fast-break:283",
+"q": "Which Romanian club won the European Cup in 1986?",
+"a": "Steaua Bucharest",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1986
+},
+{
+"ext": "fast-break:284",
+"q": "Which club did Lionel Messi join when he left Barcelona in 2021?",
+"a": "Paris Saint-Germain",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2021
+},
+{
+"ext": "fast-break:285",
+"q": "Serie A is the top division of which country?",
+"a": "Italy",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:286",
+"q": "In which country is the Bundesliga played?",
+"a": "Germany",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:287",
+"q": "Ligue 1 is the top division of which country?",
+"a": "France",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:288",
+"q": "La Liga is the top division of which country?",
+"a": "Spain",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:289",
+"q": "Which country did Zinedine Zidane play for?",
+"a": "France",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:290",
+"q": "Which trophy is nicknamed 'Old Big Ears'?",
+"a": "The Champions League trophy",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:291",
+"q": "Which country does Luka Modrić play for?",
+"a": "Croatia",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:292",
+"q": "Which country does Neymar play for?",
+"a": "Brazil",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:293",
+"q": "Which Welsh winger won a record 13 Premier League titles?",
+"a": "Ryan Giggs",
+"d": "e",
+"comp": "Premier League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:294",
+"q": "Which country did Johan Cruyff play for?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:295",
+"q": "Which country did Diego Maradona play for?",
+"a": "Argentina",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:296",
+"q": "Which player is allowed to handle the ball inside their own penalty area?",
+"a": "The goalkeeper",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:297",
+"q": "Which country hosted Euro 2024?",
+"a": "Germany",
+"d": "e",
+"comp": "Euros",
+"kind": "venue",
+"year": 2024
+},
+{
+"ext": "fast-break:298",
+"q": "What is the title of Liverpool's famous anthem?",
+"a": "You'll Never Walk Alone",
+"d": "e",
+"comp": "Premier League",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:299",
+"q": "In which city is the San Siro stadium?",
+"a": "Milan",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:300",
+"q": "Which country does Harry Kane play for?",
+"a": "England",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:301",
+"q": "Which goalkeeper captained Spain to the 2010 World Cup?",
+"a": "Iker Casillas",
+"d": "e",
+"comp": "World Cup",
+"kind": "captain",
+"year": 2010
+},
+{
+"ext": "fast-break:302",
+"q": "Who won the 2018 World Cup?",
+"a": "France",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2018
+},
+{
+"ext": "fast-break:303",
+"q": "Which country does Lionel Messi play for?",
+"a": "Argentina",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:304",
+"q": "Which country does Kylian Mbappé play for?",
+"a": "France",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:305",
+"q": "Which country does Cristiano Ronaldo play for?",
+"a": "Portugal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:306",
+"q": "Which country did Thierry Henry play for?",
+"a": "France",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:307",
+"q": "Which country did Gianluigi Buffon play for?",
+"a": "Italy",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:308",
+"q": "Which country did Didier Drogba play for?",
+"a": "Ivory Coast",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:309",
+"q": "Which country did Andriy Shevchenko play for?",
+"a": "Ukraine",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:310",
+"q": "Which country does Sadio Mané play for?",
+"a": "Senegal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:311",
+"q": "Which country does Bukayo Saka play for?",
+"a": "England",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:312",
+"q": "Which country did Ronaldinho play for?",
+"a": "Brazil",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:313",
+"q": "Which country did Luis Suárez play for?",
+"a": "Uruguay",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:314",
+"q": "Which club plays its home games at St James' Park?",
+"a": "Newcastle United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:315",
+"q": "Which club plays its home games at the London Stadium?",
+"a": "West Ham United",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:316",
+"q": "Which club plays its home games at the City Ground?",
+"a": "Nottingham Forest",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:317",
+"q": "Which club plays its home games at Celtic Park?",
+"a": "Celtic",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:318",
+"q": "Which club plays its home games at the Amex Stadium?",
+"a": "Brighton & Hove Albion",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:319",
+"q": "Which club plays its home games at Turf Moor?",
+"a": "Burnley",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:320",
+"q": "Which club plays its home games at Bramall Lane?",
+"a": "Sheffield United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:321",
+"q": "Which club plays its home games at the Vitality Stadium?",
+"a": "Bournemouth",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:322",
+"q": "Which club is nicknamed 'The Clarets'?",
+"a": "Burnley",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:323",
+"q": "Which club is nicknamed 'The Black Cats'?",
+"a": "Sunderland",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:324",
+"q": "Which club is nicknamed 'The Tigers'?",
+"a": "Hull City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:325",
+"q": "Which club is nicknamed 'The Baggies'?",
+"a": "West Bromwich Albion",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:326",
+"q": "Which club is nicknamed 'The Potters'?",
+"a": "Stoke City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:327",
+"q": "Which club is nicknamed 'The Royals'?",
+"a": "Reading",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:328",
+"q": "Which club is nicknamed 'The Hornets'?",
+"a": "Watford",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:329",
+"q": "Which club is nicknamed 'The Tractor Boys'?",
+"a": "Ipswich Town",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:330",
+"q": "Which national team is nicknamed 'The Black Stars'?",
+"a": "Ghana",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:331",
+"q": "Which national team is nicknamed 'Die Mannschaft'?",
+"a": "Germany",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:332",
+"q": "What colour shirts do Brazil traditionally wear at home?",
+"a": "Yellow",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:333",
+"q": "What do Juventus traditionally wear at home?",
+"a": "Black and white stripes",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:334",
+"q": "What colours are Barcelona's famous striped shirts?",
+"a": "Blue and red",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:335",
+"q": "What is awarded when an attacker knocks the ball over the opponents' goal line?",
+"a": "A goal kick",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:336",
+"q": "In which city do Bayern Munich play?",
+"a": "Munich",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:337",
+"q": "In which city do Atlético Madrid play?",
+"a": "Madrid",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:338",
+"q": "In which city do Napoli play?",
+"a": "Naples",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:339",
+"q": "In which country do Porto play?",
+"a": "Portugal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:340",
+"q": "In which country do Anderlecht play?",
+"a": "Belgium",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:341",
+"q": "The Manchester derby is Manchester United against which club?",
+"a": "Manchester City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:342",
+"q": "Which manager called himself 'The Special One'?",
+"a": "José Mourinho",
+"d": "e",
+"comp": null,
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:343",
+"q": "Which Liverpool legend is known as 'King Kenny'?",
+"a": "Kenny Dalglish",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:344",
+"q": "Which player is nicknamed 'The Egyptian King'?",
+"a": "Mohamed Salah",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:345",
+"q": "Which player is nicknamed 'Becks'?",
+"a": "David Beckham",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:346",
+"q": "Which player is nicknamed 'La Pulga', the Flea?",
+"a": "Lionel Messi",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:347",
+"q": "Which player is nicknamed 'Kun'?",
+"a": "Sergio Agüero",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:348",
+"q": "What was the name of Arsenal's stadium before the Emirates?",
+"a": "Highbury",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:349",
+"q": "What was the name of Manchester City's stadium before the Etihad?",
+"a": "Maine Road",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:350",
+"q": "Which country did Spain beat in the 2010 World Cup final?",
+"a": "Netherlands",
+"d": "e",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 2010
+},
+{
+"ext": "fast-break:351",
+"q": "Which country did Argentina beat in the 2022 World Cup final?",
+"a": "France",
+"d": "e",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 2022
+},
+{
+"ext": "fast-break:352",
+"q": "Which country did England beat in the 1966 World Cup final?",
+"a": "West Germany",
+"d": "e",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 1966
+},
+{
+"ext": "fast-break:353",
+"q": "If a cup final is still level after extra time, how is it usually decided?",
+"a": "A penalty shoot-out",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:354",
+"q": "Who scored the winning goal in the 2010 World Cup final?",
+"a": "Andrés Iniesta",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2010
+},
+{
+"ext": "fast-break:355",
+"q": "Which club did Cristiano Ronaldo leave Manchester United for in 2009?",
+"a": "Real Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2009
+},
+{
+"ext": "fast-break:356",
+"q": "Which club did Kevin Keegan join when he left Liverpool in 1977?",
+"a": "Hamburg",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1977
+},
+{
+"ext": "fast-break:357",
+"q": "Which country did George Best play for?",
+"a": "Northern Ireland",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:358",
+"q": "Which club did Gareth Bale join Real Madrid from?",
+"a": "Tottenham Hotspur",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:359",
+"q": "In which year did the new Wembley Stadium open?",
+"a": "2007",
+"d": "m",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:360",
+"q": "At which club did Zlatan Ibrahimović start his professional career?",
+"a": "Malmö FF",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:361",
+"q": "Who captained Manchester United in the 1999 Champions League final?",
+"a": "Peter Schmeichel",
+"d": "m",
+"comp": "Champions League",
+"kind": "captain",
+"year": 1999
+},
+{
+"ext": "fast-break:362",
+"q": "Which country did Michael Laudrup play for?",
+"a": "Denmark",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:363",
+"q": "Who scored Manchester United's injury-time winner in the 1999 Champions League final?",
+"a": "Ole Gunnar Solskjær",
+"d": "m",
+"comp": "Champions League",
+"kind": "scorer",
+"year": 1999
+},
+{
+"ext": "fast-break:364",
+"q": "Which country won the 2019 Africa Cup of Nations?",
+"a": "Algeria",
+"d": "m",
+"comp": "AFCON",
+"kind": "winner",
+"year": 2019
+},
+{
+"ext": "fast-break:365",
+"q": "Which club won the 2023 Europa League final against Roma?",
+"a": "Sevilla",
+"d": "m",
+"comp": "Europa League",
+"kind": "winner",
+"year": 2023
+},
+{
+"ext": "fast-break:366",
+"q": "Which is the oldest professional club in the English Football League?",
+"a": "Notts County",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:367",
+"q": "Who was the first African player to win the Ballon d'Or?",
+"a": "George Weah",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:368",
+"q": "Which club did Paul Pogba rejoin Manchester United from in 2016?",
+"a": "Juventus",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2016
+},
+{
+"ext": "fast-break:369",
+"q": "With which club did Ferenc Puskás win three European Cups?",
+"a": "Real Madrid",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:370",
+"q": "Who did Argentina beat in the 1986 World Cup final?",
+"a": "West Germany",
+"d": "m",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 1986
+},
+{
+"ext": "fast-break:371",
+"q": "Which country won the 2016 Copa América Centenario?",
+"a": "Chile",
+"d": "m",
+"comp": "Copa América",
+"kind": "winner",
+"year": 2016
+},
+{
+"ext": "fast-break:372",
+"q": "Which goalkeeper won the Ballon d'Or in 1963?",
+"a": "Lev Yashin",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 1963
+},
+{
+"ext": "fast-break:373",
+"q": "Which English club won the Treble in 2022–23?",
+"a": "Manchester City",
+"d": "m",
+"comp": null,
+"kind": "winner",
+"year": 2023
+},
+{
+"ext": "fast-break:374",
+"q": "Who was the first player to win eight Ballon d'Or awards?",
+"a": "Lionel Messi",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:375",
+"q": "Which club did Andrea Pirlo join when he left AC Milan in 2011?",
+"a": "Juventus",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2011
+},
+{
+"ext": "fast-break:376",
+"q": "Which Dutchman scored a famous volley in the Euro 88 final?",
+"a": "Marco van Basten",
+"d": "m",
+"comp": "Euros",
+"kind": "scorer",
+"year": 1988
+},
+{
+"ext": "fast-break:377",
+"q": "Which country did Jay-Jay Okocha play for?",
+"a": "Nigeria",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:378",
+"q": "Which country did Hristo Stoichkov play for?",
+"a": "Bulgaria",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:379",
+"q": "Which club won the European Cup in 1968, 1999 and 2008?",
+"a": "Manchester United",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1968
+},
+{
+"ext": "fast-break:380",
+"q": "Which goalkeeper pulled off a famous 'scorpion kick' save against England at Wembley in 1995?",
+"a": "René Higuita",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1995
+},
+{
+"ext": "fast-break:381",
+"q": "Which player was nicknamed 'Il Divin Codino', the Divine Ponytail?",
+"a": "Roberto Baggio",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:382",
+"q": "Which club did Wayne Rooney join Manchester United from?",
+"a": "Everton",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:383",
+"q": "Which club did Rio Ferdinand join Manchester United from?",
+"a": "Leeds United",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:384",
+"q": "Which club did Jamie Vardy join Leicester City from?",
+"a": "Fleetwood Town",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:385",
+"q": "At which club did Gareth Bale begin his professional career?",
+"a": "Southampton",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:386",
+"q": "At which club did Frank Lampard begin his professional career?",
+"a": "West Ham United",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:387",
+"q": "Which club did Petr Čech join when he left Chelsea in 2015?",
+"a": "Arsenal",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2015
+},
+{
+"ext": "fast-break:388",
+"q": "Which club did Ashley Cole join from Arsenal in 2006?",
+"a": "Chelsea",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2006
+},
+{
+"ext": "fast-break:389",
+"q": "Which club did Carlos Tevez join from Manchester United in 2009?",
+"a": "Manchester City",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2009
+},
+{
+"ext": "fast-break:390",
+"q": "Which club did David Beckham join from Manchester United in 2003?",
+"a": "Real Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2003
+},
+{
+"ext": "fast-break:391",
+"q": "Which team did Zinedine Zidane score two headers against in the 1998 World Cup final?",
+"a": "Brazil",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": 1998
+},
+{
+"ext": "fast-break:392",
+"q": "Which country co-hosted Euro 2012 with Poland?",
+"a": "Ukraine",
+"d": "m",
+"comp": "Euros",
+"kind": "venue",
+"year": 2012
+},
+{
+"ext": "fast-break:393",
+"q": "Which country won the 2021 Africa Cup of Nations, played in 2022?",
+"a": "Senegal",
+"d": "m",
+"comp": "AFCON",
+"kind": "winner",
+"year": 2021
+},
+{
+"ext": "fast-break:394",
+"q": "Which country won the 2011 Copa América?",
+"a": "Uruguay",
+"d": "m",
+"comp": "Copa América",
+"kind": "winner",
+"year": 2011
+},
+{
+"ext": "fast-break:395",
+"q": "Who was the top scorer at the 2006 World Cup?",
+"a": "Miroslav Klose",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2006
+},
+{
+"ext": "fast-break:396",
+"q": "Who won the Golden Boot at Euro 2016?",
+"a": "Antoine Griezmann",
+"d": "m",
+"comp": "Euros",
+"kind": "scorer",
+"year": 2016
+},
+{
+"ext": "fast-break:397",
+"q": "Which club won the 2024 FA Cup final?",
+"a": "Manchester United",
+"d": "m",
+"comp": "FA Cup",
+"kind": "winner",
+"year": 2024
+},
+{
+"ext": "fast-break:398",
+"q": "Which club won the 2025 League Cup final, beating Liverpool?",
+"a": "Newcastle United",
+"d": "m",
+"comp": "League Cup",
+"kind": "winner",
+"year": 2025
+},
+{
+"ext": "fast-break:399",
+"q": "Which club did Real Madrid beat in the 2024 Champions League final?",
+"a": "Borussia Dortmund",
+"d": "m",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2024
+},
+{
+"ext": "fast-break:400",
+"q": "Which Italian club won the Treble in 2009–10?",
+"a": "Inter",
+"d": "m",
+"comp": null,
+"kind": "winner",
+"year": 2010
+},
+{
+"ext": "fast-break:401",
+"q": "Which Brazilian won the 1999 Ballon d'Or?",
+"a": "Rivaldo",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 1999
+},
+{
+"ext": "fast-break:402",
+"q": "Which club did Kaká join from AC Milan in 2009?",
+"a": "Real Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2009
+},
+{
+"ext": "fast-break:403",
+"q": "Which club did Zlatan Ibrahimović join Manchester United from in 2016?",
+"a": "Paris Saint-Germain",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2016
+},
+{
+"ext": "fast-break:404",
+"q": "Which manager led Inter to the Treble in 2010?",
+"a": "José Mourinho",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": 2010
+},
+{
+"ext": "fast-break:405",
+"q": "Which club did Thierry Henry join when he left Arsenal in 2007?",
+"a": "Barcelona",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2007
+},
+{
+"ext": "fast-break:406",
+"q": "Which country did Jürgen Klinsmann play for?",
+"a": "Germany",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:407",
+"q": "Which country did Gheorghe Hagi play for?",
+"a": "Romania",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:408",
+"q": "Which club did Luka Modrić join Real Madrid from?",
+"a": "Tottenham Hotspur",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:409",
+"q": "Which club did Eden Hazard join when he left Chelsea in 2019?",
+"a": "Real Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2019
+},
+{
+"ext": "fast-break:410",
+"q": "Which club did Raheem Sterling join Manchester City from?",
+"a": "Liverpool",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:411",
+"q": "Which club did Philippe Coutinho join from Liverpool in 2018?",
+"a": "Barcelona",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2018
+},
+{
+"ext": "fast-break:412",
+"q": "Which club did Cristiano Ronaldo rejoin in 2021?",
+"a": "Manchester United",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2021
+},
+{
+"ext": "fast-break:413",
+"q": "Which Premier League club did Mauricio Pochettino manage before Tottenham?",
+"a": "Southampton",
+"d": "m",
+"comp": "Premier League",
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:414",
+"q": "Which club did Riyad Mahrez join from Leicester City in 2018?",
+"a": "Manchester City",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2018
+},
+{
+"ext": "fast-break:415",
+"q": "Which country won the 2019 Copa América?",
+"a": "Brazil",
+"d": "m",
+"comp": "Copa América",
+"kind": "winner",
+"year": 2019
+},
+{
+"ext": "fast-break:416",
+"q": "Which club did Didier Drogba return to Chelsea from in 2014?",
+"a": "Galatasaray",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2014
+},
+{
+"ext": "fast-break:417",
+"q": "Which country won the first European Championship, in 1960?",
+"a": "Soviet Union",
+"d": "h",
+"comp": "Euros",
+"kind": "winner",
+"year": 1960
+},
+{
+"ext": "fast-break:418",
+"q": "Which Brazilian scored in every round of the 1970 World Cup?",
+"a": "Jairzinho",
+"d": "h",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 1970
+},
+{
+"ext": "fast-break:419",
+"q": "In which year did the back-pass rule stop goalkeepers handling deliberate back-passes?",
+"a": "1992",
+"d": "h",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:420",
+"q": "How many English top-flight titles had Liverpool won after their 2024–25 title?",
+"a": "20",
+"d": "h",
+"comp": "Premier League",
+"kind": "winner",
+"year": 2025
+},
+{
+"ext": "fast-break:421",
+"q": "Who is the only player to win the Champions League with three different clubs?",
+"a": "Clarence Seedorf",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:422",
+"q": "Who captained West Germany to the 1974 World Cup?",
+"a": "Franz Beckenbauer",
+"d": "h",
+"comp": "World Cup",
+"kind": "captain",
+"year": 1974
+},
+{
+"ext": "fast-break:423",
+"q": "Which club won the 1995 Champions League with a late goal from 18-year-old Patrick Kluivert?",
+"a": "Ajax",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1995
+},
+{
+"ext": "fast-break:424",
+"q": "Which country does Lamine Yamal play for?",
+"a": "Spain",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:425",
+"q": "What is the maximum number of substitutes a team can make in a normal Premier League match?",
+"a": "5",
+"d": "e",
+"comp": "Premier League",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:426",
+"q": "How many minutes is each half of extra time?",
+"a": "15",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:427",
+"q": "Which colour shirts do Liverpool wear at home?",
+"a": "Red",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:428",
+"q": "Which colour shirts do Chelsea wear at home?",
+"a": "Blue",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:429",
+"q": "Which club is nicknamed 'Pompey'?",
+"a": "Portsmouth",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:430",
+"q": "Which club is nicknamed 'The Rams'?",
+"a": "Derby County",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:431",
+"q": "Which club plays its home games at Portman Road?",
+"a": "Ipswich Town",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:432",
+"q": "Which club plays its home games at Carrow Road?",
+"a": "Norwich City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:433",
+"q": "Which club plays its home games at Kenilworth Road?",
+"a": "Luton Town",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:434",
+"q": "Which club plays its home games at Vicarage Road?",
+"a": "Watford",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:435",
+"q": "Which club plays its home games at the Gtech Community Stadium?",
+"a": "Brentford",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:436",
+"q": "In which city do Valencia play?",
+"a": "Valencia",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:437",
+"q": "In which city do Borussia Dortmund play?",
+"a": "Dortmund",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:438",
+"q": "In which country do Feyenoord play?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:439",
+"q": "In which country do Red Star Belgrade play?",
+"a": "Serbia",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:440",
+"q": "In which country do Flamengo play?",
+"a": "Brazil",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:441",
+"q": "Which country does Rodri play for?",
+"a": "Spain",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:442",
+"q": "Which country does Jude Bellingham play for?",
+"a": "England",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:443",
+"q": "Which country does Bernardo Silva play for?",
+"a": "Portugal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:444",
+"q": "Which country does Alisson play for?",
+"a": "Brazil",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:445",
+"q": "Which country did Peter Schmeichel play for?",
+"a": "Denmark",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:446",
+"q": "Which country did Gianfranco Zola play for?",
+"a": "Italy",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:447",
+"q": "Which country did Dennis Bergkamp play for?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:448",
+"q": "Which country did Patrick Vieira play for?",
+"a": "France",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:449",
+"q": "Which country did Kaká play for?",
+"a": "Brazil",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:450",
+"q": "Which country did Gareth Bale play for?",
+"a": "Wales",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:451",
+"q": "Which country did Roy Keane play for?",
+"a": "Republic of Ireland",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:452",
+"q": "Which country did Kenny Dalglish play for?",
+"a": "Scotland",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:453",
+"q": "What is the name of the match played between the Premier League champions and FA Cup winners each August?",
+"a": "Community Shield",
+"d": "e",
+"comp": "Cup Winners' Cup",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:454",
+"q": "Which body runs the World Cup?",
+"a": "FIFA",
+"d": "e",
+"comp": "World Cup",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:455",
+"q": "Which body runs the Champions League?",
+"a": "UEFA",
+"d": "e",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:456",
+"q": "What is a 'clean sheet'?",
+"a": "Not conceding a goal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:457",
+"q": "From how many yards is a penalty taken?",
+"a": "12",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:458",
+"q": "Which national team is nicknamed 'La Furia Roja'?",
+"a": "Spain",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:459",
+"q": "Which national team is nicknamed 'Oranje'?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:460",
+"q": "Which national team is nicknamed 'The Red Devils'?",
+"a": "Belgium",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:461",
+"q": "Which club are Celtic's Old Firm rivals?",
+"a": "Rangers",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:462",
+"q": "'El Clásico' is Real Madrid against which club?",
+"a": "Barcelona",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:463",
+"q": "The 'Derby della Madonnina' is between Inter and which club?",
+"a": "AC Milan",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:464",
+"q": "Which goalkeeper is known for his long run as Arsenal's number one in the 1990s?",
+"a": "David Seaman",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:465",
+"q": "Which club is famous for playing at 'The Theatre of Dreams'?",
+"a": "Manchester United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:466",
+"q": "How many points does a team get for a draw?",
+"a": "1",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:467",
+"q": "Which club did Jack Grealish join Manchester City from?",
+"a": "Aston Villa",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:468",
+"q": "Which club did Kai Havertz join Chelsea from?",
+"a": "Bayer Leverkusen",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:469",
+"q": "Which club did Jadon Sancho join Borussia Dortmund from?",
+"a": "Manchester City",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:470",
+"q": "Which club did Moisés Caicedo join Chelsea from?",
+"a": "Brighton & Hove Albion",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:471",
+"q": "Which club did Romelu Lukaku join from Everton in 2017?",
+"a": "Manchester United",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2017
+},
+{
+"ext": "fast-break:472",
+"q": "Which club did Robin van Persie join Arsenal from?",
+"a": "Feyenoord",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:473",
+"q": "Which club did Petr Čech join Chelsea from?",
+"a": "Rennes",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:474",
+"q": "Which club did Fernando Torres leave to join Liverpool in 2007?",
+"a": "Atlético Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2007
+},
+{
+"ext": "fast-break:475",
+"q": "Which club did Arjen Robben join Chelsea from?",
+"a": "PSV Eindhoven",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:476",
+"q": "Which club did Dimitar Berbatov join Manchester United from?",
+"a": "Tottenham Hotspur",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:477",
+"q": "Which club did Sergio Agüero join Manchester City from?",
+"a": "Atlético Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:478",
+"q": "Which club did Michael Carrick join Manchester United from?",
+"a": "Tottenham Hotspur",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:479",
+"q": "Who managed Liverpool to the 2005 Champions League title?",
+"a": "Rafael Benítez",
+"d": "m",
+"comp": "Champions League",
+"kind": "manager",
+"year": 2005
+},
+{
+"ext": "fast-break:480",
+"q": "Who managed Chelsea to the 2012 Champions League title?",
+"a": "Roberto Di Matteo",
+"d": "m",
+"comp": "Champions League",
+"kind": "manager",
+"year": 2012
+},
+{
+"ext": "fast-break:481",
+"q": "Who managed Manchester City to their first Premier League title in 2012?",
+"a": "Roberto Mancini",
+"d": "m",
+"comp": "Premier League",
+"kind": "manager",
+"year": 2012
+},
+{
+"ext": "fast-break:482",
+"q": "Who managed Blackburn Rovers to the 1994–95 Premier League title?",
+"a": "Kenny Dalglish",
+"d": "m",
+"comp": "Premier League",
+"kind": "manager",
+"year": 1995
+},
+{
+"ext": "fast-break:483",
+"q": "Who managed England at the 1990 World Cup?",
+"a": "Bobby Robson",
+"d": "m",
+"comp": "World Cup",
+"kind": "manager",
+"year": 1990
+},
+{
+"ext": "fast-break:484",
+"q": "Who managed Wales to the Euro 2016 semi-finals?",
+"a": "Chris Coleman",
+"d": "m",
+"comp": "Euros",
+"kind": "manager",
+"year": 2016
+},
+{
+"ext": "fast-break:485",
+"q": "Who managed Greece to victory at Euro 2004?",
+"a": "Otto Rehhagel",
+"d": "m",
+"comp": "Euros",
+"kind": "manager",
+"year": 2004
+},
+{
+"ext": "fast-break:486",
+"q": "Which country hosted the 2002 World Cup with South Korea?",
+"a": "Japan",
+"d": "m",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2002
+},
+{
+"ext": "fast-break:487",
+"q": "Which country hosted the 1998 World Cup?",
+"a": "France",
+"d": "m",
+"comp": "World Cup",
+"kind": "venue",
+"year": 1998
+},
+{
+"ext": "fast-break:488",
+"q": "Which country hosted Euro 2000 with Belgium?",
+"a": "Netherlands",
+"d": "m",
+"comp": "Euros",
+"kind": "venue",
+"year": 2000
+},
+{
+"ext": "fast-break:489",
+"q": "Which country won Euro 2024?",
+"a": "Spain",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": 2024
+},
+{
+"ext": "fast-break:490",
+"q": "Who scored a hat-trick in the 2022 World Cup final?",
+"a": "Kylian Mbappé",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2022
+},
+{
+"ext": "fast-break:491",
+"q": "Which club won the 2023 FA Cup final?",
+"a": "Manchester City",
+"d": "m",
+"comp": "FA Cup",
+"kind": "winner",
+"year": 2023
+},
+{
+"ext": "fast-break:492",
+"q": "Which club won the 2020–21 Scottish Premiership, ending Celtic's run of nine titles?",
+"a": "Rangers",
+"d": "m",
+"comp": "Premier League",
+"kind": "winner",
+"year": 2021
+},
+{
+"ext": "fast-break:493",
+"q": "Which club did Ronaldinho join from Paris Saint-Germain in 2003?",
+"a": "Barcelona",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2003
+},
+{
+"ext": "fast-break:494",
+"q": "Which club did Patrick Vieira join Arsenal from?",
+"a": "AC Milan",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:495",
+"q": "Which club did Gianfranco Zola join Chelsea from?",
+"a": "Parma",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:496",
+"q": "Who captained Italy to the 2006 World Cup?",
+"a": "Fabio Cannavaro",
+"d": "m",
+"comp": "World Cup",
+"kind": "captain",
+"year": 2006
+},
+{
+"ext": "fast-break:497",
+"q": "Which player won the Golden Ball at the 2022 World Cup?",
+"a": "Lionel Messi",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:498",
+"q": "How many Premier League titles did Sir Alex Ferguson win?",
+"a": "13",
+"d": "m",
+"comp": "Premier League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:499",
+"q": "Who was Arsenal's permanent manager immediately before Arsène Wenger?",
+"a": "Bruce Rioch",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:500",
+"q": "In which year did Wimbledon win the FA Cup, beating Liverpool?",
+"a": "1988",
+"d": "h",
+"comp": "FA Cup",
+"kind": "runner-up",
+"year": null
+},
+{
+"ext": "fast-break:501",
+"q": "Which club were the first winners of the League Cup, in 1961?",
+"a": "Aston Villa",
+"d": "h",
+"comp": "League Cup",
+"kind": "winner",
+"year": 1961
+},
+{
+"ext": "fast-break:502",
+"q": "Which country did Diego Forlán play for?",
+"a": "Uruguay",
+"d": "h",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:503",
+"q": "Who scored the first Premier League hat-trick, in 1992?",
+"a": "Eric Cantona",
+"d": "h",
+"comp": "Premier League",
+"kind": "scorer",
+"year": 1992
+},
+{
+"ext": "fast-break:504",
+"q": "Which club is nicknamed 'The Eagles'?",
+"a": "Crystal Palace",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:505",
+"q": "Which club is nicknamed 'Wolves'?",
+"a": "Wolverhampton Wanderers",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:506",
+"q": "In which city do Ajax play?",
+"a": "Amsterdam",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:507",
+"q": "In which country do Boca Juniors play?",
+"a": "Argentina",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:508",
+"q": "In which country do Shakhtar Donetsk play?",
+"a": "Ukraine",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:509",
+"q": "In which country do Copenhagen play?",
+"a": "Denmark",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:510",
+"q": "Which country did Andrea Pirlo play for?",
+"a": "Italy",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:511",
+"q": "Which country did Xavi play for?",
+"a": "Spain",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:512",
+"q": "Which country did Arjen Robben play for?",
+"a": "Netherlands",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:513",
+"q": "Which country does Martin Ødegaard play for?",
+"a": "Norway",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:514",
+"q": "Which club did Declan Rice join Arsenal from?",
+"a": "West Ham United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:515",
+"q": "Which club did Cole Palmer join Chelsea from?",
+"a": "Manchester City",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:516",
+"q": "Which club did Jude Bellingham join Real Madrid from?",
+"a": "Borussia Dortmund",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:517",
+"q": "Which club did Virgil van Dijk play for before Southampton?",
+"a": "Celtic",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:518",
+"q": "Which club did N'Golo Kanté join Chelsea from?",
+"a": "Leicester City",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:519",
+"q": "Which club did Riyad Mahrez join Manchester City from?",
+"a": "Leicester City",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:520",
+"q": "Which club did Cesc Fàbregas leave Arsenal to join in 2011?",
+"a": "Barcelona",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2011
+},
+{
+"ext": "fast-break:521",
+"q": "Which club did Alan Shearer join for a then world-record fee in 1996?",
+"a": "Newcastle United",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1996
+},
+{
+"ext": "fast-break:522",
+"q": "Which Premier League club did Jürgen Klopp manage?",
+"a": "Liverpool",
+"d": "e",
+"comp": "Premier League",
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:523",
+"q": "Which club did Mikel Arteta captain before becoming a manager?",
+"a": "Arsenal",
+"d": "m",
+"comp": null,
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:524",
+"q": "Who managed Nottingham Forest to back-to-back European Cups in 1979 and 1980?",
+"a": "Brian Clough",
+"d": "m",
+"comp": "Champions League",
+"kind": "manager",
+"year": 1979
+},
+{
+"ext": "fast-break:525",
+"q": "Who managed Liverpool to the 2019 Champions League title?",
+"a": "Jürgen Klopp",
+"d": "m",
+"comp": "Champions League",
+"kind": "manager",
+"year": 2019
+},
+{
+"ext": "fast-break:526",
+"q": "Who managed Spain to the 2010 World Cup?",
+"a": "Vicente del Bosque",
+"d": "m",
+"comp": "World Cup",
+"kind": "manager",
+"year": 2010
+},
+{
+"ext": "fast-break:527",
+"q": "Who managed Germany to the 2014 World Cup?",
+"a": "Joachim Löw",
+"d": "m",
+"comp": "World Cup",
+"kind": "manager",
+"year": 2014
+},
+{
+"ext": "fast-break:528",
+"q": "Who managed France to the 2018 World Cup?",
+"a": "Didier Deschamps",
+"d": "m",
+"comp": "World Cup",
+"kind": "manager",
+"year": 2018
+},
+{
+"ext": "fast-break:529",
+"q": "Which country did England beat in the Euro 2020 semi-final?",
+"a": "Denmark",
+"d": "m",
+"comp": "Euros",
+"kind": "runner-up",
+"year": 2020
+},
+{
+"ext": "fast-break:530",
+"q": "Which country did Wales beat 3–1 in the Euro 2016 quarter-final?",
+"a": "Belgium",
+"d": "m",
+"comp": "Euros",
+"kind": "runner-up",
+"year": 2016
+},
+{
+"ext": "fast-break:531",
+"q": "Which club went the whole 2003–04 Premier League season unbeaten?",
+"a": "Arsenal",
+"d": "e",
+"comp": "Premier League",
+"kind": "winner",
+"year": 2004
+},
+{
+"ext": "fast-break:532",
+"q": "Which club did Manchester United beat in the 1999 Champions League final?",
+"a": "Bayern Munich",
+"d": "m",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 1999
+},
+{
+"ext": "fast-break:533",
+"q": "Which club won the 1987 FA Cup final, beating Tottenham?",
+"a": "Coventry City",
+"d": "h",
+"comp": "FA Cup",
+"kind": "winner",
+"year": 1987
+},
+{
+"ext": "fast-break:534",
+"q": "Which club won the 1982 European Cup, beating Bayern Munich?",
+"a": "Aston Villa",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1982
+},
+{
+"ext": "fast-break:535",
+"q": "Which club plays its home games at Molineux?",
+"a": "Wolverhampton Wanderers",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:536",
+"q": "How many minutes does a normal football match last, not counting stoppage time?",
+"a": "90",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:537",
+"q": "What is it called when a player scores two goals in one match?",
+"a": "A brace",
+"d": "e",
+"comp": null,
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:538",
+"q": "What is it called when a player kicks the ball into their own net?",
+"a": "An own goal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:539",
+"q": "Where is the 'D' on a football pitch?",
+"a": "On the edge of the penalty area",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:540",
+"q": "Which club is Jamie Carragher's only professional club?",
+"a": "Liverpool",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:541",
+"q": "Which club is Ryan Giggs's only professional club?",
+"a": "Manchester United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:542",
+"q": "Which club is Francesco Totti's only professional club?",
+"a": "Roma",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:543",
+"q": "Which club is Paolo Maldini's only professional club?",
+"a": "AC Milan",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:544",
+"q": "Which club did Raheem Sterling make his professional debut for?",
+"a": "Liverpool",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:545",
+"q": "Which club did Harry Kane go out on loan to first, in 2011?",
+"a": "Leyton Orient",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2011
+},
+{
+"ext": "fast-break:546",
+"q": "Which club did David Beckham finish his playing career at?",
+"a": "Paris Saint-Germain",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:547",
+"q": "Which club did Zlatan Ibrahimović begin his career at?",
+"a": "Malmö",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:548",
+"q": "Which club did Kylian Mbappé begin his senior career at?",
+"a": "Monaco",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:549",
+"q": "Which club did Philippe Coutinho join Barcelona from?",
+"a": "Liverpool",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:550",
+"q": "Which club did Son Heung-min join Tottenham from?",
+"a": "Bayer Leverkusen",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:551",
+"q": "Which club did Bruno Fernandes join Manchester United from?",
+"a": "Sporting CP",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:552",
+"q": "Which club did Martin Ødegaard join Arsenal from?",
+"a": "Real Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:553",
+"q": "Which club did Bukayo Saka come through the academy at?",
+"a": "Arsenal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:554",
+"q": "Which club did Phil Foden come through the academy at?",
+"a": "Manchester City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:555",
+"q": "Which manager won the Champions League three years in a row with Real Madrid?",
+"a": "Zinedine Zidane",
+"d": "m",
+"comp": "Champions League",
+"kind": "manager",
+"year": null
+},
+{
+"ext": "fast-break:556",
+"q": "Which country reached the 2022 World Cup semi-finals as the first African side to do so?",
+"a": "Morocco",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": 2022
+},
+{
+"ext": "fast-break:557",
+"q": "Which country beat Argentina 2–1 in their opening match of the 2022 World Cup?",
+"a": "Saudi Arabia",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:558",
+"q": "Which country did Germany beat 7–1 in the 2014 World Cup semi-final?",
+"a": "Brazil",
+"d": "m",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 2014
+},
+{
+"ext": "fast-break:559",
+"q": "Which country beat England in the Euro 2020 final?",
+"a": "Italy",
+"d": "m",
+"comp": "Euros",
+"kind": "winner",
+"year": 2020
+},
+{
+"ext": "fast-break:560",
+"q": "Who was sent off for a headbutt in the 2006 World Cup final?",
+"a": "Zinedine Zidane",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": 2006
+},
+{
+"ext": "fast-break:561",
+"q": "Which goalkeeper won the Golden Glove at the 2022 World Cup?",
+"a": "Emiliano Martínez",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:562",
+"q": "Who scored Arsenal's winning goal at Old Trafford in 2002 to clinch the title?",
+"a": "Sylvain Wiltord",
+"d": "h",
+"comp": "Premier League",
+"kind": "scorer",
+"year": 2002
+},
+{
+"ext": "fast-break:563",
+"q": "Which country does Florian Wirtz play for?",
+"a": "Germany",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:564",
+"q": "Who shared the 2021–22 Golden Boot with Mohamed Salah?",
+"a": "Son Heung-min",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2022
+},
+{
+"ext": "fast-break:565",
+"q": "Highbury was home to which club until 2006?",
+"a": "Arsenal",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2006
+},
+{
+"ext": "fast-break:566",
+"q": "Which club won four League Cups in a row from 2018 to 2021?",
+"a": "Manchester City",
+"d": "e",
+"comp": "League Cup",
+"kind": "winner",
+"year": 2018
+},
+{
+"ext": "fast-break:567",
+"q": "Who did Spain beat in the Euro 2024 final?",
+"a": "England",
+"d": "e",
+"comp": "Euros",
+"kind": "runner-up",
+"year": 2024
+},
+{
+"ext": "fast-break:568",
+"q": "Which club plays at the King Power Stadium?",
+"a": "Leicester City",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:569",
+"q": "At which club was Cristiano Ronaldo when he won his first Ballon d'Or in 2008?",
+"a": "Manchester United",
+"d": "e",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2008
+},
+{
+"ext": "fast-break:570",
+"q": "Who did Barcelona beat in the 2006 Champions League final?",
+"a": "Arsenal",
+"d": "e",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2006
+},
+{
+"ext": "fast-break:571",
+"q": "Which Man City midfielder won PFA Player of the Year in 2023–24?",
+"a": "Phil Foden",
+"d": "e",
+"comp": "PFA",
+"kind": "winner",
+"year": 2024
+},
+{
+"ext": "fast-break:572",
+"q": "How many World Cups have Brazil won?",
+"a": "5",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:573",
+"q": "Which three players shared the 2018–19 Golden Boot?",
+"a": "Salah, Mané and Aubameyang",
+"d": "m",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2019
+},
+{
+"ext": "fast-break:574",
+"q": "Who broke the world transfer record moving from Barcelona to Real Madrid in 2000?",
+"a": "Luís Figo",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2000
+},
+{
+"ext": "fast-break:575",
+"q": "Who has won the PFA Players' Player of the Year a record three times?",
+"a": "Mohamed Salah",
+"d": "m",
+"comp": "PFA",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:576",
+"q": "Which Bulgarian won the 1994 Ballon d'Or?",
+"a": "Hristo Stoichkov",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 1994
+},
+{
+"ext": "fast-break:577",
+"q": "How did Germany win the Euro 96 final against the Czech Republic?",
+"a": "Golden goal",
+"d": "m",
+"comp": "Euros",
+"kind": "winner",
+"year": 1996
+},
+{
+"ext": "fast-break:578",
+"q": "Who did Italy beat in the 1982 World Cup final?",
+"a": "West Germany",
+"d": "m",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 1982
+},
+{
+"ext": "fast-break:579",
+"q": "Which Scottish club is nicknamed 'The Jam Tarts'?",
+"a": "Hearts",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:580",
+"q": "Which stadium hosted the World Cup finals of both 1970 and 1986?",
+"a": "Estadio Azteca",
+"d": "h",
+"comp": "World Cup",
+"kind": "venue",
+"year": 1970
+},
+{
+"ext": "fast-break:581",
+"q": "Where was the 1999 Champions League final between Man Utd and Bayern played?",
+"a": "Camp Nou",
+"d": "h",
+"comp": "Champions League",
+"kind": "venue",
+"year": 1999
+},
+{
+"ext": "fast-break:582",
+"q": "Which country won the Asian Cup in 2019, beating Japan in the final?",
+"a": "Qatar",
+"d": "h",
+"comp": "Asian Cup",
+"kind": "winner",
+"year": 2019
+},
+{
+"ext": "fast-break:583",
+"q": "Who did Senegal beat on penalties in the 2021 AFCON final?",
+"a": "Egypt",
+"d": "h",
+"comp": "AFCON",
+"kind": "runner-up",
+"year": 2021
+},
+{
+"ext": "fast-break:584",
+"q": "Which Man City player won PFA Player of the Year in both 2019–20 and 2020–21?",
+"a": "Kevin De Bruyne",
+"d": "e",
+"comp": "PFA",
+"kind": "winner",
+"year": 2020
+},
+{
+"ext": "fast-break:585",
+"q": "Who did Liverpool beat in the 2024 League Cup final?",
+"a": "Chelsea",
+"d": "e",
+"comp": "League Cup",
+"kind": "runner-up",
+"year": 2024
+},
+{
+"ext": "fast-break:586",
+"q": "Which Blackburn striker won back-to-back Golden Boots in 1994–95 and 1995–96?",
+"a": "Alan Shearer",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 1995
+},
+{
+"ext": "fast-break:587",
+"q": "How many Ballon d'Or awards has Lionel Messi won?",
+"a": "8",
+"d": "e",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:588",
+"q": "Which country beat Brazil 3–0 in the 1998 World Cup final?",
+"a": "France",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 1998
+},
+{
+"ext": "fast-break:589",
+"q": "Which club played at Maine Road until 2003?",
+"a": "Manchester City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2003
+},
+{
+"ext": "fast-break:590",
+"q": "Who did Barcelona beat in the 2015 Champions League final in Berlin?",
+"a": "Juventus",
+"d": "e",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2015
+},
+{
+"ext": "fast-break:591",
+"q": "Which club plays at the Riverside Stadium?",
+"a": "Middlesbrough",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:592",
+"q": "Who won the Golden Boot in 2002–03 for Manchester United?",
+"a": "Ruud van Nistelrooy",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2003
+},
+{
+"ext": "fast-break:593",
+"q": "How many World Cups have Spain won after their 2026 triumph?",
+"a": "2",
+"d": "m",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2026
+},
+{
+"ext": "fast-break:594",
+"q": "Which Czech midfielder won the 2003 Ballon d'Or?",
+"a": "Pavel Nedvěd",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2003
+},
+{
+"ext": "fast-break:595",
+"q": "How many European Cups/Champions Leagues have Real Madrid won?",
+"a": "15",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:596",
+"q": "Which club is nicknamed 'The Latics'?",
+"a": "Wigan Athletic",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:597",
+"q": "Who won the Premier League Golden Boot in the first season, 1992–93?",
+"a": "Teddy Sheringham",
+"d": "m",
+"comp": "Premier League",
+"kind": "scorer",
+"year": 1993
+},
+{
+"ext": "fast-break:598",
+"q": "Who scored the fastest Premier League goal, after 7.69 seconds in 2019?",
+"a": "Shane Long",
+"d": "m",
+"comp": "Premier League",
+"kind": "scorer",
+"year": 2019
+},
+{
+"ext": "fast-break:599",
+"q": "Which country won Euro 92, beating Germany in the final?",
+"a": "Denmark",
+"d": "m",
+"comp": "Euros",
+"kind": "winner",
+"year": 1992
+},
+{
+"ext": "fast-break:600",
+"q": "Who won the 2023 Africa Cup of Nations, beating Nigeria in the final?",
+"a": "Ivory Coast",
+"d": "h",
+"comp": "AFCON",
+"kind": "winner",
+"year": 2023
+},
+{
+"ext": "fast-break:601",
+"q": "Which country has won the most Africa Cup of Nations titles?",
+"a": "Egypt",
+"d": "h",
+"comp": "AFCON",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:602",
+"q": "Which team did West Germany beat in the 1954 World Cup final?",
+"a": "Hungary",
+"d": "h",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 1954
+},
+{
+"ext": "fast-break:603",
+"q": "Which Scottish stadium hosted the 2002 Champions League final?",
+"a": "Hampden Park",
+"d": "h",
+"comp": "Champions League",
+"kind": "venue",
+"year": 2002
+},
+{
+"ext": "fast-break:604",
+"q": "Which club signed Alexander Isak from Newcastle in 2025?",
+"a": "Liverpool",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2025
+},
+{
+"ext": "fast-break:605",
+"q": "Who did Argentina beat in the 2024 Copa América final?",
+"a": "Colombia",
+"d": "e",
+"comp": "Copa América",
+"kind": "runner-up",
+"year": 2024
+},
+{
+"ext": "fast-break:606",
+"q": "Who did Manchester United beat in the 2023 League Cup final?",
+"a": "Newcastle United",
+"d": "e",
+"comp": "League Cup",
+"kind": "runner-up",
+"year": 2023
+},
+{
+"ext": "fast-break:607",
+"q": "Who did Brazil beat in the 2002 World Cup final?",
+"a": "Germany",
+"d": "e",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 2002
+},
+{
+"ext": "fast-break:608",
+"q": "Which club played at the Boleyn Ground until 2016?",
+"a": "West Ham United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2016
+},
+{
+"ext": "fast-break:609",
+"q": "Who won the Golden Boot in 2007–08 with 31 goals for Manchester United?",
+"a": "Cristiano Ronaldo",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2008
+},
+{
+"ext": "fast-break:610",
+"q": "Which Chelsea striker won the 2000–01 Golden Boot?",
+"a": "Jimmy Floyd Hasselbaink",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2001
+},
+{
+"ext": "fast-break:611",
+"q": "Which Tottenham player won PFA Player of the Year twice, in 2010–11 and 2012–13?",
+"a": "Gareth Bale",
+"d": "e",
+"comp": "PFA",
+"kind": "winner",
+"year": 2011
+},
+{
+"ext": "fast-break:612",
+"q": "Who did Chelsea beat in the 2021 Champions League final?",
+"a": "Manchester City",
+"d": "e",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2021
+},
+{
+"ext": "fast-break:613",
+"q": "Filbert Street was the home of which club until 2002?",
+"a": "Leicester City",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2002
+},
+{
+"ext": "fast-break:614",
+"q": "Which club lost the Champions League finals of 2000 and 2001?",
+"a": "Valencia",
+"d": "m",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2000
+},
+{
+"ext": "fast-break:615",
+"q": "Which Arsenal forward won PFA Player of the Year in 1997–98?",
+"a": "Dennis Bergkamp",
+"d": "m",
+"comp": "PFA",
+"kind": "winner",
+"year": 1998
+},
+{
+"ext": "fast-break:616",
+"q": "Which Dutchman won the 1992 Ballon d'Or?",
+"a": "Marco van Basten",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 1992
+},
+{
+"ext": "fast-break:617",
+"q": "Liverpool won the 2022 League Cup final on penalties. What was the shoot-out score?",
+"a": "11–10",
+"d": "m",
+"comp": "League Cup",
+"kind": "winner",
+"year": 2022
+},
+{
+"ext": "fast-break:618",
+"q": "Who scored the winner in the 2026 World Cup final?",
+"a": "Ferran Torres",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2026
+},
+{
+"ext": "fast-break:619",
+"q": "How many Premier League Golden Boots did Thierry Henry win?",
+"a": "4",
+"d": "m",
+"comp": "Premier League",
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:620",
+"q": "In which city was the Euro 2024 final played?",
+"a": "Berlin",
+"d": "h",
+"comp": "Euros",
+"kind": "venue",
+"year": 2024
+},
+{
+"ext": "fast-break:621",
+"q": "Which stadium hosted the 2026 World Cup final?",
+"a": "MetLife Stadium",
+"d": "h",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2026
+},
+{
+"ext": "fast-break:622",
+"q": "Which country won the 2004 AFCON, beating Morocco 2–1?",
+"a": "Tunisia",
+"d": "h",
+"comp": "AFCON",
+"kind": "winner",
+"year": 2004
+},
+{
+"ext": "fast-break:623",
+"q": "Which Welsh stadium hosted the 2017 Champions League final?",
+"a": "Millennium Stadium",
+"d": "h",
+"comp": "Champions League",
+"kind": "venue",
+"year": 2017
+},
+{
+"ext": "fast-break:624",
+"q": "Which Leicester player won the Golden Boot in 2019–20?",
+"a": "Jamie Vardy",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2020
+},
+{
+"ext": "fast-break:625",
+"q": "Who did France beat in the 2018 World Cup final?",
+"a": "Croatia",
+"d": "e",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 2018
+},
+{
+"ext": "fast-break:626",
+"q": "How many European Championships have Spain won?",
+"a": "4",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:627",
+"q": "Which club signed Paul Pogba from Juventus in 2016 for a world-record fee?",
+"a": "Manchester United",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2016
+},
+{
+"ext": "fast-break:628",
+"q": "Who won the Golden Boot in 2013–14 with 31 goals for Liverpool?",
+"a": "Luis Suárez",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2014
+},
+{
+"ext": "fast-break:629",
+"q": "Which Welsh club is nicknamed 'The Bluebirds'?",
+"a": "Cardiff City",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:630",
+"q": "Which defender won PFA Player of the Year in 2018–19?",
+"a": "Virgil van Dijk",
+"d": "e",
+"comp": "PFA",
+"kind": "winner",
+"year": 2019
+},
+{
+"ext": "fast-break:631",
+"q": "Which club plays at Ewood Park?",
+"a": "Blackburn Rovers",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:632",
+"q": "Who did Manchester City beat in the 2023 Champions League final?",
+"a": "Inter Milan",
+"d": "e",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2023
+},
+{
+"ext": "fast-break:633",
+"q": "Which Croatian won the Golden Boot at the 1998 World Cup?",
+"a": "Davor Šuker",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 1998
+},
+{
+"ext": "fast-break:634",
+"q": "Which club won the 2002 League Cup, beating Spurs 2–1 in the final?",
+"a": "Blackburn Rovers",
+"d": "m",
+"comp": "League Cup",
+"kind": "winner",
+"year": 2002
+},
+{
+"ext": "fast-break:635",
+"q": "Which Chelsea player won the Golden Boot in 2009–10 with 29 goals?",
+"a": "Didier Drogba",
+"d": "m",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2010
+},
+{
+"ext": "fast-break:636",
+"q": "Roker Park was the home of which club until 1997?",
+"a": "Sunderland",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 1997
+},
+{
+"ext": "fast-break:637",
+"q": "Which Chelsea captain won PFA Player of the Year in 2004–05?",
+"a": "John Terry",
+"d": "m",
+"comp": "PFA",
+"kind": "captain",
+"year": 2005
+},
+{
+"ext": "fast-break:638",
+"q": "Which German won the 1996 Ballon d'Or while at Borussia Dortmund?",
+"a": "Matthias Sammer",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 1996
+},
+{
+"ext": "fast-break:639",
+"q": "Who beat AC Milan 1–0 in the 1995 Champions League final?",
+"a": "Ajax",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1995
+},
+{
+"ext": "fast-break:640",
+"q": "Which country won the 2012 AFCON, beating Ivory Coast on penalties?",
+"a": "Zambia",
+"d": "h",
+"comp": "AFCON",
+"kind": "winner",
+"year": 2012
+},
+{
+"ext": "fast-break:641",
+"q": "Which Aston Villa defender won PFA Player of the Year in 1992–93?",
+"a": "Paul McGrath",
+"d": "h",
+"comp": "PFA",
+"kind": "winner",
+"year": 1993
+},
+{
+"ext": "fast-break:642",
+"q": "How many goals did Ronaldo score to top the 2002 World Cup scoring charts?",
+"a": "8",
+"d": "h",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2002
+},
+{
+"ext": "fast-break:643",
+"q": "Which club won the 1991 European Cup final on penalties against Marseille?",
+"a": "Red Star Belgrade",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": 1991
+},
+{
+"ext": "fast-break:644",
+"q": "Which Chelsea midfielder won PFA Player of the Year in 2016–17?",
+"a": "N'Golo Kanté",
+"d": "e",
+"comp": "PFA",
+"kind": "winner",
+"year": 2017
+},
+{
+"ext": "fast-break:645",
+"q": "Which country won Euro 2004?",
+"a": "Greece",
+"d": "e",
+"comp": "Euros",
+"kind": "winner",
+"year": 2004
+},
+{
+"ext": "fast-break:646",
+"q": "Which club plays at Pride Park?",
+"a": "Derby County",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:647",
+"q": "Who did Manchester United beat in the 2008 Champions League final in Moscow?",
+"a": "Chelsea",
+"d": "e",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2008
+},
+{
+"ext": "fast-break:648",
+"q": "Which club has won the most FA Cups?",
+"a": "Arsenal",
+"d": "e",
+"comp": "FA Cup",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:649",
+"q": "Which Manchester City striker won the Golden Boot in 2014–15?",
+"a": "Sergio Agüero",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2015
+},
+{
+"ext": "fast-break:650",
+"q": "Which club sold Kylian Mbappé to PSG in 2017?",
+"a": "Monaco",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2017
+},
+{
+"ext": "fast-break:651",
+"q": "Who did Spain beat in the 2026 World Cup final?",
+"a": "Argentina",
+"d": "e",
+"comp": "World Cup",
+"kind": "runner-up",
+"year": 2026
+},
+{
+"ext": "fast-break:652",
+"q": "Who won the Golden Boot with Arsenal in 2011–12 before moving to Man Utd?",
+"a": "Robin van Persie",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2012
+},
+{
+"ext": "fast-break:653",
+"q": "Which Liverpool striker won the Ballon d'Or in 2001?",
+"a": "Michael Owen",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2001
+},
+{
+"ext": "fast-break:654",
+"q": "Which German was top scorer at the 2010 World Cup?",
+"a": "Thomas Müller",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2010
+},
+{
+"ext": "fast-break:655",
+"q": "The Dell was the home of which club until 2001?",
+"a": "Southampton",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2001
+},
+{
+"ext": "fast-break:656",
+"q": "Who won the 2010 Champions League final at the Bernabéu?",
+"a": "Inter Milan",
+"d": "m",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2010
+},
+{
+"ext": "fast-break:657",
+"q": "Which club won the League Cup in 1997 and 2000?",
+"a": "Leicester City",
+"d": "m",
+"comp": "League Cup",
+"kind": "winner",
+"year": 1997
+},
+{
+"ext": "fast-break:658",
+"q": "Which Manchester United captain won PFA Player of the Year in 1999–2000?",
+"a": "Roy Keane",
+"d": "m",
+"comp": "PFA",
+"kind": "captain",
+"year": 1999
+},
+{
+"ext": "fast-break:659",
+"q": "Which Coventry striker shared the 1997–98 Golden Boot?",
+"a": "Dion Dublin",
+"d": "m",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 1998
+},
+{
+"ext": "fast-break:660",
+"q": "Which country won the 2013 AFCON, beating Burkina Faso in the final?",
+"a": "Nigeria",
+"d": "h",
+"comp": "AFCON",
+"kind": "winner",
+"year": 2013
+},
+{
+"ext": "fast-break:661",
+"q": "Which Brazilian joined Real Betis for a world-record fee in 1998?",
+"a": "Denílson",
+"d": "h",
+"comp": null,
+"kind": "other",
+"year": 1998
+},
+{
+"ext": "fast-break:662",
+"q": "In which city was the 2018 World Cup final played?",
+"a": "Moscow",
+"d": "h",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2018
+},
+{
+"ext": "fast-break:663",
+"q": "Which Russian shared the 1994 World Cup Golden Boot?",
+"a": "Oleg Salenko",
+"d": "h",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 1994
+},
+{
+"ext": "fast-break:664",
+"q": "Which Chelsea player won PFA Player of the Year in 2014–15?",
+"a": "Eden Hazard",
+"d": "e",
+"comp": "PFA",
+"kind": "winner",
+"year": 2015
+},
+{
+"ext": "fast-break:665",
+"q": "Who did Italy beat on penalties in the Euro 2020 final?",
+"a": "England",
+"d": "e",
+"comp": "Euros",
+"kind": "runner-up",
+"year": 2020
+},
+{
+"ext": "fast-break:666",
+"q": "Which club plays at St Mary's Stadium?",
+"a": "Southampton",
+"d": "e",
+"comp": null,
+"kind": "venue",
+"year": null
+},
+{
+"ext": "fast-break:667",
+"q": "Which Spurs striker won the Golden Boot in both 2015–16 and 2016–17?",
+"a": "Harry Kane",
+"d": "e",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 2016
+},
+{
+"ext": "fast-break:668",
+"q": "Who won the 2026 World Cup?",
+"a": "Spain",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2026
+},
+{
+"ext": "fast-break:669",
+"q": "Which club sold Zinedine Zidane to Real Madrid in 2001?",
+"a": "Juventus",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": 2001
+},
+{
+"ext": "fast-break:670",
+"q": "Which Welsh club won the League Cup in 2013, beating Bradford 5–0?",
+"a": "Swansea City",
+"d": "e",
+"comp": "League Cup",
+"kind": "winner",
+"year": 2013
+},
+{
+"ext": "fast-break:671",
+"q": "Who did Real Madrid beat in the 2018 Champions League final in Kyiv?",
+"a": "Liverpool",
+"d": "e",
+"comp": "Champions League",
+"kind": "runner-up",
+"year": 2018
+},
+{
+"ext": "fast-break:672",
+"q": "Which club reached 100 points in a Premier League season in 2017–18?",
+"a": "Manchester City",
+"d": "e",
+"comp": "Premier League",
+"kind": "other",
+"year": 2018
+},
+{
+"ext": "fast-break:673",
+"q": "Which Newcastle player won the 1993–94 Golden Boot with 34 goals?",
+"a": "Andy Cole",
+"d": "m",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 1994
+},
+{
+"ext": "fast-break:674",
+"q": "Which Newcastle striker won PFA Player of the Year in 1995–96?",
+"a": "Les Ferdinand",
+"d": "m",
+"comp": "PFA",
+"kind": "winner",
+"year": 1996
+},
+{
+"ext": "fast-break:675",
+"q": "What was the score in the 2018 World Cup final?",
+"a": "4–2",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": 2018
+},
+{
+"ext": "fast-break:676",
+"q": "Which Portuguese player won the 2000 Ballon d'Or?",
+"a": "Luís Figo",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2000
+},
+{
+"ext": "fast-break:677",
+"q": "Which Italian was top scorer at Italia 90?",
+"a": "Salvatore Schillaci",
+"d": "m",
+"comp": null,
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:678",
+"q": "Which club moved to the Hill Dickinson Stadium in 2025?",
+"a": "Everton",
+"d": "m",
+"comp": null,
+"kind": "venue",
+"year": 2025
+},
+{
+"ext": "fast-break:679",
+"q": "Which club won the League Cup in 2004, its first major trophy?",
+"a": "Middlesbrough",
+"d": "m",
+"comp": "League Cup",
+"kind": "winner",
+"year": 2004
+},
+{
+"ext": "fast-break:680",
+"q": "Where was the 1994 World Cup final played?",
+"a": "Rose Bowl, Pasadena",
+"d": "h",
+"comp": "World Cup",
+"kind": "venue",
+"year": 1994
+},
+{
+"ext": "fast-break:681",
+"q": "Who was top scorer at the 1966 World Cup with 9 goals?",
+"a": "Eusébio",
+"d": "h",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 1966
+},
+{
+"ext": "fast-break:682",
+"q": "In which city did Liverpool win the 2005 Champions League final?",
+"a": "Istanbul",
+"d": "h",
+"comp": "Champions League",
+"kind": "venue",
+"year": 2005
+},
+{
+"ext": "fast-break:683",
+"q": "Which country won three AFCONs in a row in 2006, 2008 and 2010?",
+"a": "Egypt",
+"d": "h",
+"comp": "AFCON",
+"kind": "winner",
+"year": 2006
+},
+{
+"ext": "fast-break:684",
+"q": "Which club plays at The Hawthorns?",
+"a": "West Bromwich Albion",
+"d": "e",
+"comp": null,
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:685",
+"q": "Who scored 36 Premier League goals in 2022–23, a single-season record?",
+"a": "Erling Haaland",
+"d": "e",
+"comp": "Premier League",
+"kind": "scorer",
+"year": 2023
+},
+{
+"ext": "fast-break:686",
+"q": "Which club has won the League Cup the most times?",
+"a": "Liverpool",
+"d": "e",
+"comp": "League Cup",
+"kind": "winner",
+"year": null
+},
+{
+"ext": "fast-break:687",
+"q": "Who did Portugal beat in the Euro 2016 final?",
+"a": "France",
+"d": "e",
+"comp": "Euros",
+"kind": "runner-up",
+"year": 2016
+},
+{
+"ext": "fast-break:688",
+"q": "How did Italy win the 2006 World Cup final against France?",
+"a": "On penalties",
+"d": "e",
+"comp": "World Cup",
+"kind": "winner",
+"year": 2006
+},
+{
+"ext": "fast-break:689",
+"q": "Which Leicester player won PFA Player of the Year in 2015–16?",
+"a": "Riyad Mahrez",
+"d": "e",
+"comp": "PFA",
+"kind": "winner",
+"year": 2016
+},
+{
+"ext": "fast-break:690",
+"q": "Which two clubs met in the all-German 2013 Champions League final?",
+"a": "Bayern Munich and Borussia Dortmund",
+"d": "e",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2013
+},
+{
+"ext": "fast-break:691",
+"q": "Who has scored the most Premier League goals?",
+"a": "Alan Shearer",
+"d": "e",
+"comp": "Premier League",
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:692",
+"q": "Who won the Golden Boot at the 2026 World Cup?",
+"a": "Kylian Mbappé",
+"d": "e",
+"comp": "World Cup",
+"kind": "scorer",
+"year": 2026
+},
+{
+"ext": "fast-break:693",
+"q": "Who is the all-time top scorer at World Cups, with 22 goals?",
+"a": "Kylian Mbappé",
+"d": "m",
+"comp": "World Cup",
+"kind": "scorer",
+"year": null
+},
+{
+"ext": "fast-break:694",
+"q": "Which club signed João Félix from Benfica in 2019?",
+"a": "Atlético Madrid",
+"d": "m",
+"comp": null,
+"kind": "other",
+"year": 2019
+},
+{
+"ext": "fast-break:695",
+"q": "Which country lost World Cup finals in 1974, 1978 and 2010?",
+"a": "Netherlands",
+"d": "m",
+"comp": "World Cup",
+"kind": "other",
+"year": 1974
+},
+{
+"ext": "fast-break:696",
+"q": "Which Sunderland striker won the Golden Boot in 1999–2000 with 30 goals?",
+"a": "Kevin Phillips",
+"d": "m",
+"comp": "PL Golden Boot",
+"kind": "scorer",
+"year": 1999
+},
+{
+"ext": "fast-break:697",
+"q": "Which club won the League Cup in 2011, beating Arsenal 2–1?",
+"a": "Birmingham City",
+"d": "m",
+"comp": "League Cup",
+"kind": "winner",
+"year": 2011
+},
+{
+"ext": "fast-break:698",
+"q": "Which Spurs winger won PFA Player of the Year in 1998–99?",
+"a": "David Ginola",
+"d": "m",
+"comp": "PFA",
+"kind": "winner",
+"year": 1999
+},
+{
+"ext": "fast-break:699",
+"q": "Which Ukrainian won the 2004 Ballon d'Or?",
+"a": "Andriy Shevchenko",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "winner",
+"year": 2004
+},
+{
+"ext": "fast-break:700",
+"q": "In which year was the Ballon d'Or not awarded?",
+"a": "2020",
+"d": "m",
+"comp": "Ballon d'Or",
+"kind": "other",
+"year": null
+},
+{
+"ext": "fast-break:701",
+"q": "Where did Chelsea beat Bayern Munich in the 2012 Champions League final?",
+"a": "Allianz Arena, Munich",
+"d": "h",
+"comp": "Champions League",
+"kind": "winner",
+"year": 2012
+},
+{
+"ext": "fast-break:702",
+"q": "Which host nation won the 1996 Africa Cup of Nations?",
+"a": "South Africa",
+"d": "h",
+"comp": "AFCON",
+"kind": "winner",
+"year": 1996
+},
+{
+"ext": "fast-break:703",
+"q": "Which stadium hosted the 2014 World Cup final?",
+"a": "Maracanã",
+"d": "h",
+"comp": "World Cup",
+"kind": "venue",
+"year": 2014
+}
+]

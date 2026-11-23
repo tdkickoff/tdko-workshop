@@ -1,0 +1,57 @@
+# winner | comp | year | final (winner first) | src ; then rounds "R|opp|score"
+ARG|World Cup|2022|3–3 (4–2 pens)|Wikipedia 2022 FIFA World Cup final
+G|Saudi Arabia|1–2
+G|Mexico|2–0
+G|Poland|2–0
+R16|Australia|2–1
+QF|Netherlands|2–2 aet (4–3 pens)
+SF|Croatia|3–0
+F|France
+FRA|World Cup|2018|4–2|Wikiwand 2018 FIFA World Cup final
+G|Australia|2–1
+G|Peru|1–0
+G|Denmark|0–0
+R16|Argentina|4–3
+QF|Uruguay|2–0
+SF|Belgium|1–0
+F|Croatia
+GER|World Cup|2014|1–0 aet|Wikipedia 2014 FIFA World Cup final
+G|Portugal|4–0
+G|Ghana|2–2
+G|United States|1–0
+R16|Algeria|2–1 aet
+QF|France|1–0
+SF|Brazil|7–1
+F|Argentina
+ESP|World Cup|2010|1–0 aet|Wikipedia 2010 FIFA World Cup final
+G|Switzerland|0–1
+G|Honduras|2–0
+G|Chile|2–1
+R16|Portugal|1–0
+QF|Paraguay|1–0
+SF|Germany|1–0
+F|Netherlands
+ITA|World Cup|2006|1–1 aet (5–3 pens)|Wikipedia 2006 FIFA World Cup final
+G|Ghana|2–0
+G|United States|1–1
+G|Czech Republic|2–0
+R16|Australia|1–0
+QF|Ukraine|3–0
+SF|Germany|2–0 aet
+F|France
+BRA|World Cup|2002|2–0|Wikipedia 2002 FIFA World Cup final
+G|Turkey|2–1
+G|China|4–0
+G|Costa Rica|5–2
+R16|Belgium|2–0
+QF|England|2–1
+SF|Turkey|1–0
+F|Germany
+FRA|World Cup|1998|3–0|Wikipedia 1998 FIFA World Cup final
+G|South Africa|3–0
+G|Saudi Arabia|4–0
+G|Denmark|2–1
+R16|Paraguay|1–0 aet
+QF|Italy|0–0 aet (4–3 pens)
+SF|Croatia|2–1
+F|Brazil

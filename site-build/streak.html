@@ -1,0 +1,64 @@
+<style>
+/* streaks: kept on this device only, read from the daily status the games already save */
+.streakcard .inner{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0}
+.streakcard .sk{padding:16px 20px;display:flex;flex-direction:column;gap:4px}
+.streakcard .sk+.sk{border-left:1px solid var(--line)}
+.streakcard .sk b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:52px;line-height:.85;font-variant-numeric:tabular-nums}
+.streakcard .sk b small{font-family:var(--f-mono);font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-left:6px}
+.streakcard .sk.on b{color:var(--accent)}
+.streakcard .note{grid-column:1/-1;border-top:1px solid var(--line);padding:10px 20px;font-family:var(--f-mono);font-size:12px;letter-spacing:.03em;color:var(--muted)}
+.streakcard .note.bad{color:var(--bad)}
+</style>
+<script>
+/* Streak = days in a row this game was played to full time on this device. Giving up or missing a day resets it.
+   Today's puzzle not played yet keeps yesterday's streak alive until midnight. */
+function tdkoDateKey(d){ return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+function tdkoDoneDates(gid, gave){ const out=new Set();
+  try{ for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i), m=/^tdko:(\d{4}-\d\d-\d\d)#\d+$/.exec(k||''); if(!m) continue;
+    let r={}; try{ r=JSON.parse(localStorage.getItem(k)||'{}')[gid]; }catch(e){}
+    if(r && r.status==='done' && (gave ? r.gaveUp : !r.gaveUp)) out.add(m[1]); } }catch(e){}
+  return out; }
+function tdkoStreak(gid){
+  const done=tdkoDoneDates(gid), now=new Date(), todayKey=tdkoDateKey(now), today=done.has(todayKey);
+  let cur=0; const x=new Date(now.getFullYear(),now.getMonth(),now.getDate()); if(!today) x.setDate(x.getDate()-1);
+  while(done.has(tdkoDateKey(x))){ cur++; x.setDate(x.getDate()-1); }
+  const gaveToday=tdkoDoneDates(gid,true).has(todayKey); if(gaveToday) cur=0;   // giving up today ends the run
+  let best=0, run=0, prev=null;
+  [...done].sort().forEach(k=>{ const [y,m,d]=k.split('-').map(Number), t=new Date(y,m-1,d);
+    if(prev){ const n=new Date(prev); n.setDate(n.getDate()+1); run = tdkoDateKey(n)===k ? run+1 : 1; } else run=1;
+    prev=t; best=Math.max(best,run); });
+  return {cur, best:Math.max(best,cur), today, gaveToday};
+}
+function tdkoStreakCard(gid){
+  const s=tdkoStreak(gid), day=n=>n===1?'day':'days';
+  const note = s.gaveToday ? '<div class="note bad">Giving up resets your streak. Play to full time tomorrow to start a new one.</div>'
+    : s.cur>=2 ? `<div class="note">${s.cur} in a row. Come back tomorrow to keep it going.</div>`
+    : s.cur===1 ? '<div class="note">Day one. Come back tomorrow to make it two.</div>'
+    : '<div class="note">Play to full time tomorrow to start a streak.</div>';
+  return `<section class="card streakcard"><div class="inner">
+    <div class="sk${s.cur?' on':''}"><span class="eyebrow">Streak</span><b>${s.cur}<small>${day(s.cur)}</small></b></div>
+    <div class="sk"><span class="eyebrow">Best</span><b>${s.best}<small>${day(s.best)}</small></b></div>
+    ${note}</div></section>`;
+}
+</script>
+<script>
+/* Kick-off and full-time times for each game, kept beside the daily status (tdko-t:<date>#<no>) so the menu can show how long all eight took */
+function tdkoStamp(k, gid, r){ try{ if(!r || r.status==='ready') return; const tk=k.replace(/^tdko:/,'tdko-t:'), all=JSON.parse(localStorage.getItem(tk)||'{}'), t=all[gid]||{}, now=Date.now();
+  const day=(/^tdko:(\d{4}-\d\d-\d\d)/.exec(k)||[])[1];
+  if(!t.s){ t.s=now; tdkoPlay(day, gid, 'start'); } if(r.status==='done' && !t.e){ t.e=now; tdkoPlay(day, gid, 'finish', !!r.gaveUp); }
+  all[gid]=t; localStorage.setItem(tk, JSON.stringify(all)); }catch(e){} }
+/* Replays: each replay run played to full time is counted once in "total completes" (run number kept per game and day on this device) */
+function tdkoReplayNew(gid){ try{ const k='tdko-rp:'+gid, o=JSON.parse(localStorage.getItem(k)||'{}'), d=new Date(), day=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  const n={day, run:(o.day===day?o.run||0:0)+1, sent:o.day===day?o.sent||0:0}; localStorage.setItem(k, JSON.stringify(n));
+  /* replay started (stats: total started) */
+  const vid=localStorage.getItem('tdko-vid'); if(!window.TDKO_TEST && vid && localStorage.getItem('tdko-nocount')!=='1')
+    fetch('/api/play',{method:'POST',keepalive:true,headers:{'content-type':'application/json'},body:JSON.stringify({vid,day,game:gid,event:'rstart',run:n.run})}).catch(()=>{}); }catch(e){} }
+function tdkoReplayDone(gid, day, r){ try{ if(window.TDKO_TEST || !r || r.status!=='done' || localStorage.getItem('tdko-nocount')==='1') return; const k='tdko-rp:'+gid, o=JSON.parse(localStorage.getItem(k)||'{}');
+  if(o.day!==day || !o.run || o.sent>=o.run) return; o.sent=o.run; localStorage.setItem(k, JSON.stringify(o));
+  let vid=localStorage.getItem('tdko-vid'); if(!vid) return;
+  fetch('/api/play',{method:'POST',keepalive:true,headers:{'content-type':'application/json'},body:JSON.stringify({vid,day,game:gid,event:'replay',run:o.run,gaveUp:!!r.gaveUp})}).catch(()=>{}); }catch(e){} }
+/* Anonymous play counts (how many start and finish each game) so we can see where players stop. First goes count once per device; replays are counted separately (tdkoReplayDone). Never sent for test puzzles. */
+function tdkoPlay(day, game, event, gaveUp){ try{ if(window.TDKO_TEST || !day || localStorage.getItem('tdko-nocount')==='1') return;
+  let vid=localStorage.getItem('tdko-vid'); if(!vid){ vid=(crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(16).slice(2)); localStorage.setItem('tdko-vid',vid); }
+  fetch('/api/play',{method:'POST',keepalive:true,headers:{'content-type':'application/json'},body:JSON.stringify({vid,day,game,event,gaveUp:!!gaveUp})}).catch(()=>{}); }catch(e){} }
+</script>

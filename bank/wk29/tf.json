@@ -1,0 +1,177 @@
+{
+ "29": {
+  "id": "world-cups-won",
+  "q": "Men's World Cups won",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Brazil",
+    "5 titles"
+   ],
+   [
+    "Italy",
+    "4 titles"
+   ],
+   [
+    "Argentina",
+    "3 titles"
+   ],
+   [
+    "Spain",
+    "2 titles"
+   ]
+  ],
+  "src": "Wikipedia: List of FIFA World Cup finals; ABC News/Wego (Spain 2026)"
+ },
+ "30": {
+  "id": "ucl-titles",
+  "q": "European Cup / Champions League titles",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Real Madrid",
+    "15 titles"
+   ],
+   [
+    "AC Milan",
+    "7 titles"
+   ],
+   [
+    "Liverpool",
+    "6 titles"
+   ],
+   [
+    "Barcelona",
+    "5 titles"
+   ]
+  ],
+  "src": "Wikipedia: List of European Cup and UEFA Champions League finals"
+ },
+ "31": {
+  "id": "english-titles",
+  "q": "English top-flight titles",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Liverpool",
+    "20 titles"
+   ],
+   [
+    "Arsenal",
+    "13 titles"
+   ],
+   [
+    "Manchester City",
+    "10 titles"
+   ],
+   [
+    "Everton",
+    "9 titles"
+   ]
+  ],
+  "src": "Wikipedia: List of English football champions"
+ },
+ "32": {
+  "id": "afcon-titles",
+  "q": "Africa Cup of Nations titles",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Egypt",
+    "7 titles"
+   ],
+   [
+    "Cameroon",
+    "5 titles"
+   ],
+   [
+    "Ghana",
+    "4 titles"
+   ],
+   [
+    "Nigeria",
+    "3 titles"
+   ]
+  ],
+  "src": "Wikipedia: List of Africa Cup of Nations finals"
+ },
+ "33": {
+  "id": "golden-boot-tally",
+  "q": "Goals in their Premier League Golden Boot season",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Erling Haaland (2022–23)",
+    "36 goals"
+   ],
+   [
+    "Mohamed Salah (2017–18)",
+    "32 goals"
+   ],
+   [
+    "Thierry Henry (2003–04)",
+    "30 goals"
+   ],
+   [
+    "Jamie Vardy (2019–20)",
+    "23 goals"
+   ]
+  ],
+  "src": "Wikipedia: Premier League Golden Boot"
+ },
+ "34": {
+  "id": "league-cup-wins",
+  "q": "League Cup wins",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Liverpool",
+    "10 wins"
+   ],
+   [
+    "Manchester City",
+    "9 wins"
+   ],
+   [
+    "Manchester United",
+    "6 wins"
+   ],
+   [
+    "Chelsea",
+    "5 wins"
+   ]
+  ],
+  "src": "Wikipedia: List of EFL Cup finals"
+ },
+ "35": {
+  "id": "wc-top-scorer-tally",
+  "q": "Goals when top scorer at a World Cup",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Gerd Müller (1970)",
+    "10 goals"
+   ],
+   [
+    "Eusébio (1966)",
+    "9 goals"
+   ],
+   [
+    "Ronaldo (2002)",
+    "8 goals"
+   ],
+   [
+    "Harry Kane (2018)",
+    "6 goals"
+   ]
+  ],
+  "src": "Sports Illustrated: World Cup Golden Boot winners"
+ }
+}

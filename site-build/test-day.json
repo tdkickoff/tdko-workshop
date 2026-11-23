@@ -1,0 +1,706 @@
+{
+ "whos-that-baller": {
+  "name": "Gianluca Vialli",
+  "aliases": [
+   "vialli",
+   "luca vialli"
+  ],
+  "position": "Forward",
+  "nationality": "Italy",
+  "youth": "Pizzighettone",
+  "clubs": [
+   [
+    "Cremonese",
+    105,
+    23
+   ],
+   [
+    "Sampdoria",
+    223,
+    85
+   ],
+   [
+    "Juventus",
+    102,
+    38
+   ]
+  ],
+  "caps": 59,
+  "capGoals": 16,
+  "apps": 488,
+  "goals": 167,
+  "honour": [
+   "European Cup winner (Juventus)",
+   "1996"
+  ],
+  "award": [
+   "Serie A top scorer",
+   "1990–91"
+  ],
+  "blurb": "Captained Juventus to the 1996 Champions League, then became Chelsea's player-manager and won the League Cup and the Cup Winners' Cup in 1998."
+ },
+ "in-the-mixer": {
+  "name": "David Ginola",
+  "phrase": "Loading Diva",
+  "aliases": [
+   "ginola"
+  ],
+  "blurb": "Flamboyant French winger who lit up Newcastle and Tottenham in the 1990s.",
+  "hints": [
+   "Born in Gassin, near Saint-Tropez.",
+   "Won both the PFA and FWA Player of the Year awards with Tottenham in 1999."
+  ]
+ },
+ "link-up-play": {
+  "d": "e",
+  "start": {
+   "p": [
+    "Steven Gerrard",
+    "Midfielder",
+    "England",
+    [
+     "gerrard",
+     "stevie g"
+    ]
+   ],
+   "clubs": "Liverpool, LA Galaxy"
+  },
+  "links": [
+   {
+    "p": [
+     "Fernando Torres",
+     "Forward",
+     "Spain",
+     [
+      "torres",
+      "nando",
+      "el nino"
+     ]
+    ],
+    "t": "club",
+    "x": "Liverpool teammates (2007–11)"
+   },
+   {
+    "p": [
+     "David Villa",
+     "Forward",
+     "Spain",
+     [
+      "villa"
+     ]
+    ],
+    "t": "intl",
+    "x": "Spain teammates, World Cup winners in 2010"
+   },
+   {
+    "p": [
+     "Lionel Messi",
+     "Forward",
+     "Argentina",
+     [
+      "messi",
+      "leo messi"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2010–13)"
+   },
+   {
+    "p": [
+     "Neymar",
+     "Forward",
+     "Brazil",
+     [
+      "neymar jr",
+      "neymar junior"
+     ]
+    ],
+    "t": "club",
+    "x": "Barcelona teammates (2013–17)"
+   }
+  ]
+ },
+ "squad-goals": {
+  "id": "int10",
+  "team": "Inter Milan",
+  "type": "club",
+  "comp": "Champions League final",
+  "year": 2010,
+  "cap": "Javier Zanetti",
+  "rows": [
+   [
+    [
+     "Diego Milito",
+     "ST",
+     "ARG"
+    ]
+   ],
+   [
+    [
+     "Goran Pandev",
+     "LW",
+     "MKD"
+    ],
+    [
+     "Wesley Sneijder",
+     "AM",
+     "NED"
+    ],
+    [
+     "Samuel Eto'o",
+     "RW",
+     "CMR"
+    ]
+   ],
+   [
+    [
+     "Esteban Cambiasso",
+     "CM",
+     "ARG"
+    ],
+    [
+     "Javier Zanetti",
+     "CM",
+     "ARG"
+    ]
+   ],
+   [
+    [
+     "Cristian Chivu",
+     "LB",
+     "ROU"
+    ],
+    [
+     "Walter Samuel",
+     "CB",
+     "ARG"
+    ],
+    [
+     "Lúcio",
+     "CB",
+     "BRA"
+    ],
+    [
+     "Maicon",
+     "RB",
+     "BRA"
+    ]
+   ],
+   [
+    [
+     "Júlio César",
+     "GK",
+     "BRA"
+    ]
+   ]
+  ]
+ },
+ "shirt-swap": {
+  "5": "Edin Džeko",
+  "6": "Emile Heskey",
+  "7": "Gary Neville"
+ },
+ "tiki-taka-toe": {
+  "r": [
+   [
+    "club",
+    "Inter"
+   ],
+   [
+    "club",
+    "AC Milan"
+   ],
+   [
+    "club",
+    "Real Madrid"
+   ]
+  ],
+  "c": [
+   [
+    "league",
+    "MLS"
+   ],
+   [
+    "nat",
+    "Netherlands"
+   ],
+   [
+    "hon",
+    "C"
+   ]
+  ],
+  "rl": [
+   "Inter",
+   "AC Milan",
+   "Real Madrid"
+  ],
+  "cl": [
+   "Played in MLS",
+   "Netherlands",
+   "Won the Champions League"
+  ],
+  "ex": [
+   "Zlatan Ibrahimović",
+   "Dennis Bergkamp",
+   "Nwankwo Kanu",
+   "Olivier Giroud",
+   "Ruud Gullit",
+   "Marcel Desailly",
+   "David Beckham",
+   "Arjen Robben",
+   "Nicolas Anelka"
+  ]
+ },
+ "offside": {
+  "kind": "trophy",
+  "x": "won the Premier League Golden Boot",
+  "nx": "never won the Premier League Golden Boot",
+  "eight": [
+   "Teddy Sheringham",
+   "Andy Cole",
+   "Alan Shearer",
+   "Chris Sutton",
+   "Dion Dublin",
+   "Kevin Phillips",
+   "Dwight Yorke",
+   "Jimmy Floyd Hasselbaink"
+  ],
+  "odd": "Robbie Fowler"
+ },
+ "fast-break": [
+  [
+   "Which club is nicknamed 'The Cottagers'?",
+   [
+    "Fulham",
+    "Brentford",
+    "Crystal Palace",
+    "Charlton Athletic"
+   ],
+   "e"
+  ],
+  [
+   "Which club is nicknamed 'The Gers'?",
+   [
+    "Rangers",
+    "Celtic",
+    "Hearts",
+    "Aberdeen"
+   ],
+   "e"
+  ],
+  [
+   "Which club plays its home games at Old Trafford?",
+   [
+    "Manchester United",
+    "Manchester City",
+    "Bolton Wanderers",
+    "Wigan Athletic"
+   ],
+   "e"
+  ],
+  [
+   "Which country does Federico Valverde play for?",
+   [
+    "Uruguay",
+    "Argentina",
+    "Spain",
+    "Chile"
+   ],
+   "e"
+  ],
+  [
+   "Which country does Khvicha Kvaratskhelia play for?",
+   [
+    "Georgia",
+    "Armenia",
+    "Ukraine",
+    "Azerbaijan"
+   ],
+   "e"
+  ],
+  [
+   "Which country does Florian Wirtz play for?",
+   [
+    "Germany",
+    "Austria",
+    "Switzerland",
+    "Netherlands"
+   ],
+   "e"
+  ],
+  [
+   "Which country does Victor Osimhen play for?",
+   [
+    "Nigeria",
+    "Ghana",
+    "Cameroon",
+    "Senegal"
+   ],
+   "e"
+  ],
+  [
+   "Which country does Joško Gvardiol play for?",
+   [
+    "Croatia",
+    "Serbia",
+    "Slovenia",
+    "Bosnia and Herzegovina"
+   ],
+   "e"
+  ],
+  [
+   "Which country does William Saliba play for?",
+   [
+    "France",
+    "Ivory Coast",
+    "Belgium",
+    "Cameroon"
+   ],
+   "e"
+  ],
+  [
+   "Which country does Martin Ødegaard play for?",
+   [
+    "Norway",
+    "Denmark",
+    "Sweden",
+    "Iceland"
+   ],
+   "e"
+  ],
+  [
+   "Which club did Declan Rice join Arsenal from?",
+   [
+    "West Ham United",
+    "Chelsea",
+    "Aston Villa",
+    "Crystal Palace"
+   ],
+   "m"
+  ],
+  [
+   "Which club won the 2005 FA Cup final on penalties against Manchester United?",
+   [
+    "Arsenal",
+    "Chelsea",
+    "Liverpool",
+    "Millwall"
+   ],
+   "m"
+  ],
+  [
+   "In which city was the 2023 Champions League final played?",
+   [
+    "Istanbul",
+    "Paris",
+    "Porto",
+    "Munich"
+   ],
+   "m"
+  ],
+  [
+   "Which club did Jack Grealish join Manchester City from?",
+   [
+    "Aston Villa",
+    "Birmingham City",
+    "Everton",
+    "Leicester City"
+   ],
+   "m"
+  ],
+  [
+   "Which club did Alexis Mac Allister join Liverpool from?",
+   [
+    "Brighton & Hove Albion",
+    "Boca Juniors",
+    "Argentinos Juniors",
+    "Ajax"
+   ],
+   "m"
+  ],
+  [
+   "Which club did Romelu Lukaku join from Everton in 2017?",
+   [
+    "Manchester United",
+    "Chelsea",
+    "Inter",
+    "Roma"
+   ],
+   "m"
+  ],
+  [
+   "Which goalkeeper saved Gareth Southgate's penalty in the Euro 96 semi-final shoot-out?",
+   [
+    "Andreas Köpke",
+    "Oliver Kahn",
+    "Bodo Illgner",
+    "Jens Lehmann"
+   ],
+   "m"
+  ],
+  [
+   "Who scored England's late winner in the Euro 2024 semi-final against the Netherlands?",
+   [
+    "Ollie Watkins",
+    "Harry Kane",
+    "Bukayo Saka",
+    "Cole Palmer"
+   ],
+   "m"
+  ],
+  [
+   "Which club won the 2019 Europa League final in Baku?",
+   [
+    "Chelsea",
+    "Arsenal",
+    "Valencia",
+    "Eintracht Frankfurt"
+   ],
+   "m"
+  ],
+  [
+   "Which country did Wayne Rooney score his first England goal against, in 2003?",
+   [
+    "Macedonia",
+    "Turkey",
+    "Liechtenstein",
+    "Slovakia"
+   ],
+   "h"
+  ]
+ ],
+ "top-four": {
+  "id": "pl-clean-sheets",
+  "q": "Premier League clean sheets",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Petr Čech",
+    "202 clean sheets"
+   ],
+   [
+    "David James",
+    "169 clean sheets"
+   ],
+   [
+    "Mark Schwarzer",
+    "151 clean sheets"
+   ],
+   [
+    "David Seaman",
+    "141 clean sheets"
+   ]
+  ]
+ },
+ "ranked-highly": {
+  "id": "season-goals",
+  "theme": "Premier League goals in one season",
+  "unit": "goals",
+  "chain": [
+   [
+    "Mohamed Salah (2017–18)",
+    32
+   ],
+   [
+    "Ruud van Nistelrooy (2002–03)",
+    25
+   ],
+   [
+    "Luis Suárez (2013–14)",
+    31
+   ],
+   [
+    "Frank Lampard (2009–10)",
+    22
+   ],
+   [
+    "Jamie Vardy (2015–16)",
+    24
+   ],
+   [
+    "Sergio Agüero (2014–15)",
+    26
+   ]
+  ]
+ },
+ "clean-sweep": {
+  "id": "ballon-dor-since-2000",
+  "q": "Every Ballon d'Or winner since 2000",
+  "note": "15 players. Labels show each player's first win. Not awarded in 2020. Up to the 2026 award.",
+  "secs": 240,
+  "src": "topendsports.com Ballon d'Or winners list; 2026 winner (Harry Kane) confirmed by soccernews.com / heavy.com",
+  "names": [
+   {
+    "n": "Luís Figo",
+    "l": "2000"
+   },
+   {
+    "n": "Michael Owen",
+    "l": "2001"
+   },
+   {
+    "n": "Ronaldo",
+    "l": "2002",
+    "a": [
+     "ronaldo nazario",
+     "r9",
+     "ronaldo nazario de lima"
+    ]
+   },
+   {
+    "n": "Pavel Nedvěd",
+    "l": "2003"
+   },
+   {
+    "n": "Andriy Shevchenko",
+    "l": "2004",
+    "a": [
+     "andrei shevchenko",
+     "sheva"
+    ]
+   },
+   {
+    "n": "Ronaldinho",
+    "l": "2005"
+   },
+   {
+    "n": "Fabio Cannavaro",
+    "l": "2006"
+   },
+   {
+    "n": "Kaká",
+    "l": "2007",
+    "a": [
+     "ricardo kaka"
+    ]
+   },
+   {
+    "n": "Cristiano Ronaldo",
+    "l": "2008",
+    "a": [
+     "cristiano",
+     "cr7"
+    ]
+   },
+   {
+    "n": "Lionel Messi",
+    "l": "2009",
+    "a": [
+     "leo messi"
+    ]
+   },
+   {
+    "n": "Luka Modrić",
+    "l": "2018"
+   },
+   {
+    "n": "Karim Benzema",
+    "l": "2022"
+   },
+   {
+    "n": "Rodri",
+    "l": "2024",
+    "a": [
+     "rodrigo",
+     "rodrigo hernandez"
+    ]
+   },
+   {
+    "n": "Ousmane Dembélé",
+    "l": "2025"
+   },
+   {
+    "n": "Harry Kane",
+    "l": "2026"
+   }
+  ]
+ },
+ "cup-run": {
+  "id": "esp-euro-2024",
+  "answer": {
+   "n": "Spain",
+   "code": "ESP",
+   "a": []
+  },
+  "comp": "Euros",
+  "year": "2024",
+  "final": "2–1",
+  "src": "Wikipedia: UEFA Euro 2024 final",
+  "rounds": [
+   {
+    "r": "Group stage",
+    "m": [
+     {
+      "t": {
+       "n": "Croatia",
+       "code": "CRO"
+      },
+      "s": "3–0"
+     },
+     {
+      "t": {
+       "n": "Italy",
+       "code": "ITA"
+      },
+      "s": "1–0"
+     },
+     {
+      "t": {
+       "n": "Albania",
+       "code": "ALB"
+      },
+      "s": "1–0"
+     }
+    ]
+   },
+   {
+    "r": "Round of 16",
+    "m": [
+     {
+      "t": {
+       "n": "Georgia",
+       "code": "GEO"
+      },
+      "s": "4–1"
+     }
+    ]
+   },
+   {
+    "r": "Quarter-final",
+    "m": [
+     {
+      "t": {
+       "n": "Germany",
+       "code": "GER"
+      },
+      "s": "2–1 aet"
+     }
+    ]
+   },
+   {
+    "r": "Semi-final",
+    "m": [
+     {
+      "t": {
+       "n": "France",
+       "code": "FRA"
+      },
+      "s": "2–1"
+     }
+    ]
+   },
+   {
+    "r": "Final",
+    "m": [
+     {
+      "t": {
+       "n": "England",
+       "code": "ENG"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

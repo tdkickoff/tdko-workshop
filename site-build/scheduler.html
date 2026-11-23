@@ -1,0 +1,139 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>TDKO scheduler</title>
+<script>try{if(!localStorage.getItem('tdko-stats-key'))location.replace('stats-login.html?next=scheduler');}catch(e){location.replace('stats-login.html?next=scheduler');}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{--bg:#F2F4F1;--surface:#fff;--ink:#0E1712;--muted:#5D6A62;--line:#D7DDD8;--accent:#0A8A4A;--bad:#C93A2B;--soft:#E7ECE8;
+  --done:#0A8A4A;--today:#8FDCA9;--ready:#F2C94C;--draft:#F08A3C;--none:#D9483B;--off:#E3E7E4;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;--f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0B110E;--surface:#121A16;--ink:#EAF0EC;--muted:#8A988F;--line:#24302A;--accent:#34D27F;--bad:#FF6B5A;--soft:#1A241F;
+  --done:#1E9E5A;--today:#7FD39C;--ready:#E8BE45;--draft:#E8823A;--none:#E0564A;--off:#1E2823;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--f-display);padding:0 16px}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 0 48px;display:flex;flex-direction:column;gap:14px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+h1{margin:0;font-weight:900;font-stretch:66%;font-size:44px;line-height:.9;text-transform:uppercase}h1 i{font-style:normal;color:var(--accent)}
+h2{margin:0;font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.02em}
+.eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.nav{font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);border:1.5px solid var(--ink);padding:7px 12px;text-decoration:none}
+.note{font-size:12.5px;color:var(--muted);margin:0;line-height:1.45}
+.card{background:var(--surface);border:1px solid var(--line);padding:14px 12px 12px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.legend{display:flex;gap:8px 16px;flex-wrap:wrap;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sq{display:inline-block;width:12px;height:12px;border-radius:2px}
+.s-done{background:var(--done)}.s-today{background:var(--today)}.s-ready{background:var(--ready)}.s-draft{background:var(--draft)}.s-none{background:var(--none)}.s-off{background:var(--off)}
+/* grid */
+.gscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.grid{border-collapse:separate;border-spacing:2px;font-size:13px}
+.grid th,.grid td{padding:0;white-space:nowrap;border-bottom:0;text-align:center}
+.grid th.g,.grid td.g{position:sticky;left:0;background:var(--surface);z-index:2;text-align:left;font-weight:700;padding-right:10px;min-width:122px}
+.grid thead th{font-family:var(--f-mono);font-size:9.5px;font-weight:500;color:var(--muted);height:42px;vertical-align:bottom}
+.grid thead th.d span{display:block;writing-mode:vertical-rl;transform:rotate(180deg);margin:0 auto 3px;line-height:1}
+.grid thead th.mon span{color:var(--ink);font-weight:600}
+.grid thead th.now span{color:var(--ink);font-weight:600}
+.grid td.c{width:20px;min-width:20px;height:22px;border-radius:3px;cursor:pointer}
+.grid td.c.now{box-shadow:inset 0 0 0 2px var(--ink)}
+.grid td.c.sel{outline:2px solid var(--ink);outline-offset:1px}
+.info{font-family:var(--f-mono);font-size:12px;min-height:18px;color:var(--ink)}
+/* volume table */
+.tcard{background:var(--surface);border:1px solid var(--line);overflow-x:auto}
+table.vol{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14px}
+.vol th,.vol td{padding:8px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+.vol th{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600;vertical-align:bottom}
+.vol th:first-child,.vol td:first-child{text-align:left;position:sticky;left:0;background:var(--surface);z-index:1}
+.vol td:first-child{font-weight:700}
+.vol .grp{border-left:1px solid var(--line)}
+.vol td.na{color:var(--muted)}
+.vol tfoot td{font-weight:800;border-top:2px solid var(--ink);border-bottom:0}
+@media (max-width:560px){h1{font-size:38px}.vol{font-size:13px}.vol th,.vol td{padding:7px 6px}.grid th.g,.grid td.g{min-width:104px;font-size:12px}}
+</style></head><body><div class="wrap">
+<div class="top"><h1>TDKO <i>scheduler</i></h1><a class="nav" href="stats.html">Stats</a></div>
+
+<section class="card">
+  <div class="top"><h2>Puzzle calendar</h2><span class="eyebrow" id="range"></span></div>
+  <div class="legend">
+    <span><i class="sq s-done"></i>Played</span>
+    <span><i class="sq s-today"></i>Today</span>
+    <span><i class="sq s-ready"></i>Approved, ready</span>
+    <span><i class="sq s-draft"></i>In bank, not approved</span>
+    <span><i class="sq s-none"></i>Nothing set up</span>
+    <span><i class="sq s-off"></i>Game not live yet</span>
+  </div>
+  <div class="gscroll" id="gscroll"><table class="grid"><thead id="gh"></thead><tbody id="gb"><tr><td class="g">Loading…</td></tr></tbody></table></div>
+  <div class="info" id="info" aria-live="polite">Tap a square for the details.</div>
+</section>
+
+<section class="card" style="padding:14px 12px 4px"><h2>Question bank</h2>
+<div class="tcard" style="border:0;margin:0 -12px"><table class="vol">
+  <thead><tr><th>Game</th><th class="grp">Easy</th><th>Medium</th><th>Hard</th><th>Not graded</th><th class="grp">Approved</th><th>Never used</th><th class="grp">Awaiting approval</th><th class="grp">Set up to</th></tr></thead>
+  <tbody id="vb"></tbody><tfoot id="vf"></tfoot></table></div>
+</section>
+
+<p class="note"><b>Approved</b> = every question signed off and in the bank. <b>Never used</b> = approved but not yet scheduled on any day (the reserve the scheduler picks from). <b>Not graded</b>: one-puzzle-a-day games that don't use Easy / Medium / Hard. <b>Set up to</b> = the last day with puzzles in place. A day counts as set up only when it has all its puzzles (Fast Break 20, Shirt Swap 3, the rest 1). Today follows this device's date, like the games do.</p>
+<p class="note" id="built"></p>
+</div>
+<script>
+(function(){
+  const DAY=864e5, $=id=>document.getElementById(id);
+  const pad=n=>String(n).padStart(2,'0');
+  const WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const dm=d=>pad(d.getUTCDate())+'/'+pad(d.getUTCMonth()+1);
+  const LABEL={done:'Played',today:'In play today',ready:'Approved, ready',draft:'In bank, not approved',none:'Nothing set up',off:'Game not live yet'};
+  let k=''; try{ k=localStorage.getItem('tdko-stats-key')||''; }catch(e){}
+  fetch('/api/scheduler',{headers:{'x-tdko-stats':k}}).then(r=>{
+    if(r.status===401){ try{ localStorage.removeItem('tdko-stats-key'); }catch(e){} location.replace('stats-login.html?next=scheduler'); throw 0; }
+    return r.json(); }).then(draw).catch(e=>{ if(e!==0) $('gb').innerHTML='<tr><td class="g">Could not load. Try again in a moment.</td></tr>'; });
+
+  function draw(v){
+    const L=Date.parse(v.launch+'T00:00:00Z'), last=Math.round((Date.parse(v.last+'T00:00:00Z')-L)/DAY)+1;
+    const t=new Date(), today=Math.round((Date.UTC(t.getFullYear(),t.getMonth(),t.getDate())-L)/DAY)+1;
+    const date=no=>new Date(L+(no-1)*DAY);
+    $('range').textContent=dm(date(1))+' – '+dm(date(last))+' · No. 1–'+last;
+    // header: dd/mm, Mondays and today in ink
+    let h='<tr><th class="g"></th>';
+    for(let no=1;no<=last;no++){ const d=date(no); h+=`<th class="d${d.getUTCDay()===1?' mon':''}${no===today?' now':''}"><span>${dm(d)}</span></th>`; }
+    $('gh').innerHTML=h+'</tr>';
+    const state=(g,no)=>{
+      const first=Math.min(...Object.keys(g.days).map(Number).concat([1e9]));
+      const x=g.days[no];
+      if(no<first && no<=today) return 'off';
+      if(!x || x[0]<g.per_day) return 'none';
+      if(x[1]>0) return 'draft';
+      return no<today?'done':no===today?'today':'ready';
+    };
+    let b='';
+    for(const g of v.games){
+      b+=`<tr><td class="g">${g.name}</td>`;
+      for(let no=1;no<=last;no++){ const s=state(g,no); b+=`<td class="c s-${s}${no===today?' now':''}" data-g="${g.slug}" data-n="${no}" title="${g.name} · ${dm(date(no))} · ${LABEL[s]}"></td>`; }
+      b+='</tr>';
+    }
+    $('gb').innerHTML=b;
+    const by=Object.fromEntries(v.games.map(g=>[g.slug,g]));
+    $('gb').addEventListener('click',e=>{
+      const c=e.target.closest('td.c'); if(!c) return;
+      document.querySelectorAll('td.c.sel').forEach(x=>x.classList.remove('sel')); c.classList.add('sel');
+      const g=by[c.dataset.g], no=+c.dataset.n, d=date(no), x=g.days[no]||[0,0], s=state(g,no);
+      const set=s==='off'?'':` · ${x[0]} of ${g.per_day} set${x[1]?` (${x[1]} awaiting approval)`:''}`;
+      $('info').textContent=`${g.name} · ${WD[d.getUTCDay()]} ${dm(d)} · No. ${no} · ${LABEL[s]}${set}`;
+    });
+    // start the calendar a few days before today
+    const toToday=()=>{ const sc=$('gscroll'), cell=$('gb').querySelector(`td.c[data-n="${Math.max(1,today-3)}"]`);
+      if(cell && sc.offsetWidth) sc.scrollLeft=cell.offsetLeft-sc.querySelector('td.g').offsetWidth-2; };
+    toToday(); addEventListener('tdko-sched-shown',toToday);
+    // volume table
+    const tot={E:0,M:0,H:0,U:0,a:0,unused:0,draft:0};
+    const f=n=>n?n.toLocaleString('en-GB'):'<span class="na">–</span>';
+    let r='';
+    for(const g of v.games){
+      const m=g.mix, a=m.E+m.M+m.H+m.U;
+      let upto=0; for(let no=1;no<=Math.max(last,400);no++){ const x=g.days[no]; if(x&&x[0]>=g.per_day) upto=no; else if(no>today) break; }
+      ['E','M','H','U','unused','draft'].forEach(q=>tot[q]+=m[q]); tot.a+=a;
+      r+=`<tr><td>${g.name}</td><td class="grp">${f(m.E)}</td><td>${f(m.M)}</td><td>${f(m.H)}</td><td>${f(m.U)}</td><td class="grp">${f(a)}</td><td>${f(m.unused)}</td><td class="grp">${f(m.draft)}</td>`+
+         `<td class="grp">${upto?WD[date(upto).getUTCDay()]+' '+dm(date(upto))+' <span class="na">· No. '+upto+'</span>':'<span class="na">–</span>'}</td></tr>`;
+    }
+    $('vb').innerHTML=r;
+    $('vf').innerHTML=`<tr><td>All games</td><td class="grp">${f(tot.E)}</td><td>${f(tot.M)}</td><td>${f(tot.H)}</td><td>${f(tot.U)}</td><td class="grp">${f(tot.a)}</td><td>${f(tot.unused)}</td><td class="grp">${f(tot.draft)}</td><td class="grp"></td></tr>`;
+    const bd=v.built.split(/[- :]/); $('built').textContent=`Bank as of ${bd[2]}/${bd[1]} ${bd[3]}:${bd[4]} UK time (updates with every release).`;
+  }
+})();
+</script></body></html>

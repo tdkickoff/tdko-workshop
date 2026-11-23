@@ -1,0 +1,288 @@
+[
+ {
+  "id": "bundesliga-goals",
+  "q": "Bundesliga goals",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Gerd Müller",
+    "365 goals"
+   ],
+   [
+    "Robert Lewandowski",
+    "312 goals"
+   ],
+   [
+    "Klaus Fischer",
+    "268 goals"
+   ],
+   [
+    "Jupp Heynckes",
+    "220 goals"
+   ]
+  ],
+  "src": "Wikipedia: List of Bundesliga top scorers (as of 30 August 2026)",
+  "url": "https://en.wikipedia.org/wiki/List_of_Bundesliga_top_scorers"
+ },
+ {
+  "id": "la-liga-goals",
+  "q": "La Liga goals",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Lionel Messi",
+    "474 goals"
+   ],
+   [
+    "Cristiano Ronaldo",
+    "311 goals"
+   ],
+   [
+    "Telmo Zarra",
+    "251 goals"
+   ],
+   [
+    "Karim Benzema",
+    "238 goals"
+   ]
+  ],
+  "src": "Wikipedia: List of La Liga top scorers",
+  "url": "https://en.wikipedia.org/wiki/List_of_La_Liga_top_scorers"
+ },
+ {
+  "id": "serie-a-goals",
+  "q": "Serie A goals",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Silvio Piola",
+    "274 goals"
+   ],
+   [
+    "Francesco Totti",
+    "250 goals"
+   ],
+   [
+    "Gunnar Nordahl",
+    "225 goals"
+   ],
+   [
+    "Antonio Di Natale",
+    "209 goals"
+   ]
+  ],
+  "src": "Wikipedia: List of Serie A players with 100 or more goals (as of 24 May 2026)",
+  "url": "https://en.wikipedia.org/wiki/List_of_Serie_A_players_with_100_or_more_goals"
+ },
+ {
+  "id": "spain-caps",
+  "q": "Spain caps",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Sergio Ramos",
+    "180 caps"
+   ],
+   [
+    "Iker Casillas",
+    "167 caps"
+   ],
+   [
+    "Sergio Busquets",
+    "143 caps"
+   ],
+   [
+    "Xavi",
+    "133 caps"
+   ]
+  ],
+  "src": "Wikipedia: Spain national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/Spain_national_football_team_records_and_statistics"
+ },
+ {
+  "id": "france-caps",
+  "q": "France caps",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Lilian Thuram",
+    "142 caps"
+   ],
+   [
+    "Thierry Henry",
+    "123 caps"
+   ],
+   [
+    "Marcel Desailly",
+    "116 caps"
+   ],
+   [
+    "Zinedine Zidane",
+    "108 caps"
+   ]
+  ],
+  "src": "Wikipedia: France national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/France_national_football_team_records_and_statistics"
+ },
+ {
+  "id": "germany-caps",
+  "q": "Germany caps",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Lothar Matthäus",
+    "150 caps"
+   ],
+   [
+    "Miroslav Klose",
+    "137 caps"
+   ],
+   [
+    "Thomas Müller",
+    "131 caps"
+   ],
+   [
+    "Lukas Podolski",
+    "130 caps"
+   ]
+  ],
+  "src": "Wikipedia: Germany national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/Germany_national_football_team_records_and_statistics"
+ },
+ {
+  "id": "italy-caps",
+  "q": "Italy caps",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Gianluigi Buffon",
+    "176 caps"
+   ],
+   [
+    "Fabio Cannavaro",
+    "136 caps"
+   ],
+   [
+    "Paolo Maldini",
+    "126 caps"
+   ],
+   [
+    "Leonardo Bonucci",
+    "121 caps"
+   ]
+  ],
+  "src": "Wikipedia: Italy national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/Italy_national_football_team_records_and_statistics"
+ },
+ {
+  "id": "golden-shoe-season",
+  "q": "Goals in their European Golden Shoe season",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Lionel Messi (2011–12)",
+    "50 goals"
+   ],
+   [
+    "Cristiano Ronaldo (2014–15)",
+    "48 goals"
+   ],
+   [
+    "Mário Jardel (2001–02)",
+    "42 goals"
+   ],
+   [
+    "Robert Lewandowski (2020–21)",
+    "41 goals"
+   ]
+  ],
+  "src": "Wikipedia: European Golden Shoe",
+  "url": "https://en.wikipedia.org/wiki/European_Golden_Shoe"
+ },
+ {
+  "id": "keeper-caps",
+  "q": "Caps won by these goalkeepers",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Gianluigi Buffon",
+    "176 caps"
+   ],
+   [
+    "Iker Casillas",
+    "167 caps"
+   ],
+   [
+    "Hugo Lloris",
+    "145 caps"
+   ],
+   [
+    "Peter Shilton",
+    "125 caps"
+   ]
+  ],
+  "src": "Wikipedia: Italy, Spain, France and England records and statistics pages",
+  "url": "https://en.wikipedia.org/wiki/Italy_national_football_team_records_and_statistics"
+ },
+ {
+  "id": "intl-goals-strikers",
+  "q": "International goals",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Samuel Eto'o",
+    "56 goals (Cameroon)"
+   ],
+   [
+    "Romário",
+    "55 goals (Brazil)"
+   ],
+   [
+    "Jürgen Klinsmann",
+    "47 goals (Germany)"
+   ],
+   [
+    "Raúl",
+    "44 goals (Spain)"
+   ]
+  ],
+  "src": "Wikipedia: each player's page (infobox)",
+  "url": "https://en.wikipedia.org/wiki/Samuel_Eto%27o"
+ },
+ {
+  "id": "club-goals-legends",
+  "q": "Senior club league goals, whole career",
+  "top": "Most",
+  "bottom": "Fewest",
+  "items": [
+   [
+    "Romário",
+    "542 goals"
+   ],
+   [
+    "Rivaldo",
+    "299 goals"
+   ],
+   [
+    "Johan Cruyff",
+    "294 goals"
+   ],
+   [
+    "Samuel Eto'o",
+    "293 goals"
+   ]
+  ],
+  "src": "Wikipedia: each player's infobox total",
+  "url": "https://en.wikipedia.org/wiki/Rom%C3%A1rio"
+ }
+]

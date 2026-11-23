@@ -1,0 +1,83 @@
+# Ballon d'Or (club at award; topendsports list, 2026 = Kane/Bayern per SI) and PL Golden Boot (Wikipedia "Premier League Golden Boot")
+B|Harry Kane|England|Bayern Munich|2026
+B|Ousmane Dembélé|France|Paris Saint-Germain|2025
+B|Rodri|Spain|Manchester City|2024
+B|Lionel Messi|Argentina|Inter Miami|2023
+B|Karim Benzema|France|Real Madrid|2022
+B|Lionel Messi|Argentina|Paris Saint-Germain|2021
+B|Lionel Messi|Argentina|Barcelona|2009,2010,2011,2012,2015,2019
+B|Luka Modrić|Croatia|Real Madrid|2018
+B|Cristiano Ronaldo|Portugal|Real Madrid|2013,2014,2016,2017
+B|Cristiano Ronaldo|Portugal|Manchester United|2008
+B|Kaká|Brazil|AC Milan|2007
+B|Fabio Cannavaro|Italy|Real Madrid|2006
+B|Ronaldinho|Brazil|Barcelona|2005
+B|Andriy Shevchenko|Ukraine|AC Milan|2004
+B|Pavel Nedvěd|Czech Republic|Juventus|2003
+B|Ronaldo|Brazil|Real Madrid|2002
+B|Ronaldo|Brazil|Inter|1997
+B|Michael Owen|England|Liverpool|2001
+B|Luís Figo|Portugal|Real Madrid|2000
+B|Rivaldo|Brazil|Barcelona|1999
+B|Zinedine Zidane|France|Juventus|1998
+B|Matthias Sammer|Germany|Borussia Dortmund|1996
+B|George Weah|Liberia|AC Milan|1995
+B|Hristo Stoichkov|Bulgaria|Barcelona|1994
+B|Roberto Baggio|Italy|Juventus|1993
+B|Marco van Basten|Netherlands|AC Milan|1988,1989,1992
+B|Jean-Pierre Papin|France|Marseille|1991
+B|Lothar Matthäus|Germany|Inter|1990
+B|Ruud Gullit|Netherlands|AC Milan|1987
+B|Igor Belanov|Soviet Union|Dynamo Kyiv|1986
+B|Michel Platini|France|Juventus|1983,1984,1985
+B|Paolo Rossi|Italy|Juventus|1982
+B|Karl-Heinz Rummenigge|Germany|Bayern Munich|1980,1981
+B|Kevin Keegan|England|Hamburg|1978,1979
+B|Allan Simonsen|Denmark|Borussia Mönchengladbach|1977
+B|Franz Beckenbauer|Germany|Bayern Munich|1972,1976
+B|Oleg Blokhin|Soviet Union|Dynamo Kyiv|1975
+B|Johan Cruyff|Netherlands|Barcelona|1973,1974
+B|Johan Cruyff|Netherlands|Ajax|1971
+B|Gerd Müller|Germany|Bayern Munich|1970
+B|Gianni Rivera|Italy|AC Milan|1969
+B|George Best|Northern Ireland|Manchester United|1968
+B|Flórián Albert|Hungary|Ferencváros|1967
+B|Bobby Charlton|England|Manchester United|1966
+B|Eusébio|Portugal|Benfica|1965
+B|Denis Law|Scotland|Manchester United|1964
+B|Lev Yashin|Soviet Union|Dynamo Moscow|1963
+B|Josef Masopust|Czechoslovakia|Dukla Prague|1962
+B|Omar Sívori|Italy;Argentina|Juventus|1961
+B|Luis Suárez Miramontes|Spain|Barcelona|1960
+B|Alfredo Di Stéfano|Argentina;Spain|Real Madrid|1957,1959
+B|Raymond Kopa|France|Real Madrid|1958
+B|Stanley Matthews|England|Blackpool|1956
+G|Teddy Sheringham|England|Tottenham|1993
+G|Andy Cole|England|Newcastle United|1994
+G|Alan Shearer|England|Blackburn Rovers|1995,1996
+G|Alan Shearer|England|Newcastle United|1997
+G|Chris Sutton|England|Blackburn Rovers|1998
+G|Dion Dublin|England|Coventry City|1998
+G|Michael Owen|England|Liverpool|1998,1999
+G|Dwight Yorke|Trinidad and Tobago|Manchester United|1999
+G|Jimmy Floyd Hasselbaink|Netherlands|Leeds United|1999
+G|Jimmy Floyd Hasselbaink|Netherlands|Chelsea|2001
+G|Kevin Phillips|England|Sunderland|2000
+G|Thierry Henry|France|Arsenal|2002,2004,2005,2006
+G|Ruud van Nistelrooy|Netherlands|Manchester United|2003
+G|Didier Drogba|Ivory Coast|Chelsea|2007,2010
+G|Cristiano Ronaldo|Portugal|Manchester United|2008
+G|Nicolas Anelka|France|Chelsea|2009
+G|Carlos Tevez|Argentina|Manchester City|2011
+G|Dimitar Berbatov|Bulgaria|Manchester United|2011
+G|Robin van Persie|Netherlands|Arsenal|2012
+G|Robin van Persie|Netherlands|Manchester United|2013
+G|Luis Suárez|Uruguay|Liverpool|2014
+G|Sergio Agüero|Argentina|Manchester City|2015
+G|Harry Kane|England|Tottenham|2016,2017,2021
+G|Mohamed Salah|Egypt|Liverpool|2018,2019,2022,2025
+G|Pierre-Emerick Aubameyang|Gabon|Arsenal|2019
+G|Sadio Mané|Senegal|Liverpool|2019
+G|Jamie Vardy|England|Leicester City|2020
+G|Son Heung-min|South Korea|Tottenham|2022
+G|Erling Haaland|Norway|Manchester City|2023,2024,2026

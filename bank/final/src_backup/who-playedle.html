@@ -1,0 +1,487 @@
+<title>Squad Goals</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: Fast Break family. One narrow column; the team-sheet pitch is the centrepiece, hints and input sit around it. */
+:root{
+  --bg:#F2F4F1; --surface:#FFFFFF; --ink:#0E1712; --muted:#5D6A62; --line:#D7DDD8;
+  --accent:#0A8A4A; --accent-ink:#FFFFFF; --warn:#C98A00; --bad:#C93A2B; --soft:#E7ECE8;
+  --pitch:#E3EEE6; --pitch-line:#FFFFFF;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root[data-tdko="dark"]{
+  --bg:#0B110E; --surface:#121A16; --ink:#EAF0EC; --muted:#8A988F; --line:#24302A;
+  --accent:#34D27F; --accent-ink:#06120B; --warn:#F2B53A; --bad:#FF6B5A; --soft:#1A241F;
+  --pitch:#132219; --pitch-line:#24382B; color-scheme:dark}}
+:root[data-tdko="dark"]{
+  --bg:#0B110E; --surface:#121A16; --ink:#EAF0EC; --muted:#8A988F; --line:#24302A;
+  --accent:#34D27F; --accent-ink:#06120B; --warn:#F2B53A; --bad:#FF6B5A; --soft:#1A241F;
+  --pitch:#132219; --pitch-line:#24382B; color-scheme:dark}
+
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+.wrap{max-width:560px;margin:0 auto;padding-block:20px 40px;display:flex;flex-direction:column;gap:18px;min-height:100%;box-sizing:border-box}
+main{display:flex;flex-direction:column;gap:14px}
+
+.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.mark{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:28px;letter-spacing:.01em;text-transform:uppercase;line-height:1;white-space:nowrap}
+.mark i{font-style:normal;color:var(--accent)}
+.meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+
+.card{background:var(--surface);border:1px solid var(--line)}
+.inner{padding:20px;display:flex;flex-direction:column;gap:16px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+.ltag{font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;background:var(--soft);color:var(--ink);white-space:nowrap}
+
+/* intro */
+.hero{display:flex;flex-direction:column;gap:14px;padding:26px 20px 22px}
+.hero h1{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(56px,17vw,96px);line-height:.86;margin:0;text-transform:uppercase;letter-spacing:-.01em}
+.hero h1 i{font-style:normal;color:var(--accent)}
+.lede{font-size:17px;color:var(--muted);margin:0;max-width:36ch}
+.challenge{border:1.5px solid var(--accent);padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.challenge span{font-size:15px}
+.challenge b{font-family:var(--f-display);font-weight:900;font-stretch:70%;font-size:34px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.rules{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px}
+.rules li{display:grid;grid-template-columns:72px 1fr;gap:10px}
+.rules li>span{font-family:var(--f-mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.ladder div{padding:10px 4px 9px;text-align:center;display:flex;flex-direction:column;gap:3px;min-width:0}
+.ladder b{font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:22px;line-height:1}
+.ladder span{font-family:var(--f-mono);font-size:11px;opacity:.85}
+.ladder div{background:color-mix(in oklab,var(--warn) 22%,var(--bg))}
+
+/* buttons */
+.btn{all:unset;box-sizing:border-box;display:block;text-align:center;cursor:pointer;background:var(--ink);color:var(--bg);touch-action:manipulation;
+  font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:18px;text-transform:uppercase;letter-spacing:.03em;padding:15px 12px;white-space:nowrap;transition:background .12s}
+.btn:hover{background:var(--accent);color:var(--accent-ink)}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.btn.danger{background:var(--bad);color:#fff}
+.linkbtn{all:unset;cursor:pointer;align-self:center;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:6px}
+.linkbtn:hover{color:var(--ink)}
+.linkbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* status + hints */
+.status{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.lives{display:flex;align-items:center;gap:6px}
+.life{width:14px;height:14px;background:var(--accent)}
+.life.used{background:transparent;box-shadow:inset 0 0 0 1.5px var(--line)}
+.pts{display:flex;align-items:baseline;gap:6px}
+.pts b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:36px;line-height:.85;font-variant-numeric:tabular-nums}
+.pts small{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.hints{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.hb{all:unset;box-sizing:border-box;cursor:pointer;touch-action:manipulation;display:flex;flex-direction:column;gap:2px;min-width:0;padding:8px 8px;border:1.5px dashed var(--line)}
+.hb:hover:not([aria-disabled="true"]){border-color:var(--warn);border-style:solid}
+.hb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hb span{font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.hb b{font-size:13px;font-weight:800;line-height:1.2;overflow-wrap:break-word}
+.hb b.c{color:var(--warn);font-family:var(--f-mono);font-size:12px;font-weight:600}
+.hb.on{border-style:solid;border-color:var(--warn);background:color-mix(in oklab,var(--warn) 12%,var(--surface));cursor:default}
+.hb.on b{color:var(--ink)}
+.pending{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 10px;border:1.5px solid var(--warn);font-size:14px}
+.pending .act{display:flex;gap:6px}
+.mini{all:unset;cursor:pointer;font-family:var(--f-mono);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:6px 10px;background:var(--ink);color:var(--bg)}
+.mini.alt{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.mini:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* pitch */
+.pitch{position:relative;background:var(--pitch);padding:30px 8px 16px;display:flex;flex-direction:column;gap:14px;overflow:hidden}
+.pitch::before{content:"";position:absolute;left:12px;right:12px;top:50%;height:2px;background:var(--pitch-line)}
+.pitch::after{content:"";position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border:2px solid var(--pitch-line);border-radius:50%}
+.box{position:absolute;left:50%;width:46%;height:54px;transform:translateX(-50%);border:2px solid var(--pitch-line)}
+.box.t{top:-2px;border-top:0} .box.b{bottom:-2px;border-bottom:0}
+.plabel{position:absolute;left:10px;top:8px;z-index:2;font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);line-height:1.35}
+.prow{position:relative;z-index:1;display:flex;justify-content:space-evenly;gap:4px}
+.pl{flex:1 1 0;max-width:94px;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center}
+.shirt{width:40px;height:40px;display:grid;place-items:center;background:var(--surface);border:1.5px solid var(--line);position:relative;
+  font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+.pl.ok .shirt{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pl.miss .shirt{background:color-mix(in oklab,var(--bad) 22%,var(--bg));border-color:transparent;color:var(--bad)}
+.cap{position:absolute;top:-7px;right:-7px;width:17px;height:17px;display:grid;place-items:center;background:var(--warn);color:#111;font-family:var(--f-display);font-weight:900;font-size:11px}
+.pl .nm{font-weight:800;font-size:12.5px;line-height:1.15;min-height:15px;overflow-wrap:anywhere}
+.pl .nm i{display:inline-block;width:34px;height:8px;background:color-mix(in oklab,var(--ink) 12%,transparent);vertical-align:middle}
+.pl .tag{font-family:var(--f-mono);font-size:10px;letter-spacing:.03em;color:var(--muted);line-height:1.2;overflow-wrap:anywhere}
+.pl.new .shirt{animation:pop .35s ease-out}
+@keyframes pop{0%{transform:scale(1.3)}100%{transform:none}}
+
+.guess{display:flex;flex-direction:column;gap:8px}
+.grow{display:grid;grid-template-columns:1fr auto;gap:8px}
+.grow input{box-sizing:border-box;width:100%;min-width:0;font:inherit;font-size:16px;font-weight:500;padding:13px 14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:0;-webkit-appearance:none}
+.grow input:focus{outline:none;border-color:var(--ink)}
+.grow input::placeholder{color:var(--muted)}
+.grow .btn{padding:0 20px}
+.fb{font-family:var(--f-mono);font-size:12px;letter-spacing:.03em;min-height:18px;color:var(--muted)}
+.fb.bad{color:var(--bad)} .fb.good{color:var(--accent)} .fb.warn{color:var(--warn)}
+.tried{display:flex;flex-wrap:wrap;gap:6px}
+.tried span{font-size:13px;padding:3px 8px;background:color-mix(in oklab,var(--bad) 12%,var(--surface));color:var(--bad);text-decoration:line-through}
+.confirm{border:1.5px solid var(--bad);padding:14px;display:flex;flex-direction:column;gap:10px}
+.confirm p{margin:0;font-size:15px}
+.flag{align-self:flex-start;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;background:var(--bad);color:#fff}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+
+/* result */
+.reveal{display:flex;flex-direction:column;gap:4px}
+.reveal h2{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:70%;font-size:clamp(36px,11vw,54px);line-height:.92;text-transform:uppercase;text-wrap:balance}
+.score{display:flex;align-items:baseline;gap:8px}
+.score b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(88px,26vw,130px);line-height:.82;font-variant-numeric:tabular-nums}
+.score span{font-family:var(--f-mono);font-size:20px;color:var(--muted)}
+.verdict{font-family:var(--f-display);font-weight:800;font-stretch:85%;font-size:22px;margin:0;text-transform:uppercase}
+.vs{font-family:var(--f-mono);font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.vs b{color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats div{padding:12px 6px;display:flex;flex-direction:column;gap:2px;align-items:center;text-align:center}
+.stats div+div{border-left:1px solid var(--line)}
+.stats b{font-family:var(--f-mono);font-weight:600;font-size:20px;font-variant-numeric:tabular-nums}
+.stats span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.share{display:flex;flex-direction:column;gap:10px}
+.share h3{margin:0;font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:18px;text-transform:uppercase;letter-spacing:.03em}
+.share img{display:block;width:100%;max-width:100%;aspect-ratio:1;border:1px solid var(--line);background:var(--soft)}
+.share p{margin:0;font-size:13px;color:var(--muted)}
+.sendto{display:flex;flex-direction:column;gap:10px;padding-top:4px}
+.targets{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.tgt{display:block;text-align:center;padding:13px 8px;border:1.5px solid var(--line);color:var(--ink);text-decoration:none;font-weight:700;font-size:16px;touch-action:manipulation}
+.tgt:hover{border-color:var(--ink)}
+.tgt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tgt.wa{border-color:var(--accent);background:color-mix(in oklab,var(--accent) 12%,var(--surface))}
+textarea.copybox{width:100%;box-sizing:border-box;font-family:var(--f-mono);font-size:13px;background:var(--soft);color:var(--ink);border:1px solid var(--line);padding:10px;min-height:130px}
+.next{text-align:center;display:flex;flex-direction:column;gap:2px}
+.next b{font-family:var(--f-mono);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);font-family:var(--f-mono);font-size:13px;padding:10px 16px;max-width:calc(100% - 40px);text-align:center;z-index:5}
+
+@keyframes fadein{from{opacity:.35}to{opacity:1}}
+.enter{animation:fadein .18s ease-out}
+@media (max-width:380px){.shirt{width:34px;height:34px;font-size:10px}.pl .nm{font-size:11.5px}.hints{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion: reduce){.enter,.pl.new .shirt{animation:none}.btn{transition:none}}
+.replaying .sharecard{display:none}.replaying header.top::after{content:"Replay · doesn’t count";flex-basis:100%;font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--warn)}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="mark">Squad <i>Goals</i></div>
+    <div class="meta" id="meta"></div>
+  </header>
+  <main id="app"></main>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+/* Replay: play today's puzzle again just for fun. The first result stays saved, and stays on the menu, until the next puzzle at midnight. */
+function tdkoIsReplay(gid, dayKey, dayNo){ if(location.hash!=='#replay') return false;
+  try{ const r=JSON.parse(localStorage.getItem('tdko:'+dayKey+'#'+dayNo)||'{}')[gid]; return !!r && r.status==='done'; }catch(e){ return false; } }
+function tdkoReplayBox(on){ return `<section class="card replaybox"><div class="inner">
+    <span class="eyebrow">${on?'Replay · just for fun':'Fancy another go?'}</span>
+    <p>${on?'This one doesn’t count. Your first score today stays on the board.':'Replay today’s puzzle as often as you like. Your first score stays on the board.'}</p>
+    <button class="btn ghost" type="button" data-replay>${on?'Replay again':'Replay'}</button>
+  </div></section>`; }
+let tdkoReplayKey='';
+document.addEventListener('click', e=>{ if(!e.target.closest || !e.target.closest('[data-replay]')) return;
+  try{ if(tdkoReplayKey) localStorage.removeItem(tdkoReplayKey); }catch(_){}
+  history.replaceState(null,'',location.pathname+location.search+'#replay'); location.reload(); });
+</script>
+<script>
+(function(){
+const GAME_URL = 'https://claude.ai/artifact/S3t3x3KoCUa9Ddc5X6u3Sf';
+const LAUNCH = Date.UTC(2026,10,16);   // SOFT LAUNCH: Mon 16 Nov 2026 is No. 1 (months count from 0). Before that date every day plays No. 1
+const LIVES = 5;
+/* Starting XIs from each final's team sheet. rows run attack → goalkeeper, left → right as seen from the stand.
+   Each player: [name, position, tag]; tag is nationality for club sides and club at the time for national sides. */
+const XIS = [{"id": "liv05", "team": "Liverpool", "type": "club", "comp": "Champions League final", "year": 2005, "cap": "Steven Gerrard", "rows": [[["Milan Baroš", "ST", "CZE"]], [["Harry Kewell", "SS", "AUS"]], [["John Arne Riise", "LM", "NOR"], ["Steven Gerrard", "CM", "ENG"], ["Xabi Alonso", "CM", "ESP"], ["Luis García", "RM", "ESP"]], [["Djimi Traoré", "LB", "MLI"], ["Sami Hyypiä", "CB", "FIN"], ["Jamie Carragher", "CB", "ENG"], ["Steve Finnan", "RB", "IRL"]], [["Jerzy Dudek", "GK", "POL"]]]}, {"id": "mu99", "team": "Manchester United", "type": "club", "comp": "Champions League final", "year": 1999, "cap": "Peter Schmeichel", "rows": [[["Andy Cole", "ST", "ENG"], ["Dwight Yorke", "ST", "TRI"]], [["Jesper Blomqvist", "LM", "SWE"], ["Nicky Butt", "CM", "ENG"], ["David Beckham", "CM", "ENG"], ["Ryan Giggs", "RM", "WAL"]], [["Denis Irwin", "LB", "IRL"], ["Jaap Stam", "CB", "NED"], ["Ronny Johnsen", "CB", "NOR"], ["Gary Neville", "RB", "ENG"]], [["Peter Schmeichel", "GK", "DEN"]]]}, {"id": "che12", "team": "Chelsea", "type": "club", "comp": "Champions League final", "year": 2012, "cap": "Frank Lampard", "rows": [[["Didier Drogba", "ST", "CIV"]], [["Ryan Bertrand", "LW", "ENG"], ["Juan Mata", "AM", "ESP"], ["Salomon Kalou", "RW", "CIV"]], [["Frank Lampard", "CM", "ENG"], ["John Obi Mikel", "DM", "NGA"]], [["Ashley Cole", "LB", "ENG"], ["Gary Cahill", "CB", "ENG"], ["David Luiz", "CB", "BRA"], ["José Bosingwa", "RB", "POR"]], [["Petr Čech", "GK", "CZE"]]]}, {"id": "mci23", "team": "Manchester City", "type": "club", "comp": "Champions League final", "year": 2023, "cap": "İlkay Gündoğan", "rows": [[["Erling Haaland", "ST", "NOR"]], [["Jack Grealish", "LW", "ENG"], ["İlkay Gündoğan", "AM", "GER"], ["Kevin De Bruyne", "AM", "BEL"], ["Bernardo Silva", "RW", "POR"]], [["Rodri", "DM", "ESP"], ["John Stones", "CM", "ENG"]], [["Nathan Aké", "CB", "NED"], ["Rúben Dias", "CB", "POR"], ["Manuel Akanji", "CB", "SUI"]], [["Ederson", "GK", "BRA"]]]}, {"id": "gre04", "team": "Greece", "type": "intl", "comp": "European Championship final", "year": 2004, "cap": "Theodoros Zagorakis", "rows": [[["Zisis Vryzas", "LW", "Fiorentina"], ["Angelos Charisteas", "ST", "Werder Bremen"], ["Stelios Giannakopoulos", "RW", "Bolton Wanderers"]], [["Kostas Katsouranis", "CM", "AEK Athens"], ["Angelos Basinas", "CM", "Panathinaikos"], ["Theodoros Zagorakis", "CM", "AEK Athens"]], [["Takis Fyssas", "LB", "Benfica"], ["Traianos Dellas", "CB", "Roma"], ["Michalis Kapsis", "CB", "AEK Athens"], ["Giourkas Seitaridis", "RB", "Panathinaikos"]], [["Antonios Nikopolidis", "GK", "Panathinaikos"]]]}, {"id": "fra18", "team": "France", "type": "intl", "comp": "World Cup final", "year": 2018, "cap": "Hugo Lloris", "rows": [[["Olivier Giroud", "ST", "Chelsea"]], [["Blaise Matuidi", "LW", "Juventus"], ["Antoine Griezmann", "AM", "Atlético Madrid"], ["Kylian Mbappé", "RW", "Paris Saint-Germain"]], [["Paul Pogba", "CM", "Manchester United"], ["N'Golo Kanté", "DM", "Chelsea"]], [["Lucas Hernández", "LB", "Atlético Madrid"], ["Samuel Umtiti", "CB", "Barcelona"], ["Raphaël Varane", "CB", "Real Madrid"], ["Benjamin Pavard", "RB", "Stuttgart"]], [["Hugo Lloris", "GK", "Tottenham"]]]}, {"id": "aja95", "team": "Ajax", "type": "club", "comp": "Champions League final", "year": 1995, "cap": "Danny Blind", "rows": [[["Marc Overmars", "LF", "NED"], ["Ronald de Boer", "CF", "NED"], ["Finidi George", "RF", "NGA"]], [["Jari Litmanen", "AM", "FIN"]], [["Edgar Davids", "LM", "NED"], ["Clarence Seedorf", "RM", "NED"]], [["Frank Rijkaard", "DM", "NED"]], [["Frank de Boer", "LB", "NED"], ["Danny Blind", "CB", "NED"], ["Michael Reiziger", "RB", "NED"]], [["Edwin van der Sar", "GK", "NED"]]]}, {"id": "ger14", "team": "Germany", "type": "intl", "comp": "World Cup final", "year": 2014, "cap": "Philipp Lahm", "rows": [[["Mesut Özil", "LW", "Arsenal"], ["Miroslav Klose", "ST", "Lazio"], ["Thomas Müller", "RW", "Bayern Munich"]], [["Toni Kroos", "CM", "Bayern Munich"], ["Bastian Schweinsteiger", "DM", "Bayern Munich"], ["Christoph Kramer", "CM", "Borussia Mönchengladbach"]], [["Benedikt Höwedes", "LB", "Schalke"], ["Mats Hummels", "CB", "Borussia Dortmund"], ["Jérôme Boateng", "CB", "Bayern Munich"], ["Philipp Lahm", "RB", "Bayern Munich"]], [["Manuel Neuer", "GK", "Bayern Munich"]]]}, {"id": "liv19", "team": "Liverpool", "type": "club", "comp": "Champions League final", "year": 2019, "cap": "Jordan Henderson", "rows": [[["Sadio Mané", "LF", "SEN"], ["Roberto Firmino", "CF", "BRA"], ["Mohamed Salah", "RF", "EGY"]], [["Georginio Wijnaldum", "CM", "NED"], ["Fabinho", "CM", "BRA"], ["Jordan Henderson", "CM", "ENG"]], [["Andrew Robertson", "LB", "SCO"], ["Virgil van Dijk", "CB", "NED"], ["Joël Matip", "CB", "CMR"], ["Trent Alexander-Arnold", "RB", "ENG"]], [["Alisson", "GK", "BRA"]]]}, {"id": "esp10", "team": "Spain", "type": "intl", "comp": "World Cup final", "year": 2010, "cap": "Iker Casillas", "rows": [[["David Villa", "ST", "Valencia"]], [["Andrés Iniesta", "LW", "Barcelona"], ["Xavi", "AM", "Barcelona"], ["Pedro", "RW", "Barcelona"]], [["Xabi Alonso", "DM", "Real Madrid"], ["Sergio Busquets", "DM", "Barcelona"]], [["Joan Capdevila", "LB", "Villarreal"], ["Carles Puyol", "CB", "Barcelona"], ["Gerard Piqué", "CB", "Barcelona"], ["Sergio Ramos", "RB", "Real Madrid"]], [["Iker Casillas", "GK", "Real Madrid"]]]}, {"id": "bar15", "team": "Barcelona", "type": "club", "comp": "Champions League final", "year": 2015, "cap": "Andrés Iniesta", "rows": [[["Neymar", "LW", "BRA"], ["Luis Suárez", "CF", "URU"], ["Lionel Messi", "RW", "ARG"]], [["Andrés Iniesta", "CM", "ESP"], ["Sergio Busquets", "DM", "ESP"], ["Ivan Rakitić", "CM", "CRO"]], [["Jordi Alba", "LB", "ESP"], ["Javier Mascherano", "CB", "ARG"], ["Gerard Piqué", "CB", "ESP"], ["Dani Alves", "RB", "BRA"]], [["Marc-André ter Stegen", "GK", "GER"]]]}, {"id": "arg22", "team": "Argentina", "type": "intl", "comp": "World Cup final", "year": 2022, "cap": "Lionel Messi", "rows": [[["Ángel Di María", "LW", "Juventus"], ["Julián Álvarez", "ST", "Manchester City"], ["Lionel Messi", "RW", "Paris Saint-Germain"]], [["Alexis Mac Allister", "CM", "Brighton"], ["Enzo Fernández", "CM", "Benfica"], ["Rodrigo De Paul", "CM", "Atlético Madrid"]], [["Marcos Acuña", "LB", "Sevilla"], ["Nicolás Otamendi", "CB", "Benfica"], ["Cristian Romero", "CB", "Tottenham"], ["Nahuel Molina", "RB", "Atlético Madrid"]], [["Emiliano Martínez", "GK", "Aston Villa"]]]}, {"id": "rma02", "team": "Real Madrid", "type": "club", "comp": "Champions League final", "year": 2002, "cap": "Fernando Hierro", "rows": [[["Fernando Morientes", "ST", "ESP"], ["Raúl", "ST", "ESP"]], [["Santiago Solari", "LM", "ARG"], ["Zinedine Zidane", "AM", "FRA"], ["Claude Makélélé", "DM", "FRA"], ["Luís Figo", "RM", "POR"]], [["Roberto Carlos", "LB", "BRA"], ["Iván Helguera", "CB", "ESP"], ["Fernando Hierro", "CB", "ESP"], ["Míchel Salgado", "RB", "ESP"]], [["César", "GK", "ESP"]]]}, {"id": "eng66", "team": "England", "type": "intl", "comp": "World Cup final", "year": 1966, "cap": "Bobby Moore", "rows": [[["Roger Hunt", "ST", "Liverpool"], ["Geoff Hurst", "ST", "West Ham United"]], [["Martin Peters", "LM", "West Ham United"], ["Bobby Charlton", "CM", "Manchester United"], ["Nobby Stiles", "DM", "Manchester United"], ["Alan Ball", "RM", "Blackpool"]], [["Ray Wilson", "LB", "Everton"], ["Bobby Moore", "CB", "West Ham United"], ["Jack Charlton", "CB", "Leeds United"], ["George Cohen", "RB", "Fulham"]], [["Gordon Banks", "GK", "Leicester City"]]]}];
+const HINTS = [
+  {k:'team', label:'Team', cost:15, val:x=>x.team},
+  {k:'comp', label:'Final', cost:5, val:x=>x.comp},
+  {k:'year', label:'Year', cost:5, val:x=>String(x.year)},
+  {k:'cap',  label:'Captain', cost:5, val:()=> 'On the pitch'}
+];
+
+/* ---------- day ---------- */
+const now = new Date();
+const dayKey = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+const dayNo = LAUNCH==null ? 1 : Math.max(1, Math.round((Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()) - LAUNCH)/864e5) + 1);
+const X = XIS[(dayNo-1) % XIS.length];
+const PL = X.rows.flat().map(([name,pos,tag])=>({name,pos,tag}));
+const N = PL.length;
+const dateLabel = now.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
+const REPLAY = tdkoIsReplay('squad-goals', dayKey, dayNo), KEY = 'playedle:'+dayKey+'#'+dayNo + (REPLAY?':replay':'');
+if(REPLAY){ tdkoReplayKey = KEY; document.documentElement.classList.add('replaying'); }
+const app = document.getElementById('app');
+document.getElementById('meta').textContent = `No. ${dayNo} · ${dateLabel}`;
+const mh = /^#c(\d+)-(\d{1,3})$/.exec(location.hash);
+const challenge = (mh && +mh[1]===dayNo && +mh[2]<=100) ? +mh[2] : null;
+const formation = X.rows.slice(0,-1).map(r=>r.length).reverse().join('-');
+
+function load(){ try{ const s=JSON.parse(localStorage.getItem(KEY)); if(s && Array.isArray(s.found)) return s; }catch(e){} return null; }
+/* Shared daily status read by The Daily Kick Off menu: tdko:<date> → {gameId: {status, gaveUp}} */
+function report(){ if(REPLAY) return; try{ const k='tdko:'+dayKey+'#'+dayNo, all=JSON.parse(localStorage.getItem(k)||'{}'); all['squad-goals']={status: S.over?'done':S.started?'open':'ready', gaveUp:!!S.gaveUp}; localStorage.setItem(k, JSON.stringify(all)); }catch(e){} }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} report(); }
+let S = load() || {started:false, found:[], hints:[], tried:[], over:false};
+
+const hintCost = () => S.hints.reduce((a,k)=>a+HINTS.find(h=>h.k===k).cost,0);
+const score = () => S.gaveUp ? 0 : Math.max(0, Math.round(S.found.length*100/N) - hintCost());
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const surnameOf = n => { const w=n.split(' '); return w.length>1 ? w.slice(1).join(' ') : n; };
+
+/* ---------- matching: full name, surname (if unique in the XI), last word, small typos forgiven ---------- */
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ı/g,'i').replace(/[-']/g,' ').replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();
+function lev(a,b){ const d=Array.from({length:b.length+1},(_,i)=>i);
+  for(let i=1;i<=a.length;i++){ let p=d[0]; d[0]=i; for(let j=1;j<=b.length;j++){ const t=d[j]; d[j]=Math.min(d[j]+1,d[j-1]+1,p+(a[i-1]===b[j-1]?0:1)); p=t; } } return d[b.length]; }
+const slack = s => s.length>=9 ? 2 : s.length>=5 ? 1 : 0;
+const ALIAS = {"Trent Alexander-Arnold":["trent","taa"],"Virgil van Dijk":["vvd"],"Kevin De Bruyne":["kdb"],"John Obi Mikel":["mikel"],"Xavi":["xavi hernandez"],"Pedro":["pedro rodriguez"],"Raúl":["raul gonzalez"],"Emiliano Martínez":["emi martinez","dibu martinez"],"Finidi George":["finidi"],"Neymar":["neymar jr"],"Ederson":["ederson moraes"],"Alisson":["alisson becker"],"Lúcio":["lucio"],"César":["cesar sanchez"],"Luis García":["luis garcia"],"Xabi Alonso":["xabi"],"Bernardo Silva":["bernardo"],"Julián Álvarez":["julian alvarez"],"Enzo Fernández":["enzo"],"Bobby Charlton":["sir bobby charlton"],"Jack Charlton":["big jack"]};
+const keysFor = p => { const f=norm(p.name), w=f.split(' '); const ks=new Set([f, ...(ALIAS[p.name]||[]).map(norm)]);
+  if(w.length>1){ ks.add(w.slice(1).join(' ')); ks.add(w[w.length-1]); } if(w.length>2) ks.add(w.slice(-2).join(' '));
+  return [...ks].filter(k=>k.length>=3); };
+function matchScore(g, p){ // 2 exact, 1 typo, 0 none
+  const ks=keysFor(p); if(ks.includes(g)) return 2;
+  return ks.some(k=>lev(g,k)<=slack(k)) ? 1 : 0;
+}
+function findPlayers(raw){
+  const g=norm(raw); if(g.length<3) return {hits:[]};
+  const sc=PL.map(p=>matchScore(g,p));
+  const best=Math.max(...sc); if(!best) return {hits:[]};
+  return {hits:PL.filter((_,i)=>sc[i]===best)};
+}
+
+let swallowUntil = 0;
+document.addEventListener('pointerdown', ()=>{ swallowUntil = 0; }, true);
+document.addEventListener('click', e=>{ if(performance.now() < swallowUntil){ swallowUntil = 0; e.preventDefault(); e.stopPropagation(); } }, true);
+function onPress(el, fn){
+  let fired = false;
+  const off = () => el.disabled || el.getAttribute('aria-disabled')==='true';
+  el.addEventListener('pointerdown', e=>{ if(e.button!==0 || off()) return; e.preventDefault();
+    if(e.pointerType==='mouse') fired = true; else swallowUntil = performance.now() + 600; fn(); });
+  el.addEventListener('click', ()=>{ if(fired){ fired=false; return; } if(!off()) fn(); }); // keyboard Enter/Space
+}
+let tt=0;
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,2200)}
+
+/* ---------- pitch ---------- */
+function pitchHTML(reveal, fresh){
+  const showCap = S.hints.includes('cap') || reveal;
+  return `<div class="pitch" aria-label="Starting XI, ${formation}"><span class="box t"></span><span class="box b"></span><span class="plabel">${X.type==='club'?'Club side':'National side'}<br>${formation}</span>${X.rows.map(r=>`<div class="prow">${r.map(([name,pos,tag])=>{
+    const got=S.found.includes(name), cls=got?'ok':reveal?'miss':'';
+    const nm = got||reveal ? esc(surnameOf(name)) : '<i></i>';
+    return `<div class="pl ${cls}${name===fresh?' new':''}" title="${got||reveal?esc(name):esc(pos)}"><span class="shirt">${pos}${showCap&&name===X.cap?'<span class="cap" aria-label="Captain">C</span>':''}</span><span class="nm">${nm}</span><span class="tag">${esc(tag)}</span></div>`;
+  }).join('')}</div>`).join('')}</div>`;
+}
+
+/* ---------- intro ---------- */
+function intro(){
+  app.innerHTML = `
+  <section class="card enter"><div class="hero">
+    <h1>Squad<br><i>Goals</i></h1>
+    <p class="lede">A famous starting XI from a final, with the names wiped off the team sheet. Work out the team and name all eleven.</p>
+    ${challenge!==null?`<div class="challenge"><span>A friend scored this on today's XI. Can you beat them?</span><b>${challenge}</b></div>`:''}
+    <ul class="rules">
+      <li><span>Clues</span>Each player's position, plus nationality for club sides or club for national sides</li>
+      <li><span>Score</span>About 9 points per player named, 100 for all eleven</li>
+      <li><span>Hints</span>Reveal the team, competition, year or captain, at a cost</li>
+      <li><span>Lives</span>Five wrong guesses and the team sheet is taken away</li>
+    </ul>
+    <div class="ladder" aria-label="Hint costs">${HINTS.map(h=>`<div><b>−${h.cost}</b><span>${h.label}</span></div>`).join('')}</div>
+    <button class="btn" id="go">See the team sheet</button>
+  </div></section>`;
+  onPress(document.getElementById('go'), ()=>{ S.started=true; save(); game(); });
+}
+
+/* ---------- game ---------- */
+let pendingHint=null, confirmOpen=false, fbMsg='', fbCls='', fresh=null;
+function game(){
+  if(S.over) return result();
+  const lost=S.tried.length;
+  app.innerHTML = `
+  <section class="card">
+    <div class="status">
+      <div class="lives" aria-label="${LIVES-lost} lives left"><span class="eyebrow" style="margin-right:4px">Lives</span>${Array.from({length:LIVES},(_,k)=>`<span class="life${k>=LIVES-lost?' used':''}"></span>`).join('')}</div>
+      <div class="pts"><b>${score()}</b><small>pts</small></div>
+    </div>
+    <div class="hints" id="hints">${HINTS.map(h=>{ const on=S.hints.includes(h.k);
+      return `<div role="button" tabindex="${on?-1:0}" class="hb${on?' on':''}" data-k="${h.k}" aria-disabled="${on}" aria-label="${on?h.label+': '+esc(h.val(X)):'Reveal '+h.label+' for '+h.cost+' points'}"><span>${h.label}</span><b class="${on?'':'c'}">${on?esc(h.val(X)):'Reveal −'+h.cost}</b></div>`; }).join('')}
+      ${pendingHint?`<div class="pending"><span>Reveal the ${HINTS.find(h=>h.k===pendingHint).label.toLowerCase()} for ${HINTS.find(h=>h.k===pendingHint).cost} points?</span><span class="act"><button class="mini" id="hyes">Reveal</button><button class="mini alt" id="hno">Cancel</button></span></div>`:''}
+    </div>
+    ${pitchHTML(false, fresh)}
+  </section>
+  <form class="guess" id="gform" autocomplete="off">
+    <div class="grow">
+      <input id="gin" type="text" autocapitalize="words" spellcheck="false" placeholder="Name a player (${S.found.length}/${N} so far)" aria-label="Name a player">
+      <button class="btn" type="submit" id="gbtn">Name</button>
+    </div>
+    <div class="fb ${fbCls}" id="fb">${esc(fbMsg)}</div>
+    ${S.tried.length?`<div class="tried" aria-label="Wrong guesses">${S.tried.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`:''}
+  </form>
+  <div id="giveup"></div>`;
+  fbMsg=''; fbCls=''; fresh=null;
+  app.querySelectorAll('.hb').forEach(b=>{ const k=b.dataset.k;
+    const go=()=>{ if(S.hints.includes(k)) return; pendingHint=k; game(); };
+    onPress(b, go); b.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } }); });
+  if(pendingHint){
+    onPress(document.getElementById('hyes'), ()=>{ S.hints.push(pendingHint); pendingHint=null; save(); game(); });
+    onPress(document.getElementById('hno'), ()=>{ pendingHint=null; game(); });
+  }
+  document.getElementById('gform').addEventListener('submit', e=>{ e.preventDefault(); guess(); });
+  drawGiveUp();
+}
+function drawGiveUp(){
+  const g=document.getElementById('giveup'); if(!g) return;
+  g.innerHTML = confirmOpen ? `<div class="confirm"><p>Are you sure? Giving up ends today's game on 0 points and reveals the answer.</p>
+    <div class="actions"><button class="btn ghost" id="keep">Keep playing</button><button class="btn danger" id="quit">Give up</button></div></div>`
+    : `<div style="display:flex;justify-content:center"><button class="linkbtn" id="gu">Give up</button></div>`;
+  if(confirmOpen){ onPress(document.getElementById('keep'),()=>{confirmOpen=false;drawGiveUp();}); onPress(document.getElementById('quit'),()=>{confirmOpen=false;S.over=true;S.gaveUp=true;save();result();}); }
+  else onPress(document.getElementById('gu'),()=>{confirmOpen=true;drawGiveUp();});
+}
+function guess(){
+  const inp=document.getElementById('gin'), raw=inp.value.trim(); if(!raw) return;
+  const {hits}=findPlayers(raw);
+  const open=hits.filter(p=>!S.found.includes(p.name));
+  if(open.length===1){
+    const p=open[0]; S.found.push(p.name); fresh=p.name;
+    if(S.found.length===N){ S.over=true; save(); fbMsg=''; game(); setTimeout(result,700); return; }
+    save(); fbMsg=`${p.name}. ${N-S.found.length} to go.`; fbCls='good'; game();
+    document.getElementById('gin').focus({preventScroll:true}); return;
+  }
+  if(open.length>1){ const f=document.getElementById('fb'); f.className='fb warn'; f.textContent='More than one player fits. Add a first name.'; inp.select(); return; }
+  if(hits.length){ const f=document.getElementById('fb'); f.className='fb warn'; f.textContent=`Already named ${hits[0].name}.`; inp.select(); return; }
+  if(S.tried.some(t=>norm(t)===norm(raw))){ const f=document.getElementById('fb'); f.className='fb warn'; f.textContent='Already tried that one. No life lost.'; inp.select(); return; }
+  S.tried.push(raw);
+  if(S.tried.length>=LIVES){ S.over=true; save(); result(); return; }
+  save(); const left=LIVES-S.tried.length;
+  fbMsg = left===1 ? 'Not in this XI. Last life left.' : `Not in this XI. ${left} lives left.`; fbCls = left===1?'warn':'bad';
+  game(); document.getElementById('gin').focus({preventScroll:true});
+}
+
+/* ---------- result ---------- */
+function verdict(s){
+  if(S.gaveUp) return 'Gave up';
+  const f=S.found.length;
+  if(f===N && !S.hints.length) return 'Knew the team sheet by heart';
+  if(f===N) return 'Full team sheet';
+  if(f>=8) return 'Nearly the full XI';
+  if(f>=5) return 'Half a team';
+  if(f>=1) return 'Bench warmer';
+  return 'Didn’t make the squad';
+}
+function inviteUrl(){ return `${GAME_URL}#c${dayNo}-${score()}`; }
+function inviteText(){
+  const rows = X.rows.map(r=>r.map(([n])=>S.found.includes(n)?'🟩':'🟥').join('')).join('\n');
+  const head = S.gaveUp ? `🧩 Squad Goals No. ${dayNo}: 🏳️ gave up (0/100)` : `🧩 Squad Goals No. ${dayNo}: named ${S.found.length}/${N} for ${score()}/100`;
+  return `${head}\n${rows}${S.hints.length?`\n${S.hints.length} hint${S.hints.length>1?'s':''} used`:''}\n\nA famous XI with the names wiped off. How many can you name?\nTry today's team sheet: ${inviteUrl()}`;
+}
+let cdTimer=0;
+function result(){
+  const s=score();
+  let vs='';
+  if(challenge!==null){ const d=s-challenge; vs=`<div class="vs">Your friend: <b>${challenge}</b> · ${d>0?`You win by <b>${d}</b>`:d<0?`They win by <b>${-d}</b>`:'<b>Level</b>, a draw'}</div>`; }
+  app.innerHTML = `
+  <section class="card enter">
+    <div class="inner">
+      <div class="reveal"><span class="eyebrow">The team was</span><h2>${esc(X.team)}</h2><span class="ltag" style="align-self:flex-start">${esc(X.comp)} · ${X.year} · ${formation}</span></div>
+      ${S.gaveUp?'<span class="flag">Gave up</span>':''}
+      <div class="score"><b id="scr">0</b><span>/ 100</span></div>
+      <p class="verdict">${verdict(s)}</p>
+      ${vs}
+      <div class="stats">
+        <div><b>${S.found.length}/${N}</b><span>Named</span></div>
+        <div><b>${S.tried.length}</b><span>Wrong guesses</span></div>
+        <div><b>${S.hints.length}</b><span>Hints</span></div>
+      </div>
+    </div>
+    ${pitchHTML(true)}
+  </section>
+  ${typeof tdkoStreakCard==='function'?tdkoStreakCard('squad-goals'):''}
+  <section class="card sharecard"><div class="inner share">
+    <h3>Challenge a friend</h3>
+    <img id="cardimg" alt="Squad Goals share card showing a score of ${s} out of 100">
+    <p>Your friend gets today's team sheet with your score as the one to beat. The card never shows the team or the players.</p>
+    <button class="btn" id="shareBtn">Challenge a friend</button>
+    <div class="sendto" id="sendto" hidden>
+      <span class="eyebrow">Send with</span>
+      <div class="targets">
+        <a class="tgt wa" id="t-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="tgt" id="t-x" target="_blank" rel="noopener">X</a>
+        <a class="tgt" id="t-tg" target="_blank" rel="noopener">Telegram</a>
+        <a class="tgt" id="t-fb" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <button class="linkbtn" id="copyInvite">Or copy the invite</button>
+    </div>
+  </div></section>
+  ${tdkoReplayBox(REPLAY)}
+  <div class="next"><span class="eyebrow">Next team sheet in</span><b id="cd">--:--:--</b></div>`;
+
+  const el=document.getElementById('scr'), t0=performance.now(), reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  (function up(){const p=reduce?1:Math.min(1,(performance.now()-t0)/800); el.textContent=Math.round(s*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(up)})();
+
+  let cardBlob=null;
+  drawCard().then(b=>{ cardBlob=b; if(b) document.getElementById('cardimg').src=URL.createObjectURL(b); });
+
+  const full=inviteText(), url=inviteUrl(), noUrl=full.replace(/\nTry today's team sheet: .*$/,'\nTry today\'s team sheet:'), E=encodeURIComponent;
+  document.getElementById('t-wa').href=`https://wa.me/?text=${E(full)}`;
+  document.getElementById('t-x').href=`https://x.com/intent/post?text=${E(noUrl)}&url=${E(url)}`;
+  document.getElementById('t-tg').href=`https://t.me/share/url?url=${E(url)}&text=${E(noUrl)}`;
+  document.getElementById('t-fb').href=`https://www.facebook.com/sharer/sharer.php?u=${E(url)}`;
+  const sendto=document.getElementById('sendto');
+  const showTargets=()=>{ sendto.hidden=false; sendto.scrollIntoView({block:'nearest',behavior:reduce?'auto':'smooth'}); };
+  document.getElementById('shareBtn').addEventListener('click', async ()=>{
+    if(!navigator.share) return showTargets();
+    const data={title:'Squad Goals', text:full};
+    try{ const f=cardBlob&&new File([cardBlob],`squad-goals-${dayNo}.png`,{type:'image/png'}); if(f&&navigator.canShare&&navigator.canShare({files:[f]})) data.files=[f]; }catch(e){}
+    try{ await navigator.share(data); }catch(e){ if(e&&e.name==='AbortError') return; showTargets(); }
+  });
+  document.getElementById('copyInvite').addEventListener('click', ()=>{
+    const fb=()=>{ const t=document.createElement('textarea'); t.className='copybox'; t.readOnly=true; t.value=full; document.getElementById('copyInvite').replaceWith(t); t.focus(); t.select(); toast('Select the text and copy it'); };
+    try{ navigator.clipboard.writeText(full).then(()=>toast('Invite copied. Paste it to a friend'),fb); }catch(e){ fb(); }
+  });
+
+  clearInterval(cdTimer);
+  const tick=()=>{const n=new Date(),mid=new Date(n);mid.setHours(24,0,0,0);const d=Math.max(0,(mid-n)/1000|0);
+    if(d===0){ clearInterval(cdTimer); return location.reload(); }
+    const c=document.getElementById('cd'); if(c) c.textContent=`${String(d/3600|0).padStart(2,'0')}:${String(d%3600/60|0).padStart(2,'0')}:${String(d%60).padStart(2,'0')}`;};
+  tick(); cdTimer=setInterval(tick,1000);
+}
+
+/* ---------- share card (1080×1080: formation of green/red shirts, never names or team) ---------- */
+async function drawCard(){
+  try{ await Promise.all([document.fonts.load('900 100px Archivo'),document.fonts.load('800 40px Archivo'),document.fonts.load('600 30px "IBM Plex Mono"')]); }catch(e){}
+  const W=1080, c=document.createElement('canvas'); c.width=c.height=W;
+  const x=c.getContext('2d'); if(!x) return null;
+  const K={bg:'#0B110E',ink:'#EAF0EC',muted:'#8A988F',line:'#24302A',acc:'#34D27F',bad:'#FF6B5A'};
+  const cond=v=>{ if('fontStretch' in x) x.fontStretch=v; };
+  const Pd=80, s=score();
+  x.fillStyle=K.bg; x.fillRect(0,0,W,W);
+  cond('condensed'); x.font='900 60px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=K.ink;
+  x.fillText('SQUAD',Pd,Pd+50); const w=x.measureText('SQUAD ').width; x.fillStyle=K.acc; x.fillText('GOALS',Pd+w,Pd+50);
+  cond('normal'); x.font='600 24px "IBM Plex Mono",monospace'; x.fillStyle=K.muted; x.textAlign='right';
+  x.fillText(`NO. ${dayNo} · ${dateLabel.toUpperCase()}`,W-Pd,Pd+46); x.textAlign='left';
+  x.fillStyle=K.ink; x.fillRect(Pd,Pd+80,W-2*Pd,4);
+  x.font='600 28px "IBM Plex Mono",monospace'; x.fillStyle=K.muted; x.fillText(S.gaveUp?'I GAVE UP TODAY':`I NAMED ${S.found.length} OF ${N} FOR`,Pd,Pd+170);
+  cond('condensed'); x.font='900 300px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=K.ink;
+  const sw=x.measureText(String(s)).width; x.fillText(String(s),Pd-8,Pd+430);
+  cond('normal'); x.font='600 44px "IBM Plex Mono",monospace'; x.fillStyle=K.muted; x.fillText('/100',Pd+sw+10,Pd+430);
+  cond('condensed'); x.font='800 46px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=s?K.acc:K.bad; x.fillText(verdict(s).toUpperCase(),Pd,Pd+500);
+  // formation as a sideways pitch across the free band under the score: keeper on the left, attack on the right
+  const px=Pd, py=Pd+548, pw=W-2*Pd, ph=230;
+  x.strokeStyle=K.line; x.lineWidth=3; x.strokeRect(px,py,pw,ph);
+  x.beginPath(); x.moveTo(px+pw/2,py); x.lineTo(px+pw/2,py+ph); x.stroke();
+  x.beginPath(); x.arc(px+pw/2,py+ph/2,44,0,Math.PI*2); x.stroke();
+  x.strokeRect(px,py+ph/2-60,70,120); x.strokeRect(px+pw-70,py+ph/2-60,70,120);
+  const R=X.rows.length;
+  X.rows.forEach((r,ri)=>{ const cx=px+pw*(R-1-ri+0.5)/R; r.forEach(([n],ci)=>{ const cy=py+ph*(ci+0.5)/r.length; x.fillStyle=S.found.includes(n)?K.acc:K.bad; x.fillRect(cx-16,cy-16,32,32); }); });
+  const by=W-Pd-20;
+  cond('condensed'); x.font='800 46px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=K.ink; x.fillText('HOW MANY CAN YOU NAME?',Pd,by-46);
+  cond('normal'); x.font='500 24px "IBM Plex Mono",monospace'; x.fillStyle=K.muted; x.fillText('A FAMOUS XI · NAMES WIPED OFF · ONE GO A DAY',Pd,by);
+  return new Promise(r=>c.toBlob(b=>r(b),'image/png'));
+}
+
+/* ---------- day rollover: always the player's own calendar day. If the page is left open past midnight, load the new day's puzzle when they come back. ---------- */
+const openedOn = (d=>`${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`)(new Date());
+const rollCheck = () => { const d=new Date(); if(`${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`!==openedOn) location.reload(); };
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) rollCheck(); });
+addEventListener('focus', rollCheck);
+
+/* ---------- boot ---------- */
+if(S.over) result(); else if(S.started) game(); else intro();
+})();
+</script>

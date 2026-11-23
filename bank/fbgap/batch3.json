@@ -1,0 +1,3842 @@
+[
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Robert Pires played for?",
+  "a": "France",
+  "wrong": [
+   "Northern Ireland",
+   "Belgium",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Emmanuel Petit played for?",
+  "a": "France",
+  "wrong": [
+   "Scotland",
+   "Switzerland",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marc Overmars played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Austria",
+   "Republic of Ireland",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1995–1995"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Cesc Fàbregas played for?",
+  "a": "Spain",
+  "wrong": [
+   "Italy",
+   "Greece",
+   "Turkey"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2010–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Robin van Persie played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Scotland",
+   "Switzerland",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2012–2013"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mesut Özil played for?",
+  "a": "Germany",
+  "wrong": [
+   "Switzerland",
+   "Sweden",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2014–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lukas Podolski played for?",
+  "a": "Germany",
+  "wrong": [
+   "Republic of Ireland",
+   "Switzerland",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2014–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ashley Cole played for?",
+  "a": "England",
+  "wrong": [
+   "Denmark",
+   "Norway",
+   "France"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2012–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Sol Campbell played for?",
+  "a": "England",
+  "wrong": [
+   "Austria",
+   "Republic of Ireland",
+   "France"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Emiliano Martínez played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Chile",
+   "Paraguay",
+   "Brazil"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gilberto Silva played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Argentina",
+   "Uruguay",
+   "Colombia"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2002–2002"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Declan Rice played for?",
+  "a": "England",
+  "wrong": [
+   "Switzerland",
+   "Sweden",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kai Havertz played for?",
+  "a": "Germany",
+  "wrong": [
+   "Sweden",
+   "Denmark",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2021–2021"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jorginho played for?",
+  "a": "Italy",
+  "wrong": [
+   "Turkey",
+   "Croatia",
+   "Greece"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2021–2021"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Olivier Giroud played for?",
+  "a": "France",
+  "wrong": [
+   "Scotland",
+   "Austria",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2018–2021"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Alexis Sánchez played for?",
+  "a": "Chile",
+  "wrong": [
+   "Brazil",
+   "Argentina",
+   "Ecuador"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Petr Čech played for?",
+  "a": "Czech Republic",
+  "wrong": [
+   "Bulgaria",
+   "Slovakia",
+   "Soviet Union"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2012–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has David Luiz played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Peru",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2012–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nicolas Anelka played for?",
+  "a": "France",
+  "wrong": [
+   "Switzerland",
+   "England",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2000–2009"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Frank Lampard played for?",
+  "a": "England",
+  "wrong": [
+   "Switzerland",
+   "Norway",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2012–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has John Terry played for?",
+  "a": "England",
+  "wrong": [
+   "Wales",
+   "France",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2012–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Eden Hazard played for?",
+  "a": "Belgium",
+  "wrong": [
+   "Wales",
+   "Netherlands",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has N'Golo Kanté played for?",
+  "a": "France",
+  "wrong": [
+   "Netherlands",
+   "Scotland",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2018–2021"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Claude Makélélé played for?",
+  "a": "France",
+  "wrong": [
+   "Switzerland",
+   "Denmark",
+   "Germany"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2002–2002"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marcel Desailly played for?",
+  "a": "France",
+  "wrong": [
+   "Austria",
+   "England",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1993–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ruud Gullit played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Scotland",
+   "France",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1987–1990"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Hernán Crespo played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Peru",
+   "Ecuador",
+   "Brazil"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Fernando Torres played for?",
+  "a": "Spain",
+  "wrong": [
+   "Serbia",
+   "Croatia",
+   "Italy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2010–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Juan Mata played for?",
+  "a": "Spain",
+  "wrong": [
+   "Turkey",
+   "Greece",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2010–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Michael Ballack played for?",
+  "a": "Germany",
+  "wrong": [
+   "Scotland",
+   "Northern Ireland",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mason Mount played for?",
+  "a": "England",
+  "wrong": [
+   "Switzerland",
+   "Northern Ireland",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2021–2021"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Romelu Lukaku played for?",
+  "a": "Belgium",
+  "wrong": [
+   "Northern Ireland",
+   "Norway",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Thiago Silva played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Uruguay",
+   "Peru",
+   "Ecuador"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2021–2021"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Álvaro Morata played for?",
+  "a": "Spain",
+  "wrong": [
+   "Turkey",
+   "Croatia",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2014–2017"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Steven Gerrard played for?",
+  "a": "England",
+  "wrong": [
+   "Scotland",
+   "Wales",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2005–2005"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jamie Carragher played for?",
+  "a": "England",
+  "wrong": [
+   "Norway",
+   "Sweden",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2005–2005"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Xabi Alonso played for?",
+  "a": "Spain",
+  "wrong": [
+   "Serbia",
+   "Turkey",
+   "Greece"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2005–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Michael Owen played for?",
+  "a": "England",
+  "wrong": [
+   "Austria",
+   "France",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1998–2001"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ian Rush played for?",
+  "a": "Wales",
+  "wrong": [
+   "Republic of Ireland",
+   "Norway",
+   "Denmark"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1984–1984"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Robbie Fowler played for?",
+  "a": "England",
+  "wrong": [
+   "Wales",
+   "Scotland",
+   "Republic of Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Philippe Coutinho played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Argentina",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2020–2020"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Trent Alexander-Arnold played for?",
+  "a": "England",
+  "wrong": [
+   "Scotland",
+   "Belgium",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2019–2019"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Raheem Sterling played for?",
+  "a": "England",
+  "wrong": [
+   "Switzerland",
+   "Sweden",
+   "France"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Javier Mascherano played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Ecuador",
+   "Brazil",
+   "Peru"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2011–2015"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Roberto Firmino played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Chile",
+   "Argentina",
+   "Uruguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2019–2019"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has John Barnes played for?",
+  "a": "England",
+  "wrong": [
+   "Germany",
+   "Republic of Ireland",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kevin Keegan played for?",
+  "a": "England",
+  "wrong": [
+   "Sweden",
+   "Switzerland",
+   "Denmark"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1977–1979"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Wayne Rooney played for?",
+  "a": "England",
+  "wrong": [
+   "Norway",
+   "Republic of Ireland",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2008–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ryan Giggs played for?",
+  "a": "Wales",
+  "wrong": [
+   "England",
+   "Denmark",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1999–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Paul Scholes played for?",
+  "a": "England",
+  "wrong": [
+   "Republic of Ireland",
+   "Germany",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1999–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has David Beckham played for?",
+  "a": "England",
+  "wrong": [
+   "Switzerland",
+   "Belgium",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1999–1999"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Eric Cantona played for?",
+  "a": "France",
+  "wrong": [
+   "England",
+   "Scotland",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ruud van Nistelrooy played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Denmark",
+   "Scotland",
+   "France"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2003–2003"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Rio Ferdinand played for?",
+  "a": "England",
+  "wrong": [
+   "Sweden",
+   "Northern Ireland",
+   "Republic of Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2008–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nemanja Vidić played for?",
+  "a": "Serbia",
+  "wrong": [
+   "Turkey",
+   "Italy",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2008–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Patrice Evra played for?",
+  "a": "France",
+  "wrong": [
+   "England",
+   "Netherlands",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2008–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Edwin van der Sar played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Scotland",
+   "France",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1995–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dimitar Berbatov played for?",
+  "a": "Bulgaria",
+  "wrong": [
+   "Ukraine",
+   "Hungary",
+   "Poland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2011–2011"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Zlatan Ibrahimović played for?",
+  "a": "Sweden",
+  "wrong": [
+   "Switzerland",
+   "Northern Ireland",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Andy Cole played for?",
+  "a": "England",
+  "wrong": [
+   "Switzerland",
+   "Netherlands",
+   "Republic of Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 1994–1999"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Bruno Fernandes played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Turkey",
+   "Italy",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Bobby Charlton played for?",
+  "a": "England",
+  "wrong": [
+   "Northern Ireland",
+   "Republic of Ireland",
+   "Belgium"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1966–1968"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Denis Law played for?",
+  "a": "Scotland",
+  "wrong": [
+   "Netherlands",
+   "France",
+   "Belgium"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1964–1964"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Teddy Sheringham played for?",
+  "a": "England",
+  "wrong": [
+   "Denmark",
+   "Sweden",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 1993–1999"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Alan Shearer played for?",
+  "a": "England",
+  "wrong": [
+   "Wales",
+   "Belgium",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 1995–1997"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Chris Sutton played for?",
+  "a": "England",
+  "wrong": [
+   "Sweden",
+   "Wales",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Sergio Agüero played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Colombia",
+   "Ecuador",
+   "Uruguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2015–2015"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Vincent Kompany played for?",
+  "a": "Belgium",
+  "wrong": [
+   "Wales",
+   "Scotland",
+   "Germany"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has David Silva played for?",
+  "a": "Spain",
+  "wrong": [
+   "Greece",
+   "Croatia",
+   "Turkey"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2010–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Yaya Touré played for?",
+  "a": "Ivory Coast",
+  "wrong": [
+   "Gabon",
+   "Mali",
+   "Nigeria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2009–2009"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Phil Foden played for?",
+  "a": "England",
+  "wrong": [
+   "Republic of Ireland",
+   "Switzerland",
+   "Germany"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2023–2023"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Riyad Mahrez played for?",
+  "a": "Algeria",
+  "wrong": [
+   "Morocco",
+   "Nigeria",
+   "Ivory Coast"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2023–2023"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Carlos Tevez played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Paraguay",
+   "Colombia",
+   "Uruguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2008–2011"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mario Balotelli played for?",
+  "a": "Italy",
+  "wrong": [
+   "Spain",
+   "Croatia",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2010–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gary Lineker played for?",
+  "a": "England",
+  "wrong": [
+   "Netherlands",
+   "Switzerland",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Glenn Hoddle played for?",
+  "a": "England",
+  "wrong": [
+   "Switzerland",
+   "Belgium",
+   "Republic of Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jermain Defoe played for?",
+  "a": "England",
+  "wrong": [
+   "Republic of Ireland",
+   "Switzerland",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Robbie Keane played for?",
+  "a": "Republic of Ireland",
+  "wrong": [
+   "Norway",
+   "England",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Hugo Lloris played for?",
+  "a": "France",
+  "wrong": [
+   "Sweden",
+   "Germany",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2018–2018"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Raúl played for?",
+  "a": "Spain",
+  "wrong": [
+   "Croatia",
+   "Serbia",
+   "Italy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1998–2002"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Iker Casillas played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Croatia",
+   "Greece"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2000–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Sergio Ramos played for?",
+  "a": "Spain",
+  "wrong": [
+   "Turkey",
+   "Portugal",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2010–2018"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Luís Figo played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Greece",
+   "Spain",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 2000–2002"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Roberto Carlos played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Uruguay",
+   "Argentina"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1998–2002"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Karim Benzema played for?",
+  "a": "France",
+  "wrong": [
+   "Austria",
+   "Republic of Ireland",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 2014–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Toni Kroos played for?",
+  "a": "Germany",
+  "wrong": [
+   "Republic of Ireland",
+   "Norway",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2013–2024"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Fabio Cannavaro played for?",
+  "a": "Italy",
+  "wrong": [
+   "Turkey",
+   "Serbia",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ángel Di María played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Ecuador",
+   "Paraguay",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2014–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Raphaël Varane played for?",
+  "a": "France",
+  "wrong": [
+   "England",
+   "Germany",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2014–2018"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Andrés Iniesta played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Serbia",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2006–2015"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Carles Puyol played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Italy",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2006–2011"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gerard Piqué played for?",
+  "a": "Spain",
+  "wrong": [
+   "Croatia",
+   "Turkey",
+   "Italy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2008–2015"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Sergio Busquets played for?",
+  "a": "Spain",
+  "wrong": [
+   "Greece",
+   "Croatia",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2009–2015"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Rivaldo played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Chile",
+   "Peru",
+   "Uruguay"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1999–2003"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Samuel Eto'o played for?",
+  "a": "Cameroon",
+  "wrong": [
+   "Algeria",
+   "Egypt",
+   "Liberia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2006–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pep Guardiola played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Serbia",
+   "Italy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1992–1992"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mark Hughes played for?",
+  "a": "Wales",
+  "wrong": [
+   "Germany",
+   "Netherlands",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": ""
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pedri played for?",
+  "a": "Spain",
+  "wrong": [
+   "Italy",
+   "Portugal",
+   "Turkey"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2026–2026"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Antoine Griezmann played for?",
+  "a": "France",
+  "wrong": [
+   "Netherlands",
+   "Scotland",
+   "Northern Ireland"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2018–2018"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ousmane Dembélé played for?",
+  "a": "France",
+  "wrong": [
+   "Denmark",
+   "Scotland",
+   "Germany"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 2018–2026"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Alessandro Del Piero played for?",
+  "a": "Italy",
+  "wrong": [
+   "Portugal",
+   "Serbia",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1996–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pavel Nedvěd played for?",
+  "a": "Czech Republic",
+  "wrong": [
+   "Hungary",
+   "Yugoslavia",
+   "Poland"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 2003–2003"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Paul Pogba played for?",
+  "a": "France",
+  "wrong": [
+   "Germany",
+   "Belgium",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2018–2018"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lilian Thuram played for?",
+  "a": "France",
+  "wrong": [
+   "Scotland",
+   "Northern Ireland",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Edgar Davids played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Austria",
+   "Wales",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1995–1995"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Michel Platini played for?",
+  "a": "France",
+  "wrong": [
+   "Netherlands",
+   "Northern Ireland",
+   "England"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1983–1985"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Roberto Baggio played for?",
+  "a": "Italy",
+  "wrong": [
+   "Greece",
+   "Turkey",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1993–1993"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Filippo Inzaghi played for?",
+  "a": "Italy",
+  "wrong": [
+   "Greece",
+   "Croatia",
+   "Turkey"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2003–2007"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Paolo Maldini played for?",
+  "a": "Italy",
+  "wrong": [
+   "Serbia",
+   "Portugal",
+   "Greece"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1989–2007"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Frank Rijkaard played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Germany",
+   "Belgium",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1989–1995"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marco van Basten played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Denmark",
+   "Norway",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1988–1992"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has George Weah played for?",
+  "a": "Liberia",
+  "wrong": [
+   "Cameroon",
+   "Ghana",
+   "Mali"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1995–1995"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Clarence Seedorf played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Sweden",
+   "Norway",
+   "France"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1995–2007"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gennaro Gattuso played for?",
+  "a": "Italy",
+  "wrong": [
+   "Turkey",
+   "Portugal",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2003–2007"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Alessandro Nesta played for?",
+  "a": "Italy",
+  "wrong": [
+   "Serbia",
+   "Croatia",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2003–2007"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Francesco Totti played for?",
+  "a": "Italy",
+  "wrong": [
+   "Spain",
+   "Turkey",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Javier Zanetti played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Uruguay",
+   "Paraguay",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2010–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Wesley Sneijder played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Belgium",
+   "Denmark",
+   "Republic of Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2010–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lautaro Martínez played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Peru",
+   "Ecuador",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lothar Matthäus played for?",
+  "a": "Germany",
+  "wrong": [
+   "Sweden",
+   "Denmark",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1990–1990"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Thomas Müller played for?",
+  "a": "Germany",
+  "wrong": [
+   "Scotland",
+   "Belgium",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2013–2020"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Manuel Neuer played for?",
+  "a": "Germany",
+  "wrong": [
+   "Wales",
+   "Belgium",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2013–2020"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Philipp Lahm played for?",
+  "a": "Germany",
+  "wrong": [
+   "Scotland",
+   "Republic of Ireland",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2013–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Bastian Schweinsteiger played for?",
+  "a": "Germany",
+  "wrong": [
+   "Republic of Ireland",
+   "Northern Ireland",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2013–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Franz Beckenbauer played for?",
+  "a": "Germany",
+  "wrong": [
+   "Denmark",
+   "Sweden",
+   "England"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1972–1976"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gerd Müller played for?",
+  "a": "Germany",
+  "wrong": [
+   "Republic of Ireland",
+   "Norway",
+   "Denmark"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1970–1976"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Miroslav Klose played for?",
+  "a": "Germany",
+  "wrong": [
+   "Republic of Ireland",
+   "Belgium",
+   "Switzerland"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2014–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Raí played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Uruguay",
+   "Ecuador",
+   "Argentina"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1994–1994"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Cafu played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Chile",
+   "Colombia",
+   "Ecuador"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1994–2007"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Romário played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Chile",
+   "Peru",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1994–1994"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ivan Rakitić played for?",
+  "a": "Croatia",
+  "wrong": [
+   "Italy",
+   "Spain",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2015–2015"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Sami Khedira played for?",
+  "a": "Germany",
+  "wrong": [
+   "Netherlands",
+   "Scotland",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2014–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marcelo played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Chile",
+   "Argentina"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2014–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jérôme Boateng played for?",
+  "a": "Germany",
+  "wrong": [
+   "Switzerland",
+   "Netherlands",
+   "Belgium"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2013–2020"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Javi Martínez played for?",
+  "a": "Spain",
+  "wrong": [
+   "Greece",
+   "Portugal",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2010–2020"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Franck Ribéry played for?",
+  "a": "France",
+  "wrong": [
+   "Republic of Ireland",
+   "Scotland",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2013–2013"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mario Mandžukić played for?",
+  "a": "Croatia",
+  "wrong": [
+   "Greece",
+   "Italy",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2013–2013"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Michael Essien played for?",
+  "a": "Ghana",
+  "wrong": [
+   "Ivory Coast",
+   "Cameroon",
+   "Algeria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2012–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gary Cahill played for?",
+  "a": "England",
+  "wrong": [
+   "Scotland",
+   "Wales",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2012–2012"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has David Villa played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Greece",
+   "Turkey"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2010–2011"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marco Materazzi played for?",
+  "a": "Italy",
+  "wrong": [
+   "Croatia",
+   "Spain",
+   "Greece"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2006–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lúcio played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Peru",
+   "Argentina",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2002–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pedro played for?",
+  "a": "Spain",
+  "wrong": [
+   "Italy",
+   "Croatia",
+   "Greece"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2009–2015"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dani Alves played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Chile",
+   "Argentina",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2009–2015"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Michael Carrick played for?",
+  "a": "England",
+  "wrong": [
+   "Scotland",
+   "Northern Ireland",
+   "Republic of Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2008–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Massimo Oddo played for?",
+  "a": "Italy",
+  "wrong": [
+   "Turkey",
+   "Croatia",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2006–2007"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Víctor Valdés played for?",
+  "a": "Spain",
+  "wrong": [
+   "Serbia",
+   "Portugal",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2006–2011"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Edmílson played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Paraguay",
+   "Ecuador",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2002–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Deco played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Greece",
+   "Italy",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2004–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Henrik Larsson played for?",
+  "a": "Sweden",
+  "wrong": [
+   "Scotland",
+   "Northern Ireland",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Harry Kewell played for?",
+  "a": "Australia",
+  "wrong": [
+   "Mexico",
+   "Costa Rica",
+   "USA"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2005–2005"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pedro Mendes played for?",
+  "a": "Portugal",
+  "wrong": [
+   "Turkey",
+   "Croatia",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2004–2004"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Carlos Alberto played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Chile",
+   "Argentina",
+   "Ecuador"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2004–2004"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dida played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Uruguay",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2002–2007"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Roque Júnior played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Paraguay",
+   "Chile",
+   "Ecuador"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2002–2003"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Bixente Lizarazu played for?",
+  "a": "France",
+  "wrong": [
+   "Netherlands",
+   "Germany",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1998–2001"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gary Neville played for?",
+  "a": "England",
+  "wrong": [
+   "France",
+   "Belgium",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1999–2008"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dwight Yorke played for?",
+  "a": "Trinidad and Tobago",
+  "wrong": [
+   "Japan",
+   "USA",
+   "Costa Rica"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 1999–1999"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Phil Neville played for?",
+  "a": "England",
+  "wrong": [
+   "Belgium",
+   "Germany",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1999–1999"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Christian Karembeu played for?",
+  "a": "France",
+  "wrong": [
+   "Switzerland",
+   "Scotland",
+   "Northern Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1998–2000"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Matthias Sammer played for?",
+  "a": "Germany",
+  "wrong": [
+   "England",
+   "Republic of Ireland",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1996–1997"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Didier Deschamps played for?",
+  "a": "France",
+  "wrong": [
+   "Republic of Ireland",
+   "Switzerland",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1993–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Frank de Boer played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Norway",
+   "France",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1995–1995"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Fabien Barthez played for?",
+  "a": "France",
+  "wrong": [
+   "Wales",
+   "Switzerland",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1993–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Paolo Rossi played for?",
+  "a": "Italy",
+  "wrong": [
+   "Serbia",
+   "Croatia",
+   "Portugal"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1982–1985"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Peter Shilton played for?",
+  "a": "England",
+  "wrong": [
+   "Norway",
+   "Sweden",
+   "Switzerland"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1979–1980"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ian Callaghan played for?",
+  "a": "England",
+  "wrong": [
+   "Denmark",
+   "Norway",
+   "Northern Ireland"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1966–1978"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Karl-Heinz Rummenigge played for?",
+  "a": "Germany",
+  "wrong": [
+   "Scotland",
+   "Switzerland",
+   "France"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1975–1981"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gianni Rivera played for?",
+  "a": "Italy",
+  "wrong": [
+   "Spain",
+   "Portugal",
+   "Serbia"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1963–1969"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pirri played for?",
+  "a": "Spain",
+  "wrong": [
+   "Italy",
+   "Greece",
+   "Croatia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1966–1966"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Luis Suárez Miramontes played for?",
+  "a": "Spain",
+  "wrong": [
+   "Italy",
+   "Greece",
+   "Croatia"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1960–1965"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Raymond Kopa played for?",
+  "a": "France",
+  "wrong": [
+   "Northern Ireland",
+   "Republic of Ireland",
+   "Switzerland"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1957–1959"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Paco Gento played for?",
+  "a": "Spain",
+  "wrong": [
+   "Croatia",
+   "Italy",
+   "Portugal"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 1956–1966"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has James Milner played for?",
+  "a": "England",
+  "wrong": [
+   "Northern Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2019–2019"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Benjamin Pavard played for?",
+  "a": "France",
+  "wrong": [
+   "Netherlands",
+   "Austria",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2018–2020"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has César Azpilicueta played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Turkey",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2021–2021"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ederson played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Ecuador",
+   "Uruguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2023–2023"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jack Grealish played for?",
+  "a": "England",
+  "wrong": [
+   "Sweden",
+   "Republic of Ireland",
+   "Belgium"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2023–2023"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Julián Álvarez played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Chile",
+   "Peru",
+   "Uruguay"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_winning_players",
+  "note": "Honours 2022–2023"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gordon Banks played for?",
+  "a": "England",
+  "wrong": [
+   "Norway",
+   "Scotland",
+   "Belgium"
+  ],
+  "d": "h",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1966–1966"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jimmy Greaves played for?",
+  "a": "England",
+  "wrong": [
+   "Sweden",
+   "Switzerland",
+   "Republic of Ireland"
+  ],
+  "d": "m",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1966–1966"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Roger Hunt played for?",
+  "a": "England",
+  "wrong": [
+   "Scotland",
+   "Netherlands",
+   "Austria"
+  ],
+  "d": "m",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1966–1966"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Bobby Moore played for?",
+  "a": "England",
+  "wrong": [
+   "Belgium",
+   "Norway",
+   "Switzerland"
+  ],
+  "d": "h",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1966–1966"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mario Kempes played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Paraguay",
+   "Ecuador",
+   "Chile"
+  ],
+  "d": "h",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1978–1978"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Daniel Passarella played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Uruguay",
+   "Chile",
+   "Paraguay"
+  ],
+  "d": "h",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1978–1986"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dino Zoff played for?",
+  "a": "Italy",
+  "wrong": [
+   "Turkey",
+   "Croatia",
+   "Spain"
+  ],
+  "d": "h",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1982–1982"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Andreas Brehme played for?",
+  "a": "Germany",
+  "wrong": [
+   "Norway",
+   "Scotland",
+   "England"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1990–1990"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dunga played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Uruguay",
+   "Argentina"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1994–1994"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Laurent Blanc played for?",
+  "a": "France",
+  "wrong": [
+   "England",
+   "Republic of Ireland",
+   "Germany"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Youri Djorkaeff played for?",
+  "a": "France",
+  "wrong": [
+   "Republic of Ireland",
+   "Belgium",
+   "Northern Ireland"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Christophe Dugarry played for?",
+  "a": "France",
+  "wrong": [
+   "Republic of Ireland",
+   "Denmark",
+   "Austria"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Stéphane Guivarc'h played for?",
+  "a": "France",
+  "wrong": [
+   "Wales",
+   "Denmark",
+   "Northern Ireland"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Frank Leboeuf played for?",
+  "a": "France",
+  "wrong": [
+   "Austria",
+   "Netherlands",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has David Trezeguet played for?",
+  "a": "France",
+  "wrong": [
+   "England",
+   "Netherlands",
+   "Germany"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Juninho Paulista played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Colombia",
+   "Uruguay",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2002–2002"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kléberson played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Paraguay",
+   "Argentina",
+   "Colombia"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2002–2002"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marcos played for?",
+  "a": "Brazil",
+  "wrong": [
+   "Paraguay",
+   "Peru",
+   "Colombia"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2002–2002"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Fabio Grosso played for?",
+  "a": "Italy",
+  "wrong": [
+   "Spain",
+   "Croatia",
+   "Greece"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Daniele De Rossi played for?",
+  "a": "Italy",
+  "wrong": [
+   "Spain",
+   "Turkey",
+   "Portugal"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Luca Toni played for?",
+  "a": "Italy",
+  "wrong": [
+   "Serbia",
+   "Croatia",
+   "Turkey"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mauro Camoranesi played for?",
+  "a": "Italy",
+  "wrong": [
+   "Portugal",
+   "Croatia",
+   "Spain"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gianluca Zambrotta played for?",
+  "a": "Italy",
+  "wrong": [
+   "Portugal",
+   "Turkey",
+   "Serbia"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Simone Perrotta played for?",
+  "a": "Italy",
+  "wrong": [
+   "Spain",
+   "Portugal",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2006–2006"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Joan Capdevila played for?",
+  "a": "Spain",
+  "wrong": [
+   "Serbia",
+   "Turkey",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2010–2010"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Benedikt Höwedes played for?",
+  "a": "Germany",
+  "wrong": [
+   "Northern Ireland",
+   "France",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2014–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mats Hummels played for?",
+  "a": "Germany",
+  "wrong": [
+   "Northern Ireland",
+   "Norway",
+   "Belgium"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2014–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Mario Götze played for?",
+  "a": "Germany",
+  "wrong": [
+   "Netherlands",
+   "Norway",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2014–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Christoph Kramer played for?",
+  "a": "Germany",
+  "wrong": [
+   "Wales",
+   "Sweden",
+   "Netherlands"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2014–2014"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Samuel Umtiti played for?",
+  "a": "France",
+  "wrong": [
+   "Wales",
+   "Austria",
+   "Norway"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2018–2018"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Blaise Matuidi played for?",
+  "a": "France",
+  "wrong": [
+   "Republic of Ireland",
+   "Netherlands",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2018–2018"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Rodrigo De Paul played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Colombia",
+   "Paraguay",
+   "Brazil"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Marcos Acuña played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Paraguay",
+   "Uruguay",
+   "Ecuador"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Cristian Romero played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Brazil",
+   "Paraguay",
+   "Chile"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nicolás Otamendi played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Uruguay",
+   "Ecuador",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Alexis Mac Allister played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Peru",
+   "Ecuador",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Enzo Fernández played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Uruguay",
+   "Peru",
+   "Colombia"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Nahuel Molina played for?",
+  "a": "Argentina",
+  "wrong": [
+   "Uruguay",
+   "Peru",
+   "Paraguay"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2022–2022"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Gavi played for?",
+  "a": "Spain",
+  "wrong": [
+   "Croatia",
+   "Portugal",
+   "Turkey"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2026–2026"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Ferran Torres played for?",
+  "a": "Spain",
+  "wrong": [
+   "Serbia",
+   "Croatia",
+   "Italy"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2026–2026"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has David Raya played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Serbia",
+   "Italy"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2026–2026"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pedro Porro played for?",
+  "a": "Spain",
+  "wrong": [
+   "Portugal",
+   "Turkey",
+   "Croatia"
+  ],
+  "d": "e",
+  "src": "https://www.rsssf.org/miscellaneous/wcwinners.html",
+  "note": "Honours 2026–2026"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jean-Pierre Papin played for?",
+  "a": "France",
+  "wrong": [
+   "Northern Ireland",
+   "England",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1991–1991"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Igor Belanov played for?",
+  "a": "Soviet Union",
+  "wrong": [
+   "Romania",
+   "Czech Republic",
+   "Czechoslovakia"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1986–1986"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Allan Simonsen played for?",
+  "a": "Denmark",
+  "wrong": [
+   "Belgium",
+   "Austria",
+   "Switzerland"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1977–1977"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Oleg Blokhin played for?",
+  "a": "Soviet Union",
+  "wrong": [
+   "Yugoslavia",
+   "Russia",
+   "Bulgaria"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1975–1975"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Flórián Albert played for?",
+  "a": "Hungary",
+  "wrong": [
+   "Russia",
+   "Poland",
+   "Soviet Union"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1967–1967"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Lev Yashin played for?",
+  "a": "Soviet Union",
+  "wrong": [
+   "Romania",
+   "Ukraine",
+   "Czechoslovakia"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1963–1963"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Josef Masopust played for?",
+  "a": "Czechoslovakia",
+  "wrong": [
+   "Russia",
+   "Romania",
+   "Soviet Union"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1962–1962"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Stanley Matthews played for?",
+  "a": "England",
+  "wrong": [
+   "Switzerland",
+   "Denmark",
+   "Netherlands"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Honours 1956–1956"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Dion Dublin played for?",
+  "a": "England",
+  "wrong": [
+   "Northern Ireland",
+   "Denmark",
+   "Scotland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 1998–1998"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jimmy Floyd Hasselbaink played for?",
+  "a": "Netherlands",
+  "wrong": [
+   "Denmark",
+   "England",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 1999–2001"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Kevin Phillips played for?",
+  "a": "England",
+  "wrong": [
+   "Norway",
+   "Belgium",
+   "Sweden"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2000–2000"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Pierre-Emerick Aubameyang played for?",
+  "a": "Gabon",
+  "wrong": [
+   "Ghana",
+   "Egypt",
+   "Senegal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2019–2019"
+ },
+ {
+  "comp": "Nationality",
+  "kind": "other",
+  "year": null,
+  "q": "Which country has Jamie Vardy played for?",
+  "a": "England",
+  "wrong": [
+   "Sweden",
+   "Norway",
+   "Denmark"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Honours 2020–2020"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 1990,
+  "q": "Who won the 1990 Ballon d'Or?",
+  "a": "Lothar Matthäus",
+  "wrong": [
+   "Roberto Baggio",
+   "Marco van Basten",
+   "Jean-Pierre Papin"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lothar Matthäus (Germany, Inter)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 1991,
+  "q": "Who won the 1991 Ballon d'Or?",
+  "a": "Jean-Pierre Papin",
+  "wrong": [
+   "Lothar Matthäus",
+   "Marco van Basten",
+   "Roberto Baggio"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Jean-Pierre Papin (France, Marseille)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 1993,
+  "q": "Who won the 1993 Ballon d'Or?",
+  "a": "Roberto Baggio",
+  "wrong": [
+   "Hristo Stoichkov",
+   "Jean-Pierre Papin",
+   "Marco van Basten"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Roberto Baggio (Italy, Juventus)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 1995,
+  "q": "Who won the 1995 Ballon d'Or?",
+  "a": "George Weah",
+  "wrong": [
+   "Zinedine Zidane",
+   "Roberto Baggio",
+   "Ronaldo"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "George Weah (Liberia, AC Milan)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 1997,
+  "q": "Who won the 1997 Ballon d'Or?",
+  "a": "Ronaldo",
+  "wrong": [
+   "Matthias Sammer",
+   "Luís Figo",
+   "Zinedine Zidane"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Ronaldo (Brazil, Inter)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 1998,
+  "q": "Who won the 1998 Ballon d'Or?",
+  "a": "Zinedine Zidane",
+  "wrong": [
+   "Rivaldo",
+   "Luís Figo",
+   "Michael Owen"
+  ],
+  "d": "h",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Zinedine Zidane (France, Juventus)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2002,
+  "q": "Who won the 2002 Ballon d'Or?",
+  "a": "Ronaldo",
+  "wrong": [
+   "Michael Owen",
+   "Ronaldinho",
+   "Pavel Nedvěd"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Ronaldo (Brazil, Real Madrid)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2005,
+  "q": "Who won the 2005 Ballon d'Or?",
+  "a": "Ronaldinho",
+  "wrong": [
+   "Fabio Cannavaro",
+   "Andriy Shevchenko",
+   "Kaká"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Ronaldinho (Brazil, Barcelona)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2006,
+  "q": "Who won the 2006 Ballon d'Or?",
+  "a": "Fabio Cannavaro",
+  "wrong": [
+   "Kaká",
+   "Andriy Shevchenko",
+   "Ronaldinho"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Fabio Cannavaro (Italy, Real Madrid)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2009,
+  "q": "Who won the 2009 Ballon d'Or?",
+  "a": "Lionel Messi",
+  "wrong": [
+   "Ronaldinho",
+   "Kaká",
+   "Cristiano Ronaldo"
+  ],
+  "d": "m",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lionel Messi (Argentina, Barcelona)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2010,
+  "q": "Who won the 2010 Ballon d'Or?",
+  "a": "Lionel Messi",
+  "wrong": [
+   "Cristiano Ronaldo",
+   "Fabio Cannavaro",
+   "Andriy Shevchenko"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lionel Messi (Argentina, Barcelona)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2011,
+  "q": "Who won the 2011 Ballon d'Or?",
+  "a": "Lionel Messi",
+  "wrong": [
+   "Cristiano Ronaldo",
+   "Luka Modrić",
+   "Fabio Cannavaro"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lionel Messi (Argentina, Barcelona)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2012,
+  "q": "Who won the 2012 Ballon d'Or?",
+  "a": "Lionel Messi",
+  "wrong": [
+   "Cristiano Ronaldo",
+   "Ronaldinho",
+   "Luka Modrić"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lionel Messi (Argentina, Barcelona)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2013,
+  "q": "Who won the 2013 Ballon d'Or?",
+  "a": "Cristiano Ronaldo",
+  "wrong": [
+   "Kaká",
+   "Fabio Cannavaro",
+   "Luka Modrić"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Cristiano Ronaldo (Portugal, Real Madrid)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2014,
+  "q": "Who won the 2014 Ballon d'Or?",
+  "a": "Cristiano Ronaldo",
+  "wrong": [
+   "Karim Benzema",
+   "Lionel Messi",
+   "Luka Modrić"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Cristiano Ronaldo (Portugal, Real Madrid)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2015,
+  "q": "Who won the 2015 Ballon d'Or?",
+  "a": "Lionel Messi",
+  "wrong": [
+   "Cristiano Ronaldo",
+   "Luka Modrić",
+   "Kaká"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lionel Messi (Argentina, Barcelona)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2016,
+  "q": "Who won the 2016 Ballon d'Or?",
+  "a": "Cristiano Ronaldo",
+  "wrong": [
+   "Karim Benzema",
+   "Luka Modrić",
+   "Rodri"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Cristiano Ronaldo (Portugal, Real Madrid)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2017,
+  "q": "Who won the 2017 Ballon d'Or?",
+  "a": "Cristiano Ronaldo",
+  "wrong": [
+   "Rodri",
+   "Ousmane Dembélé",
+   "Karim Benzema"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Cristiano Ronaldo (Portugal, Real Madrid)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2019,
+  "q": "Who won the 2019 Ballon d'Or?",
+  "a": "Lionel Messi",
+  "wrong": [
+   "Karim Benzema",
+   "Luka Modrić",
+   "Ousmane Dembélé"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lionel Messi (Argentina, Barcelona)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2021,
+  "q": "Who won the 2021 Ballon d'Or?",
+  "a": "Lionel Messi",
+  "wrong": [
+   "Ousmane Dembélé",
+   "Rodri",
+   "Cristiano Ronaldo"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lionel Messi (Argentina, Paris Saint-Germain)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2023,
+  "q": "Who won the 2023 Ballon d'Or?",
+  "a": "Lionel Messi",
+  "wrong": [
+   "Luka Modrić",
+   "Ousmane Dembélé",
+   "Karim Benzema"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Lionel Messi (Argentina, Inter Miami)"
+ },
+ {
+  "comp": "Ballon d'Or",
+  "kind": "winner",
+  "year": 2026,
+  "q": "Who won the 2026 Ballon d'Or?",
+  "a": "Harry Kane",
+  "wrong": [
+   "Karim Benzema",
+   "Rodri",
+   "Ousmane Dembélé"
+  ],
+  "d": "e",
+  "src": "https://www.topendsports.com/sport/soccer/list-player-of-year-ballondor.htm",
+  "note": "Harry Kane (England, Bayern Munich)"
+ }
+]

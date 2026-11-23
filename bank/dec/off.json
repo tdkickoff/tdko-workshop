@@ -1,0 +1,200 @@
+[
+ {
+  "kind": "trophy",
+  "x": "won Premier League Player of the Season",
+  "nx": "never won Premier League Player of the Season",
+  "eight": [
+   "Alan Shearer",
+   "Peter Schmeichel",
+   "Michael Owen",
+   "Patrick Vieira",
+   "Freddie Ljungberg",
+   "Nemanja Vidić",
+   "Vincent Kompany",
+   "N'Golo Kanté"
+  ],
+  "odd": "Steven Gerrard",
+  "src": "Wikipedia: Premier League Player of the Season",
+  "url": "https://en.wikipedia.org/wiki/Premier_League_Player_of_the_Season"
+ },
+ {
+  "kind": "trophy",
+  "x": "won CAF African Footballer of the Year",
+  "nx": "never won African Footballer of the Year (runner-up in 1998)",
+  "eight": [
+   "George Weah",
+   "Nwankwo Kanu",
+   "Samuel Eto'o",
+   "Didier Drogba",
+   "Yaya Touré",
+   "Riyad Mahrez",
+   "Mohamed Salah",
+   "Sadio Mané"
+  ],
+  "odd": "Jay-Jay Okocha",
+  "src": "Wikipedia: African Footballer of the Year",
+  "url": "https://en.wikipedia.org/wiki/African_Footballer_of_the_Year"
+ },
+ {
+  "kind": "trophy",
+  "x": "won the European Golden Shoe",
+  "nx": "never won the European Golden Shoe",
+  "eight": [
+   "Ronaldo",
+   "Henrik Larsson",
+   "Thierry Henry",
+   "Francesco Totti",
+   "Diego Forlán",
+   "Luis Suárez",
+   "Robert Lewandowski",
+   "Erling Haaland"
+  ],
+  "odd": "Karim Benzema",
+  "src": "Wikipedia: European Golden Shoe (1996–97 to 2025–26)",
+  "url": "https://en.wikipedia.org/wiki/European_Golden_Shoe"
+ },
+ {
+  "kind": "trophy",
+  "x": "won the World Cup Golden Ball",
+  "nx": "never won the World Cup Golden Ball",
+  "eight": [
+   "Paolo Rossi",
+   "Diego Maradona",
+   "Salvatore Schillaci",
+   "Romário",
+   "Oliver Kahn",
+   "Zinedine Zidane",
+   "Diego Forlán",
+   "Luka Modrić"
+  ],
+  "odd": "Cristiano Ronaldo",
+  "src": "Wikipedia: FIFA World Cup awards (Golden Ball 1982–2026)",
+  "url": "https://en.wikipedia.org/wiki/FIFA_World_Cup_awards"
+ },
+ {
+  "kind": "trophy",
+  "x": "finished top scorer at a World Cup",
+  "nx": "never finished top scorer at a World Cup",
+  "eight": [
+   "Gary Lineker",
+   "Hristo Stoichkov",
+   "Oleg Salenko",
+   "Davor Šuker",
+   "Miroslav Klose",
+   "Thomas Müller",
+   "James Rodríguez",
+   "Harry Kane"
+  ],
+  "odd": "Gabriel Batistuta",
+  "src": "Wikipedia: FIFA World Cup awards (Golden Shoe / Golden Boot 1982–2026)",
+  "url": "https://en.wikipedia.org/wiki/FIFA_World_Cup_awards"
+ },
+ {
+  "kind": "trophy",
+  "x": "won 100 or more caps for England",
+  "nx": "won 80 caps for England",
+  "eight": [
+   "Peter Shilton",
+   "Wayne Rooney",
+   "David Beckham",
+   "Steven Gerrard",
+   "Bobby Moore",
+   "Ashley Cole",
+   "Bobby Charlton",
+   "Frank Lampard"
+  ],
+  "odd": "Gary Lineker",
+  "src": "Wikipedia: England national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/England_national_football_team_records_and_statistics"
+ },
+ {
+  "kind": "trophy",
+  "x": "won 100 or more caps for Spain",
+  "nx": "won 98 caps for Spain, two short",
+  "eight": [
+   "Sergio Ramos",
+   "Iker Casillas",
+   "Sergio Busquets",
+   "Xavi",
+   "Andrés Iniesta",
+   "Andoni Zubizarreta",
+   "David Silva",
+   "Xabi Alonso"
+  ],
+  "odd": "David Villa",
+  "src": "Wikipedia: Spain national football team records and statistics (as of 26 June 2026)",
+  "url": "https://en.wikipedia.org/wiki/Spain_national_football_team_records_and_statistics"
+ },
+ {
+  "kind": "trophy",
+  "x": "won 100 or more caps for Italy",
+  "nx": "won 91 caps for Italy",
+  "eight": [
+   "Gianluigi Buffon",
+   "Fabio Cannavaro",
+   "Paolo Maldini",
+   "Leonardo Bonucci",
+   "Giorgio Chiellini",
+   "Daniele De Rossi",
+   "Andrea Pirlo",
+   "Dino Zoff"
+  ],
+  "odd": "Alessandro Del Piero",
+  "src": "Wikipedia: Italy national football team records and statistics (as of 2 October 2026)",
+  "url": "https://en.wikipedia.org/wiki/Italy_national_football_team_records_and_statistics"
+ },
+ {
+  "kind": "trophy",
+  "x": "won FWA Footballer of the Year",
+  "nx": "never won FWA Footballer of the Year",
+  "eight": [
+   "Gary Lineker",
+   "Eric Cantona",
+   "Gianfranco Zola",
+   "Dennis Bergkamp",
+   "David Ginola",
+   "Roy Keane",
+   "Robert Pires",
+   "Robin van Persie"
+  ],
+  "odd": "Patrick Vieira",
+  "src": "Wikipedia: FWA Footballer of the Year",
+  "url": "https://en.wikipedia.org/wiki/FWA_Footballer_of_the_Year"
+ },
+ {
+  "kind": "trophy",
+  "x": "won PFA Young Player of the Year",
+  "nx": "never won PFA Young Player of the Year",
+  "eight": [
+   "Ryan Giggs",
+   "Robbie Fowler",
+   "David Beckham",
+   "Michael Owen",
+   "Wayne Rooney",
+   "Cesc Fàbregas",
+   "Gareth Bale",
+   "Eden Hazard"
+  ],
+  "odd": "Paul Scholes",
+  "src": "Wikipedia: PFA Young Player of the Year",
+  "url": "https://en.wikipedia.org/wiki/PFA_Young_Player_of_the_Year"
+ },
+ {
+  "kind": "trophy",
+  "x": "finished top scorer at a European Championship",
+  "nx": "never finished top scorer at a European Championship",
+  "eight": [
+   "Michel Platini",
+   "Marco van Basten",
+   "Alan Shearer",
+   "Patrick Kluivert",
+   "Milan Baroš",
+   "David Villa",
+   "Fernando Torres",
+   "Antoine Griezmann"
+  ],
+  "odd": "Raúl",
+  "src": "Wikipedia: UEFA European Championship awards (top scorer 1980–2024)",
+  "url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_awards"
+ }
+]

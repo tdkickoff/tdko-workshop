@@ -1,0 +1,721 @@
+[
+ {
+  "id": "italy-top-10-caps",
+  "q": "Italy's 10 most-capped men",
+  "note": "As of 2 October 2026. Labels show caps.",
+  "diff": "medium",
+  "src": "Wikipedia: Italy national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/Italy_national_football_team_records_and_statistics",
+  "names": [
+   {
+    "n": "Gianluigi Buffon",
+    "l": "176"
+   },
+   {
+    "n": "Fabio Cannavaro",
+    "l": "136"
+   },
+   {
+    "n": "Paolo Maldini",
+    "l": "126"
+   },
+   {
+    "n": "Leonardo Bonucci",
+    "l": "121"
+   },
+   {
+    "n": "Giorgio Chiellini",
+    "l": "117"
+   },
+   {
+    "n": "Daniele De Rossi",
+    "l": "117"
+   },
+   {
+    "n": "Andrea Pirlo",
+    "l": "116"
+   },
+   {
+    "n": "Dino Zoff",
+    "l": "112"
+   },
+   {
+    "n": "Gianluca Zambrotta",
+    "l": "98"
+   },
+   {
+    "n": "Giacinto Facchetti",
+    "l": "94"
+   }
+  ],
+  "secs": 180
+ },
+ {
+  "id": "france-top-10-caps",
+  "q": "France's 10 most-capped men",
+  "note": "Labels show caps.",
+  "diff": "medium",
+  "src": "Wikipedia: France national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/France_national_football_team_records_and_statistics",
+  "names": [
+   {
+    "n": "Hugo Lloris",
+    "l": "145"
+   },
+   {
+    "n": "Lilian Thuram",
+    "l": "142"
+   },
+   {
+    "n": "Olivier Giroud",
+    "l": "137"
+   },
+   {
+    "n": "Antoine Griezmann",
+    "l": "137"
+   },
+   {
+    "n": "Thierry Henry",
+    "l": "123"
+   },
+   {
+    "n": "Marcel Desailly",
+    "l": "116"
+   },
+   {
+    "n": "Zinedine Zidane",
+    "l": "108"
+   },
+   {
+    "n": "Patrick Vieira",
+    "l": "107"
+   },
+   {
+    "n": "Didier Deschamps",
+    "l": "103"
+   },
+   {
+    "n": "Kylian Mbappé",
+    "l": "100"
+   }
+  ],
+  "secs": 180
+ },
+ {
+  "id": "germany-top-10-caps",
+  "q": "Germany's 10 most-capped men",
+  "note": "As of 13 June 2026. Labels show caps.",
+  "diff": "medium",
+  "src": "Wikipedia: Germany national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/Germany_national_football_team_records_and_statistics",
+  "names": [
+   {
+    "n": "Lothar Matthäus",
+    "l": "150"
+   },
+   {
+    "n": "Miroslav Klose",
+    "l": "137"
+   },
+   {
+    "n": "Thomas Müller",
+    "l": "131"
+   },
+   {
+    "n": "Lukas Podolski",
+    "l": "130"
+   },
+   {
+    "n": "Manuel Neuer",
+    "l": "126"
+   },
+   {
+    "n": "Bastian Schweinsteiger",
+    "l": "121"
+   },
+   {
+    "n": "Toni Kroos",
+    "l": "114"
+   },
+   {
+    "n": "Philipp Lahm",
+    "l": "113"
+   },
+   {
+    "n": "Joshua Kimmich",
+    "l": "112"
+   },
+   {
+    "n": "Jürgen Klinsmann",
+    "l": "108"
+   }
+  ],
+  "secs": 180
+ },
+ {
+  "id": "spain-top-15-caps",
+  "q": "Spain's 15 most-capped men",
+  "note": "As of 26 June 2026. Labels show caps.",
+  "diff": "medium",
+  "src": "Wikipedia: Spain national football team records and statistics",
+  "url": "https://en.wikipedia.org/wiki/Spain_national_football_team_records_and_statistics",
+  "names": [
+   {
+    "n": "Sergio Ramos",
+    "l": "180"
+   },
+   {
+    "n": "Iker Casillas",
+    "l": "167"
+   },
+   {
+    "n": "Sergio Busquets",
+    "l": "143"
+   },
+   {
+    "n": "Xavi",
+    "l": "133",
+    "a": [
+     "xavi hernandez"
+    ]
+   },
+   {
+    "n": "Andrés Iniesta",
+    "l": "131"
+   },
+   {
+    "n": "Andoni Zubizarreta",
+    "l": "126"
+   },
+   {
+    "n": "David Silva",
+    "l": "125"
+   },
+   {
+    "n": "Xabi Alonso",
+    "l": "114"
+   },
+   {
+    "n": "Cesc Fàbregas",
+    "l": "110"
+   },
+   {
+    "n": "Fernando Torres",
+    "l": "110"
+   },
+   {
+    "n": "Gerard Piqué",
+    "l": "102"
+   },
+   {
+    "n": "Raúl",
+    "l": "102",
+    "a": [
+     "raul gonzalez"
+    ]
+   },
+   {
+    "n": "Carles Puyol",
+    "l": "100"
+   },
+   {
+    "n": "David Villa",
+    "l": "98"
+   },
+   {
+    "n": "Jordi Alba",
+    "l": "93"
+   }
+  ],
+  "secs": 240
+ },
+ {
+  "id": "pl-potsx-0809",
+  "q": "Every Premier League Player of the Season, 2008–09 to 2025–26",
+  "note": "Each winner once. Labels show the season they first won.",
+  "diff": "easy",
+  "src": "Wikipedia: Premier League Player of the Season",
+  "url": "https://en.wikipedia.org/wiki/Premier_League_Player_of_the_Season",
+  "names": [
+   {
+    "n": "Nemanja Vidić",
+    "l": "2008–09"
+   },
+   {
+    "n": "Wayne Rooney",
+    "l": "2009–10"
+   },
+   {
+    "n": "Vincent Kompany",
+    "l": "2011–12"
+   },
+   {
+    "n": "Gareth Bale",
+    "l": "2012–13"
+   },
+   {
+    "n": "Luis Suárez",
+    "l": "2013–14"
+   },
+   {
+    "n": "Eden Hazard",
+    "l": "2014–15"
+   },
+   {
+    "n": "Jamie Vardy",
+    "l": "2015–16"
+   },
+   {
+    "n": "N'Golo Kanté",
+    "l": "2016–17"
+   },
+   {
+    "n": "Mohamed Salah",
+    "l": "2017–18"
+   },
+   {
+    "n": "Virgil van Dijk",
+    "l": "2018–19"
+   },
+   {
+    "n": "Kevin De Bruyne",
+    "l": "2019–20"
+   },
+   {
+    "n": "Rúben Dias",
+    "l": "2020–21"
+   },
+   {
+    "n": "Erling Haaland",
+    "l": "2022–23"
+   },
+   {
+    "n": "Phil Foden",
+    "l": "2023–24"
+   },
+   {
+    "n": "Bruno Fernandes",
+    "l": "2025–26"
+   }
+  ],
+  "secs": 240
+ },
+ {
+  "id": "fwa-9192-0809",
+  "q": "Every FWA Footballer of the Year, 1991–92 to 2008–09",
+  "note": "Each winner once. Labels show the season they first won.",
+  "diff": "medium",
+  "src": "Wikipedia: FWA Footballer of the Year",
+  "url": "https://en.wikipedia.org/wiki/FWA_Footballer_of_the_Year",
+  "names": [
+   {
+    "n": "Gary Lineker",
+    "l": "1991–92"
+   },
+   {
+    "n": "Chris Waddle",
+    "l": "1992–93"
+   },
+   {
+    "n": "Alan Shearer",
+    "l": "1993–94"
+   },
+   {
+    "n": "Jürgen Klinsmann",
+    "l": "1994–95"
+   },
+   {
+    "n": "Eric Cantona",
+    "l": "1995–96"
+   },
+   {
+    "n": "Gianfranco Zola",
+    "l": "1996–97"
+   },
+   {
+    "n": "Dennis Bergkamp",
+    "l": "1997–98"
+   },
+   {
+    "n": "David Ginola",
+    "l": "1998–99"
+   },
+   {
+    "n": "Roy Keane",
+    "l": "1999–2000"
+   },
+   {
+    "n": "Teddy Sheringham",
+    "l": "2000–01"
+   },
+   {
+    "n": "Robert Pires",
+    "l": "2001–02"
+   },
+   {
+    "n": "Thierry Henry",
+    "l": "2002–03"
+   },
+   {
+    "n": "Frank Lampard",
+    "l": "2004–05"
+   },
+   {
+    "n": "Cristiano Ronaldo",
+    "l": "2006–07"
+   },
+   {
+    "n": "Steven Gerrard",
+    "l": "2008–09"
+   }
+  ],
+  "secs": 240
+ },
+ {
+  "id": "euro-top-scorers-1984",
+  "q": "Every top scorer at a European Championship, 1984–2024",
+  "note": "Shared awards included. Labels show the tournament.",
+  "diff": "hard",
+  "src": "Wikipedia: UEFA European Championship awards",
+  "url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_awards",
+  "names": [
+   {
+    "n": "Michel Platini",
+    "l": "1984"
+   },
+   {
+    "n": "Marco van Basten",
+    "l": "1988"
+   },
+   {
+    "n": "Dennis Bergkamp",
+    "l": "1992"
+   },
+   {
+    "n": "Tomas Brolin",
+    "l": "1992"
+   },
+   {
+    "n": "Henrik Larsen",
+    "l": "1992"
+   },
+   {
+    "n": "Karl-Heinz Riedle",
+    "l": "1992"
+   },
+   {
+    "n": "Alan Shearer",
+    "l": "1996"
+   },
+   {
+    "n": "Patrick Kluivert",
+    "l": "2000"
+   },
+   {
+    "n": "Savo Milošević",
+    "l": "2000"
+   },
+   {
+    "n": "Milan Baroš",
+    "l": "2004"
+   },
+   {
+    "n": "David Villa",
+    "l": "2008"
+   },
+   {
+    "n": "Fernando Torres",
+    "l": "2012"
+   },
+   {
+    "n": "Antoine Griezmann",
+    "l": "2016"
+   },
+   {
+    "n": "Cristiano Ronaldo",
+    "l": "2020"
+   },
+   {
+    "n": "Cody Gakpo",
+    "l": "2024"
+   },
+   {
+    "n": "Harry Kane",
+    "l": "2024"
+   },
+   {
+    "n": "Georges Mikautadze",
+    "l": "2024"
+   },
+   {
+    "n": "Jamal Musiala",
+    "l": "2024"
+   },
+   {
+    "n": "Dani Olmo",
+    "l": "2024"
+   },
+   {
+    "n": "Ivan Schranz",
+    "l": "2024"
+   }
+  ],
+  "secs": 300
+ },
+ {
+  "id": "euro-player-of-tournament",
+  "q": "Every Player of the Tournament at a European Championship, 1984–2024",
+  "note": "1984, 1988 and 1992 were unofficial awards. Labels show the tournament.",
+  "diff": "medium",
+  "src": "Wikipedia: UEFA European Championship awards",
+  "url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_awards",
+  "names": [
+   {
+    "n": "Michel Platini",
+    "l": "1984"
+   },
+   {
+    "n": "Marco van Basten",
+    "l": "1988"
+   },
+   {
+    "n": "Peter Schmeichel",
+    "l": "1992"
+   },
+   {
+    "n": "Matthias Sammer",
+    "l": "1996"
+   },
+   {
+    "n": "Zinedine Zidane",
+    "l": "2000"
+   },
+   {
+    "n": "Theodoros Zagorakis",
+    "l": "2004"
+   },
+   {
+    "n": "Xavi",
+    "l": "2008",
+    "a": [
+     "xavi hernandez"
+    ]
+   },
+   {
+    "n": "Andrés Iniesta",
+    "l": "2012"
+   },
+   {
+    "n": "Antoine Griezmann",
+    "l": "2016"
+   },
+   {
+    "n": "Gianluigi Donnarumma",
+    "l": "2020"
+   }
+  ],
+  "secs": 180
+ },
+ {
+  "id": "serie-a-top-15-scorers",
+  "q": "Serie A's 15 all-time top scorers",
+  "note": "As of 24 May 2026. Labels show Serie A goals.",
+  "diff": "hard",
+  "src": "Wikipedia: List of Serie A players with 100 or more goals",
+  "url": "https://en.wikipedia.org/wiki/List_of_Serie_A_players_with_100_or_more_goals",
+  "names": [
+   {
+    "n": "Silvio Piola",
+    "l": "274"
+   },
+   {
+    "n": "Francesco Totti",
+    "l": "250"
+   },
+   {
+    "n": "Gunnar Nordahl",
+    "l": "225"
+   },
+   {
+    "n": "Giuseppe Meazza",
+    "l": "216"
+   },
+   {
+    "n": "José Altafini",
+    "l": "216"
+   },
+   {
+    "n": "Antonio Di Natale",
+    "l": "209"
+   },
+   {
+    "n": "Roberto Baggio",
+    "l": "205"
+   },
+   {
+    "n": "Ciro Immobile",
+    "l": "201"
+   },
+   {
+    "n": "Kurt Hamrin",
+    "l": "190"
+   },
+   {
+    "n": "Giuseppe Signori",
+    "l": "188"
+   },
+   {
+    "n": "Alessandro Del Piero",
+    "l": "188"
+   },
+   {
+    "n": "Alberto Gilardino",
+    "l": "188"
+   },
+   {
+    "n": "Gabriel Batistuta",
+    "l": "183"
+   },
+   {
+    "n": "Fabio Quagliarella",
+    "l": "182"
+   },
+   {
+    "n": "Giampiero Boniperti",
+    "l": "178"
+   }
+  ],
+  "secs": 240
+ },
+ {
+  "id": "la-liga-top-15-scorers",
+  "q": "La Liga's 15 all-time top scorers",
+  "note": "Labels show La Liga goals.",
+  "diff": "hard",
+  "src": "Wikipedia: List of La Liga top scorers",
+  "url": "https://en.wikipedia.org/wiki/List_of_La_Liga_top_scorers",
+  "names": [
+   {
+    "n": "Lionel Messi",
+    "l": "474"
+   },
+   {
+    "n": "Cristiano Ronaldo",
+    "l": "311"
+   },
+   {
+    "n": "Telmo Zarra",
+    "l": "251",
+    "a": [
+     "zarra"
+    ]
+   },
+   {
+    "n": "Karim Benzema",
+    "l": "238"
+   },
+   {
+    "n": "Hugo Sánchez",
+    "l": "234"
+   },
+   {
+    "n": "Raúl",
+    "l": "228",
+    "a": [
+     "raul gonzalez"
+    ]
+   },
+   {
+    "n": "Alfredo Di Stéfano",
+    "l": "227"
+   },
+   {
+    "n": "César",
+    "l": "221",
+    "a": [
+     "cesar rodriguez"
+    ]
+   },
+   {
+    "n": "Quini",
+    "l": "219"
+   },
+   {
+    "n": "Pahiño",
+    "l": "212"
+   },
+   {
+    "n": "Antoine Griezmann",
+    "l": "205"
+   },
+   {
+    "n": "Mundo",
+    "l": "195"
+   },
+   {
+    "n": "David Villa",
+    "l": "186"
+   },
+   {
+    "n": "Santillana",
+    "l": "186"
+   },
+   {
+    "n": "Guillermo Gorostiza",
+    "l": "183"
+   }
+  ],
+  "secs": 240
+ },
+ {
+  "id": "bundesliga-top-10-scorers",
+  "q": "The Bundesliga's 10 all-time top scorers",
+  "note": "As of 30 August 2026. Labels show Bundesliga goals.",
+  "diff": "hard",
+  "src": "Wikipedia: List of Bundesliga top scorers",
+  "url": "https://en.wikipedia.org/wiki/List_of_Bundesliga_top_scorers",
+  "names": [
+   {
+    "n": "Gerd Müller",
+    "l": "365"
+   },
+   {
+    "n": "Robert Lewandowski",
+    "l": "312"
+   },
+   {
+    "n": "Klaus Fischer",
+    "l": "268"
+   },
+   {
+    "n": "Jupp Heynckes",
+    "l": "220"
+   },
+   {
+    "n": "Manfred Burgsmüller",
+    "l": "213"
+   },
+   {
+    "n": "Claudio Pizarro",
+    "l": "197"
+   },
+   {
+    "n": "Ulf Kirsten",
+    "l": "181"
+   },
+   {
+    "n": "Stefan Kuntz",
+    "l": "179"
+   },
+   {
+    "n": "Dieter Müller",
+    "l": "177"
+   },
+   {
+    "n": "Klaus Allofs",
+    "l": "177"
+   }
+  ],
+  "secs": 180
+ }
+]

@@ -1,0 +1,94 @@
+{
+ "test": {
+  "id": "ballon-dor-since-2000",
+  "q": "Every Ballon d'Or winner since 2000",
+  "note": "15 players. Labels show each player's first win. Not awarded in 2020. Up to the 2026 award.",
+  "secs": 240,
+  "src": "topendsports.com Ballon d'Or winners list; 2026 winner (Harry Kane) confirmed by soccernews.com / heavy.com",
+  "names": [
+   {
+    "n": "Luís Figo",
+    "l": "2000"
+   },
+   {
+    "n": "Michael Owen",
+    "l": "2001"
+   },
+   {
+    "n": "Ronaldo",
+    "l": "2002",
+    "a": [
+     "ronaldo nazario",
+     "r9",
+     "ronaldo nazario de lima"
+    ]
+   },
+   {
+    "n": "Pavel Nedvěd",
+    "l": "2003"
+   },
+   {
+    "n": "Andriy Shevchenko",
+    "l": "2004",
+    "a": [
+     "andrei shevchenko",
+     "sheva"
+    ]
+   },
+   {
+    "n": "Ronaldinho",
+    "l": "2005"
+   },
+   {
+    "n": "Fabio Cannavaro",
+    "l": "2006"
+   },
+   {
+    "n": "Kaká",
+    "l": "2007",
+    "a": [
+     "ricardo kaka"
+    ]
+   },
+   {
+    "n": "Cristiano Ronaldo",
+    "l": "2008",
+    "a": [
+     "cristiano",
+     "cr7"
+    ]
+   },
+   {
+    "n": "Lionel Messi",
+    "l": "2009",
+    "a": [
+     "leo messi"
+    ]
+   },
+   {
+    "n": "Luka Modrić",
+    "l": "2018"
+   },
+   {
+    "n": "Karim Benzema",
+    "l": "2022"
+   },
+   {
+    "n": "Rodri",
+    "l": "2024",
+    "a": [
+     "rodrigo",
+     "rodrigo hernandez"
+    ]
+   },
+   {
+    "n": "Ousmane Dembélé",
+    "l": "2025"
+   },
+   {
+    "n": "Harry Kane",
+    "l": "2026"
+   }
+  ]
+ }
+}

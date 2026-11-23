@@ -1,0 +1,489 @@
+[
+ {
+  "id": "den-euro-1992",
+  "lvl": "H",
+  "answer": {
+   "n": "Denmark",
+   "code": "DEN",
+   "a": []
+  },
+  "comp": "Euros",
+  "year": "1992",
+  "final": "2–0",
+  "src": "Wikipedia: UEFA Euro 1992 final",
+  "url": "https://en.wikipedia.org/wiki/UEFA_Euro_1992_final",
+  "rounds": [
+   {
+    "r": "Group stage",
+    "m": [
+     {
+      "t": {
+       "n": "England",
+       "code": "ENG"
+      },
+      "s": "0–0"
+     },
+     {
+      "t": {
+       "n": "Sweden",
+       "code": "SWE"
+      },
+      "s": "0–1"
+     },
+     {
+      "t": {
+       "n": "France",
+       "code": "FRA"
+      },
+      "s": "2–1"
+     }
+    ]
+   },
+   {
+    "r": "Semi-final",
+    "m": [
+     {
+      "t": {
+       "n": "Netherlands",
+       "code": "NED"
+      },
+      "s": "2–2 · 5–4 pens"
+     }
+    ]
+   },
+   {
+    "r": "Final",
+    "m": [
+     {
+      "t": {
+       "n": "Germany",
+       "code": "GER"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ned-euro-1988",
+  "lvl": "H",
+  "answer": {
+   "n": "Netherlands",
+   "code": "NED",
+   "a": [
+    "holland"
+   ]
+  },
+  "comp": "Euros",
+  "year": "1988",
+  "final": "2–0",
+  "src": "Wikipedia: UEFA Euro 1988 final",
+  "url": "https://en.wikipedia.org/wiki/UEFA_Euro_1988_final",
+  "rounds": [
+   {
+    "r": "Group stage",
+    "m": [
+     {
+      "t": {
+       "n": "Soviet Union",
+       "code": "URS"
+      },
+      "s": "0–1"
+     },
+     {
+      "t": {
+       "n": "England",
+       "code": "ENG"
+      },
+      "s": "3–1"
+     },
+     {
+      "t": {
+       "n": "Republic of Ireland",
+       "code": "IRL"
+      },
+      "s": "1–0"
+     }
+    ]
+   },
+   {
+    "r": "Semi-final",
+    "m": [
+     {
+      "t": {
+       "n": "West Germany",
+       "code": "FRG"
+      },
+      "s": "2–1"
+     }
+    ]
+   },
+   {
+    "r": "Final",
+    "m": [
+     {
+      "t": {
+       "n": "Soviet Union",
+       "code": "URS"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "arg-wc-1986",
+  "lvl": "M",
+  "answer": {
+   "n": "Argentina",
+   "code": "ARG",
+   "a": []
+  },
+  "comp": "World Cup",
+  "year": "1986",
+  "final": "3–2",
+  "src": "Wikipedia: 1986 FIFA World Cup final",
+  "url": "https://en.wikipedia.org/wiki/1986_FIFA_World_Cup_final",
+  "rounds": [
+   {
+    "r": "Group stage",
+    "m": [
+     {
+      "t": {
+       "n": "South Korea",
+       "code": "KOR"
+      },
+      "s": "3–1"
+     },
+     {
+      "t": {
+       "n": "Italy",
+       "code": "ITA"
+      },
+      "s": "1–1"
+     },
+     {
+      "t": {
+       "n": "Bulgaria",
+       "code": "BUL"
+      },
+      "s": "2–0"
+     }
+    ]
+   },
+   {
+    "r": "Round of 16",
+    "m": [
+     {
+      "t": {
+       "n": "Uruguay",
+       "code": "URU"
+      },
+      "s": "1–0"
+     }
+    ]
+   },
+   {
+    "r": "Quarter-final",
+    "m": [
+     {
+      "t": {
+       "n": "England",
+       "code": "ENG"
+      },
+      "s": "2–1"
+     }
+    ]
+   },
+   {
+    "r": "Semi-final",
+    "m": [
+     {
+      "t": {
+       "n": "Belgium",
+       "code": "BEL"
+      },
+      "s": "2–1"
+     }
+    ]
+   },
+   {
+    "r": "Final",
+    "m": [
+     {
+      "t": {
+       "n": "West Germany",
+       "code": "FRG"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ita-wc-1982",
+  "lvl": "M",
+  "answer": {
+   "n": "Italy",
+   "code": "ITA",
+   "a": []
+  },
+  "comp": "World Cup",
+  "year": "1982",
+  "final": "3–1",
+  "src": "Wikipedia: 1982 FIFA World Cup final",
+  "url": "https://en.wikipedia.org/wiki/1982_FIFA_World_Cup_final",
+  "rounds": [
+   {
+    "r": "First group stage",
+    "m": [
+     {
+      "t": {
+       "n": "Poland",
+       "code": "POL"
+      },
+      "s": "0–0"
+     },
+     {
+      "t": {
+       "n": "Peru",
+       "code": "PER"
+      },
+      "s": "1–1"
+     },
+     {
+      "t": {
+       "n": "Cameroon",
+       "code": "CMR"
+      },
+      "s": "1–1"
+     }
+    ]
+   },
+   {
+    "r": "Second group stage",
+    "m": [
+     {
+      "t": {
+       "n": "Argentina",
+       "code": "ARG"
+      },
+      "s": "2–1"
+     },
+     {
+      "t": {
+       "n": "Brazil",
+       "code": "BRA"
+      },
+      "s": "3–2"
+     }
+    ]
+   },
+   {
+    "r": "Semi-final",
+    "m": [
+     {
+      "t": {
+       "n": "Poland",
+       "code": "POL"
+      },
+      "s": "2–0"
+     }
+    ]
+   },
+   {
+    "r": "Final",
+    "m": [
+     {
+      "t": {
+       "n": "West Germany",
+       "code": "FRG"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fra-euro-1984",
+  "lvl": "H",
+  "answer": {
+   "n": "France",
+   "code": "FRA",
+   "a": []
+  },
+  "comp": "Euros",
+  "year": "1984",
+  "final": "2–0",
+  "src": "Wikipedia: UEFA Euro 1984 final",
+  "url": "https://en.wikipedia.org/wiki/UEFA_Euro_1984_final",
+  "rounds": [
+   {
+    "r": "Group stage",
+    "m": [
+     {
+      "t": {
+       "n": "Denmark",
+       "code": "DEN"
+      },
+      "s": "1–0"
+     },
+     {
+      "t": {
+       "n": "Belgium",
+       "code": "BEL"
+      },
+      "s": "5–0"
+     },
+     {
+      "t": {
+       "n": "Yugoslavia",
+       "code": "YUG"
+      },
+      "s": "3–2"
+     }
+    ]
+   },
+   {
+    "r": "Semi-final",
+    "m": [
+     {
+      "t": {
+       "n": "Portugal",
+       "code": "POR"
+      },
+      "s": "3–2 aet"
+     }
+    ]
+   },
+   {
+    "r": "Final",
+    "m": [
+     {
+      "t": {
+       "n": "Spain",
+       "code": "ESP"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ars-facup-2014",
+  "lvl": "E",
+  "answer": {
+   "n": "Arsenal",
+   "code": "ARS",
+   "c": [
+    "#EF0107",
+    "#FFFFFF"
+   ],
+   "a": [
+    "gunners"
+   ]
+  },
+  "comp": "FA Cup",
+  "year": "2014",
+  "final": "3–2 aet",
+  "src": "Wikipedia: 2014 FA Cup final",
+  "url": "https://en.wikipedia.org/wiki/2014_FA_Cup_final",
+  "rounds": [
+   {
+    "r": "Third round",
+    "m": [
+     {
+      "t": {
+       "n": "Tottenham Hotspur",
+       "code": "TOT",
+       "c": [
+        "#FFFFFF",
+        "#132257"
+       ]
+      },
+      "s": "2–0"
+     }
+    ]
+   },
+   {
+    "r": "Fourth round",
+    "m": [
+     {
+      "t": {
+       "n": "Coventry City",
+       "code": "COV",
+       "c": [
+        "#59CBE8",
+        "#FFFFFF"
+       ]
+      },
+      "s": "4–0"
+     }
+    ]
+   },
+   {
+    "r": "Fifth round",
+    "m": [
+     {
+      "t": {
+       "n": "Liverpool",
+       "code": "LIV",
+       "c": [
+        "#C8102E",
+        "#FFFFFF"
+       ]
+      },
+      "s": "2–1"
+     }
+    ]
+   },
+   {
+    "r": "Quarter-final",
+    "m": [
+     {
+      "t": {
+       "n": "Everton",
+       "code": "EVE",
+       "c": [
+        "#003399",
+        "#FFFFFF"
+       ]
+      },
+      "s": "4–1"
+     }
+    ]
+   },
+   {
+    "r": "Semi-final",
+    "m": [
+     {
+      "t": {
+       "n": "Wigan Athletic",
+       "code": "WIG",
+       "c": [
+        "#1D59AF",
+        "#FFFFFF"
+       ]
+      },
+      "s": "1–1 · 4–2 pens"
+     }
+    ]
+   },
+   {
+    "r": "Final",
+    "m": [
+     {
+      "t": {
+       "n": "Hull City",
+       "code": "HUL",
+       "c": [
+        "#F5A12D",
+        "#000000"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ }
+]

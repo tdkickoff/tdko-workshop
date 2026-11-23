@@ -1,0 +1,841 @@
+[
+ {
+  "id": "bar06",
+  "team": "Barcelona",
+  "type": "club",
+  "comp": "Champions League final",
+  "year": 2006,
+  "cap": "Carles Puyol",
+  "rows": [
+   [
+    [
+     "Ronaldinho",
+     "LW",
+     "BRA"
+    ],
+    [
+     "Samuel Eto'o",
+     "CF",
+     "CMR"
+    ],
+    [
+     "Ludovic Giuly",
+     "RW",
+     "FRA"
+    ]
+   ],
+   [
+    [
+     "Mark van Bommel",
+     "CM",
+     "NED"
+    ],
+    [
+     "Deco",
+     "CM",
+     "POR"
+    ]
+   ],
+   [
+    [
+     "Edmílson",
+     "DM",
+     "BRA"
+    ]
+   ],
+   [
+    [
+     "Giovanni van Bronckhorst",
+     "LB",
+     "NED"
+    ],
+    [
+     "Carles Puyol",
+     "CB",
+     "ESP"
+    ],
+    [
+     "Rafael Márquez",
+     "CB",
+     "MEX"
+    ],
+    [
+     "Oleguer",
+     "RB",
+     "ESP"
+    ]
+   ],
+   [
+    [
+     "Víctor Valdés",
+     "GK",
+     "ESP"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 2006 Champions League final line-ups (IPFS mirror): players, positions, captain. Nationality tags from my own knowledge (the page shows flags as images only).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/2006_UEFA_Champions_League_Final"
+ },
+ {
+  "id": "mil03",
+  "team": "AC Milan",
+  "type": "club",
+  "comp": "Champions League final",
+  "year": 2003,
+  "cap": "Paolo Maldini",
+  "rows": [
+   [
+    [
+     "Andriy Shevchenko",
+     "CF",
+     "UKR"
+    ],
+    [
+     "Filippo Inzaghi",
+     "CF",
+     "ITA"
+    ]
+   ],
+   [
+    [
+     "Rui Costa",
+     "AM",
+     "POR"
+    ]
+   ],
+   [
+    [
+     "Clarence Seedorf",
+     "LM",
+     "NED"
+    ],
+    [
+     "Andrea Pirlo",
+     "CM",
+     "ITA"
+    ],
+    [
+     "Gennaro Gattuso",
+     "RM",
+     "ITA"
+    ]
+   ],
+   [
+    [
+     "Kakha Kaladze",
+     "LB",
+     "GEO"
+    ],
+    [
+     "Paolo Maldini",
+     "CB",
+     "ITA"
+    ],
+    [
+     "Alessandro Nesta",
+     "CB",
+     "ITA"
+    ],
+    [
+     "Alessandro Costacurta",
+     "RB",
+     "ITA"
+    ]
+   ],
+   [
+    [
+     "Dida",
+     "GK",
+     "BRA"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 2003 Champions League final line-ups (IPFS mirror): players, positions, captain. Nationality tags from my own knowledge (the page shows flags as images only).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/2003_UEFA_Champions_League_Final"
+ },
+ {
+  "id": "rma00",
+  "team": "Real Madrid",
+  "type": "club",
+  "comp": "Champions League final",
+  "year": 2000,
+  "cap": "Fernando Redondo",
+  "rows": [
+   [
+    [
+     "Fernando Morientes",
+     "CF",
+     "ESP"
+    ],
+    [
+     "Nicolas Anelka",
+     "CF",
+     "FRA"
+    ]
+   ],
+   [
+    [
+     "Raúl",
+     "LM",
+     "ESP"
+    ],
+    [
+     "Fernando Redondo",
+     "CM",
+     "ARG"
+    ],
+    [
+     "Steve McManaman",
+     "RM",
+     "ENG"
+    ]
+   ],
+   [
+    [
+     "Roberto Carlos",
+     "LWB",
+     "BRA"
+    ],
+    [
+     "Iván Helguera",
+     "SW",
+     "ESP"
+    ],
+    [
+     "Aitor Karanka",
+     "CB",
+     "ESP"
+    ],
+    [
+     "Iván Campo",
+     "CB",
+     "ESP"
+    ],
+    [
+     "Míchel Salgado",
+     "RWB",
+     "ESP"
+    ]
+   ],
+   [
+    [
+     "Iker Casillas",
+     "GK",
+     "ESP"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 2000 Champions League final line-ups (IPFS mirror): players, positions, captain. Nationality tags from my own knowledge (the page shows flags as images only).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/2000_UEFA_Champions_League_Final"
+ },
+ {
+  "id": "bvb97",
+  "team": "Borussia Dortmund",
+  "type": "club",
+  "comp": "Champions League final",
+  "year": 1997,
+  "cap": "Matthias Sammer",
+  "rows": [
+   [
+    [
+     "Karl-Heinz Riedle",
+     "CF",
+     "GER"
+    ],
+    [
+     "Stéphane Chapuisat",
+     "CF",
+     "SUI"
+    ]
+   ],
+   [
+    [
+     "Andreas Möller",
+     "AM",
+     "GER"
+    ]
+   ],
+   [
+    [
+     "Jörg Heinrich",
+     "LWB",
+     "GER"
+    ],
+    [
+     "Paulo Sousa",
+     "CM",
+     "POR"
+    ],
+    [
+     "Paul Lambert",
+     "CM",
+     "SCO"
+    ],
+    [
+     "Stefan Reuter",
+     "RWB",
+     "GER"
+    ]
+   ],
+   [
+    [
+     "Martin Kree",
+     "CB",
+     "GER"
+    ],
+    [
+     "Matthias Sammer",
+     "SW",
+     "GER"
+    ],
+    [
+     "Jürgen Kohler",
+     "CB",
+     "GER"
+    ]
+   ],
+   [
+    [
+     "Stefan Klos",
+     "GK",
+     "GER"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 1997 Champions League final line-ups (IPFS mirror): players, positions, captain. Nationality tags from my own knowledge (the page shows flags as images only).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/1997_UEFA_Champions_League_Final"
+ },
+ {
+  "id": "bay01",
+  "team": "Bayern Munich",
+  "type": "club",
+  "comp": "Champions League final",
+  "year": 2001,
+  "cap": "Stefan Effenberg",
+  "rows": [
+   [
+    [
+     "Giovane Élber",
+     "CF",
+     "BRA"
+    ]
+   ],
+   [
+    [
+     "Mehmet Scholl",
+     "AM",
+     "GER"
+    ],
+    [
+     "Hasan Salihamidžić",
+     "AM",
+     "BIH"
+    ]
+   ],
+   [
+    [
+     "Bixente Lizarazu",
+     "LWB",
+     "FRA"
+    ],
+    [
+     "Stefan Effenberg",
+     "CM",
+     "GER"
+    ],
+    [
+     "Owen Hargreaves",
+     "CM",
+     "ENG"
+    ],
+    [
+     "Willy Sagnol",
+     "RWB",
+     "FRA"
+    ]
+   ],
+   [
+    [
+     "Thomas Linke",
+     "CB",
+     "GER"
+    ],
+    [
+     "Patrik Andersson",
+     "CB",
+     "SWE"
+    ],
+    [
+     "Samuel Kuffour",
+     "CB",
+     "GHA"
+    ]
+   ],
+   [
+    [
+     "Oliver Kahn",
+     "GK",
+     "GER"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 2001 Champions League final line-ups (IPFS mirror): players, positions, captain. Nationality tags from my own knowledge (the page shows flags as images only).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/2001_UEFA_Champions_League_Final"
+ },
+ {
+  "id": "om93",
+  "team": "Marseille",
+  "type": "club",
+  "comp": "Champions League final",
+  "year": 1993,
+  "cap": "Didier Deschamps",
+  "rows": [
+   [
+    [
+     "Alen Bokšić",
+     "CF",
+     "CRO"
+    ],
+    [
+     "Rudi Völler",
+     "CF",
+     "GER"
+    ]
+   ],
+   [
+    [
+     "Didier Deschamps",
+     "LM",
+     "FRA"
+    ],
+    [
+     "Franck Sauzée",
+     "CM",
+     "FRA"
+    ],
+    [
+     "Abedi Pele",
+     "RM",
+     "GHA"
+    ]
+   ],
+   [
+    [
+     "Éric Di Meco",
+     "LB",
+     "FRA"
+    ],
+    [
+     "Marcel Desailly",
+     "CB",
+     "FRA"
+    ],
+    [
+     "Basile Boli",
+     "SW",
+     "FRA"
+    ],
+    [
+     "Jean-Jacques Eydelie",
+     "CB",
+     "FRA"
+    ],
+    [
+     "Jocelyn Angloma",
+     "RB",
+     "FRA"
+    ]
+   ],
+   [
+    [
+     "Fabien Barthez",
+     "GK",
+     "FRA"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 1993 Champions League final line-ups (IPFS mirror): players, positions, captain. Nationality tags from my own knowledge (the page shows flags as images only).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/1993_UEFA_Champions_League_Final"
+ },
+ {
+  "id": "bar92",
+  "team": "Barcelona",
+  "type": "club",
+  "comp": "European Cup final",
+  "year": 1992,
+  "cap": "Andoni Zubizarreta",
+  "rows": [
+   [
+    [
+     "Julio Salinas",
+     "CF",
+     "ESP"
+    ],
+    [
+     "Hristo Stoichkov",
+     "SS",
+     "BUL"
+    ]
+   ],
+   [
+    [
+     "José Mari Bakero",
+     "AM",
+     "ESP"
+    ],
+    [
+     "Michael Laudrup",
+     "AM",
+     "DEN"
+    ]
+   ],
+   [
+    [
+     "Juan Carlos",
+     "LWB",
+     "ESP"
+    ],
+    [
+     "Pep Guardiola",
+     "DM",
+     "ESP"
+    ],
+    [
+     "Eusebio Sacristán",
+     "RWB",
+     "ESP"
+    ]
+   ],
+   [
+    [
+     "Nando",
+     "CB",
+     "ESP"
+    ],
+    [
+     "Ronald Koeman",
+     "SW",
+     "NED"
+    ],
+    [
+     "Albert Ferrer",
+     "CB",
+     "ESP"
+    ]
+   ],
+   [
+    [
+     "Andoni Zubizarreta",
+     "GK",
+     "ESP"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 1992 European Cup final line-ups (IPFS mirror): players, positions, captain. Nationality tags from my own knowledge (the page shows flags as images only).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/1992_European_Cup_Final"
+ },
+ {
+  "id": "esp12",
+  "team": "Spain",
+  "type": "intl",
+  "comp": "European Championship final",
+  "year": 2012,
+  "cap": "Iker Casillas",
+  "rows": [
+   [
+    [
+     "Andrés Iniesta",
+     "LW",
+     "Barcelona"
+    ],
+    [
+     "Cesc Fàbregas",
+     "CF",
+     "Barcelona"
+    ],
+    [
+     "David Silva",
+     "RW",
+     "Manchester City"
+    ]
+   ],
+   [
+    [
+     "Xabi Alonso",
+     "CM",
+     "Real Madrid"
+    ],
+    [
+     "Sergio Busquets",
+     "CM",
+     "Barcelona"
+    ],
+    [
+     "Xavi",
+     "CM",
+     "Barcelona"
+    ]
+   ],
+   [
+    [
+     "Jordi Alba",
+     "LB",
+     "Valencia"
+    ],
+    [
+     "Gerard Piqué",
+     "CB",
+     "Barcelona"
+    ],
+    [
+     "Sergio Ramos",
+     "CB",
+     "Real Madrid"
+    ],
+    [
+     "Álvaro Arbeloa",
+     "RB",
+     "Real Madrid"
+    ]
+   ],
+   [
+    [
+     "Iker Casillas",
+     "GK",
+     "Real Madrid"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 2012 European Championship final line-ups (IPFS mirror): players, positions, captain. Club tags from my own knowledge (the page does not show clubs). Positions from the page's team selection text.",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/UEFA_Euro_2012_Final"
+ },
+ {
+  "id": "esp08",
+  "team": "Spain",
+  "type": "intl",
+  "comp": "European Championship final",
+  "year": 2008,
+  "cap": "Iker Casillas",
+  "rows": [
+   [
+    [
+     "Fernando Torres",
+     "CF",
+     "Liverpool"
+    ]
+   ],
+   [
+    [
+     "David Silva",
+     "LM",
+     "Valencia"
+    ],
+    [
+     "Cesc Fàbregas",
+     "CM",
+     "Arsenal"
+    ],
+    [
+     "Xavi",
+     "CM",
+     "Barcelona"
+    ],
+    [
+     "Andrés Iniesta",
+     "RM",
+     "Barcelona"
+    ]
+   ],
+   [
+    [
+     "Marcos Senna",
+     "DM",
+     "Villarreal"
+    ]
+   ],
+   [
+    [
+     "Joan Capdevila",
+     "LB",
+     "Villarreal"
+    ],
+    [
+     "Carles Puyol",
+     "CB",
+     "Barcelona"
+    ],
+    [
+     "Carlos Marchena",
+     "CB",
+     "Valencia"
+    ],
+    [
+     "Sergio Ramos",
+     "RB",
+     "Real Madrid"
+    ]
+   ],
+   [
+    [
+     "Iker Casillas",
+     "GK",
+     "Real Madrid"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 2008 European Championship final line-ups (IPFS mirror): players, positions, captain. Club tags from my own knowledge (the page does not show clubs).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/UEFA_Euro_2008_Final"
+ },
+ {
+  "id": "fra00",
+  "team": "France",
+  "type": "intl",
+  "comp": "European Championship final",
+  "year": 2000,
+  "cap": "Didier Deschamps",
+  "rows": [
+   [
+    [
+     "Christophe Dugarry",
+     "CF",
+     "Bordeaux"
+    ]
+   ],
+   [
+    [
+     "Thierry Henry",
+     "LW",
+     "Arsenal"
+    ],
+    [
+     "Zinedine Zidane",
+     "AM",
+     "Juventus"
+    ],
+    [
+     "Youri Djorkaeff",
+     "RW",
+     "Kaiserslautern"
+    ]
+   ],
+   [
+    [
+     "Patrick Vieira",
+     "CM",
+     "Arsenal"
+    ],
+    [
+     "Didier Deschamps",
+     "CM",
+     "Chelsea"
+    ]
+   ],
+   [
+    [
+     "Bixente Lizarazu",
+     "LB",
+     "Bayern Munich"
+    ],
+    [
+     "Laurent Blanc",
+     "CB",
+     "Inter Milan"
+    ],
+    [
+     "Marcel Desailly",
+     "CB",
+     "Chelsea"
+    ],
+    [
+     "Lilian Thuram",
+     "RB",
+     "Parma"
+    ]
+   ],
+   [
+    [
+     "Fabien Barthez",
+     "GK",
+     "Monaco"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 2000 European Championship final line-ups (IPFS mirror): players, positions, captain. Club tags from my own knowledge (the page does not show clubs).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/UEFA_Euro_2000_Final"
+ },
+ {
+  "id": "ger96",
+  "team": "Germany",
+  "type": "intl",
+  "comp": "European Championship final",
+  "year": 1996,
+  "cap": "Jürgen Klinsmann",
+  "rows": [
+   [
+    [
+     "Stefan Kuntz",
+     "CF",
+     "Beşiktaş"
+    ],
+    [
+     "Jürgen Klinsmann",
+     "CF",
+     "Bayern Munich"
+    ]
+   ],
+   [
+    [
+     "Christian Ziege",
+     "LWB",
+     "Bayern Munich"
+    ],
+    [
+     "Mehmet Scholl",
+     "CM",
+     "Bayern Munich"
+    ],
+    [
+     "Dieter Eilts",
+     "DM",
+     "Werder Bremen"
+    ],
+    [
+     "Thomas Häßler",
+     "CM",
+     "Karlsruher SC"
+    ],
+    [
+     "Thomas Strunz",
+     "RWB",
+     "Bayern Munich"
+    ]
+   ],
+   [
+    [
+     "Thomas Helmer",
+     "CB",
+     "Bayern Munich"
+    ],
+    [
+     "Matthias Sammer",
+     "SW",
+     "Borussia Dortmund"
+    ],
+    [
+     "Markus Babbel",
+     "CB",
+     "Bayern Munich"
+    ]
+   ],
+   [
+    [
+     "Andreas Köpke",
+     "GK",
+     "Eintracht Frankfurt"
+    ]
+   ]
+  ],
+  "src": "Wikipedia 1996 European Championship final line-ups (IPFS mirror): players, positions, captain. Club tags from my own knowledge (the page does not show clubs).",
+  "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/UEFA_Euro_1996_Final"
+ }
+]

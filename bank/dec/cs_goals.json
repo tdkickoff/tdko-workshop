@@ -1,0 +1,218 @@
+[
+ {
+  "id": "pl-top-10-scorers-5yrs",
+  "q": "The 10 top Premier League scorers of the last five years",
+  "note": "League goals, 23 Nov 2021 to 23 Nov 2026. Labels show goals.",
+  "diff": "easy",
+  "src": "StatMuse: most Premier League goals, last 5 years (to 23 Nov 2026)",
+  "url": "https://www.statmuse.com/fc/ask/most-goals-scored-last-5-years-in-premier-league",
+  "names": [
+   {
+    "n": "Erling Haaland",
+    "l": "121"
+   },
+   {
+    "n": "Mohamed Salah",
+    "l": "85"
+   },
+   {
+    "n": "Ollie Watkins",
+    "l": "74"
+   },
+   {
+    "n": "Alexander Isak",
+    "l": "64"
+   },
+   {
+    "n": "Bukayo Saka",
+    "l": "56"
+   },
+   {
+    "n": "Bryan Mbeumo",
+    "l": "55"
+   },
+   {
+    "n": "Jarrod Bowen",
+    "l": "54"
+   },
+   {
+    "n": "Son Heung-min",
+    "l": "53",
+    "a": [
+     "son",
+     "heung-min son"
+    ]
+   },
+   {
+    "n": "Phil Foden",
+    "l": "51"
+   },
+   {
+    "n": "Cole Palmer",
+    "l": "50"
+   }
+  ],
+  "secs": 180
+ },
+ {
+  "id": "laliga-top-10-scorers-5yrs",
+  "q": "The 10 top La Liga scorers of the last five years",
+  "note": "League goals, 23 Nov 2021 to 23 Nov 2026. Labels show goals.",
+  "diff": "medium",
+  "src": "StatMuse: most La Liga goals, past 5 years (to 23 Nov 2026)",
+  "url": "https://www.statmuse.com/fc/ask/most-la-liga-goals-past-5-years",
+  "names": [
+   {
+    "n": "Robert Lewandowski",
+    "l": "83"
+   },
+   {
+    "n": "Ante Budimir",
+    "l": "80"
+   },
+   {
+    "n": "Alexander Sørloth",
+    "l": "71"
+   },
+   {
+    "n": "Kylian Mbappé",
+    "l": "69"
+   },
+   {
+    "n": "Vinícius Júnior",
+    "l": "62",
+    "a": [
+     "vinicius",
+     "vini jr"
+    ]
+   },
+   {
+    "n": "Raphinha",
+    "l": "59"
+   },
+   {
+    "n": "Vedat Muriqi",
+    "l": "57"
+   },
+   {
+    "n": "Iago Aspas",
+    "l": "50"
+   },
+   {
+    "n": "Borja Iglesias",
+    "l": "47"
+   },
+   {
+    "n": "Antoine Griezmann",
+    "l": "47"
+   }
+  ],
+  "secs": 180
+ },
+ {
+  "id": "seriea-top-10-scorers-5yrs",
+  "q": "The 10 top Serie A scorers of the last five seasons",
+  "note": "League goals, 2022–23 to 2026–27 so far (as of 23 Nov 2026). Labels show goals.",
+  "diff": "medium",
+  "src": "StatMuse: most Serie A goal scorers, last 5 seasons (as of 23 Nov 2026)",
+  "url": "https://www.statmuse.com/fc/ask/most-serie-a-goal-scorers-in-last-5-seasons",
+  "names": [
+   {
+    "n": "Lautaro Martínez",
+    "l": "78"
+   },
+   {
+    "n": "Riccardo Orsolini",
+    "l": "48"
+   },
+   {
+    "n": "Marcus Thuram",
+    "l": "46"
+   },
+   {
+    "n": "Ademola Lookman",
+    "l": "41"
+   },
+   {
+    "n": "Victor Osimhen",
+    "l": "41"
+   },
+   {
+    "n": "Dušan Vlahović",
+    "l": "41"
+   },
+   {
+    "n": "Rafael Leão",
+    "l": "41"
+   },
+   {
+    "n": "Romelu Lukaku",
+    "l": "38"
+   },
+   {
+    "n": "Andrea Pinamonti",
+    "l": "37"
+   },
+   {
+    "n": "Christian Pulisic",
+    "l": "36"
+   }
+  ],
+  "secs": 180
+ },
+ {
+  "id": "ucl-top-10-scorers-5yrs",
+  "q": "The 10 top Champions League scorers of the last five years",
+  "note": "Goals, 21 Nov 2021 to 21 Nov 2026. Labels show goals.",
+  "diff": "easy",
+  "src": "StatMuse: Champions League top scorers, past 5 years (to 21 Nov 2026)",
+  "url": "https://www.statmuse.com/fc/ask/champions-league-top-scorers-past-5-years",
+  "names": [
+   {
+    "n": "Kylian Mbappé",
+    "l": "46"
+   },
+   {
+    "n": "Erling Haaland",
+    "l": "41"
+   },
+   {
+    "n": "Harry Kane",
+    "l": "38"
+   },
+   {
+    "n": "Vinícius Júnior",
+    "l": "28",
+    "a": [
+     "vinicius",
+     "vini jr"
+    ]
+   },
+   {
+    "n": "Robert Lewandowski",
+    "l": "28"
+   },
+   {
+    "n": "Julián Álvarez",
+    "l": "26"
+   },
+   {
+    "n": "Raphinha",
+    "l": "23"
+   },
+   {
+    "n": "Ousmane Dembélé",
+    "l": "22"
+   },
+   {
+    "n": "Serhou Guirassy",
+    "l": "21"
+   },
+   {
+    "n": "Lautaro Martínez",
+    "l": "21"
+   }
+  ],
+  "secs": 180
+ }
+]

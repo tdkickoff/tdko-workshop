@@ -1,0 +1,80 @@
+"""Builds The Daily Kick Off site in tdko/: the menu plus a copy of each game wired to it.
+Usage: python3 build.py <hub url>"""
+import re, sys, os, json
+LIVE_URL = sys.argv[1] if len(sys.argv) > 1 else 'https://claude.ai/artifact/THE_DAILY_KICK_OFF'
+ROOT = '/home/claude/site-build'
+GAMES = {  # source file -> published id
+  '/home/claude/one-touch.html':        'fast-break',
+  '/home/claude/whos-that-baller.html': 'whos-that-baller',
+  '/home/claude/scramble-head.html':    'in-the-mixer',
+  '/home/claude/pass-and-connect.html': 'link-up-play',
+  '/home/claude/who-playedle.html':     'squad-goals',
+  '/home/claude/shirt-swap.html':       'shirt-swap',
+  '/home/claude/tiki-taka-toe.html':    'tiki-taka-toe',
+  '/home/claude/offside.html':          'offside',
+  '/home/claude/top-four.html':         'top-four',
+  '/home/claude/ranked-highly.html':    'ranked-highly',
+}
+PREFIX = {'fast-break':'fastbreak:', 'whos-that-baller':'wtb:', 'in-the-mixer':'scramble:', 'link-up-play':'passconnect:',
+          'squad-goals':'playedle:', 'shirt-swap':'shirtswap:', 'tiki-taka-toe':'tikitaka:', 'top-four':'topfour:', 'ranked-highly':'rankedhighly:'}
+HEAD = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+        '<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}'
+        'body{margin:0;font:14px/1.4 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>' + open('/home/claude/site-build/theme-init.html').read() + open('/home/claude/site-build/gate.html').read() + '</head><body>')
+BACK_CSS = ('.back{align-self:flex-start;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;'
+            'color:var(--muted);text-decoration:none;padding:4px 0;margin-bottom:-8px}'
+            '.back:hover{color:var(--ink)}.back:focus-visible{outline:2px solid var(--accent);outline-offset:2px}\n')
+
+for src, gid in GAMES.items():
+    base = open(src).read()
+    for mode, url, out in (('live', LIVE_URL, ROOT),):
+        s = re.sub(r"const GAME_URL = '[^']*';", f"const GAME_URL = '{url}';", base, count=1)
+        assert s.count('${GAME_URL}#c${dayNo}-') == 1, src
+        s = s.replace('${GAME_URL}#c${dayNo}-', '${GAME_URL}#' + gid + '-c${dayNo}-')
+        s = s.replace('</style>', BACK_CSS + '' + '</style>', 1)
+        assert s.count('<header class="top">') == 1
+        bar = ''
+        s = s.replace('<header class="top">', bar + '<a class="back" href="./">← The Daily Kick Off</a>\n  <header class="top">', 1)
+        # test day (testers only): fixed puzzle, always in replay mode, so nothing is reported to scores or streaks
+        assert s.count("function tdkoIsReplay(gid, dayKey, dayNo){ ") == 1, src
+        s = s.replace("function tdkoIsReplay(gid, dayKey, dayNo){ ", "function tdkoIsReplay(gid, dayKey, dayNo){ if(window.TDKO_TEST) return true; ", 1)
+        assert s.count("function tdkoReplayBox(on){ return") == 1, src
+        s = s.replace("function tdkoReplayBox(on){ return", "function tdkoReplayBox(on){ if(window.TDKO_TEST) return tdkoTestBox(); return", 1)
+        assert s.count("dayNo = LAUNCH==null ? 1 :") == 1, src
+        s = s.replace("dayNo = LAUNCH==null ? 1 :", "dayNo = window.TDKO_TEST ? TDKO_TEST_NO : LAUNCH==null ? 1 :", 1)
+        # test day content: its own puzzle for each game, used instead of the daily one when TDKO_TEST is on
+        TD = json.load(open(ROOT+'/test-day.json'))[gid]
+        s = s.replace('<script>', '<script>var TDKO_T=' + json.dumps(TD, ensure_ascii=False) + ';</script>\n<script>', 1)
+        if gid == 'fast-break':
+            a = "const d = (dayNo-1) % DAYS.length;"
+            assert s.count(a) == 1
+            s = s.replace(a, a + "\n  let DD = DAYS[d]; if(window.TDKO_TEST){ const b=Q.length; TDKO_T.forEach(x=>Q.push(x)); DD={e:[...Array(10).keys()].map(i=>b+i), m:[...Array(9).keys()].map(i=>b+10+i), h:[b+19]}; }", 1)
+            a = "QUIZ = [...shuffle(DAYS[d].e), ...shuffle(DAYS[d].m), ...DAYS[d].h].map(make);"
+            assert s.count(a) == 1
+            s = s.replace(a, "QUIZ = [...shuffle(DD.e), ...shuffle(DD.m), ...DD.h].map(make);", 1)
+            a = "hash('fastbreak:'+dayKey)"; assert s.count(a) == 1
+            s = s.replace(a, "hash(window.TDKO_TEST ? 'fastbreak:test-day' : 'fastbreak:'+dayKey)", 1)
+        else:
+            s, n = re.subn(r"const (\w+) = (\w+)\[\(dayNo-1\) % \2\.length\];", r"const \1 = window.TDKO_TEST ? TDKO_T : \2[(dayNo-1) % \2.length];", s, count=1)
+            assert n == 1, src
+        # record kick-off / full-time times whenever the game reports its daily status
+        i = s.index('function report(){'); a = 'localStorage.setItem(k, JSON.stringify(all));'; j = s.index(a, i)
+        assert j - i < 600, src
+        s = s[:j] + a + f" tdkoStamp(k,'{gid}',all['{gid}']);" + s[j+len(a):]
+        # test puzzles show no day number on screen
+        s = s.replace("Full time · No. ${dayNo}", "Full time${window.TDKO_TEST?' · Test':' · No. '+dayNo}")
+        s = s.replace("File No. ${String(dayNo).padStart(3,'0')}", "${window.TDKO_TEST?'Test file':'File No. '+String(dayNo).padStart(3,'0')}")
+        s = s.replace("Scramble No. ${String(dayNo).padStart(3,'0')}", "${window.TDKO_TEST?'Test scramble':'Scramble No. '+String(dayNo).padStart(3,'0')}")
+        s = s.replace('<script>', open(ROOT+'/reset.html').read() + open(ROOT+'/streak.html').read() + '<script>', 1)  # site reset runs before the game reads its save
+        open(f'{out}/{gid}.html', 'w').write(HEAD + s + open(ROOT+'/footer.html').read() + '</body></html>')
+    print('built', gid)
+
+
+# keep the menu's copy of the shared chrome in step with footer.html
+import re as _re
+_h = open(ROOT+'/the-daily-kick-off.html').read()
+_h = _re.sub(r"<!--tdko-gate-->.*?<!--/tdko-gate-->\n", lambda m: open(ROOT+'/gate.html').read(), _h, count=1, flags=_re.S)
+_h, _n = _re.subn(r"<!--tdko-chrome-->.*?<!--/tdko-chrome-->\n", lambda m: open(ROOT+'/footer.html').read(), _h, flags=_re.S)
+assert _n == 1
+open(ROOT+'/the-daily-kick-off.html','w').write(_h)
+print('menu footer refreshed')

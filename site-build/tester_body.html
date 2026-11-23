@@ -1,0 +1,26 @@
+<section class="card" id="tcard">
+  <p class="lede">Got a tester code? Enter it to unlock the test puzzles and new features on this device.</p>
+  <form id="tform" autocomplete="off" style="display:flex;flex-direction:column;gap:12px">
+    <label>Tester code<input id="tcode" type="text" autocapitalize="characters" spellcheck="false" placeholder="TDKO-XXXXX" required></label>
+    <button class="btn" type="submit">Unlock</button>
+    <p class="note" id="tmsg" aria-live="polite"></p>
+  </form>
+  <p class="note">Test puzzles never count towards your scores, streaks or the site's stats. Use "Exit test" in the top bar to leave.</p>
+</section>
+<script>
+(function(){
+  /* the server checks the code (/api/tester); the page never holds it. Same flag as gate.html */
+  var FLAG='3', card=document.getElementById('tcard');
+  var on=function(){ try{ return localStorage.getItem('tdko-tester')===FLAG; }catch(e){ return false; } };
+  var showOn=function(){ card.innerHTML='<p class="lede">Tester mode is on for this device.</p><a class="btn" href="./">Go to the test puzzles</a><p class="note">Use "Exit test" in the top bar to leave tester mode.</p>'; };
+  if(on()) return showOn();
+  document.getElementById('tform').addEventListener('submit',function(e){ e.preventDefault();
+    var v=document.getElementById('tcode').value.trim().toUpperCase(), m=document.getElementById('tmsg');
+    m.textContent='Checking…'; m.style.color='';
+    fetch('/api/tester',{headers:{'x-tdko-tester':v}}).then(function(r){
+      if(!r.ok){ m.textContent="That code isn't right. Check it and try again."; m.style.color='var(--bad)'; return; }
+      try{ localStorage.setItem('tdko-tester',FLAG); }catch(_){ m.textContent='Your browser blocked this. Try turning off private browsing.'; return; }
+      location.href='./'; }).catch(function(){ m.textContent='Could not check the code. Try again in a moment.'; m.style.color='var(--bad)'; });
+  });
+})();
+</script>

@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>TDKO stats</title>
+<script>try{if(localStorage.getItem('tdko-stats')!=='1')location.replace('stats-login.html');}catch(e){location.replace('stats-login.html');}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{--bg:#F2F4F1;--surface:#fff;--ink:#0E1712;--muted:#5D6A62;--line:#D7DDD8;--accent:#0A8A4A;--bad:#C93A2B;--soft:#E7ECE8;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;--f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0B110E;--surface:#121A16;--ink:#EAF0EC;--muted:#8A988F;--line:#24302A;--accent:#34D27F;--bad:#FF6B5A;--soft:#1A241F;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--f-display);padding:0 16px}
+.wrap{max-width:720px;margin:0 auto;padding:24px 0 48px;display:flex;flex-direction:column;gap:16px}
+h1{margin:0;font-weight:900;font-stretch:66%;font-size:44px;line-height:.9;text-transform:uppercase}h1 i{font-style:normal;color:var(--accent)}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+select{font:inherit;font-family:var(--f-mono);font-size:14px;padding:8px 10px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:0}
+.card{background:var(--surface);border:1px solid var(--line);overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+tfoot td{font-weight:800;border-top:2px solid var(--ink);border-bottom:0}
+.bar{display:inline-block;height:8px;background:var(--accent);vertical-align:middle;margin-left:8px}
+.low{color:var(--bad);font-weight:700}
+.note{font-size:13px;color:var(--muted);margin:0}
+.big{display:flex;gap:24px;flex-wrap:wrap}.big div{display:flex;flex-direction:column}.big b{font-weight:900;font-stretch:66%;font-size:40px;line-height:1}
+</style></head><body><div class="wrap">
+<h1>TDKO <i>stats</i></h1>
+<p class="note">How many players start and finish each game. Started, Finished and Gave up count each device once per game per day. Total completes counts every finish, replays included. Counting starts on Mon 16 Nov 2026. Test puzzles are never counted.</p>
+<label class="eyebrow">Day <select id="day"></select></label>
+<div class="big" id="big"></div>
+<div class="card"><table><thead><tr><th>Game (menu order)</th><th>Started</th><th>Finished</th><th>Gave up</th><th>Total completes</th><th>Finish rate</th></tr></thead><tbody id="rows"><tr><td colspan="6">Loading…</td></tr></tbody><tfoot id="tot"></tfoot></table></div>
+<p class="note">Finish rate = finished ÷ started (giving up counts as finished; replays are left out so the rate stays one per player). A low rate, in red, means people tend to stop partway through that game. Compare the "Started" column down the list to see how many drop off between games.</p>
+</div>
+<script>
+const G=[['fast-break','Fast Break'],['whos-that-baller',"Who's That Baller"],['squad-goals','Squad Goals'],['link-up-play','Link Up Play'],['in-the-mixer','In The Mixer'],['offside','Offside'],['top-four','Top Four'],['tiki-taka-toe','Tiki-Taka-Toe'],['shirt-swap','Shirt Swap'],['ranked-highly','Ranked Highly']];
+let rows=[];
+const fmt=n=>Number(n).toLocaleString('en-GB');
+function draw(){ const d=document.getElementById('day').value;
+  const sum=(g,e)=>rows.filter(r=>r.game===g&&r.event===e&&(d==='all'||r.day===d)).reduce((a,r)=>a+r.n,0);
+  const max=Math.max(1,...G.map(([g])=>sum(g,'start')));
+  document.getElementById('rows').innerHTML=G.map(([g,n])=>{ const s=sum(g,'start'),f=sum(g,'finish'),u=sum(g,'gaveup'),tc=f+sum(g,'replay'),rate=s?Math.round(100*f/s):null;
+    return `<tr><td>${n}</td><td>${fmt(s)}<span class="bar" style="width:${Math.round(60*s/max)}px"></span></td><td>${fmt(f)}</td><td>${fmt(u)}</td><td>${fmt(tc)}</td><td class="${rate!==null&&rate<60?'low':''}">${rate===null?'–':rate+'%'}</td></tr>`; }).join('');
+  const T=G.reduce((t,[g])=>({s:t.s+sum(g,'start'),f:t.f+sum(g,'finish'),u:t.u+sum(g,'gaveup'),c:t.c+sum(g,'finish')+sum(g,'replay')}),{s:0,f:0,u:0,c:0}), tr=T.s?Math.round(100*T.f/T.s):null;
+  document.getElementById('tot').innerHTML=`<tr><td>Total</td><td>${fmt(T.s)}</td><td>${fmt(T.f)}</td><td>${fmt(T.u)}</td><td>${fmt(T.c)}</td><td class="${tr!==null&&tr<60?'low':''}">${tr===null?'–':tr+'%'}</td></tr>`;
+  const any=G.map(([g])=>sum(g,'start')), all8=sum('all','all8'), tot=G.reduce((a,[g])=>a+sum(g,'finish')+sum(g,'replay'),0);
+  document.getElementById('big').innerHTML=`<div><span class="eyebrow">Most starts (one game)</span><b>${fmt(Math.max(0,...any))}</b></div><div><span class="eyebrow">Finished every game</span><b>${fmt(all8)}</b></div><div><span class="eyebrow">Total completes</span><b>${fmt(tot)}</b></div>`;
+}
+fetch('/api/play').then(r=>r.json()).then(j=>{ rows=j.rows||[];
+  const days=[...new Set(rows.map(r=>r.day))].sort().reverse(), sel=document.getElementById('day');
+  sel.innerHTML='<option value="all">All days</option>'+days.map(x=>`<option>${x}</option>`).join(''); sel.onchange=draw; draw();
+}).catch(()=>{ document.getElementById('rows').innerHTML='<tr><td colspan="6">Stats not available yet.</td></tr>'; });
+</script></body></html>

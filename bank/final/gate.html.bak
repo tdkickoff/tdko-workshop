@@ -1,0 +1,12 @@
+<!--tdko-gate-->
+<script>/* Gate. Before Mon 16 Nov 2026 the menu and games send visitors to the holding page.
+   Testers (code TDKO-VW8UP on the holding page, or ?tester=TDKO-VW8UP) only ever get Test day: one fixed set of test puzzles (test-day.json, built in by build.py),
+   unlimited replays, and nothing saved to scores, streaks, times or the visit counters. They never see the real daily puzzles while unlocked.
+   ?tester=off, or the Exit tag in the top bar, locks the device again. */
+var TDKO_TEST_NO=14;
+(function(){var tester=false;try{var q=location.search.match(/[?&]tester=([^&#]+)/);if(q){var v=decodeURIComponent(q[1]).toUpperCase();if(v==='TDKO-VW8UP')localStorage.setItem('tdko-tester','2');if(v==='OFF')localStorage.removeItem('tdko-tester');}tester=localStorage.getItem('tdko-tester')==='2';
+window.TDKO_TEST=tester;if(tester)document.documentElement.classList.add('tdko-test');}catch(e){window.TDKO_TEST=false;}
+if(tester)return;var d=new Date(),k=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();if(k<20261116)location.replace('coming-soon.html');})();
+function tdkoTestBox(){return '<section class="card replaybox"><div class="inner"><span class="eyebrow">Test day · doesn’t count</span><p>Same puzzle every time. Nothing here touches your scores, streaks or stats.</p><button class="btn ghost" type="button" data-replay>Play again</button></div></section>';}
+</script>
+<!--/tdko-gate-->

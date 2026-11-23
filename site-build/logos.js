@@ -1,0 +1,13 @@
+const svg = b => `<svg class="logo" viewBox="0 0 48 48" aria-hidden="true">${b}</svg>`;
+const LOGO = {
+  'fast-break': svg(`<circle cx="12" cy="35" r="5"/><path class="a" d="M17 31 Q27 25 37 13"/><path class="a" d="M30 12 L37 13 L37 20"/><path class="thin" d="M7 21h9 M9 26h6"/>`),
+  'whos-that-baller': svg(`<circle class="d" cx="24" cy="24" r="14"/><text x="24" y="31" text-anchor="middle">?</text>`),
+  'in-the-mixer': svg(`<path d="M9 9 L17 17 M17 9 L9 17"/><circle cx="35" cy="35" r="5"/><path class="a" d="M20 13 Q36 11 35 26"/><path class="a" d="M31 23 L35 27 L39 23"/><path class="w" d="M28 37 Q12 38 13 23"/><path class="w" d="M9 26 L13 22 L17 26"/>`),
+  'link-up-play': svg(`<path class="d" d="M10 36 L20 14 L30 32 L39 12"/><circle class="fc" cx="10" cy="36" r="4"/><circle class="fc" cx="20" cy="14" r="4"/><circle class="fc" cx="30" cy="32" r="4"/><circle class="fa" cx="39" cy="12" r="4.5"/>`),
+  'squad-goals': svg(`<rect class="thin" x="7" y="6" width="34" height="36"/><circle class="fc" cx="24" cy="38" r="2.4"/>${[12,20,28,36].map(x=>`<circle class="fa" cx="${x}" cy="30" r="2.4"/>`).join('')}${[15,24,33].map(x=>`<circle class="fa" cx="${x}" cy="21" r="2.4"/>`).join('')}${[15,24,33].map(x=>`<circle class="fa" cx="${x}" cy="12" r="2.4"/>`).join('')}`),
+  'shirt-swap': svg(`<path d="M18 8 L10 12 L6 20 L12 23 L13 41 L35 41 L36 23 L42 20 L38 12 L30 8 Q24 14 18 8 Z"/><rect class="fa" x="15" y="27" width="5" height="6"/><rect class="fw" x="21.5" y="27" width="5" height="6"/><rect class="fc" x="28" y="27" width="5" height="6" opacity=".45"/>`),
+  'tiki-taka-toe': svg(`<path class="thin" d="M19 8 V40 M29 8 V40 M8 19 H40 M8 29 H40"/><path d="M10 10 L16 16 M16 10 L10 16"/><circle class="a" cx="24" cy="24" r="3.4"/><path d="M32 32 L38 38 M38 32 L32 38"/>`),
+  'top-four': svg(`<circle class="fa" cx="10" cy="12" r="2.6"/><path class="a" d="M16 12 H39"/><circle class="fc" cx="10" cy="20" r="2.2"/><path d="M16 20 H34"/><circle class="fc" cx="10" cy="28" r="2.2"/><path d="M16 28 H29"/><circle class="fc" cx="10" cy="36" r="2.2"/><path class="thin" d="M16 36 H24"/>`),
+  'ranked-highly': svg(`<path class="a" d="M14 34 V12"/><path class="a" d="M8 18 L14 12 L20 18"/><path class="r" d="M34 14 V36"/><path class="r" d="M28 30 L34 36 L40 30"/>`),
+  'offside': svg(`<path d="M10 10 L15 15 M15 10 L10 15 M10 22 L15 27 M15 22 L10 27 M10 34 L15 39 M15 34 L10 39"/><path class="w d" d="M24 6 V42"/><circle class="r" cx="35" cy="24" r="5"/>`)
+};

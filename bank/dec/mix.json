@@ -1,0 +1,266 @@
+[
+ {
+  "name": "Frank Lampard",
+  "phrase": "Parkland Farm",
+  "aliases": [
+   "lampard",
+   "lamps"
+  ],
+  "blurb": "Scored 177 Premier League goals, the most by a midfielder in the competition's history, and captained Chelsea to the 2012 Champions League.",
+  "hints": [
+   "Born in Romford, London. His father played for West Ham and his uncle is Harry Redknapp.",
+   "Came through West Ham's youth team and had a loan spell at Swansea City in 1995."
+  ],
+  "src": "Wikipedia: Frank Lampard",
+  "url": "https://en.wikipedia.org/wiki/Frank_Lampard"
+ },
+ {
+  "name": "Sergio Aguero",
+  "phrase": "Arouse Ego Rig",
+  "aliases": [
+   "aguero",
+   "kun",
+   "kun aguero"
+  ],
+  "blurb": "His last-minute winner against QPR in 2012 gave Manchester City their first English title since 1968.",
+  "hints": [
+   "Born in Buenos Aires. He debuted for Independiente aged 15 years and 35 days.",
+   "He was married to the youngest daughter of Diego Maradona."
+  ],
+  "src": "Wikipedia: Sergio Aguero",
+  "url": "https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero"
+ },
+ {
+  "name": "Eric Cantona",
+  "phrase": "Ancient Orca",
+  "aliases": [
+   "cantona",
+   "king eric"
+  ],
+  "blurb": "Won four Premier League titles in five years with Manchester United after joining from Leeds for £1 million in 1992.",
+  "hints": [
+   "Born in Marseille. He made his senior debut for Auxerre in 1983.",
+   "After football he turned to acting, starting with a role in the 1998 film Elizabeth."
+  ],
+  "src": "Wikipedia: Eric Cantona",
+  "url": "https://en.wikipedia.org/wiki/Eric_Cantona"
+ },
+ {
+  "name": "Ryan Giggs",
+  "phrase": "Saggy Grin",
+  "aliases": [
+   "giggs"
+  ],
+  "blurb": "Won 13 Premier League titles, more than any other player, and made a club-record 963 appearances for Manchester United.",
+  "hints": [
+   "Born in Cardiff. As a schoolboy he played under the surname Wilson.",
+   "He captained England Schoolboys before choosing to play for Wales."
+  ],
+  "src": "Wikipedia: Ryan Giggs",
+  "url": "https://en.wikipedia.org/wiki/Ryan_Giggs"
+ },
+ {
+  "name": "Sergio Ramos",
+  "phrase": "Sarge Sir Moo",
+  "aliases": [
+   "ramos"
+  ],
+  "blurb": "Spain's most-capped player with 180 caps, and scorer of the 93rd-minute equaliser in the 2014 Champions League final.",
+  "hints": [
+   "Born in Camas, near Seville, and came through Sevilla's academy.",
+   "Joined Real Madrid in 2005 for €27 million, a record for a Spanish defender."
+  ],
+  "src": "Wikipedia: Sergio Ramos",
+  "url": "https://en.wikipedia.org/wiki/Sergio_Ramos"
+ },
+ {
+  "name": "Gianluigi Buffon",
+  "phrase": "Gainful Fungi Bio",
+  "aliases": [
+   "buffon",
+   "gigi",
+   "gigi buffon"
+  ],
+  "blurb": "Won 176 caps for Italy, the most of any goalkeeper, and holds the Serie A appearance record.",
+  "hints": [
+   "Born in Carrara, Tuscany. He made his Serie A debut for Parma aged 17.",
+   "In 2001 Juventus paid a world-record fee for a goalkeeper to sign him."
+  ],
+  "src": "Wikipedia: Gianluigi Buffon",
+  "url": "https://en.wikipedia.org/wiki/Gianluigi_Buffon"
+ },
+ {
+  "name": "Andrea Pirlo",
+  "phrase": "Leopard Rain",
+  "aliases": [
+   "pirlo"
+  ],
+  "blurb": "A World Cup winner with Italy in 2006, he also won the Champions League twice with AC Milan.",
+  "hints": [
+   "Born in Flero, Italy. He made his Serie A debut for Brescia aged 16.",
+   "Chipped a Panenka penalty in Italy's Euro 2012 quarter-final shoot-out win over England."
+  ],
+  "src": "Wikipedia: Andrea Pirlo",
+  "url": "https://en.wikipedia.org/wiki/Andrea_Pirlo"
+ },
+ {
+  "name": "Luis Suarez",
+  "phrase": "Sizer Usual",
+  "aliases": [
+   "suarez"
+  ],
+  "blurb": "Scored 31 Premier League goals for Liverpool in 2013–14 and won the European Golden Shoe twice.",
+  "hints": [
+   "Born in Salto, Uruguay, and started at Nacional.",
+   "His first European club was Groningen in the Netherlands."
+  ],
+  "src": "Wikipedia: Luis Suarez",
+  "url": "https://en.wikipedia.org/wiki/Luis_Su%C3%A1rez_(Uruguayan_footballer)"
+ },
+ {
+  "name": "Karim Benzema",
+  "phrase": "Baize Mark Men",
+  "aliases": [
+   "benzema"
+  ],
+  "blurb": "Won the 2022 Ballon d'Or and five Champions League titles with Real Madrid.",
+  "hints": [
+   "Born in Lyon and came through his hometown club's academy.",
+   "Joined Real Madrid in 2009."
+  ],
+  "src": "Wikipedia: Karim Benzema",
+  "url": "https://en.wikipedia.org/wiki/Karim_Benzema"
+ },
+ {
+  "name": "Robert Lewandowski",
+  "phrase": "Bearlike Sword Town",
+  "aliases": [
+   "lewandowski",
+   "lewy"
+  ],
+  "blurb": "Broke Gerd Müller's Bundesliga record with 41 goals in 2020–21, and is Poland's all-time top scorer.",
+  "hints": [
+   "Born in Warsaw. He joined Borussia Dortmund from Lech Poznań in 2010.",
+   "Scored five goals in under nine minutes against Wolfsburg in 2015."
+  ],
+  "src": "Wikipedia: Robert Lewandowski",
+  "url": "https://en.wikipedia.org/wiki/Robert_Lewandowski"
+ },
+ {
+  "name": "Bukayo Saka",
+  "phrase": "Kayo Aka Sub",
+  "aliases": [
+   "saka"
+  ],
+  "blurb": "Named England Men's Player of the Year for both 2021–22 and 2022–23.",
+  "hints": [
+   "Born in Ealing, London, to Nigerian parents.",
+   "Joined Arsenal's academy at the age of seven."
+  ],
+  "src": "Wikipedia: Bukayo Saka",
+  "url": "https://en.wikipedia.org/wiki/Bukayo_Saka"
+ },
+ {
+  "name": "Jude Bellingham",
+  "phrase": "Headmen Bull Jig",
+  "aliases": [
+   "bellingham"
+  ],
+  "blurb": "Won the Golden Boy award in 2023 and was named La Liga Player of the Season in his first year at Real Madrid.",
+  "hints": [
+   "Born in Stourbridge. He became Birmingham City's youngest first-team player at 16.",
+   "Birmingham retired his No. 22 shirt when he left for Borussia Dortmund in 2020."
+  ],
+  "src": "Wikipedia: Jude Bellingham",
+  "url": "https://en.wikipedia.org/wiki/Jude_Bellingham"
+ },
+ {
+  "name": "Roy Keane",
+  "phrase": "Yoke Near",
+  "aliases": [
+   "keane",
+   "keano"
+  ],
+  "blurb": "Captained Manchester United to the treble in 1998–99.",
+  "hints": [
+   "Born in Cork. Nottingham Forest signed him from Cobh Ramblers in 1990.",
+   "Joined Manchester United in 1993 for a British record fee of £3.75 million."
+  ],
+  "src": "Wikipedia: Roy Keane",
+  "url": "https://en.wikipedia.org/wiki/Roy_Keane"
+ },
+ {
+  "name": "Son Heung-min",
+  "phrase": "Neigh Sun Mon",
+  "aliases": [
+   "son",
+   "heung-min son",
+   "son heung min",
+   "sonny"
+  ],
+  "blurb": "Shared the 2021–22 Premier League Golden Boot with Mohamed Salah and lifted the Europa League with Tottenham in 2025.",
+  "hints": [
+   "Born in Chuncheon, South Korea. His first European club was Hamburg.",
+   "Won the 2020 Puskás Award for a solo goal against Burnley."
+  ],
+  "src": "Wikipedia: Son Heung-min",
+  "url": "https://en.wikipedia.org/wiki/Son_Heung-min"
+ },
+ {
+  "name": "Marcus Rashford",
+  "phrase": "Orchard Fuss Arm",
+  "aliases": [
+   "rashford"
+  ],
+  "blurb": "Scored twice on his Manchester United debut in 2016 and was made an MBE in 2020 for his campaign against child food poverty.",
+  "hints": [
+   "Born in Manchester. He joined Manchester United's academy at the age of seven.",
+   "Became the youngest Englishman to score on his international debut, against Australia in 2016."
+  ],
+  "src": "Wikipedia: Marcus Rashford",
+  "url": "https://en.wikipedia.org/wiki/Marcus_Rashford"
+ },
+ {
+  "name": "Edwin van der Sar",
+  "phrase": "Answered Div Ran",
+  "aliases": [
+   "van der sar",
+   "vds"
+  ],
+  "blurb": "Saved Nicolas Anelka's penalty to win the 2008 Champions League final shoot-out for Manchester United.",
+  "hints": [
+   "Born in Voorhout, Netherlands, and started his senior career at Ajax.",
+   "Played for Juventus and Fulham before joining Manchester United."
+  ],
+  "src": "Wikipedia: Edwin van der Sar",
+  "url": "https://en.wikipedia.org/wiki/Edwin_van_der_Sar"
+ },
+ {
+  "name": "Petr Cech",
+  "phrase": "Perch Etc",
+  "aliases": [
+   "cech"
+  ],
+  "blurb": "Kept 202 Premier League clean sheets, the most in the competition's history.",
+  "hints": [
+   "Born in Plzeň. He played for Sparta Prague and Rennes before Chelsea.",
+   "Wore a rugby-style headguard after fracturing his skull in 2006."
+  ],
+  "src": "Wikipedia: Petr Cech",
+  "url": "https://en.wikipedia.org/wiki/Petr_%C4%8Cech"
+ },
+ {
+  "name": "Jamie Vardy",
+  "phrase": "Jivey Drama",
+  "aliases": [
+   "vardy"
+  ],
+  "blurb": "Scored in 11 Premier League games in a row in 2015–16, the season Leicester City won the title.",
+  "hints": [
+   "Born in Sheffield. Sheffield Wednesday released him at 16.",
+   "Played non-league for Stocksbridge Park Steels, Halifax and Fleetwood before Leicester."
+  ],
+  "src": "Wikipedia: Jamie Vardy",
+  "url": "https://en.wikipedia.org/wiki/Jamie_Vardy"
+ }
+]

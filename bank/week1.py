@@ -1,0 +1,173 @@
+# Week 1 of the puzzle bank: No. 15-21 (Mon 30 Nov - Sun 6 Dec 2026). Facts marked check=True need a reviewer's eye.
+WTB = [
+ dict(name="Dennis Bergkamp", aliases=["bergkamp","dennis"], position="Forward", nationality="Netherlands", youth="Ajax",
+      clubs=[["Ajax",185,103],["Inter",52,11],["Arsenal",315,87]], caps=79, capGoals=37, apps=552, goals=201,
+      honour=["Premier League winner","1998, 2002, 2004"], award=["PFA Players' Player of the Year","1997–98"],
+      blurb="Arsenal's 'non-flying Dutchman', remembered for his touch, his vision and a famous spin-and-finish goal at Newcastle in 2002.",
+      check="League appearances and goals per club; career totals."),
+ dict(name="Gianfranco Zola", aliases=["zola"], position="Forward", nationality="Italy", youth="Nuorese",
+      clubs=[["Napoli",105,32],["Parma",102,49],["Chelsea",229,59]], caps=35, capGoals=10, apps=629, goals=193,
+      honour=["UEFA Cup Winners' Cup winner (Chelsea)","1998"], award=["FWA Footballer of the Year","1996–97"],
+      blurb="Scored the Cup Winners' Cup final winner seconds after coming on as a substitute, and was later voted Chelsea's greatest ever player.",
+      check="Youth club (Nuorese was his first senior club); league totals."),
+ dict(name="Patrick Vieira", aliases=["vieira"], position="Midfielder", nationality="France", youth="Cannes",
+      clubs=[["Arsenal",279,29],["Juventus",31,5],["Inter",67,6]], caps=107, capGoals=6, apps=456, goals=45,
+      honour=["FIFA World Cup winner","1998"], award=["Captain of Arsenal's unbeaten Invincibles","2003–04"],
+      blurb="Born in Senegal, he became the driving force of Arsène Wenger's Arsenal and won the World Cup and the European Championship with France.",
+      check="League totals; the 'award' slot uses the Invincibles captaincy rather than an individual award."),
+ dict(name="Ruud Gullit", aliases=["gullit"], position="Midfielder", nationality="Netherlands", youth="DWS",
+      clubs=[["PSV",68,46],["AC Milan",117,35],["Chelsea",49,7]], caps=66, capGoals=17, apps=463, goals=166,
+      honour=["European Championship winner","1988"], award=["Ballon d'Or","1987"],
+      blurb="Dreadlocked captain of the Netherlands' Euro 88 winners who later became the first overseas manager to win the FA Cup.",
+      check="League totals across Haarlem, Feyenoord, PSV, Milan, Sampdoria, Chelsea."),
+ dict(name="Peter Schmeichel", aliases=["schmeichel"], position="Goalkeeper", nationality="Denmark", youth="Gladsaxe-Hero",
+      clubs=[["Brøndby",119,2],["Manchester United",292,0],["Sporting CP",50,0]], caps=129, capGoals=1, apps=650, goals=11,
+      honour=["European Championship winner","1992"], award=["IFFHS World's Best Goalkeeper","1992, 1993"],
+      blurb="Captained Manchester United to the Champions League in his final game for the club, completing the 1999 Treble.",
+      check="Youth club; goals scored (he scored for Brøndby, Aston Villa and Denmark); all totals."),
+ dict(name="Ian Rush", aliases=["rush","rushie"], position="Forward", nationality="Wales", youth="Chester",
+      clubs=[["Chester",34,14],["Liverpool",469,229],["Juventus",29,7]], caps=73, capGoals=28, apps=599, goals=250,
+      honour=["European Cup winner","1984"], award=["European Golden Shoe","1983–84"],
+      blurb="Liverpool's all-time record goalscorer, with 346 goals across two spells at the club.",
+      check="Career league totals including Leeds, Newcastle, Sheffield United and Wrexham."),
+ dict(name="Fernando Torres", aliases=["torres","el nino","nando"], position="Forward", nationality="Spain", youth="Atlético Madrid",
+      clubs=[["Atlético Madrid",244,91],["Liverpool",102,65],["Chelsea",110,20]], caps=110, capGoals=38, apps=501, goals=182,
+      honour=["FIFA World Cup winner","2010"], award=["Euro 2012 Golden Boot","2012"],
+      blurb="Scored the winner in the Euro 2008 final and once cost Chelsea a then-British record fee of £50 million.",
+      check="Atlético totals cover both spells; career totals include Milan and Sagan Tosu."),
+]
+
+MIXER = [
+ dict(name="Kevin De Bruyne", phrase="Drunken Bee Ivy", aliases=["de bruyne","kdb","debruyne"],
+      blurb="Belgian playmaker who won six Premier League titles with Manchester City.",
+      hints=["Born in Drongen, near Ghent, Belgium.","Chelsea sold him to Wolfsburg in 2014; City signed him the following year."]),
+ dict(name="Virgil van Dijk", phrase="Vivid King Jarl", aliases=["van dijk","vvd","virgil"],
+      blurb="Became the world's most expensive defender when Liverpool signed him from Southampton in January 2018.",
+      hints=["Born in Breda, Netherlands.","Came through Willem II's academy, then played for Groningen and Celtic."]),
+ dict(name="Robin van Persie", phrase="Prisoner Ban Vie", aliases=["van persie","rvp","persie"],
+      blurb="Won the Premier League Golden Boot in back-to-back seasons, first with Arsenal and then with Manchester United.",
+      hints=["Born in Rotterdam.","Scored a famous flying header against Spain at the 2014 World Cup."]),
+ dict(name="Michael Owen", phrase="Cinema Whole", aliases=["owen"],
+      blurb="Won the 2001 Ballon d'Or, the year he scored a hat-trick in England's 5–1 win in Germany.",
+      hints=["Born in Chester.","Burst onto the world stage aged 18 with a solo goal against Argentina at the 1998 World Cup."]),
+ dict(name="Peter Crouch", phrase="Crochet Pure", aliases=["crouch"],
+      blurb="Scored 108 Premier League goals, a record 53 of them with his head, and became famous for his robot dance.",
+      hints=["Played for Tottenham, Liverpool, Stoke and seven other English clubs.","Scored 22 goals in 42 games for England."]),
+ dict(name="Zlatan Ibrahimovic", phrase="Civilian Hazmat Rob", aliases=["zlatan","ibrahimovic","ibra"],
+      blurb="Won league titles in the Netherlands, Italy, Spain and France, and is Sweden's all-time top scorer.",
+      hints=["Born in Malmö, Sweden.","Scored a 30-yard overhead kick against England in 2012."]),
+ dict(name="Jamie Carragher", phrase="Recharge Jam Air", aliases=["carragher","carra"],
+      blurb="Played 737 games for Liverpool, a total beaten only by Ian Callaghan.",
+      hints=["Born in Bootle, Merseyside.","Spent his whole professional career at Liverpool and won the Champions League in 2005."]),
+]
+
+LINK = [
+ dict(d='m', start=["Frank Lampard","Midfielder","England",["lampard"]], clubs="West Ham, Chelsea, Manchester City, New York City", links=[
+   (["Jamie Redknapp","Midfielder","England",["redknapp"]],'family',"Cousins: their mothers are sisters"),
+   (["Robbie Fowler","Forward","England",["fowler"]],'club',"Liverpool teammates (1993–2001)"),
+   (["Steve McManaman","Midfielder","England",["mcmanaman","macca"]],'club',"Liverpool teammates (1993–99)"),
+   (["Luís Figo","Winger","Portugal",["figo"]],'club',"Real Madrid teammates (2000–03)")]),
+ dict(d='e', start=["David Beckham","Midfielder","England",["beckham"]], clubs="Manchester United, Real Madrid, LA Galaxy, PSG", links=[
+   (["Robbie Keane","Forward","Republic of Ireland",["keane"]],'club',"LA Galaxy teammates (2011–12)"),
+   (["Dimitar Berbatov","Forward","Bulgaria",["berbatov"]],'club',"Tottenham strike partners (2006–08)"),
+   (["Cristiano Ronaldo","Forward","Portugal",["ronaldo","cristiano","cr7"]],'club',"Manchester United teammates (2008–09)"),
+   (["Karim Benzema","Forward","France",["benzema"]],'club',"Real Madrid teammates (2009–18)")]),
+ dict(d='h', start=["Erling Haaland","Forward","Norway",["haaland"]], clubs="Molde, Salzburg, Dortmund, Manchester City", links=[
+   (["Alf-Inge Haaland","Midfielder","Norway",["alf-inge haaland","alfie haaland"]],'family',"Father and son"),
+   (["Stuart Pearce","Defender","England",["pearce","psycho"]],'club',"Nottingham Forest teammates (1993–97)"),
+   (["Gareth Southgate","Defender","England",["southgate"]],'intl',"England teammates at Euro 96"),
+   (["Bukayo Saka","Winger","England",["saka"]],'boss',"Southgate managed Saka for England (2020–24)")]),
+ dict(d='e', start=["Lionel Messi","Forward","Argentina",["messi","leo messi"]], clubs="Barcelona, PSG, Inter Miami", links=[
+   (["Neymar","Forward","Brazil",["neymar jr"]],'club',"Barcelona teammates (2013–17)"),
+   (["Kylian Mbappé","Forward","France",["mbappe"]],'club',"PSG teammates (2017–23)"),
+   (["Antoine Griezmann","Forward","France",["griezmann"]],'intl',"France teammates, World Cup winners in 2018"),
+   (["Luis Suárez","Forward","Uruguay",["suarez"]],'club',"Barcelona teammates (2019–20)")]),
+ dict(d='m', start=["Gianluigi Buffon","Goalkeeper","Italy",["buffon","gigi"]], clubs="Parma, Juventus, PSG", links=[
+   (["Andrea Pirlo","Midfielder","Italy",["pirlo"]],'club',"Juventus teammates (2011–15)"),
+   (["David Villa","Forward","Spain",["villa"]],'club',"New York City FC teammates (2015–17)"),
+   (["Iker Casillas","Goalkeeper","Spain",["casillas"]],'intl',"Spain teammates, World Cup winners in 2010"),
+   (["Pepe","Defender","Portugal",["pepe"]],'club',"Real Madrid teammates (2007–15)")]),
+ dict(d='h', start=["Cesc Fàbregas","Midfielder","Spain",["fabregas","cesc"]], clubs="Arsenal, Barcelona, Chelsea, Monaco", links=[
+   (["Gerard Piqué","Defender","Spain",["pique"]],'youth',"Came through Barcelona's academy together"),
+   (["Wayne Rooney","Forward","England",["rooney"]],'club',"Manchester United teammates (2004–08)"),
+   (["Gylfi Sigurðsson","Midfielder","Iceland",["sigurdsson","gylfi"]],'club',"Everton teammates (2017–18)"),
+   (["Hannes Halldórsson","Goalkeeper","Iceland",["halldorsson","hannes"]],'intl',"Iceland teammates at Euro 2016 and the 2018 World Cup")]),
+ dict(d='m', start=["Mohamed Salah","Forward","Egypt",["salah","mo salah"]], clubs="Basel, Chelsea, Fiorentina, Roma, Liverpool", links=[
+   (["Eden Hazard","Forward","Belgium",["hazard"]],'club',"Chelsea teammates (2014–15)"),
+   (["Thorgan Hazard","Midfielder","Belgium",["thorgan"]],'family',"Brothers"),
+   (["Jadon Sancho","Winger","England",["sancho"]],'club',"Borussia Dortmund teammates (2019–21)"),
+   (["Marcus Rashford","Forward","England",["rashford"]],'club',"Manchester United teammates (2021–24)")]),
+]
+
+def xi(id,team,typ,comp,year,cap,rows): return dict(id=id,team=team,type=typ,comp=comp,year=year,cap=cap,rows=rows)
+SQUAD = [
+ xi("fra98","France","intl","World Cup final",1998,"Didier Deschamps",[
+   [["Stéphane Guivarc'h","ST","Auxerre"]],
+   [["Zinedine Zidane","AM","Juventus"],["Youri Djorkaeff","AM","Inter"]],
+   [["Emmanuel Petit","CM","Arsenal"],["Didier Deschamps","CM","Juventus"],["Christian Karembeu","CM","Real Madrid"]],
+   [["Bixente Lizarazu","LB","Bayern Munich"],["Marcel Desailly","CB","AC Milan"],["Frank Leboeuf","CB","Chelsea"],["Lilian Thuram","RB","Parma"]],
+   [["Fabien Barthez","GK","Monaco"]]]),
+ xi("bar09","Barcelona","club","Champions League final",2009,"Carles Puyol",[
+   [["Thierry Henry","LW","FRA"],["Lionel Messi","CF","ARG"],["Samuel Eto'o","RW","CMR"]],
+   [["Andrés Iniesta","CM","ESP"],["Sergio Busquets","DM","ESP"],["Xavi","CM","ESP"]],
+   [["Sylvinho","LB","BRA"],["Gerard Piqué","CB","ESP"],["Yaya Touré","CB","CIV"],["Carles Puyol","RB","ESP"]],
+   [["Víctor Valdés","GK","ESP"]]]),
+ xi("ars06","Arsenal","club","Champions League final",2006,"Thierry Henry",[
+   [["Thierry Henry","ST","FRA"]],
+   [["Robert Pires","LM","FRA"],["Cesc Fàbregas","CM","ESP"],["Gilberto Silva","DM","BRA"],["Freddie Ljungberg","CM","SWE"],["Alexander Hleb","RM","BLR"]],
+   [["Ashley Cole","LB","ENG"],["Sol Campbell","CB","ENG"],["Kolo Touré","CB","CIV"],["Emmanuel Eboué","RB","CIV"]],
+   [["Jens Lehmann","GK","GER"]]]),
+ xi("bra02","Brazil","intl","World Cup final",2002,"Cafu",[
+   [["Ronaldo","ST","Inter"]],
+   [["Rivaldo","AM","Barcelona"],["Ronaldinho","AM","Paris Saint-Germain"]],
+   [["Roberto Carlos","LWB","Real Madrid"],["Kléberson","CM","Atlético Paranaense"],["Gilberto Silva","DM","Atlético Mineiro"],["Cafu","RWB","Roma"]],
+   [["Roque Júnior","CB","AC Milan"],["Edmílson","CB","Lyon"],["Lúcio","CB","Bayer Leverkusen"]],
+   [["Marcos","GK","Palmeiras"]]]),
+ xi("ita06","Italy","intl","World Cup final",2006,"Fabio Cannavaro",[
+   [["Luca Toni","ST","Fiorentina"]],
+   [["Francesco Totti","AM","Roma"]],
+   [["Simone Perrotta","LM","Roma"],["Andrea Pirlo","CM","AC Milan"],["Gennaro Gattuso","CM","AC Milan"],["Mauro Camoranesi","RM","Juventus"]],
+   [["Fabio Grosso","LB","Palermo"],["Marco Materazzi","CB","Inter"],["Fabio Cannavaro","CB","Juventus"],["Gianluca Zambrotta","RB","Juventus"]],
+   [["Gianluigi Buffon","GK","Juventus"]]]),
+ xi("mu08","Manchester United","club","Champions League final",2008,"Rio Ferdinand",[
+   [["Wayne Rooney","ST","ENG"],["Carlos Tevez","ST","ARG"]],
+   [["Cristiano Ronaldo","LM","POR"],["Paul Scholes","CM","ENG"],["Michael Carrick","CM","ENG"],["Owen Hargreaves","RM","ENG"]],
+   [["Patrice Evra","LB","FRA"],["Nemanja Vidić","CB","SRB"],["Rio Ferdinand","CB","ENG"],["Wes Brown","RB","ENG"]],
+   [["Edwin van der Sar","GK","NED"]]]),
+ xi("por04","Porto","club","Champions League final",2004,"Jorge Costa",[
+   [["Derlei","ST","BRA"],["Carlos Alberto","ST","BRA"]],
+   [["Deco","AM","POR"]],
+   [["Maniche","CM","POR"],["Costinha","DM","POR"],["Pedro Mendes","CM","POR"]],
+   [["Nuno Valente","LB","POR"],["Ricardo Carvalho","CB","POR"],["Jorge Costa","CB","POR"],["Paulo Ferreira","RB","POR"]],
+   [["Vítor Baía","GK","POR"]]]),
+]
+
+SHIRT = {5:["Mohamed Salah","Andrea Pirlo","John Terry","Jamie Vardy","Manuel Neuer","Alessandro Nesta","Phil Foden","Rodri","Pedri"],
+         6:["Wayne Rooney","Didier Drogba","Neymar","Kevin Keegan","Hugo Lloris","Olivier Giroud","Ruud Gullit","Robbie Fowler","Franco Baresi"],
+         7:["Erling Haaland","Roberto Firmino","Romário","Ronaldo","Michael Carrick","Michael Ballack","Vincent Kompany","Michel Platini","Michael Laudrup","Peter Shilton","Graeme Souness","Jamal Musiala","Joshua Kimmich","Ivan Rakitić","Santi Cazorla","Robinho","Filippo Inzaghi"]}
+
+OFFSIDE = [
+ dict(id='chelsea', kind='club', a='Chelsea', b='Arsenal',
+      eight=["Frank Lampard","John Terry","Didier Drogba","Claude Makélélé","Eden Hazard","N'Golo Kanté","Juan Mata","Michael Essien","Mason Mount","Petr Čech_no"],
+      odds=["Tony Adams","Ian Wright","Dennis Bergkamp"]),
+ dict(id='realmadrid', kind='club', a='Real Madrid', b='Atlético Madrid',
+      eight=["Iker Casillas","Sergio Ramos","Zinedine Zidane","Roberto Carlos","Luka Modrić","Toni Kroos","Karim Benzema","Gareth Bale","Marcelo","Cristiano Ronaldo"],
+      odds=["Diego Godín","Antoine Griezmann","Koke"]),
+ dict(id='argentina', kind='nation', a='Argentina', b='Italy',
+      eight=["Diego Maradona","Gabriel Batistuta","Javier Zanetti","Juan Román Riquelme","Sergio Agüero","Ángel Di María","Javier Mascherano","Hernán Crespo","Carlos Tevez","Lionel Messi"],
+      odds=["Mauro Camoranesi"], note="Mauro Camoranesi was born in Argentina but won the 2006 World Cup with Italy."),
+ dict(id='leicester', kind='text', head='Won the 2015–16 Premier League with Leicester',
+      body_eight='Eight won the 2015–16 Premier League with Leicester.', body_odd='{odd} only joined in 2017.',
+      eight=["Jamie Vardy","Riyad Mahrez","N'Golo Kanté","Kasper Schmeichel","Wes Morgan","Danny Drinkwater","Marc Albrighton","Robert Huth","Shinji Okazaki","Christian Fuchs"],
+      odds=["Harry Maguire"]),
+ dict(id='ajax', kind='club', a='Ajax', b='PSV',
+      eight=["Johan Cruyff","Edwin van der Sar","Clarence Seedorf","Edgar Davids","Jari Litmanen","Christian Eriksen","Frenkie de Jong","Rafael van der Vaart","Dennis Bergkamp"],
+      odds=["Ruud van Nistelrooy","Ronaldo"]),
+ dict(id='celtic', kind='club', a='Celtic', b='Rangers',
+      eight=["Henrik Larsson","Kenny Dalglish","Chris Sutton","Neil Lennon","Lubomír Moravčík","Shunsuke Nakamura","Victor Wanyama","Paul McStay","Kyogo Furuhashi","Virgil van Dijk"],
+      odds=["Ally McCoist"]),
+ dict(id='mancity', kind='club', a='Manchester City', b='Manchester United',
+      eight=["Sergio Agüero","Vincent Kompany","David Silva","Yaya Touré","Phil Foden","Rodri","Bernardo Silva","Kevin De Bruyne","Erling Haaland","Ilkay Gündoğan"],
+      odds=["Gary Neville","Rio Ferdinand"]),
+]
+for z in OFFSIDE: z['eight']=[n for n in z['eight'] if not n.endswith('_no')]

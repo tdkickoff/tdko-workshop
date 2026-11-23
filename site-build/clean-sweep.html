@@ -1,0 +1,834 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}body{margin:0;font:14px/1.4 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style><script>try{var t=localStorage.getItem('tdko-theme');document.documentElement.setAttribute('data-tdko',t==='dark'?'dark':'light')}catch(e){document.documentElement.setAttribute('data-tdko','light')}</script><!--tdko-gate-->
+<script>/* Gate: Training Ground (tester) mode.
+   Testers only ever get Test day: one fixed set of test puzzles (test-day.json, built in by build.py),
+   unlimited replays, and nothing saved to scores, streaks, times or the visit counters.
+   Unlock: the Training Ground page only (the code is checked by the server, /api/tester; it is never in the page). ?tester=off, or Exit Training Ground, locks the device again. */
+var TDKO_TEST_NO=14;
+(function(){var tester=false,FLAG='3';
+try{var q=location.search.match(/[?&]tester=([^&#]+)/);if(q){var v=decodeURIComponent(q[1]).toUpperCase();if(v==='OFF')localStorage.removeItem('tdko-tester');}
+tester=localStorage.getItem('tdko-tester')===FLAG;window.TDKO_TEST=tester;if(tester)document.documentElement.classList.add('tdko-test');}catch(e){window.TDKO_TEST=false;}})();
+function tdkoTestBox(){return '<section class="card replaybox"><div class="inner"><span class="eyebrow">Training Ground · doesn’t count</span><p>Same puzzle every time. Nothing here touches your scores, streaks or stats.</p><button class="btn ghost" type="button" data-replay>Play again</button></div></section>';}
+</script>
+<script>/* Share cards: Safari draws canvas text without the condensed font width, so long lines could run off the card.
+   Any line on a 1080px card that would pass the margin is squeezed to fit (the browser's own maxWidth). */
+(function(){try{var P=CanvasRenderingContext2D.prototype,f=P.fillText;P.fillText=function(t,x,y,m){
+  if(m===undefined&&this.canvas&&this.canvas.width>=1000){var a=this.textAlign,W=this.canvas.width,e=60,w=this.measureText(t).width,
+  max=(a==='right'||a==='end')?x-e:a==='center'?2*Math.min(x,W-x)-2*e:W-e-x; if(max>0&&w>max) return f.call(this,t,x,y,max);}
+  return f.apply(this,arguments);};}catch(e){}})();</script>
+<!--/tdko-gate-->
+</head><body><script src="data/clean-sweep.js?v=69eb8772"></script>
+<title>Clean Sweep</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: Fast Break family. One narrow column; the answer board is the pitch, the typing box and clock sit above it. */
+:root{
+  --bg:#F2F4F1; --surface:#FFFFFF; --ink:#0E1712; --muted:#5D6A62; --line:#D7DDD8;
+  --accent:#0A8A4A; --accent-ink:#FFFFFF; --warn:#C98A00; --bad:#C93A2B; --key:#DDE3DE;--soft:#E7ECE8;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root[data-tdko="dark"]{
+  --bg:#0B110E; --surface:#121A16; --ink:#EAF0EC; --muted:#8A988F; --line:#24302A;
+  --accent:#34D27F; --accent-ink:#06120B; --warn:#F2B53A; --bad:#FF6B5A; --key:#26302A; --soft:#1A241F; color-scheme:dark}}
+:root[data-tdko="dark"]{
+  --bg:#0B110E; --surface:#121A16; --ink:#EAF0EC; --muted:#8A988F; --line:#24302A;
+  --accent:#34D27F; --accent-ink:#06120B; --warn:#F2B53A; --bad:#FF6B5A; --key:#26302A; --soft:#1A241F; color-scheme:dark}
+
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+.wrap{max-width:560px;margin:0 auto;padding-block:20px 40px;display:flex;flex-direction:column;gap:18px;min-height:100%;box-sizing:border-box}
+main{display:flex;flex-direction:column;gap:14px}
+
+.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.mark{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:28px;letter-spacing:.01em;text-transform:uppercase;line-height:1;white-space:nowrap}
+.mark i{font-style:normal;color:var(--accent)}
+.meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+
+.card{background:var(--surface);border:1px solid var(--line)}
+.inner{padding:20px;display:flex;flex-direction:column;gap:16px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* intro */
+.hero{display:flex;flex-direction:column;gap:14px;padding:26px 20px 22px}
+.hero h1{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(60px,19vw,104px);line-height:.86;margin:0;text-transform:uppercase;letter-spacing:-.01em}
+.hero h1 i{font-style:normal;color:var(--accent)}
+.lede{font-size:17px;color:var(--muted);margin:0;max-width:36ch}
+.challenge{border:1.5px solid var(--accent);padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.challenge span{font-size:15px}
+.challenge b{font-family:var(--f-display);font-weight:900;font-stretch:70%;font-size:34px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.rules{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px}
+.rules li{display:grid;grid-template-columns:72px 1fr;gap:10px}
+.rules li>span{font-family:var(--f-mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.ladder div{padding:10px 4px 9px;text-align:center;display:flex;flex-direction:column;gap:3px;min-width:0}
+.ladder b{font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:24px;line-height:1;font-variant-numeric:tabular-nums}
+.ladder span{font-family:var(--f-mono);font-size:11px;opacity:.85}
+.ladder .p100{background:var(--accent);color:var(--accent-ink)}
+.ladder .p60{background:color-mix(in oklab,var(--accent) 55%,var(--bg));color:var(--ink)}
+.ladder .p30{background:color-mix(in oklab,var(--accent) 22%,var(--bg));color:var(--ink)}
+.ladder .p0{background:color-mix(in oklab,var(--bad) 22%,var(--bg));color:var(--bad)}
+
+/* buttons */
+.btn{all:unset;box-sizing:border-box;display:block;text-align:center;cursor:pointer;background:var(--ink);color:var(--bg);touch-action:manipulation;
+  font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:18px;text-transform:uppercase;letter-spacing:.03em;padding:15px 12px;white-space:nowrap;transition:background .12s}
+.btn:hover{background:var(--accent);color:var(--accent-ink)}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.btn[aria-disabled="true"]{opacity:.35;cursor:default}
+.btn[aria-disabled="true"]:hover{background:var(--ink);color:var(--bg)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.linkbtn{all:unset;cursor:pointer;align-self:center;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:6px}
+.linkbtn:hover{color:var(--ink)}
+.linkbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.danger{background:var(--bad);color:#fff}
+.confirm{border:1.5px solid var(--bad);padding:14px;display:flex;flex-direction:column;gap:10px}
+.confirm p{margin:0;font-size:15px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.flag{align-self:flex-start;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;background:var(--bad);color:#fff}
+
+/* clock and score strip */
+.status{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line)}
+.clock{display:flex;align-items:baseline;gap:8px}
+.clock b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:44px;line-height:.85;font-variant-numeric:tabular-nums;color:var(--ink)}
+.clock b.mid{color:var(--warn)} .clock b.low{color:var(--bad)}
+.got{display:flex;align-items:baseline;gap:6px}
+.got b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:44px;line-height:.85;font-variant-numeric:tabular-nums;color:var(--accent)}
+.got span.of{font-family:var(--f-mono);font-size:16px;color:var(--muted)}
+.tbar{height:4px;background:var(--soft)}
+.tbar i{display:block;height:100%;background:var(--accent);transform-origin:left;transition:transform .25s linear}
+.tbar i.mid{background:var(--warn)} .tbar i.low{background:var(--bad)}
+
+/* the prompt */
+.ask{padding:16px 20px 4px;display:flex;flex-direction:column;gap:4px}
+.ask h2{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:clamp(24px,6.6vw,32px);line-height:1;text-transform:uppercase}
+.ask p{margin:0;font-size:13px;color:var(--muted)}
+
+/* typing box: no submit needed, a name goes in the moment it matches */
+.entry{padding:12px 16px 4px;display:flex;flex-direction:column;gap:6px}
+.entry input{all:unset;box-sizing:border-box;width:100%;font-family:var(--f-display);font-weight:700;font-stretch:85%;font-size:22px;padding:13px 14px;
+  background:var(--surface);color:var(--ink);border:2px solid var(--ink);caret-color:var(--accent)}
+.entry input::placeholder{color:var(--muted);opacity:.7;font-weight:500}
+.entry input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.entry input.hit{border-color:var(--accent)}
+.entry input.miss{border-color:var(--bad)}
+@keyframes shake{0%,100%{transform:none}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.shake{animation:shake .22s ease-in-out 2}
+.fb{font-family:var(--f-mono);font-size:12px;letter-spacing:.03em;min-height:18px;color:var(--muted);text-align:center}
+.fb.ok{color:var(--accent)} .fb.bad{color:var(--bad)} .fb.warn{color:var(--warn)}
+
+
+/* phones: the typed line and our own keyboard */
+.typed{box-sizing:border-box;width:100%;display:flex;align-items:center;min-height:52px;font-family:var(--f-display);font-weight:700;font-stretch:85%;font-size:22px;padding:10px 14px;
+  background:var(--surface);color:var(--ink);border:2px solid var(--ink);text-transform:uppercase;letter-spacing:.02em;overflow:hidden;white-space:nowrap}
+.typed .caret{display:inline-block;width:2px;height:1.05em;background:var(--accent);margin-left:1px;animation:blink 1s steps(1) infinite}
+.typed .ph{display:none;color:var(--muted);opacity:.7;font-weight:500;text-transform:none;letter-spacing:0;margin-left:4px}
+.typed.empty .ph{display:inline}
+.typed.hit{border-color:var(--accent)} .typed.miss{border-color:var(--bad)}
+@keyframes blink{50%{opacity:0}}
+.kb{position:fixed;left:0;right:0;bottom:0;z-index:4;background:var(--bg);border-top:1px solid var(--line);
+  padding:7px max(4px,env(safe-area-inset-left,0px)) calc(7px + env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:7px;
+  user-select:none;-webkit-user-select:none;touch-action:manipulation}
+.kr{display:flex;justify-content:center;gap:5px;max-width:560px;margin:0 auto;width:100%}
+.k{all:unset;box-sizing:border-box;flex:1 1 0;max-width:44px;height:48px;display:grid;place-items:center;background:var(--key);color:var(--ink);
+  font-family:var(--f-display);font-weight:800;font-stretch:85%;font-size:17px;text-transform:uppercase;cursor:pointer}
+.k.wide{flex:1.5 1 0;max-width:72px;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.04em}
+.k.go{background:var(--key);color:var(--ink)}
+.k svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.k.down{background:var(--ink);color:var(--bg)}
+.k:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.cs-kb body{padding-bottom:calc(184px + env(safe-area-inset-bottom,0px))}
+/* during play the board is compact so it fits on screen above the keyboard */
+.board.compact{grid-template-columns:repeat(3,1fr);gap:4px;padding:6px 12px 12px}
+.board.compact li{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;padding:4px 6px;min-height:36px}
+.board.compact .n{font-size:9.5px;min-width:0;line-height:1}
+.board.compact .nm{font-size:clamp(10.5px,3.1vw,13.5px);line-height:1.05;max-width:100%;overflow-wrap:normal}
+.board.compact .nm.lw{font-size:clamp(9.5px,2.75vw,13.5px);letter-spacing:-.01em}
+.cs-kb .play .status{padding:8px 16px}
+.cs-kb .play .clock b,.cs-kb .play .got b{font-size:34px}
+.cs-kb .play .ask{padding:10px 16px 0}
+.cs-kb .play .ask h2{font-size:clamp(19px,5.4vw,26px)}
+.cs-kb .play .ask p{font-size:12px;line-height:1.3}
+.cs-kb .play .entry{padding:8px 12px 0;gap:4px}
+/* short phones (iPhone SE and similar): tighten everything so the whole board stays above the keyboard */
+@media (max-height:720px){
+  .cs-kb .play .status{padding:6px 14px} .cs-kb .play .clock b,.cs-kb .play .got b{font-size:28px}
+  .cs-kb .play .ask{padding:8px 14px 0} .cs-kb .play .ask h2{font-size:19px} .cs-kb .play .ask p{display:none}
+  .cs-kb .play .typed{min-height:40px;font-size:19px;padding:6px 12px}
+  .cs-kb .play .fb{min-height:15px;font-size:11px}
+  .board.compact li{min-height:31px;padding:3px 5px}
+  .k{height:40px} .kb{gap:6px;padding-top:6px} .cs-kb body{padding-bottom:calc(158px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion: reduce){.typed .caret{animation:none}}
+
+/* the answer board */
+.board{list-style:none;margin:0;padding:8px 16px 16px;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.board li{display:flex;align-items:center;gap:6px;min-width:0;padding:8px 8px;border:1.5px dashed var(--line);min-height:40px;box-sizing:border-box}
+.board .n{font-family:var(--f-mono);font-size:10.5px;color:var(--muted);flex:0 0 auto;min-width:2.9em;font-variant-numeric:tabular-nums}
+.board .nm{font-family:var(--f-display);font-weight:800;font-stretch:72%;font-size:clamp(13px,3.7vw,15px);line-height:1.05;text-transform:uppercase;min-width:0;overflow-wrap:normal;word-break:normal}
+.board li.found{border:1.5px solid var(--accent);background:color-mix(in oklab,var(--accent) 10%,var(--surface))}
+.board li.missed{border:1.5px solid var(--bad);background:color-mix(in oklab,var(--bad) 8%,var(--surface))}
+.board li.missed .nm{color:var(--bad)}
+.board li.new{animation:pop .35s ease-out}
+@keyframes pop{0%{transform:scale(.94)}60%{transform:scale(1.03)}100%{transform:none}}
+@media (max-width:340px){.board:not(.compact){grid-template-columns:1fr}}
+
+/* result */
+.reveal{display:flex;flex-direction:column;gap:6px}
+.reveal h2{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:70%;font-size:clamp(30px,8.5vw,42px);line-height:.95;text-transform:uppercase}
+.reveal p{margin:0;font-size:15px;color:var(--muted);max-width:52ch}
+.reveal p b{color:var(--ink)}
+.score{display:flex;align-items:baseline;gap:8px}
+.score b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(88px,26vw,130px);line-height:.82;font-variant-numeric:tabular-nums}
+.score span{font-family:var(--f-mono);font-size:20px;color:var(--muted)}
+.verdict{font-family:var(--f-display);font-weight:800;font-stretch:85%;font-size:22px;margin:0;text-transform:uppercase}
+.vs{font-family:var(--f-mono);font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.vs b{color:var(--ink)}
+.share{display:flex;flex-direction:column;gap:10px}
+.share h3{margin:0;font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:18px;text-transform:uppercase;letter-spacing:.03em}
+.share img{display:block;width:100%;max-width:100%;aspect-ratio:1;border:1px solid var(--line);background:var(--soft)}
+.share p{margin:0;font-size:13px;color:var(--muted)}
+.sendto{display:flex;flex-direction:column;gap:10px;padding-top:4px}
+.targets{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.tgt{display:block;text-align:center;padding:13px 8px;border:1.5px solid var(--line);color:var(--ink);text-decoration:none;font-weight:700;font-size:16px;touch-action:manipulation}
+.tgt:hover{border-color:var(--ink)}
+.tgt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tgt.wa{border-color:var(--accent);background:color-mix(in oklab,var(--accent) 12%,var(--surface))}
+textarea.copybox{width:100%;box-sizing:border-box;font-family:var(--f-mono);font-size:13px;background:var(--soft);color:var(--ink);border:1px solid var(--line);padding:10px;min-height:130px}
+.next{text-align:center;display:flex;flex-direction:column;gap:2px}
+.next b{font-family:var(--f-mono);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);font-family:var(--f-mono);font-size:13px;padding:10px 16px;max-width:calc(100% - 40px);text-align:center;z-index:5}
+
+@keyframes fadein{from{opacity:.35}to{opacity:1}}
+.enter{animation:fadein .18s ease-out}
+@media (prefers-reduced-motion: reduce){.enter,.shake,.board li.new{animation:none}.btn,.tbar i{transition:none}}
+.replaying .sharecard{display:none}.replaying header.top::after{content:"Replay · doesn’t count";flex-basis:100%;font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--warn)}
+.back{align-self:flex-start;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:4px 0;margin-bottom:-8px}.back:hover{color:var(--ink)}.back:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+
+<div class="wrap">
+  <a class="back" href="./">← The Daily Kick Off</a>
+  <header class="top">
+    <div class="mark">Clean <i>Sweep</i></div>
+    <div class="meta" id="meta"></div>
+  </header>
+  <main id="app"></main>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+/* Site reset: bump TDKO_EPOCH to wipe every saved game and menu status the next time a page on this site opens. */
+(function(){ var TDKO_EPOCH='2026-11-09-reset-1';
+  try{ if(localStorage.getItem('tdko:epoch')===TDKO_EPOCH) return;
+    var P=['tdko:','tdko-t:','tdko-all8:','fastbreak:','wtb:','scramble:','passconnect:','playedle:','shirtswap:','tikitaka:','offside:','topfour:','rankedhighly:','cleansweep:','cuprun:'], ks=[];
+    for(var i=0;i<localStorage.length;i++) ks.push(localStorage.key(i));
+    ks.forEach(function(k){ if(P.some(function(p){return k.indexOf(p)===0})) localStorage.removeItem(k); });
+    localStorage.setItem('tdko:epoch',TDKO_EPOCH);
+  }catch(e){} })();
+</script>
+<script>
+/* Launch clear: the first time a page opens on or after Mon 16 Nov 2026 (player's own clock), wipe all progress, streaks and times saved before that date, so Day 1 and every streak start fresh at launch. Runs once per device. */
+(function(){ try{ var d=new Date(), k=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();
+  if(k<20261116 || localStorage.getItem('tdko-launch')==='1') return;
+  var P=['tdko:','tdko-t:','tdko-all8:','fastbreak:','wtb:','scramble:','passconnect:','playedle:','shirtswap:','tikitaka:','offside:','topfour:','rankedhighly:','cleansweep:','cuprun:'], ks=[];
+  for(var i=0;i<localStorage.length;i++) ks.push(localStorage.key(i));
+  ks.forEach(function(x){ if(!x || x==='tdko:epoch' || !P.some(function(p){return x.indexOf(p)===0})) return;
+    var m=/(\d{4})-(\d\d)-(\d\d)/.exec(x); if(!m || (+m[1])*10000+(+m[2])*100+(+m[3]) < 20261116) localStorage.removeItem(x); });
+  localStorage.setItem('tdko-launch','1');
+}catch(e){} })();
+</script>
+<style>
+/* streaks: kept on this device only, read from the daily status the games already save */
+.streakcard .inner{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0}
+.streakcard .sk{padding:16px 20px;display:flex;flex-direction:column;gap:4px}
+.streakcard .sk+.sk{border-left:1px solid var(--line)}
+.streakcard .sk b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:52px;line-height:.85;font-variant-numeric:tabular-nums}
+.streakcard .sk b small{font-family:var(--f-mono);font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-left:6px}
+.streakcard .sk.on b{color:var(--accent)}
+.streakcard .note{grid-column:1/-1;border-top:1px solid var(--line);padding:10px 20px;font-family:var(--f-mono);font-size:12px;letter-spacing:.03em;color:var(--muted)}
+.streakcard .note.bad{color:var(--bad)}
+</style>
+<script>
+/* Streak = days in a row this game was played to full time on this device. Giving up or missing a day resets it.
+   Today's puzzle not played yet keeps yesterday's streak alive until midnight. */
+function tdkoDateKey(d){ return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+function tdkoDoneDates(gid, gave){ const out=new Set();
+  try{ for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i), m=/^tdko:(\d{4}-\d\d-\d\d)#\d+$/.exec(k||''); if(!m) continue;
+    let r={}; try{ r=JSON.parse(localStorage.getItem(k)||'{}')[gid]; }catch(e){}
+    if(r && r.status==='done' && (gave ? r.gaveUp : !r.gaveUp)) out.add(m[1]); } }catch(e){}
+  return out; }
+function tdkoStreak(gid){
+  const done=tdkoDoneDates(gid), now=new Date(), todayKey=tdkoDateKey(now), today=done.has(todayKey);
+  let cur=0; const x=new Date(now.getFullYear(),now.getMonth(),now.getDate()); if(!today) x.setDate(x.getDate()-1);
+  while(done.has(tdkoDateKey(x))){ cur++; x.setDate(x.getDate()-1); }
+  const gaveToday=tdkoDoneDates(gid,true).has(todayKey); if(gaveToday) cur=0;   // giving up today ends the run
+  let best=0, run=0, prev=null;
+  [...done].sort().forEach(k=>{ const [y,m,d]=k.split('-').map(Number), t=new Date(y,m-1,d);
+    if(prev){ const n=new Date(prev); n.setDate(n.getDate()+1); run = tdkoDateKey(n)===k ? run+1 : 1; } else run=1;
+    prev=t; best=Math.max(best,run); });
+  return {cur, best:Math.max(best,cur), today, gaveToday};
+}
+function tdkoStreakCard(gid){
+  const s=tdkoStreak(gid), day=n=>n===1?'day':'days';
+  const note = s.gaveToday ? '<div class="note bad">Giving up resets your streak. Play to full time tomorrow to start a new one.</div>'
+    : s.cur>=2 ? `<div class="note">${s.cur} in a row. Come back tomorrow to keep it going.</div>`
+    : s.cur===1 ? '<div class="note">Day one. Come back tomorrow to make it two.</div>'
+    : '<div class="note">Play to full time tomorrow to start a streak.</div>';
+  return `<section class="card streakcard"><div class="inner">
+    <div class="sk${s.cur?' on':''}"><span class="eyebrow">Streak</span><b>${s.cur}<small>${day(s.cur)}</small></b></div>
+    <div class="sk"><span class="eyebrow">Best</span><b>${s.best}<small>${day(s.best)}</small></b></div>
+    ${note}</div></section>`;
+}
+</script>
+<script>
+/* Kick-off and full-time times for each game, kept beside the daily status (tdko-t:<date>#<no>) so the menu can show how long all eight took */
+function tdkoStamp(k, gid, r){ try{ if(!r || r.status==='ready') return; const tk=k.replace(/^tdko:/,'tdko-t:'), all=JSON.parse(localStorage.getItem(tk)||'{}'), t=all[gid]||{}, now=Date.now();
+  const day=(/^tdko:(\d{4}-\d\d-\d\d)/.exec(k)||[])[1];
+  if(!t.s){ t.s=now; tdkoPlay(day, gid, 'start'); } if(r.status==='done' && !t.e){ t.e=now; tdkoPlay(day, gid, 'finish', !!r.gaveUp); }
+  all[gid]=t; localStorage.setItem(tk, JSON.stringify(all)); }catch(e){} }
+/* Replays: each replay run played to full time is counted once in "total completes" (run number kept per game and day on this device) */
+function tdkoReplayNew(gid){ try{ const k='tdko-rp:'+gid, o=JSON.parse(localStorage.getItem(k)||'{}'), d=new Date(), day=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  const n={day, run:(o.day===day?o.run||0:0)+1, sent:o.day===day?o.sent||0:0}; localStorage.setItem(k, JSON.stringify(n));
+  /* replay started (stats: total started) */
+  const vid=localStorage.getItem('tdko-vid'); if(!window.TDKO_TEST && vid && localStorage.getItem('tdko-nocount')!=='1')
+    fetch('/api/play',{method:'POST',keepalive:true,headers:{'content-type':'application/json'},body:JSON.stringify({vid,day,game:gid,event:'rstart',run:n.run})}).catch(()=>{}); }catch(e){} }
+function tdkoReplayDone(gid, day, r){ try{ if(window.TDKO_TEST || !r || r.status!=='done' || localStorage.getItem('tdko-nocount')==='1') return; const k='tdko-rp:'+gid, o=JSON.parse(localStorage.getItem(k)||'{}');
+  if(o.day!==day || !o.run || o.sent>=o.run) return; o.sent=o.run; localStorage.setItem(k, JSON.stringify(o));
+  let vid=localStorage.getItem('tdko-vid'); if(!vid) return;
+  fetch('/api/play',{method:'POST',keepalive:true,headers:{'content-type':'application/json'},body:JSON.stringify({vid,day,game:gid,event:'replay',run:o.run,gaveUp:!!r.gaveUp})}).catch(()=>{}); }catch(e){} }
+/* Anonymous play counts (how many start and finish each game) so we can see where players stop. First goes count once per device; replays are counted separately (tdkoReplayDone). Never sent for test puzzles. */
+function tdkoPlay(day, game, event, gaveUp){ try{ if(window.TDKO_TEST || !day || localStorage.getItem('tdko-nocount')==='1') return;
+  let vid=localStorage.getItem('tdko-vid'); if(!vid){ vid=(crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(16).slice(2)); localStorage.setItem('tdko-vid',vid); }
+  fetch('/api/play',{method:'POST',keepalive:true,headers:{'content-type':'application/json'},body:JSON.stringify({vid,day,game,event,gaveUp:!!gaveUp})}).catch(()=>{}); }catch(e){} }
+</script>
+<script>var TDKO_T={"id": "ballon-dor-since-2000", "q": "Every Ballon d'Or winner since 2000", "note": "15 players. Labels show each player's first win. Not awarded in 2020. Up to the 2026 award.", "secs": 240, "src": "topendsports.com Ballon d'Or winners list; 2026 winner (Harry Kane) confirmed by soccernews.com / heavy.com", "names": [{"n": "Luís Figo", "l": "2000"}, {"n": "Michael Owen", "l": "2001"}, {"n": "Ronaldo", "l": "2002", "a": ["ronaldo nazario", "r9", "ronaldo nazario de lima"]}, {"n": "Pavel Nedvěd", "l": "2003"}, {"n": "Andriy Shevchenko", "l": "2004", "a": ["andrei shevchenko", "sheva"]}, {"n": "Ronaldinho", "l": "2005"}, {"n": "Fabio Cannavaro", "l": "2006"}, {"n": "Kaká", "l": "2007", "a": ["ricardo kaka"]}, {"n": "Cristiano Ronaldo", "l": "2008", "a": ["cristiano", "cr7"]}, {"n": "Lionel Messi", "l": "2009", "a": ["leo messi"]}, {"n": "Luka Modrić", "l": "2018"}, {"n": "Karim Benzema", "l": "2022"}, {"n": "Rodri", "l": "2024", "a": ["rodrigo", "rodrigo hernandez"]}, {"n": "Ousmane Dembélé", "l": "2025"}, {"n": "Harry Kane", "l": "2026"}]};</script>
+<script>
+/* Replay: play today's puzzle again just for fun. The first result stays saved, and stays on the menu, until the next puzzle at midnight. */
+function tdkoIsReplay(gid, dayKey, dayNo){ if(window.TDKO_TEST) return true; if(location.hash!=='#replay') return false;
+  try{ const r=JSON.parse(localStorage.getItem('tdko:'+dayKey+'#'+dayNo)||'{}')[gid]; return !!r && r.status==='done'; }catch(e){ return false; } }
+function tdkoReplayBox(on){ if(window.TDKO_TEST) return tdkoTestBox(); return `<section class="card replaybox"><div class="inner">
+    <span class="eyebrow">${on?'Replay · just for fun':'Fancy another go?'}</span>
+    <p>${on?'This one doesn’t count. Your first score today stays on the board.':'Replay today’s puzzle as often as you like. Your first score stays on the board.'}</p>
+    <button class="btn ghost" type="button" data-replay>${on?'Replay again':'Replay'}</button>
+  </div></section>`; }
+let tdkoReplayKey='';
+document.addEventListener('click', e=>{ if(!e.target.closest || !e.target.closest('[data-replay]')) return;
+  try{ if(tdkoReplayKey) localStorage.removeItem(tdkoReplayKey); }catch(_){} tdkoReplayNew('clean-sweep');
+  history.replaceState(null,'',location.pathname+location.search+'#replay'); location.reload(); });
+</script>
+<script>
+(function(){
+const GAME_URL = 'https://tdko.app/';
+const LAUNCH = Date.UTC(2026,10,16);   // SOFT LAUNCH: Mon 16 Nov 2026 is No. 1 (months count from 0)
+const OPENS = '2026-11-23';   // joins the daily line-up on this date (No. 8); testers can play before then
+
+/* ---------- lists: every list is exactly 10, 15 or 20 names ----------
+   q: the prompt · note: scope and "as of" line · secs: clock · lab: what the slot labels show
+   names: n = name shown, l = slot label, a = extra accepted spellings (surname and full name are always accepted) */
+const LISTS = TDKO_DATA.LISTS;
+
+/* ---------- day ---------- */
+const now = new Date();
+const dayKey = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+const dayNo = window.TDKO_TEST ? TDKO_TEST_NO : LAUNCH==null ? 1 : Math.max(1, Math.round((Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()) - LAUNCH)/864e5) + 1);
+const L = window.TDKO_TEST ? TDKO_T : LISTS[(dayNo-1) % LISTS.length];
+const dateLabel = now.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
+if(!window.TDKO_TEST && dayKey < OPENS){ location.replace('./'); return; }
+const REPLAY = tdkoIsReplay('clean-sweep', dayKey, dayNo), KEY = 'cleansweep:'+dayKey+'#'+dayNo + (REPLAY?':replay':'');
+if(REPLAY){ tdkoReplayKey = KEY; document.documentElement.classList.add('replaying'); }
+const app = document.getElementById('app');
+document.getElementById('meta').textContent = `No. ${dayNo} · ${dateLabel}`;
+const m = /^#c(\d+)-(\d{1,3})$/.exec(location.hash);
+const challenge = (m && +m[1]===dayNo && +m[2]<=100) ? +m[2] : null;
+const N = L.names.length, SECS = L.secs;
+
+/* ---------- matching ----------
+   Ignore accents, capitals, hyphens, apostrophes and full stops. Surname alone is enough, and a surname shared
+   by two names on the list gets both. Small typos: 1 wrong letter for 5–8 letters, 2 for 9 or more; shorter must be exact. */
+const norm = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ø/gi,'o').replace(/ß/g,'ss').replace(/[đð]/gi,'d').replace(/ł/gi,'l')
+  .toLowerCase().replace(/['’.\-]/g,' ').replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ').trim();
+const KEYS = L.names.map(x=>{ const f=norm(x.n), w=f.split(' '); return [...new Set([f, w[w.length-1], ...(x.a||[]).map(norm)])].filter(Boolean); });
+function lev(a,b){ if(Math.abs(a.length-b.length)>2) return 9; let p=[...Array(b.length+1).keys()];
+  for(let i=1;i<=a.length;i++){ const c=[i]; for(let j=1;j<=b.length;j++) c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1)); p=c; } return p[b.length]; }
+const allow = k => k.length>=9 ? 2 : k.length>=5 ? 1 : 0;
+const exactHits = t => L.names.map((_,i)=>i).filter(i=>KEYS[i].includes(t));
+const fuzzyHits = t => L.names.map((_,i)=>i).filter(i=>KEYS[i].some(k=>{ const a=allow(k); return a && lev(t,k)<=a; }));
+
+function load(){ try{ const s=JSON.parse(localStorage.getItem(KEY)); if(s && Array.isArray(s.found)) return s; }catch(e){} return null; }
+/* Shared daily status read by The Daily Kick Off menu: tdko:<date>#<no> → {gameId: {status, gaveUp}} */
+function report(){ try{ const k='tdko:'+dayKey+'#'+dayNo, all=REPLAY?{}:JSON.parse(localStorage.getItem(k)||'{}'); all['clean-sweep']={status: S.over?'done':S.started?'open':'ready', gaveUp:!!S.gaveUp}; if(REPLAY){ tdkoReplayDone('clean-sweep',dayKey,all['clean-sweep']); return; } localStorage.setItem(k, JSON.stringify(all)); tdkoStamp(k,'clean-sweep',all['clean-sweep']); }catch(e){} }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} report(); }
+/* the clock keeps running from kick-off, even if the page is closed or reloaded */
+let S = load() || {started:false, t0:0, found:[], over:false, gaveUp:false, used:0};
+
+const score = () => Math.round(S.found.length/N*100);
+const left = () => S.over ? 0 : Math.max(0, SECS - (Date.now()-S.t0)/1000);
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const mmss = t => { t=Math.ceil(t); return `${Math.floor(t/60)}:${String(t%60).padStart(2,'0')}`; };
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+let swallowUntil = 0;
+document.addEventListener('pointerdown', ()=>{ swallowUntil = 0; }, true);
+document.addEventListener('click', e=>{ if(performance.now() < swallowUntil){ swallowUntil = 0; e.preventDefault(); e.stopPropagation(); } }, true);
+function onPress(el, fn){
+  let fired = false;
+  const off = () => el.disabled || el.getAttribute('aria-disabled')==='true';
+  el.addEventListener('pointerdown', e=>{ if(e.button!==0 || off()) return; e.preventDefault();
+    if(e.pointerType==='mouse') fired = true; else swallowUntil = performance.now() + 600; fn(); });
+  el.addEventListener('click', ()=>{ if(fired){ fired=false; return; } if(!off()) fn(); });
+}
+let tt=0;
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,2200)}
+
+/* ---------- intro ---------- */
+function intro(){
+  const mins = SECS%60 ? mmss(SECS) : `${SECS/60} minutes`;
+  app.innerHTML = `
+  <section class="card enter"><div class="hero">
+    <h1>Clean <i>Sweep</i></h1>
+    <p class="lede">One list of footballers. Name them all before the clock runs out.</p>
+    ${challenge!==null?`<div class="challenge"><span>A friend scored this on today's list. Can you beat them?</span><b>${challenge}</b></div>`:''}
+    <ul class="rules">
+      <li><span>Today</span><div>${esc(L.q)}: ${N} names · ${esc(mins)} on the clock${L.note?`<small style="display:block;color:var(--muted);font-size:13px;margin-top:2px">${esc(L.note)}</small>`:''}</div></li>
+      <li><span>Type</span>A name goes in the moment it's right. No button to press</li>
+      <li><span>Surname</span>The surname is enough. Accents and small typos are fine</li>
+      <li><span>Free</span>Wrong guesses cost nothing but time</li>
+      <li><span>Score</span>Every name is worth the same. All ${N} for 100</li>
+    </ul>
+    <button class="btn" id="go">Start the clock</button>
+  </div></section>`;
+  onPress(document.getElementById('go'), ()=>{ S.started=true; S.t0=Date.now(); save(); game(); });
+}
+
+/* ---------- game ---------- */
+let clockT=0, fuzzT=0, fresh=[];
+function board(final){
+  return `<ol class="board${final?'':' compact'}" aria-label="Answers">${L.names.map((x,i)=>{ const got=S.found.includes(i);
+    const cls = got ? 'found'+(fresh.includes(i)?' new':'') : final ? 'missed' : '';
+    return `<li class="${cls}"><span class="n">${esc(x.l||String(i+1))}</span><span class="nm${Math.max(...x.n.split(' ').map(w=>w.length))>9?' lw':''}">${got||final?esc(x.n):''}</span></li>`; }).join('')}</ol>`;
+}
+/* Phones and tablets get the on-page keyboard (the phone's own keyboard would cover the board); a laptop types on its own keyboard. */
+const TOUCH = matchMedia('(pointer: coarse)').matches;
+const KB_ROWS = ['qwertyuiop','asdfghjkl','!zxcvbnm<'];   // ! = Go (check a typo now), < = delete
+let typed='';
+const box = () => document.getElementById('guess');
+const getV = () => TOUCH ? typed : (box()?.value||'');
+function setV(v){ if(TOUCH){ typed=v; const t=document.getElementById('tv'); if(t) t.textContent=v; box()?.classList.toggle('empty',!v); } else if(box()) box().value=v; }
+function changed(){ clearTimeout(fuzzT); const t=norm(getV()); box()?.classList.remove('miss');
+  if(!t){ return; }
+  if(take(exactHits(t))) return;
+  fuzzT=setTimeout(()=>{ if(norm(getV())===t) take(fuzzyHits(t)); }, 650);   // a small typo counts once they pause
+}
+function submit(){ clearTimeout(fuzzT); const t=norm(getV()); if(!t) return;
+  if(take(exactHits(t)) || take(fuzzyHits(t))) return;
+  say('Not on the list. Try another', 'bad'); box()?.classList.add('miss'); nudge(box());
+}
+function keyboard(){
+  return `<div class="kb" id="kb" role="group" aria-label="Keyboard">${KB_ROWS.map(r=>`<div class="kr">${[...r].map(k=>
+    k==='!' ? `<button type="button" class="k wide go" data-k="go" aria-label="Check">Enter</button>`
+    : k==='<' ? `<button type="button" class="k wide" data-k="del" aria-label="Delete">Del</button>`
+    : `<button type="button" class="k" data-k="${k}">${k}</button>`).join('')}</div>`).join('')}</div>`;
+}
+function press(k){ if(S.over) return;
+  if(k==='go') return submit();
+  if(k==='del'){ setV(getV().slice(0,-1)); return changed(); }
+  if(getV().length>=24) return;
+  setV(getV()+k); changed();
+}
+let kbKeys=false;
+function game(){
+  if(S.over) return result();
+  if(left()<=0) return fullTime();
+  app.innerHTML = `
+  <section class="card play" id="play">
+    <div class="status">
+      <div class="clock"><span class="eyebrow">Clock</span><b id="clk">${mmss(left())}</b></div>
+      <div class="got"><b id="got">${S.found.length}</b><span class="of">/ ${N}</span></div>
+    </div>
+    <div class="tbar"><i id="tb"></i></div>
+    <div class="ask"><h2>${esc(L.q)}</h2>${L.note?`<p>${esc(L.note)}</p>`:''}</div>
+    <div class="entry">
+      ${TOUCH ? `<div class="typed empty" id="guess" role="textbox" aria-label="Your guess" aria-describedby="fb"><span id="tv"></span><i class="caret" aria-hidden="true"></i><span class="ph">Type a name</span></div>`
+      : `<input id="guess" type="text" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="go"
+        placeholder="Type a name" aria-label="Type a footballer's name" aria-describedby="fb">`}
+      <div class="fb" id="fb" aria-live="polite">${S.found.length?'Keep going':'Start typing. Surnames are fine'}</div>
+    </div>
+    <div id="bd">${board(false)}</div>
+  </section>
+  <div id="giveup"></div>
+  ${TOUCH?keyboard():''}`;
+  drawGiveUp();
+  if(TOUCH){
+    document.documentElement.classList.add('cs-kb'); typed=''; 
+    document.querySelectorAll('#kb .k').forEach(b=>{
+      b.addEventListener('pointerdown', e=>{ e.preventDefault(); b.classList.add('down'); press(b.dataset.k); });
+      ['pointerup','pointerleave','pointercancel'].forEach(t=>b.addEventListener(t,()=>b.classList.remove('down')));
+      b.addEventListener('click', e=>{ if(e.detail===0) press(b.dataset.k); });   // keyboard / switch access
+    });
+    if(!kbKeys){ kbKeys=true;   // a tablet with a keyboard attached can still type
+      document.addEventListener('keydown', e=>{ if(!document.getElementById('kb') || e.metaKey || e.ctrlKey || e.altKey) return;
+        if(/^[a-z]$/i.test(e.key)){ e.preventDefault(); press(e.key.toLowerCase()); }
+        else if(e.key==='Backspace'){ e.preventDefault(); press('del'); } else if(e.key==='Enter'){ e.preventDefault(); press('go'); } }); }
+    // bring the game to the top of the screen so the board sits right above the keyboard
+    const pl=document.getElementById('play'); requestAnimationFrame(()=>scrollTo({top:Math.max(0,pl.getBoundingClientRect().top+scrollY-8),behavior:'auto'}));
+  } else {
+    const inp=box();
+    inp.addEventListener('input', changed);
+    inp.addEventListener('keydown', e=>{ if(e.key!=='Enter') return; e.preventDefault(); submit(); });
+    inp.focus({preventScroll:true});
+  }
+  tick(); clearInterval(clockT); clockT=setInterval(tick, 250);
+}
+/* returns true when the box should clear: new names found, or the name is one they already have */
+function take(hits){
+  if(!hits.length) return false;
+  const el=box(), nw=hits.filter(i=>!S.found.includes(i));
+  if(!nw.length){ say(`Already got ${L.names[hits[0]].n}`, 'warn'); setV(''); return true; }
+  S.found.push(...nw); fresh=nw; save();
+  document.getElementById('bd').innerHTML=board(false); document.getElementById('got').textContent=S.found.length;
+  say(nw.length>1 ? `${nw.length} at once: ${nw.map(i=>L.names[i].n).join(' and ')}` : `${L.names[nw[0]].n} ✓`, 'ok');
+  setV(''); el.classList.add('hit'); setTimeout(()=>el.classList.remove('hit'),300);
+  if(S.found.length===N){ S.over=true; S.used=Math.round((Date.now()-S.t0)/1000); save(); setTimeout(result, 500); }
+  return true;
+}
+function say(t, cls){ const f=document.getElementById('fb'); if(!f) return; f.textContent=t; f.className='fb '+(cls||''); }
+function nudge(el){ if(reduce) return; el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); }
+function tick(){
+  const t=left(), c=document.getElementById('clk'), b=document.getElementById('tb');
+  if(!c){ clearInterval(clockT); return; }
+  const cls = t<=10 ? 'low' : t<=30 ? 'mid' : '';
+  c.textContent=mmss(t); c.className=cls; b.className=cls; b.style.transform=`scaleX(${t/SECS})`;
+  if(t<=0) fullTime();
+}
+function fullTime(){ if(S.over) return; clearInterval(clockT); S.over=true; S.used=SECS; save(); result(); }
+let confirmOpen=false;
+function drawGiveUp(){
+  const g=document.getElementById('giveup'); if(!g) return;
+  g.innerHTML = confirmOpen ? `<div class="confirm"><p>Blow the whistle now? You keep the ${S.found.length} you've got and the rest are revealed.</p>
+    <div class="actions"><button class="btn ghost" id="keep">Keep going</button><button class="btn danger" id="quit">Full time</button></div></div>`
+    : `<div style="display:flex;justify-content:center"><button class="linkbtn" id="gu">Blow the whistle early</button></div>`;
+  if(confirmOpen){ onPress(document.getElementById('keep'),()=>{confirmOpen=false;drawGiveUp();if(!TOUCH) box()?.focus();});
+    onPress(document.getElementById('quit'),()=>{confirmOpen=false;clearInterval(clockT);S.over=true;S.used=Math.round((Date.now()-S.t0)/1000);save();result();}); }
+  else onPress(document.getElementById('gu'),()=>{confirmOpen=true;drawGiveUp();});
+}
+
+/* ---------- result ---------- */
+function verdict(s){
+  if(s===100) return S.used<SECS ? 'Clean sweep' : 'Clean sweep, on the whistle';
+  if(s>=80) return 'So close to the sweep';
+  if(s>=60) return 'Solid shift';
+  if(s>=30) return 'Half a squad';
+  if(s>0) return 'Bench warmer';
+  return 'Swept away';
+}
+function inviteUrl(){ return `${GAME_URL}#clean-sweep-c${dayNo}-${score()}`; }
+function inviteText(){
+  const s=score(), all=S.found.length===N;
+  const head = `🧹 Clean Sweep No. ${dayNo}: ${S.found.length}/${N}${all&&S.used<SECS?` with ${mmss(SECS-S.used)} to spare`:''} (${s}/100)`;
+  return `${head}\n${L.q}\n\nName them all before the clock runs out. Can you get more?\nTry today's list: ${inviteUrl()}`;
+}
+let cdTimer=0;
+function result(){
+  clearInterval(clockT); fresh=[]; document.documentElement.classList.remove('cs-kb');
+  const s=score();
+  let vs='';
+  if(challenge!==null){ const d=s-challenge; vs=`<div class="vs">Your friend: <b>${challenge}</b> · ${d>0?`You win by <b>${d}</b>`:d<0?`They win by <b>${-d}</b>`:'<b>Level</b>, a draw'}</div>`; }
+  const all=S.found.length===N;
+  app.innerHTML = `
+  <section class="card enter">
+    <div class="ask"><span class="eyebrow">Full time${window.TDKO_TEST?' · Training Ground':' · No. '+dayNo}</span><h2>${esc(L.q)}</h2>${L.note?`<p>${esc(L.note)}</p>`:''}</div>
+    ${board(true)}
+    <div class="inner" style="padding-top:0">
+      <div class="score"><b id="scr">0</b><span>/ 100</span></div>
+      <p class="verdict">${verdict(s)}</p>
+      <p class="vs"><b>${S.found.length}</b> of ${N} named${all&&S.used<SECS?` · <b>${mmss(SECS-S.used)}</b> to spare`:''}</p>
+      ${vs}
+    </div>
+  </section>
+  ${typeof tdkoStreakCard==='function'?tdkoStreakCard('clean-sweep'):''}
+  <section class="card sharecard"><div class="inner share">
+    <h3>Challenge &amp; share</h3>
+    <img id="cardimg" alt="Clean Sweep share card showing a score of ${s} out of 100">
+    <p>Share today's puzzle and your score with friends and see if they can beat it.</p>
+    <button class="btn" id="shareBtn">Share now</button>
+    <div class="sendto" id="sendto" hidden>
+      <span class="eyebrow">Send with</span>
+      <div class="targets">
+        <a class="tgt wa" id="t-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="tgt" id="t-x" target="_blank" rel="noopener">X</a>
+        <a class="tgt" id="t-tg" target="_blank" rel="noopener">Telegram</a>
+        <a class="tgt" id="t-fb" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <button class="linkbtn" id="copyInvite">Or copy the invite</button>
+    </div>
+  </div></section>
+  ${tdkoReplayBox(REPLAY)}
+  <div class="next"><span class="eyebrow">Next list in</span><b id="cd">--:--:--</b></div>`;
+
+  const el=document.getElementById('scr'), t0=performance.now();
+  (function up(){const p=reduce?1:Math.min(1,(performance.now()-t0)/800); el.textContent=Math.round(s*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(up)})();
+
+  let cardBlob=null;
+  drawCard().then(b=>{ cardBlob=b; if(b) document.getElementById('cardimg').src=URL.createObjectURL(b); });
+
+  const full=inviteText(), url=inviteUrl(), noUrl=full.replace(/\nTry today's list: .*$/,'\nTry today\'s list:'), E=encodeURIComponent;
+  document.getElementById('t-wa').href=`https://wa.me/?text=${E(full)}`;
+  document.getElementById('t-x').href=`https://x.com/intent/post?text=${E(noUrl)}&url=${E(url)}`;
+  document.getElementById('t-tg').href=`https://t.me/share/url?url=${E(url)}&text=${E(noUrl)}`;
+  document.getElementById('t-fb').href=`https://www.facebook.com/sharer/sharer.php?u=${E(url)}`;
+  const sendto=document.getElementById('sendto');
+  const showTargets=()=>{ sendto.hidden=false; sendto.scrollIntoView({block:'nearest',behavior:reduce?'auto':'smooth'}); };
+  document.getElementById('shareBtn').addEventListener('click', async ()=>{
+    if(!navigator.share) return showTargets();
+    const data={title:'Clean Sweep', text:full};
+    try{ const f=cardBlob&&new File([cardBlob],`clean-sweep-${dayNo}.png`,{type:'image/png'}); if(f&&navigator.canShare&&navigator.canShare({files:[f]})) data.files=[f]; }catch(e){}
+    try{ await navigator.share(data); }catch(e){ if(e&&e.name==='AbortError') return; showTargets(); }
+  });
+  document.getElementById('copyInvite').addEventListener('click', ()=>{
+    const fb=()=>{ const t=document.createElement('textarea'); t.className='copybox'; t.readOnly=true; t.value=full; document.getElementById('copyInvite').replaceWith(t); t.focus(); t.select(); toast('Select the text and copy it'); };
+    try{ navigator.clipboard.writeText(full).then(()=>toast('Invite copied. Paste it to a friend'),fb); }catch(e){ fb(); }
+  });
+
+  clearInterval(cdTimer);
+  const tk=()=>{const n=new Date(),mid=new Date(n);mid.setHours(24,0,0,0);const d=Math.max(0,(mid-n)/1000|0);
+    if(d===0){ clearInterval(cdTimer); return location.reload(); }
+    const c=document.getElementById('cd'); if(c) c.textContent=`${String(d/3600|0).padStart(2,'0')}:${String(d%3600/60|0).padStart(2,'0')}:${String(d%60).padStart(2,'0')}`;};
+  tk(); cdTimer=setInterval(tk,1000);
+}
+
+/* ---------- share card (1080×1080: the prompt, the score and a tick per slot, never the names) ---------- */
+async function drawCard(){
+  try{ await Promise.all([document.fonts.load('900 100px Archivo'),document.fonts.load('800 40px Archivo'),document.fonts.load('600 30px "IBM Plex Mono"')]); }catch(e){}
+  const W=1080, c=document.createElement('canvas'); c.width=c.height=W;
+  const x=c.getContext('2d'); if(!x) return null;
+  const C={bg:'#0B110E',ink:'#EAF0EC',muted:'#8A988F',line:'#24302A',acc:'#34D27F',accInk:'#06120B',bad:'#FF6B5A'};
+  const cond=v=>{ if('fontStretch' in x) x.fontStretch=v; };
+  const Pd=80, s=score();
+  x.fillStyle=C.bg; x.fillRect(0,0,W,W);
+  x.strokeStyle=C.line; x.lineWidth=4; x.beginPath(); x.arc(W+40,W*0.42,300,0,Math.PI*2); x.stroke();
+  x.beginPath(); x.moveTo(W-260,0); x.lineTo(W-260,W); x.stroke();
+  cond('condensed'); x.font='900 60px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=C.ink;
+  x.fillText('CLEAN ',Pd,Pd+50); const w=x.measureText('CLEAN ').width; x.fillStyle=C.acc; x.fillText('SWEEP',Pd+w,Pd+50);
+  cond('normal'); x.font='600 24px "IBM Plex Mono",monospace'; x.fillStyle=C.muted; x.textAlign='right';
+  x.fillText(`NO. ${dayNo} · ${dateLabel.toUpperCase()}`,W-Pd,Pd+46); x.textAlign='left';
+  x.fillStyle=C.ink; x.fillRect(Pd,Pd+80,W-2*Pd,4);
+  // the prompt, wrapped onto up to two lines
+  cond('condensed'); x.font='800 46px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=C.ink;
+  const words=L.q.toUpperCase().split(' '), lines=['']; words.forEach(wd=>{ const t=(lines[lines.length-1]+' '+wd).trim(); if(x.measureText(t).width>W-2*Pd && lines[lines.length-1]) lines.push(wd); else lines[lines.length-1]=t; });
+  lines.slice(0,2).forEach((ln,i)=>x.fillText(ln,Pd,Pd+150+i*52));
+  cond('normal'); x.font='600 28px "IBM Plex Mono",monospace'; x.fillStyle=C.muted;
+  x.fillText(`${S.found.length} OF ${N} NAMED`+(S.found.length===N&&S.used<SECS?` · ${mmss(SECS-S.used)} TO SPARE`:''),Pd,Pd+290);
+  cond('condensed'); x.font='900 300px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=C.ink;
+  const sw=x.measureText(String(s)).width; x.fillText(String(s),Pd-8,Pd+545);
+  cond('normal'); x.font='600 48px "IBM Plex Mono",monospace'; x.fillStyle=C.muted; x.fillText('/100',Pd+sw+10,Pd+545);
+  cond('condensed'); x.font='800 52px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=s?C.acc:C.bad; x.fillText(verdict(s).toUpperCase(),Pd,Pd+620);
+  // one square per name: green if named, dark if missed (order as on the board, never the names)
+  const per=Math.ceil(N/2), sq=Math.min(58,Math.floor((W-2*Pd-(per-1)*10)/per));
+  for(let i=0;i<N;i++){ const r=Math.floor(i/per), cI=i%per, fx=Pd+cI*(sq+10), fy=Pd+660+r*(sq+10);
+    if(S.found.includes(i)){ x.fillStyle=C.acc; x.fillRect(fx,fy,sq,sq); } else { x.strokeStyle=C.muted; x.lineWidth=3; x.setLineDash([8,6]); x.strokeRect(fx+1.5,fy+1.5,sq-3,sq-3); x.setLineDash([]); } }
+  const by=W-Pd-10;
+  cond('normal'); x.font='500 24px "IBM Plex Mono",monospace'; x.fillStyle=C.muted; x.fillText('ONE LIST · ONE CLOCK · NAME THEM ALL · TDKO.APP',Pd,by);
+  return new Promise(r=>c.toBlob(b=>r(b),'image/png'));
+}
+
+/* ---------- day rollover ---------- */
+const openedOn = (d=>`${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`)(new Date());
+const rollCheck = () => { const d=new Date(); if(`${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`!==openedOn) location.reload(); };
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden){ rollCheck(); if(!S.over && S.started) tick(); } });
+addEventListener('focus', rollCheck);
+
+/* ---------- boot ---------- */
+if(S.over) result(); else if(S.started) game(); else intro();
+})();
+</script>
+<p class="tdko-report"><a id="tdko-report" href="mailto:hello@tdko.app" target="_blank" rel="noopener">Report a problem</a></p><style>.tdko-report{text-align:center;margin:8px 0 0;padding:0 16px}.tdko-report a{font-family:var(--f-mono,ui-monospace,monospace);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted,#5D6A62);text-decoration:underline;text-underline-offset:3px}.tdko-report a:hover{color:var(--ink,#0E1712)}</style><script>(function(){try{var d=new Date(),L=Date.UTC(2026,10,16),n=Math.max(1,Math.round((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())-L)/864e5)+1);var g="Clean Sweep",when=window.TDKO_TEST?"Training Ground":"No. "+n+" ("+d.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric"})+")";var sub="Problem: "+g+" · "+when, body="Game: "+g+"\nPuzzle: "+when+"\n\nWhat went wrong? (e.g. a wrong answer, a correct answer that wasn't accepted, a typo)\n\n";var m=document.querySelector("main"),r=document.querySelector(".tdko-report");if(m&&r)m.insertAdjacentElement("afterend",r);document.getElementById("tdko-report").href="mailto:hello@tdko.app?subject="+encodeURIComponent(sub)+"&body="+encodeURIComponent(body);}catch(e){}})();</script><!--tdko-chrome-->
+<style>
+/* shared chrome on every page: beta status bar (with counters + light/dark switch) at the top, support box and footer at the bottom */
+.statusbar{max-width:560px;margin:0 auto;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0 9px;border-bottom:1px dashed var(--line);
+  font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.themebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+}
+.statusbar b{color:var(--ink);font-weight:600}
+.statusbar .sb-right{display:flex;align-items:center;gap:12px}
+.statusbar .sb-count{display:inline-flex;align-items:center;gap:4px;font-variant-numeric:tabular-nums}
+.statusbar .sb-count svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.statusbar .counts{display:flex;gap:10px}
+.statusbar .counts[hidden]{display:none}
+.testertag{all:unset;cursor:pointer;font:inherit;letter-spacing:inherit;color:var(--warn);border:1px dashed var(--warn);padding:3px 6px}
+@media (max-width:400px){.statusbar.is-tester .counts{display:none}}
+.testertag.on{background:var(--warn);color:#111;border-style:solid}
+/* test day: label the header, as replays do */
+.tdko-test.replaying header.top::after,.tdko-test header.top::after{content:none;display:none}
+.tdko-test header.top{flex-wrap:nowrap !important}
+.tdko-test .sharecard,.tdko-test .streakcard,.tdko-test .stk,.tdko-test .next:not(.clue){display:none !important}
+.testertag:hover{background:var(--warn);color:#111}
+.testertag:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.themebtn{all:unset;box-sizing:border-box;width:26px;height:26px;display:grid;place-items:center;cursor:pointer;color:var(--ink);background:var(--surface);border:1px solid var(--line);touch-action:manipulation}
+.themebtn:hover{border-color:var(--ink)}
+.themebtn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:360px){.statusbar{font-size:9.5px;letter-spacing:.05em}.statusbar .sb-right{gap:8px}}
+/* page header: both headings stay on one line, shrinking a touch on narrow phones */
+header.top:has(.meta){flex-wrap:nowrap !important;align-items:baseline}
+header.top:has(.meta) > *{white-space:nowrap}
+header.top:has(.meta) > :first-child{flex:none}
+header.top .meta{flex:none;font-size:clamp(9.5px,2.75vw,12px)}
+header.top .eyebrow{font-size:clamp(9.5px,2.75vw,12px)}
+header.top .mark{font-size:clamp(20px,6.4vw,28px)}
+.replaying header.top{flex-wrap:wrap !important}
+/* support box + footer */
+.support{border:1px solid var(--line);background:var(--surface);padding:20px;margin-top:8px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;box-sizing:border-box}
+.support p{margin:0;font-size:15px;line-height:1.45;color:var(--muted);max-width:34ch}
+.kofi{display:inline-block;box-sizing:border-box;margin-top:4px;text-decoration:none;background:var(--ink);color:var(--bg);font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:17px;text-transform:uppercase;letter-spacing:.03em;padding:12px 18px;white-space:nowrap;transition:background .12s}
+.kofi:hover{background:var(--accent);color:var(--accent-ink)}
+.kofi:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.legal{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;margin-top:2px;padding-top:16px;border-top:1px solid var(--line);font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.legal p{margin:0;line-height:1.6}
+.flinks{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2px 14px}
+.legal a{color:var(--ink);text-underline-offset:3px;padding:4px}
+.legal a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* follow links: just the logos, in the text colour */
+.socials{display:flex;justify-content:center;gap:18px}
+.soc{display:block;width:26px;height:26px;padding:4px;background:var(--ink);background-clip:content-box;-webkit-mask:var(--m) center/26px no-repeat;mask:var(--m) center/26px no-repeat;opacity:.85}
+.soc:hover{opacity:1;background-color:var(--accent)}
+.soc:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.soc-fb{--m:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTkuMTAxIDIzLjY5MXYtNy45OEg2LjYyN3YtMy42NjdoMi40NzR2LTEuNThjMC00LjA4NSAxLjg0OC01Ljk3OCA1Ljg1OC01Ljk3OC40MDEgMCAuOTU1LjA0MiAxLjQ2OC4xMDNhOC42OCA4LjY4IDAgMCAxIDEuMTQxLjE5NXYzLjMyNWE4LjYyMyA4LjYyMyAwIDAgMC0uNjUzLS4wMzYgMjYuODA1IDI2LjgwNSAwIDAgMC0uNzMzLS4wMDljLS43MDcgMC0xLjI1OS4wOTYtMS42NzUuMzA5YTEuNjg2IDEuNjg2IDAgMCAwLS42NzkuNjIyYy0uMjU4LjQyLS4zNzQuOTk1LS4zNzQgMS43NTJ2MS4yOTdoMy45MTlsLS4zODYgMi4xMDMtLjI4NyAxLjU2NGgtMy4yNDZ2OC4yNDVDMTkuMzk2IDIzLjIzOCAyNCAxOC4xNzkgMjQgMTIuMDQ0YzAtNi42MjctNS4zNzMtMTItMTItMTJzLTEyIDUuMzczLTEyIDEyYzAgNS42MjggMy44NzQgMTAuMzUgOS4xMDEgMTEuNjQ3WiIvPjwvc3ZnPg==)}
+.soc-ig{--m:url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjk1LjQyLDZjLTUzLjIsMi41MS04OS41MywxMS0xMjEuMjksMjMuNDgtMzIuODcsMTIuODEtNjAuNzMsMzAtODguNDUsNTcuODJTNDAuODksMTQzLDI4LjE3LDE3NS45MmMtMTIuMzEsMzEuODMtMjAuNjUsNjguMTktMjMsMTIxLjQyUzIuMywzNjcuNjgsMi41Niw1MDMuNDYsMy40Miw2NTYuMjYsNiw3MDkuNmMyLjU0LDUzLjE5LDExLDg5LjUxLDIzLjQ4LDEyMS4yOCwxMi44MywzMi44NywzMCw2MC43Miw1Ny44Myw4OC40NVMxNDMsOTY0LjA5LDE3Niw5NzYuODNjMzEuOCwxMi4yOSw2OC4xNywyMC42NywxMjEuMzksMjNzNzAuMzUsMi44NywyMDYuMDksMi42MSwxNTIuODMtLjg2LDIwNi4xNi0zLjM5Uzc5OS4xLDk4OCw4MzAuODgsOTc1LjU4YzMyLjg3LTEyLjg2LDYwLjc0LTMwLDg4LjQ1LTU3Ljg0Uzk2NC4xLDg2Miw5NzYuODEsODI5LjA2YzEyLjMyLTMxLjgsMjAuNjktNjguMTcsMjMtMTIxLjM1LDIuMzMtNTMuMzcsMi44OC03MC40MSwyLjYyLTIwNi4xN3MtLjg3LTE1Mi43OC0zLjQtMjA2LjEtMTEtODkuNTMtMjMuNDctMTIxLjMyYy0xMi44NS0zMi44Ny0zMC02MC43LTU3LjgyLTg4LjQ1Uzg2Miw0MC44Nyw4MjkuMDcsMjguMTljLTMxLjgyLTEyLjMxLTY4LjE3LTIwLjctMTIxLjM5LTIzUzYzNy4zMywyLjMsNTAxLjU0LDIuNTYsMzQ4Ljc1LDMuNCwyOTUuNDIsNm01Ljg0LDkwMy44OGMtNDguNzUtMi4xMi03NS4yMi0xMC4yMi05Mi44Ni0xNy0yMy4zNi05LTQwLTE5Ljg4LTU3LjU4LTM3LjI5cy0yOC4zOC0zNC4xMS0zNy41LTU3LjQyYy02Ljg1LTE3LjY0LTE1LjEtNDQuMDgtMTcuMzgtOTIuODMtMi40OC01Mi42OS0zLTY4LjUxLTMuMjktMjAycy4yMi0xNDkuMjksMi41My0yMDJjMi4wOC00OC43MSwxMC4yMy03NS4yMSwxNy05Mi44NCw5LTIzLjM5LDE5Ljg0LTQwLDM3LjI5LTU3LjU3czM0LjEtMjguMzksNTcuNDMtMzcuNTFjMTcuNjItNi44OCw0NC4wNi0xNS4wNiw5Mi43OS0xNy4zOCw1Mi43My0yLjUsNjguNTMtMywyMDItMy4yOXMxNDkuMzEuMjEsMjAyLjA2LDIuNTNjNDguNzEsMi4xMiw3NS4yMiwxMC4xOSw5Mi44MywxNywyMy4zNyw5LDQwLDE5LjgxLDU3LjU3LDM3LjI5czI4LjQsMzQuMDcsMzcuNTIsNTcuNDVjNi44OSwxNy41NywxNS4wNyw0NCwxNy4zNyw5Mi43NiwyLjUxLDUyLjczLDMuMDgsNjguNTQsMy4zMiwyMDJzLS4yMywxNDkuMzEtMi41NCwyMDJjLTIuMTMsNDguNzUtMTAuMjEsNzUuMjMtMTcsOTIuODktOSwyMy4zNS0xOS44NSw0MC0zNy4zMSw1Ny41NnMtMzQuMDksMjguMzgtNTcuNDMsMzcuNWMtMTcuNiw2Ljg3LTQ0LjA3LDE1LjA3LTkyLjc2LDE3LjM5LTUyLjczLDIuNDgtNjguNTMsMy0yMDIuMDUsMy4yOXMtMTQ5LjI3LS4yNS0yMDItMi41M200MDcuNi02NzQuNjFhNjAsNjAsMCwxLDAsNTkuODgtNjAuMSw2MCw2MCwwLDAsMC01OS44OCw2MC4xTTI0NS43Nyw1MDNjLjI4LDE0MS44LDExNS40NCwyNTYuNDksMjU3LjIxLDI1Ni4yMlM3NTkuNTIsNjQzLjgsNzU5LjI1LDUwMiw2NDMuNzksMjQ1LjQ4LDUwMiwyNDUuNzYsMjQ1LjUsMzYxLjIyLDI0NS43Nyw1MDNtOTAuMDYtLjE4YTE2Ni42NywxNjYuNjcsMCwxLDEsMTY3LDE2Ni4zNCwxNjYuNjUsMTY2LjY1LDAsMCwxLTE2Ny0xNjYuMzQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjUgLTIuNSkiLz48L3N2Zz4=)}
+.soc-x{--m:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMjI3IiB2aWV3Qm94PSIwIDAgMTIwMCAxMjI3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNzE0LjE2MyA1MTkuMjg0TDExNjAuODkgMEgxMDU1LjAzTDY2Ny4xMzcgNDUwLjg4N0wzNTcuMzI4IDBIMEw0NjguNDkyIDY4MS44MjFMMCAxMjI2LjM3SDEwNS44NjZMNTE1LjQ5MSA3NTAuMjE4TDg0Mi42NzIgMTIyNi4zN0gxMjAwTDcxNC4xMzcgNTE5LjI4NEg3MTQuMTYzWk01NjkuMTY1IDY4Ny44MjhMNTIxLjY5NyA2MTkuOTM0TDE0NC4wMTEgNzkuNjk0NEgzMDYuNjE1TDYxMS40MTIgNTE1LjY4NUw2NTguODggNTgzLjU3OUwxMDU1LjA4IDExNTAuM0g4OTIuNDc2TDU2OS4xNjUgNjg3Ljg1NFY2ODcuODI4WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==)}
+.soc-tt{--m:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyLjUzLjAyYzEuMzEtLjAyIDIuNjEtLjAxIDMuOTEtLjAyLjA4IDEuNTMuNjMgMy4wOSAxLjc1IDQuMTcgMS4xMiAxLjExIDIuNyAxLjYyIDQuMjQgMS43OXY0LjAzYy0xLjQ0LS4wNS0yLjg5LS4zNS00LjItLjk3LS41Ny0uMjYtMS4xLS41OS0xLjYyLS45My0uMDEgMi45Mi4wMSA1Ljg0LS4wMiA4Ljc1LS4wOCAxLjQtLjU0IDIuNzktMS4zNSAzLjk0LTEuMzEgMS45Mi0zLjU4IDMuMTctNS45MSAzLjIxLTEuNDMuMDgtMi44Ni0uMzEtNC4wOC0xLjAzLTIuMDItMS4xOS0zLjQ0LTMuMzctMy42NS01LjcxLS4wMi0uNS0uMDMtMS0uMDEtMS40OS4xOC0xLjkgMS4xMi0zLjcyIDIuNTgtNC45NiAxLjY2LTEuNDQgMy45OC0yLjEzIDYuMTUtMS43Mi4wMiAxLjQ4LS4wNCAyLjk2LS4wNCA0LjQ0LS45OS0uMzItMi4xNS0uMjMtMy4wMi4zNy0uNjMuNDEtMS4xMSAxLjA0LTEuMzYgMS43NS0uMjEuNTEtLjE1IDEuMDctLjE0IDEuNjEuMjQgMS42NCAxLjgyIDMuMDIgMy41IDIuODcgMS4xMi0uMDEgMi4xOS0uNjYgMi43Ny0xLjYxLjE5LS4zMy40LS42Ny40MS0xLjA2LjEtMS43OS4wNi0zLjU3LjA3LTUuMzYuMDEtNC4wMy0uMDEtOC4wNS4wMi0xMi4wN3oiLz48L3N2Zz4=)}
+</style>
+<script>
+/* status bar: beta notice, site-wide visit counters, light/dark switch */
+(function(){ var w=document.querySelector('.wrap'); if(!w || document.querySelector('.statusbar')) return;
+  var root=document.documentElement;
+  var cur=function(){ return root.getAttribute('data-tdko')==='dark'?'dark':'light'; };
+  var EYE='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>';
+  var USER='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>';
+  var DONE='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.5 9.5"/></svg>';
+  var SUN='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>';
+  var bar=document.createElement('div'); bar.className='statusbar'; bar.setAttribute('role','note');
+  bar.innerHTML='<span></span>'
+    +'<span class="sb-right"><span class="counts" hidden><span class="sb-count" title="Total visits since 10 Nov 2026">'+EYE+'<span id="tdko-visits"></span><span class="sr" style="position:absolute;left:-9999px"> visits</span></span>'
+    +'<span class="sb-count" title="Unique players since 10 Nov 2026">'+USER+'<span id="tdko-uniques"></span><span class="sr" style="position:absolute;left:-9999px"> unique players</span></span>'
+    +'<span class="sb-count" title="Puzzles completed since launch, 16 Nov 2026">'+DONE+'<span id="tdko-done"></span><span class="sr" style="position:absolute;left:-9999px"> puzzles completed</span></span></span>'
+    +'<button type="button" class="themebtn"></button></span>';
+  document.body.insertBefore(bar, w);
+  /* testers only ever see Test day; the Exit tag locks this device again (holding page before launch, the real game after) */
+  var TEST=!!window.TDKO_TEST;
+  if(TEST) try{ var right=bar.querySelector('.sb-right');
+    var tg=document.createElement('button'); tg.type='button'; tg.className='testertag on'; tg.textContent='Exit Training Ground'; tg.title='Leave the Training Ground on this device';
+    tg.addEventListener('click',function(){ try{localStorage.removeItem('tdko-tester')}catch(e){} location.replace('./'); });
+    right.insertBefore(tg, right.firstChild); bar.classList.add('is-tester'); }catch(e){}
+  if(TEST){ var mt=document.querySelector('header.top .meta'); if(mt && !document.getElementById('fixtures')) mt.textContent='Training Ground'; }
+  var btn=bar.querySelector('.themebtn');
+  var paint=function(){ var d=cur()==='dark'; btn.innerHTML=d?SUN:MOON; btn.setAttribute('aria-label',d?'Switch to light mode':'Switch to dark mode'); btn.title=btn.getAttribute('aria-label'); };
+  btn.addEventListener('click',function(){ var next=cur()==='dark'?'light':'dark'; root.setAttribute('data-tdko',next); try{localStorage.setItem('tdko-theme',next)}catch(e){} paint(); });
+  addEventListener('storage',function(e){ if(e.key==='tdko-theme'&&(e.newValue==='light'||e.newValue==='dark')){ root.setAttribute('data-tdko',e.newValue); paint(); } });
+  paint();
+  /* counters: a visit = opening the site in a new tab or session; a unique player = a new device (random id, nothing personal) */
+  var vid=null, visit=false;
+  try{ vid=localStorage.getItem('tdko-vid'); if(!vid){ vid=(crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(16).slice(2)); localStorage.setItem('tdko-vid',vid); } }catch(e){}
+  /* a visit = a new tab or session, or the first page of a new day in an open tab (so every device seen on a day has at least one visit that day) */
+  try{ var vd=(function(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')})(new Date());
+    if(sessionStorage.getItem('tdko-sess')!==vd){ sessionStorage.setItem('tdko-sess',vd); visit=true; } }catch(e){}
+  var fmt=function(n){ return Number(n).toLocaleString('en-GB'); };
+  /* 'Don't count my visits' (privacy page) sets tdko-nocount: the counters are still shown, but this device is never counted */
+  var NOC=false; try{ NOC=localStorage.getItem('tdko-nocount')==='1'; }catch(e){}
+  if(!TEST) try{ fetch('/api/hit',NOC?{}:{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({vid:vid,visit:visit,page:location.pathname.replace(/^.*\//,'').replace(/\.html$/,''),day:(function(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')})(new Date())})})
+    .then(function(r){ return r.ok?r.json():null; })
+    .then(function(d){ if(!d||typeof d.visits!=='number') return; document.getElementById('tdko-visits').textContent=fmt(d.visits); document.getElementById('tdko-uniques').textContent=fmt(d.uniques); document.getElementById('tdko-done').textContent=fmt(d.completed||0); bar.querySelector('.counts').hidden=false; })
+    .catch(function(){}); }catch(e){}
+  /* self-healing stats: once a day, re-send what this device's saved progress shows for the last 7 days; anything already counted is ignored,
+     anything lost (e.g. the server was down) is added. Days run from 16 Nov 2026 (No. 1). */
+  if(!TEST && !NOC && vid) try{
+    var td=(function(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');})(new Date());
+    if(localStorage.getItem('tdko-backfill')!==td){
+      var from=new Date(); from.setDate(from.getDate()-7);
+      var fk=from.getFullYear()+'-'+String(from.getMonth()+1).padStart(2,'0')+'-'+String(from.getDate()).padStart(2,'0');
+      var items=[], days={};
+      for(var i=0;i<localStorage.length;i++){ var k=localStorage.key(i), m=/^tdko:(20\d\d-\d\d-\d\d)#\d+$/.exec(k||''); if(!m) continue;
+        var day=m[1]; if(day<fk||day<'2026-11-16'||day>td) continue; var all={}; try{ all=JSON.parse(localStorage.getItem(k)||'{}'); }catch(e){}
+        for(var g in all){ var s=all[g]; if(!s) continue;
+          if(s.status==='open'||s.status==='done'){ items.push({day:day,game:g,event:'start'}); days[day]=1; }
+          if(s.status==='done') items.push({day:day,game:g,event:'finish',gaveUp:!!s.gaveUp}); }
+        if(localStorage.getItem('tdko-all8:'+day)) items.push({day:day,game:'all',event:'all8'}); }
+      var dl=Object.keys(days);
+      if(!items.length && !dl.length) localStorage.setItem('tdko-backfill',td);
+      else fetch('/api/backfill',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({vid:vid,items:items.slice(0,200),days:dl})})
+        .then(function(r){ if(r.ok) localStorage.setItem('tdko-backfill',td); }).catch(function(){});
+    } }catch(e){}
+})();
+/* long game names (Who's That Baller) shrink until the name and the date share one line */
+(function(){ var h=document.querySelector('header.top'); if(!h||!h.querySelector('.meta')) return; var t=h.firstElementChild;
+  var fit=function(){ t.style.fontSize=''; var f=parseFloat(getComputedStyle(t).fontSize), min=t.classList.contains('mark')?13:8;
+    while(h.scrollWidth>h.clientWidth+1 && f>min){ f-=0.5; t.style.fontSize=f+'px'; } };
+  fit(); addEventListener('resize',fit); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit); })();
+(function(){ var w=document.querySelector('.wrap'); if(!w || w.querySelector('.legal')) return;
+  var s=document.createElement('section'); s.className='support';
+  s.innerHTML='<p>Like what you see? Help support our next big signings: accounts, progress that follows you across devices, access to the archives, all your stats, leaderboards, private leagues with your friends and more. Every cuppa counts.</p><a class="kofi" href="https://ko-fi.com/tdko" target="_blank" rel="noopener">☕ Support us on Ko-fi</a>';
+  w.appendChild(s);
+  var f=document.createElement('footer'); f.className='legal';
+  f.innerHTML='<div class="socials"><a class="soc soc-fb" href="https://www.facebook.com/tdkoapp" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"></a><a class="soc soc-ig" href="https://www.instagram.com/tdko.app/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"></a><a class="soc soc-x" href="https://x.com/tdkoapp" target="_blank" rel="noopener" aria-label="X" title="X"></a><a class="soc soc-tt" href="https://www.tiktok.com/@tdko.app" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"></a></div><nav class="flinks" aria-label="Site links"><a href="contact.html">Contact us</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a id="tdko-genrep" href="mailto:hello@tdko.app" target="_blank" rel="noopener">Report a problem</a><a href="training-ground.html">Training Ground</a><a href="performance.html">Performance</a></nav><p>© 2026 The Daily Kick Off. All rights reserved.<br>Not affiliated with any club, league or player.</p>';
+  try{ var gr=f.querySelector('#tdko-genrep'), pf=location.pathname.replace(/^.*\//,''), pg=(document.title||'The Daily Kick Off')+(pf&&pf!=='index.html'?' ('+pf+')':''); gr.href='mailto:hello@tdko.app?subject='+encodeURIComponent('Problem on tdko.app: '+pg)+'&body='+encodeURIComponent('Page: '+pg+'\n\nWhat went wrong?\n\n'); }catch(e){}
+  w.appendChild(f); })();
+</script>
+<script>
+/* Share block: lifted out of the bottom 'Challenge a friend' card and placed straight under the score verdict, so it is seen
+   before people screenshot or move on. The card image is no longer shown (it is still drawn and attached when sharing).
+   Share funnel counted per device per day and game: 'share' (tapped the button), 'shared' (sent: share sheet completed,
+   a send-with link or copy), 'invite' (arrived from a friend's challenge link). */
+(function(){ var T='Challenge a friend to beat it, or post it to your story and tag The Daily Kick Off for a shot at our Hall of Fame.';
+  var st=document.createElement('style'); st.textContent=
+   '.share.share-top{margin:0;padding:12px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:6px}'+
+   '.share.share-top h3,.share.share-top img{display:none}'+
+   '.share.share-top .btn{order:-1;margin:0 0 2px;width:100%;padding-top:12px;padding-bottom:12px}'+
+   '.share.share-top p{display:none}.share.share-top p.storyline{display:block;margin:0;font-size:11.5px;line-height:1.35;color:var(--muted)}'+
+   '.share-top .replay-mini{order:-2}.replay-mini{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;background:transparent;color:var(--ink);border:1.5px solid var(--ink);font-family:var(--f-mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;line-height:1}'+
+   '.replay-mini svg{width:14px;height:14px}'+
+   '.replaying .share-top,.tdko-test .share-top{display:none !important}';
+  document.head.appendChild(st);
+  var TEST=!!window.TDKO_TEST, game=(location.pathname.replace(/^.*\//,'').replace(/\.html$/,'')||'');
+  var day=function(){ var d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); };
+  var post=function(ev){ if(TEST||!game) return; var vid=null,noc=false; try{ vid=localStorage.getItem('tdko-vid'); noc=localStorage.getItem('tdko-nocount')==='1'; }catch(e){}
+    if(!vid||noc) return; try{ fetch('/api/play',{method:'POST',keepalive:true,headers:{'content-type':'application/json'},body:JSON.stringify({vid:vid,day:day(),game:game,event:ev})}).catch(function(){}); }catch(e){} };
+  if(/^#c\d+-\d{1,3}/.test(location.hash)) post('invite');
+  try{ if(navigator.share){ var o=navigator.share.bind(navigator); Object.defineProperty(navigator,'share',{configurable:true,value:function(d){ return o(d).then(function(r){ post('shared'); return r; }); }}); } }catch(e){}
+  document.addEventListener('click',function(e){ var t=e.target.closest&&e.target.closest('.share'); if(!t) return;
+    if(e.target.closest('.tgt,#copyInvite')) post('shared'); else if(e.target.closest('.btn')) post('share'); },true);
+  var lift=function(){ document.querySelectorAll('.sharecard .share').forEach(function(sh){
+      var p=sh.querySelector('p'); if(p&&!sh.querySelector('.storyline')){ var n=document.createElement('p'); n.className='storyline'; n.textContent=T; p.insertAdjacentElement('afterend',n); }
+      var b=sh.querySelector('.btn'); if(b&&!b.dataset.lifted){ b.dataset.lifted='1'; b.textContent='Share my score'; }
+      var v=document.querySelector('.verdict'), card=sh.closest('.sharecard');
+      if(v&&card){ sh.classList.add('share-top'); v.insertAdjacentElement('afterend',sh); card.remove();
+        /* tighter result card so the score, share, replay and stats fit on the first screen */
+        var bx=v.parentElement, cs=getComputedStyle(bx); if(parseFloat(cs.rowGap)>12) bx.style.rowGap='12px';
+        if(parseFloat(cs.paddingTop)>16 && !bx.style.paddingTop) bx.style.paddingTop='16px';
+        v.style.lineHeight='1.1';
+        /* results always sit below Share: whatever came before the score (answer reveal, board, route, line-up, list) moves under it.
+           Shirt Swap's Easy/Medium/Hard tabs stay at the top. */
+        var crd=bx.parentElement;
+        if(crd && crd.matches('section.card') && !crd.dataset.ro){ crd.dataset.ro='1'; var pre=[], moved=false;
+          for(var el=crd.firstElementChild; el && el!==bx; el=el.nextElementSibling) if(!el.matches('.modes')) pre.push(el);
+          var at=bx; pre.forEach(function(el){ at.insertAdjacentElement('afterend',el); at=el; moved=true; });
+          [].slice.call(bx.children).filter(function(k){ return k.matches('.reveal'); }).reverse().forEach(function(r){ sh.insertAdjacentElement('afterend',r); moved=true; });
+          if(moved && parseFloat(getComputedStyle(bx).paddingTop)<16) bx.style.paddingTop='16px'; } } });
+    /* Replay: a small button in the score row (the white space right of the score) instead of a card further down */
+    document.querySelectorAll('.replaybox').forEach(function(rb){ var ob=rb.querySelector('[data-replay]'), sc=document.querySelector('.verdict')&&document.querySelector('.score');
+      if(!ob||!sc||document.querySelector('.replay-mini')) return;
+      var mb=document.createElement('button'); mb.type='button'; mb.className='replay-mini'; mb.setAttribute('data-replay','');
+      mb.setAttribute('aria-label',ob.textContent.trim()+': play today\u2019s puzzle again. Your first score stays on the board.');
+      mb.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>'+(/again/i.test(ob.textContent)?'Replay again':'Replay today\u2019s puzzle');
+      /* thin full-width button straight above Share my score, the same on every game */
+      var top=document.querySelector('.share-top'), v=document.querySelector('.verdict');
+      if(top && !document.querySelector('.replaying')) top.insertBefore(mb, top.firstChild); else v.insertAdjacentElement('afterend',mb);
+      rb.remove(); }); };
+  new MutationObserver(lift).observe(document.body,{childList:true,subtree:true}); lift();
+})();
+</script>
+<!--/tdko-chrome-->
+</body></html>

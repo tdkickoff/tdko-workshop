@@ -1,0 +1,16 @@
+Q=[
+("Which French club beat AC Milan 1–0 in the 1993 Champions League final?",["Marseille","Paris Saint-Germain","Monaco","Lyon"],'m','ucl'),
+("Who beat AC Milan 1–0 in the 1995 Champions League final?",["Ajax","Juventus","Bayern Munich","Barcelona"],'m','ucl'),
+("Who did Real Madrid beat in the 2024 Champions League final at Wembley?",["Borussia Dortmund","Bayern Munich","Inter Milan","Manchester City"],'e','ucl'),
+("Which club won the 2020 Champions League final in Lisbon?",["Bayern Munich","Paris Saint-Germain","RB Leipzig","Lyon"],'e','ucl'),
+("Which club lost the Champions League finals of 2000 and 2001?",["Valencia","Bayer Leverkusen","Juventus","Monaco"],'m','ucl'),
+("Which Scottish stadium hosted the 2002 Champions League final?",["Hampden Park","Celtic Park","Ibrox","Murrayfield"],'m','ucl'),
+("Who did Barcelona beat in the 2015 Champions League final in Berlin?",["Juventus","Bayern Munich","Manchester United","Atlético Madrid"],'e','ucl'),
+("Which Dutchman won the 1992 Ballon d'Or?",["Marco van Basten","Ruud Gullit","Frank Rijkaard","Dennis Bergkamp"],'m','bdo'),
+("Who won the 1999 Ballon d'Or while at Barcelona?",["Rivaldo","Patrick Kluivert","Luís Figo","Pep Guardiola"],'m','bdo'),
+("Which Portuguese player won the 2000 Ballon d'Or?",["Luís Figo","Rui Costa","Cristiano Ronaldo","Deco"],'m','bdo'),
+("Which German won the 1996 Ballon d'Or while at Borussia Dortmund?",["Matthias Sammer","Jürgen Klinsmann","Andreas Möller","Karl-Heinz Riedle"],'m','bdo'),
+("Which Coventry striker shared the 1997–98 Golden Boot?",["Dion Dublin","Darren Huckerby","Noel Whelan","Viorel Moldovan"],'m','gb'),
+("Which Spurs striker won the Golden Boot in both 2015–16 and 2016–17?",["Harry Kane","Son Heung-min","Dele Alli","Christian Eriksen"],'e','gb'),
+("Which Chelsea player won PFA Player of the Year in 2014–15?",["Eden Hazard","Diego Costa","Cesc Fàbregas","John Terry"],'e','pfa'),
+]

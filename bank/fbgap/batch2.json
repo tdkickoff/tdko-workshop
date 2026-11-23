@@ -1,0 +1,2627 @@
+[
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 1994,
+  "q": "Who won the Premier League in 1993–94?",
+  "a": "Manchester United",
+  "wrong": [
+   "Blackburn Rovers",
+   "Arsenal",
+   "Aston Villa"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Blackburn Rovers second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 1996,
+  "q": "Who won the Premier League in 1995–96?",
+  "a": "Manchester United",
+  "wrong": [
+   "Newcastle United",
+   "Arsenal",
+   "Aston Villa"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Newcastle United second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 1997,
+  "q": "Who won the Premier League in 1996–97?",
+  "a": "Manchester United",
+  "wrong": [
+   "Newcastle United",
+   "Aston Villa",
+   "Blackburn Rovers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Newcastle United second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 1998,
+  "q": "Who won the Premier League in 1997–98?",
+  "a": "Arsenal",
+  "wrong": [
+   "Manchester United",
+   "Chelsea",
+   "Aston Villa"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Arsenal champions, Manchester United second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 1999,
+  "q": "Who won the Premier League in 1998–99?",
+  "a": "Manchester United",
+  "wrong": [
+   "Arsenal",
+   "Chelsea",
+   "Newcastle United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Arsenal second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2000,
+  "q": "Who won the Premier League in 1999–00?",
+  "a": "Manchester United",
+  "wrong": [
+   "Arsenal",
+   "Blackburn Rovers",
+   "Newcastle United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Arsenal second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2001,
+  "q": "Who won the Premier League in 2000–01?",
+  "a": "Manchester United",
+  "wrong": [
+   "Arsenal",
+   "Liverpool",
+   "Aston Villa"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Arsenal second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2002,
+  "q": "Who won the Premier League in 2001–02?",
+  "a": "Arsenal",
+  "wrong": [
+   "Liverpool",
+   "Chelsea",
+   "Aston Villa"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Arsenal champions, Liverpool second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2003,
+  "q": "Who won the Premier League in 2002–03?",
+  "a": "Manchester United",
+  "wrong": [
+   "Arsenal",
+   "Manchester City",
+   "Chelsea"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Arsenal second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2006,
+  "q": "Who won the Premier League in 2005–06?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "Liverpool",
+   "Newcastle United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Chelsea champions, Manchester United second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2007,
+  "q": "Who won the Premier League in 2006–07?",
+  "a": "Manchester United",
+  "wrong": [
+   "Chelsea",
+   "Newcastle United",
+   "Manchester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Chelsea second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2008,
+  "q": "Who won the Premier League in 2007–08?",
+  "a": "Manchester United",
+  "wrong": [
+   "Chelsea",
+   "Liverpool",
+   "Arsenal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Chelsea second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2009,
+  "q": "Who won the Premier League in 2008–09?",
+  "a": "Manchester United",
+  "wrong": [
+   "Liverpool",
+   "Arsenal",
+   "Leicester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Liverpool second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2010,
+  "q": "Who won the Premier League in 2009–10?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "Arsenal",
+   "Tottenham Hotspur"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Chelsea champions, Manchester United second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2011,
+  "q": "Who won the Premier League in 2010–11?",
+  "a": "Manchester United",
+  "wrong": [
+   "Chelsea",
+   "Manchester City",
+   "Liverpool"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Chelsea second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2013,
+  "q": "Who won the Premier League in 2012–13?",
+  "a": "Manchester United",
+  "wrong": [
+   "Manchester City",
+   "Liverpool",
+   "Tottenham Hotspur"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester United champions, Manchester City second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2014,
+  "q": "Who won the Premier League in 2013–14?",
+  "a": "Manchester City",
+  "wrong": [
+   "Liverpool",
+   "Arsenal",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester City champions, Liverpool second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2015,
+  "q": "Who won the Premier League in 2014–15?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester City",
+   "Leicester City",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Chelsea champions, Manchester City second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2018,
+  "q": "Who won the Premier League in 2017–18?",
+  "a": "Manchester City",
+  "wrong": [
+   "Manchester United",
+   "Liverpool",
+   "Tottenham Hotspur"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester City champions, Manchester United second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2019,
+  "q": "Who won the Premier League in 2018–19?",
+  "a": "Manchester City",
+  "wrong": [
+   "Liverpool",
+   "Manchester United",
+   "Leicester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester City champions, Liverpool second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2020,
+  "q": "Who won the Premier League in 2019–20?",
+  "a": "Liverpool",
+  "wrong": [
+   "Manchester City",
+   "Tottenham Hotspur",
+   "Arsenal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Liverpool champions, Manchester City second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2022,
+  "q": "Who won the Premier League in 2021–22?",
+  "a": "Manchester City",
+  "wrong": [
+   "Liverpool",
+   "Leicester City",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester City champions, Liverpool second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2023,
+  "q": "Who won the Premier League in 2022–23?",
+  "a": "Manchester City",
+  "wrong": [
+   "Arsenal",
+   "Chelsea",
+   "Leicester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester City champions, Arsenal second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2024,
+  "q": "Who won the Premier League in 2023–24?",
+  "a": "Manchester City",
+  "wrong": [
+   "Arsenal",
+   "Liverpool",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Manchester City champions, Arsenal second"
+ },
+ {
+  "comp": "Premier League",
+  "kind": "winner",
+  "year": 2026,
+  "q": "Who won the Premier League in 2025–26?",
+  "a": "Arsenal",
+  "wrong": [
+   "Manchester City",
+   "Chelsea",
+   "Leicester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_English_football_champions",
+  "note": "Arsenal champions, Manchester City second"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 1993,
+  "q": "Who won the Premier League Golden Boot in 1992–93?",
+  "a": "Teddy Sheringham",
+  "wrong": [
+   "Thierry Henry",
+   "Andy Cole",
+   "Alan Shearer"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Teddy Sheringham (Tottenham Hotspur), 22 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 1996,
+  "q": "Who won the Premier League Golden Boot in 1995–96?",
+  "a": "Alan Shearer",
+  "wrong": [
+   "Teddy Sheringham",
+   "Kevin Phillips",
+   "Thierry Henry"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Alan Shearer (Blackburn Rovers), 31 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 1997,
+  "q": "Who won the Premier League Golden Boot in 1996–97?",
+  "a": "Alan Shearer",
+  "wrong": [
+   "Andy Cole",
+   "Thierry Henry",
+   "Teddy Sheringham"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Alan Shearer (Newcastle United), 25 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2000,
+  "q": "Who won the Premier League Golden Boot in 1999–00?",
+  "a": "Kevin Phillips",
+  "wrong": [
+   "Andy Cole",
+   "Ruud van Nistelrooy",
+   "Thierry Henry"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Kevin Phillips (Sunderland), 30 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2002,
+  "q": "Who won the Premier League Golden Boot in 2001–02?",
+  "a": "Thierry Henry",
+  "wrong": [
+   "Alan Shearer",
+   "Kevin Phillips",
+   "Jimmy Floyd Hasselbaink"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Thierry Henry (Arsenal), 24 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2004,
+  "q": "Who won the Premier League Golden Boot in 2003–04?",
+  "a": "Thierry Henry",
+  "wrong": [
+   "Kevin Phillips",
+   "Cristiano Ronaldo",
+   "Ruud van Nistelrooy"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Thierry Henry (Arsenal), 30 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2005,
+  "q": "Who won the Premier League Golden Boot in 2004–05?",
+  "a": "Thierry Henry",
+  "wrong": [
+   "Nicolas Anelka",
+   "Didier Drogba",
+   "Ruud van Nistelrooy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Thierry Henry (Arsenal), 25 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2006,
+  "q": "Who won the Premier League Golden Boot in 2005–06?",
+  "a": "Thierry Henry",
+  "wrong": [
+   "Jimmy Floyd Hasselbaink",
+   "Cristiano Ronaldo",
+   "Ruud van Nistelrooy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Thierry Henry (Arsenal), 27 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2007,
+  "q": "Who won the Premier League Golden Boot in 2006–07?",
+  "a": "Didier Drogba",
+  "wrong": [
+   "Nicolas Anelka",
+   "Robin van Persie",
+   "Cristiano Ronaldo"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Didier Drogba (Chelsea), 20 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2009,
+  "q": "Who won the Premier League Golden Boot in 2008–09?",
+  "a": "Nicolas Anelka",
+  "wrong": [
+   "Robin van Persie",
+   "Luis Suárez",
+   "Didier Drogba"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Nicolas Anelka (Chelsea), 19 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2013,
+  "q": "Who won the Premier League Golden Boot in 2012–13?",
+  "a": "Robin van Persie",
+  "wrong": [
+   "Nicolas Anelka",
+   "Sergio Agüero",
+   "Harry Kane"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Robin van Persie (Manchester United), 26 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2017,
+  "q": "Who won the Premier League Golden Boot in 2016–17?",
+  "a": "Harry Kane",
+  "wrong": [
+   "Luis Suárez",
+   "Jamie Vardy",
+   "Robin van Persie"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Harry Kane (Tottenham Hotspur), 29 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2018,
+  "q": "Who won the Premier League Golden Boot in 2017–18?",
+  "a": "Mohamed Salah",
+  "wrong": [
+   "Sergio Agüero",
+   "Erling Haaland",
+   "Jamie Vardy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Mohamed Salah (Liverpool), 32 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2021,
+  "q": "Who won the Premier League Golden Boot in 2020–21?",
+  "a": "Harry Kane",
+  "wrong": [
+   "Erling Haaland",
+   "Luis Suárez",
+   "Jamie Vardy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Harry Kane (Tottenham Hotspur), 23 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2023,
+  "q": "Who won the Premier League Golden Boot in 2022–23?",
+  "a": "Erling Haaland",
+  "wrong": [
+   "Jamie Vardy",
+   "Sergio Agüero",
+   "Mohamed Salah"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Erling Haaland (Manchester City), 36 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2024,
+  "q": "Who won the Premier League Golden Boot in 2023–24?",
+  "a": "Erling Haaland",
+  "wrong": [
+   "Mohamed Salah",
+   "Jamie Vardy",
+   "Harry Kane"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Erling Haaland (Manchester City), 27 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2025,
+  "q": "Who won the Premier League Golden Boot in 2024–25?",
+  "a": "Mohamed Salah",
+  "wrong": [
+   "Jamie Vardy",
+   "Harry Kane",
+   "Luis Suárez"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Mohamed Salah (Liverpool), 29 goals"
+ },
+ {
+  "comp": "PL Golden Boot",
+  "kind": "scorer",
+  "year": 2026,
+  "q": "Who won the Premier League Golden Boot in 2025–26?",
+  "a": "Erling Haaland",
+  "wrong": [
+   "Sergio Agüero",
+   "Harry Kane",
+   "Jamie Vardy"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/Premier_League_Golden_Boot",
+  "note": "Erling Haaland (Manchester City), 27 goals"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1930,
+  "q": "Which country won the 1930 World Cup?",
+  "a": "Uruguay",
+  "wrong": [
+   "Argentina",
+   "Italy",
+   "West Germany"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Uruguay beat Argentina in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1930,
+  "q": "Who did Uruguay beat in the 1930 World Cup final?",
+  "a": "Argentina",
+  "wrong": [
+   "Italy",
+   "West Germany",
+   "Hungary"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Uruguay beat Argentina in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1930,
+  "q": "Which country hosted the 1930 World Cup?",
+  "a": "Uruguay",
+  "wrong": [
+   "South Africa",
+   "Sweden",
+   "Chile"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Uruguay"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1934,
+  "q": "Which country won the 1934 World Cup?",
+  "a": "Italy",
+  "wrong": [
+   "Czechoslovakia",
+   "West Germany",
+   "Uruguay"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Italy beat Czechoslovakia in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1934,
+  "q": "Who did Italy beat in the 1934 World Cup final?",
+  "a": "Czechoslovakia",
+  "wrong": [
+   "West Germany",
+   "Uruguay",
+   "Hungary"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Italy beat Czechoslovakia in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1934,
+  "q": "Which country hosted the 1934 World Cup?",
+  "a": "Italy",
+  "wrong": [
+   "West Germany",
+   "England",
+   "Germany"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Italy"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1938,
+  "q": "Which country won the 1938 World Cup?",
+  "a": "Italy",
+  "wrong": [
+   "Hungary",
+   "Argentina",
+   "Brazil"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Italy beat Hungary in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1938,
+  "q": "Who did Italy beat in the 1938 World Cup final?",
+  "a": "Hungary",
+  "wrong": [
+   "Argentina",
+   "Brazil",
+   "Czechoslovakia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Italy beat Hungary in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1938,
+  "q": "Which country hosted the 1938 World Cup?",
+  "a": "France",
+  "wrong": [
+   "Switzerland",
+   "Brazil",
+   "Argentina"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by France"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1950,
+  "q": "Which country won the 1950 World Cup?",
+  "a": "Uruguay",
+  "wrong": [
+   "Brazil",
+   "West Germany",
+   "Sweden"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Uruguay beat Brazil in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1950,
+  "q": "Who did Uruguay beat in the 1950 World Cup final?",
+  "a": "Brazil",
+  "wrong": [
+   "West Germany",
+   "Sweden",
+   "Czechoslovakia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Uruguay beat Brazil in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1950,
+  "q": "Which country hosted the 1950 World Cup?",
+  "a": "Brazil",
+  "wrong": [
+   "Argentina",
+   "USA",
+   "Sweden"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Brazil"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1954,
+  "q": "Which country won the 1954 World Cup?",
+  "a": "West Germany",
+  "wrong": [
+   "Hungary",
+   "Czechoslovakia",
+   "Uruguay"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "West Germany beat Hungary in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1954,
+  "q": "Which country hosted the 1954 World Cup?",
+  "a": "Switzerland",
+  "wrong": [
+   "Uruguay",
+   "England",
+   "Chile"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Switzerland"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1958,
+  "q": "Which country won the 1958 World Cup?",
+  "a": "Brazil",
+  "wrong": [
+   "Sweden",
+   "England",
+   "Hungary"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Brazil beat Sweden in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1958,
+  "q": "Who did Brazil beat in the 1958 World Cup final?",
+  "a": "Sweden",
+  "wrong": [
+   "England",
+   "Hungary",
+   "Uruguay"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Brazil beat Sweden in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1958,
+  "q": "Which country hosted the 1958 World Cup?",
+  "a": "Sweden",
+  "wrong": [
+   "Spain",
+   "West Germany",
+   "England"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Sweden"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1962,
+  "q": "Which country won the 1962 World Cup?",
+  "a": "Brazil",
+  "wrong": [
+   "Czechoslovakia",
+   "Hungary",
+   "England"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Brazil beat Czechoslovakia in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1962,
+  "q": "Who did Brazil beat in the 1962 World Cup final?",
+  "a": "Czechoslovakia",
+  "wrong": [
+   "Hungary",
+   "England",
+   "West Germany"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Brazil beat Czechoslovakia in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1962,
+  "q": "Which country hosted the 1962 World Cup?",
+  "a": "Chile",
+  "wrong": [
+   "Switzerland",
+   "Germany",
+   "Russia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Chile"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1966,
+  "q": "Which country won the 1966 World Cup?",
+  "a": "England",
+  "wrong": [
+   "West Germany",
+   "Brazil",
+   "Czechoslovakia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "England beat West Germany in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1966,
+  "q": "Which country hosted the 1966 World Cup?",
+  "a": "England",
+  "wrong": [
+   "West Germany",
+   "Uruguay",
+   "South Africa"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by England"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1970,
+  "q": "Which country won the 1970 World Cup?",
+  "a": "Brazil",
+  "wrong": [
+   "Italy",
+   "Czechoslovakia",
+   "Argentina"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Brazil beat Italy in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1970,
+  "q": "Who did Brazil beat in the 1970 World Cup final?",
+  "a": "Italy",
+  "wrong": [
+   "Czechoslovakia",
+   "Argentina",
+   "West Germany"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Brazil beat Italy in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1974,
+  "q": "Which country won the 1974 World Cup?",
+  "a": "West Germany",
+  "wrong": [
+   "Netherlands",
+   "Argentina",
+   "Brazil"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "West Germany beat Netherlands in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1974,
+  "q": "Who did West Germany beat in the 1974 World Cup final?",
+  "a": "Netherlands",
+  "wrong": [
+   "Argentina",
+   "Brazil",
+   "Italy"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "West Germany beat Netherlands in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1974,
+  "q": "Which country hosted the 1974 World Cup?",
+  "a": "West Germany",
+  "wrong": [
+   "Spain",
+   "South Africa",
+   "Brazil"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by West Germany"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1978,
+  "q": "Which country won the 1978 World Cup?",
+  "a": "Argentina",
+  "wrong": [
+   "Netherlands",
+   "Brazil",
+   "Italy"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Argentina beat Netherlands in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1978,
+  "q": "Who did Argentina beat in the 1978 World Cup final?",
+  "a": "Netherlands",
+  "wrong": [
+   "Brazil",
+   "Italy",
+   "Czechoslovakia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Argentina beat Netherlands in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1978,
+  "q": "Which country hosted the 1978 World Cup?",
+  "a": "Argentina",
+  "wrong": [
+   "England",
+   "Sweden",
+   "Switzerland"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Argentina"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1982,
+  "q": "Which country won the 1982 World Cup?",
+  "a": "Italy",
+  "wrong": [
+   "West Germany",
+   "France",
+   "Brazil"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Italy beat West Germany in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1982,
+  "q": "Which country hosted the 1982 World Cup?",
+  "a": "Spain",
+  "wrong": [
+   "Brazil",
+   "West Germany",
+   "Switzerland"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Spain"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "winner",
+  "year": 1986,
+  "q": "Which country won the 1986 World Cup?",
+  "a": "Argentina",
+  "wrong": [
+   "West Germany",
+   "Germany",
+   "Brazil"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Argentina beat West Germany in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1986,
+  "q": "Which country hosted the 1986 World Cup?",
+  "a": "Mexico",
+  "wrong": [
+   "Spain",
+   "France",
+   "Uruguay"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Mexico"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1990,
+  "q": "Who did West Germany beat in the 1990 World Cup final?",
+  "a": "Argentina",
+  "wrong": [
+   "Brazil",
+   "Germany",
+   "Italy"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "West Germany beat Argentina in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "venue",
+  "year": 1990,
+  "q": "Which country hosted the 1990 World Cup?",
+  "a": "Italy",
+  "wrong": [
+   "Brazil",
+   "Argentina",
+   "Mexico"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Hosted by Italy"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1994,
+  "q": "Who did Brazil beat in the 1994 World Cup final?",
+  "a": "Italy",
+  "wrong": [
+   "Germany",
+   "France",
+   "Argentina"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Brazil beat Italy in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 1998,
+  "q": "Who did France beat in the 1998 World Cup final?",
+  "a": "Brazil",
+  "wrong": [
+   "Argentina",
+   "Spain",
+   "West Germany"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "France beat Brazil in the final"
+ },
+ {
+  "comp": "World Cup",
+  "kind": "runner-up",
+  "year": 2006,
+  "q": "Who did Italy beat in the 2006 World Cup final?",
+  "a": "France",
+  "wrong": [
+   "Brazil",
+   "Spain",
+   "Argentina"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+  "note": "Italy beat France in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1960,
+  "q": "Who did Soviet Union beat in the 1960 Euro final?",
+  "a": "Yugoslavia",
+  "wrong": [
+   "Czechoslovakia",
+   "West Germany",
+   "Belgium"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Soviet Union beat Yugoslavia in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1960,
+  "q": "Which country hosted the 1960 European Championship?",
+  "a": "France",
+  "wrong": [
+   "Sweden",
+   "Belgium",
+   "Germany"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by France"
+ },
+ {
+  "comp": "Euros",
+  "kind": "winner",
+  "year": 1964,
+  "q": "Which country won the 1964 European Championship?",
+  "a": "Spain",
+  "wrong": [
+   "Soviet Union",
+   "Czechoslovakia",
+   "Belgium"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Spain beat Soviet Union in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1964,
+  "q": "Who did Spain beat in the 1964 Euro final?",
+  "a": "Soviet Union",
+  "wrong": [
+   "Czechoslovakia",
+   "Belgium",
+   "Italy"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Spain beat Soviet Union in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1964,
+  "q": "Which country hosted the 1964 European Championship?",
+  "a": "Spain",
+  "wrong": [
+   "England",
+   "France",
+   "Sweden"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by Spain"
+ },
+ {
+  "comp": "Euros",
+  "kind": "winner",
+  "year": 1968,
+  "q": "Which country won the 1968 European Championship?",
+  "a": "Italy",
+  "wrong": [
+   "Yugoslavia",
+   "Spain",
+   "West Germany"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Italy beat Yugoslavia in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1968,
+  "q": "Who did Italy beat in the 1968 Euro final?",
+  "a": "Yugoslavia",
+  "wrong": [
+   "Spain",
+   "West Germany",
+   "Belgium"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Italy beat Yugoslavia in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1968,
+  "q": "Which country hosted the 1968 European Championship?",
+  "a": "Italy",
+  "wrong": [
+   "Yugoslavia",
+   "West Germany",
+   "France"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by Italy"
+ },
+ {
+  "comp": "Euros",
+  "kind": "winner",
+  "year": 1972,
+  "q": "Which country won the 1972 European Championship?",
+  "a": "West Germany",
+  "wrong": [
+   "Soviet Union",
+   "Italy",
+   "Spain"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "West Germany beat Soviet Union in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1972,
+  "q": "Who did West Germany beat in the 1972 Euro final?",
+  "a": "Soviet Union",
+  "wrong": [
+   "Italy",
+   "Spain",
+   "Czechoslovakia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "West Germany beat Soviet Union in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1972,
+  "q": "Which country hosted the 1972 European Championship?",
+  "a": "Belgium",
+  "wrong": [
+   "Spain",
+   "France",
+   "Germany"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by Belgium"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1976,
+  "q": "Who did Czechoslovakia beat in the 1976 Euro final?",
+  "a": "West Germany",
+  "wrong": [
+   "Belgium",
+   "Soviet Union",
+   "Italy"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Czechoslovakia beat West Germany in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1976,
+  "q": "Which country hosted the 1976 European Championship?",
+  "a": "Yugoslavia",
+  "wrong": [
+   "Sweden",
+   "Belgium",
+   "Spain"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by Yugoslavia"
+ },
+ {
+  "comp": "Euros",
+  "kind": "winner",
+  "year": 1980,
+  "q": "Which country won the 1980 European Championship?",
+  "a": "West Germany",
+  "wrong": [
+   "Belgium",
+   "Netherlands",
+   "France"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "West Germany beat Belgium in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1980,
+  "q": "Who did West Germany beat in the 1980 Euro final?",
+  "a": "Belgium",
+  "wrong": [
+   "Netherlands",
+   "France",
+   "Soviet Union"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "West Germany beat Belgium in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1980,
+  "q": "Which country hosted the 1980 European Championship?",
+  "a": "Italy",
+  "wrong": [
+   "Yugoslavia",
+   "Sweden",
+   "Belgium"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by Italy"
+ },
+ {
+  "comp": "Euros",
+  "kind": "winner",
+  "year": 1984,
+  "q": "Which country won the 1984 European Championship?",
+  "a": "France",
+  "wrong": [
+   "Spain",
+   "West Germany",
+   "Netherlands"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "France beat Spain in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1984,
+  "q": "Who did France beat in the 1984 Euro final?",
+  "a": "Spain",
+  "wrong": [
+   "West Germany",
+   "Netherlands",
+   "Soviet Union"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "France beat Spain in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1984,
+  "q": "Which country hosted the 1984 European Championship?",
+  "a": "France",
+  "wrong": [
+   "England",
+   "West Germany",
+   "Yugoslavia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by France"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1988,
+  "q": "Who did Netherlands beat in the 1988 Euro final?",
+  "a": "Soviet Union",
+  "wrong": [
+   "Spain",
+   "West Germany",
+   "Germany"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Netherlands beat Soviet Union in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1988,
+  "q": "Which country hosted the 1988 European Championship?",
+  "a": "West Germany",
+  "wrong": [
+   "France",
+   "Sweden",
+   "Yugoslavia"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by West Germany"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1992,
+  "q": "Who did Denmark beat in the 1992 Euro final?",
+  "a": "Germany",
+  "wrong": [
+   "Soviet Union",
+   "France",
+   "Netherlands"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Denmark beat Germany in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 1992,
+  "q": "Which country hosted the 1992 European Championship?",
+  "a": "Sweden",
+  "wrong": [
+   "Spain",
+   "Belgium",
+   "England"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by Sweden"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 1996,
+  "q": "Who did Germany beat in the 1996 Euro final?",
+  "a": "Czech Republic",
+  "wrong": [
+   "Italy",
+   "Soviet Union",
+   "Denmark"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Germany beat Czech Republic in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 2000,
+  "q": "Who did France beat in the 2000 Euro final?",
+  "a": "Italy",
+  "wrong": [
+   "Germany",
+   "Portugal",
+   "Czech Republic"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "France beat Italy in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 2004,
+  "q": "Who did Greece beat in the 2004 Euro final?",
+  "a": "Portugal",
+  "wrong": [
+   "Germany",
+   "Spain",
+   "Czech Republic"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Greece beat Portugal in the final"
+ },
+ {
+  "comp": "Euros",
+  "kind": "venue",
+  "year": 2004,
+  "q": "Which country hosted Euro 2004?",
+  "a": "Portugal",
+  "wrong": [
+   "England",
+   "West Germany",
+   "Sweden"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Hosted by Portugal"
+ },
+ {
+  "comp": "Euros",
+  "kind": "runner-up",
+  "year": 2008,
+  "q": "Who did Spain beat in the 2008 Euro final?",
+  "a": "Germany",
+  "wrong": [
+   "Czech Republic",
+   "Portugal",
+   "Greece"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_European_Championship_finals",
+  "note": "Spain beat Germany in the final"
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at Camp Nou?",
+  "a": "Barcelona",
+  "wrong": [
+   "Atlético Madrid",
+   "Athletic Bilbao",
+   "Sevilla"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Metropolitano Stadium?",
+  "a": "Atlético Madrid",
+  "wrong": [
+   "Real Betis",
+   "Sevilla",
+   "Athletic Bilbao"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Estádio da Luz?",
+  "a": "Benfica",
+  "wrong": [
+   "Porto",
+   "Sporting CP",
+   "Braga"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Stade Vélodrome?",
+  "a": "Marseille",
+  "wrong": [
+   "Lille",
+   "Lyon",
+   "Monaco"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Johan Cruijff ArenA?",
+  "a": "Ajax",
+  "wrong": [
+   "Feyenoord",
+   "PSV",
+   "Twente"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Stadio Diego Armando Maradona?",
+  "a": "Napoli",
+  "wrong": [
+   "Fiorentina",
+   "Roma",
+   "Lazio"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Estádio do Dragão?",
+  "a": "Porto",
+  "wrong": [
+   "Sporting CP",
+   "Benfica",
+   "Braga"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at Hillsborough?",
+  "a": "Sheffield Wednesday",
+  "wrong": [
+   "Portsmouth",
+   "Everton",
+   "Manchester United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at Fratton Park?",
+  "a": "Portsmouth",
+  "wrong": [
+   "Bristol City",
+   "Sheffield Wednesday",
+   "Everton"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EFL_Championship",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at Loftus Road?",
+  "a": "Queens Park Rangers",
+  "wrong": [
+   "Everton",
+   "Portsmouth",
+   "Preston North End"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EFL_Championship",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at The Valley?",
+  "a": "Charlton Athletic",
+  "wrong": [
+   "Bristol City",
+   "Everton",
+   "Preston North End"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EFL_Championship",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at St Andrew's?",
+  "a": "Birmingham City",
+  "wrong": [
+   "Preston North End",
+   "Bristol City",
+   "Everton"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EFL_Championship",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at Ashton Gate?",
+  "a": "Bristol City",
+  "wrong": [
+   "Everton",
+   "Preston North End",
+   "Charlton Athletic"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EFL_Championship",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at Deepdale?",
+  "a": "Preston North End",
+  "wrong": [
+   "Portsmouth",
+   "Birmingham City",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EFL_Championship",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Racecourse Ground?",
+  "a": "Wrexham",
+  "wrong": [
+   "Millwall",
+   "Sheffield Wednesday",
+   "Queens Park Rangers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/2026%E2%80%9327_EFL_Championship",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at San Mamés?",
+  "a": "Athletic Bilbao",
+  "wrong": [
+   "Real Betis",
+   "Barcelona",
+   "Sevilla"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Estádio José Alvalade?",
+  "a": "Sporting CP",
+  "wrong": [
+   "Porto",
+   "Benfica",
+   "Braga"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Estadio Benito Villamarín?",
+  "a": "Real Betis",
+  "wrong": [
+   "Sevilla",
+   "Atlético Madrid",
+   "Athletic Bilbao"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Ramón Sánchez Pizjuán?",
+  "a": "Sevilla",
+  "wrong": [
+   "Real Betis",
+   "Atlético Madrid",
+   "Barcelona"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at De Kuip?",
+  "a": "Feyenoord",
+  "wrong": [
+   "Ajax",
+   "PSV",
+   "Twente"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Weserstadion?",
+  "a": "Werder Bremen",
+  "wrong": [
+   "RB Leipzig",
+   "Bayer Leverkusen",
+   "Borussia Dortmund"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Stadio Artemio Franchi?",
+  "a": "Fiorentina",
+  "wrong": [
+   "Napoli",
+   "Roma",
+   "Lazio"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Stade Pierre-Mauroy?",
+  "a": "Lille",
+  "wrong": [
+   "Marseille",
+   "Lyon",
+   "Monaco"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the BayArena?",
+  "a": "Bayer Leverkusen",
+  "wrong": [
+   "Werder Bremen",
+   "RB Leipzig",
+   "Borussia Dortmund"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Stadium",
+  "kind": "other",
+  "year": null,
+  "q": "Which club plays its home games at the Red Bull Arena in Leipzig?",
+  "a": "RB Leipzig",
+  "wrong": [
+   "Werder Bremen",
+   "Bayer Leverkusen",
+   "Borussia Dortmund"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Citizens'?",
+  "a": "Manchester City",
+  "wrong": [
+   "Coventry City",
+   "Millwall",
+   "Charlton Athletic"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Sky Blues'?",
+  "a": "Coventry City",
+  "wrong": [
+   "Queens Park Rangers",
+   "Bristol City",
+   "Millwall"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Swans'?",
+  "a": "Swansea City",
+  "wrong": [
+   "Lincoln City",
+   "Bristol City",
+   "Queens Park Rangers"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Lions'?",
+  "a": "Millwall",
+  "wrong": [
+   "Lincoln City",
+   "Swansea City",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Addicks'?",
+  "a": "Charlton Athletic",
+  "wrong": [
+   "Manchester City",
+   "Bolton Wanderers",
+   "Millwall"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Robins'?",
+  "a": "Bristol City",
+  "wrong": [
+   "Manchester City",
+   "Queens Park Rangers",
+   "Charlton Athletic"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Hoops'?",
+  "a": "Queens Park Rangers",
+  "wrong": [
+   "Charlton Athletic",
+   "Millwall",
+   "Bolton Wanderers"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Trotters'?",
+  "a": "Bolton Wanderers",
+  "wrong": [
+   "Lincoln City",
+   "Manchester City",
+   "Coventry City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which club is nicknamed 'The Imps'?",
+  "a": "Lincoln City",
+  "wrong": [
+   "Bristol City",
+   "Charlton Athletic",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_football_clubs_in_England",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Indomitable Lions'?",
+  "a": "Cameroon",
+  "wrong": [
+   "Morocco",
+   "Algeria",
+   "Ivory Coast"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_CAF_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Elephants'?",
+  "a": "Ivory Coast",
+  "wrong": [
+   "Morocco",
+   "DR Congo",
+   "Tunisia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_CAF_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Atlas Lions'?",
+  "a": "Morocco",
+  "wrong": [
+   "Senegal",
+   "Tunisia",
+   "Egypt"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_CAF_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Pharaohs'?",
+  "a": "Egypt",
+  "wrong": [
+   "Ivory Coast",
+   "Cameroon",
+   "DR Congo"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_CAF_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Lions of Teranga'?",
+  "a": "Senegal",
+  "wrong": [
+   "Ivory Coast",
+   "Egypt",
+   "DR Congo"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_CAF_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Desert Warriors'?",
+  "a": "Algeria",
+  "wrong": [
+   "Morocco",
+   "Cameroon",
+   "Egypt"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_CAF_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Eagles of Carthage'?",
+  "a": "Tunisia",
+  "wrong": [
+   "DR Congo",
+   "Morocco",
+   "Cameroon"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_CAF_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Leopards'?",
+  "a": "DR Congo",
+  "wrong": [
+   "Algeria",
+   "Senegal",
+   "Tunisia"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_CAF_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'La Celeste'?",
+  "a": "Uruguay",
+  "wrong": [
+   "Paraguay",
+   "Venezuela",
+   "Brazil"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_CONMEBOL_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'Los Cafeteros'?",
+  "a": "Colombia",
+  "wrong": [
+   "Uruguay",
+   "Brazil",
+   "Venezuela"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_CONMEBOL_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'La Albirroja'?",
+  "a": "Paraguay",
+  "wrong": [
+   "Brazil",
+   "Venezuela",
+   "Uruguay"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_CONMEBOL_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'La Vinotinto'?",
+  "a": "Venezuela",
+  "wrong": [
+   "Paraguay",
+   "Colombia",
+   "Uruguay"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_CONMEBOL_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'Canarinho'?",
+  "a": "Brazil",
+  "wrong": [
+   "Uruguay",
+   "Venezuela",
+   "Colombia"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_CONMEBOL_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Boys in Green'?",
+  "a": "Republic of Ireland",
+  "wrong": [
+   "Turkey",
+   "Serbia",
+   "Northern Ireland"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The Crescent-Stars'?",
+  "a": "Turkey",
+  "wrong": [
+   "Serbia",
+   "Republic of Ireland",
+   "Northern Ireland"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "Nickname",
+  "kind": "other",
+  "year": null,
+  "q": "Which national team is nicknamed 'The White Eagles'?",
+  "a": "Serbia",
+  "wrong": [
+   "Republic of Ireland",
+   "Turkey",
+   "Northern Ireland"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_UEFA_national_association_football_teams_by_nickname",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Lazio based?",
+  "a": "Rome",
+  "wrong": [
+   "Genoa",
+   "Milan",
+   "Turin"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Fiorentina based?",
+  "a": "Florence",
+  "wrong": [
+   "Milan",
+   "Rome",
+   "Naples"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Sporting CP based?",
+  "a": "Lisbon",
+  "wrong": [
+   "Braga",
+   "Guimarães",
+   "Porto"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Real Betis based?",
+  "a": "Seville",
+  "wrong": [
+   "Valencia",
+   "Málaga",
+   "Vigo"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Feyenoord based?",
+  "a": "Rotterdam",
+  "wrong": [
+   "Enschede",
+   "Eindhoven",
+   "Amsterdam"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are PSV based?",
+  "a": "Eindhoven",
+  "wrong": [
+   "Amsterdam",
+   "Enschede",
+   "Rotterdam"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Schalke 04 based?",
+  "a": "Gelsenkirchen",
+  "wrong": [
+   "Cologne",
+   "Berlin",
+   "Hamburg"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Beşiktaş based?",
+  "a": "Istanbul",
+  "wrong": [
+   "Ankara",
+   "Trabzon",
+   "Izmir"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Hertha BSC based?",
+  "a": "Berlin",
+  "wrong": [
+   "Dortmund",
+   "Hamburg",
+   "Gelsenkirchen"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Espanyol based?",
+  "a": "Barcelona",
+  "wrong": [
+   "Madrid",
+   "Seville",
+   "Vigo"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Real Sociedad based?",
+  "a": "San Sebastián",
+  "wrong": [
+   "Bilbao",
+   "Seville",
+   "Málaga"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Celta based?",
+  "a": "Vigo",
+  "wrong": [
+   "Valencia",
+   "Madrid",
+   "San Sebastián"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Young Boys based?",
+  "a": "Bern",
+  "wrong": [
+   "Basel",
+   "Geneva",
+   "Zurich"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are AEK based?",
+  "a": "Athens",
+  "wrong": [
+   "Thessaloniki",
+   "Piraeus",
+   "Patras"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ },
+ {
+  "comp": "City",
+  "kind": "other",
+  "year": null,
+  "q": "In which city are Olympiacos based?",
+  "a": "Piraeus",
+  "wrong": [
+   "Thessaloniki",
+   "Athens",
+   "Patras"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_European_stadiums_by_capacity",
+  "note": ""
+ }
+]

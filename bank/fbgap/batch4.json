@@ -1,0 +1,857 @@
+[
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club did Enzo Fernández join from Chelsea in 2026?",
+  "a": "Manchester City",
+  "wrong": [
+   "Atlético Madrid",
+   "Juventus",
+   "Newcastle United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Enzo Fernández: Chelsea to Manchester City, 2026 (also checked: https://www.aljazeera.com/sports/2026/9/1/fernandez-transfers-to-man-city-from-chelsea-in-joint-british-record-fee)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club sold Enzo Fernández to Manchester City in 2026?",
+  "a": "Chelsea",
+  "wrong": [
+   "Arsenal",
+   "Tottenham Hotspur",
+   "Inter Milan"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Enzo Fernández: Chelsea to Manchester City, 2026 (also checked: https://www.aljazeera.com/sports/2026/9/1/fernandez-transfers-to-man-city-from-chelsea-in-joint-british-record-fee)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club did Morgan Rogers join from Aston Villa in 2026?",
+  "a": "Chelsea",
+  "wrong": [
+   "Liverpool",
+   "Bayern Munich",
+   "Inter Milan"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Morgan Rogers: Aston Villa to Chelsea, 2026 (also checked: https://www.chelseafc.com/en/news/article/morgan-rogers-signs-for-chelsea)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club sold Morgan Rogers to Chelsea in 2026?",
+  "a": "Aston Villa",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Newcastle United",
+   "Juventus"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Morgan Rogers: Aston Villa to Chelsea, 2026 (also checked: https://www.chelseafc.com/en/news/article/morgan-rogers-signs-for-chelsea)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club did Elliot Anderson join from Nottingham Forest in 2026?",
+  "a": "Manchester City",
+  "wrong": [
+   "Atlético Madrid",
+   "Barcelona",
+   "Arsenal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Elliot Anderson: Nottingham Forest to Manchester City, 2026 (also checked: https://www.mancity.com/news/mens/elliot-anderson-signs-for-man-city-63920416)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club sold Elliot Anderson to Manchester City in 2026?",
+  "a": "Nottingham Forest",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Real Madrid",
+   "Inter Milan"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Elliot Anderson: Nottingham Forest to Manchester City, 2026 (also checked: https://www.mancity.com/news/mens/elliot-anderson-signs-for-man-city-63920416)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club did Bradley Barcola join from Paris Saint-Germain in 2026?",
+  "a": "Liverpool",
+  "wrong": [
+   "Inter Milan",
+   "Arsenal",
+   "Real Madrid"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Bradley Barcola: Paris Saint-Germain to Liverpool, 2026 (also checked: https://www.liverpoolfc.com/news/liverpool-sign-bradley-barcola-paris-saint-germain)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club sold Bradley Barcola to Liverpool in 2026?",
+  "a": "Paris Saint-Germain",
+  "wrong": [
+   "Inter Milan",
+   "Manchester City",
+   "Barcelona"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Bradley Barcola: Paris Saint-Germain to Liverpool, 2026 (also checked: https://www.liverpoolfc.com/news/liverpool-sign-bradley-barcola-paris-saint-germain)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2023,
+  "q": "Which club did Enzo Fernández join from Benfica in 2023?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester City",
+   "Bayern Munich",
+   "Atlético Madrid"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Enzo Fernández: Benfica to Chelsea, 2023"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2023,
+  "q": "Which club sold Enzo Fernández to Chelsea in 2023?",
+  "a": "Benfica",
+  "wrong": [
+   "Real Madrid",
+   "Newcastle United",
+   "Juventus"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Enzo Fernández: Benfica to Chelsea, 2023"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club did Antoine Griezmann join from Atlético Madrid in 2019?",
+  "a": "Barcelona",
+  "wrong": [
+   "Inter Milan",
+   "Juventus",
+   "Manchester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Antoine Griezmann: Atlético Madrid to Barcelona, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club sold Antoine Griezmann to Barcelona in 2019?",
+  "a": "Atlético Madrid",
+  "wrong": [
+   "Real Madrid",
+   "Newcastle United",
+   "Inter Milan"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Antoine Griezmann: Atlético Madrid to Barcelona, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2021,
+  "q": "Which club did Jack Grealish join from Aston Villa in 2021?",
+  "a": "Manchester City",
+  "wrong": [
+   "Atlético Madrid",
+   "Tottenham Hotspur",
+   "Newcastle United"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Jack Grealish: Aston Villa to Manchester City, 2021"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2025,
+  "q": "Which club did Florian Wirtz join from Bayer Leverkusen in 2025?",
+  "a": "Liverpool",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Tottenham Hotspur",
+   "Atlético Madrid"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Florian Wirtz: Bayer Leverkusen to Liverpool, 2025"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2025,
+  "q": "Which club sold Florian Wirtz to Liverpool in 2025?",
+  "a": "Bayer Leverkusen",
+  "wrong": [
+   "Barcelona",
+   "Real Madrid",
+   "Newcastle United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Florian Wirtz: Bayer Leverkusen to Liverpool, 2025"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2023,
+  "q": "Which club did Declan Rice join from West Ham United in 2023?",
+  "a": "Arsenal",
+  "wrong": [
+   "Manchester United",
+   "Newcastle United",
+   "Chelsea"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Declan Rice: West Ham United to Arsenal, 2023"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2023,
+  "q": "Which club did Moisés Caicedo join from Brighton & Hove Albion in 2023?",
+  "a": "Chelsea",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Juventus",
+   "Real Madrid"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Moisés Caicedo: Brighton & Hove Albion to Chelsea, 2023"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2021,
+  "q": "Which club did Romelu Lukaku join from Inter Milan in 2021?",
+  "a": "Chelsea",
+  "wrong": [
+   "Barcelona",
+   "Liverpool",
+   "Atlético Madrid"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Romelu Lukaku: Inter Milan to Chelsea, 2021"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2021,
+  "q": "Which club sold Romelu Lukaku to Chelsea in 2021?",
+  "a": "Inter Milan",
+  "wrong": [
+   "Bayern Munich",
+   "Real Madrid",
+   "Tottenham Hotspur"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Romelu Lukaku: Inter Milan to Chelsea, 2021"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club did Sandro Tonali join from Newcastle United in 2026?",
+  "a": "Tottenham Hotspur",
+  "wrong": [
+   "Barcelona",
+   "Bayern Munich",
+   "Arsenal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Sandro Tonali: Newcastle United to Tottenham Hotspur, 2026 (also checked: https://www.newcastleunited.com/en/news/sandro-tonali-leaves-newcastle-united-for-tottenham-hotspur)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club sold Sandro Tonali to Tottenham Hotspur in 2026?",
+  "a": "Newcastle United",
+  "wrong": [
+   "Atlético Madrid",
+   "Juventus",
+   "Bayern Munich"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Sandro Tonali: Newcastle United to Tottenham Hotspur, 2026 (also checked: https://www.newcastleunited.com/en/news/sandro-tonali-leaves-newcastle-united-for-tottenham-hotspur)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2017,
+  "q": "Which club did Ousmane Dembélé join from Borussia Dortmund in 2017?",
+  "a": "Barcelona",
+  "wrong": [
+   "Newcastle United",
+   "Manchester City",
+   "Real Madrid"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Ousmane Dembélé: Borussia Dortmund to Barcelona, 2017"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2017,
+  "q": "Which club sold Ousmane Dembélé to Barcelona in 2017?",
+  "a": "Borussia Dortmund",
+  "wrong": [
+   "Chelsea",
+   "Liverpool",
+   "Inter Milan"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Ousmane Dembélé: Borussia Dortmund to Barcelona, 2017"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2018,
+  "q": "Which club did Cristiano Ronaldo join from Real Madrid in 2018?",
+  "a": "Juventus",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Paris Saint-Germain",
+   "Manchester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Cristiano Ronaldo: Real Madrid to Juventus, 2018"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2018,
+  "q": "Which club sold Cristiano Ronaldo to Juventus in 2018?",
+  "a": "Real Madrid",
+  "wrong": [
+   "Manchester United",
+   "Atlético Madrid",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Cristiano Ronaldo: Real Madrid to Juventus, 2018"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2022,
+  "q": "Which club did Antony join from Ajax in 2022?",
+  "a": "Manchester United",
+  "wrong": [
+   "Real Madrid",
+   "Arsenal",
+   "Barcelona"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Antony: Ajax to Manchester United, 2022"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2022,
+  "q": "Which club sold Antony to Manchester United in 2022?",
+  "a": "Ajax",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Newcastle United",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Antony: Ajax to Manchester United, 2022"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2023,
+  "q": "Which club did Neymar join from Paris Saint-Germain in 2023?",
+  "a": "Al-Hilal",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Arsenal",
+   "Manchester City"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Neymar: Paris Saint-Germain to Al-Hilal, 2023"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2023,
+  "q": "Which club sold Neymar to Al-Hilal in 2023?",
+  "a": "Paris Saint-Germain",
+  "wrong": [
+   "Liverpool",
+   "Barcelona",
+   "Manchester United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Neymar: Paris Saint-Germain to Al-Hilal, 2023"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2023,
+  "q": "Which club did Joško Gvardiol join from RB Leipzig in 2023?",
+  "a": "Manchester City",
+  "wrong": [
+   "Chelsea",
+   "Paris Saint-Germain",
+   "Inter Milan"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Joško Gvardiol: RB Leipzig to Manchester City, 2023"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2023,
+  "q": "Which club sold Joško Gvardiol to Manchester City in 2023?",
+  "a": "RB Leipzig",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Arsenal",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Joško Gvardiol: RB Leipzig to Manchester City, 2023"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2016,
+  "q": "Which club did Gonzalo Higuaín join from Napoli in 2016?",
+  "a": "Juventus",
+  "wrong": [
+   "Chelsea",
+   "Manchester United",
+   "Atlético Madrid"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Gonzalo Higuaín: Napoli to Juventus, 2016"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2016,
+  "q": "Which club sold Gonzalo Higuaín to Juventus in 2016?",
+  "a": "Napoli",
+  "wrong": [
+   "Chelsea",
+   "Tottenham Hotspur",
+   "Arsenal"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Gonzalo Higuaín: Napoli to Juventus, 2016"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club did Bruno Guimarães join from Newcastle United in 2026?",
+  "a": "Arsenal",
+  "wrong": [
+   "Liverpool",
+   "Inter Milan",
+   "Tottenham Hotspur"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Bruno Guimarães: Newcastle United to Arsenal, 2026 (also checked: https://www.espn.com/soccer/story/_/id/49511174/arsenal-sign-bruno-guimaraes-newcastle)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2026,
+  "q": "Which club sold Bruno Guimarães to Arsenal in 2026?",
+  "a": "Newcastle United",
+  "wrong": [
+   "Bayern Munich",
+   "Real Madrid",
+   "Manchester City"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Bruno Guimarães: Newcastle United to Arsenal, 2026 (also checked: https://www.espn.com/soccer/story/_/id/49511174/arsenal-sign-bruno-guimaraes-newcastle)"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club did Harry Maguire join from Leicester City in 2019?",
+  "a": "Manchester United",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Bayern Munich",
+   "Inter Milan"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Harry Maguire: Leicester City to Manchester United, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club sold Harry Maguire to Manchester United in 2019?",
+  "a": "Leicester City",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Chelsea",
+   "Newcastle United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Harry Maguire: Leicester City to Manchester United, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2021,
+  "q": "Which club did Jadon Sancho join from Borussia Dortmund in 2021?",
+  "a": "Manchester United",
+  "wrong": [
+   "Arsenal",
+   "Inter Milan",
+   "Barcelona"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Jadon Sancho: Borussia Dortmund to Manchester United, 2021"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2021,
+  "q": "Which club sold Jadon Sancho to Manchester United in 2021?",
+  "a": "Borussia Dortmund",
+  "wrong": [
+   "Inter Milan",
+   "Chelsea",
+   "Bayern Munich"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Jadon Sancho: Borussia Dortmund to Manchester United, 2021"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2022,
+  "q": "Which club did Wesley Fofana join from Leicester City in 2022?",
+  "a": "Chelsea",
+  "wrong": [
+   "Manchester United",
+   "Manchester City",
+   "Newcastle United"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Wesley Fofana: Leicester City to Chelsea, 2022"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2022,
+  "q": "Which club sold Wesley Fofana to Chelsea in 2022?",
+  "a": "Leicester City",
+  "wrong": [
+   "Liverpool",
+   "Tottenham Hotspur",
+   "Newcastle United"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Wesley Fofana: Leicester City to Chelsea, 2022"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club did Romelu Lukaku join from Manchester United in 2019?",
+  "a": "Inter Milan",
+  "wrong": [
+   "Juventus",
+   "Arsenal",
+   "Bayern Munich"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Romelu Lukaku: Manchester United to Inter Milan, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club sold Romelu Lukaku to Inter Milan in 2019?",
+  "a": "Manchester United",
+  "wrong": [
+   "Chelsea",
+   "Juventus",
+   "Paris Saint-Germain"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Romelu Lukaku: Manchester United to Inter Milan, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club did Nicolas Pépé join from Lille in 2019?",
+  "a": "Arsenal",
+  "wrong": [
+   "Liverpool",
+   "Real Madrid",
+   "Inter Milan"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Nicolas Pépé: Lille to Arsenal, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club sold Nicolas Pépé to Arsenal in 2019?",
+  "a": "Lille",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Newcastle United",
+   "Barcelona"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Nicolas Pépé: Lille to Arsenal, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2018,
+  "q": "Which club did Kepa Arrizabalaga join from Athletic Bilbao in 2018?",
+  "a": "Chelsea",
+  "wrong": [
+   "Real Madrid",
+   "Liverpool",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Kepa Arrizabalaga: Athletic Bilbao to Chelsea, 2018"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2018,
+  "q": "Which club sold Kepa Arrizabalaga to Chelsea in 2018?",
+  "a": "Athletic Bilbao",
+  "wrong": [
+   "Manchester United",
+   "Manchester City",
+   "Real Madrid"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Kepa Arrizabalaga: Athletic Bilbao to Chelsea, 2018"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2025,
+  "q": "Which club did Hugo Ekitike join from Eintracht Frankfurt in 2025?",
+  "a": "Liverpool",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Atlético Madrid",
+   "Real Madrid"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Hugo Ekitike: Eintracht Frankfurt to Liverpool, 2025"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2025,
+  "q": "Which club sold Hugo Ekitike to Liverpool in 2025?",
+  "a": "Eintracht Frankfurt",
+  "wrong": [
+   "Chelsea",
+   "Inter Milan",
+   "Paris Saint-Germain"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Hugo Ekitike: Eintracht Frankfurt to Liverpool, 2025"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2022,
+  "q": "Which club did Aurélien Tchouaméni join from Monaco in 2022?",
+  "a": "Real Madrid",
+  "wrong": [
+   "Paris Saint-Germain",
+   "Juventus",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Aurélien Tchouaméni: Monaco to Real Madrid, 2022"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2022,
+  "q": "Which club sold Aurélien Tchouaméni to Real Madrid in 2022?",
+  "a": "Monaco",
+  "wrong": [
+   "Juventus",
+   "Manchester United",
+   "Arsenal"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Aurélien Tchouaméni: Monaco to Real Madrid, 2022"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club did Lucas Hernandez join from Atlético Madrid in 2019?",
+  "a": "Bayern Munich",
+  "wrong": [
+   "Liverpool",
+   "Manchester City",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Lucas Hernandez: Atlético Madrid to Bayern Munich, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2019,
+  "q": "Which club sold Lucas Hernandez to Bayern Munich in 2019?",
+  "a": "Atlético Madrid",
+  "wrong": [
+   "Tottenham Hotspur",
+   "Inter Milan",
+   "Manchester United"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Lucas Hernandez: Atlético Madrid to Bayern Munich, 2019"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2025,
+  "q": "Which club did Jhon Durán join from Aston Villa in 2025?",
+  "a": "Al-Nassr",
+  "wrong": [
+   "Atlético Madrid",
+   "Newcastle United",
+   "Liverpool"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Jhon Durán: Aston Villa to Al-Nassr, 2025"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2025,
+  "q": "Which club sold Jhon Durán to Al-Nassr in 2025?",
+  "a": "Aston Villa",
+  "wrong": [
+   "Bayern Munich",
+   "Tottenham Hotspur",
+   "Manchester City"
+  ],
+  "d": "h",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Jhon Durán: Aston Villa to Al-Nassr, 2025"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2025,
+  "q": "Which club did Benjamin Šeško join from RB Leipzig in 2025?",
+  "a": "Manchester United",
+  "wrong": [
+   "Inter Milan",
+   "Chelsea",
+   "Arsenal"
+  ],
+  "d": "e",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Benjamin Šeško: RB Leipzig to Manchester United, 2025"
+ },
+ {
+  "comp": "Transfers",
+  "kind": "other",
+  "year": 2025,
+  "q": "Which club sold Benjamin Šeško to Manchester United in 2025?",
+  "a": "RB Leipzig",
+  "wrong": [
+   "Barcelona",
+   "Chelsea",
+   "Tottenham Hotspur"
+  ],
+  "d": "m",
+  "src": "https://en.wikipedia.org/wiki/List_of_most_expensive_association_football_transfers",
+  "note": "Benjamin Šeško: RB Leipzig to Manchester United, 2025"
+ }
+]

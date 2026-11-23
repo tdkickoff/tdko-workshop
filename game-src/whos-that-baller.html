@@ -1,0 +1,471 @@
+<title>Who's That Baller</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: Fast Break family. One narrow column; the dossier card is the pitch, everything else stays quiet. */
+:root{
+  --bg:#F2F4F1; --surface:#FFFFFF; --ink:#0E1712; --muted:#5D6A62; --line:#D7DDD8;
+  --accent:#0A8A4A; --accent-ink:#FFFFFF; --warn:#C98A00; --bad:#C93A2B; --soft:#E7ECE8;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root[data-tdko="dark"]{
+  --bg:#0B110E; --surface:#121A16; --ink:#EAF0EC; --muted:#8A988F; --line:#24302A;
+  --accent:#34D27F; --accent-ink:#06120B; --warn:#F2B53A; --bad:#FF6B5A; --soft:#1A241F; color-scheme:dark}}
+:root[data-tdko="dark"]{
+  --bg:#0B110E; --surface:#121A16; --ink:#EAF0EC; --muted:#8A988F; --line:#24302A;
+  --accent:#34D27F; --accent-ink:#06120B; --warn:#F2B53A; --bad:#FF6B5A; --soft:#1A241F; color-scheme:dark}
+
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+.wrap{max-width:560px;margin:0 auto;padding-block:20px 40px;display:flex;flex-direction:column;gap:18px;min-height:100%;box-sizing:border-box}
+main{display:flex;flex-direction:column;gap:14px}
+
+/* header */
+.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.mark{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:28px;letter-spacing:.01em;text-transform:uppercase;line-height:1;white-space:nowrap}
+.mark i{font-style:normal;color:var(--accent)}
+.meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+
+.card{background:var(--surface);border:1px solid var(--line)}
+.inner{padding:20px;display:flex;flex-direction:column;gap:16px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* intro */
+.hero{display:flex;flex-direction:column;gap:14px;padding:26px 20px 22px}
+.hero h1{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(56px,17vw,96px);line-height:.86;margin:0;text-transform:uppercase;letter-spacing:-.01em}
+.hero h1 i{font-style:normal;color:var(--accent)}
+.lede{font-size:17px;color:var(--muted);margin:0;max-width:36ch}
+.challenge{border:1.5px solid var(--accent);padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.challenge span{font-size:15px}
+.challenge b{font-family:var(--f-display);font-weight:900;font-stretch:70%;font-size:34px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.rules{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px}
+.rules li{display:grid;grid-template-columns:72px 1fr;gap:10px}
+.rules li>span{font-family:var(--f-mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.ladder div{padding:10px 4px 9px;text-align:center;display:flex;flex-direction:column;gap:3px;min-width:0}
+.ladder b{font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:22px;line-height:1}
+.ladder span{font-family:var(--f-mono);font-size:11px;opacity:.85}
+.ladder .g{background:var(--accent);color:var(--accent-ink)}
+.ladder .o{background:color-mix(in oklab,var(--warn) 30%,var(--bg));color:var(--ink)}
+.ladder .x{background:color-mix(in oklab,var(--bad) 22%,var(--bg));color:var(--bad)}
+.ladder .z{background:var(--soft);color:var(--muted)}
+
+/* buttons */
+.btn{all:unset;box-sizing:border-box;display:block;text-align:center;cursor:pointer;background:var(--ink);color:var(--bg);touch-action:manipulation;
+  font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:18px;text-transform:uppercase;letter-spacing:.03em;padding:15px 12px;white-space:nowrap;transition:background .12s}
+.btn:hover{background:var(--accent);color:var(--accent-ink)}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.btn.danger{background:var(--bad);color:#fff}
+.linkbtn{all:unset;cursor:pointer;align-self:center;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:6px}
+.linkbtn:hover{color:var(--ink)}
+.linkbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* game */
+.filehead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:16px 20px 14px;border-bottom:1px solid var(--line)}
+.pos{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pos b{font-family:var(--f-display);font-weight:800;font-stretch:85%;font-size:24px;line-height:1.05;text-transform:uppercase}
+.pts{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.pts b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:48px;line-height:.85;font-variant-numeric:tabular-nums;color:var(--accent);transition:color .2s}
+.pts b.mid{color:var(--warn)} .pts b.low{color:var(--bad)}
+.clues{display:flex;flex-direction:column}
+.clue{all:unset;box-sizing:border-box;display:grid;grid-template-columns:24px 92px 1fr auto;align-items:center;gap:10px;padding:11px 20px;border-bottom:1px solid var(--line);min-height:50px;width:100%}
+.clue:last-child{border-bottom:0}
+.clue .n{font-family:var(--f-mono);font-size:11px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.clue .lab{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);line-height:1.25}
+.clue .val{min-width:0;display:flex;flex-direction:column;gap:1px}
+.clue .val b{font-weight:700;font-size:16px;line-height:1.2;overflow-wrap:anywhere}
+.clue .val small{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.clue .bar{height:8px;background:var(--soft)}
+.clue .cost{font-family:var(--f-mono);font-size:12px;font-weight:600;padding:3px 7px;border:1.5px solid var(--ink);white-space:nowrap}
+.clue .cost.free{border-color:var(--accent);color:var(--accent)}
+.clue .mk{width:8px;height:8px}
+.clue.o .mk{background:var(--warn)} .clue.x .mk{background:var(--bad)}
+.clue.next{cursor:pointer;touch-action:manipulation;background:color-mix(in oklab,var(--accent) 6%,var(--surface))}
+.clue.next:hover .cost{background:var(--ink);color:var(--bg)}
+.clue.next:hover .cost.free{background:var(--accent);color:var(--accent-ink)}
+.clue.next:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.clue.locked{opacity:.5}
+.clue.locked .n,.clue.locked .lab{color:var(--muted)}
+@keyframes reveal{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+.clue .val.new{animation:reveal .25s ease-out}
+
+.guess{display:flex;flex-direction:column;gap:8px}
+.grow{display:grid;grid-template-columns:1fr auto;gap:8px}
+.grow input{box-sizing:border-box;width:100%;min-width:0;font:inherit;font-size:16px;font-weight:500;padding:13px 14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:0;-webkit-appearance:none}
+.grow input:focus{outline:none;border-color:var(--ink)}
+.grow input::placeholder{color:var(--muted)}
+.grow .btn{padding:0 20px}
+.fb{font-family:var(--f-mono);font-size:12px;letter-spacing:.03em;min-height:18px;color:var(--muted)}
+.fb.bad{color:var(--bad)} .fb.good{color:var(--accent)} .fb.warn{color:var(--warn)}
+.tried{display:flex;flex-wrap:wrap;gap:6px}
+.tried span{font-size:13px;padding:3px 8px;background:color-mix(in oklab,var(--bad) 12%,var(--surface));color:var(--bad);text-decoration:line-through}
+.confirm{border:1.5px solid var(--bad);padding:14px;display:flex;flex-direction:column;gap:10px}
+.confirm p{margin:0;font-size:15px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.flag{align-self:flex-start;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;background:var(--bad);color:#fff}
+
+/* result */
+.reveal{display:flex;flex-direction:column;gap:6px}
+.reveal h2{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:70%;font-size:clamp(40px,12vw,60px);line-height:.9;text-transform:uppercase;text-wrap:balance}
+.reveal p{margin:0;font-size:15px;color:var(--muted);max-width:52ch}
+.score{display:flex;align-items:baseline;gap:8px}
+.score b{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(88px,26vw,130px);line-height:.82;font-variant-numeric:tabular-nums}
+.score span{font-family:var(--f-mono);font-size:20px;color:var(--muted)}
+.verdict{font-family:var(--f-display);font-weight:800;font-stretch:85%;font-size:22px;margin:0;text-transform:uppercase}
+.vs{font-family:var(--f-mono);font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.vs b{color:var(--ink)}
+.cgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:4px}
+.cgrid i{aspect-ratio:1;max-width:100%;display:grid;place-items:center;font-style:normal;font-family:var(--f-mono);font-size:11px;font-weight:600}
+.cgrid .g{background:var(--accent);color:var(--accent-ink)}
+.cgrid .o{background:color-mix(in oklab,var(--warn) 30%,var(--bg));color:var(--ink)}
+.cgrid .x{background:color-mix(in oklab,var(--bad) 22%,var(--bg));color:var(--bad)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--f-mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;display:inline-block}
+.legend .g{background:var(--accent)} .legend .o{background:color-mix(in oklab,var(--warn) 30%,var(--bg))} .legend .x{background:color-mix(in oklab,var(--bad) 22%,var(--bg))}
+.share{display:flex;flex-direction:column;gap:10px}
+.share h3{margin:0;font-family:var(--f-display);font-weight:800;font-stretch:80%;font-size:18px;text-transform:uppercase;letter-spacing:.03em}
+.share img{display:block;width:100%;max-width:100%;aspect-ratio:1;border:1px solid var(--line);background:var(--soft)}
+.share p{margin:0;font-size:13px;color:var(--muted)}
+.sendto{display:flex;flex-direction:column;gap:10px;padding-top:4px}
+.targets{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.tgt{display:block;text-align:center;padding:13px 8px;border:1.5px solid var(--line);color:var(--ink);text-decoration:none;font-weight:700;font-size:16px;touch-action:manipulation}
+.tgt:hover{border-color:var(--ink)}
+.tgt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tgt.wa{border-color:var(--accent);background:color-mix(in oklab,var(--accent) 12%,var(--surface))}
+textarea.copybox{width:100%;box-sizing:border-box;font-family:var(--f-mono);font-size:13px;background:var(--soft);color:var(--ink);border:1px solid var(--line);padding:10px;min-height:130px}
+.next{text-align:center;display:flex;flex-direction:column;gap:2px}
+.next b{font-family:var(--f-mono);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);font-family:var(--f-mono);font-size:13px;padding:10px 16px;max-width:calc(100% - 40px);text-align:center;z-index:5}
+
+@keyframes fadein{from{opacity:.35}to{opacity:1}}
+.enter{animation:fadein .18s ease-out}
+@media (max-width:380px){.clue{grid-template-columns:20px 74px 1fr auto;gap:8px;padding-inline:14px}.filehead{padding-inline:14px}}
+@media (prefers-reduced-motion: reduce){.enter,.clue .val.new{animation:none}.btn{transition:none}}
+.replaying .sharecard{display:none}.replaying header.top::after{content:"Replay · doesn’t count";flex-basis:100%;font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--warn)}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="mark">Who's That <i>Baller</i></div>
+    <div class="meta" id="meta"></div>
+  </header>
+  <main id="app"></main>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+/* Replay: play today's puzzle again just for fun. The first result stays saved, and stays on the menu, until the next puzzle at midnight. */
+function tdkoIsReplay(gid, dayKey, dayNo){ if(location.hash!=='#replay') return false;
+  try{ const r=JSON.parse(localStorage.getItem('tdko:'+dayKey+'#'+dayNo)||'{}')[gid]; return !!r && r.status==='done'; }catch(e){ return false; } }
+function tdkoReplayBox(on){ return `<section class="card replaybox"><div class="inner">
+    <span class="eyebrow">${on?'Replay · just for fun':'Fancy another go?'}</span>
+    <p>${on?'This one doesn’t count. Your first score today stays on the board.':'Replay today’s puzzle as often as you like. Your first score stays on the board.'}</p>
+    <button class="btn ghost" type="button" data-replay>${on?'Replay again':'Replay'}</button>
+  </div></section>`; }
+let tdkoReplayKey='';
+document.addEventListener('click', e=>{ if(!e.target.closest || !e.target.closest('[data-replay]')) return;
+  try{ if(tdkoReplayKey) localStorage.removeItem(tdkoReplayKey); }catch(_){}
+  history.replaceState(null,'',location.pathname+location.search+'#replay'); location.reload(); });
+</script>
+<script>
+(function(){
+const GAME_URL = 'https://claude.ai/artifact/6mTQUVJSgksHvYyYUXaj7A';
+const LAUNCH = Date.UTC(2026,10,16);   // SOFT LAUNCH: Mon 16 Nov 2026 is No. 1 (months count from 0). Before that date every day plays No. 1
+const START = 100, COST = 10, FREE = 0;
+
+/* ---------- players (Wikipedia infobox figures: league apps & goals; first three permanent senior clubs, loans excluded) ---------- */
+const PLAYERS = TDKO_DATA.PLAYERS;
+
+const CLUES = [
+  ["Nationality", p=>[p.nationality]],
+  ["Youth club",  p=>[p.youth]],
+  ["First club",  p=>[p.clubs[0][0], `${p.clubs[0][1]} apps · ${p.clubs[0][2]} goals`]],
+  ["Second club", p=>[p.clubs[1][0], `${p.clubs[1][1]} apps · ${p.clubs[1][2]} goals`]],
+  ["Third club",  p=>[p.clubs[2][0], `${p.clubs[2][1]} apps · ${p.clubs[2][2]} goals`]],
+  ["Country",     p=>[`${p.caps} caps`, `${p.capGoals} international goals`]],
+  ["Career apps", p=>[`${p.apps} league apps`]],
+  ["Career goals",p=>[`${p.goals} league goals`]],
+  ["Top honour",  p=>[p.honour[0], p.honour[1]]],
+  ["Top award",   p=>[p.award[0], p.award[1]]]
+];
+const N = CLUES.length;
+
+/* ---------- day ---------- */
+const now = new Date();
+const dayKey = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+const dayNo = LAUNCH==null ? 1 : Math.max(1, Math.round((Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()) - LAUNCH)/864e5) + 1);
+const P = PLAYERS[(dayNo-1) % PLAYERS.length];
+const dateLabel = now.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
+const REPLAY = tdkoIsReplay('whos-that-baller', dayKey, dayNo), KEY = 'wtb:'+dayKey+'#'+dayNo + (REPLAY?':replay':'');
+if(REPLAY){ tdkoReplayKey = KEY; document.documentElement.classList.add('replaying'); }
+const app = document.getElementById('app');
+document.getElementById('meta').textContent = `No. ${dayNo} · ${dateLabel}`;
+const m = /^#c(\d+)-(\d{1,3})$/.exec(location.hash);
+const challenge = (m && +m[1]===dayNo && +m[2]<=100) ? +m[2] : null;
+
+function load(){ try{ const s=JSON.parse(localStorage.getItem(KEY)); if(s && Array.isArray(s.marks)) return s; }catch(e){} return null; }
+/* Shared daily status read by The Daily Kick Off menu: tdko:<date> → {gameId: {status, gaveUp}} */
+function report(){ if(REPLAY) return; try{ const k='tdko:'+dayKey+'#'+dayNo, all=JSON.parse(localStorage.getItem(k)||'{}'); all['whos-that-baller']={status: S.over?'done':S.started?'open':'ready', gaveUp:!!S.gaveUp}; localStorage.setItem(k, JSON.stringify(all)); }catch(e){} }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} report(); }
+let S = load() || {started:false, marks:[], tried:[], over:false, won:false};
+// marks[i]: 'f' clue 1, given free at the start; 'o' opened by choice; 'x' opened by a wrong guess
+if(S.started && !S.over && !S.marks.length) S.marks.push('f');
+
+const opened = () => S.marks.length;
+function cost(i){ return i===FREE ? 0 : COST; }
+function score(){
+  if(S.over && !S.won) return 0;
+  return Math.max(0, START - S.marks.reduce((a,_,i)=>a+cost(i),0));
+}
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- name matching: accents, punctuation and small typos forgiven ---------- */
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z ]/g,' ').replace(/\s+/g,' ').trim();
+function lev(a,b){ const d=Array.from({length:b.length+1},(_,i)=>i);
+  for(let i=1;i<=a.length;i++){ let p=d[0]; d[0]=i; for(let j=1;j<=b.length;j++){ const t=d[j]; d[j]=Math.min(d[j]+1,d[j-1]+1,p+(a[i-1]===b[j-1]?0:1)); p=t; } } return d[b.length]; }
+const slack = s => s.length>=9 ? 2 : s.length>=5 ? 1 : 0;
+function isMatch(guess){
+  const g = norm(guess); if(g.length<3) return false;
+  const names = [P.name, ...(P.aliases||[])].map(norm);
+  const surname = norm(P.name).split(' ').slice(-1)[0];
+  if(names.includes(g) || g===surname) return true;
+  return names.some(n => lev(g,n) <= slack(n)) || (surname.length>=6 && lev(g,surname) <= slack(surname));
+}
+
+/* ---------- press helper (fires on press, keyboard-safe) ---------- */
+/* A press acts on pointerdown. After a touch, the browser's follow-up click is swallowed so it can't land on
+   whatever the new screen put under the finger; with a mouse, the same element ignores its own follow-up click. */
+let swallowUntil = 0;
+document.addEventListener('pointerdown', ()=>{ swallowUntil = 0; }, true);
+document.addEventListener('click', e=>{ if(performance.now() < swallowUntil){ swallowUntil = 0; e.preventDefault(); e.stopPropagation(); } }, true);
+function onPress(el, fn){
+  let fired = false;
+  const off = () => el.disabled || el.getAttribute('aria-disabled')==='true';
+  el.addEventListener('pointerdown', e=>{ if(e.button!==0 || off()) return; e.preventDefault();
+    if(e.pointerType==='mouse') fired = true; else swallowUntil = performance.now() + 600; fn(); });
+  el.addEventListener('click', ()=>{ if(fired){ fired=false; return; } if(!off()) fn(); }); // keyboard Enter/Space
+}
+let tt=0;
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,2200)}
+
+/* ---------- intro ---------- */
+function intro(){
+  app.innerHTML = `
+  <section class="card enter"><div class="hero">
+    <h1>Who's That<br><i>Baller</i></h1>
+    <p class="lede">One mystery footballer a day. Read his file one clue at a time and name him before it runs out.</p>
+    ${challenge!==null?`<div class="challenge"><span>A friend scored this on today's file. Can you beat them?</span><b>${challenge}</b></div>`:''}
+    <ul class="rules">
+      <li><span>Start</span>You get his position, his nationality and 100 points</li>
+      <li><span>Clues</span>Every extra clue costs 10</li>
+      <li><span>Guess</span>Guess any time. A wrong guess opens the next clue and costs the same</li>
+      <li><span>End</span>All 10 clues open leaves one last guess for 10 points</li>
+    </ul>
+    <div class="ladder" aria-label="How your clues are marked">
+      <div class="g"><b>■</b><span>Unused</span></div>
+      <div class="o"><b>■</b><span>Opened</span></div>
+      <div class="x"><b>■</b><span>Wrong guess</span></div>
+      <div class="z"><b>100</b><span>Max pts</span></div>
+    </div>
+    <button class="btn" id="go">Open today's file</button>
+  </div></section>`;
+  onPress(document.getElementById('go'), ()=>{ S.started=true; if(!S.marks.length){ S.marks.push('f'); lastNew=0; } save(); game(); });
+}
+
+/* ---------- game ---------- */
+let confirmOpen=false, lastNew=-1;
+function game(){
+  if(S.over) return result();
+  const sc = score(), last = opened()===N;
+  app.innerHTML = `
+  <section class="card">
+    <div class="filehead">
+      <div class="pos"><span class="eyebrow">File No. ${String(dayNo).padStart(3,'0')} · Position</span><b>${esc(P.position)}</b></div>
+      <div class="pts"><span class="eyebrow">Points</span><b class="${sc<=30?'low':sc<=60?'mid':''}" id="sc">${sc}</b></div>
+    </div>
+    <div class="clues">${CLUES.map(([lab,fn],i)=>{
+      const num = String(i+1).padStart(2,'0');
+      if(i<opened()){
+        const [a,b]=fn(P);
+        return `<div class="clue ${S.marks[i]}"><span class="n">${num}</span><span class="lab">${lab}</span><span class="val${i===lastNew?' new':''}"><b>${esc(a)}</b>${b?`<small>${esc(b)}</small>`:''}</span><span class="mk" aria-label="${S.marks[i]==='x'?'Opened by wrong guess':'Opened'}"></span></div>`;
+      }
+      if(i===opened()) return `<div role="button" tabindex="0" class="clue next" id="nextClue" aria-label="Reveal ${lab}${cost(i)?' for '+cost(i)+' points':' for free'}"><span class="n">${num}</span><span class="lab">${lab}</span><span class="bar"></span><span class="cost ${cost(i)?'':'free'}">${cost(i)?'−'+cost(i):'Free'}</span></div>`;
+      return `<div class="clue locked"><span class="n">${num}</span><span class="lab">${lab}</span><span class="bar"></span><span></span></div>`;
+    }).join('')}</div>
+  </section>
+  <form class="guess" id="gform" autocomplete="off">
+    <div class="grow">
+      <input id="gin" type="text" inputmode="text" autocapitalize="words" spellcheck="false" placeholder="${last?'Final guess: type a name':'Type a player name'}" aria-label="Your guess">
+      <button class="btn" type="submit" id="gbtn">Guess</button>
+    </div>
+    <div class="fb ${last?'warn':''}" id="fb">${last?'All clues open. One guess left for 10 points.':''}</div>
+    ${S.tried.length?`<div class="tried" aria-label="Wrong guesses">${S.tried.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`:''}
+  </form>
+  <div id="giveup"></div>`;
+  lastNew=-1;
+  const nc=document.getElementById('nextClue'); if(nc){ onPress(nc, ()=>openClue('o')); nc.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openClue('o'); } }); }
+  document.getElementById('gform').addEventListener('submit', e=>{ e.preventDefault(); guess(); });
+  drawGiveUp();
+}
+function drawGiveUp(){
+  const g=document.getElementById('giveup');
+  g.innerHTML = confirmOpen ? `<div class="confirm"><p>Are you sure? Giving up ends today's game on 0 points and reveals the answer.</p>
+    <div class="actions"><button class="btn ghost" id="keep">Keep playing</button><button class="btn danger" id="quit">Give up</button></div></div>`
+    : `<div style="display:flex;justify-content:center"><button class="linkbtn" id="gu">Give up</button></div>`;
+  if(confirmOpen){ onPress(document.getElementById('keep'),()=>{confirmOpen=false;drawGiveUp();}); onPress(document.getElementById('quit'),()=>{confirmOpen=false;S.over=true;S.won=false;S.gaveUp=true;save();result();}); }
+  else onPress(document.getElementById('gu'),()=>{confirmOpen=true;drawGiveUp();});
+}
+function openClue(how){
+  if(S.over || opened()>=N) return;
+  lastNew = opened(); S.marks.push(how); save(); game();
+}
+function guess(){
+  const inp=document.getElementById('gin'), raw=inp.value.trim(), fb=document.getElementById('fb');
+  if(!raw) return;
+  if(isMatch(raw)){ S.over=true; S.won=true; save(); return result(); }
+  if(S.tried.some(t=>norm(t)===norm(raw))){ fb.className='fb warn'; fb.textContent='Already tried that one. No points lost.'; inp.select(); return; }
+  S.tried.push(raw);
+  if(opened()>=N){ S.over=true; S.won=false; save(); return result(); }
+  const i=opened(); openClue('x');
+  const f=document.getElementById('fb'); f.className='fb bad';
+  f.textContent = `Not him. Clue ${i+1} opened${cost(i)?` (−${cost(i)})`:''}.`;
+  if(opened()===N){ f.className='fb warn'; f.textContent='Not him. All clues open: one guess left for 10 points.'; }
+  document.getElementById('gin').focus({preventScroll:true});
+}
+
+/* ---------- result ---------- */
+function verdict(s){
+  if(s===100) return 'Instant recognition';
+  if(s>=80) return 'Scout’s eye';
+  if(s>=60) return 'Done your homework';
+  if(s>=40) return 'Got there in the end';
+  if(s>=10) return 'Last-gasp winner';
+  return S.gaveUp ? 'Gave up' : 'File stays closed';
+}
+const cellCls = i => i<opened() && S.marks[i]!=='f' ? S.marks[i] : 'g';
+function inviteUrl(){ return `${GAME_URL}#c${dayNo}-${score()}`; }
+function inviteText(){
+  const sq = {g:'🟩',o:'🟨',x:'🟥'};
+  const row = Array.from({length:N},(_,i)=>sq[cellCls(i)]).join('');
+  const head = S.won ? `🕵️ Who's That Baller No. ${dayNo}: named him for ${score()}/100` : (S.gaveUp ? `🕵️ Who's That Baller No. ${dayNo}: 🏳️ gave up (0/100)` : `🕵️ Who's That Baller No. ${dayNo}: he got away from me today`);
+  return `${head}\n${row}\n\nOne mystery footballer a day. Can you name him with fewer clues?\nTry today's file: ${inviteUrl()}`;
+}
+let cdTimer=0;
+function result(){
+  const s = score();
+  let vs='';
+  if(challenge!==null){ const d=s-challenge; vs=`<div class="vs">Your friend: <b>${challenge}</b> · ${d>0?`You win by <b>${d}</b>`:d<0?`They win by <b>${-d}</b>`:'<b>Level</b>, a draw'}</div>`; }
+  app.innerHTML = `
+  <section class="card enter"><div class="inner">
+    <div class="reveal">
+      <span class="eyebrow">${S.won?'File closed · it was':'Today’s player was'}</span>
+      <h2>${esc(P.name)}</h2>
+      <p>${esc(P.blurb)}</p>
+    </div>
+    ${S.gaveUp?'<span class="flag">Gave up</span>':''}
+    <div class="score"><b id="scr">0</b><span>/ 100</span></div>
+    <p class="verdict">${verdict(s)}</p>
+    ${vs}
+    <div class="cgrid" aria-label="Clue usage">${Array.from({length:N},(_,i)=>`<i class="${cellCls(i)}">${String(i+1).padStart(2,'0')}</i>`).join('')}</div>
+    <div class="legend"><span><i class="g"></i>Not needed</span><span><i class="o"></i>Opened</span><span><i class="x"></i>Wrong guess</span></div>
+  </div></section>
+  ${typeof tdkoStreakCard==='function'?tdkoStreakCard('whos-that-baller'):''}
+  <section class="card sharecard"><div class="inner share">
+    <h3>Challenge a friend</h3>
+    <img id="cardimg" alt="Who's That Baller share card showing a score of ${s} out of 100">
+    <p>Your friend gets today's file with your score as the one to beat. The card never shows the player's name.</p>
+    <button class="btn" id="shareBtn">Challenge a friend</button>
+    <div class="sendto" id="sendto" hidden>
+      <span class="eyebrow">Send with</span>
+      <div class="targets">
+        <a class="tgt wa" id="t-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="tgt" id="t-x" target="_blank" rel="noopener">X</a>
+        <a class="tgt" id="t-tg" target="_blank" rel="noopener">Telegram</a>
+        <a class="tgt" id="t-fb" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <button class="linkbtn" id="copyInvite">Or copy the invite</button>
+    </div>
+  </div></section>
+  ${tdkoReplayBox(REPLAY)}
+  <div class="next"><span class="eyebrow">Next file opens in</span><b id="cd">--:--:--</b></div>`;
+
+  const el=document.getElementById('scr'), t0=performance.now(), reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  (function up(){const p=reduce?1:Math.min(1,(performance.now()-t0)/800); el.textContent=Math.round(s*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(up)})();
+
+  let cardBlob=null;
+  drawCard().then(b=>{ cardBlob=b; if(b) document.getElementById('cardimg').src=URL.createObjectURL(b); });
+
+  const full=inviteText(), url=inviteUrl(), noUrl=full.replace(/\nTry today's file: .*$/,'\nTry today\'s file:'), E=encodeURIComponent;
+  document.getElementById('t-wa').href=`https://wa.me/?text=${E(full)}`;
+  document.getElementById('t-x').href=`https://x.com/intent/post?text=${E(noUrl)}&url=${E(url)}`;
+  document.getElementById('t-tg').href=`https://t.me/share/url?url=${E(url)}&text=${E(noUrl)}`;
+  document.getElementById('t-fb').href=`https://www.facebook.com/sharer/sharer.php?u=${E(url)}`;
+  const sendto=document.getElementById('sendto');
+  const showTargets=()=>{ sendto.hidden=false; sendto.scrollIntoView({block:'nearest',behavior:reduce?'auto':'smooth'}); };
+  document.getElementById('shareBtn').addEventListener('click', async ()=>{
+    if(!navigator.share) return showTargets();
+    const data={title:"Who's That Baller", text:full};
+    try{ const f=cardBlob&&new File([cardBlob],`whos-that-baller-${dayNo}.png`,{type:'image/png'}); if(f&&navigator.canShare&&navigator.canShare({files:[f]})) data.files=[f]; }catch(e){}
+    try{ await navigator.share(data); }catch(e){ if(e&&e.name==='AbortError') return; showTargets(); }
+  });
+  document.getElementById('copyInvite').addEventListener('click', ()=>{
+    const fb=()=>{ const t=document.createElement('textarea'); t.className='copybox'; t.readOnly=true; t.value=full; document.getElementById('copyInvite').replaceWith(t); t.focus(); t.select(); toast('Select the text and copy it'); };
+    try{ navigator.clipboard.writeText(full).then(()=>toast('Invite copied. Paste it to a friend'),fb); }catch(e){ fb(); }
+  });
+
+  clearInterval(cdTimer);
+  const tick=()=>{const n=new Date(),mid=new Date(n);mid.setHours(24,0,0,0);const d=Math.max(0,(mid-n)/1000|0);
+    if(d===0){ clearInterval(cdTimer); return location.reload(); }
+    const c=document.getElementById('cd'); if(c) c.textContent=`${String(d/3600|0).padStart(2,'0')}:${String(d%3600/60|0).padStart(2,'0')}:${String(d%60).padStart(2,'0')}`;};
+  tick(); cdTimer=setInterval(tick,1000);
+}
+
+/* ---------- share card (1080×1080, never names the player) ---------- */
+async function drawCard(){
+  try{ await Promise.all([document.fonts.load('900 100px Archivo'),document.fonts.load('800 40px Archivo'),document.fonts.load('600 30px "IBM Plex Mono"')]); }catch(e){}
+  const W=1080, c=document.createElement('canvas'); c.width=c.height=W;
+  const x=c.getContext('2d'); if(!x) return null;
+  const C={bg:'#0B110E',ink:'#EAF0EC',muted:'#8A988F',line:'#24302A',acc:'#34D27F',accInk:'#06120B',warn:'#F2B53A',bad:'#FF6B5A'};
+  const cond=v=>{ if('fontStretch' in x) x.fontStretch=v; };
+  const Pd=80, s=score();
+  x.fillStyle=C.bg; x.fillRect(0,0,W,W);
+  x.strokeStyle=C.line; x.lineWidth=4; x.beginPath(); x.arc(W+40,W*0.42,300,0,Math.PI*2); x.stroke();
+  x.beginPath(); x.moveTo(W-260,0); x.lineTo(W-260,W); x.stroke();
+  cond('condensed'); x.font='900 52px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=C.ink;
+  x.fillText("WHO'S THAT",Pd,Pd+48); const w=x.measureText("WHO'S THAT ").width; x.fillStyle=C.acc; x.fillText('BALLER',Pd+w,Pd+48);
+  cond('normal'); x.font='600 22px "IBM Plex Mono",monospace'; x.fillStyle=C.muted; x.textAlign='right';
+  x.fillText(`NO. ${dayNo} · ${dateLabel.toUpperCase()}`,W-Pd,Pd+46); x.textAlign='left';
+  x.fillStyle=C.ink; x.fillRect(Pd,Pd+80,W-2*Pd,4);
+  x.font='600 28px "IBM Plex Mono",monospace'; x.fillStyle=C.muted; x.fillText(S.won?'I NAMED HIM FOR':S.gaveUp?'I GAVE UP TODAY':'HE GOT AWAY',Pd,Pd+170);
+  cond('condensed'); x.font='900 340px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=C.ink;
+  const sw=x.measureText(String(s)).width; x.fillText(String(s),Pd-8,Pd+460);
+  cond('normal'); x.font='600 48px "IBM Plex Mono",monospace'; x.fillStyle=C.muted; x.fillText('/100',Pd+sw+10,Pd+460);
+  cond('condensed'); x.font='800 52px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=S.won?C.acc:C.bad; x.fillText(verdict(s).toUpperCase(),Pd,Pd+540);
+  const gap=10, cell=(W-2*Pd-9*gap)/10, gy=Pd+600, fill={g:C.acc,o:C.warn,x:C.bad};
+  for(let i=0;i<N;i++){ const cx=Pd+i*(cell+gap); x.fillStyle=fill[cellCls(i)]; x.fillRect(cx,gy,cell,cell);
+    x.font='600 28px "IBM Plex Mono",monospace'; x.textAlign='center'; x.fillStyle=C.bg; x.fillText(String(i+1).padStart(2,'0'),cx+cell/2,gy+cell/2+10); x.textAlign='left'; }
+  x.font='500 22px "IBM Plex Mono",monospace'; x.fillStyle=C.muted; x.fillText('GREEN = CLUES NOT NEEDED',Pd,gy+cell+40);
+  const by=W-Pd-20;
+  cond('condensed'); x.font='800 46px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=C.ink; x.fillText('CAN YOU NAME HIM WITH FEWER CLUES?',Pd,by-46);
+  cond('normal'); x.font='500 24px "IBM Plex Mono",monospace'; x.fillStyle=C.muted; x.fillText('ONE MYSTERY FOOTBALLER · 10 CLUES · ONE GO A DAY',Pd,by);
+  return new Promise(r=>c.toBlob(b=>r(b),'image/png'));
+}
+
+/* ---------- day rollover: always the player's own calendar day. If the page is left open past midnight, load the new day's puzzle when they come back. ---------- */
+const openedOn = (d=>`${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`)(new Date());
+const rollCheck = () => { const d=new Date(); if(`${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`!==openedOn) location.reload(); };
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) rollCheck(); });
+addEventListener('focus', rollCheck);
+
+/* ---------- boot ---------- */
+if(S.over) result(); else if(S.started) game(); else intro();
+})();
+</script>
