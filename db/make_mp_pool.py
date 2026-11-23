@@ -1,4 +1,4 @@
-"""Writes functions/api/mp/_pool.js: the puzzles Multiplayer may use (not a route; never sent whole to phones).
+"""Writes functions/api/mp/_pool.js: every approved puzzle Multiplayer uses (the ok flag is kept for reference only) (not a route; never sent whole to phones).
 A puzzle is 'ok' for the live site when it has already played as a daily puzzle, or is not on the calendar in the
 next 6 months (Fast Break: 8 weeks), so a quiz night never spoils an upcoming day. Preview sites may use everything,
 so the games can be tested before there is enough played stock.
