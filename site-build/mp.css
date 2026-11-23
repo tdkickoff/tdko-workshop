@@ -1,6 +1,6 @@
-:root{--bg:#EDF1FA;--surface:#fff;--ink:#0B1638;--muted:#56607A;--line:#D2D9EA;--accent:#1D4ED8;--accent-ink:#fff;--good:#0A8A4A;--hi:#E0A800;--bad:#C93A2B;--warn:#C98A00;--soft:#E2E8F7;--red:#D64545;--blue:#2F6FD1;--yellow:#D6A200;
+:root{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--bg:#EDF1FA;--surface:#fff;--ink:#0B1638;--muted:#56607A;--line:#D2D9EA;--accent:#1D4ED8;--accent-ink:#fff;--good:#0A8A4A;--hi:#E0A800;--bad:#C93A2B;--warn:#C98A00;--soft:#E2E8F7;--red:#D64545;--blue:#2F6FD1;--yellow:#D6A200;
   --f-d:"Archivo","Arial Narrow",system-ui,sans-serif;--f-m:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
-:root[data-tdko="dark"],body[data-mp="tv"]{--bg:#070F2B;--surface:#0E1A45;--ink:#EAF0FF;--muted:#93A0C4;--line:#22306A;--accent:#4D8DFF;--accent-ink:#06102E;--good:#34D27F;--hi:#FFC83D;--bad:#FF6B5A;--warn:#F2B53A;--soft:#16245A;--red:#FF6B6B;--blue:#7FB0FF;--yellow:#F2C94C;color-scheme:dark}
+:root[data-tdko="dark"],body[data-mp="tv"]{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#0ca30c;--bg:#070F2B;--surface:#0E1A45;--ink:#EAF0FF;--muted:#93A0C4;--line:#22306A;--accent:#4D8DFF;--accent-ink:#06102E;--good:#34D27F;--hi:#FFC83D;--bad:#FF6B5A;--warn:#F2B53A;--soft:#16245A;--red:#FF6B6B;--blue:#7FB0FF;--yellow:#F2C94C;color-scheme:dark}
 /* Multiplayer wears game-show blue so it never looks like the daily puzzles; green stays for right answers. The TV is always the dark studio look. */
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 var(--f-d);padding:0 16px max(24px,env(safe-area-inset-bottom))}
@@ -77,3 +77,8 @@ button,.opt,.btn{touch-action:manipulation;-webkit-tap-highlight-color:transpare
 .pgame .ghead + .clock{margin-top:-12px}
 body[data-mp="tv"]{background:radial-gradient(ellipse at 50% 0%,#1A3590 0%,var(--bg) 60%) fixed var(--bg)}
 .answer-card{border-color:var(--hi)}
+.graph svg{width:100%;height:auto;display:block;overflow:visible}.graph .gl{stroke:var(--line);stroke-width:1}.graph .gd{stroke:var(--line);stroke-dasharray:3 4}
+.graph .ax{font:500 12px var(--f-m);fill:var(--muted)}.graph .lb{font:700 15px var(--f-d);fill:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin:0 0 10px;font-size:13px}.legend span{display:flex;align-items:center;gap:6px}.legend i{width:14px;height:3px;border-radius:2px}
+.tvgame .graph{max-width:900px;margin:0 auto;width:100%}
+.finw{display:flex;flex-direction:column;gap:12px}.tvgame .finw{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:start}.tvgame .finw .graph{max-width:none}

@@ -8,9 +8,10 @@
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const GAMES = { fb: 'Fast Break', wtb: "Who's That Baller", cs: 'Clean Sweep', rh: 'Ranked Highly' };
   const DESC = { fb: 'Everyone answers the same question at once. Every right answer scores 100, plus up to 50 for speed.',
-    wtb: 'Take turns to name the player. A new clue appears each round. Earlier clue, more points.',
-    cs: 'Take turns to name a player on the list. 10 points for each one.',
-    rh: 'Take turns to call higher or lower. Get one wrong and you are out. Last one standing wins.' };
+    wtb: 'Take turns to name the player. A new clue appears each round. Earlier clue, more points: 500 down to 100.',
+    cs: 'Take turns to name a player on the list. 100 points for each one.',
+    rh: 'Take turns to call higher or lower. Get one wrong and you are out. Last one standing scores 1,000.' };
+  const fmt = n => (n || 0).toLocaleString('en-GB');
   const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 3, m: 5, l: 7, u: 'players' }, cs: { s: 1, m: 2, l: 3, u: 'lists' }, rh: { s: 1, m: 2, l: 3, u: 'rounds' } };
   const LN = { s: 'Short', m: 'Standard', l: 'Long' };
   const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }, del(k) { try { localStorage.removeItem(k); } catch (e) {} } };
@@ -60,7 +61,7 @@
   function table(title) {
     const rows = standings(id => V.quiz[id] || 0);
     const pos = s => rows.findIndex(x => (V.quiz[x.id] || 0) === (V.quiz[s.id] || 0) && (V.correct[x.id] || 0) === (V.correct[s.id] || 0)) + 1;
-    return `<section class="card"><h3>${esc(title)}</h3><ol class="table">${rows.map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${pos(s)}</span><span class="nm">${esc(s.name)}</span><b>${V.quiz[s.id] || 0}</b></li>`).join('')}</ol></section>`;
+    return `<section class="card"><h3>${esc(title)}</h3><ol class="table">${rows.map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${pos(s)}</span><span class="nm">${esc(s.name)}</span><b>${fmt(V.quiz[s.id])}</b></li>`).join('')}</ol></section>`;
   }
   function hostBar() {
     if (TV || !V.isHost || V.phase !== 'game') return '';
@@ -68,7 +69,7 @@
   }
   function log(g) {
     if (!g.log || !g.log.length) return '';
-    return `<ul class="log">${g.log.slice().reverse().map(l => `<li class="${l.t}"><b>${esc(l.who || sideName(l.side))}</b> ${l.t === 'right' ? '✓ ' + esc(l.text) + (l.pts ? ` <em>+${l.pts}</em>` : '') : l.t === 'wrong' ? '✗ ' + esc(l.text) : l.t === 'dup' ? esc(l.text) + ' · already found' : l.t === 'time' ? 'ran out of time' : l.t === 'skip' ? 'skipped' : 'nobody got it'}</li>`).join('')}</ul>`;
+    return `<ul class="log">${g.log.slice().reverse().map(l => `<li class="${l.t}"><b>${esc(l.who || sideName(l.side))}</b> ${l.t === 'right' ? '✓ ' + esc(l.text) + (l.pts ? ` <em>+${fmt(l.pts)}</em>` : '') : l.t === 'wrong' ? '✗ ' + esc(l.text) : l.t === 'dup' ? esc(l.text) + ' · already found' : l.t === 'time' ? 'ran out of time' : l.t === 'skip' ? 'skipped' : 'nobody got it'}</li>`).join('')}</ul>`;
   }
 
   // ---------- screens ----------
@@ -142,20 +143,20 @@
     return `<form id="af" class="row answer"><input id="ai" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="${esc(ph)}" value="${esc(typed)}"><button class="btn">Go</button></form>`;
   }
   function scores(g) {
-    return `<ol class="mini-table">${standings(id => g.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}${g.alive && !g.alive.includes(s.id) ? ' out' : ''}"><span>${esc(s.name)}</span><b>${g.score[s.id] || 0}</b></li>`).join('')}</ol>`;
+    return `<ol class="mini-table">${standings(id => g.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}${g.alive && !g.alive.includes(s.id) ? ' out' : ''}"><span>${esc(s.name)}</span><b>${fmt(g.score[s.id])}</b></li>`).join('')}</ol>`;
   }
 
   function fb(g) {
     const rev = g.step === 'reveal', mine = g.mine || (!rev && pend && pend.k === qkey() ? { o: pend.o } : null);
     const opts = g.o.map(o => { const cls = rev ? (o === g.right ? 'right' : (mine && mine.o === o ? 'wrong' : '')) : (mine && mine.o === o ? 'picked' : ''); return `<button class="opt ${cls}" data-a="fb" data-o="${esc(o)}" ${mine || rev || TV ? 'disabled' : ''}>${esc(o)}</button>`; }).join('');
-    const status = rev ? (TV ? `${g.who.length} of ${V.players.length} got it` : (mine && mine.pts ? `<span class="ok">Right · +${mine.pts}</span>` : `<span class="bad">${mine && mine.o ? 'Wrong' : 'No answer'}</span>`))
+    const status = rev ? (TV ? `${g.who.length} of ${V.players.length} got it` : (mine && mine.pts ? `<span class="ok">Right · +${fmt(mine.pts)}</span>` : `<span class="bad">${mine && mine.o ? 'Wrong' : 'No answer'}</span>`))
       : (mine ? 'Locked in. Waiting for the others…' : `${cd(g.until)}s · ${g.answered} of ${V.players.length} answered`);
     return `<h2 class="q">${esc(g.q)}</h2><div class="opts">${opts}</div><p class="status">${status}</p>${scores(g)}`;
   }
   function wtb(g) {
     const rev = g.step === 'reveal';
     const clues = `<ol class="clues">${g.clues.map(([k, v], i) => `<li class="${i >= g.clues.length - 2 && !rev ? 'new' : ''}"><span>${esc(k)}</span><b>${esc(v)}</b></li>`).join('')}</ol>`;
-    const top = rev ? `<div class="answer-card"><span class="eb">${g.winner ? esc(sideName(g.winner)) + ' got it' : 'Nobody got it'}</span><h2>${esc(g.answer)}</h2><p>${esc(g.blurb || '')}</p></div>` : `<p class="pts">Worth <b>${g.pts}</b> point${g.pts === 1 ? '' : 's'} on this clue</p>`;
+    const top = rev ? `<div class="answer-card"><span class="eb">${g.winner ? esc(sideName(g.winner)) + ' got it' : 'Nobody got it'}</span><h2>${esc(g.answer)}</h2><p>${esc(g.blurb || '')}</p></div>` : `<p class="pts">Worth <b>${fmt(g.pts)}</b> point${g.pts === 1 ? '' : 's'} on this clue</p>`;
     return `${top}${turnBanner(g)}${g.myTurn && g.step === 'turn' ? inputBox('Who is it?') : ''}${clues}${log(g)}${scores(g)}`;
   }
   function cs(g) {
@@ -179,13 +180,33 @@
   }
   function between() {
     const last = V.results[V.results.length - 1], next = V.config.games[V.gi + 1];
-    const rows = last ? standings(id => last.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="nm">${esc(s.name)}</span><span>${last.score[s.id] || 0}</span><b>+${last.places[s.id] || 0}</b></li>`).join('') : '';
+    const rows = last ? standings(id => last.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="nm">${esc(s.name)}</span><b>+${fmt(last.score[s.id])}</b></li>`).join('') : '';
     return `<div class="betw"><section class="card"><span class="eb">Full time · ${esc(GAMES[last.g])}</span><ol class="table res">${rows}</ol></section>${table('Quiz table')}</div><p class="status">Next: <b>${esc(GAMES[next.g])}</b> in ${cd(V.until)}s</p><p class="note">${esc(DESC[next.g])}</p>`;
+  }
+  // Final whistle graph: running quiz totals after every score, one line per player or team
+  const lineColour = id => V.mode === 'teams' ? `var(--${id})` : `var(--s${(V.sides.findIndex(s => s.id === id) % 6) + 1})`;
+  function graph() {
+    const tl = V.tl || []; if (tl.length < 2) return '';
+    const W = 480, H = 260, L = 50, R = 104, T = 26, B = 14, ids = V.sides.map(s => s.id);
+    const max = Math.max(1, ...tl.map(p => Math.max(...ids.map(id => p.t[id] || 0))));
+    const step = Math.pow(10, Math.floor(Math.log10(max))), nice = [1, 2, 2.5, 5, 10].map(m => m * step).find(m => max / m <= 4) || step * 10, top = Math.ceil(max / nice) * nice;
+    const x = i => L + (W - L - R) * i / (tl.length - 1), y = v => T + (H - T - B) * (1 - v / top);
+    let svg = '';
+    for (let v = 0; v <= top; v += nice) svg += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" class="gl"/><text x="${L - 8}" y="${y(v) + 4}" class="ax" text-anchor="end">${fmt(v)}</text>`;
+    tl.forEach((p, i) => { if (i && p.gi !== tl[i - 1].gi || i === 0) { const g = V.config.games[p.gi]; svg += `<line x1="${x(Math.max(0, i - (i ? 1 : 0)))}" x2="${x(Math.max(0, i - (i ? 1 : 0)))}" y1="${T - 6}" y2="${H - B}" class="gd"/><text x="${x(Math.max(0, i - (i ? 1 : 0))) + 4}" y="${T - 10}" class="ax">${g ? esc(GAMES[g.g]) : ''}</text>`; } });
+    const ends = ids.map(id => ({ id, v: tl[tl.length - 1].t[id] || 0 })).sort((a, b) => b.v - a.v);
+    let prev = -1e9; ends.forEach(e => { e.ly = Math.max(y(e.v) + 5, prev + 18); prev = e.ly; });
+    for (const id of ids) {
+      const pts = tl.map((p, i) => `${x(i).toFixed(1)},${y(p.t[id] || 0).toFixed(1)}`).join(' '), e = ends.find(e => e.id === id);
+      svg += `<polyline points="${pts}" fill="none" stroke="${lineColour(id)}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${x(tl.length - 1)}" cy="${y(e.v)}" r="4" fill="${lineColour(id)}" stroke="var(--surface)" stroke-width="2"/><text x="${W - R + 8}" y="${e.ly}" class="lb">${esc(sideName(id))}</text>`;
+    }
+    const legend = ids.map(id => `<span><i style="background:${lineColour(id)}"></i>${esc(sideName(id))}</span>`).join('');
+    return `<section class="card graph"><h3>How it unfolded</h3><div class="legend">${legend}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Running totals through the quiz">${svg}</svg></section>`;
   }
   function final() {
     const rows = standings(id => V.quiz[id] || 0), w = rows[0];
-    const shareText = `⚽ The Daily Kick Off · Multiplayer\n${rows.map((s, i) => `${['🥇', '🥈', '🥉'][i] || (i + 1) + '.'} ${s.name} ${V.quiz[s.id] || 0}`).join('\n')}\nHost your own: https://tdko.app/multiplayer.html`;
-    return `<section class="hero"><span class="eb">Final whistle</span><h1>${esc(w ? w.name : '')} <i>win${V.mode === 'teams' || (w && w.id === pid) ? '' : 's'}</i></h1></section>${table('Final table')}
+    const shareText = `⚽ The Daily Kick Off · Multiplayer\n${rows.map((s, i) => `${['🥇', '🥈', '🥉'][i] || (i + 1) + '.'} ${s.name} ${fmt(V.quiz[s.id])}`).join('\n')}\nHost your own: https://tdko.app/multiplayer.html`;
+    return `<section class="hero"><span class="eb">Final whistle</span><h1>${w && w.id === mySide() && !TV ? (V.mode === 'teams' ? esc(w.name) : 'You') : esc(w ? w.name : '')} <i>win${V.mode === 'teams' || (w && w.id === mySide() && !TV) ? '' : 's'}</i></h1></section><div class="finw">${table('Final table')}${graph()}</div>
       ${TV ? '' : `<button class="btn big" id="sharefin">Share the result</button>${V.isHost ? '<button class="btn ghost" data-a="rematch">Rematch</button>' : '<p class="note">Waiting for the host to start a rematch…</p>'}<button class="link" id="leave">Leave room</button>`}
       <span hidden id="sharetext">${esc(shareText)}</span>`;
   }
