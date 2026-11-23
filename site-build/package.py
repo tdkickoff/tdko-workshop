@@ -9,9 +9,10 @@ HEAD=('<!doctype html><html lang="en"><head><meta charset="utf-8">'
       '<meta property="og:image" content="https://tdko.app/og-image.png"><meta property="og:url" content="https://tdko.app/"><meta name="twitter:card" content="summary_large_image">')
 h=open(R+'the-daily-kick-off.html').read()
 open(OUT+'index.html','w').write(HEAD+'</head><body>'+h+'</body></html>')
-for f in ['fast-break','whos-that-baller','in-the-mixer','link-up-play','squad-goals','shirt-swap','tiki-taka-toe','offside','top-four','ranked-highly','clean-sweep','cup-run','contact','privacy','performance','tester','training-ground','stats-login','terms']:
+for f in ['fast-break','whos-that-baller','in-the-mixer','link-up-play','squad-goals','shirt-swap','tiki-taka-toe','offside','top-four','ranked-highly','clean-sweep','cup-run','contact','privacy','performance','tester','training-ground','stats-login','terms','multiplayer','tv']:
     s=open(R+f+'.html').read(); assert s.startswith('<!doctype html>'), f
     open(OUT+f+'.html','w').write(s.replace('<meta charset="utf-8">','<meta charset="utf-8">'+ICONS,1))
+shutil.copy(R+'mp.js', OUT+'mp.js')
 os.makedirs(OUT+'data',exist_ok=True)
 for f in os.listdir(R+'data'): shutil.copy(R+'data/'+f, OUT+'data/'+f)
 # old addresses go to the right tab of the Performance page
