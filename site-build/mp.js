@@ -206,7 +206,7 @@
     else if (V.phase === 'between') html = between();
     else if (V.phase === 'final') html = final();
     const focus = document.activeElement && document.activeElement.id === 'ai';
-    app.innerHTML = `<div class="${TV ? 'tvgame' : ''}">${html}</div><p class="err">${esc(flash)}</p>`;
+    app.innerHTML = `<div class="${TV ? 'tvgame' : 'pgame'}">${html}</div><p class="err">${esc(flash)}</p>`;
     if (focus && $('#ai')) { const el = $('#ai'); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }
     else if (!TV && $('#ai') && V.game && V.game.myTurn) $('#ai').focus();
     bind();
