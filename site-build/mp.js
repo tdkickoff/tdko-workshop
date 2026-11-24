@@ -10,7 +10,7 @@
   // game titles styled as on the Daily Puzzles page: condensed capitals, second word in the accent colour
   const TT = { fb: ['Fast', 'Break'], wtb: ["Who's That", 'Baller'], cs: ['Clean', 'Sweep'], rh: ['Ranked', 'Highly'] };
   const GT = g => `<span class="gt">${TT[g][0]} <i>${TT[g][1]}</i></span>`;
-  const DESC = { fb: "You all get the same question at once. A right answer scores 100, plus up to 50 more the quicker you are.",
+  const DESC = { fb: "You all get the same question and the same 15-second clock. A right answer scores 100, plus up to 50 more the quicker you are. When the clock hits zero, the next question starts.",
     wtb: "A new clue about the mystery player appears every 10 seconds. Name him on the first clue for 1,000, with 100 less for each clue after. Guess as often as you like; his surname is enough, his first name isn't.",
     cs: "Name the players on the list before anyone else does. Each name is worth 1,000 at the start, dropping to 100 as the clock runs down, and once a name is taken it's gone.",
     rh: "Call higher or lower before the 10 seconds run out. A right call scores up to 100, more the quicker you are; a wrong one puts you out of the round. It starts easy and gets harder." };
@@ -24,7 +24,7 @@
   const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 1, m: 3, l: 5, u: 'players' }, cs: { s: 1, m: 3, l: 5, u: 'lists' }, rh: { s: 1, m: 3, l: 5, u: 'rounds' } };
   // rough running time in seconds, from the engine's clocks plus kick-offs, reveals and host taps (Clean Sweep's clock grows with the number of players)
   const EST = (g, l, n) => { const k = LENS[g][l];
-    if (g === 'fb') return 5 + k * 16;
+    if (g === 'fb') return 5 + k * 15;
     if (g === 'wtb') return k * 90;
     if (g === 'cs') return k * (20 + (n >= 6 ? 150 : n >= 4 ? 120 : 90));
     return k * 70; };
@@ -87,7 +87,7 @@
   function table(title) {
     const rows = standings(id => V.quiz[id] || 0);
     const pos = s => rows.findIndex(x => (V.quiz[x.id] || 0) === (V.quiz[s.id] || 0) && (V.correct[x.id] || 0) === (V.correct[s.id] || 0)) + 1;
-    return `<section class="card"><h3>${esc(title)}</h3><ol class="table">${rows.map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${pos(s)}</span><span class="nm">${esc(s.name)}</span><b>${fmt(V.quiz[s.id])}</b></li>`).join('')}</ol></section>`;
+    return `<section class="card"><h3>${esc(title)}</h3><ol class="table">${rows.map((s, i) => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${i && pos(s) === pos(rows[i - 1]) ? '=' : pos(s)}</span><span class="nm">${esc(s.name)}</span><b>${fmt(V.quiz[s.id])}</b></li>`).join('')}</ol></section>`;
   }
   function hostBar() {
     if (TV || !V.isHost || V.phase !== 'game') return '';
@@ -208,11 +208,16 @@
   }
 
   function fb(g) {
-    const rev = g.step === 'reveal', mine = g.mine || (!rev && pend && pend.k === qkey() ? { o: pend.o } : null);
-    const opts = g.o.map(o => { const cls = rev ? (o === g.right ? 'right' : (mine && mine.o === o ? 'wrong' : '')) : (mine && mine.o === o ? 'picked' : ''); return `<button class="opt ${cls}" data-a="fb" data-o="${esc(o)}" ${mine || rev || TV ? 'disabled' : ''}>${esc(o)}</button>`; }).join('');
-    const status = rev ? (TV ? `${g.who.length} of ${V.players.length} got it` : (mine && mine.pts ? `<span class="ok">Right · +${fmt(mine.pts)}</span>` : `<span class="bad">${mine && mine.o ? 'Wrong' : 'No answer'}</span>`))
-      : (mine ? 'Locked in. Waiting for the others…' : `${cd(g.until)}s · ${g.answered} of ${V.players.length} answered`);
-    return `<h2 class="q">${esc(g.q)}</h2><div class="opts">${opts}</div><p class="status">${status}</p>${scores(g)}`;
+    const mine = g.mine || (pend && pend.k === qkey() ? { o: pend.o } : null);
+    const opts = g.o.map(o => `<button class="opt ${mine && mine.o === o ? 'picked' : ''}" data-a="fb" data-o="${esc(o)}" ${mine || TV ? 'disabled' : ''}>${esc(o)}</button>`).join('');
+    const status = `<b>${cd(g.until)}s</b> · ${mine ? (mine.worth ? `Locked in · <span class="ok">+${fmt(mine.worth)} if right</span>` : 'Locked in') : `${g.answered} of ${V.players.length} answered`}`;
+    return `${lastLine(g.last)}<h2 class="q">${esc(g.q)}</h2><div class="opts">${opts}</div><p class="status">${status}</p>${scores(g)}`;
+  }
+  // the result of the Fast Break question just gone, shown small while the next one runs
+  function lastLine(l) {
+    if (!l) return '';
+    const res = TV || !l.mine ? `${l.got} of ${V.players.length} got it` : l.mine.pts ? `<span class="ok">You were right · +${fmt(l.mine.pts)}</span>` : `<span class="bad">${l.mine.o ? 'You were wrong · 0' : 'No answer · 0'}</span>`;
+    return `<p class="lastq">Q${l.n}: <b>${esc(l.right)}</b> · ${res}</p>`;
   }
   function wtb(g) {
     const rev = g.step === 'reveal', live = g.step === 'clue' || g.step === 'final';
@@ -282,7 +287,7 @@
     const last = V.results[V.results.length - 1], next = V.config.games[V.gi + 1];
     const pts = id => last.score[id] || 0, st = last ? standings(pts) : [];
     const rows = st.map((s, i) => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${i && pts(st[i - 1].id) === pts(s.id) ? '=' : i + 1}</span><span class="nm">${esc(s.name)}</span><b>+${fmt(pts(s.id))}</b></li>`).join('');
-    return `<div class="betw"><section class="card"><h3>Full time · ${esc(GAMES[last.g])}</h3><ol class="table">${rows}</ol></section>${table('Quiz table')}</div>${upNext(next)}${nextBar('Start ' + GAMES[next.g])}`;
+    return `${V.lastq && last && last.g === 'fb' ? lastLine(V.lastq) : ''}<div class="betw"><section class="card"><h3>Full time · ${esc(GAMES[last.g])}</h3><ol class="table">${rows}</ol></section>${table('Quiz table')}</div>${upNext(next)}${nextBar('Start ' + GAMES[next.g])}`;
   }
   // what's coming, so everyone can read it before the host starts the countdown
   function upNext(x) {
