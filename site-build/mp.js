@@ -7,12 +7,23 @@
   const app = $('#mp');
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const GAMES = { fb: 'Fast Break', wtb: "Who's That Baller", cs: 'Clean Sweep', rh: 'Ranked Highly' };
-  const DESC = { fb: 'Everyone answers the same question at once. Every right answer scores 100, plus up to 50 for speed.',
-    wtb: 'Everyone guesses at once. A new clue every 10 seconds: name him on the first clue for 1,000, 100 less for each new one. Everyone who gets him scores. Guess as often as you like. Surname is fine, first name alone is not.',
-    cs: 'Everyone guesses at once. Name players on the list before anyone else: each one is worth 1,000 at the start, dropping to 100 as the clock runs down. Once a name is taken, it is gone. Guess as often as you like.',
-    rh: 'Everyone calls higher or lower at the same time. A right call scores up to 100, less the longer you take, up to 1,000 a round. Get one wrong and you are out of the round. Starts easy, gets harder.' };
+  const DESC = { fb: "You all get the same question at once. A right answer scores 100, plus up to 50 more the quicker you are.",
+    wtb: "A new clue about the mystery player appears every 10 seconds. Name him on the first clue for 1,000, with 100 less for each clue after. Guess as often as you like; his surname is enough, his first name isn't.",
+    cs: "Name the players on the list before anyone else does. Each name is worth 1,000 at the start, dropping to 100 as the clock runs down, and once a name is taken it's gone.",
+    rh: "Call higher or lower before the 10 seconds run out. A right call scores up to 100, more the quicker you are; a wrong one puts you out of the round. It starts easy and gets harder." };
+  const INFO = new Set(); // games whose details are open in the lobby
+  const infoBtn = g => `<button class="info" type="button" data-a="info" data-g="${g}" aria-expanded="${INFO.has(g)}" aria-controls="d-${g}" aria-label="${INFO.has(g) ? 'Hide' : 'Show'} how ${GAMES[g]} works"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></button>`;
+  const infoBox = g => INFO.has(g) ? `<div class="gdesc" id="d-${g}"><p>${DESC[g]}</p><button class="link" type="button" data-a="info" data-g="${g}">Hide details ▴</button></div>` : '';
   const fmt = n => (n || 0).toLocaleString('en-GB');
   const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 1, m: 3, l: 5, u: 'players' }, cs: { s: 1, m: 3, l: 5, u: 'lists' }, rh: { s: 1, m: 3, l: 5, u: 'rounds' } };
+  // rough running time in seconds, from the engine's clocks plus kick-offs, reveals and host taps (Clean Sweep's clock grows with the number of players)
+  const EST = (g, l, n) => { const k = LENS[g][l];
+    if (g === 'fb') return 5 + k * 16;
+    if (g === 'wtb') return k * 90;
+    if (g === 'cs') return k * (20 + (n >= 6 ? 150 : n >= 4 ? 120 : 90));
+    return k * 70; };
+  const MIN = s => `${Math.max(1, Math.round(s / 60))} min`;
+  const TOTAL = (games, n) => games.reduce((a, x) => a + EST(x.g, x.len, n) + 15, 0);
   const LN = { s: 'Short', m: 'Standard', l: 'Long' };
   const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }, del(k) { try { localStorage.removeItem(k); } catch (e) {} } };
   let pid = TV ? 'tv' : store.get('tdko-mp-pid');
@@ -104,6 +115,7 @@
   function lobby() {
     const host = V.isHost, link = `tdko.app/m/${V.code}`;
     const games = V.config.games, on = g => games.find(x => x.g === g);
+    const np = Math.max(2, V.players.length), len = games.length ? `<p class="qlen">Quiz length: <b>about ${MIN(TOTAL(games, np))}</b></p>` : '';
     const pl = p => `<li class="${p.pid === pid ? 'me' : ''}${teamCls(p.side)}">${p.here ? '' : '<span class="away">away</span>'}<span class="nm">${esc(p.name)}</span>${p.pid === V.host ? '<em>host</em>' : ''}
         ${host && !TV && V.mode === 'teams' ? `<button class="mini" data-a="team" data-p="${esc(p.pid)}">Move</button>` : ''}${host && !TV && p.pid !== V.host ? `<button class="mini x" data-a="kick" data-p="${esc(p.pid)}" aria-label="Remove ${esc(p.name)}">✕</button>` : ''}</li>`;
     const players = V.mode === 'teams'
@@ -111,15 +123,15 @@
       : `<ul class="people">${V.players.map(pl).join('')}</ul>`;
     if (TV) {
       app.innerHTML = `<section class="tvlobby"><div class="big-code"><span>Join at</span><b>${esc(link)}</b><span>or tdko.app → Multiplayer → code</span><strong>${esc(V.code)}</strong></div>
-        <div class="tvpeople"><h2>${V.players.length} of 6 in</h2>${players}<p class="note">${games.map(x => GAMES[x.g]).join(' · ')}</p></div></section>`;
+        <div class="tvpeople"><h2>${V.players.length} of 6 in</h2>${players}<p class="note">${games.map(x => GAMES[x.g]).join(' · ')}</p><p class="tvlen">${games.length ? `Quiz length: about ${MIN(TOTAL(games, np))}` : ''}</p></div></section>`;
       return;
     }
-    const cfg = host ? `<section class="card"><h3>The quiz</h3>${Object.keys(GAMES).map(g => { const x = on(g); return `<div class="game ${x ? 'on' : ''}"><label><input type="checkbox" data-a="g" data-g="${g}" ${x ? 'checked' : ''}> <b>${GAMES[g]}</b></label>
-        <div class="seg">${['s', 'm', 'l'].map(l => `<button data-a="len" data-g="${g}" data-l="${l}" class="${x && x.len === l ? 'on' : ''}" ${x ? '' : 'disabled'}>${LN[l]}<small>${LENS[g][l]} ${LENS[g][l] === 1 ? LENS[g].u.slice(0, -1) : LENS[g].u}</small></button>`).join('')}</div><p class="note">${DESC[g]}</p></div>`; }).join('')}</section>
+    const cfg = host ? `<section class="card"><h3>The quiz</h3>${Object.keys(GAMES).map(g => { const x = on(g); return `<div class="game ${x ? 'on' : ''}"><div class="gh"><label><input type="checkbox" data-a="g" data-g="${g}" ${x ? 'checked' : ''}> <b>${GAMES[g]}</b></label>${infoBtn(g)}</div>${infoBox(g)}
+        <div class="seg">${['s', 'm', 'l'].map(l => `<button data-a="len" data-g="${g}" data-l="${l}" class="${x && x.len === l ? 'on' : ''}" ${x ? '' : 'disabled'}>${LN[l]}<small>${LENS[g][l]} ${LENS[g][l] === 1 ? LENS[g].u.slice(0, -1) : LENS[g].u}</small><small class="t">about ${MIN(EST(g, l, np))}</small></button>`).join('')}</div></div>`; }).join('')}${len}</section>
       <section class="card"><h3>Players</h3><div class="seg wide"><button data-a="mode" data-m="solo" class="${V.mode === 'solo' ? 'on' : ''}">Everyone for themselves</button><button data-a="mode" data-m="teams" data-n="2" class="${V.mode === 'teams' && V.teams.length === 2 ? 'on' : ''}">2 teams</button><button data-a="mode" data-m="teams" data-n="3" class="${V.mode === 'teams' && V.teams.length === 3 ? 'on' : ''}">3 teams</button></div>
         ${V.mode === 'teams' ? '<button class="mini" data-a="shuffle">Shuffle teams</button>' : ''}${players}</section>
       <button class="btn big" data-a="start" ${V.players.length < 2 ? 'disabled' : ''}>${V.players.length < 2 ? 'Waiting for players…' : 'Kick off'}</button>`
-      : `<section class="card"><h3>Players</h3>${players}</section><section class="card"><h3>The quiz</h3><ol class="plan">${games.map(x => `<li><b>${GAMES[x.g]}</b> · ${LN[x.len]}, ${LENS[x.g][x.len]} ${LENS[x.g][x.len] === 1 ? LENS[x.g].u.slice(0, -1) : LENS[x.g].u}</li>`).join('')}</ol><p class="note">Waiting for the host to kick off.</p></section>`;
+      : `<section class="card"><h3>Players</h3>${players}</section><section class="card"><h3>The quiz</h3><ol class="plan">${games.map(x => `<li><div class="gh"><span><b>${GAMES[x.g]}</b> · ${LN[x.len]}, ${LENS[x.g][x.len]} ${LENS[x.g][x.len] === 1 ? LENS[x.g].u.slice(0, -1) : LENS[x.g].u} · about ${MIN(EST(x.g, x.len, np))}</span>${infoBtn(x.g)}</div>${infoBox(x.g)}</li>`).join('')}</ol>${len}<p class="note">Waiting for the host to kick off.</p></section>`;
     app.innerHTML = `<section class="codebox"><span class="eb">Room code</span><strong>${esc(V.code)}</strong>
         <button class="btn ghost" id="share">Share invite</button><p class="note">Others join at <b>${esc(link)}</b>. TV: open <b>tdko.app/tv</b>${V.tv ? ' · <span class="ok">TV connected</span>' : ''}</p></section>
       <section class="card you"><span class="eb">You're playing as</span><button class="namebtn" data-a="rename">${esc((me() || {}).name || '')} <small>Change</small></button></section>
@@ -278,6 +290,7 @@
       if (el.tagName === 'INPUT') { el.onchange = () => toggleGame(el.dataset.g, el.checked); return; }
       const fire = e => {
         e.preventDefault();
+        if (a === 'info') { const g = el.dataset.g; INFO.has(g) ? INFO.delete(g) : INFO.add(g); lobby(); bind(); const b = app.querySelector(`.info[data-g="${g}"]`); if (b) b.focus(); return; }
         if (a === 'len') return setLen(el.dataset.g, el.dataset.l);
         if (a === 'mode') return send({ type: 'mode', mode: el.dataset.m, teams: +el.dataset.n || 2 });
         if (a === 'team') { const p = V.players.find(p => p.pid === el.dataset.p), ids = V.teams.map(t => t.id); return send({ type: 'team', pid: el.dataset.p, team: ids[(ids.indexOf(p.side) + 1) % ids.length] }); }
