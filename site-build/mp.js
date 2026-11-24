@@ -10,7 +10,7 @@
   const DESC = { fb: 'Everyone answers the same question at once. Every right answer scores 100, plus up to 50 for speed.',
     wtb: 'Everyone guesses at once. A new clue every 10 seconds: name him on the first clue for 1,000, 100 less for each new one. Everyone who gets him scores. Guess as often as you like. Surname is fine, first name alone is not.',
     cs: 'Everyone guesses at once. Name players on the list before anyone else: each one is worth 1,000 at the start, dropping to 100 as the clock runs down. Once a name is taken, it is gone. Guess as often as you like.',
-    rh: 'Everyone calls higher or lower at the same time. A right call scores up to 1,000, less the longer you take. Get one wrong and you are out of the round. Starts easy, gets harder.' };
+    rh: 'Everyone calls higher or lower at the same time. A right call scores up to 100, less the longer you take, up to 1,000 a round. Get one wrong and you are out of the round. Starts easy, gets harder.' };
   const fmt = n => (n || 0).toLocaleString('en-GB');
   const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 1, m: 3, l: 5, u: 'players' }, cs: { s: 1, m: 3, l: 5, u: 'lists' }, rh: { s: 1, m: 3, l: 5, u: 'rounds' } };
   const LN = { s: 'Short', m: 'Standard', l: 'Long' };
