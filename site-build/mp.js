@@ -73,7 +73,7 @@
   }
 
   // ---------- screens ----------
-  function home(msg) {
+  function home(msg, joinOpen) {
     if (TV) {
       app.innerHTML = `<section class="tvjoin"><h1>The Daily Kick Off <i>on the TV</i></h1><p>Type the 4-letter room code from the host's phone.</p>
         <form id="tvf"><input id="tvc" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="CODE"><button>Show quiz</button></form><p class="err">${esc(msg || '')}</p></section>`;
@@ -82,7 +82,7 @@
     }
     app.innerHTML = `<section class="hero"><span class="eb">Multiplayer</span><h1>Play <i>together</i></h1><p class="lede">Play with up to five friends, each on your own phone. Host a quiz, share your room code so they can join, then kick off. Got a TV? Open <b>tdko.app/tv</b> on it and type in your room code to put the quiz on the big screen.</p></section>
       <section class="card" id="hostcard"><button class="btn big" id="host">Host a quiz</button></section>
-      <section class="card" id="joincard"><button class="btn big" id="joinbtn" type="button" aria-expanded="${msg ? 'true' : 'false'}" aria-controls="jf">Join a quiz</button><form id="jf" class="row"${msg ? '' : ' hidden'}><input id="jc" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="CODE" aria-label="Room code"><button class="btn">Join</button></form></section>
+      <section class="card" id="joincard"><button class="btn big" id="joinbtn" type="button" aria-expanded="${joinOpen ? 'true' : 'false'}" aria-controls="jf">Join a quiz</button><form id="jf" class="row"${joinOpen ? '' : ' hidden'}><input id="jc" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="CODE" aria-label="Room code"><button class="btn">Join</button></form></section>
       <p class="err">${esc(msg || '')}</p>`;
     const askPass = m => {
       $('#hostcard').innerHTML = `<p class="lede">Multiplayer is in the Training Ground for now. Enter your Training Ground code to host. Anyone can join with a room code.</p>
@@ -94,11 +94,11 @@
     $('#host').onclick = async () => { const pass = store.get('tdko-mp-pass'); if (!pass) return askPass();
       const r = await call('create', { pid, pass }); if (r.code) go(r.code); else if (r.needPass) { store.del('tdko-mp-pass'); askPass(r.error); } else home(r.error); };
     $('#joinbtn').onclick = () => { const f = $('#jf'), open = f.hidden; f.hidden = !open; $('#joinbtn').setAttribute('aria-expanded', String(open)); if (open) $('#jc').focus(); };
-    $('#jf').onsubmit = async e => { e.preventDefault(); const c = $('#jc').value.trim().toUpperCase(); if (!/^[A-Z]{4}$/.test(c)) return home('That code needs 4 letters.'); join(c); };
+    $('#jf').onsubmit = async e => { e.preventDefault(); const c = $('#jc').value.trim().toUpperCase(); if (!/^[A-Z]{4}$/.test(c)) return home('That code needs 4 letters.', true); join(c); };
   }
   async function join(c, quiet) {
     const r = await call('join', { code: c, pid });
-    if (r.view) { if (r.error) flash = r.error; go(c); } else { if (quiet) store.del('tdko-mp-code'); home(quiet ? '' : r.error); }
+    if (r.view) { if (r.error) flash = r.error; go(c); } else { if (quiet) store.del('tdko-mp-code'); home(quiet ? '' : r.error, !quiet); }
   }
 
   function lobby() {
