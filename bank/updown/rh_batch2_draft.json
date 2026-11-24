@@ -1,0 +1,603 @@
+[
+ {
+  "id": "eng-goals-2000",
+  "theme": "England goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "chain": [
+   [
+    "Michael Owen",
+    35
+   ],
+   [
+    "David Beckham",
+    16
+   ],
+   [
+    "Wayne Rooney",
+    53
+   ],
+   [
+    "Frank Lampard",
+    29
+   ],
+   [
+    "Peter Crouch",
+    22
+   ],
+   [
+    "Jermain Defoe",
+    20
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Michael_Owen",
+   "https://en.wikipedia.org/wiki/David_Beckham",
+   "https://en.wikipedia.org/wiki/List_of_England_international_footballers"
+  ]
+ },
+ {
+  "id": "eng-goals-2010",
+  "theme": "England goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "6 Oct 2026",
+  "chain": [
+   [
+    "Wayne Rooney",
+    28
+   ],
+   [
+    "Frank Lampard",
+    9
+   ],
+   [
+    "Steven Gerrard",
+    5
+   ],
+   [
+    "Harry Kane",
+    91
+   ],
+   [
+    "Raheem Sterling",
+    20
+   ],
+   [
+    "Danny Welbeck",
+    16
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Wayne_Rooney",
+   "https://en.wikipedia.org/wiki/Frank_Lampard",
+   "https://en.wikipedia.org/wiki/Steven_Gerrard",
+   "https://en.wikipedia.org/wiki/List_of_England_international_footballers"
+  ]
+ },
+ {
+  "id": "bra-goals-2000",
+  "theme": "Brazil goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "asof": "14 Nov 2026",
+  "chain": [
+   [
+    "Ronaldo",
+    26
+   ],
+   [
+    "Neymar",
+    80
+   ],
+   [
+    "Kaká",
+    29
+   ],
+   [
+    "Fred",
+    18
+   ],
+   [
+    "Philippe Coutinho",
+    21
+   ],
+   [
+    "Robinho",
+    28
+   ]
+  ],
+  "src": [
+   "https://rsssf.org/miscellaneous/ronaldo-intlg.html",
+   "https://en.wikipedia.org/wiki/List_of_Brazil_international_footballers"
+  ]
+ },
+ {
+  "id": "bra-goals-2010",
+  "theme": "Brazil goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "14 Nov 2026",
+  "chain": [
+   [
+    "Neymar",
+    80
+   ],
+   [
+    "Ronaldinho",
+    1
+   ],
+   [
+    "Philippe Coutinho",
+    21
+   ],
+   [
+    "Gabriel Jesus",
+    19
+   ],
+   [
+    "Vinícius Júnior",
+    16
+   ],
+   [
+    "Roberto Firmino",
+    17
+   ]
+  ],
+  "src": [
+   "https://rsssf.org/miscellaneous/ronaldinho-intlg.html",
+   "https://en.wikipedia.org/wiki/List_of_Brazil_international_footballers"
+  ]
+ },
+ {
+  "id": "cro-goals-2000",
+  "theme": "Croatia goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "chain": [
+   [
+    "Davor Šuker",
+    3
+   ],
+   [
+    "Mario Mandžukić",
+    33
+   ],
+   [
+    "Eduardo da Silva",
+    29
+   ],
+   [
+    "Ivica Olić",
+    20
+   ],
+   [
+    "Darijo Srna",
+    22
+   ],
+   [
+    "Niko Kranjčar",
+    16
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Davor_%C5%A0uker",
+   "https://en.wikipedia.org/wiki/Croatia_national_football_team_records_and_statistics"
+  ]
+ },
+ {
+  "id": "cro-goals-2010",
+  "theme": "Croatia goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "27 Sep 2026",
+  "chain": [
+   [
+    "Luka Modrić",
+    23
+   ],
+   [
+    "Ivan Perišić",
+    39
+   ],
+   [
+    "Andrej Kramarić",
+    36
+   ],
+   [
+    "Darijo Srna",
+    4
+   ],
+   [
+    "Marcelo Brozović",
+    7
+   ],
+   [
+    "Milan Badelj",
+    2
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Luka_Modri%C4%87",
+   "https://en.wikipedia.org/wiki/Darijo_Srna",
+   "https://en.wikipedia.org/wiki/Croatia_national_football_team_records_and_statistics",
+   "https://en.wikipedia.org/wiki/List_of_Croatia_international_footballers"
+  ]
+ },
+ {
+  "id": "por-goals-2000",
+  "theme": "Portugal goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "chain": [
+   [
+    "Luís Figo",
+    20
+   ],
+   [
+    "Cristiano Ronaldo",
+    146
+   ],
+   [
+    "Nani",
+    24
+   ],
+   [
+    "Hélder Postiga",
+    27
+   ],
+   [
+    "Hugo Almeida",
+    19
+   ],
+   [
+    "Deco",
+    5
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Lu%C3%ADs_Figo",
+   "https://en.wikipedia.org/wiki/List_of_Portugal_international_footballers"
+  ]
+ },
+ {
+  "id": "por-goals-2010",
+  "theme": "Portugal goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "27 Sep 2026",
+  "chain": [
+   [
+    "Cristiano Ronaldo",
+    124
+   ],
+   [
+    "Bruno Fernandes",
+    29
+   ],
+   [
+    "André Silva",
+    19
+   ],
+   [
+    "João Félix",
+    14
+   ],
+   [
+    "Rafael Leão",
+    6
+   ],
+   [
+    "Danilo Pereira",
+    2
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Cristiano_Ronaldo",
+   "https://en.wikipedia.org/wiki/List_of_Portugal_international_footballers"
+  ]
+ },
+ {
+  "id": "esp-goals-2000",
+  "theme": "Spain goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "chain": [
+   [
+    "Fernando Morientes",
+    18
+   ],
+   [
+    "David Villa",
+    59
+   ],
+   [
+    "Fernando Torres",
+    38
+   ],
+   [
+    "David Silva",
+    35
+   ],
+   [
+    "Xavi",
+    12
+   ],
+   [
+    "Cesc Fàbregas",
+    15
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Fernando_Morientes",
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_David_Villa",
+   "https://en.wikipedia.org/wiki/List_of_Spain_men%27s_international_footballers"
+  ]
+ },
+ {
+  "id": "esp-goals-2010",
+  "theme": "Spain goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "6 Oct 2026",
+  "chain": [
+   [
+    "David Villa",
+    24
+   ],
+   [
+    "Fernando Torres",
+    15
+   ],
+   [
+    "Álvaro Morata",
+    37
+   ],
+   [
+    "Mikel Oyarzabal",
+    31
+   ],
+   [
+    "Ferran Torres",
+    25
+   ],
+   [
+    "Pedro",
+    17
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_David_Villa",
+   "https://en.wikipedia.org/wiki/Fernando_Torres",
+   "https://en.wikipedia.org/wiki/List_of_Spain_men%27s_international_footballers"
+  ]
+ },
+ {
+  "id": "wc-goals-2000",
+  "theme": "World Cup goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "chain": [
+   [
+    "Ronaldo",
+    11
+   ],
+   [
+    "Kylian Mbappé",
+    22
+   ],
+   [
+    "Miroslav Klose",
+    16
+   ],
+   [
+    "Harry Kane",
+    14
+   ],
+   [
+    "David Villa",
+    9
+   ],
+   [
+    "Thomas Müller",
+    10
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+  ]
+ },
+ {
+  "id": "wc-goals-2010",
+  "theme": "World Cup goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "chain": [
+   [
+    "Lionel Messi",
+    20
+   ],
+   [
+    "Kylian Mbappé",
+    22
+   ],
+   [
+    "Miroslav Klose",
+    6
+   ],
+   [
+    "Harry Kane",
+    14
+   ],
+   [
+    "Neymar",
+    9
+   ],
+   [
+    "Jude Bellingham",
+    8
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+  ]
+ },
+ {
+  "id": "caps-record-2000",
+  "theme": "Caps since 2000 (each is their country's record holder)",
+  "unit": "caps",
+  "d": "M",
+  "chain": [
+   [
+    "Sergio Ramos (Spain)",
+    180
+   ],
+   [
+    "Gianluigi Buffon (Italy)",
+    164
+   ],
+   [
+    "Robbie Keane (Rep. of Ireland)",
+    133
+   ],
+   [
+    "Hugo Lloris (France)",
+    145
+   ],
+   [
+    "Cristiano Ronaldo (Portugal)",
+    234
+   ],
+   [
+    "Lionel Messi (Argentina)",
+    207
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Gianluigi_Buffon",
+   "https://en.wikipedia.org/wiki/Robbie_Keane",
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Cristiano_Ronaldo",
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Lionel_Messi"
+  ]
+ },
+ {
+  "id": "caps-record-2010",
+  "theme": "Caps since 2010 (each is their country's record holder)",
+  "unit": "caps",
+  "d": "E",
+  "chain": [
+   [
+    "Cristiano Ronaldo (Portugal)",
+    166
+   ],
+   [
+    "Lionel Messi (Argentina)",
+    163
+   ],
+   [
+    "Gianluigi Buffon (Italy)",
+    76
+   ],
+   [
+    "Hugo Lloris (France)",
+    137
+   ],
+   [
+    "Robbie Keane (Rep. of Ireland)",
+    50
+   ],
+   [
+    "Gareth Bale (Wales)",
+    88
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Cristiano_Ronaldo",
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Lionel_Messi",
+   "https://en.wikipedia.org/wiki/Gianluigi_Buffon",
+   "https://en.wikipedia.org/wiki/Hugo_Lloris",
+   "https://en.wikipedia.org/wiki/Robbie_Keane",
+   "https://en.wikipedia.org/wiki/Gareth_Bale"
+  ]
+ },
+ {
+  "id": "intl-caps-2000",
+  "theme": "International caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "chain": [
+   [
+    "David Beckham",
+    88
+   ],
+   [
+    "Luís Figo",
+    70
+   ],
+   [
+    "Thierry Henry",
+    112
+   ],
+   [
+    "Javier Zanetti",
+    97
+   ],
+   [
+    "Edwin van der Sar",
+    87
+   ],
+   [
+    "Gianluigi Buffon",
+    164
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/David_Beckham",
+   "https://en.wikipedia.org/wiki/Lu%C3%ADs_Figo",
+   "https://en.wikipedia.org/wiki/Thierry_Henry",
+   "https://en.wikipedia.org/wiki/Javier_Zanetti",
+   "https://en.wikipedia.org/wiki/Edwin_van_der_Sar",
+   "https://en.wikipedia.org/wiki/Gianluigi_Buffon"
+  ]
+ },
+ {
+  "id": "intl-caps-2010",
+  "theme": "International caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "chain": [
+   [
+    "Gareth Bale",
+    88
+   ],
+   [
+    "Eden Hazard",
+    116
+   ],
+   [
+    "Hugo Lloris",
+    137
+   ],
+   [
+    "Wesley Sneijder",
+    76
+   ],
+   [
+    "Miroslav Klose",
+    44
+   ],
+   [
+    "Javier Zanetti",
+    9
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Gareth_Bale",
+   "https://en.wikipedia.org/wiki/Eden_Hazard",
+   "https://en.wikipedia.org/wiki/Hugo_Lloris",
+   "https://en.wikipedia.org/wiki/Wesley_Sneijder",
+   "https://en.wikipedia.org/wiki/Miroslav_Klose",
+   "https://en.wikipedia.org/wiki/Javier_Zanetti"
+  ]
+ }
+]
