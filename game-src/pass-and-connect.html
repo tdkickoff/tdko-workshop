@@ -76,6 +76,7 @@ main{display:flex;flex-direction:column;gap:14px}
 .node.now{border:2px solid var(--ink);color:var(--ink)}
 .node.ok{border:0;background:var(--accent);color:var(--accent-ink)}
 .node.foul{border:0;background:color-mix(in oklab,var(--warn) 34%,var(--bg));color:var(--ink)}
+.node.skip{border:0;background:color-mix(in oklab,var(--muted) 30%,var(--bg));color:var(--ink)}
 .node.miss{border:0;background:color-mix(in oklab,var(--bad) 22%,var(--bg));color:var(--bad)}
 .pass{height:2px;background:var(--line);margin:0 4px}
 .pass.done{background:var(--accent)}
@@ -113,11 +114,14 @@ main{display:flex;flex-direction:column;gap:14px}
 .hbtn .c{color:var(--warn)}
 
 .guess{display:flex;flex-direction:column;gap:8px}
-.grow{display:grid;grid-template-columns:1fr auto;gap:8px}
+.grow{display:grid;grid-template-columns:1fr auto auto;gap:8px}
+#skipc:not(:empty){margin-top:10px}
 .grow input{box-sizing:border-box;width:100%;min-width:0;font:inherit;font-size:16px;font-weight:500;padding:13px 14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:0;-webkit-appearance:none}
 .grow input:focus{outline:none;border-color:var(--ink)}
 .grow input::placeholder{color:var(--muted)}
 .grow .btn{padding:0 20px}
+@media (max-width:400px){.grow .btn{padding:0 12px;font-size:16px}.grow input{padding-inline:10px}}
+@media (hover:none){#skip:hover{background:transparent;color:var(--ink)}}
 .fb{font-family:var(--f-mono);font-size:12px;letter-spacing:.03em;min-height:18px;color:var(--muted)}
 .fb.bad{color:var(--bad)} .fb.good{color:var(--accent)} .fb.warn{color:var(--warn)}
 .tried{display:flex;flex-wrap:wrap;gap:6px}
@@ -190,7 +194,7 @@ document.addEventListener('click', e=>{ if(!e.target.closest || !e.target.closes
 (function(){
 const GAME_URL = 'https://claude.ai/artifact/N9rCpAVMKXnfZLpw8uHjp9';
 const LAUNCH = Date.UTC(2026,10,16);   // SOFT LAUNCH: Mon 16 Nov 2026 is No. 1 (months count from 0). Before that date every day plays No. 1
-const LIVES = 5, FOUL = 10;
+const LIVES = 5, FOUL = 10, SKIP = 20;
 
 /* ---------- link types ---------- */
 const TYPES = {club:'Club teammates', intl:'International teammates', swap:'Transfer swap', boss:'Manager link', family:'Family', youth:'Boyhood club'};
@@ -220,10 +224,10 @@ function load(){ try{ const s=JSON.parse(localStorage.getItem(KEY)); if(s && Arr
 function report(){ if(REPLAY) return; try{ const k='tdko:'+dayKey+'#'+dayNo, all=JSON.parse(localStorage.getItem(k)||'{}'); all['link-up-play']={status: S.over?'done':S.started?'open':'ready', gaveUp:!!S.gaveUp}; localStorage.setItem(k, JSON.stringify(all)); }catch(e){} }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} report(); }
 let S = load() || {started:false, idx:0, used:0, res:[], fouls:Array(N).fill(0), hinted:Array(N).fill(false), tried:[], over:false, won:false, gaveUp:false};
-// res[i]: 'ok' clean, 'foul' solved after a hint or wrong guess
+// res[i]: 'ok' clean, 'foul' solved after a hint or wrong guess, 'skip' skipped (name shown, costs SKIP points)
 
-const solved = () => S.res.length;
-function score(){ return S.gaveUp ? 0 : S.won ? 100 - FOUL*S.used : 10*solved(); }
+const solved = () => S.res.length, named = () => S.res.filter(r => r !== 'skip').length, skips = () => S.res.length - named();
+function score(){ return S.gaveUp ? 0 : S.won ? Math.max(0, 100 - FOUL*S.used - SKIP*skips()) : 10*named(); }
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const initials = n => n.split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase();
 
@@ -289,7 +293,8 @@ function intro(){
     <ul class="rules">
       <li><span>Clues</span>Each player's position, nationality and how he links to the last one</li>
       <li><span>Lives</span>Five for the whole chain. A wrong guess or a letter hint costs one</li>
-      <li><span>Score</span>Complete the chain for 100, minus 10 per life lost. Run out and you get 10 per player named</li>
+      <li><span>Skip</span>Stuck on a player? Skip him for 20 points. His name is shown and the move carries on</li>
+      <li><span>Score</span>Complete the chain for 100, minus 10 per life lost and 20 per skip. Run out and you get 10 per player named</li>
     </ul>
     <div class="types" aria-label="Kinds of link">${Object.values(TYPES).map(t=>`<span class="ltag">${t}</span>`).join('')}</div>
     <div class="ladder" aria-label="Points">
@@ -318,7 +323,7 @@ function game(){
     ${track(i)}
     <div class="status">
       <div class="lives" aria-label="${LIVES-S.used} lives left"><span class="eyebrow" style="margin-right:4px">Lives</span>${Array.from({length:LIVES},(_,k)=>`<span class="life${k>=LIVES-S.used?' used':''}"></span>`).join('')}</div>
-      <div class="pts"><span class="eyebrow">Named</span><b>${solved()}/${N}</b></div>
+      <div class="pts"><span class="eyebrow">Named</span><b>${named()}/${N}</b></div>
     </div>
     <div class="pcard">
       <div class="phead"><span class="eyebrow">Player ${i+1} of ${N}${i===0?' · The kick-off':''}</span>${i?`<span class="ltag">${TYPES[P.t]}</span>`:''}</div>
@@ -335,8 +340,10 @@ function game(){
   <form class="guess" id="gform" autocomplete="off">
     <div class="grow">
       <input id="gin" type="text" autocapitalize="words" spellcheck="false" placeholder="Name player ${i+1}" aria-label="Your guess for player ${i+1}">
-      <button class="btn" type="submit" id="gbtn">Pass</button>
+      <button class="btn" type="submit" id="gbtn">Guess</button>
+      <button class="btn ghost" type="button" id="skip">Skip</button>
     </div>
+    <div id="skipc"></div>
     <div class="fb ${fbCls}" id="fb">${esc(fbMsg)}</div>
     ${S.tried.length?`<div class="tried" aria-label="Wrong guesses for this player">${S.tried.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`:''}
   </form>
@@ -345,6 +352,8 @@ function game(){
   const inp=document.getElementById('gin');
   inp.addEventListener('input', ()=>{ document.getElementById('tiles').innerHTML = tilesHTML(P.name, S.hinted[i]?'hint':'blank', inp.value); });
   document.getElementById('gform').addEventListener('submit', e=>{ e.preventDefault(); guess(); });
+  document.getElementById('skip').addEventListener('click', ()=>{ skipOpen=true; drawSkip(); });
+  drawSkip();
   const hb=document.getElementById('hint'); if(hb) onPress(hb, useHint);
   drawGiveUp();
 }
@@ -367,14 +376,32 @@ function useHint(){
   if(loseLife()) return;
   save(); fbMsg='Letters shown. One life used.'; fbCls='warn'; game();
 }
+let skipOpen=false;
+function drawSkip(){ // same confirm box as Give up
+  const c=document.getElementById('skipc'); if(!c) return;
+  c.innerHTML = skipOpen ? `<div class="confirm"><p>Skip player ${S.idx+1}? You lose ${SKIP} points and his name is shown, but you keep your lives.</p>
+    <div class="actions"><button class="btn ghost" id="skipno">Keep guessing</button><button class="btn danger" id="skipyes">Skip</button></div></div>` : '';
+  if(skipOpen){ onPress(document.getElementById('skipno'),()=>{skipOpen=false;drawSkip();}); onPress(document.getElementById('skipyes'),()=>{skipOpen=false;drawSkip();skip();}); }
+}
+function skip(){
+  if(S.over || S.res[S.idx]) return;
+  const P=PL[S.idx];
+  S.res[S.idx]='skip'; S.tried=[];
+  document.getElementById('tiles').innerHTML = tilesHTML(P.name,'ok');
+  const f=document.getElementById('fb'); f.className='fb warn'; f.textContent=`Skipped. It was ${P.name}. −${SKIP} points.`;
+  ['gin','gbtn','skip'].forEach(id=>document.getElementById(id).disabled=true);
+  if(S.idx===N-1){ S.over=true; S.won=true; save(); setTimeout(result,1400); return; }
+  S.idx++; save(); setTimeout(game,1400);
+}
 function guess(){
-  const inp=document.getElementById('gin'), raw=inp.value.trim(); if(!raw) return;
+  const inp=document.getElementById('gin'), raw=inp.value.trim();
+  if(!raw){ const f=document.getElementById('fb'); f.className='fb warn'; f.textContent='Type a name to guess, or skip this player.'; inp.focus({preventScroll:true}); return; }
   const P=PL[S.idx];
   if(isMatch(raw,P)){
     S.res[S.idx] = S.fouls[S.idx] ? 'foul' : 'ok';
     document.getElementById('tiles').innerHTML = tilesHTML(P.name,'ok');
     const f=document.getElementById('fb'); f.className='fb good'; f.textContent=`${P.name}. Pass complete.`;
-    inp.disabled=true; document.getElementById('gbtn').disabled=true;
+    inp.disabled=true; document.getElementById('gbtn').disabled=true; document.getElementById('skip').disabled=true;
     S.tried=[];
     if(S.idx===N-1){ S.over=true; S.won=true; save(); setTimeout(result,700); return; }
     S.idx++; save(); setTimeout(game,700); return;
@@ -390,16 +417,16 @@ function guess(){
 
 /* ---------- result ---------- */
 function verdict(s){
-  if(S.won){ if(s===100) return 'Total football'; if(s>=80) return 'Slick passing move'; return 'Got there, just'; }
+  if(S.won){ if(!named()) return 'Skipped the lot'; if(s===100) return 'Total football'; if(s>=80) return 'Slick passing move'; return 'Got there, just'; }
   if(S.gaveUp) return 'Gave up';
-  return solved()>=3 ? 'Cut out in the final third' : 'Possession lost';
+  return named()>=3 ? 'Cut out in the final third' : 'Possession lost';
 }
 const nodeCls = i => S.res[i] || 'miss';
 function inviteUrl(){ return `${GAME_URL}#c${dayNo}-${score()}`; }
 function inviteText(){
-  const sq={ok:'🟩',foul:'🟨',miss:'🟥'};
+  const sq={ok:'🟩',foul:'🟨',skip:'⬜',miss:'🟥'};
   const row = PL.map((_,i)=>sq[nodeCls(i)]).join('➡️');
-  const head = S.won ? `⚽ Link Up Play No. ${dayNo}: completed the move for ${score()}/100` : (S.gaveUp ? `⚽ Link Up Play No. ${dayNo}: 🏳️ gave up (0/100)` : `⚽ Link Up Play No. ${dayNo}: move broken down at ${solved()}/${N}`);
+  const head = S.won ? `⚽ Link Up Play No. ${dayNo}: completed the move for ${score()}/100` : (S.gaveUp ? `⚽ Link Up Play No. ${dayNo}: 🏳️ gave up (0/100)` : `⚽ Link Up Play No. ${dayNo}: move broken down at ${named()}/${N}`);
   return `${head}\n${row}\n\nFive footballers, each linked to the next. Can you complete today's chain?\nTry it: ${inviteUrl()}`;
 }
 let cdTimer=0;
@@ -486,13 +513,13 @@ async function drawCard(){
   cond('normal'); x.font='600 24px "IBM Plex Mono",monospace'; x.fillStyle=K.muted; x.textAlign='right';
   x.fillText(`NO. ${dayNo} · ${dateLabel.toUpperCase()}`,W-Pd,Pd+46); x.textAlign='left';
   x.fillStyle=K.ink; x.fillRect(Pd,Pd+80,W-2*Pd,4);
-  x.font='600 28px "IBM Plex Mono",monospace'; x.fillStyle=K.muted; x.fillText(S.won?'I COMPLETED THE MOVE FOR':S.gaveUp?'I GAVE UP TODAY':`MOVE BROKEN DOWN AT ${solved()}/${N}`,Pd,Pd+170);
+  x.font='600 28px "IBM Plex Mono",monospace'; x.fillStyle=K.muted; x.fillText(S.won?'I COMPLETED THE MOVE FOR':S.gaveUp?'I GAVE UP TODAY':`MOVE BROKEN DOWN AT ${named()}/${N}`,Pd,Pd+170);
   cond('condensed'); x.font='900 340px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=K.ink;
   const sw=x.measureText(String(s)).width; x.fillText(String(s),Pd-8,Pd+460);
   cond('normal'); x.font='600 48px "IBM Plex Mono",monospace'; x.fillStyle=K.muted; x.fillText('/100',Pd+sw+10,Pd+460);
   cond('condensed'); x.font='800 52px Archivo,"Arial Narrow",sans-serif'; x.fillStyle=S.won?K.acc:K.bad; x.fillText(verdict(s).toUpperCase(),Pd,Pd+540);
   // chain
-  const fill={ok:K.acc,foul:K.warn,miss:K.bad}, nd=96, span=(W-2*Pd-nd)/(N-1), cy=Pd+650;
+  const fill={ok:K.acc,foul:K.warn,skip:K.muted,miss:K.bad}, nd=96, span=(W-2*Pd-nd)/(N-1), cy=Pd+650;
   for(let i=1;i<N;i++){ x.fillStyle=(S.res[i-1]&&S.res[i])?K.acc:K.line; x.fillRect(Pd+(i-1)*span+nd/2, cy-3, span, 6); }
   PL.forEach((_,i)=>{ const cx=Pd+i*span; x.fillStyle=fill[nodeCls(i)]; x.fillRect(cx,cy-nd/2,nd,nd);
     cond('condensed'); x.font='800 48px Archivo,sans-serif'; x.textAlign='center'; x.fillStyle=K.bg; x.fillText(String(i+1),cx+nd/2,cy+17); x.textAlign='left'; });
