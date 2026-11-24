@@ -1,0 +1,1598 @@
+[
+ {
+  "id": "wal-caps-2000",
+  "theme": "Wales caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "17 Nov 2026",
+  "chain": [
+   [
+    "Wayne Hennessey",
+    109
+   ],
+   [
+    "Gareth Bale",
+    111
+   ],
+   [
+    "Aaron Ramsey",
+    86
+   ],
+   [
+    "Chris Gunter",
+    109
+   ],
+   [
+    "Ashley Williams",
+    86
+   ],
+   [
+    "Ben Davies",
+    106
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_Wales_international_footballers"
+  ],
+  "live": 1,
+  "live_note": "Active: Ben Davies, Aaron Ramsey — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "wal-caps-2010",
+  "theme": "Wales caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "17 Nov 2026",
+  "chain": [
+   [
+    "Gareth Bale",
+    88
+   ],
+   [
+    "Ben Davies",
+    106
+   ],
+   [
+    "Aaron Ramsey",
+    75
+   ],
+   [
+    "Chris Gunter",
+    89
+   ],
+   [
+    "Joe Allen",
+    75
+   ],
+   [
+    "Wayne Hennessey",
+    86
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_Wales_international_footballers"
+  ],
+  "live": 1,
+  "live_note": "Active: Ben Davies, Aaron Ramsey — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "ned-caps-2000",
+  "theme": "Netherlands caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "30 Jun 2026",
+  "chain": [
+   [
+    "Daley Blind",
+    110
+   ],
+   [
+    "Wesley Sneijder",
+    134
+   ],
+   [
+    "Virgil van Dijk",
+    107
+   ],
+   [
+    "Memphis Depay",
+    121
+   ],
+   [
+    "Robin van Persie",
+    102
+   ],
+   [
+    "Rafael van der Vaart",
+    109
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Netherlands_national_football_team_records_and_statistics"
+  ],
+  "live": 1,
+  "live_note": "Active: Memphis Depay, Virgil van Dijk — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "ned-caps-2010",
+  "theme": "Netherlands caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "30 Jun 2026",
+  "chain": [
+   [
+    "Virgil van Dijk",
+    107
+   ],
+   [
+    "Memphis Depay",
+    121
+   ],
+   [
+    "Stefan de Vrij",
+    89
+   ],
+   [
+    "Daley Blind",
+    110
+   ],
+   [
+    "Denzel Dumfries",
+    86
+   ],
+   [
+    "Georginio Wijnaldum",
+    101
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Netherlands_national_football_team_records_and_statistics"
+  ],
+  "live": 1,
+  "live_note": "Active: Memphis Depay, Virgil van Dijk, Stefan de Vrij, Denzel Dumfries — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "sco-caps-2000",
+  "theme": "Scotland caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "16 Nov 2026",
+  "chain": [
+   [
+    "Craig Gordon",
+    84
+   ],
+   [
+    "Andy Robertson",
+    103
+   ],
+   [
+    "Ryan Christie",
+    76
+   ],
+   [
+    "John McGinn",
+    95
+   ],
+   [
+    "Scott McTominay",
+    75
+   ],
+   [
+    "Darren Fletcher",
+    80
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_Scotland_international_footballers"
+  ],
+  "live": 1,
+  "live_note": "Active: Andy Robertson, John McGinn, Craig Gordon, Ryan Christie, Scott McTominay — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "sco-caps-2010",
+  "theme": "Scotland caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "16 Nov 2026",
+  "chain": [
+   [
+    "Ryan Christie",
+    76
+   ],
+   [
+    "Andy Robertson",
+    103
+   ],
+   [
+    "Grant Hanley",
+    70
+   ],
+   [
+    "John McGinn",
+    95
+   ],
+   [
+    "Callum McGregor",
+    63
+   ],
+   [
+    "Scott McTominay",
+    75
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_Scotland_international_footballers"
+  ],
+  "live": 1,
+  "live_note": "Active: Andy Robertson, John McGinn, Ryan Christie, Scott McTominay, Grant Hanley, Callum McGregor — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "eng-caps-2000-a",
+  "theme": "England caps since 2000 (top 6)",
+  "unit": "caps",
+  "d": "M",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Steven Gerrard",
+    114
+   ],
+   [
+    "Harry Kane",
+    127
+   ],
+   [
+    "Frank Lampard",
+    105
+   ],
+   [
+    "Wayne Rooney",
+    120
+   ],
+   [
+    "Kyle Walker",
+    96
+   ],
+   [
+    "Ashley Cole",
+    107
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Harry_Kane",
+   "https://en.wikipedia.org/wiki/Kyle_Walker"
+  ],
+  "live": 1,
+  "live_note": "Active: Harry Kane — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "eng-caps-2000-b",
+  "theme": "England caps since 2000 (7th to 12th)",
+  "unit": "caps",
+  "d": "M",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Jordan Henderson",
+    91
+   ],
+   [
+    "John Stones",
+    94
+   ],
+   [
+    "Declan Rice",
+    82
+   ],
+   [
+    "Jordan Pickford",
+    93
+   ],
+   [
+    "Raheem Sterling",
+    82
+   ],
+   [
+    "David Beckham",
+    88
+   ]
+  ],
+  "src": [
+   "https://www.englandfootball.com/mens-senior-team/squad/declan-rice",
+   "https://en.wikipedia.org/wiki/John_Stones",
+   "https://en.wikipedia.org/wiki/Jordan_Henderson"
+  ],
+  "live": 1,
+  "live_note": "Active: John Stones, Jordan Pickford, Jordan Henderson, Declan Rice, Raheem Sterling — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "eng-caps-2010-a",
+  "theme": "England caps since 2010 (top 6)",
+  "unit": "caps",
+  "d": "E",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "John Stones",
+    94
+   ],
+   [
+    "Harry Kane",
+    127
+   ],
+   [
+    "Jordan Henderson",
+    91
+   ],
+   [
+    "Kyle Walker",
+    96
+   ],
+   [
+    "Declan Rice",
+    82
+   ],
+   [
+    "Jordan Pickford",
+    93
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Harry_Kane",
+   "https://www.englandfootball.com/england/mens-senior-team/squad/jordan-pickford"
+  ],
+  "live": 1,
+  "live_note": "Active: Harry Kane, John Stones, Jordan Pickford, Jordan Henderson, Declan Rice — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "eng-caps-2010-b",
+  "theme": "England caps since 2010 (7th to 12th)",
+  "unit": "caps",
+  "d": "E",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Joe Hart",
+    74
+   ],
+   [
+    "Raheem Sterling",
+    82
+   ],
+   [
+    "Wayne Rooney",
+    63
+   ],
+   [
+    "Marcus Rashford",
+    78
+   ],
+   [
+    "Gary Cahill",
+    61
+   ],
+   [
+    "Harry Maguire",
+    66
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Marcus_Rashford",
+   "https://en.wikipedia.org/wiki/Wayne_Rooney"
+  ],
+  "live": 1,
+  "live_note": "Active: Raheem Sterling, Marcus Rashford, Harry Maguire — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "irl-caps-2000",
+  "theme": "Republic of Ireland caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "6 Jun 2026",
+  "chain": [
+   [
+    "Shay Given",
+    111
+   ],
+   [
+    "Robbie Keane",
+    133
+   ],
+   [
+    "Kevin Kilbane",
+    100
+   ],
+   [
+    "John O'Shea",
+    118
+   ],
+   [
+    "Aiden McGeady",
+    93
+   ],
+   [
+    "James McClean",
+    103
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_Republic_of_Ireland_international_footballers"
+  ],
+  "live": 1,
+  "live_note": "Active: James McClean — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "irl-caps-2010",
+  "theme": "Republic of Ireland caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "6 Jun 2026",
+  "chain": [
+   [
+    "Jeff Hendrick",
+    79
+   ],
+   [
+    "James McClean",
+    103
+   ],
+   [
+    "Glenn Whelan",
+    74
+   ],
+   [
+    "Séamus Coleman",
+    81
+   ],
+   [
+    "Robbie Brady",
+    73
+   ],
+   [
+    "Shane Long",
+    77
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Glenn_Whelan",
+   "https://en.wikipedia.org/wiki/Shane_Long"
+  ],
+  "live": 1,
+  "live_note": "Active: James McClean, Séamus Coleman, Jeff Hendrick — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "ger-caps-2000",
+  "theme": "Germany caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "16 Nov 2026",
+  "chain": [
+   [
+    "Lukas Podolski",
+    130
+   ],
+   [
+    "Miroslav Klose",
+    137
+   ],
+   [
+    "Bastian Schweinsteiger",
+    121
+   ],
+   [
+    "Thomas Müller",
+    131
+   ],
+   [
+    "Joshua Kimmich",
+    118
+   ],
+   [
+    "Manuel Neuer",
+    128
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Germany_national_football_team_records_and_statistics",
+   "https://en.wikipedia.org/wiki/Manuel_Neuer"
+  ],
+  "live": 1,
+  "live_note": "Active: Manuel Neuer, Joshua Kimmich — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "ger-caps-2010",
+  "theme": "Germany caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "16 Nov 2026",
+  "chain": [
+   [
+    "Joshua Kimmich",
+    118
+   ],
+   [
+    "Thomas Müller",
+    131
+   ],
+   [
+    "Antonio Rüdiger",
+    86
+   ],
+   [
+    "Manuel Neuer",
+    126
+   ],
+   [
+    "Mesut Özil",
+    85
+   ],
+   [
+    "Toni Kroos",
+    114
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Manuel_Neuer",
+   "https://en.wikipedia.org/wiki/Mesut_%C3%96zil",
+   "https://en.wikipedia.org/wiki/Antonio_R%C3%BCdiger"
+  ],
+  "live": 1,
+  "live_note": "Active: Manuel Neuer, Joshua Kimmich, Antonio Rüdiger — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "fra-caps-2000",
+  "theme": "France caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Antoine Griezmann",
+    137
+   ],
+   [
+    "Hugo Lloris",
+    145
+   ],
+   [
+    "Kylian Mbappé",
+    108
+   ],
+   [
+    "Olivier Giroud",
+    137
+   ],
+   [
+    "Karim Benzema",
+    97
+   ],
+   [
+    "Thierry Henry",
+    112
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_France_international_footballers",
+   "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
+   "https://en.wikipedia.org/wiki/Thierry_Henry"
+  ],
+  "live": 1,
+  "live_note": "Active: Kylian Mbappé — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "fra-caps-2010",
+  "theme": "France caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Hugo Lloris",
+    137
+   ],
+   [
+    "Olivier Giroud",
+    137
+   ],
+   [
+    "Raphaël Varane",
+    93
+   ],
+   [
+    "Antoine Griezmann",
+    137
+   ],
+   [
+    "Paul Pogba",
+    91
+   ],
+   [
+    "Kylian Mbappé",
+    108
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_France_international_footballers",
+   "https://en.wikipedia.org/wiki/Hugo_Lloris"
+  ],
+  "live": 1,
+  "live_note": "Active: Kylian Mbappé — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "esp-caps-2000",
+  "theme": "Spain caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "26 Jun 2026",
+  "chain": [
+   [
+    "Sergio Busquets",
+    143
+   ],
+   [
+    "Sergio Ramos",
+    180
+   ],
+   [
+    "Andrés Iniesta",
+    131
+   ],
+   [
+    "Iker Casillas",
+    167
+   ],
+   [
+    "David Silva",
+    125
+   ],
+   [
+    "Xavi",
+    133
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Spain_national_football_team_records_and_statistics"
+  ]
+ },
+ {
+  "id": "esp-caps-2010",
+  "theme": "Spain caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "26 Jun 2026",
+  "chain": [
+   [
+    "David Silva",
+    93
+   ],
+   [
+    "Sergio Busquets",
+    133
+   ],
+   [
+    "Andrés Iniesta",
+    92
+   ],
+   [
+    "Sergio Ramos",
+    124
+   ],
+   [
+    "Gerard Piqué",
+    89
+   ],
+   [
+    "Jordi Alba",
+    93
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Sergio_Ramos",
+   "https://en.wikipedia.org/wiki/Sergio_Busquets",
+   "https://en.wikipedia.org/wiki/David_Silva",
+   "https://en.wikipedia.org/wiki/Andr%C3%A9s_Iniesta",
+   "https://en.wikipedia.org/wiki/Gerard_Piqu%C3%A9"
+  ]
+ },
+ {
+  "id": "ita-caps-2000",
+  "theme": "Italy caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "2 Oct 2026",
+  "chain": [
+   [
+    "Giorgio Chiellini",
+    117
+   ],
+   [
+    "Gianluigi Buffon",
+    164
+   ],
+   [
+    "Andrea Pirlo",
+    116
+   ],
+   [
+    "Leonardo Bonucci",
+    121
+   ],
+   [
+    "Fabio Cannavaro",
+    105
+   ],
+   [
+    "Daniele De Rossi",
+    117
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Italy_national_football_team_records_and_statistics",
+   "https://rsssf.org/miscellaneous/cannavaro-intl.html"
+  ]
+ },
+ {
+  "id": "ita-caps-2010",
+  "theme": "Italy caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "25 Sep 2026",
+  "chain": [
+   [
+    "Gianluigi Donnarumma",
+    83
+   ],
+   [
+    "Leonardo Bonucci",
+    121
+   ],
+   [
+    "Nicolò Barella",
+    71
+   ],
+   [
+    "Giorgio Chiellini",
+    90
+   ],
+   [
+    "Daniele De Rossi",
+    66
+   ],
+   [
+    "Gianluigi Buffon",
+    76
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Giorgio_Chiellini",
+   "https://en.wikipedia.org/wiki/Daniele_De_Rossi",
+   "https://en.wikipedia.org/wiki/Gianluigi_Donnarumma",
+   "https://en.wikipedia.org/wiki/Nicol%C3%B2_Barella"
+  ],
+  "live": 1,
+  "live_note": "Active: Gianluigi Donnarumma, Nicolò Barella — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "por-caps-2000",
+  "theme": "Portugal caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "14 Nov 2026",
+  "chain": [
+   [
+    "Pepe",
+    141
+   ],
+   [
+    "Cristiano Ronaldo",
+    234
+   ],
+   [
+    "Nani",
+    112
+   ],
+   [
+    "João Moutinho",
+    146
+   ],
+   [
+    "Rui Patrício",
+    108
+   ],
+   [
+    "Bernardo Silva",
+    116
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Portugal_national_football_team_records_and_statistics",
+   "https://en.wikipedia.org/wiki/Bernardo_Silva"
+  ],
+  "live": 1,
+  "live_note": "Active: Bernardo Silva — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "por-caps-2010",
+  "theme": "Portugal caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "17 Nov 2026",
+  "chain": [
+   [
+    "Pepe",
+    117
+   ],
+   [
+    "Cristiano Ronaldo",
+    166
+   ],
+   [
+    "Rui Patrício",
+    108
+   ],
+   [
+    "João Moutinho",
+    121
+   ],
+   [
+    "Bruno Fernandes",
+    99
+   ],
+   [
+    "Bernardo Silva",
+    116
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Jo%C3%A3o_Moutinho",
+   "https://en.wikipedia.org/wiki/Pepe_(footballer,_born_1983)",
+   "https://www.fotmob.com/fr/players/422685/bruno-fernandes"
+  ],
+  "live": 1,
+  "live_note": "Active: Bernardo Silva, Bruno Fernandes — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "cro-caps-2000",
+  "theme": "Croatia caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "27 Sep 2026",
+  "chain": [
+   [
+    "Darijo Srna",
+    134
+   ],
+   [
+    "Luka Modrić",
+    203
+   ],
+   [
+    "Mateo Kovačić",
+    118
+   ],
+   [
+    "Ivan Perišić",
+    159
+   ],
+   [
+    "Stipe Pletikosa",
+    111
+   ],
+   [
+    "Andrej Kramarić",
+    119
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Croatia_national_football_team_records_and_statistics",
+   "https://en.wikipedia.org/wiki/Stipe_Pletikosa"
+  ],
+  "live": 1,
+  "live_note": "Active: Luka Modrić, Ivan Perišić, Andrej Kramarić, Mateo Kovačić — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "cro-caps-2010",
+  "theme": "Croatia caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "27 Sep 2026",
+  "chain": [
+   [
+    "Andrej Kramarić",
+    119
+   ],
+   [
+    "Luka Modrić",
+    167
+   ],
+   [
+    "Domagoj Vida",
+    105
+   ],
+   [
+    "Ivan Perišić",
+    159
+   ],
+   [
+    "Marcelo Brozović",
+    99
+   ],
+   [
+    "Mateo Kovačić",
+    118
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Croatia_national_football_team_records_and_statistics",
+   "https://en.wikipedia.org/wiki/Domagoj_Vida"
+  ],
+  "live": 1,
+  "live_note": "Active: Luka Modrić, Ivan Perišić, Andrej Kramarić, Mateo Kovačić — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "arg-caps-2000",
+  "theme": "Argentina caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "12 Sep 2026",
+  "chain": [
+   [
+    "Ángel Di María",
+    145
+   ],
+   [
+    "Lionel Messi",
+    207
+   ],
+   [
+    "Sergio Agüero",
+    101
+   ],
+   [
+    "Javier Mascherano",
+    147
+   ],
+   [
+    "Javier Zanetti",
+    97
+   ],
+   [
+    "Nicolás Otamendi",
+    139
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Lionel_Messi",
+   "https://en.wikipedia.org/wiki/Nicol%C3%A1s_Otamendi",
+   "https://en.wikipedia.org/wiki/Javier_Zanetti"
+  ],
+  "live": 1,
+  "live_note": "Active: Nicolás Otamendi — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "arg-caps-2010",
+  "theme": "Argentina caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "12 Sep 2026",
+  "chain": [
+   [
+    "Nicolás Otamendi",
+    134
+   ],
+   [
+    "Lionel Messi",
+    163
+   ],
+   [
+    "Javier Mascherano",
+    92
+   ],
+   [
+    "Ángel Di María",
+    139
+   ],
+   [
+    "Sergio Romero",
+    92
+   ],
+   [
+    "Rodrigo De Paul",
+    94
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/%C3%81ngel_Di_Mar%C3%ADa",
+   "https://en.wikipedia.org/wiki/Javier_Mascherano",
+   "https://en.wikipedia.org/wiki/Sergio_Romero",
+   "https://en.wikipedia.org/wiki/Rodrigo_De_Paul"
+  ],
+  "live": 1,
+  "live_note": "Active: Nicolás Otamendi, Rodrigo De Paul — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "bel-caps-2000",
+  "theme": "Belgium caps since 2000",
+  "unit": "caps",
+  "d": "M",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Romelu Lukaku",
+    132
+   ],
+   [
+    "Jan Vertonghen",
+    157
+   ],
+   [
+    "Toby Alderweireld",
+    127
+   ],
+   [
+    "Axel Witsel",
+    140
+   ],
+   [
+    "Eden Hazard",
+    126
+   ],
+   [
+    "Kevin De Bruyne",
+    129
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Belgium_national_football_team_records_and_statistics",
+   "https://en.wikipedia.org/wiki/Kevin_De_Bruyne",
+   "https://www.flashscore.nl/news/soccer-uefa-nations-league-axel-witsel-retires-from-belgium-duty/z7hqOgh5/"
+  ],
+  "live": 1,
+  "live_note": "Active: Romelu Lukaku, Kevin De Bruyne — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "bel-caps-2010",
+  "theme": "Belgium caps since 2010",
+  "unit": "caps",
+  "d": "E",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Axel Witsel",
+    130
+   ],
+   [
+    "Jan Vertonghen",
+    137
+   ],
+   [
+    "Toby Alderweireld",
+    123
+   ],
+   [
+    "Romelu Lukaku",
+    132
+   ],
+   [
+    "Eden Hazard",
+    116
+   ],
+   [
+    "Kevin De Bruyne",
+    129
+   ]
+  ],
+  "src": [
+   "https://rsssf.org/miscellaneous/vertonghen-intl.html",
+   "https://en.wikipedia.org/wiki/Axel_Witsel",
+   "https://en.wikipedia.org/wiki/Toby_Alderweireld"
+  ],
+  "live": 1,
+  "live_note": "Active: Romelu Lukaku, Kevin De Bruyne — re-check caps",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "eng-goals-2000",
+  "theme": "England goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Michael Owen",
+    35
+   ],
+   [
+    "Harry Kane",
+    93
+   ],
+   [
+    "Peter Crouch",
+    22
+   ],
+   [
+    "Wayne Rooney",
+    53
+   ],
+   [
+    "Steven Gerrard",
+    21
+   ],
+   [
+    "Frank Lampard",
+    29
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Harry_Kane",
+   "https://en.wikipedia.org/wiki/Michael_Owen"
+  ],
+  "live": 1,
+  "live_note": "Active: Harry Kane — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "eng-goals-2010",
+  "theme": "England goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "15 Nov 2026",
+  "chain": [
+   [
+    "Raheem Sterling",
+    20
+   ],
+   [
+    "Harry Kane",
+    93
+   ],
+   [
+    "Bukayo Saka",
+    19
+   ],
+   [
+    "Wayne Rooney",
+    28
+   ],
+   [
+    "Danny Welbeck",
+    16
+   ],
+   [
+    "Marcus Rashford",
+    19
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Wayne_Rooney",
+   "https://www.englandfootball.com/mens-senior-team/squad/bukayo-saka",
+   "https://en.wikipedia.org/wiki/Marcus_Rashford"
+  ],
+  "live": 1,
+  "live_note": "Active: Harry Kane, Raheem Sterling, Marcus Rashford, Bukayo Saka, Danny Welbeck — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "bra-goals-2000",
+  "theme": "Brazil goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "asof": "7 Oct 2026",
+  "chain": [
+   [
+    "Robinho",
+    28
+   ],
+   [
+    "Neymar",
+    80
+   ],
+   [
+    "Adriano",
+    27
+   ],
+   [
+    "Kaká",
+    29
+   ],
+   [
+    "Ronaldo",
+    26
+   ],
+   [
+    "Luís Fabiano",
+    28
+   ]
+  ],
+  "src": [
+   "https://rsssf.org/miscellaneous/braz-recintlp.html",
+   "https://en.wikipedia.org/wiki/Ronaldo_(Brazilian_footballer)"
+  ],
+  "live": 1,
+  "live_note": "Active: Neymar — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "bra-goals-2010",
+  "theme": "Brazil goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "7 Oct 2026",
+  "chain": [
+   [
+    "Richarlison",
+    20
+   ],
+   [
+    "Neymar",
+    80
+   ],
+   [
+    "Roberto Firmino",
+    17
+   ],
+   [
+    "Philippe Coutinho",
+    20
+   ],
+   [
+    "Fred",
+    14
+   ],
+   [
+    "Gabriel Jesus",
+    18
+   ]
+  ],
+  "src": [
+   "https://rsssf.org/miscellaneous/braz-recintlp.html",
+   "https://en.wikipedia.org/wiki/Fred_(footballer,_born_1983)"
+  ],
+  "live": 1,
+  "live_note": "Active: Neymar, Richarlison, Gabriel Jesus, Roberto Firmino — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "cro-goals-2000",
+  "theme": "Croatia goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "asof": "27 Sep 2026",
+  "chain": [
+   [
+    "Mario Mandžukić",
+    33
+   ],
+   [
+    "Ivan Perišić",
+    39
+   ],
+   [
+    "Eduardo da Silva",
+    29
+   ],
+   [
+    "Andrej Kramarić",
+    36
+   ],
+   [
+    "Darijo Srna",
+    22
+   ],
+   [
+    "Luka Modrić",
+    30
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Croatia_national_football_team_records_and_statistics"
+  ],
+  "live": 1,
+  "live_note": "Active: Ivan Perišić, Andrej Kramarić, Luka Modrić — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "cro-goals-2010",
+  "theme": "Croatia goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "27 Sep 2026",
+  "chain": [
+   [
+    "Mario Mandžukić",
+    32
+   ],
+   [
+    "Ivan Perišić",
+    39
+   ],
+   [
+    "Nikola Kalinić",
+    15
+   ],
+   [
+    "Andrej Kramarić",
+    36
+   ],
+   [
+    "Mario Pašalić",
+    12
+   ],
+   [
+    "Luka Modrić",
+    23
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Mario_Mand%C5%BEuki%C4%87",
+   "https://en.wikipedia.org/wiki/Nikola_Kalini%C4%87_(footballer)",
+   "https://en.wikipedia.org/wiki/Mario_Pa%C5%A1ali%C4%87"
+  ],
+  "live": 1,
+  "live_note": "Active: Ivan Perišić, Andrej Kramarić, Luka Modrić, Mario Pašalić — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "por-goals-2000",
+  "theme": "Portugal goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "asof": "17 Nov 2026",
+  "chain": [
+   [
+    "Bruno Fernandes",
+    30
+   ],
+   [
+    "Cristiano Ronaldo",
+    146
+   ],
+   [
+    "Hélder Postiga",
+    27
+   ],
+   [
+    "Pauleta",
+    44
+   ],
+   [
+    "Nani",
+    24
+   ],
+   [
+    "Nuno Gomes",
+    29
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Cristiano_Ronaldo",
+   "https://en.wikipedia.org/wiki/Pauleta",
+   "https://en.wikipedia.org/wiki/Nuno_Gomes",
+   "https://www.fotmob.com/fr/players/422685/bruno-fernandes"
+  ],
+  "live": 1,
+  "live_note": "Active: Bruno Fernandes — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "por-goals-2010",
+  "theme": "Portugal goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "17 Nov 2026",
+  "chain": [
+   [
+    "André Silva",
+    19
+   ],
+   [
+    "Cristiano Ronaldo",
+    124
+   ],
+   [
+    "Hélder Postiga",
+    16
+   ],
+   [
+    "Bruno Fernandes",
+    30
+   ],
+   [
+    "Bernardo Silva",
+    15
+   ],
+   [
+    "Nani",
+    18
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Cristiano_Ronaldo",
+   "https://rsssf.org/miscellaneous/port-postiga-intlg.html",
+   "https://en.wikipedia.org/wiki/Bernardo_Silva"
+  ],
+  "live": 1,
+  "live_note": "Active: Bruno Fernandes, André Silva, Bernardo Silva — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "esp-goals-2000",
+  "theme": "Spain goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "asof": "26 Sep 2026",
+  "chain": [
+   [
+    "Álvaro Morata",
+    37
+   ],
+   [
+    "David Villa",
+    59
+   ],
+   [
+    "Mikel Oyarzabal",
+    31
+   ],
+   [
+    "Fernando Torres",
+    38
+   ],
+   [
+    "Raúl",
+    29
+   ],
+   [
+    "David Silva",
+    35
+   ]
+  ],
+  "src": [
+   "https://rsssf.org/miscellaneous/span-recintlp.html",
+   "https://rsssf.org/miscellaneous/raul-intlg.html",
+   "https://en.wikipedia.org/wiki/Mikel_Oyarzabal"
+  ],
+  "live": 1,
+  "live_note": "Active: Mikel Oyarzabal — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "esp-goals-2010",
+  "theme": "Spain goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "26 Sep 2026",
+  "chain": [
+   [
+    "David Silva",
+    29
+   ],
+   [
+    "Álvaro Morata",
+    37
+   ],
+   [
+    "David Villa",
+    24
+   ],
+   [
+    "Mikel Oyarzabal",
+    31
+   ],
+   [
+    "Pedro",
+    17
+   ],
+   [
+    "Ferran Torres",
+    25
+   ]
+  ],
+  "src": [
+   "https://en.wikipedia.org/wiki/Mikel_Oyarzabal",
+   "https://en.wikipedia.org/wiki/Ferran_Torres",
+   "https://en.wikipedia.org/wiki/David_Silva"
+  ],
+  "live": 1,
+  "live_note": "Active: Mikel Oyarzabal, Ferran Torres — re-check goals",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "wc-goals-2000",
+  "theme": "World Cup goals since 2000",
+  "unit": "goals",
+  "d": "M",
+  "asof": "19 Jul 2026",
+  "chain": [
+   [
+    "Miroslav Klose",
+    16
+   ],
+   [
+    "Kylian Mbappé",
+    22
+   ],
+   [
+    "Ronaldo",
+    11
+   ],
+   [
+    "Lionel Messi",
+    21
+   ],
+   [
+    "Cristiano Ronaldo",
+    11
+   ],
+   [
+    "Harry Kane",
+    14
+   ]
+  ],
+  "src": [
+   "https://theanalyst.com/articles/most-world-cup-goals"
+  ]
+ },
+ {
+  "id": "wc-goals-2010",
+  "theme": "World Cup goals since 2010",
+  "unit": "goals",
+  "d": "E",
+  "asof": "19 Jul 2026",
+  "chain": [
+   [
+    "Harry Kane",
+    14
+   ],
+   [
+    "Kylian Mbappé",
+    22
+   ],
+   [
+    "Thomas Müller",
+    10
+   ],
+   [
+    "Lionel Messi",
+    20
+   ],
+   [
+    "Neymar",
+    9
+   ],
+   [
+    "Cristiano Ronaldo",
+    10
+   ]
+  ],
+  "src": [
+   "https://theanalyst.com/articles/most-world-cup-goals",
+   "https://khelnow.com/football/neymar-jr-all-goals-fifa-world-cup"
+  ]
+ }
+]
