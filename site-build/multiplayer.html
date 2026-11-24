@@ -170,7 +170,7 @@ body.osk .pgame .clues li{padding:7px 10px}
 /* in-game leaderboard */
 .lbwrap{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--line);padding:8px 12px 4px}
 .table.live li{padding:7px 2px}.table.live li:last-child{border-bottom:0}.table.live b{font-size:19px}.table.live .nm{font-weight:600}
-.table.live li.me{border-left-color:var(--accent)}.table.live li.me .nm{font-weight:800}
+.table li.me{border-left-color:transparent}.table.live li.me .nm{font-weight:800}
 .table.live li.out{opacity:.45}.table.live li.out .nm{text-decoration:line-through}
 body.osk .lbwrap{padding:4px 10px 2px}body.osk .table.live li{padding:4px 2px}body.osk .table.live b{font-size:16px}body.osk .table.live .nm{font-size:14px}
 .tvgame .lbwrap{background:transparent;border:0;padding:0}.tvgame .table.live b{font-size:18px}.tvgame .table.live .nm{font-size:15px}
@@ -187,4 +187,5 @@ body.osk .lbwrap{padding:4px 10px 2px}body.osk .table.live li{padding:4px 2px}bo
 body[data-mp=tv]{overflow:hidden;height:100vh}body[data-mp=tv] #mp{zoom:var(--fit,1)}
 
 .lastq{margin:0;padding:6px 10px;background:var(--surface);border-left:3px solid var(--accent);font:600 12px var(--f-m);color:var(--muted)}.lastq b{color:var(--ink)}.tvgame .lastq{font-size:13px}
-</style></head><body data-mp="phone"><div class="top"><a href="./">← The Daily Kick Off</a></div><main id="mp"></main><script src="/mp.js?v=94aa47ad"></script></body></html>
+.table li[class*="t-"]{padding-left:8px}
+</style></head><body data-mp="phone"><div class="top"><a href="./">← The Daily Kick Off</a></div><main id="mp"></main><script src="/mp.js?v=ef0bc434"></script></body></html>
