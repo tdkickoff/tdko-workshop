@@ -38,7 +38,16 @@
   let code = null, V = null, offset = 0, polls = 0, timer = null, busy = false, flash = '', flashSeen = '', flashAt = 0, draftKey = '', typed = '';
 
   const now = () => Date.now() + offset;
-  if (TV) { const fit = () => document.documentElement.style.setProperty('--z', Math.max(1, Math.min(2.4, innerWidth / 760, innerHeight / 500)).toFixed(2)); fit(); addEventListener('resize', fit); }
+  // the TV never scrolls: scale up to fill the screen, then shrink the whole page until it fits
+  let fitT = 0;
+  function tvFit() {
+    if (!TV) return; const R = document.documentElement, H = () => Math.max(R.scrollHeight, document.body.scrollHeight);
+    R.style.setProperty('--z', Math.max(1, Math.min(2.4, innerWidth / 760, innerHeight / 500)).toFixed(2));
+    let f = 1; R.style.setProperty('--fit', 1);
+    for (let i = 0; i < 6 && H() > innerHeight + 1; i++) { f = Math.max(.4, f * innerHeight / H() * .99); R.style.setProperty('--fit', f.toFixed(3)); }
+    clearTimeout(fitT); fitT = setTimeout(() => { if (H() > innerHeight + 1) tvFit(); }, 400); // fonts and images can land late
+  }
+  if (TV) { tvFit(); addEventListener('resize', tvFit); if (document.fonts) document.fonts.ready.then(tvFit); }
   async function call(path, body) {
     const opt = body ? { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) } : {};
     const r = await fetch('/api/mp/' + path, opt); let j = {};
@@ -157,11 +166,45 @@
     if (g.step === 'turn') return `<div class="turn live ${mine ? 'mine' : ''}"><span>${mine ? 'Your turn' : esc(who) + "'s turn"}</span><b>${cd(g.until)}</b></div>`;
     return '';
   }
+  // Touch phones: our own keyboard in a dock pinned to the bottom, so the phone's keyboard never covers the game.
+  const OSK = !TV && window.matchMedia && matchMedia('(pointer: coarse)').matches;
+  let dockPh = null;
+  const KEYS = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
+  function syncDock() {
+    let d = $('#dock');
+    if (!dockPh) { if (d) d.hidden = true; document.body.classList.remove('osk'); return; }
+    if (!d) {
+      d = document.createElement('div'); d.id = 'dock';
+      d.innerHTML = `<form id="af" class="answer"><input id="ai" readonly tabindex="-1" autocomplete="off" spellcheck="false" aria-label="Your answer"></form>
+        <div class="kbd" role="group" aria-label="Keyboard">${KEYS.map((r, i) => `<div class="r">${i === 2 ? '<button type="button" data-k="\'" class="sm">\'</button>' : ''}${[...r].map(c => `<button type="button" data-k="${c}">${c}</button>`).join('')}${i === 2 ? '<button type="button" data-k="del" class="wide" aria-label="Delete">⌫</button>' : ''}</div>`).join('')}
+        <div class="r"><button type="button" data-k="-" class="sm">-</button><button type="button" data-k=" " class="space" aria-label="Space">space</button><button type="button" data-k="go" class="go">Guess</button></div></div>`;
+      document.body.appendChild(d);
+      const ai = d.querySelector('#ai');
+      const press = k => {
+        let v = ai.value;
+        if (k === 'del') v = v.slice(0, -1);
+        else if (k === 'go') { const f = $('#af'); if (f && f.requestSubmit) f.requestSubmit(); else if (f) f.dispatchEvent(new Event('submit', { cancelable: true })); return; }
+        else if (k === ' ') { if (v && !/[ -]$/.test(v)) v += ' '; }
+        else v += (!v || /[ -]$/.test(v)) ? k.toUpperCase() : k;
+        ai.value = v.slice(0, 40); typed = ai.value;
+      };
+      d.querySelectorAll('[data-k]').forEach(btn => {
+        btn.addEventListener('pointerdown', e => { e.preventDefault(); btn.classList.add('dn'); press(btn.dataset.k); });
+        ['pointerup', 'pointerleave', 'pointercancel'].forEach(t => btn.addEventListener(t, () => btn.classList.remove('dn')));
+        btn.addEventListener('click', e => { if (e.detail === 0) press(btn.dataset.k); }); // keyboard / switch access
+      });
+    }
+    d.hidden = false; document.body.classList.add('osk');
+    const ai = d.querySelector('#ai'); ai.placeholder = dockPh; if (ai.value !== typed) ai.value = typed;
+    document.documentElement.style.setProperty('--dockh', d.offsetHeight + 'px');
+  }
   function inputBox(ph) {
+    if (OSK) { dockPh = ph; return ''; }
     return `<form id="af" class="row answer"><input id="ai" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="${esc(ph)}" value="${esc(typed)}"><button class="btn">Go</button></form>`;
   }
   function scores(g) {
-    return `<ol class="mini-table">${standings(id => g.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}${g.alive && !g.alive.includes(s.id) ? ' out' : ''}"><span>${esc(s.name)}</span><b>${fmt(g.score[s.id])}</b></li>`).join('')}</ol>`;
+    const pts = id => g.score[id] || 0, rows = standings(pts);
+    return `<section class="lbwrap"><span class="eb">Leaderboard</span><ol class="table live">${rows.map((s, i) => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}${g.alive && !g.alive.includes(s.id) ? ' out' : ''}"><span class="pos">${i && pts(rows[i - 1].id) === pts(s.id) ? '=' : i + 1}</span><span class="nm">${esc(s.name)}</span><b>${fmt(pts(s.id))}</b></li>`).join('')}</ol></section>`;
   }
 
   function fb(g) {
@@ -237,8 +280,14 @@
   }
   function between() {
     const last = V.results[V.results.length - 1], next = V.config.games[V.gi + 1];
-    const rows = last ? standings(id => last.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="nm">${esc(s.name)}</span><b>+${fmt(last.score[s.id])}</b></li>`).join('') : '';
-    return `<div class="betw"><section class="card"><span class="eb">Full time · ${esc(GAMES[last.g])}</span><ol class="table res">${rows}</ol></section>${table('Quiz table')}</div>${nextBar('Start ' + GAMES[next.g])}`;
+    const pts = id => last.score[id] || 0, st = last ? standings(pts) : [];
+    const rows = st.map((s, i) => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${i && pts(st[i - 1].id) === pts(s.id) ? '=' : i + 1}</span><span class="nm">${esc(s.name)}</span><b>+${fmt(pts(s.id))}</b></li>`).join('');
+    return `<div class="betw"><section class="card"><h3>Full time · ${esc(GAMES[last.g])}</h3><ol class="table">${rows}</ol></section>${table('Quiz table')}</div>${upNext(next)}${nextBar('Start ' + GAMES[next.g])}`;
+  }
+  // what's coming, so everyone can read it before the host starts the countdown
+  function upNext(x) {
+    const n = Math.max(2, V.players.length), k = LENS[x.g][x.len];
+    return `<section class="card upnext"><span class="eb">Up next · Game ${V.gi + 2} of ${V.config.games.length}</span>${GT(x.g)}<p class="unmeta">${LN[x.len]} · ${k} ${k === 1 ? LENS[x.g].u.replace(/s$/, '') : LENS[x.g].u} · about ${MIN(EST(x.g, x.len, n))}</p><p>${DESC[x.g]}</p></section>`;
   }
   // Final whistle graph: running quiz totals after every score, one line per player or team
   const lineColour = id => V.mode === 'teams' ? `var(--${id})` : `var(--s${(V.sides.findIndex(s => s.id === id) % 6) + 1})`;
@@ -278,17 +327,19 @@
     const ai = $('#ai'); if (ai) typed = ai.value;
     const key = [V.phase, V.gi, V.game && V.game.type, V.game && V.game.n, V.game && V.game.step, V.game && V.game.turn].join('|');
     if (key !== draftKey) { typed = ''; draftKey = key; }
-    let html = '';
-    if (V.phase === 'lobby') { lobby(); bind(); return; }
+    let html = ''; dockPh = null;
+    if (V.phase === 'lobby') { syncDock(); lobby(); bind(); tvFit(); return; }
     if (V.phase === 'game' && V.game) { const g = V.game; html = gameHead(g) + ({ fb, wtb, cs, rh }[g.type])(g) + hostBar(); }
     else if (V.phase === 'countdown') html = countdown();
     else if (V.phase === 'between') html = between();
     else if (V.phase === 'final') html = final();
     const focus = document.activeElement && document.activeElement.id === 'ai';
     app.innerHTML = `<div class="${TV ? 'tvgame' : 'pgame'}">${html}</div><p class="err">${esc(flash)}</p>`;
-    if (focus && $('#ai')) { const el = $('#ai'); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }
+    syncDock();
+    if (OSK) {}
+    else if (focus && $('#ai')) { const el = $('#ai'); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }
     else if (!TV && $('#ai') && V.game && (V.game.myTurn || (V.game.type === 'wtb' && V.game.clue === 1) || (V.game.type === 'cs' && V.game.found === 0))) $('#ai').focus();
-    bind();
+    bind(); tvFit();
   }
   function bind() {
     app.querySelectorAll('[data-a]').forEach(el => {

@@ -65,7 +65,7 @@ body[data-mp="tv"]{padding:0 4vw}body[data-mp="tv"] #mp{max-width:none;padding:3
 .tvlobby{display:grid;grid-template-columns:1.1fr 1fr;gap:4vw;align-items:center;min-height:90vh}.big-code{text-align:center}.big-code span{display:block;font:600 1.6vw var(--f-m);color:var(--muted);text-transform:uppercase}.big-code b{display:block;font:800 3vw var(--f-d);margin:.6vw 0 2vw}.big-code strong{display:block;font:900 14vw/1 var(--f-d);font-stretch:70%;letter-spacing:.1em;color:var(--accent)}
 .tvpeople h2{font-size:3vw;margin-bottom:1vw}.tvpeople .people li{font-size:2vw;padding:1vw}.tvpeople .note{font-size:1.4vw}
 .tvgame{display:flex;flex-direction:column;gap:12px;zoom:var(--z,1)}.tvgame .opts{grid-template-columns:1fr 1fr}.tvgame .slots{grid-template-columns:repeat(5,1fr)}
-.betw{display:flex;flex-direction:column;gap:12px}.tvgame .betw{display:grid;grid-template-columns:1fr 1fr;align-items:start}
+.betw{display:flex;flex-direction:column;gap:12px}.tvgame .betw{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
 
 .kick{text-align:center;padding:10vh 0 4vh;display:flex;flex-direction:column;align-items:center;gap:10px}.kick b{font:900 min(38vw,180px)/1 var(--f-d);color:var(--hi)}.kick h2{margin:0;font:900 26px var(--f-d);text-transform:uppercase}
 .tvgame .kick b{font-size:min(30vw,260px)}
@@ -89,7 +89,7 @@ body[data-mp="tv"]{background:radial-gradient(ellipse at 50% 0%,#1A3590 0%,var(-
 .nextclue{font:600 12px var(--f-m);color:var(--muted);text-align:right;text-transform:uppercase}.nextclue b{font:900 30px var(--f-d);color:var(--ink);display:block;text-transform:none}
 .wrongs{display:flex;flex-wrap:wrap;gap:6px;margin:0}.wrongs span{font:600 13px var(--f-m);color:var(--bad);border:1px solid color-mix(in oklab,var(--bad) 40%,var(--line));padding:4px 8px}
 .wkick{padding:6vh 0 2vh}
-.tvgame .wtbhead .worth{font-size:64px}
+.tvgame .wtbhead .worth{font-size:50px}.tvgame .wtbhead{padding:10px 14px}
 .gotit{display:flex;flex-direction:column;gap:4px;padding:14px;border:1.5px solid var(--good);background:color-mix(in oklab,var(--good) 14%,var(--surface))}.gotit b{font:800 20px var(--f-d);color:var(--good)}.gotit span{font:600 12px var(--f-m);color:var(--muted);text-transform:uppercase}
 .gotlist{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}.gotlist span{font-size:14px;padding:5px 9px;border:1px solid var(--good);border-left-width:4px;background:var(--surface)}.gotlist span b{font-weight:800}.gotlist span.me{background:color-mix(in oklab,var(--good) 14%,var(--surface))}
 .slots li.found.mine{background:color-mix(in oklab,var(--good) 12%,var(--surface))}.slots em{text-transform:none}
@@ -126,4 +126,63 @@ h3{font-stretch:80%;font-weight:900;letter-spacing:.01em}
 .fold:not(.shut) .sech{margin-bottom:8px}.fold.shut .qlen{margin-top:8px}
 .note.wait{text-align:center}
 .gt{white-space:nowrap}.game .gh label{min-width:0}.game .gt{font-size:clamp(19px,6.2vw,24px)}
-</style></head><body data-mp="phone"><div class="top"><a href="./">← The Daily Kick Off</a></div><main id="mp"></main><script src="/mp.js?v=dbb689ae"></script></body></html>
+
+/* on-screen keyboard dock (touch phones, typing games) */
+#dock{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--bg);border-top:1.5px solid var(--ink);padding:8px 6px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -6px 18px rgba(0,0,0,.08)}
+#dock[hidden]{display:none}
+body.osk{padding-bottom:calc(var(--dockh,280px) + 12px)}
+#dock .answer{max-width:560px;margin:0 auto 8px;display:block}
+#dock #ai{width:100%;box-sizing:border-box;height:46px;padding:0 12px;border:1.5px solid var(--ink);background:var(--surface);color:var(--ink);font:600 19px var(--f-d);caret-color:transparent;outline:none}
+#dock #ai::placeholder{color:var(--muted);font-weight:500}
+.kbd{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:7px;user-select:none;-webkit-user-select:none}
+.kbd .r{display:flex;gap:5px;justify-content:center}
+.kbd button{flex:1 1 0;min-width:0;max-width:46px;height:44px;padding:0;border:0;border-radius:6px;background:var(--surface);color:var(--ink);box-shadow:0 1.5px 0 var(--line);font:600 18px var(--f-d);text-transform:uppercase;touch-action:manipulation;-webkit-tap-highlight-color:transparent;cursor:pointer}
+.kbd button.dn{background:var(--soft);transform:translateY(1px);box-shadow:none}
+.kbd .wide{max-width:none;flex:1.5 1 0;font-size:20px}.kbd .sm{max-width:36px}
+.kbd .space{max-width:none;flex:5 1 0;font:500 13px var(--f-m);text-transform:lowercase;color:var(--muted)}
+.kbd .go{max-width:none;flex:2.4 1 0;background:var(--accent);color:var(--accent-ink);box-shadow:none;font:800 17px var(--f-d);font-stretch:80%;letter-spacing:.03em}
+/* while the keyboard is up, tighten the game so it fits above it */
+body.osk .pgame{gap:10px}
+body.osk .pgame .clues{gap:5px}body.osk .pgame .clues li{padding:8px 10px}
+body.osk .pgame .slots{gap:5px}body.osk .slots li{min-height:0;padding:6px 7px}body.osk .slots b{font-size:13.5px}
+body.osk .pgame .q{font-size:18px}body.osk .pgame .note{font-size:12px}
+body.osk .wrongs span:nth-child(n+4){display:none}
+body.osk .pgame .mini-table li{padding:4px 8px;font-size:12px}
+/* compact game while the keyboard is up: everything that matters fits above it */
+body.osk .top{display:none}
+body.osk .pgame{gap:8px;padding-top:8px}
+body.osk .wtbhead{padding:8px 10px;align-items:center}
+body.osk .wtbhead .worth{font-size:34px;margin-top:2px}
+body.osk .wtbhead small{font-size:10px}
+body.osk .nextclue{font-size:10px}body.osk .nextclue b{font-size:24px}
+body.osk .pgame .note{margin-top:-4px}
+body.osk .pgame .q{font-size:17px;margin:0}
+body.osk .pgame .q + .note{display:none}
+body.osk .wrongs span{font-size:12px;padding:2px 6px}
+body.osk .pgame .slots{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+body.osk .slots li{min-height:28px;padding:4px 6px;flex-wrap:nowrap;align-items:center;overflow:hidden}
+body.osk .slots li b{font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.osk .slots li small,body.osk .slots li em{display:none}
+body.osk .pgame .clues li{padding:7px 10px}
+#dock{padding-top:6px}#dock .answer{margin-bottom:6px}#dock #ai{height:42px;font-size:18px}
+.kbd{gap:6px}.kbd button{height:42px}
+
+/* in-game leaderboard */
+.lbwrap{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--line);padding:8px 12px 4px}
+.table.live li{padding:7px 2px}.table.live li:last-child{border-bottom:0}.table.live b{font-size:19px}.table.live .nm{font-weight:600}
+.table.live li.me{border-left-color:var(--accent)}.table.live li.me .nm{font-weight:800}
+.table.live li.out{opacity:.45}.table.live li.out .nm{text-decoration:line-through}
+body.osk .lbwrap{padding:4px 10px 2px}body.osk .table.live li{padding:4px 2px}body.osk .table.live b{font-size:16px}body.osk .table.live .nm{font-size:14px}
+.tvgame .lbwrap{background:transparent;border:0;padding:0}.tvgame .table.live b{font-size:18px}.tvgame .table.live .nm{font-size:15px}
+.tvgame .lbwrap{flex-direction:row;align-items:center;gap:12px;flex-wrap:wrap}
+.tvgame .table.live{display:flex;flex-wrap:wrap;gap:4px 20px}.tvgame .table.live li{border:0;border-left:3px solid var(--line);padding:1px 0 1px 8px;gap:6px}
+.tvgame .table.live li.me{border-left-color:var(--line)}.tvgame .table.live .pos{width:auto;font-size:11px}
+
+.upnext{display:flex;flex-direction:column;gap:6px;border:1.5px solid var(--accent)}.upnext .gt{font-size:26px}
+.upnext .unmeta{margin:0;font:600 12px var(--f-m);color:var(--muted);text-transform:uppercase;letter-spacing:.04em}.upnext p{margin:0;line-height:1.45}
+.tvgame .upnext .gt{font-size:34px}.tvgame .upnext p{font-size:18px}.tvgame .upnext .unmeta{font-size:13px}
+.tvgame .table:not(.live) li{padding:5px 4px}.tvgame .table:not(.live) .nm{font-size:19px}.tvgame .table:not(.live) b{font-size:21px}.tvgame .betw .card h3{margin-bottom:4px}
+.tvgame .upnext{gap:4px;padding-top:10px;padding-bottom:10px}.tvgame .upnext .gt{font-size:28px}.tvgame .upnext p{font-size:16px}
+
+body[data-mp=tv]{overflow:hidden;height:100vh}body[data-mp=tv] #mp{zoom:var(--fit,1)}
+</style></head><body data-mp="phone"><div class="top"><a href="./">← The Daily Kick Off</a></div><main id="mp"></main><script src="/mp.js?v=4815b493"></script></body></html>
