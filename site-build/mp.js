@@ -129,8 +129,8 @@
   }
 
   function gameHead(g) {
-    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.type === 'wtb' ? ({ ready: 3000, clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
-    return `<header class="ghead"><span class="eb">Game ${V.gi + 1} of ${V.config.games.length} · ${esc(GAMES[g.type])}</span><span class="eb">${g.n} / ${g.of}</span></header>${g.paused ? '<p class="paused">Paused by the host</p>' : bar(g.until, total)}`;
+    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.step === 'kick' ? 5000 : g.type === 'wtb' ? ({ clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
+    return `<header class="ghead"><span class="eb">Game ${V.gi + 1} of ${V.config.games.length} · ${esc(GAMES[g.type])}</span><span class="eb">${g.n} / ${g.of}</span></header>${g.paused ? '<p class="paused">Paused by the host</p>' : g.wait ? '' : bar(g.until, total)}`;
     void cfg;
   }
   function turnBanner(g) {
@@ -155,7 +155,7 @@
   }
   function wtb(g) {
     const rev = g.step === 'reveal', live = g.step === 'clue' || g.step === 'final';
-    if (g.step === 'ready') return `<section class="kick wkick"><span class="eb">Player ${g.n} of ${g.of}</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>Who's that baller?</h2><p class="note">First clue coming up. The sooner you name him, the more you score.</p></section>${scores(g)}`;
+    if (g.step === 'kick') return roundKick(g);
     const clues = `<ol class="clues">${(rev ? g.clues : g.clues.slice().reverse()).map(([k, v], i) => `<li class="${i === 0 && !rev ? 'new' : ''}"><span>${esc(k)}</span><b>${esc(v)}</b></li>`).join('')}</ol>`;
     const gotList = (g.got || []).map(x => `<span class="${x.side === mySide() ? 'me' : ''}${teamCls(x.side)}"><b>${esc(V.mode === 'teams' ? sideName(x.side) : x.who)}</b> +${fmt(x.pts)}</span>`).join('');
     let top;
@@ -169,38 +169,44 @@
     const box = live && !TV && !g.mine ? inputBox('Who is it? Surname is fine') : '';
     const mine = live && !g.mine && g.wrong && g.wrong.length ? `<p class="wrongs">${g.wrong.slice().reverse().map(w => `<span>✗ ${esc(w)}</span>`).join('')}</p>` : '';
     const count = live ? `<p class="note">${g.guesses} guess${g.guesses === 1 ? '' : 'es'} so far</p>` : '';
-    return `${top}${box}${mine}${count}${clues}${scores(g)}`;
+    return `${top}${rev && g.wait ? nextBar('Start the next player') : ''}${box}${mine}${count}${clues}${scores(g)}`;
   }
   function cs(g) {
-    if (g.step === 'ready' && g.fresh) return roundKick(g, 'List');
+    if (g.step === 'kick') return roundKick(g);
     const rev = g.step === 'reveal';
     const slots = `<ol class="slots">${g.slots.map((s, i) => `<li class="${s.n ? (s.missed ? 'missed' : 'found' + teamCls(s.by)) : s.hint ? 'hint' : ''}"><span class="no">${i + 1}</span>${s.n ? `<b>${esc(s.n)}</b>${s.l ? `<small>${esc(s.l)}</small>` : ''}${s.by && !s.missed ? `<em>${esc(sideName(s.by))}</em>` : ''}` : s.hint ? `<b>${esc(s.hint)}</b>` : '<b>&nbsp;</b>'}</li>`).join('')}</ol>`;
     const found = g.slots.filter(s => s.n && !s.missed).length;
-    return `<h2 class="q">${esc(g.q)}</h2><p class="note">${esc(g.note || '')} · ${found} of ${g.total} found</p>${rev ? '<p class="status">List over</p>' : turnBanner(g)}${g.myTurn && g.step === 'turn' ? inputBox('Name a player on the list') : ''}${slots}${log(g)}${scores(g)}`;
+    return `${rev && g.wait ? nextBar('Start the next list') : ''}<h2 class="q">${esc(g.q)}</h2><p class="note">${esc(g.note || '')} · ${found} of ${g.total} found</p>${rev ? '<p class="status">List over</p>' : turnBanner(g)}${g.myTurn && g.step === 'turn' ? inputBox('Name a player on the list') : ''}${slots}${log(g)}${scores(g)}`;
   }
   function rh(g) {
-    if (g.step === 'ready' && g.fresh) return roundKick(g, 'Round');
+    if (g.step === 'kick') return roundKick(g);
     const rev = g.step === 'reveal', mine = g.myTurn && g.step === 'turn' && !(pend && pend.k === qkey());
     const card = g.cur ? `<div class="rh"><div class="rcard"><span class="eb">${esc(g.theme)}</span><h3>${esc(g.cur.n)}</h3><b>${esc(g.cur.v)}</b><small>${esc(g.unit)}</small></div>
       <div class="rcard next"><span class="eb">Next</span><h3>${g.next ? esc(g.next.n) : '…'}</h3><b>?</b><small>Higher or lower?</small></div></div>` : '';
     const btns = mine ? `<div class="hl"><button class="btn" data-a="rh" data-c="higher">▲ Higher</button><button class="btn" data-a="rh" data-c="lower">▼ Lower</button></div>` : '';
     const top = rev ? `<div class="answer-card"><span class="eb">Round ${g.n}</span><h2>${g.winner ? esc(sideName(g.winner)) + ' is the last one standing' : 'Round over'}</h2></div>` : turnBanner(g);
-    return `${top}${card}${btns}${log(g)}${scores(g)}`;
+    return `${top}${rev && g.wait ? nextBar('Start the next round') : ''}${card}${btns}${log(g)}${scores(g)}`;
   }
 
   function countdown() {
     const gi = Math.max(0, V.gi), cfg = V.config.games[gi];
     return `<section class="kick"><span class="eb">${gi ? 'Next game in' : 'Kick off in'}</span><b class="secs" data-until="${V.until}">${secs(V.until)}</b><h2>Game ${gi + 1} · ${esc(GAMES[cfg.g])}</h2><p class="note">${esc(DESC[cfg.g])}</p></section>`;
   }
-  // a big countdown before every round of the turn games (a new list, a new Ranked Highly round)
-  function roundKick(g, what) {
-    const who = sideName(g.turn), mine = g.myTurn;
-    return `<section class="kick wkick"><span class="eb">${what} ${g.n} of ${g.of}</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>${mine ? 'You start' : esc(who) + ' starts'}</h2></section>${scores(g)}`;
+  // the same 5-second countdown before every round (a new player, a new list, a new Ranked Highly round)
+  const ROUND = { wtb: 'Player', cs: 'List', rh: 'Round' };
+  function roundKick(g) {
+    const sub = g.type === 'wtb' ? "Who's that baller?" : g.myTurn ? 'You start' : esc(sideName(g.turn)) + ' starts';
+    return `<section class="kick wkick"><span class="eb">${ROUND[g.type]} ${g.n} of ${g.of} · starts in</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>${sub}</h2></section>${scores(g)}`;
+  }
+  // the host moves the quiz on: after each round's reveal, and from Full time to the next game
+  function nextBar(label) {
+    if (TV) return `<p class="status">Waiting for the host…</p>`;
+    return V.isHost ? `<button class="btn big" data-a="next">${esc(label)}</button>` : `<p class="status">Waiting for the host…</p>`;
   }
   function between() {
     const last = V.results[V.results.length - 1], next = V.config.games[V.gi + 1];
     const rows = last ? standings(id => last.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="nm">${esc(s.name)}</span><b>+${fmt(last.score[s.id])}</b></li>`).join('') : '';
-    return `<div class="betw"><section class="card"><span class="eb">Full time · ${esc(GAMES[last.g])}</span><ol class="table res">${rows}</ol></section>${table('Quiz table')}</div><p class="status">Next up: <b>${esc(GAMES[next.g])}</b></p>`;
+    return `<div class="betw"><section class="card"><span class="eb">Full time · ${esc(GAMES[last.g])}</span><ol class="table res">${rows}</ol></section>${table('Quiz table')}</div>${nextBar('Start ' + GAMES[next.g])}`;
   }
   // Final whistle graph: running quiz totals after every score, one line per player or team
   const lineColour = id => V.mode === 'teams' ? `var(--${id})` : `var(--s${(V.sides.findIndex(s => s.id === id) % 6) + 1})`;
