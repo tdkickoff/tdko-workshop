@@ -60,7 +60,7 @@ for r in rows('whos-that-baller'):
     P['wtb'].append(dict(id=r['id'], p=p, ok=ok(r, 'whos-that-baller')))
 for r in rows('clean-sweep'):
     p = json.loads(r['payload'])
-    if len(p['names']) != 10: continue                # Phase 1: 10-name lists only
+    if len(p['names']) not in (10, 15, 20): continue  # list size follows the number of players: 10, 15 or 20 names
     P['cs'].append(dict(id=r['id'], q=p['q'], note=p.get('note', ''), names=p['names'], ok=ok(r, 'clean-sweep')))
 for r in rows('ranked-highly'):
     p = json.loads(r['payload'])

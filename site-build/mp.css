@@ -90,3 +90,5 @@ body[data-mp="tv"]{background:radial-gradient(ellipse at 50% 0%,#1A3590 0%,var(-
 .tvgame .wtbhead .worth{font-size:64px}
 .gotit{display:flex;flex-direction:column;gap:4px;padding:14px;border:1.5px solid var(--good);background:color-mix(in oklab,var(--good) 14%,var(--surface))}.gotit b{font:800 20px var(--f-d);color:var(--good)}.gotit span{font:600 12px var(--f-m);color:var(--muted);text-transform:uppercase}
 .gotlist{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}.gotlist span{font-size:14px;padding:5px 9px;border:1px solid var(--good);border-left-width:4px;background:var(--surface)}.gotlist span b{font-weight:800}.gotlist span.me{background:color-mix(in oklab,var(--good) 14%,var(--surface))}
+.slots li.found.mine{background:color-mix(in oklab,var(--good) 12%,var(--surface))}.slots em{text-transform:none}
+.tvgame .slots.big{grid-template-columns:repeat(5,1fr)}

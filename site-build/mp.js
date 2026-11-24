@@ -9,7 +9,7 @@
   const GAMES = { fb: 'Fast Break', wtb: "Who's That Baller", cs: 'Clean Sweep', rh: 'Ranked Highly' };
   const DESC = { fb: 'Everyone answers the same question at once. Every right answer scores 100, plus up to 50 for speed.',
     wtb: 'Everyone guesses at once. A new clue every 10 seconds: name him on the first clue for 1,000, 100 less for each new one. Everyone who gets him scores. Guess as often as you like. Surname is fine, first name alone is not.',
-    cs: 'Take turns to name a player on the list. 100 points for each one.',
+    cs: 'Everyone guesses at once. Name players on the list before anyone else: each one is worth 100 at the start, dropping to 10 as the clock runs down. Once a name is taken, it is gone. Guess as often as you like.',
     rh: 'Take turns to call higher or lower. Get one wrong and you are out. Last one standing scores 1,000.' };
   const fmt = n => (n || 0).toLocaleString('en-GB');
   const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 1, m: 3, l: 5, u: 'players' }, cs: { s: 1, m: 3, l: 5, u: 'lists' }, rh: { s: 1, m: 3, l: 5, u: 'rounds' } };
@@ -129,7 +129,7 @@
   }
 
   function gameHead(g) {
-    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.step === 'kick' ? 5000 : g.type === 'wtb' ? ({ clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
+    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.step === 'kick' ? 5000 : g.type === 'cs' ? (g.step === 'play' ? g.dur : 4500) : g.type === 'wtb' ? ({ clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
     return `<header class="ghead"><span class="eb">Game ${V.gi + 1} of ${V.config.games.length} · ${esc(GAMES[g.type])}</span><span class="eb">${g.n} / ${g.of}</span></header>${g.paused ? '<p class="paused">Paused by the host</p>' : g.wait ? '' : bar(g.until, total)}`;
     void cfg;
   }
@@ -173,10 +173,13 @@
   }
   function cs(g) {
     if (g.step === 'kick') return roundKick(g);
-    const rev = g.step === 'reveal';
-    const slots = `<ol class="slots">${g.slots.map((s, i) => `<li class="${s.n ? (s.missed ? 'missed' : 'found' + teamCls(s.by)) : s.hint ? 'hint' : ''}"><span class="no">${i + 1}</span>${s.n ? `<b>${esc(s.n)}</b>${s.l ? `<small>${esc(s.l)}</small>` : ''}${s.by && !s.missed ? `<em>${esc(sideName(s.by))}</em>` : ''}` : s.hint ? `<b>${esc(s.hint)}</b>` : '<b>&nbsp;</b>'}</li>`).join('')}</ol>`;
-    const found = g.slots.filter(s => s.n && !s.missed).length;
-    return `${rev && g.wait ? nextBar('Start the next list') : ''}<h2 class="q">${esc(g.q)}</h2><p class="note">${esc(g.note || '')} · ${found} of ${g.total} found</p>${rev ? '<p class="status">List over</p>' : turnBanner(g)}${g.myTurn && g.step === 'turn' ? inputBox('Name a player on the list') : ''}${slots}${log(g)}${scores(g)}`;
+    const rev = g.step === 'reveal', live = g.step === 'play';
+    const slots = `<ol class="slots">${g.slots.map((s, i) => `<li class="${s.n ? (s.missed ? 'missed' : 'found' + teamCls(s.by) + (s.by === mySide() ? ' mine' : '')) : ''}"><span class="no">${i + 1}</span>${s.n ? `<b>${esc(s.n)}</b>${s.l ? `<small>${esc(s.l)}</small>` : ''}${s.who && !s.missed ? `<em>${esc(V.mode === 'teams' ? sideName(s.by) : s.who)} +${fmt(s.pts)}</em>` : ''}` : '<b>&nbsp;</b>'}</li>`).join('')}</ol>`;
+    const head = live ? `<div class="wtbhead"><div><span class="eb">${g.found} of ${g.total} found</span><b class="worth">${fmt(g.pts)}</b><small>points per name right now</small></div><div class="nextclue">Time left <b>${cd(g.until)}s</b></div></div>`
+      : rev ? `<div class="answer-card"><span class="eb">${g.found} of ${g.total} found</span><h2>List over</h2></div>` : '';
+    const box = live && !TV ? inputBox('Name a player on the list') : '';
+    const mine = live && g.wrong && g.wrong.length ? `<p class="wrongs">${g.wrong.slice().reverse().map(w => `<span>✗ ${esc(w)}</span>`).join('')}</p>` : '';
+    return `${rev && g.wait ? nextBar('Start the next list') : ''}<h2 class="q">${esc(g.q)}</h2>${g.note ? `<p class="note">${esc(g.note)}</p>` : ''}${head}${box}${mine}${slots}${scores(g)}`;
   }
   function rh(g) {
     if (g.step === 'kick') return roundKick(g);
@@ -195,7 +198,7 @@
   // the same 5-second countdown before every round (a new player, a new list, a new Ranked Highly round)
   const ROUND = { wtb: 'Player', cs: 'List', rh: 'Round' };
   function roundKick(g) {
-    const sub = g.type === 'wtb' ? "Who's that baller?" : g.myTurn ? 'You start' : esc(sideName(g.turn)) + ' starts';
+    const sub = g.type === 'wtb' ? "Who's that baller?" : g.type === 'cs' ? esc(g.q) : g.myTurn ? 'You start' : esc(sideName(g.turn)) + ' starts';
     return `<section class="kick wkick"><span class="eb">${ROUND[g.type]} ${g.n} of ${g.of} · starts in</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>${sub}</h2></section>${scores(g)}`;
   }
   // the host moves the quiz on: after each round's reveal, and from Full time to the next game
@@ -255,7 +258,7 @@
     const focus = document.activeElement && document.activeElement.id === 'ai';
     app.innerHTML = `<div class="${TV ? 'tvgame' : 'pgame'}">${html}</div><p class="err">${esc(flash)}</p>`;
     if (focus && $('#ai')) { const el = $('#ai'); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }
-    else if (!TV && $('#ai') && V.game && (V.game.myTurn || (V.game.type === 'wtb' && V.game.clue === 1))) $('#ai').focus();
+    else if (!TV && $('#ai') && V.game && (V.game.myTurn || (V.game.type === 'wtb' && V.game.clue === 1) || (V.game.type === 'cs' && V.game.found === 0))) $('#ai').focus();
     bind();
   }
   function bind() {
