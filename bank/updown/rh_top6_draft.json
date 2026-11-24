@@ -956,7 +956,7 @@
   "theme": "Argentina caps since 2000",
   "unit": "caps",
   "d": "M",
-  "asof": "12 Sep 2026",
+  "asof": "6 Oct 2026",
   "chain": [
    [
     "Ángel Di María",
@@ -964,7 +964,7 @@
    ],
    [
     "Lionel Messi",
-    207
+    208
    ],
    [
     "Sergio Agüero",
@@ -986,7 +986,8 @@
   "src": [
    "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Lionel_Messi",
    "https://en.wikipedia.org/wiki/Nicol%C3%A1s_Otamendi",
-   "https://en.wikipedia.org/wiki/Javier_Zanetti"
+   "https://en.wikipedia.org/wiki/Javier_Zanetti",
+   "https://www.aljazeera.com/sports/2026/10/7/lionel-messis-last-game-for-argentina-ends-in-triumph-and-tears"
   ],
   "live": 1,
   "live_note": "Active: Nicolás Otamendi — re-check caps",
@@ -997,7 +998,7 @@
   "theme": "Argentina caps since 2010",
   "unit": "caps",
   "d": "E",
-  "asof": "12 Sep 2026",
+  "asof": "6 Oct 2026",
   "chain": [
    [
     "Nicolás Otamendi",
@@ -1005,7 +1006,7 @@
    ],
    [
     "Lionel Messi",
-    163
+    164
    ],
    [
     "Javier Mascherano",
@@ -1028,7 +1029,8 @@
    "https://en.wikipedia.org/wiki/%C3%81ngel_Di_Mar%C3%ADa",
    "https://en.wikipedia.org/wiki/Javier_Mascherano",
    "https://en.wikipedia.org/wiki/Sergio_Romero",
-   "https://en.wikipedia.org/wiki/Rodrigo_De_Paul"
+   "https://en.wikipedia.org/wiki/Rodrigo_De_Paul",
+   "https://www.aljazeera.com/sports/2026/10/7/lionel-messis-last-game-for-argentina-ends-in-triumph-and-tears"
   ],
   "live": 1,
   "live_note": "Active: Nicolás Otamendi, Rodrigo De Paul — re-check caps",
