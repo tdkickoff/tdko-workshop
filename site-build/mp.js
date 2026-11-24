@@ -172,12 +172,14 @@
     return `${top}${box}${mine}${count}${clues}${scores(g)}`;
   }
   function cs(g) {
+    if (g.step === 'ready' && g.fresh) return roundKick(g, 'List');
     const rev = g.step === 'reveal';
     const slots = `<ol class="slots">${g.slots.map((s, i) => `<li class="${s.n ? (s.missed ? 'missed' : 'found' + teamCls(s.by)) : s.hint ? 'hint' : ''}"><span class="no">${i + 1}</span>${s.n ? `<b>${esc(s.n)}</b>${s.l ? `<small>${esc(s.l)}</small>` : ''}${s.by && !s.missed ? `<em>${esc(sideName(s.by))}</em>` : ''}` : s.hint ? `<b>${esc(s.hint)}</b>` : '<b>&nbsp;</b>'}</li>`).join('')}</ol>`;
     const found = g.slots.filter(s => s.n && !s.missed).length;
     return `<h2 class="q">${esc(g.q)}</h2><p class="note">${esc(g.note || '')} · ${found} of ${g.total} found</p>${rev ? '<p class="status">List over</p>' : turnBanner(g)}${g.myTurn && g.step === 'turn' ? inputBox('Name a player on the list') : ''}${slots}${log(g)}${scores(g)}`;
   }
   function rh(g) {
+    if (g.step === 'ready' && g.fresh) return roundKick(g, 'Round');
     const rev = g.step === 'reveal', mine = g.myTurn && g.step === 'turn' && !(pend && pend.k === qkey());
     const card = g.cur ? `<div class="rh"><div class="rcard"><span class="eb">${esc(g.theme)}</span><h3>${esc(g.cur.n)}</h3><b>${esc(g.cur.v)}</b><small>${esc(g.unit)}</small></div>
       <div class="rcard next"><span class="eb">Next</span><h3>${g.next ? esc(g.next.n) : '…'}</h3><b>?</b><small>Higher or lower?</small></div></div>` : '';
@@ -187,13 +189,18 @@
   }
 
   function countdown() {
-    const first = V.config.games[0];
-    return `<section class="kick"><span class="eb">Kick off in</span><b class="secs" data-until="${V.until}">${secs(V.until)}</b><h2>Game 1 · ${esc(GAMES[first.g])}</h2><p class="note">${esc(DESC[first.g])}</p></section>`;
+    const gi = Math.max(0, V.gi), cfg = V.config.games[gi];
+    return `<section class="kick"><span class="eb">${gi ? 'Next game in' : 'Kick off in'}</span><b class="secs" data-until="${V.until}">${secs(V.until)}</b><h2>Game ${gi + 1} · ${esc(GAMES[cfg.g])}</h2><p class="note">${esc(DESC[cfg.g])}</p></section>`;
+  }
+  // a big countdown before every round of the turn games (a new list, a new Ranked Highly round)
+  function roundKick(g, what) {
+    const who = sideName(g.turn), mine = g.myTurn;
+    return `<section class="kick wkick"><span class="eb">${what} ${g.n} of ${g.of}</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>${mine ? 'You start' : esc(who) + ' starts'}</h2></section>${scores(g)}`;
   }
   function between() {
     const last = V.results[V.results.length - 1], next = V.config.games[V.gi + 1];
     const rows = last ? standings(id => last.score[id] || 0).map(s => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="nm">${esc(s.name)}</span><b>+${fmt(last.score[s.id])}</b></li>`).join('') : '';
-    return `<div class="betw"><section class="card"><span class="eb">Full time · ${esc(GAMES[last.g])}</span><ol class="table res">${rows}</ol></section>${table('Quiz table')}</div><p class="status">Next: <b>${esc(GAMES[next.g])}</b> in ${cd(V.until)}s</p><p class="note">${esc(DESC[next.g])}</p>`;
+    return `<div class="betw"><section class="card"><span class="eb">Full time · ${esc(GAMES[last.g])}</span><ol class="table res">${rows}</ol></section>${table('Quiz table')}</div><p class="status">Next up: <b>${esc(GAMES[next.g])}</b></p>`;
   }
   // Final whistle graph: running quiz totals after every score, one line per player or team
   const lineColour = id => V.mode === 'teams' ? `var(--${id})` : `var(--s${(V.sides.findIndex(s => s.id === id) % 6) + 1})`;
