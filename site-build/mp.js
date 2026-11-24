@@ -9,15 +9,15 @@
   const GAMES = { fb: 'Fast Break', wtb: "Who's That Baller", cs: 'Clean Sweep', rh: 'Ranked Highly' };
   const DESC = { fb: 'Everyone answers the same question at once. Every right answer scores 100, plus up to 50 for speed.',
     wtb: 'Everyone guesses at once. A new clue every 10 seconds: name him on the first clue for 1,000, 100 less for each new one. Everyone who gets him scores. Guess as often as you like. Surname is fine, first name alone is not.',
-    cs: 'Everyone guesses at once. Name players on the list before anyone else: each one is worth 100 at the start, dropping to 10 as the clock runs down. Once a name is taken, it is gone. Guess as often as you like.',
-    rh: 'Take turns to call higher or lower. Get one wrong and you are out. Last one standing scores 1,000.' };
+    cs: 'Everyone guesses at once. Name players on the list before anyone else: each one is worth 1,000 at the start, dropping to 100 as the clock runs down. Once a name is taken, it is gone. Guess as often as you like.',
+    rh: 'Everyone calls higher or lower at the same time. A right call scores up to 1,000, less the longer you take. Get one wrong and you are out of the round. Starts easy, gets harder.' };
   const fmt = n => (n || 0).toLocaleString('en-GB');
   const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 1, m: 3, l: 5, u: 'players' }, cs: { s: 1, m: 3, l: 5, u: 'lists' }, rh: { s: 1, m: 3, l: 5, u: 'rounds' } };
   const LN = { s: 'Short', m: 'Standard', l: 'Long' };
   const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }, del(k) { try { localStorage.removeItem(k); } catch (e) {} } };
   let pid = TV ? 'tv' : store.get('tdko-mp-pid');
   if (!pid) { pid = 'p-' + (crypto.randomUUID ? crypto.randomUUID() : (Date.now().toString(36) + Math.random().toString(36).slice(2))).replace(/[^A-Za-z0-9-]/g, '').slice(0, 40); store.set('tdko-mp-pid', pid); }
-  let pend = null; const qkey = () => V && V.game ? [V.round, V.gi, V.game.type, V.game.n, V.game.i, V.game.cur && V.game.cur.n].join('|') : '';
+  let pend = null; const qkey = () => V && V.game ? [V.round, V.gi, V.game.type, V.game.n, V.game.i, V.game.qn, V.game.cur && V.game.cur.n].join('|') : '';
   let code = null, V = null, offset = 0, polls = 0, timer = null, busy = false, flash = '', flashSeen = '', flashAt = 0, draftKey = '', typed = '';
 
   const now = () => Date.now() + offset;
@@ -129,7 +129,7 @@
   }
 
   function gameHead(g) {
-    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.step === 'kick' ? 5000 : g.type === 'cs' ? (g.step === 'play' ? g.dur : 4500) : g.type === 'wtb' ? ({ clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
+    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.step === 'kick' ? 5000 : g.type === 'rh' ? (g.step === 'q' ? 10000 : g.step === 'res' ? 3500 : 4500) : g.type === 'cs' ? (g.step === 'play' ? g.dur : 4500) : g.type === 'wtb' ? ({ clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
     return `<header class="ghead"><span class="eb">Game ${V.gi + 1} of ${V.config.games.length} · ${esc(GAMES[g.type])}</span><span class="eb">${g.n} / ${g.of}</span></header>${g.paused ? '<p class="paused">Paused by the host</p>' : g.wait ? '' : bar(g.until, total)}`;
     void cfg;
   }
@@ -183,12 +183,23 @@
   }
   function rh(g) {
     if (g.step === 'kick') return roundKick(g);
-    const rev = g.step === 'reveal', mine = g.myTurn && g.step === 'turn' && !(pend && pend.k === qkey());
-    const card = g.cur ? `<div class="rh"><div class="rcard"><span class="eb">${esc(g.theme)}</span><h3>${esc(g.cur.n)}</h3><b>${esc(g.cur.v)}</b><small>${esc(g.unit)}</small></div>
-      <div class="rcard next"><span class="eb">Next</span><h3>${g.next ? esc(g.next.n) : '…'}</h3><b>?</b><small>Higher or lower?</small></div></div>` : '';
-    const btns = mine ? `<div class="hl"><button class="btn" data-a="rh" data-c="higher">▲ Higher</button><button class="btn" data-a="rh" data-c="lower">▼ Lower</button></div>` : '';
-    const top = rev ? `<div class="answer-card"><span class="eb">Round ${g.n}</span><h2>${g.winner ? esc(sideName(g.winner)) + ' is the last one standing' : 'Round over'}</h2></div>` : turnBanner(g);
-    return `${top}${rev && g.wait ? nextBar('Start the next round') : ''}${card}${btns}${log(g)}${scores(g)}`;
+    const rev = g.step === 'reveal', q = g.step === 'q', res = g.step === 'res';
+    const picked = g.mine ? g.mine.call : (pend && pend.k === qkey() ? pend.o : null);
+    const nextV = g.next && g.next.v != null ? `<b>${fmt(g.next.v)}</b>` : '<b>?</b>';
+    const card = g.cur && !rev ? `<div class="rh"><div class="rcard"><span class="eb">Now</span><h3>${esc(g.cur.n)}</h3><b>${fmt(g.cur.v)}</b><small>${esc(g.unit)}</small></div>
+      <div class="rcard next ${res && g.last ? (g.last.v >= g.cur.v ? 'up' : 'down') : ''}"><span class="eb">Next</span><h3>${g.next ? esc(g.next.n) : '…'}</h3>${nextV}<small>${res ? esc(g.unit) : 'Higher or lower?'}</small></div></div>` : '';
+    let top;
+    if (rev) top = `<div class="answer-card"><span class="eb">Round ${g.n} of ${g.of} · ${esc(g.theme)}</span><h2>${g.winner ? esc(sideName(g.winner)) + (V.mode === 'teams' ? ' are' : ' is') + ' the last one standing' : g.alive && g.alive.length ? 'Made it to the end' : 'Everyone is out'}</h2>
+      <p class="gotlist">${standings(id => (g.rpts || {})[id] || 0).map(s => `<span class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><b>${esc(s.name)}</b> +${fmt((g.rpts || {})[s.id] || 0)}</span>`).join('')}</p></div>`;
+    else top = `<div class="wtbhead"><div><span class="eb">${esc(g.theme)} · ${g.qn} of ${g.qs}</span><b class="worth">${q ? fmt(g.pts) : g.last && g.cur ? (g.last.v === g.cur.v ? 'Level' : g.last.v > g.cur.v ? '▲ Higher' : '▼ Lower') : ''}</b><small>${q ? 'points for a right call now' : 'next call coming up'}</small></div><div class="nextclue">${q ? `Time left <b>${cd(g.until)}s</b>` : ''}</div></div>`;
+    let mid = '';
+    if (q && !TV) mid = g.out ? `<p class="status bad">You're out this round. Watch on…</p>`
+      : picked ? `<div class="hl"><button class="btn ${picked === 'higher' ? 'picked' : ''}" disabled>▲ Higher</button><button class="btn ${picked === 'lower' ? 'picked' : ''}" disabled>▼ Lower</button></div><p class="status">Locked in. ${g.answered} of ${g.alive.length} called…</p>`
+      : `<div class="hl"><button class="btn" data-a="rh" data-c="higher">▲ Higher</button><button class="btn" data-a="rh" data-c="lower">▼ Lower</button></div>`;
+    if (q && TV) mid = `<p class="status">${g.answered} of ${g.alive.length} called</p>`;
+    if (res && g.last) mid = `<p class="gotlist">${Object.entries(g.last.res).map(([s, r]) => `<span class="${r.right ? '' : 'outx '}${s === mySide() ? 'me' : ''}${teamCls(s)}"><b>${esc(V.mode === 'teams' ? sideName(s) : r.who || sideName(s))}</b> ${r.right ? '✓ +' + fmt(r.pts) : r.call ? '✗ out' : 'no call · out'}</span>`).join('')}</p>`;
+    const outs = !rev && g.start ? `<p class="note">${g.alive.length} of ${g.start.length} still in</p>` : '';
+    return `${top}${rev && g.wait ? nextBar('Start the next round') : ''}${card}${mid}${outs}${scores(g)}`;
   }
 
   function countdown() {
@@ -198,7 +209,7 @@
   // the same 5-second countdown before every round (a new player, a new list, a new Ranked Highly round)
   const ROUND = { wtb: 'Player', cs: 'List', rh: 'Round' };
   function roundKick(g) {
-    const sub = g.type === 'wtb' ? "Who's that baller?" : g.type === 'cs' ? esc(g.q) : g.myTurn ? 'You start' : esc(sideName(g.turn)) + ' starts';
+    const sub = g.type === 'wtb' ? "Who's that baller?" : g.type === 'cs' ? esc(g.q) : g.type === 'rh' ? esc(g.theme) : g.myTurn ? 'You start' : esc(sideName(g.turn)) + ' starts';
     return `<section class="kick wkick"><span class="eb">${ROUND[g.type]} ${g.n} of ${g.of} · starts in</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>${sub}</h2></section>${scores(g)}`;
   }
   // the host moves the quiz on: after each round's reveal, and from Full time to the next game

@@ -62,6 +62,13 @@ for r in rows('clean-sweep'):
     p = json.loads(r['payload'])
     if len(p['names']) not in (10, 15, 20): continue  # list size follows the number of players: 10, 15 or 20 names
     P['cs'].append(dict(id=r['id'], q=p['q'], note=p.get('note', ''), names=p['names'], ok=ok(r, 'clean-sweep')))
+# Clean Sweep lists whose labels are counts (caps, goals) double as Ranked Highly chains
+for r in rows('clean-sweep'):
+    p = json.loads(r['payload']); note = p.get('note', '')
+    m = re.search(r'Labels show (caps|goals)\.', note)
+    labs = [x.get('l', '') for x in p['names']]
+    if not m or not all(re.fullmatch(r'\d+', l) for l in labs): continue
+    P['rh'].append(dict(id='cs%d' % r['id'], theme=p['q'], unit=m.group(1), note=note, chain=[[x['n'], int(x['l'])] for x in p['names']], ok=ok(r, 'clean-sweep')))
 for r in rows('ranked-highly'):
     p = json.loads(r['payload'])
     P['rh'].append(dict(id=r['id'], theme=p['theme'], unit=p.get('unit', ''), chain=p['chain'], ok=ok(r, 'ranked-highly')))
