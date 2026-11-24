@@ -8,7 +8,7 @@
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const GAMES = { fb: 'Fast Break', wtb: "Who's That Baller", cs: 'Clean Sweep', rh: 'Ranked Highly' };
   const DESC = { fb: 'Everyone answers the same question at once. Every right answer scores 100, plus up to 50 for speed.',
-    wtb: 'Everyone guesses at once. A new clue every 10 seconds, first to name him wins: 1,000 on the first clue, 100 less for each new one. Guess as often as you like. Surname is fine, first name alone is not.',
+    wtb: 'Everyone guesses at once. A new clue every 10 seconds: name him on the first clue for 1,000, 100 less for each new one. Everyone who gets him scores. Guess as often as you like. Surname is fine, first name alone is not.',
     cs: 'Take turns to name a player on the list. 100 points for each one.',
     rh: 'Take turns to call higher or lower. Get one wrong and you are out. Last one standing scores 1,000.' };
   const fmt = n => (n || 0).toLocaleString('en-GB');
@@ -129,7 +129,7 @@
   }
 
   function gameHead(g) {
-    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.type === 'wtb' ? ({ ready: 3000, clue: 10000, final: 30000 }[g.step] || 4500) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
+    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.type === 'wtb' ? ({ ready: 3000, clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
     return `<header class="ghead"><span class="eb">Game ${V.gi + 1} of ${V.config.games.length} · ${esc(GAMES[g.type])}</span><span class="eb">${g.n} / ${g.of}</span></header>${g.paused ? '<p class="paused">Paused by the host</p>' : bar(g.until, total)}`;
     void cfg;
   }
@@ -155,14 +155,19 @@
   }
   function wtb(g) {
     const rev = g.step === 'reveal', live = g.step === 'clue' || g.step === 'final';
-    if (g.step === 'ready') return `<section class="kick wkick"><span class="eb">Player ${g.n} of ${g.of}</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>Who's that baller?</h2><p class="note">First clue coming up. First to name him wins.</p></section>${scores(g)}`;
+    if (g.step === 'ready') return `<section class="kick wkick"><span class="eb">Player ${g.n} of ${g.of}</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>Who's that baller?</h2><p class="note">First clue coming up. The sooner you name him, the more you score.</p></section>${scores(g)}`;
     const clues = `<ol class="clues">${(rev ? g.clues : g.clues.slice().reverse()).map(([k, v], i) => `<li class="${i === 0 && !rev ? 'new' : ''}"><span>${esc(k)}</span><b>${esc(v)}</b></li>`).join('')}</ol>`;
+    const gotList = (g.got || []).map(x => `<span class="${x.side === mySide() ? 'me' : ''}${teamCls(x.side)}"><b>${esc(V.mode === 'teams' ? sideName(x.side) : x.who)}</b> +${fmt(x.pts)}</span>`).join('');
     let top;
-    if (rev) top = `<div class="answer-card"><span class="eb">${g.winner ? esc(g.who || sideName(g.winner)) + ' got him · +' + fmt(g.won) : 'Nobody got him · 0 points'}</span><h2>${esc(g.answer)}</h2><p>${esc(g.blurb || '')}</p></div>`;
-    else if (g.step === 'final') top = `<div class="turn live mine"><span>Last chance · ${fmt(g.pts)} pts</span><b>${cd(g.until)}</b></div>`;
-    else top = `<div class="wtbhead"><div><span class="eb">${esc(g.position || '')} · clue ${g.clue} of ${g.total}</span><b class="worth">${fmt(g.pts)}</b><small>points if you name him now</small></div><div class="nextclue">${g.clue < g.total ? 'Next clue' : 'Last guess'} in <b>${cd(g.until)}s</b></div></div>`;
-    const box = live && !TV ? inputBox('Who is it? Surname is fine') : '';
-    const mine = !rev && g.wrong && g.wrong.length ? `<p class="wrongs">${g.wrong.slice().reverse().map(w => `<span>✗ ${esc(w)}</span>`).join('')}</p>` : '';
+    if (rev) top = `<div class="answer-card"><span class="eb">${g.got && g.got.length ? 'It was' : 'Nobody got him · 0 points'}</span><h2>${esc(g.answer)}</h2><p>${esc(g.blurb || '')}</p>${gotList ? `<p class="gotlist">${gotList}</p>` : ''}</div>`;
+    else {
+      const worth = g.step === 'final' ? `<div class="turn live ${g.mine ? '' : 'mine'}"><span>Last chance · ${fmt(g.pts)} pts</span><b>${cd(g.until)}</b></div>`
+        : `<div class="wtbhead"><div><span class="eb">${esc(g.position || '')} · clue ${g.clue} of ${g.total}</span><b class="worth">${fmt(g.pts)}</b><small>points if you name him now</small></div><div class="nextclue">${g.clue < g.total ? 'Next clue' : 'Last guess'} in <b>${cd(g.until)}s</b></div></div>`;
+      const mineCard = g.mine && !TV ? `<div class="gotit"><b>✓ ${V.mode === 'teams' && g.mine.who !== (me() || {}).name ? esc(g.mine.who) + ' got him for your team' : 'You got him'} · +${fmt(g.mine.pts)}</b><span>Waiting for ${g.left} other${g.left === 1 ? '' : 's'}…</span></div>` : '';
+      top = worth + mineCard + (gotList ? `<p class="gotlist">${gotList}</p>` : '');
+    }
+    const box = live && !TV && !g.mine ? inputBox('Who is it? Surname is fine') : '';
+    const mine = live && !g.mine && g.wrong && g.wrong.length ? `<p class="wrongs">${g.wrong.slice().reverse().map(w => `<span>✗ ${esc(w)}</span>`).join('')}</p>` : '';
     const count = live ? `<p class="note">${g.guesses} guess${g.guesses === 1 ? '' : 'es'} so far</p>` : '';
     return `${top}${box}${mine}${count}${clues}${scores(g)}`;
   }
@@ -237,7 +242,7 @@
     const focus = document.activeElement && document.activeElement.id === 'ai';
     app.innerHTML = `<div class="${TV ? 'tvgame' : 'pgame'}">${html}</div><p class="err">${esc(flash)}</p>`;
     if (focus && $('#ai')) { const el = $('#ai'); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }
-    else if (!TV && $('#ai') && V.game && (V.game.myTurn || V.game.type === 'wtb')) $('#ai').focus();
+    else if (!TV && $('#ai') && V.game && (V.game.myTurn || (V.game.type === 'wtb' && V.game.clue === 1))) $('#ai').focus();
     bind();
   }
   function bind() {
