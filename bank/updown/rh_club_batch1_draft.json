@@ -1,0 +1,166 @@
+[
+ {
+  "id": "pl-goals-2000",
+  "theme": "Premier League goals since 2000–01",
+  "unit": "goals",
+  "d": "M",
+  "asof": "22 Nov 2026",
+  "chain": [
+   [
+    "Mohamed Salah",
+    193
+   ],
+   [
+    "Harry Kane",
+    213
+   ],
+   [
+    "Jermain Defoe",
+    162
+   ],
+   [
+    "Wayne Rooney",
+    208
+   ],
+   [
+    "Frank Lampard",
+    160
+   ],
+   [
+    "Sergio Agüero",
+    184
+   ]
+  ],
+  "src": [
+   "https://theanalyst.com/articles/premier-league-all-time-top-goalscorers",
+   "https://en.wikipedia.org/wiki/Frank_Lampard",
+   "https://en.wikipedia.org/wiki/Mohamed_Salah"
+  ],
+  "workings": "Lampard 177 minus 17 before 2000–01. Salah left for Trabzonspor in Aug 2026."
+ },
+ {
+  "id": "pl-goals-2010",
+  "theme": "Premier League goals since 2010–11",
+  "unit": "goals",
+  "d": "E",
+  "asof": "22 Nov 2026",
+  "chain": [
+   [
+    "Sergio Agüero",
+    184
+   ],
+   [
+    "Harry Kane",
+    213
+   ],
+   [
+    "Son Heung-min",
+    127
+   ],
+   [
+    "Mohamed Salah",
+    193
+   ],
+   [
+    "Raheem Sterling",
+    123
+   ],
+   [
+    "Jamie Vardy",
+    145
+   ]
+  ],
+  "src": [
+   "https://theanalyst.com/articles/premier-league-all-time-top-goalscorers",
+   "https://en.wikipedia.org/wiki/Erling_Haaland",
+   "https://www.fotmob.com/players/737066/erling-haaland"
+  ],
+  "workings": "Haaland is 7th on 121 (112 to 2025–26 + 9 this season) and will pass Sterling soon.",
+  "live": 1,
+  "live_note": "Re-check Sterling 123 vs Haaland (121 on 22 Nov 2026, still at City) — Haaland will likely enter the top 6",
+  "checked_on": "2026-11-24"
+ },
+ {
+  "id": "pl-apps-2000",
+  "theme": "Premier League appearances since 2000–01",
+  "unit": "apps",
+  "d": "M",
+  "asof": "8 Oct 2026",
+  "chain": [
+   [
+    "Jermain Defoe",
+    496
+   ],
+   [
+    "James Milner",
+    658
+   ],
+   [
+    "Wayne Rooney",
+    491
+   ],
+   [
+    "Gareth Barry",
+    589
+   ],
+   [
+    "John Terry",
+    486
+   ],
+   [
+    "Frank Lampard",
+    491
+   ]
+  ],
+  "src": [
+   "https://www.myfootballfacts.com/premier-league/all-time-premier-league/all-time-300-or-more-players-premier-league-appearances/",
+   "https://www.nbcsports.com/soccer/news/premier-league-all-time-appearance-leaders-record-matches-played-stats",
+   "https://en.wikipedia.org/wiki/Gareth_Barry",
+   "https://www.sporting-heroes.net/football/chelsea-fc/john-terry-7725/premiership-appearances_a18530/default.aspx"
+  ],
+  "workings": "Barry 653 minus 64; Lampard 609 minus 118; Terry 492 minus 6. Ashley Young 7th on 485."
+ },
+ {
+  "id": "pl-apps-2010",
+  "theme": "Premier League appearances since 2010–11",
+  "unit": "apps",
+  "d": "E",
+  "asof": "8 Oct 2026",
+  "chain": [
+   [
+    "James Ward-Prowse",
+    422
+   ],
+   [
+    "Kyle Walker",
+    444
+   ],
+   [
+    "David de Gea",
+    415
+   ],
+   [
+    "Jordan Henderson",
+    435
+   ],
+   [
+    "Danny Welbeck",
+    401
+   ],
+   [
+    "James Milner",
+    416
+   ]
+  ],
+  "src": [
+   "https://www.myfootballfacts.com/premier-league/all-time-premier-league/all-time-300-or-more-players-premier-league-appearances/",
+   "https://en.wikipedia.org/wiki/Kyle_Walker",
+   "https://en.wikipedia.org/wiki/Jordan_Henderson",
+   "https://www.premierleague.com/players/3452"
+  ],
+  "workings": "Walker 446 minus 2; Henderson 469 minus 34; Welbeck 409 minus 8; Milner = Liverpool 230 + City 147 + Brighton 39. Sterling 7th on 396.",
+  "live": 1,
+  "live_note": "Active: Kyle Walker, Jordan Henderson, James Ward-Prowse, Danny Welbeck — re-check apps",
+  "checked_on": "2026-11-24"
+ }
+]

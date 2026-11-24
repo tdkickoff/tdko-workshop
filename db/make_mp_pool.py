@@ -60,8 +60,9 @@ for r in rows('whos-that-baller'):
     P['wtb'].append(dict(id=r['id'], p=p, ok=ok(r, 'whos-that-baller')))
 for r in rows('clean-sweep'):
     p = json.loads(r['payload'])
-    if len(p['names']) not in (10, 15, 20): continue  # list size follows the number of players: 10, 15 or 20 names
-    P['cs'].append(dict(id=r['id'], q=p['q'], note=p.get('note', ''), names=p['names'], ok=ok(r, 'clean-sweep')))
+    n = len(p['names'])                                 # every qualifying name stays in; the list goes in the pot its size rounds up to
+    pot = 20 if n >= 16 else 15 if n >= 11 else 10      # 16+ names: 20 pot (6 players), 11-15: 15 pot (4-5), up to 10: 10 pot (2-3)
+    P['cs'].append(dict(id=r['id'], q=p['q'], note=p.get('note', ''), names=p['names'], pot=pot, ok=ok(r, 'clean-sweep')))
 # Clean Sweep lists whose labels are counts (caps, goals) double as Ranked Highly chains
 for r in rows('clean-sweep'):
     p = json.loads(r['payload']); note = p.get('note', '')
