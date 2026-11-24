@@ -12,7 +12,7 @@
     cs: 'Take turns to name a player on the list. 100 points for each one.',
     rh: 'Take turns to call higher or lower. Get one wrong and you are out. Last one standing scores 1,000.' };
   const fmt = n => (n || 0).toLocaleString('en-GB');
-  const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 3, m: 5, l: 7, u: 'players' }, cs: { s: 1, m: 2, l: 3, u: 'lists' }, rh: { s: 1, m: 2, l: 3, u: 'rounds' } };
+  const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 1, m: 3, l: 5, u: 'players' }, cs: { s: 1, m: 3, l: 5, u: 'lists' }, rh: { s: 1, m: 3, l: 5, u: 'rounds' } };
   const LN = { s: 'Short', m: 'Standard', l: 'Long' };
   const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }, del(k) { try { localStorage.removeItem(k); } catch (e) {} } };
   let pid = TV ? 'tv' : store.get('tdko-mp-pid');
