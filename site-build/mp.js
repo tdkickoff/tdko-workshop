@@ -80,11 +80,10 @@
       $('#tvf').onsubmit = e => { e.preventDefault(); const c = $('#tvc').value.trim().toUpperCase(); if (/^[A-Z]{4}$/.test(c)) go(c); };
       return;
     }
-    app.innerHTML = `<section class="hero"><span class="eb">Multiplayer</span><h1>Play <i>together</i></h1><p class="lede">Up to 6 players, each on their own phone. Host a quiz, share the code, kick off.</p></section>
+    app.innerHTML = `<section class="hero"><span class="eb">Multiplayer</span><h1>Play <i>together</i></h1><p class="lede">Play with up to five friends, each on your own phone. Host a quiz, share your room code so they can join, then kick off. Got a TV? Open <b>tdko.app/tv</b> on it and type in your room code to put the quiz on the big screen.</p></section>
       <section class="card" id="hostcard"><button class="btn big" id="host">Host a quiz</button></section>
-      <section class="card"><form id="jf" class="row"><input id="jc" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="CODE" aria-label="Room code"><button class="btn">Join</button></form></section>
-      <p class="err">${esc(msg || '')}</p>
-      <p class="note">Got a TV? Open <b>tdko.app/tv</b> on it and type the room code to show the quiz on the big screen.</p>`;
+      <section class="card" id="joincard"><button class="btn big" id="joinbtn" type="button" aria-expanded="${msg ? 'true' : 'false'}" aria-controls="jf">Join a quiz</button><form id="jf" class="row"${msg ? '' : ' hidden'}><input id="jc" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="CODE" aria-label="Room code"><button class="btn">Join</button></form></section>
+      <p class="err">${esc(msg || '')}</p>`;
     const askPass = m => {
       $('#hostcard').innerHTML = `<p class="lede">Multiplayer is in the Training Ground for now. Enter your Training Ground code to host. Anyone can join with a room code.</p>
         <form id="pf" class="row"><input id="pc" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="TDKO-XXXXX" aria-label="Training Ground code"><button class="btn">Unlock</button></form><p class="err">${esc(m || '')}</p>`;
@@ -94,6 +93,7 @@
     };
     $('#host').onclick = async () => { const pass = store.get('tdko-mp-pass'); if (!pass) return askPass();
       const r = await call('create', { pid, pass }); if (r.code) go(r.code); else if (r.needPass) { store.del('tdko-mp-pass'); askPass(r.error); } else home(r.error); };
+    $('#joinbtn').onclick = () => { const f = $('#jf'), open = f.hidden; f.hidden = !open; $('#joinbtn').setAttribute('aria-expanded', String(open)); if (open) $('#jc').focus(); };
     $('#jf').onsubmit = async e => { e.preventDefault(); const c = $('#jc').value.trim().toUpperCase(); if (!/^[A-Z]{4}$/.test(c)) return home('That code needs 4 letters.'); join(c); };
   }
   async function join(c, quiet) {

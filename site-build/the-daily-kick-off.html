@@ -153,15 +153,25 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
   .badge.gave{margin-top:0}
 }
 @media (prefers-reduced-motion: reduce){.btn{transition:none}}
+/* TDKO mark: a small one by the eyebrow, and a large embossed one behind the hero */
+.brand{display:inline-flex;align-items:center;gap:.7em}
+.tdko-mark{display:inline-flex;flex:none}.tdko-mark svg{display:block;width:2.8em;height:auto;color:var(--ink)}
+.tdko-mark .pass,.tdko-mark .ball{stroke:var(--accent);fill:var(--accent)}.tdko-mark .pass{fill:none}.tdko-mark .head{fill:var(--accent)}
+.hero{position:relative;isolation:isolate}
+.crest{position:absolute;z-index:-1;right:-12px;top:-6px;width:min(300px,62%);pointer-events:none;color:var(--ink);opacity:.07;
+ filter:drop-shadow(0 1.5px 0 rgba(255,255,255,.9))}
+.crest svg{display:block;width:100%;height:auto}.crest .ball,.crest .head{fill:currentColor}
+:root[data-tdko="dark"] .crest{opacity:.09;filter:drop-shadow(0 -1px 0 rgba(0,0,0,.8))}
 </style>
 
 <div class="wrap">
   <header class="top">
-    <span class="eyebrow">Daily football puzzles</span>
+    <span class="eyebrow brand"><span class="tdko-mark"><svg viewBox="20 95 472 290" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="round"><path d="M28 237H484" stroke-width="6"/><circle cx="256" cy="237" r="115" stroke-width="8"/><path d="M142 117l22 22M164 117l-22 22" stroke-width="8"/><circle cx="366" cy="338" r="12" stroke-width="7"/><path class="pass" d="M284 222L343 170" stroke-width="9" stroke-dasharray="0.1 17"/><path class="pass head" d="M334 142L360 137L355 163Z" stroke-width="9" stroke-linejoin="round"/></g><circle class="ball" cx="256" cy="237" r="26"/></svg></span>Daily football puzzles</span>
     <span class="meta" id="meta"></span>
   </header>
 
   <section class="hero">
+    <span class="crest" aria-hidden="true"><svg viewBox="20 95 472 290" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="round"><path d="M28 237H484" stroke-width="6"/><circle cx="256" cy="237" r="115" stroke-width="8"/><path d="M142 117l22 22M164 117l-22 22" stroke-width="8"/><circle cx="366" cy="338" r="12" stroke-width="7"/><path class="pass" d="M284 222L343 170" stroke-width="9" stroke-dasharray="0.1 17"/><path class="pass head" d="M334 142L360 137L355 163Z" stroke-width="9" stroke-linejoin="round"/></g><circle class="ball" cx="256" cy="237" r="26"/></svg></span>
     <h1>The Daily<br><i>Kick Off</i></h1>
     <p class="lede"><span id="ng">Nine</span> puzzles on today's fixture list. Get them all to full time before the next round drops at midnight.</p>
   </section>
@@ -452,6 +462,10 @@ header.top .meta{flex:none;font-size:clamp(9.5px,2.75vw,12px)}
 header.top .eyebrow{font-size:clamp(9.5px,2.75vw,12px)}
 header.top .mark{font-size:clamp(20px,6.4vw,28px)}
 .replaying header.top{flex-wrap:wrap !important}
+/* one line: eyebrow (with mark) and matchday the same size, centred on the mark */
+header.top:has(.meta){align-items:center !important}
+header.top .eyebrow,header.top .meta{font-size:clamp(8px,2.45vw,12px) !important;letter-spacing:.06em !important;line-height:1}
+@media (max-width:340px){header.top .eyebrow,header.top .meta{letter-spacing:.03em !important}header.top:has(.meta){gap:4px 8px}}
 /* support box + footer */
 .support{border:1px solid var(--line);background:var(--surface);padding:20px;margin-top:8px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;box-sizing:border-box}
 .support p{margin:0;font-size:15px;line-height:1.45;color:var(--muted);max-width:34ch}
