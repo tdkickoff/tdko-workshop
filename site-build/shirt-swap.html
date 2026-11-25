@@ -366,9 +366,9 @@ function keyState(x, ans){
   return ks;
 }
 function bindTabs(){ app.querySelectorAll('.mode').forEach(b=>onPress(b,()=>{ S.mode=b.dataset.m; cur=''; confirmOpen=false; save(); game(); })); }
-function game(){
+function game(final){ // final: show the finished board for a moment before Full time (result() follows once)
   const x=st(), m=M(), ans=answerOf(m);
-  if(x.over) return result();
+  if(x.over && !final) return result();
   const ks=keyState(x,ans);
   const rows=['QWERTYUIOP','ASDFGHJKL','+ZXCVBNM-'];
   app.innerHTML = `
@@ -383,7 +383,7 @@ function game(){
   fbMsg=''; fbCls=''; revealRow=-1;
   bindTabs();
   app.querySelectorAll('.key').forEach(k=>onPress(k,()=>press(k.dataset.k)));
-  drawGiveUp();
+  if(!final) drawGiveUp();
 }
 function drawTyping(){
   const x=st(), r=document.getElementById('row'+x.g.length); if(!r) return;
@@ -405,8 +405,8 @@ function submit(){
   if(x.g.includes(cur)){ say('Already tried that one.','warn'); shake(); return; }
   if(cur!==ans && !VALID[m.L].has(cur)){ say('Not in the squad list. Try another surname.','warn'); shake(); return; }
   x.g.push(cur); x.started=true; revealRow=x.g.length-1; const g=cur; cur='';
-  if(g===ans){ x.over=true; x.won=true; save(); game(); setTimeout(()=>{ if(st()===x) result(); }, 900); return; }
-  if(x.g.length>=TRIES){ x.over=true; x.won=false; save(); game(); setTimeout(()=>{ if(st()===x) result(); }, 900); return; }
+  if(g===ans){ x.over=true; x.won=true; save(); game(true); setTimeout(()=>{ if(st()===x) result(); }, 900); return; }
+  if(x.g.length>=TRIES){ x.over=true; x.won=false; save(); game(true); setTimeout(()=>{ if(st()===x) result(); }, 900); return; }
   save(); fbMsg = x.g.length===TRIES-1 ? 'Last guess.' : ''; fbCls='warn'; game();
 }
 addEventListener('keydown', e=>{

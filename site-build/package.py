@@ -13,6 +13,7 @@ for f in ['fast-break','whos-that-baller','in-the-mixer','link-up-play','squad-g
     s=open(R+f+'.html').read(); assert s.startswith('<!doctype html>'), f
     open(OUT+f+'.html','w').write(s.replace('<meta charset="utf-8">','<meta charset="utf-8">'+ICONS,1))
 shutil.copy(R+'mp.js', OUT+'mp.js')
+shutil.copy(R+'osk.js', OUT+'osk.js')
 os.makedirs(OUT+'img/host',exist_ok=True)
 for f in os.listdir(R+'img/host'): shutil.copy(R+'img/host/'+f, OUT+'img/host/'+f)
 os.makedirs(OUT+'data',exist_ok=True)
