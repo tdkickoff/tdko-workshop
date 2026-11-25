@@ -10,7 +10,7 @@
   // game titles styled as on the Daily Puzzles page: condensed capitals, second word in the accent colour
   const TT = { fb: ['Fast', 'Break'], wtb: ["Who's That", 'Baller'], cs: ['Clean', 'Sweep'], rh: ['Ranked', 'Highly'] };
   const GT = g => `<span class="gt">${TT[g][0]} <i>${TT[g][1]}</i></span>`;
-  const DESC = { fb: "You all get the same question and the same 12-second clock. A right answer scores 100, plus up to 50 more the quicker you are. When the clock hits zero, the next question starts.",
+  const DESC = { fb: "You all get the same question and the same 10-second clock. A right answer scores 100, plus up to 50 more the quicker you are. When the clock hits zero, the next question starts.",
     wtb: "A new clue about the mystery player appears every 10 seconds. Name him on the first clue for 1,000, with 100 less for each clue after. Guess as often as you like; his surname is enough, his first name isn't.",
     cs: "Name the players on the list before anyone else does. Each name is worth 1,000 at the start, dropping to 100 as the clock runs down, and once a name is taken it's gone.",
     rh: "Call higher or lower before the 10 seconds run out. A right call scores up to 100, more the quicker you are; a wrong one puts you out of the round. It starts easy and gets harder." };
@@ -24,7 +24,7 @@
   const LENS = { fb: { s: 10, m: 15, l: 20, u: 'questions' }, wtb: { s: 1, m: 3, l: 5, u: 'players' }, cs: { s: 1, m: 3, l: 5, u: 'lists' }, rh: { s: 1, m: 3, l: 5, u: 'rounds' } };
   // rough running time in seconds, from the engine's clocks plus kick-offs, reveals and host taps (Clean Sweep's clock grows with the number of players)
   const EST = (g, l, n) => { const k = LENS[g][l];
-    if (g === 'fb') return 5 + k * 12;
+    if (g === 'fb') return 5 + k * 10;
     if (g === 'wtb') return k * 90;
     if (g === 'cs') return k * (20 + (n >= 6 ? 150 : n >= 4 ? 120 : 90));
     return k * 70; };
@@ -47,6 +47,16 @@
     for (let i = 0; i < 6 && H() > innerHeight + 1; i++) { f = Math.max(.4, f * innerHeight / H() * .99); R.style.setProperty('--fit', f.toFixed(3)); }
     clearTimeout(fitT); fitT = setTimeout(() => { if (H() > innerHeight + 1) tvFit(); }, 400); // fonts and images can land late
   }
+  // phones: the screens between rounds and games shrink to fit, so Ready is always on screen without scrolling
+  function phoneFit() {
+    if (TV) return; const R = document.documentElement, g = V && V.game;
+    const on = V && (V.phase === 'between' || (V.phase === 'game' && g && g.step === 'reveal' && g.wait));
+    R.style.setProperty('--pfit', 1); if (!on) return;
+    const H = () => Math.max(R.scrollHeight, document.body.scrollHeight); let f = 1;
+    for (let i = 0; i < 5 && H() > innerHeight + 1; i++) { f = Math.max(.6, f * innerHeight / H() * .99); R.style.setProperty('--pfit', f.toFixed(3)); }
+    if (f < 1) scrollTo(0, 0);
+  }
+  if (!TV) addEventListener('resize', () => phoneFit());
   if (TV) { tvFit(); addEventListener('resize', tvFit); if (document.fonts) document.fonts.ready.then(tvFit); }
   async function call(path, body) {
     const opt = body ? { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) } : {};
@@ -273,20 +283,30 @@
     return `<section class="kick wkick"><span class="eb">${ROUND[g.type]} ${g.n} of ${g.of} · starts in</span><b class="secs" data-until="${g.until}">${secs(g.until)}</b><h2>${sub}</h2></section>${scores(g)}`;
   }
   // the host moves the quiz on: after each round's reveal, and from Full time to the next game
+  // between rounds and games: everyone taps Ready (shown to all and on the TV); once all are in, the game moves on by itself.
+  // The host can still start straight away.
   function nextBar(label) {
-    if (TV) return `<p class="status">Waiting for the host…</p>`;
-    return V.isHost ? `<button class="btn big" data-a="next">${esc(label)}</button>` : `<p class="status">Waiting for the host…</p>`;
+    const here = V.players.filter(p => p.here !== false), R = new Set(V.ready || []), mine = R.has(V.me), n = here.filter(p => R.has(p.pid)).length;
+    const chips = `<ul class="readyl">${here.map(p => `<li class="${R.has(p.pid) ? 'on' : ''}${p.pid === V.me ? ' me' : ''}">${R.has(p.pid) ? '✓ ' : ''}${esc(p.name)}</li>`).join('')}</ul>`;
+    const head = `<p class="readyh">${V.allReady ? "Everyone's ready" : `Ready: <b>${n} of ${here.length}</b>`}</p>`;
+    const btn = TV || V.allReady ? '' : mine ? `<p class="status">You're ready. Waiting for the others…</p>` : `<button class="btn big" data-a="ready">I'm ready</button>`;
+    const host = !TV && V.isHost && !V.allReady ? `<button class="link startnow" data-a="next">${esc(label)} now</button>` : '';
+    return `<section class="readybox">${head}${chips}${btn}${host}</section>`;
   }
   function between() {
     const last = V.results[V.results.length - 1], next = V.config.games[V.gi + 1];
     const pts = id => last.score[id] || 0, st = last ? standings(pts) : [];
     const rows = st.map((s, i) => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${i && pts(st[i - 1].id) === pts(s.id) ? '=' : i + 1}</span><span class="nm">${esc(s.name)}</span><b>+${fmt(pts(s.id))}</b></li>`).join('');
-    return `<div class="betw"><section class="card"><h3>Full time · ${esc(GAMES[last.g])}</h3><ol class="table">${rows}</ol></section>${table('Quiz table')}</div>${upNext(next)}${nextBar('Start ' + GAMES[next.g])}`;
+    if (TV) return `<div class="betw"><section class="card"><h3>Full time · ${esc(GAMES[last.g])}</h3><ol class="table">${rows}</ol></section>${table('Quiz table')}</div>${upNext(next)}${nextBar('Start ' + GAMES[next.g])}`;
+    // phones: one table (this game and the quiz total side by side) so the whole screen fits without scrolling
+    const tot = id => V.quiz[id] || 0, qt = standings(tot);
+    const one = qt.map((s, i) => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${i && tot(qt[i - 1].id) === tot(s.id) ? '=' : i + 1}</span><span class="nm">${esc(s.name)}</span><small class="gp">+${fmt(pts(s.id))}</small><b>${fmt(tot(s.id))}</b></li>`).join('');
+    return `<section class="card ftc"><h3>Full time · ${esc(GAMES[last.g])}</h3><p class="cols"><span>This game</span><span>Quiz</span></p><ol class="table">${one}</ol></section>${upNext(next)}${nextBar('Start ' + GAMES[next.g])}`;
   }
   // what's coming, so everyone can read it before the host starts the countdown
   function upNext(x) {
     const n = Math.max(2, V.players.length), k = LENS[x.g][x.len];
-    return `<section class="card upnext"><span class="eb">Up next · Game ${V.gi + 2} of ${V.config.games.length}</span>${GT(x.g)}<p class="unmeta">${LN[x.len]} · ${k} ${k === 1 ? LENS[x.g].u.replace(/s$/, '') : LENS[x.g].u} · about ${MIN(EST(x.g, x.len, n))}</p><p>${DESC[x.g]}</p></section>`;
+    return `<section class="card upnext"><span class="eb"><b class="un">Up next</b> · Game ${V.gi + 2} of ${V.config.games.length}</span>${GT(x.g)}<p class="unmeta">${LN[x.len]} · ${k} ${k === 1 ? LENS[x.g].u.replace(/s$/, '') : LENS[x.g].u} · about ${MIN(EST(x.g, x.len, n))}</p><p>${DESC[x.g]}</p></section>`;
   }
   // Final whistle graph: running quiz totals after every score, one line per player or team
   const lineColour = id => V.mode === 'teams' ? `var(--${id})` : `var(--s${(V.sides.findIndex(s => s.id === id) % 6) + 1})`;
@@ -338,7 +358,7 @@
     if (OSK) {}
     else if (focus && $('#ai')) { const el = $('#ai'); el.focus(); el.setSelectionRange(el.value.length, el.value.length); }
     else if (!TV && $('#ai') && V.game && (V.game.myTurn || (V.game.type === 'wtb' && V.game.clue === 1) || (V.game.type === 'cs' && V.game.found === 0))) $('#ai').focus();
-    bind(); tvFit();
+    bind(); tvFit(); phoneFit();
   }
   function bind() {
     app.querySelectorAll('[data-a]').forEach(el => {

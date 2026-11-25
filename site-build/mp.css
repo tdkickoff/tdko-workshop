@@ -188,3 +188,19 @@ body[data-mp=tv]{overflow:hidden;height:100vh}body[data-mp=tv] #mp{zoom:var(--fi
 .table li[class*="t-"]{padding-left:8px}
 
 .howto{display:block;text-align:center;margin-top:12px;font:600 12px var(--f-m);text-transform:uppercase;letter-spacing:.04em;color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:4px}
+
+.readybox{display:flex;flex-direction:column;gap:10px;padding:12px;border:1px solid var(--line);background:var(--surface)}
+.readyh{margin:0;font:600 12px var(--f-m);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.readyh b{color:var(--ink)}
+.readyl{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}.readyl li{padding:5px 10px;border:1px solid var(--line);font-size:14px;color:var(--muted)}
+.readyl li.on{border-color:var(--good);color:var(--ink);font-weight:700}.readyl li.me{outline:1px dashed var(--line);outline-offset:2px}
+.startnow{align-self:center}
+.tvgame .readybox{padding:8px 12px}.tvgame .readyl li{font-size:16px}
+.upnext{background:color-mix(in oklab,var(--accent) 9%,var(--surface));border-width:2px}
+
+body:not([data-mp=tv]) #mp{zoom:var(--pfit,1)}
+.ftc .cols{display:flex;justify-content:flex-end;gap:14px;margin:0 4px -4px;font:600 10.5px var(--f-m);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.ftc .cols span:first-child{width:64px;text-align:right}.ftc .table li{padding:6px 4px}.ftc .table b{font-size:19px;min-width:52px;text-align:right}
+.ftc .gp{font:600 12px var(--f-m);color:var(--muted);width:64px;text-align:right}
+body:not([data-mp=tv]) .upnext p{font-size:14px;line-height:1.4}body:not([data-mp=tv]) .upnext .gt{font-size:22px}
+body:not([data-mp=tv]) .readybox .btn.big{padding-block:12px}
+.upnext .un{font-weight:800;color:var(--ink)}
