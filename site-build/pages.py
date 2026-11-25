@@ -93,6 +93,7 @@ privacy = f'''
 open('/home/claude/site-build/contact.html','w').write(page('Contact', 'Contact <i>us</i>', contact_body))
 open('/home/claude/site-build/privacy.html','w').write(page('Privacy', 'Your <i>privacy</i>', privacy))
 open('/home/claude/site-build/training-ground.html','w').write(page('Training Ground', 'Training <i>Ground</i>', open('/home/claude/site-build/training_body.html').read()))
+open('/home/claude/site-build/how-to-host.html','w').write(page('How to host', 'How to <i>host</i>', open('/home/claude/site-build/host_body.html').read()).replace('<head>','<head><meta name="robots" content="noindex,nofollow">',1))
 open('/home/claude/site-build/tester.html','w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=training-ground.html"><link rel="canonical" href="training-ground.html"><title>Training Ground</title></head><body><a href="training-ground.html">Training Ground</a></body></html>')
 open('/home/claude/site-build/stats-login.html','w').write(page('Stats login', 'Stats <i>login</i>', open('/home/claude/site-build/stats_body.html').read()))
 open('/home/claude/site-build/terms.html','w').write(page('Terms', 'Terms of <i>use</i>', open('/home/claude/site-build/terms_body.html').read()))

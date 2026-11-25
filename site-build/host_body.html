@@ -1,0 +1,46 @@
+<style>
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;counter-reset:s}
+.steps>li{counter-increment:s}
+.steps h2{display:flex;align-items:center;gap:10px;margin:0;font:800 22px/1.1 var(--f-display);font-stretch:80%;text-transform:uppercase}
+.steps h2::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;flex:none;background:var(--ink);color:var(--bg);font-size:17px}
+.steps p{margin:0}
+.steps img{display:block;width:100%;max-width:300px;height:auto;margin:0 auto;border:1px solid var(--line)}
+.opts{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 4px}
+.opts th,.opts td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.opts th{font:600 11px var(--f-mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.opts td:first-child{font-weight:700}
+</style>
+<section class="card"><p class="lede">Host a Multiplayer quiz for up to 6 players, each on their own phone. It takes about a minute to set up.</p></section>
+<ol class="steps">
+<li class="card"><h2>Unlock the Training Ground</h2>
+<p>Scroll to the bottom of <b>tdko.app</b> and tap <b>Training Ground</b>. Enter your tester code and tap <b>Unlock</b>.</p>
+<img src="img/host/1-footer.jpg" alt="The site footer with the Training Ground link" loading="lazy">
+<img src="img/host/2-code.jpg" alt="The Training Ground code box and Unlock button" loading="lazy"></li>
+<li class="card"><h2>Open Multiplayer</h2>
+<p>You're back on the home page, with <b>Exit Training Ground</b> at the top. Tap <b>Multiplayer</b>.</p>
+<img src="img/host/3-home.jpg" alt="The home page with the Multiplayer button" loading="lazy"></li>
+<li class="card"><h2>Host a quiz</h2>
+<p>Tap <b>Host a quiz</b>. You get a four-letter room code.</p>
+<img src="img/host/4-multiplayer.jpg" alt="The Multiplayer page with Host a quiz and Join a quiz" loading="lazy"></li>
+<li class="card"><h2>Get your players in</h2>
+<p>Tap <b>Share invite</b> to send the link, or give out the code. Friends open the link, or go to Multiplayer, tap <b>Join a quiz</b> and type the code.</p>
+<p>Tap <b>Change</b> to pick your own name. Got a TV? Open <b>tdko.app/tv</b> on it and enter the room code.</p>
+<img src="img/host/5-room.jpg" alt="The room code, Share invite button and lobby" loading="lazy"></li>
+<li class="card"><h2>Set up the quiz</h2>
+<p>Open <b>Players</b> to choose how you play:</p>
+<table class="opts"><tr><th>Option</th><th>What happens</th></tr>
+<tr><td>Everyone for themselves</td><td>Each player scores on their own</td></tr>
+<tr><td>2 teams or 3 teams</td><td>Players are split into teams. Tap <b>Shuffle teams</b> to mix them up</td></tr></table>
+<p>Open <b>The quiz</b>. Tick the games you want, then pick a length for each. Tap the arrow by a game to see how it works.</p>
+<table class="opts"><tr><th>Game</th><th>Short</th><th>Standard</th><th>Long</th></tr>
+<tr><td>Fast Break</td><td>10 questions</td><td>15 questions</td><td>20 questions</td></tr>
+<tr><td>Who's That Baller</td><td>1 player</td><td>3 players</td><td>5 players</td></tr>
+<tr><td>Clean Sweep</td><td>1 list</td><td>3 lists</td><td>5 lists</td></tr>
+<tr><td>Ranked Highly</td><td>1 round</td><td>3 rounds</td><td>5 rounds</td></tr></table>
+<p>Each option shows how long it takes, and the quiz length at the bottom adds them up.</p>
+<img src="img/host/6-quiz.jpg" alt="The quiz options: four games, each with Short, Standard and Long" loading="lazy"></li>
+<li class="card"><h2>Kick off</h2>
+<p>Once someone has joined, <b>Waiting for players…</b> turns into <b>Kick off</b>. Tap it to start.</p>
+<p>During a game you can <b>Pause</b>, <b>Skip</b> or <b>End quiz</b>. After each game, the Full time screen shows the scores and what's next. Tap <b>Start</b> when everyone's ready.</p></li>
+</ol>
+<section class="card"><p class="note">Something not working? Tell us through <a href="contact.html">Contact us</a>, with a screenshot if you can.</p><a class="btn" href="multiplayer.html">Go to Multiplayer</a></section>
