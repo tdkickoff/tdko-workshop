@@ -274,11 +274,13 @@ function combo(id,D,o){
   const box=$(id), plot=box.querySelector('.plot'), tip=box.querySelector('.tip');
   const W=Math.max(280,Math.round(plot.clientWidth||700)), H=W<480?220:260, L=40, R=o.pct?40:10, T=12, B=28, iw=W-L-R, ih=H-T-B, n=Math.max(D.length,1);
   const vals=D.flatMap(x=>[o.bar(x)||0].concat(o.pct?[]:[o.line(x)||0]));
-  const top=Math.max(4,...vals), step=Math.pow(10,Math.floor(Math.log10(top/4))), nice=[1,2,2.5,5,10].map(m=>m*step).find(t=>t*4>=top)||step*10, ymax=nice*4;
+  // left axis fits the data: the smallest round step (1, 2, 2.5 or 5 × 10ⁿ) that covers the top in at most 6 gridlines, e.g. 215 → 0–250 in 50s
+  const top=Math.max(4,...vals), mag=Math.pow(10,Math.floor(Math.log10(top))), nice=[0.1,0.2,0.25,0.5,1,2,2.5,5,10].map(m=>m*mag).find(t=>Number.isInteger(t)&&Math.ceil(top/t)<=6), ticks=Math.ceil(top/nice), ymax=nice*ticks;
   const y=v=>T+ih-ih*v/ymax, yp=v=>T+ih-ih*v/100, slot=iw/n, bw=Math.max(2,Math.min(34,slot*0.62)), cx=i=>L+slot*i+slot/2, ly=o.pct?yp:y;
   let g='';
-  for(let t=0;t<=4;t++){ const yy=y(nice*t); g+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}"/><text class="ax" x="${L-6}" y="${yy+3}" text-anchor="end">${fmt(nice*t)}</text>`;
-    if(o.pct) g+=`<text class="ax" x="${W-R+6}" y="${yp(25*t)+3}">${25*t}%</text>`; }
+  for(let t=0;t<=ticks;t++){ const yy=y(nice*t); g+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}"/><text class="ax" x="${L-6}" y="${yy+3}" text-anchor="end">${fmt(nice*t)}</text>`;
+  }
+  if(o.pct) for(let t=0;t<=4;t++) g+=`<text class="ax" x="${W-R+6}" y="${yp(25*t)+3}">${25*t}%</text>`;
   const every=Math.max(1,Math.ceil(44/slot));
   D.forEach((x,i)=>{ const v=o.bar(x)||0, h=ih*v/ymax, X=cx(i)-bw/2, Y=T+ih-h, r=Math.min(4,h,bw/2);
     if(h>0) g+=`<path d="M${X},${T+ih}V${Y+r}Q${X},${Y} ${X+r},${Y}H${X+bw-r}Q${X+bw},${Y} ${X+bw},${Y+r}V${T+ih}Z" fill="var(--accent)"/>`;
