@@ -162,6 +162,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
  filter:drop-shadow(0 1.5px 0 rgba(255,255,255,.9))}
 .crest svg{display:block;width:100%;height:auto}.crest .ball,.crest .head{fill:currentColor}
 :root[data-tdko="dark"] .crest{opacity:.09;filter:drop-shadow(0 -1px 0 rgba(0,0,0,.8))}
+.tghost{display:none}html.tdko-test .tghost{display:block;margin:12px 0 0;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 </style>
 
 <div class="wrap">
@@ -176,7 +177,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
     <p class="lede"><span id="ng">Nine</span> puzzles on today's fixture list. Get them all to full time before the next round drops at midnight.</p>
   </section>
 
-  <nav class="modes" aria-label="Choose how to play"><a class="dpmode" id="dpBtn" href="#daily" aria-controls="daily" aria-expanded="false"><b>Daily Puzzles</b><small>New every midnight <span class="chev" aria-hidden="true">▾</span></small></a><a class="mpmode" href="multiplayer.html"><b>Multiplayer</b><small>Play with friends · TV ready</small></a></nav>
+  <nav class="modes" aria-label="Choose how to play"><a class="dpmode" id="dpBtn" href="#daily" aria-controls="daily" aria-expanded="false"><b>Daily Puzzles</b><small>New every midnight <span class="chev" aria-hidden="true">▾</span></small></a><a class="mpmode" href="multiplayer.html"><b>Multiplayer</b><small>Play with friends · TV ready</small></a></nav><a class="tghost" href="how-to-host.html">Training Ground: how to host a Multiplayer quiz →</a>
 
   <div class="daily" id="daily">
   <section class="progress" aria-live="polite">
