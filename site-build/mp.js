@@ -189,13 +189,14 @@
     if (!d) {
       d = document.createElement('div'); d.id = 'dock';
       d.innerHTML = `<form id="af" class="answer"><input id="ai" readonly tabindex="-1" autocomplete="off" spellcheck="false" aria-label="Your answer"></form>
-        <div class="kbd" role="group" aria-label="Keyboard">${KEYS.map((r, i) => `<div class="r">${i === 2 ? '<button type="button" data-k="\'" class="sm">\'</button>' : ''}${[...r].map(c => `<button type="button" data-k="${c}">${c}</button>`).join('')}${i === 2 ? '<button type="button" data-k="del" class="wide" aria-label="Delete">⌫</button>' : ''}</div>`).join('')}
-        <div class="r"><button type="button" data-k="-" class="sm">-</button><button type="button" data-k=" " class="space" aria-label="Space">space</button><button type="button" data-k="go" class="go">Guess</button></div></div>`;
+        <div class="kbd" role="group" aria-label="Keyboard">${KEYS.map((r, i) => `<div class="r">${i === 2 ? '<button type="button" data-k="\'">’</button>' : ''}${[...r].map(c => `<button type="button" data-k="${c}">${c}</button>`).join('')}${i === 2 ? '<button type="button" data-k="del" class="wide" aria-label="Delete">⌫ Del</button>' : ''}</div>`).join('')}
+        <div class="r"><button type="button" data-k="clear" class="clr">Clear</button><button type="button" data-k="-">-</button><button type="button" data-k=" " class="space" aria-label="Space">Space</button><button type="button" data-k="go" class="go">Enter</button></div></div>`;
       document.body.appendChild(d);
       const ai = d.querySelector('#ai');
       const press = k => {
         let v = ai.value;
         if (k === 'del') v = v.slice(0, -1);
+        else if (k === 'clear') v = '';
         else if (k === 'go') { const f = $('#af'); if (f && f.requestSubmit) f.requestSubmit(); else if (f) f.dispatchEvent(new Event('submit', { cancelable: true })); return; }
         else if (k === ' ') { if (v && !/[ -]$/.test(v)) v += ' '; }
         else v += (!v || /[ -]$/.test(v)) ? k.toUpperCase() : k;
@@ -324,6 +325,10 @@
     let prevOrder = ids.slice();
     const rankAt = t => { const o = ids.slice().sort((a, b) => ((t[b] || 0) - (t[a] || 0)) || (prevOrder.indexOf(a) - prevOrder.indexOf(b))); prevOrder = o; return Object.fromEntries(o.map((id, i) => [id, i])); };
     const ranks = cps.map(c => rankAt(c.t));
+    // the last column follows the final table exactly (same tie-break), and players level on points share a medal
+    const ft = standings(id => V.quiz[id] || 0), pts = id => V.quiz[id] || 0;
+    ranks[ranks.length - 1] = Object.fromEntries(ft.map((x, i) => [x.id, i]));
+    const place = Object.fromEntries(ft.map((x, i) => [x.id, ft.findIndex(y => pts(y.id) === pts(x.id))]));
     // lead changes across every score, and the biggest climb from after the first game to the end
     let leads = 0, leader = null; prevOrder = ids.slice();
     tl.slice(1).forEach(p => { const r = rankAt(p.t), top = ids.find(id => r[id] === 0); if ((p.t[top] || 0) > 0) { if (leader && top !== leader) leads++; leader = top; } });
@@ -340,7 +345,7 @@
       for (let i = 1; i < cps.length; i++) { const x0 = x(i - 1), x1 = x(i), y0 = y(ranks[i - 1][id]), y1 = y(ranks[i][id]), m = (x0 + x1) / 2; d += ` C${m},${y0} ${m},${y1} ${x1},${y1}`; }
       svg += `<path d="${d}" fill="none" stroke="${c}" stroke-width="${fin[id] === 0 ? 7 : 5}" stroke-linecap="round" filter="url(#glow)" opacity="${fin[id] === 0 ? 1 : .85}"/>`;
       cps.forEach((cp, i) => { if (i % 3 === 2) svg += `<circle cx="${x(i)}" cy="${y(ranks[i][id])}" r="${i === cps.length - 1 ? 8 : 5}" fill="${c}" stroke="var(--surface)" stroke-width="2.5"/>`; });
-      svg += `<text x="${W - R + 16}" y="${y(fin[id]) + 5}" class="lb${id === mySide() ? ' me' : ''}" fill="${c}">${['🥇 ', '🥈 ', '🥉 '][fin[id]] || ''}${esc(sideName(id))}</text>`;
+      svg += `<text x="${W - R + 16}" y="${y(fin[id]) + 5}" class="lb${id === mySide() ? ' me' : ''}" fill="${c}">${['🥇 ', '🥈 ', '🥉 '][place[id]] || ''}${esc(sideName(id))}</text>`;
     }
     const chips = [`<span>Lead changes <b>${leads}</b></span>`].concat(climb && climb.up > 0 ? [`<span>Biggest climb <b>${esc(sideName(climb.id))} ↑${climb.up}</b></span>`] : []).join('');
     return `<section class="card graph race"><h3>The race</h3><div class="chips">${chips}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Positions through the quiz">${svg}</svg></section>`;

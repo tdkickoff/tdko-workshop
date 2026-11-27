@@ -131,17 +131,19 @@ main{display:flex;flex-direction:column;gap:14px}
 .typed.hit{border-color:var(--accent)} .typed.miss{border-color:var(--bad)}
 @keyframes blink{50%{opacity:0}}
 .kb{position:fixed;left:0;right:0;bottom:0;z-index:4;background:var(--bg);border-top:1px solid var(--line);
-  padding:7px max(4px,env(safe-area-inset-left,0px)) calc(7px + env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:7px;
+  padding:6px max(4px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:6px;
   user-select:none;-webkit-user-select:none;touch-action:manipulation}
 .kr{display:flex;justify-content:center;gap:5px;max-width:560px;margin:0 auto;width:100%}
-.k{all:unset;box-sizing:border-box;flex:1 1 0;max-width:44px;height:48px;display:grid;place-items:center;background:var(--key);color:var(--ink);
-  font-family:var(--f-display);font-weight:800;font-stretch:85%;font-size:17px;text-transform:uppercase;cursor:pointer}
-.k.wide{flex:1.5 1 0;max-width:72px;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.04em}
-.k.go{background:var(--key);color:var(--ink)}
+.k{all:unset;box-sizing:border-box;flex:1 1 0;max-width:44px;height:44px;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);border-radius:4px;color:var(--ink);
+  font-family:var(--f-display);font-weight:800;font-size:18px;text-transform:uppercase;cursor:pointer}
+.k.wide{flex:1.5 1 0;max-width:64px;font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.04em}
+.k.clr{flex:1.5 1 0;max-width:none;font-family:var(--f-mono);font-size:11px;font-weight:700;color:var(--muted)}
+.k.sp{flex:3.4 1 0;max-width:none;font-family:var(--f-mono);font-size:12px;font-weight:700;letter-spacing:.04em}
+.k.go{flex:1.8 1 0;max-width:none;background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-family:var(--f-mono);font-size:13px;letter-spacing:.04em}
 .k svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
 .k.down{background:var(--ink);color:var(--bg)}
 .k:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
-.cs-kb body{padding-bottom:calc(184px + env(safe-area-inset-bottom,0px))}
+.cs-kb body{padding-bottom:calc(214px + env(safe-area-inset-bottom,0px))}
 /* during play the board is compact so it fits on screen above the keyboard */
 .board.compact{grid-template-columns:repeat(3,1fr);gap:4px;padding:6px 12px 12px}
 .board.compact li{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;padding:4px 6px;min-height:36px}
@@ -161,7 +163,7 @@ main{display:flex;flex-direction:column;gap:14px}
   .cs-kb .play .typed{min-height:40px;font-size:19px;padding:6px 12px}
   .cs-kb .play .fb{min-height:15px;font-size:11px}
   .board.compact li{min-height:31px;padding:3px 5px}
-  .k{height:40px} .kb{gap:6px;padding-top:6px} .cs-kb body{padding-bottom:calc(158px + env(safe-area-inset-bottom,0px))}
+  .k{height:40px} .kb{gap:6px;padding-top:6px} .cs-kb body{padding-bottom:calc(196px + env(safe-area-inset-bottom,0px))}
 }
 @media (prefers-reduced-motion: reduce){.typed .caret{animation:none}}
 
@@ -413,7 +415,7 @@ function board(final){
 }
 /* Phones and tablets get the on-page keyboard (the phone's own keyboard would cover the board); a laptop types on its own keyboard. */
 const TOUCH = matchMedia('(pointer: coarse)').matches;
-const KB_ROWS = ['qwertyuiop','asdfghjkl','!zxcvbnm<'];   // ! = Go (check a typo now), < = delete
+const KB_ROWS = ['qwertyuiop','asdfghjkl',"'zxcvbnm<",'*- >'];   // the site-wide keyboard: * = clear, > = enter, < = delete
 let typed='';
 const box = () => document.getElementById('guess');
 const getV = () => TOUCH ? typed : (box()?.value||'');
@@ -429,13 +431,17 @@ function submit(){ clearTimeout(fuzzT); const t=norm(getV()); if(!t) return;
 }
 function keyboard(){
   return `<div class="kb" id="kb" role="group" aria-label="Keyboard">${KB_ROWS.map(r=>`<div class="kr">${[...r].map(k=>
-    k==='!' ? `<button type="button" class="k wide go" data-k="go" aria-label="Check">Enter</button>`
-    : k==='<' ? `<button type="button" class="k wide" data-k="del" aria-label="Delete">Del</button>`
+    k==='>' ? `<button type="button" class="k go" data-k="go">Enter</button>`
+    : k==='<' ? `<button type="button" class="k wide" data-k="del" aria-label="Delete">⌫ Del</button>`
+    : k==='*' ? `<button type="button" class="k clr" data-k="clear">Clear</button>`
+    : k===' ' ? `<button type="button" class="k sp" data-k=" " aria-label="Space">Space</button>`
+    : k==="'" ? `<button type="button" class="k" data-k="'">’</button>`
     : `<button type="button" class="k" data-k="${k}">${k}</button>`).join('')}</div>`).join('')}</div>`;
 }
 function press(k){ if(S.over) return;
   if(k==='go') return submit();
   if(k==='del'){ setV(getV().slice(0,-1)); return changed(); }
+  if(k==='clear'){ setV(''); return changed(); }
   if(getV().length>=24) return;
   setV(getV()+k); changed();
 }
@@ -838,4 +844,4 @@ header.top .eyebrow,header.top .meta{font-size:clamp(8px,2.45vw,12px) !important
 })();
 </script>
 <!--/tdko-chrome-->
-<script src="osk.js?v=e984bf0d"></script></body></html>
+<script src="osk.js?v=67c4a0c6"></script></body></html>

@@ -117,10 +117,12 @@ main{display:flex;flex-direction:column;gap:14px}
 /* keyboard */
 .kb{display:flex;flex-direction:column;gap:6px;user-select:none;-webkit-user-select:none}
 .kr{display:flex;gap:5px;justify-content:center}
-.key{all:unset;box-sizing:border-box;cursor:pointer;touch-action:manipulation;flex:1 1 0;max-width:44px;height:52px;display:grid;place-items:center;background:var(--key);color:var(--ink);
-  font-family:var(--f-display);font-weight:800;font-stretch:85%;font-size:17px;text-transform:uppercase}
-.key.wide{max-width:72px;flex:1.5 1 0;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.04em}
-.key.g{background:var(--accent);color:var(--accent-ink)} .key.y{background:var(--warn);color:#111} .key.x{background:var(--miss);color:#fff}
+.key{all:unset;box-sizing:border-box;cursor:pointer;touch-action:manipulation;flex:1 1 0;max-width:44px;height:44px;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);border-radius:4px;color:var(--ink);
+  font-family:var(--f-display);font-weight:800;font-size:18px;text-transform:uppercase}
+.key.wide{max-width:64px;flex:1.5 1 0;font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.04em}
+.key.clr{max-width:none;flex:1.5 1 0;font-family:var(--f-mono);font-size:11px;font-weight:700;color:var(--muted)}.key.sp{max-width:none;flex:3.4 1 0;font-family:var(--f-mono);font-size:12px;font-weight:700;letter-spacing:.04em}
+.key.go{max-width:none;flex:1.8 1 0;background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-family:var(--f-mono);font-size:13px;letter-spacing:.04em}
+.key.g{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)} .key.y{background:var(--warn);border-color:var(--warn);color:#111} .key.x{background:var(--miss);border-color:var(--miss);color:#fff}
 .key:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 
 /* result */
@@ -370,7 +372,7 @@ function game(final){ // final: show the finished board for a moment before Full
   const x=st(), m=M(), ans=answerOf(m);
   if(x.over && !final) return result();
   const ks=keyState(x,ans);
-  const rows=['QWERTYUIOP','ASDFGHJKL','+ZXCVBNM-'];
+  const rows=['QWERTYUIOP','ASDFGHJKL',"'ZXCVBNM<",'!- >'];  // the site-wide keyboard: same keys in every game
   app.innerHTML = `
   <section class="card">
     ${tabs()}
@@ -378,7 +380,7 @@ function game(final){ // final: show the finished board for a moment before Full
     <div class="status"><span class="eyebrow">${m.name} · ${m.L} letters</span><span class="eyebrow">Guess ${Math.min(x.g.length+1,TRIES)} of ${TRIES}</span></div>
   </section>
   <div class="fb ${fbCls}" id="fb" aria-live="polite">${esc(fbMsg)}</div>
-  <div class="kb" aria-label="Keyboard">${rows.map(r=>`<div class="kr">${[...r].map(c=> c==='+'?`<button class="key wide" data-k="ENTER">Enter</button>`: c==='-'?`<button class="key wide" data-k="BACK" aria-label="Delete">Del</button>`:`<button class="key ${ks[c]||''}" data-k="${c}">${c}</button>`).join('')}</div>`).join('')}</div>
+  <div class="kb" aria-label="Keyboard">${rows.map(r=>`<div class="kr">${[...r].map(c=> c==='>'?`<button class="key go" data-k="ENTER">Enter</button>`: c==='<'?`<button class="key wide" data-k="BACK" aria-label="Delete">⌫ Del</button>`: c==='!'?`<button class="key clr" data-k="CLEAR">Clear</button>`: c===' '?`<button class="key sp" data-k="SPACE" aria-label="Space">Space</button>`: c==="'"||c==='-'?`<button class="key" data-k="${c}">${c==="'"?'’':c}</button>`:`<button class="key ${ks[c]||''}" data-k="${c}">${c}</button>`).join('')}</div>`).join('')}</div>
   <div id="giveup"></div>`;
   fbMsg=''; fbCls=''; revealRow=-1;
   bindTabs();
@@ -394,6 +396,7 @@ function say(msg,cls){ const f=document.getElementById('fb'); if(f){ const again
 function press(k){
   const x=st(), m=M(); if(x.over) return;
   if(k==='BACK'){ cur=cur.slice(0,-1); drawTyping(); return; }
+  if(k==='CLEAR'){ cur=''; drawTyping(); return; }
   if(k==='ENTER') return submit();
   if(/^[A-Z]$/.test(k) && cur.length<m.L){ cur+=k; drawTyping(); }
 }
@@ -736,4 +739,4 @@ header.top .eyebrow,header.top .meta{font-size:clamp(8px,2.45vw,12px) !important
 })();
 </script>
 <!--/tdko-chrome-->
-<script src="osk.js?v=e984bf0d"></script></body></html>
+<script src="osk.js?v=67c4a0c6"></script></body></html>

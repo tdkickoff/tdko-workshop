@@ -15,10 +15,12 @@
       '#osk{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--bg);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom));display:none;flex-direction:column;gap:6px;user-select:none;-webkit-user-select:none;touch-action:manipulation}' +
       'body.osk-on #osk{display:flex}' +
       '#osk .r{display:flex;gap:5px;justify-content:center}' +
-      '#osk button{all:unset;box-sizing:border-box;flex:1 1 0;max-width:44px;height:40px;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--ink);font-family:var(--f-display,inherit);font-weight:800;font-size:18px;border-radius:3px;cursor:pointer}' +
+      '#osk button{all:unset;box-sizing:border-box;flex:1 1 0;max-width:44px;height:44px;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--ink);font-family:var(--f-display,inherit);font-weight:800;font-size:18px;border-radius:4px;cursor:pointer}' +
       '#osk button:active,#osk button.hit{background:var(--ink);color:var(--bg)}' +
-      '#osk .w{max-width:64px;flex:1.5 1 0;font-family:var(--f-mono,monospace);font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}' +
-      '#osk .sp{max-width:none;flex:4 1 0}#osk .go{max-width:none;flex:2 1 0;background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}' +
+      '#osk .w{max-width:64px;flex:1.5 1 0;font-family:var(--f-mono,monospace);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}' +
+      '#osk .clr{max-width:none;flex:1.5 1 0;font-family:var(--f-mono,monospace);font-size:11px;font-weight:700;text-transform:uppercase;color:var(--muted)}' +
+      '#osk .sp{max-width:none;flex:3.4 1 0;font-family:var(--f-mono,monospace);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}' +
+      '#osk .go{max-width:none;flex:1.8 1 0;background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-family:var(--f-mono,monospace);font-size:13px;letter-spacing:.04em;text-transform:uppercase}' +
       /* make room: no page chrome while a game is on, tighter spacing, the answer box stays in view */
       'body.osk-on{padding-bottom:var(--oskh,210px)!important}' +
       'body.osk-on #app{zoom:var(--oskz,1)}' +
@@ -29,9 +31,10 @@
   }
   function build(){
     kb = document.createElement('div'); kb.id = 'osk'; kb.setAttribute('aria-hidden', 'true');
-    var rows = ['qwertyuiop', 'asdfghjkl', "'zxcvbnm<", '- >'];
+    var rows = ['qwertyuiop', 'asdfghjkl', "'zxcvbnm<", '!- >'];  // the site-wide keyboard: same keys in every game
     kb.innerHTML = rows.map(function(r){ return '<div class="r">' + r.split('').map(function(c){
-      if (c === '<') return '<button class="w" data-k="back">Del</button>';
+      if (c === '<') return '<button class="w" data-k="back" aria-label="Delete">⌫ Del</button>';
+      if (c === '!') return '<button class="clr" data-k="clear">Clear</button>';
       if (c === ' ') return '<button class="sp" data-k=" ">Space</button>';
       if (c === '>') return '<button class="w go" data-k="enter">Enter</button>';
       return '<button data-k="' + c + '">' + (c === "'" ? '’' : c.toUpperCase()) + '</button>'; }).join('') + '</div>'; }).join('');
@@ -42,7 +45,9 @@
   }
   function press(k){
     var i = box(); if (!i || i.disabled) return;
-    if (k === 'enter') { var f = i.form; if (f) { if (f.requestSubmit) f.requestSubmit(); else f.dispatchEvent(new Event('submit', {cancelable: true})); } return; }
+    if (k === 'enter') { var f = i.form; if (f) { if (f.requestSubmit) f.requestSubmit(); else f.dispatchEvent(new Event('submit', {cancelable: true})); }
+      else i.dispatchEvent(new KeyboardEvent('keydown', {key: 'Enter', bubbles: true})); return; }
+    if (k === 'clear') { i.value = ''; i.dispatchEvent(new Event('input', {bubbles: true})); return; }
     var v = i.value;
     if (k === 'back') v = v.slice(0, -1);
     else if (k === ' ') { if (v && !/[ \-]$/.test(v)) v += ' '; }
