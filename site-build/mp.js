@@ -121,9 +121,9 @@
       return;
     }
     app.innerHTML = `<section class="hero"><span class="eb">Multiplayer</span><h1>Play <i>together</i></h1><p class="lede">Play with up to five friends, each on your own phone. Host a quiz, share your room code so they can join, then kick off. Got a TV? Open <b>tdko.app/tv</b> on it and type in your room code to put the quiz on the big screen.</p></section>
-      <section class="card" id="hostcard"><button class="btn big" id="host">Host a quiz</button><a class="howto" href="how-to-host.html">New to hosting? See how it works</a></section>
+      <section class="card" id="hostcard"><button class="btn big" id="host">Host a quiz</button></section>
       <section class="card" id="joincard"><button class="btn big" id="joinbtn" type="button" aria-expanded="${joinOpen ? 'true' : 'false'}" aria-controls="jf">Join a quiz</button><form id="jf" class="row"${joinOpen ? '' : ' hidden'}><input id="jc" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="CODE" aria-label="Room code"><button class="btn">Join</button></form></section>
-      <p class="err">${esc(msg || '')}</p><p class="faql"><a href="multiplayer-faq.html">Multiplayer FAQ and rules</a></p>`;
+      <p class="mplinks"><a href="how-to-host.html">How to host</a><a href="multiplayer-faq.html">FAQ</a></p><p class="err">${esc(msg || '')}</p>`;
     const askPass = m => {
       $('#hostcard').innerHTML = `<p class="lede">Multiplayer is in the Training Ground for now. Enter your Training Ground code to host. Anyone can join with a room code.</p>
         <form id="pf" class="row"><input id="pc" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="TDKO-XXXXX" aria-label="Training Ground code"><button class="btn">Unlock</button></form><p class="err">${esc(m || '')}</p>`;

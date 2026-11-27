@@ -226,3 +226,4 @@ body:not([data-mp=tv]) .readybox .btn.big{padding-block:12px}
 .tbwho{text-align:center;font-weight:700}
 .watchb{margin:0;padding:8px 12px;background:var(--soft);border-left:3px solid var(--hi);font:600 12px var(--f-m);text-transform:uppercase;letter-spacing:.04em;color:var(--ink)}
 .watching .opts button,.watching .hl button,.watching [data-a=fb],.watching [data-a=rh]{pointer-events:none;opacity:.55}
+.mplinks{display:flex;justify-content:center;gap:10px;margin:4px 0 0}.mplinks a{font:600 12px var(--f-m);text-transform:uppercase;letter-spacing:.04em;color:var(--accent);text-decoration:none;border:1.5px solid var(--line);padding:7px 14px;background:var(--surface)}
