@@ -51,7 +51,7 @@
   // phones: the screens between rounds and games shrink to fit, so Ready is always on screen without scrolling
   function phoneFit() {
     if (TV || !V) return; const R = document.documentElement, g = V.game, mp = $('#mp');
-    const on = V.phase === 'between' || (V.phase === 'game' && g && g.step === 'reveal' && g.wait);
+    const on = V.phase === 'between' || V.phase === 'tiebreak' || (V.phase === 'game' && g && g.step === 'reveal' && g.wait);
     R.style.setProperty('--pfit', 1);
     if (on) { const need = mp.offsetHeight + 8; if (need > innerHeight) R.style.setProperty('--pfit', Math.max(.6, innerHeight / need * .99).toFixed(3)); }
     // the site's header and footer stay on the page, but each new screen of a quiz lands on the game itself
@@ -95,11 +95,12 @@
   const cd = until => `<span class="secs" data-until="${until}">${secs(until)}</span>`;
   const teamCls = id => V.mode === 'teams' ? ' t-' + esc(id) : '';
   function standings(pointsOf) {
-    return V.sides.slice().sort((a, b) => (pointsOf(b.id) - pointsOf(a.id)) || ((V.correct[b.id] || 0) - (V.correct[a.id] || 0)));
+    const tw = V.tb && V.tb.winner;
+    return V.sides.slice().sort((a, b) => (pointsOf(b.id) - pointsOf(a.id)) || ((b.id === tw) - (a.id === tw)) || ((V.correct[b.id] || 0) - (V.correct[a.id] || 0)));
   }
   function table(title) {
     const rows = standings(id => V.quiz[id] || 0);
-    const pos = s => rows.findIndex(x => (V.quiz[x.id] || 0) === (V.quiz[s.id] || 0) && (V.correct[x.id] || 0) === (V.correct[s.id] || 0)) + 1;
+    const tw = V.tb && V.tb.winner, pos = s => rows.findIndex(x => (V.quiz[x.id] || 0) === (V.quiz[s.id] || 0) && (V.correct[x.id] || 0) === (V.correct[s.id] || 0) && (x.id === tw) === (s.id === tw)) + 1;
     return `<section class="card"><h3>${esc(title)}</h3><ol class="table">${rows.map((s, i) => `<li class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><span class="pos">${i && pos(s) === pos(rows[i - 1]) ? '=' : pos(s)}</span><span class="nm">${esc(s.name)}</span><b>${fmt(V.quiz[s.id])}</b></li>`).join('')}</ol></section>`;
   }
   function hostBar() {
@@ -169,8 +170,8 @@
   }
 
   function gameHead(g) {
-    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 15000 : 4000) : g.step === 'kick' ? 5000 : g.type === 'rh' ? (g.step === 'q' ? 10000 : g.step === 'res' ? 3500 : 4500) : g.type === 'cs' ? (g.step === 'play' ? g.dur : 4500) : g.type === 'wtb' ? ({ clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
-    return `<header class="ghead"><span class="eb">Game ${V.gi + 1} of ${V.config.games.length} · ${esc(GAMES[g.type])}</span><span class="eb">${g.n} / ${g.of}</span></header>${g.paused ? '<p class="paused">Paused by the host</p>' : g.wait ? '' : bar(g.until, total)}`;
+    const cfg = V.config.games[V.gi], total = g.type === 'fb' ? (g.step === 'q' ? 10000 : 4000) : g.step === 'kick' ? 5000 : g.type === 'rh' ? (g.step === 'q' ? 10000 : g.step === 'res' ? 3500 : 4500) : g.type === 'cs' ? (g.step === 'play' ? g.dur : 4500) : g.type === 'wtb' ? ({ clue: 10000, final: 30000 }[g.step] || 7000) : (g.step === 'ready' ? 5000 : g.step === 'turn' ? 10000 : 4500);
+    return `<header class="ghead"><span class="eb">${V.tb && V.tb.live ? 'Tie-breaker · sudden death' : `Game ${V.gi + 1} of ${V.config.games.length}`} · ${esc(GAMES[g.type])}</span><span class="eb">${g.n} / ${g.of}</span></header>${g.paused ? '<p class="paused">Paused by the host</p>' : g.wait ? '' : bar(g.until, total)}`;
     void cfg;
   }
   function turnBanner(g) {
@@ -224,7 +225,7 @@
   function fb(g) {
     const mine = g.mine || (pend && pend.k === qkey() ? { o: pend.o } : null), done = mine && 'ok' in mine;
     const opts = g.o.map(o => `<button class="opt ${mine && mine.o === o ? (done ? (mine.ok ? 'right' : 'wrong') : 'picked') : ''}" data-a="fb" data-o="${esc(o)}" ${mine || TV ? 'disabled' : ''}>${esc(o)}</button>`).join('');
-    const res = done ? (mine.ok ? `<span class="ok">✓ Right · +${fmt(mine.pts)}</span>` : `<span class="bad">✗ Wrong · 0</span>`) : mine ? 'Locked in' : `${g.answered} of ${V.players.length} answered`;
+    const res = done ? (mine.ok ? `<span class="ok">✓ Right · +${fmt(mine.pts)}</span>` : `<span class="bad">✗ Wrong · 0</span>`) : mine ? 'Locked in' : `${g.answered} of ${V.tb && V.tb.live ? V.players.filter(tbIn).length : V.players.length} answered`;
     return `<h2 class="q">${esc(g.q)}</h2><div class="opts">${opts}</div><p class="status"><b>${cd(g.until)}s</b> · ${res}</p>${scores(g)}`;
   }
   function wtb(g) {
@@ -267,7 +268,7 @@
       <p class="gotlist">${standings(id => (g.rpts || {})[id] || 0).map(s => `<span class="${s.id === mySide() ? 'me' : ''}${teamCls(s.id)}"><b>${esc(s.name)}</b> +${fmt((g.rpts || {})[s.id] || 0)}</span>`).join('')}</p></div>`;
     else top = `<div class="wtbhead"><div><span class="eb">${esc(g.theme)} · ${g.qn} of ${g.qs}</span><b class="worth">${q ? fmt(g.pts) : g.last && g.cur ? (g.last.v === g.cur.v ? 'Level' : g.last.v > g.cur.v ? '▲ Higher' : '▼ Lower') : ''}</b><small>${q ? 'points for a right call now' : 'next call coming up'}</small></div><div class="nextclue">${q ? `Time left <b>${cd(g.until)}s</b>` : ''}</div></div>`;
     let mid = '';
-    if (q && !TV) mid = g.out ? `<p class="status bad">You're out this round. Watch on…</p>`
+    if (q && !TV && !V.watching) mid = g.out ? `<p class="status bad">You're out this round. Watch on…</p>`
       : picked ? `<div class="hl"><button class="btn ${picked === 'higher' ? 'picked' : ''}" disabled>▲ Higher</button><button class="btn ${picked === 'lower' ? 'picked' : ''}" disabled>▼ Lower</button></div><p class="status">Locked in. ${g.answered} of ${g.alive.length} called…</p>`
       : `<div class="hl"><button class="btn" data-a="rh" data-c="higher">▲ Higher</button><button class="btn" data-a="rh" data-c="lower">▼ Lower</button></div>`;
     if (q && TV) mid = `<p class="status">${g.answered} of ${g.alive.length} called</p>`;
@@ -277,6 +278,7 @@
   }
 
   function countdown() {
+    if (V.tb && V.tb.game) return `<section class="kick"><span class="eb">Tie-breaker in</span><b class="secs" data-until="${V.until}">${secs(V.until)}</b><span class="eb">Sudden death</span><h2 class="gt big">${TT[V.tb.game][0]} <i>${TT[V.tb.game][1]}</i></h2><p class="note">${esc(V.tb.sides.map(id => sideName(id)).join(' v '))}. Win a round outright to win the quiz.${V.tb.sides.includes(mySide()) || TV ? '' : ' You\'re watching this one.'}</p></section>`;
     const gi = Math.max(0, V.gi), cfg = V.config.games[gi];
     return `<section class="kick"><span class="eb">${gi ? 'Next game in' : 'Kick off in'}</span><b class="secs" data-until="${V.until}">${secs(V.until)}</b><span class="eb">Game ${gi + 1} of ${V.config.games.length}</span><h2 class="gt big">${TT[cfg.g][0]} <i>${TT[cfg.g][1]}</i></h2><p class="note">${esc(DESC[cfg.g])}</p></section>`;
   }
@@ -289,14 +291,41 @@
   // the host moves the quiz on: after each round's reveal, and from Full time to the next game
   // between rounds and games: everyone taps Ready (shown to all and on the TV); once all are in, the game moves on by itself.
   // The host can still start straight away.
-  function nextBar(label) {
-    const here = V.players.filter(p => p.here !== false), R = new Set(V.ready || []), mine = R.has(V.me), n = here.filter(p => R.has(p.pid)).length;
+  function nextBar(label, only) {
+    const here = V.players.filter(p => p.here !== false && (!only || only(p))), R = new Set(V.ready || []), mine = R.has(V.me), n = here.filter(p => R.has(p.pid)).length, inIt = !only || here.some(p => p.pid === V.me);
     const chips = `<ul class="readyl">${here.map(p => `<li class="${R.has(p.pid) ? 'on' : ''}${p.pid === V.me ? ' me' : ''}">${R.has(p.pid) ? '✓ ' : ''}${esc(p.name)}</li>`).join('')}</ul>`;
     const head = `<p class="readyh">${V.allReady ? "Everyone's ready" : `Ready: <b>${n} of ${here.length}</b>`}</p>`;
-    const btn = TV || V.allReady ? '' : mine ? `<p class="status">You're ready. Waiting for the others…</p>` : `<button class="btn big" data-a="ready">I'm ready</button>`;
+    const btn = TV || V.allReady ? '' : !inIt ? `<p class="status">You're watching the tie-breaker.</p>` : mine ? `<p class="status">You're ready. Waiting for the others…</p>` : `<button class="btn big" data-a="ready">I'm ready</button>`;
     const host = !TV && V.isHost && !V.allReady ? `<button class="link startnow" data-a="next">${esc(label)} now</button>` : '';
     return `<section class="readybox">${head}${chips}${btn}${host}</section>`;
   }
+  // ---------- tie-breaker ----------
+  const tbIn = p => V.tb && V.tb.sides.includes(V.mode === 'teams' ? p.side : p.pid);
+  function tiebreak() {
+    const names = V.tb.sides.map(id => `<b>${esc(sideName(id))}</b>`), pts = fmt(V.quiz[V.tb.sides[0]] || 0);
+    return `<section class="hero tbh"><span class="eb">Final whistle · level on ${pts}</span><h1>Tie-<i>breaker</i></h1><p class="lede">${names.slice(0, -1).join(', ')} and ${names.at(-1)} can't be split. A spin of the wheel picks one of tonight's games, then it's sudden death: win a round outright to win the quiz. Everyone else watches.</p></section>${table('Quiz table')}${nextBar('Spin the wheel', tbIn)}`;
+  }
+  const WCOL = { fb: 'var(--s1)', wtb: 'var(--s2)', cs: 'var(--s3)', rh: 'var(--s4)' };
+  function wheel() {
+    const o = V.tb.options, n = o.length, seg = 360 / n, R = 120, C = 130;
+    const arcs = o.map((g, i) => { const a0 = (i * seg - 90) * Math.PI / 180, a1 = ((i + 1) * seg - 90) * Math.PI / 180, mid = ((i + .5) * seg - 90) * Math.PI / 180;
+      const p = n === 1 ? `<circle cx="${C}" cy="${C}" r="${R}" fill="${WCOL[g]}"/>` : `<path d="M${C},${C} L${C + R * Math.cos(a0)},${C + R * Math.sin(a0)} A${R},${R} 0 ${seg > 180 ? 1 : 0} 1 ${C + R * Math.cos(a1)},${C + R * Math.sin(a1)} Z" fill="${WCOL[g]}" stroke="var(--surface)" stroke-width="3"/>`;
+      const tx = C + R * .62 * Math.cos(mid), ty = C + R * .62 * Math.sin(mid);
+      return p + `<text x="${tx}" y="${ty}" class="wl" text-anchor="middle" dominant-baseline="middle" transform="rotate(${(i + .5) * seg} ${tx} ${ty})">${({ fb: 'FAST BREAK', wtb: 'BALLER', cs: 'SWEEP', rh: 'RANKED' })[g]}</text>`; }).join('');
+    return `<section class="hero tbh"><span class="eb">Tie-breaker</span><h1>Spin the <i>wheel</i></h1></section>
+      <div class="wheelw"><svg viewBox="0 0 260 270" class="wheelsvg"><g id="wheel" style="transform-origin:130px 130px">${arcs}<circle cx="${C}" cy="${C}" r="16" fill="var(--ink)"/></g><path d="M130,2 L118,-0 L130,26 L142,0 Z" fill="var(--hi)" stroke="var(--ink)" stroke-width="2"/></svg></div>
+      <p class="status tbwho">${V.tb.sides.map(id => esc(sideName(id))).join(' v ')}</p>`;
+  }
+  // the wheel turns on the shared clock, so every phone and the TV land together
+  (function spin() {
+    const w = document.getElementById('wheel');
+    if (w && V && V.phase === 'wheel' && V.tb) {
+      const o = V.tb.options, seg = 360 / o.length, k = o.indexOf(V.tb.game), dur = 5600, t = Math.min(1, Math.max(0, (now() - (V.until - 6000)) / dur));
+      const target = 360 * 6 + (360 - (k + .5) * seg), e = 1 - Math.pow(1 - t, 4);
+      w.style.transform = `rotate(${target * e}deg)`;
+    }
+    requestAnimationFrame(spin);
+  })();
   function between() {
     const last = V.results[V.results.length - 1], next = V.config.games[V.gi + 1];
     const pts = id => last.score[id] || 0, st = last ? standings(pts) : [];
@@ -328,7 +357,7 @@
     // the last column follows the final table exactly (same tie-break), and players level on points share a medal
     const ft = standings(id => V.quiz[id] || 0), pts = id => V.quiz[id] || 0;
     ranks[ranks.length - 1] = Object.fromEntries(ft.map((x, i) => [x.id, i]));
-    const place = Object.fromEntries(ft.map((x, i) => [x.id, ft.findIndex(y => pts(y.id) === pts(x.id))]));
+    const tw = V.tb && V.tb.winner, place = Object.fromEntries(ft.map((x, i) => [x.id, ft.findIndex(y => pts(y.id) === pts(x.id) && (y.id === tw) === (x.id === tw))]));
     // lead changes across every score, and the biggest climb from after the first game to the end
     let leads = 0, leader = null; prevOrder = ids.slice();
     tl.slice(1).forEach(p => { const r = rankAt(p.t), top = ids.find(id => r[id] === 0); if ((p.t[top] || 0) > 0) { if (leader && top !== leader) leads++; leader = top; } });
@@ -353,7 +382,7 @@
   function final() {
     const rows = standings(id => V.quiz[id] || 0), w = rows[0];
     const shareText = `⚽ The Daily Kick Off · Multiplayer\n${rows.map((s, i) => `${['🥇', '🥈', '🥉'][i] || (i + 1) + '.'} ${s.name} ${fmt(V.quiz[s.id])}`).join('\n')}\nHost your own: https://tdko.app/multiplayer.html`;
-    return `<section class="hero"><span class="eb">Final whistle</span><h1>${w && w.id === mySide() && !TV ? (V.mode === 'teams' ? esc(w.name) : 'You') : esc(w ? w.name : '')} <i>win${V.mode === 'teams' || (w && w.id === mySide() && !TV) ? '' : 's'}</i></h1></section><div class="finw">${table('Final table')}${graph()}</div>
+    return `<section class="hero"><span class="eb">Final whistle${V.tb && V.tb.winner ? " · won on the tie-breaker" : ""}</span><h1>${w && w.id === mySide() && !TV ? (V.mode === 'teams' ? esc(w.name) : 'You') : esc(w ? w.name : '')} <i>win${V.mode === 'teams' || (w && w.id === mySide() && !TV) ? '' : 's'}</i></h1></section><div class="finw">${table('Final table')}${graph()}</div>
       ${TV ? '' : `<button class="btn big" id="sharefin">Share the result</button>${V.isHost ? '<button class="btn ghost" data-a="rematch">Rematch</button>' : '<p class="note">Waiting for the host to start a rematch…</p>'}<button class="link" id="leave">Leave room</button>`}
       <span hidden id="sharetext">${esc(shareText)}</span>`;
   }
@@ -370,9 +399,13 @@
     if (key !== draftKey) { typed = ''; draftKey = key; }
     let html = ''; dockPh = null;
     if (V.phase === 'lobby') { syncDock(); lobby(); bind(); tvFit(); return; }
-    if (V.phase === 'game' && V.game) { const g = V.game; html = gameHead(g) + ({ fb, wtb, cs, rh }[g.type])(g) + hostBar(); }
+    if (V.phase === 'game' && V.game) { const g = V.game, body = ({ fb, wtb, cs, rh }[g.type])(g) + hostBar();
+      if (V.watching) { dockPh = null; html = gameHead(g) + `<p class="watchb">You're watching the tie-breaker: ${esc(V.tb.sides.map(id => sideName(id)).join(' v '))}</p><div class="watching">${body}</div>`; }
+      else html = gameHead(g) + body; }
     else if (V.phase === 'countdown') html = countdown();
     else if (V.phase === 'between') html = between();
+    else if (V.phase === 'tiebreak') html = tiebreak();
+    else if (V.phase === 'wheel') html = wheel();
     else if (V.phase === 'final') html = final();
     const focus = document.activeElement && document.activeElement.id === 'ai';
     app.innerHTML = `<div class="${TV ? 'tvgame' : 'pgame'}">${html}</div><p class="err">${esc(flash)}</p>`;
