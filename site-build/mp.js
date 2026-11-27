@@ -164,7 +164,7 @@
         <button class="btn ghost" id="share">Share invite</button><p class="note">Others join at <b>${esc(link)}</b>. TV: open <b>tdko.app/tv</b>${V.tv ? ' · <span class="ok">TV connected</span>' : ''}</p></section>
       ${host ? `<button class="btn big" data-a="start" ${V.players.length < 2 ? 'disabled' : ''}>${V.players.length < 2 ? 'Waiting for players…' : 'Kick off'}</button>` : ''}
       <section class="card you"><span class="eb">You're playing as</span><button class="namebtn" data-a="rename">${esc((me() || {}).name || '')} <small>Change</small></button></section>
-      ${cfg}<p class="err">${esc(flash)}</p><button class="link" id="leave">Leave room</button>`;
+      ${cfg}<p class="err">${esc(flash)}</p><p class="faql"><a href="multiplayer-faq.html">Multiplayer FAQ and rules</a></p><button class="link" id="leave">Leave room</button>`;
     $('#share').onclick = () => { const url = `https://${link}`, text = `Join my football quiz on The Daily Kick Off. Code ${V.code}`; if (navigator.share) navigator.share({ title: 'The Daily Kick Off', text, url }).catch(() => {}); else { navigator.clipboard && navigator.clipboard.writeText(`${text}: ${url}`); flash = 'Invite copied.'; draw(true); } };
     $('#leave').onclick = () => leave('');
   }
