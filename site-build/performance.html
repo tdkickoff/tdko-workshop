@@ -147,6 +147,11 @@ td.na{color:var(--muted)}
   <tr><th class="grp">Total</th><th>Unique</th><th class="grp">Total</th><th>Unique</th><th class="grp">Total</th><th>Unique</th><th class="grp">Total</th><th>Unique</th><th class="grp">Total</th><th>Unique</th></tr></thead>
   <tbody id="rows"><tr><td colspan="11">Loading…</td></tr></tbody><tfoot id="tot"></tfoot></table></div>
 
+<div class="tcard"><table>
+  <thead><tr><th rowspan="2">Multiplayer</th><th colspan="2" class="grp">Started</th><th colspan="2" class="grp">Finished</th><th colspan="2" class="grp">Gave up</th><th colspan="2" class="grp">Finished %</th></tr>
+  <tr><th class="grp">Total</th><th>Unique</th><th class="grp">Total</th><th>Unique</th><th class="grp">Total</th><th>Unique</th><th class="grp">Total</th><th>Unique</th></tr></thead>
+  <tbody id="mprows"><tr><td colspan="9">Loading…</td></tr></tbody></table></div>
+<p class="note"><b>Multiplayer</b> counts from launch on 30 Nov 2026; testers' quizzes are left out. <b>Quizzes</b>: a quiz starts at kick-off, finishes when every game is played, and is given up when the host ends it early (unique = host devices). <b>Players</b>: everyone in the room at kick-off, counted as finished if still there at the end (unique = devices).</p>
 <p class="note"><b>Total</b> counts every time it happened, replays included. <b>Unique</b> counts each device once in the period shown (once per day, week or month, and once for the whole range in the table).
 <b>Finished</b> = played to full time without giving up; <b>Gave up</b> is counted separately. <b>Finished %</b> = finished ÷ started.
 <b>Visits</b> for all games = visits to the site (a new tab or session); for a game = times its page was opened. Site visit totals start on 18 Nov and game page counts on 23 Nov; unique visits before then count the devices that played. Replays started and replays given up are counted from 23 Nov. Test puzzles are never counted.</p>
@@ -243,6 +248,9 @@ function load(){ const my=++seq;
   .catch(()=>{ $('rows').innerHTML='<tr><td colspan="11">Stats not available right now.</td></tr>'; }); }
 
 function draw(){ const j=S.data; if(!j) return;
+  { const m=j.mp||{}, g=(e,k)=>((m[e]||{})[k]||0), pc=(a,b)=>b?Math.round(a/b*100)+'%':'–';
+    const row=(lab,p)=>`<tr><td>${lab}</td><td>${fmt(g(p+'_start','t'))}</td><td>${fmt(g(p+'_start','u'))}</td><td>${fmt(g(p+'_finish','t'))}</td><td>${fmt(g(p+'_finish','u'))}</td><td>${fmt(g(p+'_giveup','t'))}</td><td>${fmt(g(p+'_giveup','u'))}</td><td>${pc(g(p+'_finish','t'),g(p+'_start','t'))}</td><td>${pc(g(p+'_finish','u'),g(p+'_start','u'))}</td></tr>`;
+    const el=$('mprows'); if(el) el.innerHTML=row('Quizzes','quiz')+row('Players','player'); }
   const by=Object.fromEntries(j.series.map(r=>[r.k,r])), z={vt:null,vu:0,st:0,su:0,ft:0,fu:0,gt:0,gu:0};
   const D=periods().map(k=>({k,...z,...(by[k]||{})}));
   /* chart 1: visits */

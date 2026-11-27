@@ -1,4 +1,8 @@
-/* On-page keyboard for the typing games (Who's That Baller, Squad Goals, Link Up Play, In The Mixer, Tiki-Taka-Toe).
+/* Shared by every daily game.
+   1. Landing: the site's header and footer stay on the page, but the page opens on the game, and each new screen
+      (start, game, full time) scrolls back to it.
+   2. Timed games (Clean Sweep, Top Four) get Fast Break's 5-second countdown before the clock starts.
+   3. On-page keyboard for the typing games (Who's That Baller, Squad Goals, Link Up Play, In The Mixer, Tiki-Taka-Toe).
    Touch phones: the phone's own keyboard never opens; this one is docked at the bottom and types into the answer box (#gin),
    and Enter sends the answer form. The game is squeezed to fit above it, so there's no scrolling while you play.
    Mouse and keyboard: the answer box keeps the cursor after every answer, so you can keep typing. */
@@ -65,10 +69,42 @@
       if (!a || a === document.body || a === document.documentElement) i.focus({preventScroll: true});
     }
   }
+  var GAME = (location.pathname.split('/').pop() || '').replace(/\.html$/, '');
+  var TIMED = {'clean-sweep': 1, 'top-four': 1};
+  var CALLS = [["Switch on.","Wake up.","Eyes on the ball.","Come on.","Let's go!"],["Boots laced.","Shin pads in.","Heads up.","First touch counts.","Let's go!"],["Phone down.","Head in the game.","Stay sharp.","Quick feet, quick mind.","Let's go!"],["Tunnel's quiet.","Hear the crowd.","No passengers today.","Win every second ball.","Let's go!"]];
+  var screen = '', bypass = false;
+  function land(){
+    var app = document.getElementById('app'); if (!app) return;
+    var kind = app.querySelector('#go') ? 'intro' : app.querySelector('#scr,.score,.count') ? 'end' : 'game';
+    if (app.querySelector('.count')) kind = 'count';
+    if (kind !== screen) { screen = kind; window.scrollTo(0, Math.max(0, app.getBoundingClientRect().top + window.scrollY - 6)); }
+  }
+  function countdown(go){
+    var app = document.getElementById('app'), lines = CALLS[Math.floor(Math.random() * CALLS.length)], n = 5;
+    app.innerHTML = '<section class="card"><div class="count tdko-count"><span class="eyebrow">Kick-off in</span><div class="num" id="cnum" aria-live="assertive">5</div><p class="call" id="ccall"></p><div class="ticks" aria-hidden="true">' + '<span></span>'.repeat(5) + '</div><span class="eyebrow">The clock starts when the count ends</span></div></section>';
+    var num = document.getElementById('cnum'), call = document.getElementById('ccall'), ticks = [].slice.call(app.querySelectorAll('.ticks span'));
+    (function step(){
+      if (!n) { bypass = true; go.click(); bypass = false; return; }
+      num.textContent = n; num.className = 'num' + (n === 1 ? ' go' : ''); call.textContent = lines[5 - n];
+      ticks.forEach(function(t, i){ t.classList.toggle('on', i < 6 - n); }); n--; setTimeout(step, 1000);
+    })();
+  }
+  function hold(e){
+    if (bypass || !TIMED[GAME]) return; var go = e.target.closest && e.target.closest('#go'); if (!go) return;
+    e.preventDefault(); e.stopImmediatePropagation();
+    if (e.type === 'pointerdown' || (e.type === 'click' && !document.querySelector('.tdko-count'))) { if (!document.querySelector('.tdko-count')) countdown(go); }
+  }
   function start(){
+    var st = document.createElement('style');
+    st.textContent = '.tdko-count{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:44px 20px 40px;text-align:center;min-height:360px;box-sizing:border-box}' +
+      '.tdko-count .num{font-family:var(--f-display);font-weight:900;font-stretch:66%;font-size:clamp(150px,48vw,230px);line-height:.8;font-variant-numeric:tabular-nums;color:var(--ink)}.tdko-count .num.go{color:var(--accent)}' +
+      '.tdko-count .call{font-family:var(--f-display);font-weight:800;font-stretch:82%;font-size:clamp(26px,7vw,36px);line-height:1.05;text-transform:uppercase;margin:0;min-height:2.1em;display:flex;align-items:center}' +
+      '.tdko-count .ticks{display:flex;gap:6px}.tdko-count .ticks span{width:28px;height:4px;background:var(--line)}.tdko-count .ticks span.on{background:var(--accent)}';
+    document.head.appendChild(st);
+    document.addEventListener('pointerdown', hold, true); document.addEventListener('click', hold, true);
     if (TOUCH) { css(); build(); }
-    new MutationObserver(function(){ if (!raf) raf = requestAnimationFrame(sync); }).observe(document.body, {childList: true, subtree: true});
-    sync();
+    new MutationObserver(function(){ if (!raf) raf = requestAnimationFrame(function(){ sync(); land(); }); }).observe(document.body, {childList: true, subtree: true});
+    sync(); land();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

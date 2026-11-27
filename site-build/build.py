@@ -98,7 +98,7 @@ for src, gid in GAMES.items():
                   'var m=document.querySelector("main"),r=document.querySelector(".tdko-report");if(m&&r)m.insertAdjacentElement("afterend",r);'
                   'document.getElementById("tdko-report").href="mailto:hello@tdko.app?subject="+encodeURIComponent(sub)+"&body="+encodeURIComponent(body);}catch(e){}})();</script>')
         OSK = ''
-        if gid in ('whos-that-baller', 'squad-goals', 'link-up-play', 'in-the-mixer', 'tiki-taka-toe'):  # on-page keyboard (osk.js)
+        if True:  # every game: landing position, countdown for timed games, on-page keyboard for typing games (osk.js)
             import hashlib; OSK = '<script src="osk.js?v=' + hashlib.md5(open(ROOT+'/osk.js','rb').read()).hexdigest()[:8] + '"></script>'
         open(f'{out}/{gid}.html', 'w').write(HEAD + s + REPORT + open(ROOT+'/footer.html').read() + OSK + '</body></html>')
     print('built', gid)

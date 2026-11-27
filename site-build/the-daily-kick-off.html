@@ -4,7 +4,7 @@
    unlimited replays, and nothing saved to scores, streaks, times or the visit counters.
    Unlock: the Training Ground page only (the code is checked by the server, /api/tester; it is never in the page). ?tester=off, or Exit Training Ground, locks the device again. */
 var TDKO_TEST_NO=14;
-(function(){var tester=false,FLAG='3';
+(function(){var tester=false,FLAG=(Date.now()>=Date.UTC(2026,10,30)?'4':'3');
 try{var q=location.search.match(/[?&]tester=([^&#]+)/);if(q){var v=decodeURIComponent(q[1]).toUpperCase();if(v==='OFF')localStorage.removeItem('tdko-tester');}
 tester=localStorage.getItem('tdko-tester')===FLAG;window.TDKO_TEST=tester;if(tester)document.documentElement.classList.add('tdko-test');}catch(e){window.TDKO_TEST=false;}})();
 function tdkoTestBox(){return '<section class="card replaybox"><div class="inner"><span class="eyebrow">Training Ground · doesn’t count</span><p>Same puzzle every time. Nothing here touches your scores, streaks or stats.</p><button class="btn ghost" type="button" data-replay>Play again</button></div></section>';}
@@ -48,7 +48,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 .eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
 
 .modes{display:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
-.tdko-test .modes{display:grid}
+.tdko-test .modes,.mp-live .modes{display:grid}
 .modes a{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none}
 .modes a b{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:clamp(18px,5.2vw,22px);text-transform:uppercase;line-height:1}
 .modes a small{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;color:var(--muted)}
@@ -177,7 +177,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
     <p class="lede"><span id="ng">Nine</span> puzzles on today's fixture list. Get them all to full time before the next round drops at midnight.</p>
   </section>
 
-  <nav class="modes" aria-label="Choose how to play"><a class="dpmode" id="dpBtn" href="#daily" aria-controls="daily" aria-expanded="false"><b>Daily Puzzles</b><small>New every midnight <span class="chev" aria-hidden="true">▾</span></small></a><a class="mpmode" href="multiplayer.html"><b>Multiplayer</b><small>Play with friends · TV ready</small></a></nav><a class="tghost" href="how-to-host.html">Training Ground: how to host a Multiplayer quiz →</a>
+  <script>if(Date.now()>=Date.UTC(2026,10,30))document.documentElement.classList.add('mp-live');</script><nav class="modes" aria-label="Choose how to play"><a class="dpmode" id="dpBtn" href="#daily" aria-controls="daily" aria-expanded="false"><b>Daily Puzzles</b><small>New every midnight <span class="chev" aria-hidden="true">▾</span></small></a><a class="mpmode" href="multiplayer.html"><b>Multiplayer</b><small>Play with friends · TV ready</small></a></nav><a class="tghost" href="how-to-host.html">Training Ground: how to host a Multiplayer quiz →</a>
 
   <div class="daily" id="daily">
   <section class="progress" aria-live="polite">
@@ -444,6 +444,7 @@ tick(); setInterval(tick,1000);
 .statusbar .counts[hidden]{display:none}
 .testertag{all:unset;cursor:pointer;font:inherit;letter-spacing:inherit;color:var(--warn);border:1px dashed var(--warn);padding:3px 6px}
 @media (max-width:400px){.statusbar.is-tester .counts{display:none}}
+.statusbar .sb-count[hidden]{display:none}
 .testertag.on{background:var(--warn);color:#111;border-style:solid}
 /* test day: label the header, as replays do */
 .tdko-test.replaying header.top::after,.tdko-test header.top::after{content:none;display:none}
@@ -497,13 +498,15 @@ header.top .eyebrow,header.top .meta{font-size:clamp(8px,2.45vw,12px) !important
   var EYE='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>';
   var USER='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>';
   var DONE='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.5 9.5"/></svg>';
+  var MPQ='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8.5" r="2.5"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0M13.5 15.2a4.5 4.5 0 0 1 8 3.3"/></svg>';
   var SUN='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>';
   var MOON='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>';
   var bar=document.createElement('div'); bar.className='statusbar'; bar.setAttribute('role','note');
   bar.innerHTML='<span></span>'
     +'<span class="sb-right"><span class="counts" hidden><span class="sb-count" title="Total visits since 10 Nov 2026">'+EYE+'<span id="tdko-visits"></span><span class="sr" style="position:absolute;left:-9999px"> visits</span></span>'
     +'<span class="sb-count" title="Unique players since 10 Nov 2026">'+USER+'<span id="tdko-uniques"></span><span class="sr" style="position:absolute;left:-9999px"> unique players</span></span>'
-    +'<span class="sb-count" title="Puzzles completed since launch, 16 Nov 2026">'+DONE+'<span id="tdko-done"></span><span class="sr" style="position:absolute;left:-9999px"> puzzles completed</span></span></span>'
+    +'<span class="sb-count" title="Puzzles completed since launch, 16 Nov 2026">'+DONE+'<span id="tdko-done"></span><span class="sr" style="position:absolute;left:-9999px"> puzzles completed</span></span>'
+    +'<span class="sb-count" id="tdko-mpwrap" title="Multiplayer quizzes completed" hidden>'+MPQ+'<span id="tdko-mp"></span><span class="sr" style="position:absolute;left:-9999px"> multiplayer quizzes completed</span></span></span>'
     +'<button type="button" class="themebtn"></button></span>';
   document.body.insertBefore(bar, w);
   /* testers only ever see Test day; the Exit tag locks this device again (holding page before launch, the real game after) */
@@ -529,7 +532,7 @@ header.top .eyebrow,header.top .meta{font-size:clamp(8px,2.45vw,12px) !important
   var NOC=false; try{ NOC=localStorage.getItem('tdko-nocount')==='1'; }catch(e){}
   if(!TEST) try{ fetch('/api/hit',NOC?{}:{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({vid:vid,visit:visit,page:location.pathname.replace(/^.*\//,'').replace(/\.html$/,''),day:(function(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')})(new Date())})})
     .then(function(r){ return r.ok?r.json():null; })
-    .then(function(d){ if(!d||typeof d.visits!=='number') return; document.getElementById('tdko-visits').textContent=fmt(d.visits); document.getElementById('tdko-uniques').textContent=fmt(d.uniques); document.getElementById('tdko-done').textContent=fmt(d.completed||0); bar.querySelector('.counts').hidden=false; })
+    .then(function(d){ if(!d||typeof d.visits!=='number') return; document.getElementById('tdko-visits').textContent=fmt(d.visits); document.getElementById('tdko-uniques').textContent=fmt(d.uniques); document.getElementById('tdko-done').textContent=fmt(d.completed||0); if(typeof d.mpDone==='number'&&Date.now()>=Date.UTC(2026,10,30)){ document.getElementById('tdko-mp').textContent=fmt(d.mpDone); document.getElementById('tdko-mpwrap').hidden=false; } bar.querySelector('.counts').hidden=false; })
     .catch(function(){}); }catch(e){}
   /* self-healing stats: once a day, re-send what this device's saved progress shows for the last 7 days; anything already counted is ignored,
      anything lost (e.g. the server was down) is added. Days run from 16 Nov 2026 (No. 1). */

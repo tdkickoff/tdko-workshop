@@ -10,7 +10,7 @@
 <script>
 (function(){
   /* the server checks the code (/api/tester); the page never holds it. Same flag as gate.html */
-  var FLAG='3', card=document.getElementById('tcard');
+  var FLAG=(Date.now()>=Date.UTC(2026,10,30)?'4':'3'), card=document.getElementById('tcard');
   var on=function(){ try{ return localStorage.getItem('tdko-tester')===FLAG; }catch(e){ return false; } };
   var showOn=function(){ card.innerHTML='<p class="lede">You\'re in the Training Ground on this device.</p><a class="btn" href="./">Go to the Training Ground</a><a class="btn" href="multiplayer.html" style="margin-top:8px">Multiplayer (test)</a><a class="btn" href="how-to-host.html" style="margin-top:8px">How to host a Multiplayer quiz</a><p class="note">Use "Exit Training Ground" in the top bar to leave.</p>'; };
   if(on()) return showOn();

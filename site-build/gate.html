@@ -4,7 +4,7 @@
    unlimited replays, and nothing saved to scores, streaks, times or the visit counters.
    Unlock: the Training Ground page only (the code is checked by the server, /api/tester; it is never in the page). ?tester=off, or Exit Training Ground, locks the device again. */
 var TDKO_TEST_NO=14;
-(function(){var tester=false,FLAG='3';
+(function(){var tester=false,FLAG=(Date.now()>=Date.UTC(2026,10,30)?'4':'3');
 try{var q=location.search.match(/[?&]tester=([^&#]+)/);if(q){var v=decodeURIComponent(q[1]).toUpperCase();if(v==='OFF')localStorage.removeItem('tdko-tester');}
 tester=localStorage.getItem('tdko-tester')===FLAG;window.TDKO_TEST=tester;if(tester)document.documentElement.classList.add('tdko-test');}catch(e){window.TDKO_TEST=false;}})();
 function tdkoTestBox(){return '<section class="card replaybox"><div class="inner"><span class="eyebrow">Training Ground · doesn’t count</span><p>Same puzzle every time. Nothing here touches your scores, streaks or stats.</p><button class="btn ghost" type="button" data-replay>Play again</button></div></section>';}

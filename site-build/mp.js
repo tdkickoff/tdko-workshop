@@ -10,6 +10,7 @@
   // game titles styled as on the Daily Puzzles page: condensed capitals, second word in the accent colour
   const TT = { fb: ['Fast', 'Break'], wtb: ["Who's That", 'Baller'], cs: ['Clean', 'Sweep'], rh: ['Ranked', 'Highly'] };
   const GT = g => `<span class="gt">${TT[g][0]} <i>${TT[g][1]}</i></span>`;
+  const LAUNCH = Date.UTC(2026, 10, 30);  // Multiplayer opens to everyone at UK midnight on 30 Nov 2026 (the server checks too)
   const DESC = { fb: "You all get the same question and the same 10-second clock. A right answer scores 100, plus up to 50 more the quicker you are. When the clock hits zero, the next question starts.",
     wtb: "A new clue about the mystery player appears every 10 seconds. Name him on the first clue for 1,000, with 100 less for each clue after. Guess as often as you like; his surname is enough, his first name isn't.",
     cs: "Name the players on the list before anyone else does. Each name is worth 1,000 at the start, dropping to 100 as the clock runs down, and once a name is taken it's gone.",
@@ -49,13 +50,15 @@
   }
   // phones: the screens between rounds and games shrink to fit, so Ready is always on screen without scrolling
   function phoneFit() {
-    if (TV) return; const R = document.documentElement, g = V && V.game;
-    const on = V && (V.phase === 'between' || (V.phase === 'game' && g && g.step === 'reveal' && g.wait));
-    R.style.setProperty('--pfit', 1); if (!on) return;
-    const H = () => Math.max(R.scrollHeight, document.body.scrollHeight); let f = 1;
-    for (let i = 0; i < 5 && H() > innerHeight + 1; i++) { f = Math.max(.6, f * innerHeight / H() * .99); R.style.setProperty('--pfit', f.toFixed(3)); }
-    if (f < 1) scrollTo(0, 0);
+    if (TV || !V) return; const R = document.documentElement, g = V.game, mp = $('#mp');
+    const on = V.phase === 'between' || (V.phase === 'game' && g && g.step === 'reveal' && g.wait);
+    R.style.setProperty('--pfit', 1);
+    if (on) { const need = mp.offsetHeight + 8; if (need > innerHeight) R.style.setProperty('--pfit', Math.max(.6, innerHeight / need * .99).toFixed(3)); }
+    // the site's header and footer stay on the page, but each new screen of a quiz lands on the game itself
+    const key = V.phase === 'lobby' ? 'lobby' : [V.phase, V.gi, g && g.type, g && g.n, g && g.step].join('|');
+    if (key !== landKey) { landKey = key; if (V.phase !== 'lobby') scrollTo(0, Math.max(0, mp.getBoundingClientRect().top + scrollY - 6)); }
   }
+  let landKey = '';
   if (!TV) addEventListener('resize', () => phoneFit());
   if (TV) { tvFit(); addEventListener('resize', tvFit); if (document.fonts) document.fonts.ready.then(tvFit); }
   async function call(path, body) {
@@ -119,15 +122,15 @@
     app.innerHTML = `<section class="hero"><span class="eb">Multiplayer</span><h1>Play <i>together</i></h1><p class="lede">Play with up to five friends, each on your own phone. Host a quiz, share your room code so they can join, then kick off. Got a TV? Open <b>tdko.app/tv</b> on it and type in your room code to put the quiz on the big screen.</p></section>
       <section class="card" id="hostcard"><button class="btn big" id="host">Host a quiz</button><a class="howto" href="how-to-host.html">New to hosting? See how it works</a></section>
       <section class="card" id="joincard"><button class="btn big" id="joinbtn" type="button" aria-expanded="${joinOpen ? 'true' : 'false'}" aria-controls="jf">Join a quiz</button><form id="jf" class="row"${joinOpen ? '' : ' hidden'}><input id="jc" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="CODE" aria-label="Room code"><button class="btn">Join</button></form></section>
-      <p class="err">${esc(msg || '')}</p>`;
+      <p class="err">${esc(msg || '')}</p><p class="faql"><a href="multiplayer-faq.html">Multiplayer FAQ and rules</a></p>`;
     const askPass = m => {
       $('#hostcard').innerHTML = `<p class="lede">Multiplayer is in the Training Ground for now. Enter your Training Ground code to host. Anyone can join with a room code.</p>
         <form id="pf" class="row"><input id="pc" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="TDKO-XXXXX" aria-label="Training Ground code"><button class="btn">Unlock</button></form><p class="err">${esc(m || '')}</p>`;
       $('#pf').onsubmit = async e => { e.preventDefault();
         try { const r = await fetch('/api/tester', { headers: { 'x-tdko-tester': $('#pc').value.trim().toUpperCase() } }); const j = await r.json();
-          if (!j.pass) return askPass("That code isn't right."); store.set('tdko-mp-pass', j.pass); store.set('tdko-tester', '3'); home(); } catch (_) { askPass('Could not check the code. Try again.'); } };
+          if (!j.pass) return askPass("That code isn't right."); store.set('tdko-mp-pass', j.pass); store.set('tdko-tester', Date.now() >= LAUNCH ? '4' : '3'); home(); } catch (_) { askPass('Could not check the code. Try again.'); } };
     };
-    $('#host').onclick = async () => { const pass = store.get('tdko-mp-pass'); if (!pass) return askPass();
+    $('#host').onclick = async () => { const pass = store.get('tdko-mp-pass'); if (!pass && Date.now() < LAUNCH) return askPass();
       const r = await call('create', { pid, pass }); if (r.code) go(r.code); else if (r.needPass) { store.del('tdko-mp-pass'); askPass(r.error); } else home(r.error); };
     $('#joinbtn').onclick = () => { const f = $('#jf'), open = f.hidden; f.hidden = !open; $('#joinbtn').setAttribute('aria-expanded', String(open)); if (open) $('#jc').focus(); };
     $('#jf').onsubmit = async e => { e.preventDefault(); const c = $('#jc').value.trim().toUpperCase(); if (!/^[A-Z]{4}$/.test(c)) return home('That code needs 4 letters.', true); join(c); };
@@ -310,23 +313,37 @@
   }
   // Final whistle graph: running quiz totals after every score, one line per player or team
   const lineColour = id => V.mode === 'teams' ? `var(--${id})` : `var(--s${(V.sides.findIndex(s => s.id === id) % 6) + 1})`;
+  // Final whistle: "The race", positions through the quiz (who led, who climbed), drawn like a game's leaderboard race
   function graph() {
     const tl = V.tl || []; if (tl.length < 2) return '';
-    const W = 480, H = 260, L = 50, R = 104, T = 26, B = 14, ids = V.sides.map(s => s.id);
-    const max = Math.max(1, ...tl.map(p => Math.max(...ids.map(id => p.t[id] || 0))));
-    const step = Math.pow(10, Math.floor(Math.log10(max))), nice = [1, 2, 2.5, 5, 10].map(m => m * step).find(m => max / m <= 4) || step * 10, top = Math.ceil(max / nice) * nice;
-    const x = i => L + (W - L - R) * i / (tl.length - 1), y = v => T + (H - T - B) * (1 - v / top);
-    let svg = '';
-    for (let v = 0; v <= top; v += nice) svg += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" class="gl"/><text x="${L - 8}" y="${y(v) + 4}" class="ax" text-anchor="end">${fmt(v)}</text>`;
-    tl.forEach((p, i) => { if (i && p.gi !== tl[i - 1].gi || i === 0) { const g = V.config.games[p.gi]; svg += `<line x1="${x(Math.max(0, i - (i ? 1 : 0)))}" x2="${x(Math.max(0, i - (i ? 1 : 0)))}" y1="${T - 6}" y2="${H - B}" class="gd"/><text x="${x(Math.max(0, i - (i ? 1 : 0))) + 4}" y="${T - 10}" class="ax">${g ? esc(GAMES[g.g]) : ''}</text>`; } });
-    const ends = ids.map(id => ({ id, v: tl[tl.length - 1].t[id] || 0 })).sort((a, b) => b.v - a.v);
-    let prev = -1e9; ends.forEach(e => { e.ly = Math.max(y(e.v) + 5, prev + 18); prev = e.ly; });
-    for (const id of ids) {
-      const pts = tl.map((p, i) => `${x(i).toFixed(1)},${y(p.t[id] || 0).toFixed(1)}`).join(' '), e = ends.find(e => e.id === id);
-      svg += `<polyline points="${pts}" fill="none" stroke="${lineColour(id)}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${x(tl.length - 1)}" cy="${y(e.v)}" r="4" fill="${lineColour(id)}" stroke="var(--surface)" stroke-width="2"/><text x="${W - R + 8}" y="${e.ly}" class="lb">${esc(sideName(id))}</text>`;
+    const ids = V.sides.map(s => s.id), games = V.config.games.slice(0, (V.results || []).length || 1), n = ids.length;
+    // three checkpoints a game (a third in, two thirds in, full time) from the running totals
+    const cps = []; let lastT = tl[0].t;
+    games.forEach((_, gi) => { const ps = tl.filter(p => p.gi === gi); const pick = f => ps.length ? ps[Math.min(ps.length - 1, Math.max(0, Math.round(f * ps.length) - 1))].t : lastT;
+      [1 / 3, 2 / 3, 1].forEach(f => cps.push({ gi, t: pick(f) })); if (ps.length) lastT = ps[ps.length - 1].t; });
+    let prevOrder = ids.slice();
+    const rankAt = t => { const o = ids.slice().sort((a, b) => ((t[b] || 0) - (t[a] || 0)) || (prevOrder.indexOf(a) - prevOrder.indexOf(b))); prevOrder = o; return Object.fromEntries(o.map((id, i) => [id, i])); };
+    const ranks = cps.map(c => rankAt(c.t));
+    // lead changes across every score, and the biggest climb from after the first game to the end
+    let leads = 0, leader = null; prevOrder = ids.slice();
+    tl.slice(1).forEach(p => { const r = rankAt(p.t), top = ids.find(id => r[id] === 0); if ((p.t[top] || 0) > 0) { if (leader && top !== leader) leads++; leader = top; } });
+    const firstEnd = ranks[2] || ranks[0], fin = ranks[ranks.length - 1];
+    const climb = ids.map(id => ({ id, up: firstEnd[id] - fin[id] })).sort((a, b) => b.up - a.up)[0];
+    const W = 480, L = 40, R = 118, T = 10, RH = 34, B = 30, H = T + RH * n + B, iw = W - L - R;
+    const x = i => L + iw * (i + 0.5) / cps.length, y = r => T + RH * r + RH / 2;
+    let svg = `<defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`;
+    const bw = iw / games.length;
+    games.forEach((g, gi) => { svg += `<rect x="${L + bw * gi}" y="${T - 4}" width="${bw}" height="${RH * n + 8}" rx="8" class="band${gi % 2 ? ' alt' : ''}"/><text x="${L + bw * (gi + .5)}" y="${H - 10}" class="gn" text-anchor="middle">${({ fb: 'Fast Break', wtb: 'Baller', cs: 'Sweep', rh: 'Ranked' })[g.g]}</text>`; });
+    for (let r = 0; r < n; r++) svg += `<text x="${L - 10}" y="${y(r) + 5}" class="rk" text-anchor="end">${r + 1}${['st', 'nd', 'rd'][r] || 'th'}</text>`;
+    for (const id of ids.slice().sort((a, b) => fin[b] - fin[a])) {
+      const c = lineColour(id); let d = `M${x(0)},${y(ranks[0][id])}`;
+      for (let i = 1; i < cps.length; i++) { const x0 = x(i - 1), x1 = x(i), y0 = y(ranks[i - 1][id]), y1 = y(ranks[i][id]), m = (x0 + x1) / 2; d += ` C${m},${y0} ${m},${y1} ${x1},${y1}`; }
+      svg += `<path d="${d}" fill="none" stroke="${c}" stroke-width="${fin[id] === 0 ? 7 : 5}" stroke-linecap="round" filter="url(#glow)" opacity="${fin[id] === 0 ? 1 : .85}"/>`;
+      cps.forEach((cp, i) => { if (i % 3 === 2) svg += `<circle cx="${x(i)}" cy="${y(ranks[i][id])}" r="${i === cps.length - 1 ? 8 : 5}" fill="${c}" stroke="var(--surface)" stroke-width="2.5"/>`; });
+      svg += `<text x="${W - R + 16}" y="${y(fin[id]) + 5}" class="lb${id === mySide() ? ' me' : ''}" fill="${c}">${['🥇 ', '🥈 ', '🥉 '][fin[id]] || ''}${esc(sideName(id))}</text>`;
     }
-    const legend = ids.map(id => `<span><i style="background:${lineColour(id)}"></i>${esc(sideName(id))}</span>`).join('');
-    return `<section class="card graph"><h3>How it unfolded</h3><div class="legend">${legend}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Running totals through the quiz">${svg}</svg></section>`;
+    const chips = [`<span>Lead changes <b>${leads}</b></span>`].concat(climb && climb.up > 0 ? [`<span>Biggest climb <b>${esc(sideName(climb.id))} ↑${climb.up}</b></span>`] : []).join('');
+    return `<section class="card graph race"><h3>The race</h3><div class="chips">${chips}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Positions through the quiz">${svg}</svg></section>`;
   }
   function final() {
     const rows = standings(id => V.quiz[id] || 0), w = rows[0];
